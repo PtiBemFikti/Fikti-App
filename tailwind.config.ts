@@ -8,10 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        Bricolage_Grotesque: ['Bricolage_Grotesque', 'sans-serif'],
+      },
+      colors: {
+        'background': '#1f0836',
+        'light-2': '#64CCC5',
+        'dark-1': '#176B87',
+        'dark-2': '#0F0F0F',
+        
       },
     },
   },
