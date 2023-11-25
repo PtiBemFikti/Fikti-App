@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
       className="bg-slate-500 backdrop-blur-md bg-opacity-5 p-4 sticky top-0 z-10"
     >
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white">Logo</div>
+        <div className="text-white font-black">Fikti</div>
         <div className="hidden md:flex space-x-4">
           <Link className="block text-white py-2" href="/">
             Beranda

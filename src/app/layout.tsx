@@ -27,6 +27,7 @@ export default function RootLayout({
       <body className={`${bricolage_Grotesque.className} ${lato.className}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
