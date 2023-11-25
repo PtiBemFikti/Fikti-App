@@ -65,13 +65,13 @@ const Biro: React.FC = () => {
           variants={sectionVariants}
           transition={{ duration: 0.5, delay: 3.5 }}
         >
-          <h1 className="text-2xl text-right md:text-8xl font-black pr-12 mb-2">
+          <h1 className="text-2xl text-right md:text-8xl font-black pr-8 mb-2">
             BIDANG
           </h1>
-          <h1 className="text-2xl text-right md:text-8xl font-black pr-12 mb-2">
+          <h1 className="text-2xl text-right md:text-8xl font-black pr-8 mb-2">
             MINAT
           </h1>
-          <h1 className="text-2xl text-right md:text-8xl font-black pr-12 mb-2">
+          <h1 className="text-2xl text-right md:text-8xl font-black pr-8 mb-2">
             BAKAT
           </h1>
         </motion.div>
@@ -113,9 +113,9 @@ const Biro: React.FC = () => {
           variants={sectionVariants}
           transition={{ duration: 0.5, delay: 6 }}
         >
-          <h1 className="text-2xl md:text-6xl font-black pl-12 mb-2">BIDANG</h1>
-          <h1 className="text-2xl md:text-6xl font-black pl-12 mb-2">MIA</h1>
-          <h1 className="text-2xl md:text-6xl font-black pl-12 mb-2">
+          <h1 className="text-2xl md:text-6xl font-black pl-8 mb-2">BIDANG</h1>
+          <h1 className="text-2xl md:text-6xl font-black pl-8 mb-2">MIA</h1>
+          <h1 className="text-2xl md:text-6xl font-black pl-8 mb-2">
             #PTIONTOP
           </h1>
         </motion.div>
@@ -132,13 +132,13 @@ const Biro: React.FC = () => {
           variants={sectionVariants}
           transition={{ duration: 0.5, delay: 7 }}
         >
-          <h1 className="text-2xl md:text-6xl text-right font-black pr-12 mb-2">
+          <h1 className="text-2xl md:text-6xl text-right font-black pr-8 mb-2">
             BIDANG
           </h1>
-          <h1 className="text-2xl md:text-6xl text-right font-black pr-12 mb-2">
+          <h1 className="text-2xl md:text-6xl text-right font-black pr-8 mb-2">
             SOSIAL
           </h1>
-          <h1 className="text-2xl md:text-6xl text-right font-black pr-12 mb-2">
+          <h1 className="text-2xl md:text-6xl text-right font-black pr-8 mb-2">
             POLITIK
           </h1>
         </motion.div>
@@ -179,13 +179,11 @@ const Biro: React.FC = () => {
           variants={sectionVariants}
           transition={{ duration: 0.5, delay: 9.5 }}
         >
-          <h1 className="text-2xl md:text-6xl font-black pl-12 mb-2">BIDANG</h1>
-          <h1 className="text-2xl md:text-6xl font-black pl-12 mb-2">
+          <h1 className="text-2xl md:text-6xl font-black pl-8 mb-2">BIDANG</h1>
+          <h1 className="text-2xl md:text-6xl font-black pl-8 mb-2">
             MANAJEMEN
           </h1>
-          <h1 className="text-2xl md:text-6xl font-black pl-12 mb-2">
-            KONTROL
-          </h1>
+          <h1 className="text-2xl md:text-6xl font-black pl-8 mb-2">KONTROL</h1>
         </motion.div>
       </motion.div>
 
@@ -200,13 +198,13 @@ const Biro: React.FC = () => {
           variants={sectionVariants}
           transition={{ duration: 0.5, delay: 10.5 }}
         >
-          <h1 className="text-2xl md:text-6xl text-right font-black pr-12 mb-2">
+          <h1 className="text-2xl md:text-6xl text-right font-black pr-8 mb-2">
             BIDANG
           </h1>
-          <h1 className="text-2xl md:text-6xl text-right font-black pr-12 mb-2">
+          <h1 className="text-2xl md:text-6xl text-right font-black pr-8 mb-2">
             EKS
           </h1>
-          <h1 className="text-2xl md:text-6xl text-right font-black pr-12 mb-2">
+          <h1 className="text-2xl md:text-6xl text-right font-black pr-8 mb-2">
             TERNAL
           </h1>
         </motion.div>
