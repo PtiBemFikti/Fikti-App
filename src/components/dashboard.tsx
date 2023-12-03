@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { Bricolage_Grotesque } from "next/font/google";
 import { useInView } from "react-intersection-observer";
+import { url } from "inspector";
 
 const font = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -57,7 +58,7 @@ const Dashboard: React.FC = () => {
     hidden: { opacity: 0, y: -50 },
     visible: { opacity: 1, y: 0 },
   };
-
+  // bg-gradient-to-b from-[#091534] to-[#060E23] to-[84%]
   return (
     <motion.div
       initial="hidden"
@@ -67,33 +68,44 @@ const Dashboard: React.FC = () => {
         visible: { opacity: 1 },
       }}
       transition={{ duration: 0.5 }}
-      className="bg-cover md:bg-contain md:bg-right bg-center bg-no-repeat w-full h-screen flex flex-wrap items-center justify-center md:mb-96"
-      style={{ backgroundImage: "url('/bg-dash.jpg')" }}
+      className="bg-[100%] bg-no-repeat border-b-2 shadow-xl border-slate-700 w-full py-52 flex flex-col items-center justify-center "
+      style={{ backgroundImage: "url('/dyz.jpg')" }}
     >
       <motion.h1
         variants={fiktiVariants} // Gunakan varian untuk elemen FIKTI
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5, delay: 3 }}
-        className={`text-[150px] md:text-[500px] -mt-40 text-center font-black mb-4 ${bricolageClassName}`}
+        className={` text-base text-center font-medium text-purpleText border-2 border-purpleText rounded-full px-2 py-1 ${bricolageClassName}`}
+        ref={fiktiRef} // Gunakan ref untuk elemen FIKTI
+      >
+        Unlock New Generation
+      </motion.h1>
+
+      <motion.h1
+        variants={fiktiVariants} // Gunakan varian untuk elemen FIKTI
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 3 }}
+        className={`text-9xl text-center font-black text-white ${bricolageClassName}`}
         ref={fiktiRef} // Gunakan ref untuk elemen FIKTI
       >
         FIKTI
       </motion.h1>
-      <div className="flex items-center justify-center">
+      <div className="flex align-top md:items-center justify-center">
         <motion.div
           initial="hidden"
           animate={letsPresentControls}
           variants={letsPresentVariants}
           transition={{ duration: 0.5, delay: 1 }}
-          className="flex w-full justify-center md:w-1/2 text-white -mt-96 md:mt-4"
+          className="flex w-full justify-center md:w-1/2 mx-auto text-orangeText mt-4"
           ref={letsPresentRef}
         >
-          <motion.div className="bg-indigo-200 rounded-sm p-4 mb-4 ml-4 md:ml-0">
-            <h1 className="text-xl md:text-7xl font-bold mb-2">
+          <motion.div className="rounded-sm p-2">
+            <h1 className="text-xl md:text-7xl font-bold">
               LET&apos;S PRESENT
             </h1>
-            <p className="text-sm">#HarmoniYangSerasi 1</p>
+            <p className="text-base">#HarmoniYangSerasi</p>
           </motion.div>
         </motion.div>
         <motion.div
@@ -101,13 +113,13 @@ const Dashboard: React.FC = () => {
           animate={harsasiControls}
           variants={harsasiVariants}
           transition={{ duration: 0.5, delay: 2 }}
-          className="flex w-full justify-center md:w-1/2 text-white -mt-96 md:mt-4"
+          className="flex w-full justify-center md:w-1/2 mx-auto text-orangeText mt-4"
           ref={harsasiRef}
         >
-          <motion.div className="mb-4 ml-4 md:ml-0">
-            <h1 className="text-xl md:text-8xl font-bold mb-2">#HARSASI</h1>
+          <motion.div className="p-2  rounded-sm ">
+            <h1 className="text-xl md:text-7xl font-bold">#HARSASI</h1>
             <p className="text-base">
-              Start with thunder and Grow with the rain
+              Start with thunder <br /> & Grow with the rain
             </p>
           </motion.div>
         </motion.div>

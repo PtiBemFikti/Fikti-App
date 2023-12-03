@@ -16,6 +16,8 @@ const config: Config = {
         'light-2': '#64CCC5',
         'dark-1': '#176B87',
         'dark-2': '#0F0F0F',
+        'purpleText': '#D5B2E6',
+        'orangeText': '#FFC599',
         
       },
     },

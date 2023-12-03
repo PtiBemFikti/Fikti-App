@@ -1,6 +1,7 @@
 // pages/dept.tsx
 import React from "react";
 import { motion } from "framer-motion";
+import { AnimationControls } from "framer-motion";
 
 const Dept: React.FC = () => {
   const containerVariants = {
@@ -48,16 +49,16 @@ const Dept: React.FC = () => {
           {/* Elemen div pertama (sebelah kiri) */}
           <motion.div
             className="bg-cover bg-center bg-no-repeat w-full h-60  rounded-sm mx-auto p-4 mb-4"
-            style={{ backgroundImage: "url('/bg-dash2.jpg')" }}
+            style={{ backgroundImage: "url('/dyz.jpg')" }}
           >
-            <h1 className="text-xl text-indigo-950 md:text-2xl font-bold mb-2">
-              Diazul Ibrahim
+            <h1 className="text-xl text-purpleText md:text-2xl font-bold mb-2">
+              KETUA UMUM
             </h1>
           </motion.div>
           {/* Elemen div kedua (sebelah kanan) */}
           <motion.div className="mb-4 mx-auto">
             <h1 className="text-xl md:text-2xl font-bold mb-2">
-              Pencari memew
+              Dhiazul Fahaq Budiaji
             </h1>
           </motion.div>
         </motion.div>
@@ -68,21 +69,21 @@ const Dept: React.FC = () => {
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.5, delay: 4 }}
-          className="flex flex-col mx-auto w-full md:w-1/2 justify-center mb-4"
+          className="flex flex-col w-full md:w-1/2 justify-center bg-[#6B2D8B]  mx-auto mb-4"
         >
           {/* Elemen div pertama (sebelah kiri) */}
           <motion.div
             className="bg-cover bg-center bg-no-repeat w-full h-60  rounded-sm mx-auto p-4 mb-4"
-            style={{ backgroundImage: "url('/bg-dumy.jpg')" }}
+            style={{ backgroundImage: "url('/padri.jpg')" }}
           >
-            <h1 className="text-xl text-indigo-950 md:text-2xl font-bold mb-2">
-              Reza Padri Oktovian
+            <h1 className="text-xl text-orangeText md:text-2xl font-bold mb-2">
+              WAKIL KETUA UMUM
             </h1>
           </motion.div>
           {/* Elemen div kedua (sebelah kanan) */}
           <motion.div className="mb-4 mx-auto">
-            <h1 className="text-xl md:text-2xl font-bold mb-2">
-              Revolusioner 5.0
+            <h1 className="text-xl md:text-2xl font-bold  mb-2">
+              Padri Oktavian
             </h1>
           </motion.div>
         </motion.div>
