@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </section>
       <motion.div
-        className="progress fixed left-0 right-0 h-[5px] bg-orangeText top-[77px] z-10"
+        className="progress fixed left-0 right-0 h-[5px] bg-orangeText top-[65px] z-10"
         style={{ scaleX }}
       />
     </main>

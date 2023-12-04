@@ -55,7 +55,7 @@ export default function App() {
         <MiaImage key={image} id={image} />
       ))}
       <motion.div
-        className="progress fixed left-0 right-0 h-[5px] bg-orangeText top-[77px]"
+        className="progress fixed left-0 right-0 h-[5px] bg-orangeText top-[65px]"
         style={{ scaleX }}
       />
     </>
