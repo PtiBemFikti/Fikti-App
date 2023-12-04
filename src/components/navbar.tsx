@@ -53,19 +53,25 @@ const Navbar: React.FC = () => {
         </Link>
         <div className="hidden md:flex md:gap-10 space-x-4 mr-8">
           <Link
-            className="block text-white hover:text-purple-600 duration-300 py-2"
-            href="/dept&biro"
+            className="block text-white hover:text-purpleText duration-300 py-2"
+            href="/"
           >
             Beranda
           </Link>
           <Link
-            className="block text-white hover:text-purple-600 duration-300 py-2"
+            className="block text-white hover:text-purpleText duration-300 py-2"
             href="/about"
           >
             Tentang
           </Link>
           <Link
-            className="flex text-white py-2 px-3 bg-orange-500 hover:bg-orange-600 hover:duration-300 hover:end-10  rounded-full"
+            className="block text-white hover:text-purpleText duration-300 py-2"
+            href="/dept&biro"
+          >
+            Departemen
+          </Link>
+          <Link
+            className="flex text-white py-2 px-3 border-2 border-gray-400 hover:bg-orange-600 hover:duration-300 hover:end-10  rounded-full"
             href="/"
           >
             <svg
@@ -82,6 +88,7 @@ const Navbar: React.FC = () => {
             </svg>
             Halo Fikti
           </Link>
+
           {/* Add more navigation links as needed */}
         </div>
         <div className="md:hidden">
@@ -120,8 +127,15 @@ const Navbar: React.FC = () => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
           onClick={toggleMenu}
         >
-          <Link href="/dept&biro">Beranda</Link>
-          <Link href="/about">Tentang</Link>
+          <Link className="hover:text-purpleText" href="/">
+            Beranda
+          </Link>
+          <Link className="hover:text-purpleText" href="/about">
+            Tentang
+          </Link>
+          <Link className="hover:text-purpleText" href="/dept&biro">
+            Departemen
+          </Link>
           {/* Add more navigation links as needed */}
         </motion.div>
       )}

@@ -57,7 +57,7 @@ export const Example = () => {
           src={images[imageIndex]}
           custom={direction}
           variants={variants}
-          className="absolute max-w-screen-md"
+          className="absolute"
           initial="enter"
           animate="center"
           exit="exit"
@@ -80,16 +80,46 @@ export const Example = () => {
         />
       </AnimatePresence>
       <div
-        className="next right-3 top-[50%] absolute bg-white border rounded-full w-[40px] h-[40px] flex justify-center items-center select-none cursor-pointer font-bold text-base z-10"
+        className="next right-3 bottom-0 absolute bg-[#060e23] ring-slate-400 border rounded-full w-[40px] h-[40px] flex justify-center items-center select-none cursor-pointer font-bold text-base z-10"
         onClick={() => paginate(1)}
       >
-        {"‣"}
+        {
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="white"
+            className="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+            />
+          </svg>
+        }
       </div>
       <div
-        className="prev left-3 top-[50%] absolute bg-white border rounded-full w-[40px] h-[40px] flex justify-center items-center select-none cursor-pointer font-bold text-base z-10"
+        className="prev left-3 bottom-0 absolute bg-[#060e23] ring-slate-400 border rounded-full w-[40px] h-[40px] flex justify-center items-center select-none cursor-pointer font-bold text-base z-10"
         onClick={() => paginate(-1)}
       >
-        {"‣"}
+        {
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="white"
+            className="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+            />
+          </svg>
+        }
       </div>
     </>
   );

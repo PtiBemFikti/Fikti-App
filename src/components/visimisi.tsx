@@ -10,7 +10,7 @@ const VisiMisi: React.FC = () => {
   };
 
   return (
-    <div className="w-full py-20 md:px-48 border-t-2 shadow-xl border-slate-700 rounded-md bg-gradient-to-b  from-[#091534]  to-[#060E23] to-[84%]">
+    <div className="w-full py-20 md:px-48 border-t-2 border-slate-700 rounded-md bg-gradient-to-b  from-[#091534]  to-[#060E23] to-[84%]">
       {/* Section 1 */}
 
       <motion.div

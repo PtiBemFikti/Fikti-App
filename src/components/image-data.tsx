@@ -1,1 +1,1 @@
-export const images = ["/dyz.jpg", "/bg-dumy.jpg", "/dyz.jpg"];
+export const images = ["/bg-dumy.jpg", "/bg-dumy.jpg", "/bg-dumy.jpg"];

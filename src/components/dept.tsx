@@ -1,17 +1,41 @@
 // pages/dept.tsx
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { AnimationControls } from "framer-motion";
 
 const Dept: React.FC = () => {
+  const containerControls = useAnimation();
+  const sectionControls = useAnimation();
+
+  const [containerRef, containerInView] = useInView({
+    triggerOnce: true,
+  });
+
+  const [sectionRef, sectionInView] = useInView({
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (containerInView) {
+      containerControls.start("visible");
+    }
+  }, [containerInView, containerControls]);
+
+  useEffect(() => {
+    if (sectionInView) {
+      sectionControls.start("visible");
+    }
+  }, [sectionInView, sectionControls]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
 
   const sectionVariants = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -20,23 +44,24 @@ const Dept: React.FC = () => {
       initial="hidden"
       animate="visible"
       transition={{ duration: 0.5 }}
-      className=" justify-center items-center my-40 md:space-x-4"
+      className=" w-full justify-center items-center my-20"
     >
       <motion.h1
         variants={sectionVariants}
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5 }}
-        className="shadow-inner shadow-orange-500  rounded-sm p-4 mx-auto text-4xl md:text-6xl text-center font-bold mb-4 text-slate-100"
+        className="rounded-sm p-2 mb-4 mx-auto text-4xl md:text-6xl text-center font-bold text-slate-100"
       >
         OUR GUILD MASTER
       </motion.h1>
+
       <motion.div
         variants={sectionVariants}
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5 }}
-        className="flex justify-center items-center mt-10"
+        className=" flex justify-center items-center"
       >
         {/* Section 1 */}
         <motion.div
@@ -44,20 +69,29 @@ const Dept: React.FC = () => {
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.5, delay: 3 }}
-          className="flex flex-col bg-orange-600 mx-auto w-full md:w-1/2 justify-center mb-4"
+          className=" flex flex-col justify-center items-center mx-auto"
         >
           {/* Elemen div pertama (sebelah kiri) */}
           <motion.div
-            className="bg-cover bg-center bg-no-repeat w-full h-60  rounded-sm mx-auto p-4 mb-4"
-            style={{ backgroundImage: "url('/dyz.jpg')" }}
-          >
-            <h1 className="text-xl text-purpleText md:text-2xl font-bold mb-2">
+            className=""
+            style={{
+              width: "150px",
+              height: "150px",
+              borderRadius: "50%",
+              backgroundImage: "url('/dyz.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              border: "4px solid white",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            }}
+          ></motion.div>
+          {/* Elemen div kedua (sebelah kanan) */}
+          <motion.div className="">
+            <h1 className="text-base text-center mt-6 text-purpleText md:text-2xl font-medium mb-2">
               KETUA UMUM
             </h1>
-          </motion.div>
-          {/* Elemen div kedua (sebelah kanan) */}
-          <motion.div className="mb-4 mx-auto">
-            <h1 className="text-xl md:text-2xl font-bold mb-2">
+            <h1 className="text-base md:text-2xl font-medium mb-2">
               Dhiazul Fahaq Budiaji
             </h1>
           </motion.div>
@@ -68,22 +102,31 @@ const Dept: React.FC = () => {
           variants={sectionVariants}
           initial="hidden"
           animate="visible"
-          transition={{ duration: 0.5, delay: 4 }}
-          className="flex flex-col w-full md:w-1/2 justify-center bg-[#6B2D8B]  mx-auto mb-4"
+          transition={{ duration: 0.5, delay: 3 }}
+          className=" flex flex-col justify-center items-center mx-auto"
         >
           {/* Elemen div pertama (sebelah kiri) */}
           <motion.div
-            className="bg-cover bg-center bg-no-repeat w-full h-60  rounded-sm mx-auto p-4 mb-4"
-            style={{ backgroundImage: "url('/padri.jpg')" }}
-          >
-            <h1 className="text-xl text-orangeText md:text-2xl font-bold mb-2">
-              WAKIL KETUA UMUM
-            </h1>
-          </motion.div>
+            className=""
+            style={{
+              width: "150px",
+              height: "150px",
+              borderRadius: "50%",
+              backgroundImage: "url('/dyz.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              border: "4px solid white",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            }}
+          ></motion.div>
           {/* Elemen div kedua (sebelah kanan) */}
-          <motion.div className="mb-4 mx-auto">
-            <h1 className="text-xl md:text-2xl font-bold  mb-2">
-              Padri Oktavian
+          <motion.div className="">
+            <h1 className="text-base text-center mt-6 text-purpleText md:text-2xl font-medium mb-2">
+              KETUA UMUM
+            </h1>
+            <h1 className="text-base md:text-2xl font-medium mb-2">
+              Dhiazul Fahaq Budiaji
             </h1>
           </motion.div>
         </motion.div>

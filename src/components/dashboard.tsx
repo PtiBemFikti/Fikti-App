@@ -58,7 +58,7 @@ const Dashboard: React.FC = () => {
     hidden: { opacity: 0, y: -50 },
     visible: { opacity: 1, y: 0 },
   };
-  // bg-gradient-to-b from-[#091534] to-[#060E23] to-[84%]
+
   return (
     <motion.div
       initial="hidden"
@@ -68,8 +68,8 @@ const Dashboard: React.FC = () => {
         visible: { opacity: 1 },
       }}
       transition={{ duration: 0.5 }}
-      className="bg-[100%] bg-no-repeat border-b-2 shadow-xl border-slate-700 w-full py-52 flex flex-col items-center justify-center "
-      style={{ backgroundImage: "url('/dyz.jpg')" }}
+      className="bg-gradient-to-b from-[#091534] to-[#060E23] to-[84%] border-b-2 shadow-xl border-slate-700 w-full py-52 flex flex-col items-center justify-center "
+      // style={{ backgroundImage: "url('/dyz.jpg')" }}
     >
       <motion.h1
         variants={fiktiVariants} // Gunakan varian untuk elemen FIKTI
@@ -86,7 +86,7 @@ const Dashboard: React.FC = () => {
         variants={fiktiVariants} // Gunakan varian untuk elemen FIKTI
         initial="hidden"
         animate="visible"
-        transition={{ duration: 0.5, delay: 3 }}
+        transition={{ duration: 0.5, delay: 4 }}
         className={`text-9xl text-center font-black text-white ${bricolageClassName}`}
         ref={fiktiRef} // Gunakan ref untuk elemen FIKTI
       >

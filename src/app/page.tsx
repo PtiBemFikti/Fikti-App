@@ -1,18 +1,20 @@
 "use client";
 
-import Image from "next/image";
 import Dashboard from "../components/dashboard";
 import Dept from "@/components/dept";
-import Biro from "@/components/biro";
 import VisiMisi from "@/components/visimisi";
 import CoreValue from "@/components/coreValue";
-import Load from "@/components/parallaxText";
 import ParallaxText from "@/components/parallaxText";
-
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { Example } from "@/components/slider";
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   return (
     <main className="flex max-w-full min-h-screen flex-col items-center justify-between">
       <Dashboard />
@@ -22,13 +24,16 @@ export default function Home() {
       </section>
       <CoreValue />
       <Dept />
+      <VisiMisi />
       <section className="flex justify-center items-center overflow-hidden w-full">
         <div className="w-96 h-96 relative flex justify-center items-center my-20">
           <Example />
         </div>
       </section>
-
-      <VisiMisi />
+      <motion.div
+        className="progress fixed left-0 right-0 h-[5px] bg-orangeText top-[77px] z-10"
+        style={{ scaleX }}
+      />
     </main>
   );
 }
