@@ -18,12 +18,12 @@ export default function Home() {
   return (
     <main className="flex max-w-full min-h-screen flex-col items-center justify-between">
       <Dashboard />
-      <section className="relative w-[100%] bg-gradient-to-b  from-[#091534]  to-[#060E23] to-[84%] shadow-2xl">
-        <ParallaxText baseVelocity={-5}>#fikti</ParallaxText>
-        <ParallaxText baseVelocity={5}>#harsasi</ParallaxText>
-      </section>
       <CoreValue />
       <Dept />
+      <section className="relative w-[100%] bg-gradient-to-b  from-[#091534]  to-[#060E23] to-[84%] shadow-2xl">
+        <ParallaxText baseVelocity={-5}>fikti</ParallaxText>
+        <ParallaxText baseVelocity={5}>harsasi</ParallaxText>
+      </section>
       <VisiMisi />
       <section className="flex justify-center items-center overflow-hidden w-full">
         <div className="w-96 h-96 relative flex justify-center items-center my-20">

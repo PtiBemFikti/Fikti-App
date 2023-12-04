@@ -44,6 +44,19 @@ const Footer: React.FC = () => {
               Tiktok
             </Link>
           </div>
+          <div>
+            <iframe
+              className="border-radius:12px"
+              src="https://open.spotify.com/embed/show/0hffz6OtCgcwoBzGC3RO6N?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              frameBorder="0"
+              allowFullScreen={true}
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              title="Spotify"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </div>
       <div className="container">
