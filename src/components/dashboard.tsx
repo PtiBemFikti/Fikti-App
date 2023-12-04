@@ -3,6 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { Bricolage_Grotesque } from "next/font/google";
 import { useInView } from "react-intersection-observer";
 import { url } from "inspector";
+import Image from "next/image";
 
 const font = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -68,9 +69,17 @@ const Dashboard: React.FC = () => {
         visible: { opacity: 1 },
       }}
       transition={{ duration: 0.5 }}
-      className="bg-gradient-to-b from-[#091534] to-[#060E23] to-[84%] border-b-2 shadow-xl border-slate-700 w-full py-52 flex flex-col items-center justify-center "
+      className="bg-gradient-to-b from-[#091534] to-[#060E23] to-[84%] border-b-2 shadow-xl border-slate-700 w-full py-20 flex flex-col items-center justify-center "
       // style={{ backgroundImage: "url('/dyz.jpg')" }}
     >
+      <Image
+        src="/logo-kabinet.png"
+        alt="Logo"
+        width={150}
+        height={150}
+        className="mb-5"
+        ref={fiktiRef}
+      />
       <motion.h1
         variants={fiktiVariants} // Gunakan varian untuk elemen FIKTI
         initial="hidden"
