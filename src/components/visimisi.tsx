@@ -68,7 +68,7 @@ const VisiMisi: React.FC = () => {
         >
           {/* Konten Section 2 */}
           <h2 className="text-orange-500 text-4xl font-semibold ">MISI</h2>
-          <ol className="list-decimal text-justify text-base">
+          <ol className="list-decimal text-base">
             <li>
               Memperkuat hubungan yang erat antara Badan Eksekutif dan mahasiswa
               FIKTI, dengan mendengarkan dan memahami kebutuhan serta keinginan

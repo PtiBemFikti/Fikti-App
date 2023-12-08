@@ -10,13 +10,13 @@ import {
   useAnimationFrame,
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
+import Image from "next/image";
 
 interface ParallaxTextProps {
-  children: string;
   baseVelocity: number;
 }
 
-function ParallaxText({ children, baseVelocity = 100 }: ParallaxTextProps) {
+function ParallaxText({ baseVelocity = 100 }: ParallaxTextProps) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -45,18 +45,39 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxTextProps) {
     baseX.set(baseX.get() + moveBy);
   });
 
+  // Ganti URL gambar sesuai dengan kebutuhan Anda
+  const imageUrls = [
+    "/logo/AKADEMIK.png",
+    "/logo/AU.png",
+    "/logo/BISMIT.png",
+    "/logo/HUMAS.png",
+    "/logo/LITBANG.png",
+    "/logo/MEDIA.png",
+    "/logo/PTI.png",
+    "/logo/OR.png",
+    "/logo/POLKESMA.png",
+    "/logo/PSDM.png",
+    "/logo/SB.png",
+    "/logo/SOSMAS.png",
+  ];
+
   return (
     <div className="parallax overflow-hidden m-0 flex-nowrap whitespace-nowrap">
       <motion.div
         className="scroller flex whitespace-nowrap flex-nowrap uppercase text-6xl font-semibold text-[#D5B2E6]"
         style={{ x }}
       >
-        <span className="block mx-auto text-center mr-6">{children}</span>
-        <span className="block mx-auto text-center mr-6">{children}</span>
-        <span className="block mx-auto text-center mr-6">{children}</span>
-        <span className="block mx-auto text-center mr-6">{children}</span>
-        <span className="block mx-auto text-center mr-6">{children}</span>
-        <span className="block mx-auto text-center">{children}</span>
+        {imageUrls.map((imageUrl, index) => (
+          <motion.div key={index} className="block text-center shadow-inner">
+            <Image
+              className="object-cover"
+              src={imageUrl}
+              width={80}
+              height={80}
+              alt={`Image ${index + 1}`}
+            />
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   );

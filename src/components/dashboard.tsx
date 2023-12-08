@@ -4,13 +4,6 @@ import { Bricolage_Grotesque } from "next/font/google";
 import { useInView } from "react-intersection-observer";
 import { url } from "inspector";
 import Image from "next/image";
-
-const font = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
-});
-const { className: bricolageClassName } = font;
-
 const Dashboard: React.FC = () => {
   const letsPresentControls = useAnimation();
   const harsasiControls = useAnimation();
@@ -75,8 +68,8 @@ const Dashboard: React.FC = () => {
       <Image
         src="/logo-kabinet.png"
         alt="Logo"
-        width={150}
-        height={150}
+        width={100}
+        height={100}
         className="mb-5"
         ref={fiktiRef}
       />
@@ -85,7 +78,7 @@ const Dashboard: React.FC = () => {
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5, delay: 3 }}
-        className={` text-base text-center font-medium text-purpleText border-2 border-purpleText rounded-full px-2 py-1 ${bricolageClassName}`}
+        className="text-base text-center font-medium text-purpleText border-2 border-purpleText rounded-full px-2 py-1"
         ref={fiktiRef} // Gunakan ref untuk elemen FIKTI
       >
         Unlock New Generation
@@ -96,12 +89,12 @@ const Dashboard: React.FC = () => {
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.5, delay: 4 }}
-        className={`text-9xl text-center font-black text-white ${bricolageClassName}`}
+        className="text-8xl md:text-9xl text-center font-black text-white"
         ref={fiktiRef} // Gunakan ref untuk elemen FIKTI
       >
         FIKTI
       </motion.h1>
-      <div className="flex align-top md:items-center justify-center">
+      <div className="flex align-top justify-center">
         <motion.div
           initial="hidden"
           animate={letsPresentControls}
@@ -110,7 +103,7 @@ const Dashboard: React.FC = () => {
           className="flex w-full justify-center md:w-1/2 mx-auto text-orangeText mt-4"
           ref={letsPresentRef}
         >
-          <motion.div className="rounded-sm p-2">
+          <motion.div className="p-2 text-start">
             <h1 className="text-xl md:text-7xl font-bold">
               LET&apos;S PRESENT
             </h1>
@@ -125,7 +118,7 @@ const Dashboard: React.FC = () => {
           className="flex w-full justify-center md:w-1/2 mx-auto text-orangeText mt-4"
           ref={harsasiRef}
         >
-          <motion.div className="p-2  rounded-sm ">
+          <motion.div className="p-2 text-end">
             <h1 className="text-xl md:text-7xl font-bold">#HARSASI</h1>
             <p className="text-base">
               Start with thunder <br /> & Grow with the rain

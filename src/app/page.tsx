@@ -18,12 +18,11 @@ export default function Home() {
   return (
     <main className="flex max-w-full min-h-screen flex-col items-center justify-between">
       <Dashboard />
-      <CoreValue />
-      <Dept />
-      <section className="relative w-[100%] bg-gradient-to-b  from-[#091534]  to-[#060E23] to-[84%] shadow-2xl">
-        <ParallaxText baseVelocity={-5}>fikti</ParallaxText>
-        <ParallaxText baseVelocity={5}>harsasi</ParallaxText>
+      <section className="relative w-full border-b-2 border-gray-700 bg-[#060e23] z-[1] shadow-2xl">
+        <ParallaxText baseVelocity={8}></ParallaxText>
       </section>
+      <CoreValue />
+
       <VisiMisi />
       <section className="flex justify-center items-center overflow-hidden w-full">
         <div className="w-96 h-96 relative flex justify-center items-center my-20">
@@ -31,7 +30,7 @@ export default function Home() {
         </div>
       </section>
       <motion.div
-        className="progress fixed left-0 right-0 h-[5px] bg-orangeText top-[65px] z-10"
+        className="progress fixed left-0 right-0 h-[5px] bg-orangeText top-[67px] md:top-[76px] z-10"
         style={{ scaleX }}
       />
     </main>
