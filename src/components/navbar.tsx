@@ -130,7 +130,10 @@ const Navbar: React.FC = () => {
           <Link className="hover:text-purpleText text-center" href="/">
             Beranda
           </Link>
-          <Link className="hover:text-purpleText text-center" href="/about">
+          <Link
+            className="hover:text-purpleText text-center"
+            href="/departemen"
+          >
             Departemen
           </Link>
           <Link
