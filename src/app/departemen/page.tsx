@@ -514,7 +514,7 @@ const About: React.FC = () => {
         </motion.h1>
         <Image
           className="object-cover "
-          src={"/struktural.png"}
+          src={"/STRUKTURAL.png"}
           width={800}
           height={572}
           alt=""
