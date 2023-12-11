@@ -118,7 +118,7 @@ const About: React.FC = () => {
         </motion.div>
       </motion.div>
       {/* section3 */}
-      <motion.div className="w-full h-[100vh] md:h-[250vh] p-4 bg-[#060e23] flex flex-col justify-center items-center border-b-2 border-gray-500">
+      <motion.div className="w-full h-[150vh] md:h-[350vh] p-4 bg-[#060e23] flex flex-col justify-center items-center border-b-2 border-gray-500">
         <motion.h1
           className="text-white text-center font-semibold text-4xl md:text-6xl"
           initial="hidden"
@@ -144,24 +144,45 @@ const About: React.FC = () => {
             height={572}
             alt=""
           />
-          <motion.div>
-            <motion.h1
-              className="text-white text-center font-semibold text-3xl md:text-4xl"
-              initial="hidden"
-              animate="visible"
-              ref={kabinetTextRef}
-              variants={kabinetTextVariants}
-              transition={{ duration: 0.5, delay: 1 }}
-            >
-              BIRO <br /> BISNIS & KEMITRAAN
-            </motion.h1>
-            <Image
-              className="object-cover mx-auto relative z-10 bottom-10 "
-              src={"/kabinet/bismit.png"}
-              width={800}
-              height={572}
-              alt=""
-            />
+          <motion.div className="flex flex-col justify-center items-center">
+            <motion.div>
+              <motion.h1
+                className="text-white text-center font-semibold text-3xl md:text-4xl"
+                initial="hidden"
+                animate="visible"
+                ref={kabinetTextRef}
+                variants={kabinetTextVariants}
+                transition={{ duration: 0.5, delay: 1 }}
+              >
+                BIRO <br /> BISNIS & KEMITRAAN
+              </motion.h1>
+              <Image
+                className="object-cover mx-auto relative z-10 bottom-10 "
+                src={"/kabinet/bismit.png"}
+                width={800}
+                height={572}
+                alt=""
+              />
+            </motion.div>
+            <motion.div>
+              <motion.h1
+                className="text-white text-center font-semibold text-3xl md:text-4xl mt-10"
+                initial="hidden"
+                animate="visible"
+                ref={kabinetTextRef}
+                variants={kabinetTextVariants}
+                transition={{ duration: 0.5, delay: 1 }}
+              >
+                BIRO <br /> HUBUNGAN MASYARAKAT
+              </motion.h1>
+              <Image
+                className="object-cover mx-auto relative z-10 bottom-10 "
+                src={"/kabinet/humas.png"}
+                width={800}
+                height={572}
+                alt=""
+              />
+            </motion.div>
           </motion.div>
         </motion.div>
       </motion.div>
