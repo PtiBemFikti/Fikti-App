@@ -22,13 +22,12 @@ export default function Home() {
         <ParallaxText baseVelocity={8}></ParallaxText>
       </section>
       <CoreValue />
-
       <VisiMisi />
-      <section className="flex justify-center items-center overflow-hidden w-full">
+      {/* <section className="flex justify-center items-center overflow-hidden w-full">
         <div className="w-96 h-96 relative flex justify-center items-center my-20">
           <Example />
         </div>
-      </section>
+      </section> */}
       <motion.div
         className="progress fixed left-0 right-0 h-[5px] bg-orangeText top-[67px] md:top-[76px] z-10"
         style={{ scaleX }}
