@@ -147,8 +147,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="container mt-10">
-        <p className="text-center justify-center border-t-2 border-gray-500 text-gray-400 text-xs md:text-base font-normal">
+      <div className="container mt-10 mx-auto">
+        <p className="text-center border-t-2 border-gray-500 text-gray-400 text-xs md:text-base font-normal">
           Copyright © 2024 BEM FIKTI UG & Made with 💛 by BIRO PTI
         </p>
       </div>
