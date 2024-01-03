@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${bricolage_Grotesque.className}`}>
+      <body className={`${lato.className}`}>
         <Navbar />
         {children}
         <Footer />
