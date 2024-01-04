@@ -19,7 +19,7 @@ const config: Config = {
         'purple-dark': '#270548',
         'red-normal': '#662549',
         'purple-normal': '#340660',
-        ''
+        'red-normal-1': '#833344',
       },
     },
   },
