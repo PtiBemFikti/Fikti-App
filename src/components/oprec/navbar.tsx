@@ -24,7 +24,7 @@ export default function Navbar() {
   }, []);
   return (
     <div className={navbar ? 'fixed w-full text-white bg-purple-dark' : 'bg-transparent'}>
-      <nav className="mx-auto my-3 px-11 flex justify-between items-center ">
+      <nav className="mx-auto my-3 px-11 flex justify-between items-center">
         <Link href="/" className="">
           <Image src="/logo-kabinet.png" alt="logo" width={40} height={40} />
         </Link>

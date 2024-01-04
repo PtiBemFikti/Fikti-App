@@ -18,6 +18,8 @@ const config: Config = {
         'brown-1': '#F39F5A',
         'purple-dark': '#270548',
         'red-normal': '#662549',
+        'purple-normal': '#340660',
+        ''
       },
     },
   },
