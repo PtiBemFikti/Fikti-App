@@ -20,6 +20,7 @@ const config: Config = {
         'red-normal': '#662549',
         'purple-normal': '#340660',
         'red-normal-1': '#833344',
+        'main': 'linear-gradient(63deg, rgba(255, 109, 0, 0.20) 0%, rgba(36, 0, 70, 0.30) 98.79%), linear-gradient(245deg, #340660 0%, #380766 120.85%);'
       },
     },
   },
