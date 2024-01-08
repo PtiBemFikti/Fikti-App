@@ -4,9 +4,9 @@ import Image from 'next/image';
 export default function OprecPage() {
   return (
     <div className="main w-full mx-auto pt-14 font-Lato text-[#FFF6E0]">
-      <div className="container flex justify-between my-[40px]">
-        <div className="bg-[#662549] w-[839px] h-[472px] rounded-e-[150px]">
-          <div className="ml-10">
+      <div className="container flex justify-between w-[1393px] h-[678px] my-[40px]">
+        <div className="bg-[#662549] w-[739px] h-[528px] rounded-e-[200px] bg-no-repeat bg-left-bottom" style={{ backgroundImage: 'url(/oprec-volunteer/dots-5.png)' }}>
+          <div className="ml-[64px] my-[30px]">
             <h2 className="pt-11 text-4xl font-bold">Open Recruitment Volunteer</h2>
             <h1 className="text-7xl font-bold">Harmoni Serasi</h1>
             <br />
@@ -70,8 +70,8 @@ export default function OprecPage() {
             </div>
           </div>
         </div>
-        <div className="pt-7">
-          <Image src={'/oprec-volunteer/bejo-1.png'} alt="people" width={500} height={500} className="object-cover mx-auto" />
+        <div className="pt-7 w-[500px] h-[500px] bg-no-repeat bg-right">
+          <Image src={'/oprec-volunteer/bejo-1.png'} alt="people" width={461} height={431} className="object-cover my-[58px] mx-[20px]" />
         </div>
       </div>
       <div className="flex justify-center items-center pt-32">
@@ -174,7 +174,7 @@ export default function OprecPage() {
             <p className="text-sm pt-1">Hero of Educational and Social X</p>
           </div>
           <div className="px-[48px] py-[30px] backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
-            <p className='text-lg'>
+            <p className="text-lg">
               HEROES X (Hero of Education and Social X) adalah kegiatan bakti sosial yang dilaksanakan oleh Mahasiswa/i FIKTI UG di wilayah yang memiliki suatu permasalahan dalam keseharian. Acara ini terdapat kegiatan seperti melakukan
               sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya. Kegiatan akan berlangsung selama 3 hari.
             </p>
@@ -186,7 +186,7 @@ export default function OprecPage() {
             <p className="text-sm pt-1">Hero of Educational and Social X</p>
           </div>
           <div className="px-[48px] py-[30px] backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
-            <p className='text-lg'>
+            <p className="text-lg">
               HEROES X (Hero of Education and Social X) adalah kegiatan bakti sosial yang dilaksanakan oleh Mahasiswa/i FIKTI UG di wilayah yang memiliki suatu permasalahan dalam keseharian. Acara ini terdapat kegiatan seperti melakukan
               sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya. Kegiatan akan berlangsung selama 3 hari.
             </p>
@@ -198,7 +198,7 @@ export default function OprecPage() {
             <p className="text-sm pt-1">Hero of Educational and Social X</p>
           </div>
           <div className="px-[48px] py-[30px] backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
-            <p className='text-lg'>
+            <p className="text-lg">
               HEROES X (Hero of Education and Social X) adalah kegiatan bakti sosial yang dilaksanakan oleh Mahasiswa/i FIKTI UG di wilayah yang memiliki suatu permasalahan dalam keseharian. Acara ini terdapat kegiatan seperti melakukan
               sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya. Kegiatan akan berlangsung selama 3 hari.
             </p>
@@ -210,7 +210,7 @@ export default function OprecPage() {
             <p className="text-sm pt-1">Hero of Educational and Social X</p>
           </div>
           <div className="px-[48px] py-[30px] backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
-            <p className='text-lg'>
+            <p className="text-lg">
               HEROES X (Hero of Education and Social X) adalah kegiatan bakti sosial yang dilaksanakan oleh Mahasiswa/i FIKTI UG di wilayah yang memiliki suatu permasalahan dalam keseharian. Acara ini terdapat kegiatan seperti melakukan
               sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya. Kegiatan akan berlangsung selama 3 hari.
             </p>
@@ -222,7 +222,7 @@ export default function OprecPage() {
             <p className="text-sm pt-1">Hero of Educational and Social X</p>
           </div>
           <div className="px-[48px] py-[30px] backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
-            <p className='text-lg'>
+            <p className="text-lg">
               HEROES X (Hero of Education and Social X) adalah kegiatan bakti sosial yang dilaksanakan oleh Mahasiswa/i FIKTI UG di wilayah yang memiliki suatu permasalahan dalam keseharian. Acara ini terdapat kegiatan seperti melakukan
               sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya. Kegiatan akan berlangsung selama 3 hari.
             </p>
