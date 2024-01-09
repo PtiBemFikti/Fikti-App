@@ -72,6 +72,9 @@ export default function OprecPage() {
         </div>
         <div className="pt-7 w-[500px] h-[500px] bg-no-repeat bg-right">
           <Image src={'/oprec-volunteer/bejo-1.png'} alt="people" width={461} height={431} className="object-cover my-[58px] mx-[20px]" />
+          <Image src={'/oprec-volunteer/lingkaran-2.png'} alt="lingkaran" width={400} height={400} className="mt-[-810px] ml-[420px]" />
+          <Image src={'/oprec-volunteer/dots-group.png'} alt='dots-2' width={150} height={150} className='ml-[567px] mt-[120px]'/>
+
         </div>
       </div>
       <div className="flex justify-center items-center pt-32">
@@ -84,16 +87,21 @@ export default function OprecPage() {
       </div>
       <div className="flex mx-auto bg-cover bg-no-repeat w-[1425px] h-[588px]" style={{ backgroundImage: 'url(/oprec-volunteer/line-8.png)' }}>
         <div className="w-[360px] h-[192px] bg-no-repeat ml-[49px] pt-[80.61px]" style={{ backgroundImage: 'url(/oprec-volunteer/timeline-1.png)' }}>
-          {/* <Image src={'/oprec-volunteer/timeline-1.png'} alt="timeline 1" width={460} height={170} className="pl-[77.4px] pt-[80.6px]" /> */}
+          <Image src={'/oprec-volunteer/kalender.png'} alt="kalender" width={100} height={100} className="pt-[260px]" />
         </div>
         <div className="w-[321px] h-[171px] bg-no-repeat ml-[-240px] mt-[368px]" style={{ backgroundImage: 'url(/oprec-volunteer/timeline-2.png)' }}>
-          {/* <Image src={'/oprec-volunteer/timeline-2.png'} alt="timeline 2" width={430} height={70} className="pl-[35px] pt-[147px]" /> */}
+          <Image src={'/oprec-volunteer/folder.png'} alt="folder" width={100} height={100} className="ml-[220px] mt-[-450px]" />
         </div>
         <div className="w-[462px] h-[91px] bg-no-repeat ml-[150px] mt-[32px]" style={{ backgroundImage: 'url(/oprec-volunteer/timeline-3.png)' }}>
-          {/* <Image src={'/oprec-volunteer/timeline-3.png'} alt="timeline 3" width={962} height={91} className="pl-[646px] pb-[190px]" /> */}
+          <Image src={'/oprec-volunteer/ceklis.png'} alt="ceklis" width={100} height={100} className="mt-[120px] ml-[-70px]" />
         </div>
-        <div className="w-[423px] h-[198px] bg-no-repeat ml-[-410px] mt-[200px]" style={{ backgroundImage: 'url(/oprec-volunteer/timeline-4.png)' }}></div>
-        <div className="w-[467px] h-[135px] bg-no-repeat ml-[-200px] mt-[440px]" style={{ backgroundImage: 'url(/oprec-volunteer/timeline-5.png)' }}></div>
+        <div className="w-[423px] h-[198px] bg-no-repeat ml-[-410px] mt-[200px]" style={{ backgroundImage: 'url(/oprec-volunteer/timeline-4.png)' }}>
+          <Image src={'/oprec-volunteer/megaphone.png'} alt="speaker" width={120} height={120} className="mt-[230px] ml-[80px]" />
+        </div>
+        <div className="w-[467px] h-[135px] bg-no-repeat ml-[-200px] mt-[440px]" style={{ backgroundImage: 'url(/oprec-volunteer/timeline-5.png)' }}>
+          <Image src={'/oprec-volunteer/target.png'} alt="target" width={100} height={100} className="ml-[270px] mt-[-360px]" />
+          <Image src={'/oprec-volunteer/dots-group.png'} alt="dots group" width={150} height={150} className="ml-[390px] mt-[100px]" />
+        </div>
       </div>
       <br />
       <div className="w-[320px] h-[120px] flex main items-start flex-column rounded-e-[24px]">
