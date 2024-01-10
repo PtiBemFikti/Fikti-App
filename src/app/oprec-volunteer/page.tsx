@@ -3,9 +3,12 @@ import Image from 'next/image';
 
 export default function OprecPage() {
   return (
-    <div className="main w-full mx-auto pt-14 font-Lato text-[#FFF6E0]">
-      <div className="container flex justify-between w-[1393px] h-[678px] my-[40px]">
-        <div className="bg-[#662549] w-[739px] h-[528px] rounded-e-[200px] bg-no-repeat bg-left-bottom" style={{ backgroundImage: 'url(/oprec-volunteer/dots-5.png)' }}>
+    <div className="main w-full pt-14 font-Lato text-[#FFF6E0]">
+      <div>
+        {/* <Image src={'/oprec-volunteer/line-9.png'} alt='line-bg' width={1029} height={975} className='absolute -z-[1]'/> */}
+      </div>
+      <div className="container flex justify-between my-[40px]">
+        <div className="bg-[#662549] w-1/2 rounded-e-[200px] bg-no-repeat bg-left-bottom" style={{ backgroundImage: 'url(/oprec-volunteer/dots-5.png)' }}>
           <div className="ml-[64px] my-[30px]">
             <h2 className="pt-11 text-4xl font-bold">Open Recruitment Volunteer</h2>
             <h1 className="text-7xl font-bold">Harmoni Serasi</h1>
@@ -70,9 +73,9 @@ export default function OprecPage() {
             </div>
           </div>
         </div>
-        <div className="pt-7 w-[500px] h-[500px] bg-no-repeat bg-right">
+        <div className="pt-7 w-1/2">
           <Image src={'/oprec-volunteer/bejo-1.png'} alt="people" width={461} height={431} className="object-cover my-[58px] mx-[20px]" />
-          <Image src={'/oprec-volunteer/lingkaran-2.png'} alt="lingkaran" width={400} height={400} className="mt-[-810px] ml-[420px]" />
+          <Image src={'/oprec-volunteer/lingkaran-2.png'} alt="lingkaran" width={400} height={400} className=" mt-[-810px] ml-[420px]" />
           <Image src={'/oprec-volunteer/dots-group.png'} alt='dots-2' width={150} height={150} className='ml-[567px] mt-[120px]'/>
 
         </div>
