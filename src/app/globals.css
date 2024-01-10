@@ -17,5 +17,10 @@ body {
 }
 
 .main {
-  background: linear-gradient(63deg, rgba(255, 109, 0, 0.20) 0%, rgba(36, 0, 70, 0.30) 98.79%), linear-gradient(245deg, #340660 0%, #380766 120.85%);
+  background: linear-gradient(
+      63deg,
+      rgba(255, 109, 0, 0.2) 0%,
+      rgba(36, 0, 70, 0.3) 98.79%
+    ),
+    linear-gradient(245deg, #340660 0%, #380766 120.85%);
 }
