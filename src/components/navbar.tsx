@@ -142,6 +142,12 @@ const Navbar: React.FC = () => {
           >
             Struktur Organisasi
           </Link>
+           <Link
+            className="block text-white hover:text-purpleText duration-300 py-2"
+            href="/oprec-volunteer"
+          >
+            Oprec Volunteer
+          </Link>
           <Link
             className="flex text-white py-2 px-3 mx-20 justify-center border-2 border-gray-400 hover:bg-orange-600 hover:duration-300 hover:end-10 rounded-full gap-2"
             href="https://bit.ly/HotlineFIKTI"
