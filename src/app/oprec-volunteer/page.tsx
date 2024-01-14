@@ -11,9 +11,11 @@ export default function OprecPage() {
 
         {/* gambar mobile */}
         <Image src={'/oprec-mobile/line-1-mobile.png'} alt="line-1" width={417} height={319} className="object-cover absolute mx-auto w-full -top-8 md:hidden block" />
-        <Image src={'/oprec-mobile/lingkaran-1-mobile.png'} alt="lingkaran" width={100} height={100} className="object-cover absolute ml-64 w-36 h-36 -top-2 md:hidden block" />
+        <div className="">
+          <Image src={'/oprec-mobile/lingkaran-1-mobile.png'} alt="lingkaran" width={100} height={100} className="object-cover absolute ml-64 w-36 h-36 -top-2 md:hidden block" />
+          <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 2" width={85} height={35} className="object-cover absolute right-1 w-10 top-36 md:hidden block" />
+        </div>
         <Image src={'/oprec-mobile/dots-mobile.png'} alt="dots 1" width={85} height={35} className="object-cover absolute -ml-1 w-12 h-12 top-14 md:hidden block" />
-        <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 2" width={85} height={35} className="object-cover absolute right-1 w-10 top-36 md:hidden block" />
 
         <div className="bg-[#662549] w-3/4 h-44 rounded-e-[40px] md:w-2/3 md:h-5/6 md:rounded-e-[200px] mt-28 md:mt-36 z-10">
           <div className="md:ml-20 md:my-12 md:py-12">
@@ -163,6 +165,17 @@ export default function OprecPage() {
                   <p className="text-xs my-auto text-end">Project Timeline</p>
                 </div>
               </Link>
+              <Link href={'#project-list'}>
+                <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-[60px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 18 14" fill="none">
+                    <path
+                      d="M0 1.65279C0 0.84767 0.653212 0.194458 1.45833 0.194458H4.375C5.18012 0.194458 5.83333 0.84767 5.83333 1.65279V2.1389H11.6667V1.65279C11.6667 0.84767 12.3199 0.194458 13.125 0.194458H16.0417C16.8468 0.194458 17.5 0.84767 17.5 1.65279V4.56946C17.5 5.37458 16.8468 6.02779 16.0417 6.02779H13.125C12.3199 6.02779 11.6667 5.37458 11.6667 4.56946V4.08335H5.83333V4.56946C5.83333 4.62111 5.8303 4.67276 5.82422 4.72137L8.26389 7.97224H11.1806C11.9857 7.97224 12.6389 8.62545 12.6389 9.43057V12.3472C12.6389 13.1524 11.9857 13.8056 11.1806 13.8056H8.26389C7.45877 13.8056 6.80556 13.1524 6.80556 12.3472V9.43057C6.80556 9.37892 6.80859 9.32727 6.81467 9.27866L4.375 6.02779H1.45833C0.653212 6.02779 0 5.37458 0 4.56946V1.65279Z"
+                      fill="#FFF6E0"
+                    />
+                  </svg>
+                  <p className="text-xs my-auto">Project List</p>
+                </div>
+              </Link>
               <Link href={'/'}>
                 <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end">
                   <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,17 +205,6 @@ export default function OprecPage() {
                   <p className="text-xs my-auto">Available Positions</p>
                 </div>
               </Link>
-              <Link href={'#project-list'}>
-                <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-[60px]">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 18 14" fill="none">
-                    <path
-                      d="M0 1.65279C0 0.84767 0.653212 0.194458 1.45833 0.194458H4.375C5.18012 0.194458 5.83333 0.84767 5.83333 1.65279V2.1389H11.6667V1.65279C11.6667 0.84767 12.3199 0.194458 13.125 0.194458H16.0417C16.8468 0.194458 17.5 0.84767 17.5 1.65279V4.56946C17.5 5.37458 16.8468 6.02779 16.0417 6.02779H13.125C12.3199 6.02779 11.6667 5.37458 11.6667 4.56946V4.08335H5.83333V4.56946C5.83333 4.62111 5.8303 4.67276 5.82422 4.72137L8.26389 7.97224H11.1806C11.9857 7.97224 12.6389 8.62545 12.6389 9.43057V12.3472C12.6389 13.1524 11.9857 13.8056 11.1806 13.8056H8.26389C7.45877 13.8056 6.80556 13.1524 6.80556 12.3472V9.43057C6.80556 9.37892 6.80859 9.32727 6.81467 9.27866L4.375 6.02779H1.45833C0.653212 6.02779 0 5.37458 0 4.56946V1.65279Z"
-                      fill="#FFF6E0"
-                    />
-                  </svg>
-                  <p className="text-xs my-auto">Project List</p>
-                </div>
-              </Link>
             </div>
           </div>
         </div>
@@ -212,7 +214,7 @@ export default function OprecPage() {
       <div id="timeline" className="flex justify-center items-center md:mt-60">
         <div className="hidden md:block">
           <div
-            className="bg-cover bg-center h-72 w-80 text-center items-center justify-center flex flex-co"
+            className="bg-cover bg-center h-72 w-80 text-center items-center justify-center flex flex-col"
             style={{
               backgroundImage: 'url(/oprec-volunteer/bulet-abstrak-2.png)',
             }}
@@ -384,7 +386,7 @@ export default function OprecPage() {
       </div>
       {/* Project Timeline End */}
       {/* Project List Start */}
-      <div id="project-list" className="md:w-full flex flex-col justify-center items-center mt-12 md:mt-32">
+      <div id="project-list" className="md:w-full flex flex-col justify-center items-center mt-12 md:mt-36">
         <div className="mb-7 md:mb-20">
           <h1 className="text-center text-3xl md:text-6xl font-bold whitespace-nowrap mt-20">Project List</h1>
           <p className="md:pt-2 text-center md:text-sm text-xs">
@@ -393,14 +395,14 @@ export default function OprecPage() {
           </p>
         </div>
 
-        <div className="grid grid-rows-1 gap-7 pb-10">
+        <div className="grid grid-rows-1 gap-7">
           <div className="w-5/6 md:w-2/3 mx-auto flex flex-col">
             <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-t-[48px]">
               <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">HEROES X</h2>
               <p className="text-xs md:text-sm pt-1">Hero of Educational and Social X</p>
             </div>
-            <div className="px-7 md:px-14 py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
-              <p className="text-sm md:text-lg">
+            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
+              <p className="text-sm md:text-lg text-justify">
                 HEROES X (Hero of Education and Social X) adalah kegiatan bakti sosial yang dilaksanakan oleh Mahasiswa/i FIKTI UG di wilayah yang memiliki suatu permasalahan dalam keseharian. Acara ini terdapat kegiatan seperti melakukan
                 sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya. Kegiatan akan berlangsung selama 3 hari.
               </p>
@@ -408,10 +410,10 @@ export default function OprecPage() {
           </div>
           <div className="w-5/6 md:w-2/3 mx-auto flex flex-col">
             <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-t-[48px]">
-              <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">TechnoFair 11.0</h2>
+              <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">TECHNOFAIR 11.0</h2>
             </div>
-            <div className="px-7 md:px-14 py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
-              <p className="text-sm md:text-lg">
+            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
+              <p className="text-sm md:text-lg text-justify">
                 TechnoFair adalah program kerja unggulan Departemen akademik BEM FIKTI dan merupakan event IT terbesar di FIKTI yang dilaksanakan setiap tahun untuk mewadahi mahasiswa FIKTI UG dalam menyalurkan minat dan bakat di bidang
                 akademik. Event ini berisi rangkaian acara berupa seminar, workshop, dan kompetisi.
               </p>
@@ -419,11 +421,11 @@ export default function OprecPage() {
           </div>
           <div className="w-5/6 md:w-2/3 mx-auto flex flex-col">
             <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-t-[48px]">
-              <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">FIKTI SPACE</h2>
+              <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">FIKTI SPACE 3.0</h2>
               <p className="text-xs md:text-sm pt-1">FIKTI Sport & Art Championship</p>
             </div>
-            <div className="px-7 md:px-14 py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
-              <p className="text-sm md:text-lg">
+            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
+              <p className="text-sm md:text-lg text-justify">
                 FIKTI SPACE (FIKTI Sport & Art Championship) adalah suatu rangkaian acara gabungan dari dua proker BEM FIKTI UG sebelumnya yaitu FAF dan FOSC berupa kompetisi olahraga dan seni budaya yang dilaksanakan oleh BEM FIKTI UG guna
                 meningkatkan rasa sportivitas dan kreatifitas.
               </p>
@@ -432,6 +434,25 @@ export default function OprecPage() {
         </div>
       </div>
       {/* Project List End */}
+      {/* General Requirements Start */}
+      <div className="relative py-12">
+        <div className="bg-[#662549] w-5/6 h-72 rounded-l-[44px] ml-20 md:hidden block">
+          <div className="py-7 px-8">
+            <div className="">
+              <h1 className='font-bold text-2xl'>General Requirements</h1>
+              <p className='text-center font-light text-xs'>Penuhi syarat dibawah ini untuk meningkatkan peluang diterima sebagai relawan di program kerja</p>
+            </div>
+            <div className="">
+              <div className="">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* General Requirements End */}
+      {/* Available Positions Start */}
+      {/* Available Positions End */}
     </div>
   );
 }
