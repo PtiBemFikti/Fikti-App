@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function OprecPage() {
   return (
@@ -7,12 +8,12 @@ export default function OprecPage() {
       {/* Dashboard Start */}
       <div className="flex relative">
         <Image src={'/oprec-volunteer/line-9.png'} alt="line-bg" width={1029} height={975} className="object-cover absolute mx-auto w-full -top-7 hidden md:block" />
-        
+
         {/* gambar mobile */}
-        <Image src={'/oprec-volunteer/line-6.png'} alt='line-1' width={417} height={319} className='object-cover absolute mx-auto w-full -top-8 md:hidden block'/>
-        <Image src={'/oprec-mobile/lingkaran-1-mobile.png'} alt='lingkaran' width={100} height={100} className='object-cover absolute ml-64 w-36 h-36 -top-2 md:hidden block'/>
-        <Image src={'/oprec-mobile/dots-mobile.png'} alt='dots 1' width={85} height={35} className='object-cover absolute -ml-1 w-12 h-12 top-14 md:hidden block'/>
-        <Image src={'/oprec-mobile/dots-2-mobile.png'} alt='dots 2' width={85} height={35} className='object-cover absolute -right-12 w-24 top-36 md:hidden block'/>
+        <Image src={'/oprec-mobile/line-1-mobile.png'} alt="line-1" width={417} height={319} className="object-cover absolute mx-auto w-full -top-8 md:hidden block" />
+        <Image src={'/oprec-mobile/lingkaran-1-mobile.png'} alt="lingkaran" width={100} height={100} className="object-cover absolute ml-64 w-36 h-36 -top-2 md:hidden block" />
+        <Image src={'/oprec-mobile/dots-mobile.png'} alt="dots 1" width={85} height={35} className="object-cover absolute -ml-1 w-12 h-12 top-14 md:hidden block" />
+        <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 2" width={85} height={35} className="object-cover absolute right-1 w-10 top-36 md:hidden block" />
 
         <div className="bg-[#662549] w-3/4 h-44 rounded-e-[40px] md:w-2/3 md:h-5/6 md:rounded-e-[200px] mt-28 md:mt-36 z-10">
           <div className="md:ml-20 md:my-12 md:py-12">
@@ -31,59 +32,87 @@ export default function OprecPage() {
             <div className="hidden md:block ml-3">
               <h4 className="text-2xl font-bold">Periode Pendaftaran:</h4>
               <h4 className="text-2xl font-bold md:mb-2">15 Januari 2024 - 20 Januari 2024</h4>
+              <br />
               <div className="flex flex-wrap gap-3">
-                <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
-                  <svg className="w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M6.66667 15.8333H14.5833C16.25 15.8333 17.5 14.5833 17.5 12.9166C17.5 11.25 16.25 9.99998 14.5833 9.99998H12.9167H5.41667C3.75 9.99998 2.5 8.74998 2.5 7.08331C2.5 5.41665 3.75 4.16665 5.41667 4.16665L17.5 4.16665"
-                      stroke="#FFF6E0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path d="M15.4167 6.25L17.5001 4.16667L15.4167 2.08333" stroke="#FFF6E0" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M2.50008 15.8333C2.50008 16.9839 3.43282 17.9167 4.58341 17.9167C5.73401 17.9167 6.66675 16.9839 6.66675 15.8333C6.66675 14.6827 5.73401 13.75 4.58341 13.75C3.43282 13.75 2.50008 14.6827 2.50008 15.8333Z"
-                      fill="#FFF6E0"
-                      stroke="#FFF6E0"
-                    />
-                  </svg>
-                  <p className="text-base">Project Timeline</p>
-                </div>
-                <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
-                  <svg className="w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M6.25 5.625H8.75M6.25 10H13.75M6.25 12.5H13.75M6.25 15H8.75M5 18.125H15C15.3315 18.125 15.6495 17.9933 15.8839 17.7589C16.1183 17.5245 16.25 17.2065 16.25 16.875V3.125C16.25 2.79348 16.1183 2.47554 15.8839 2.24112C15.6495 2.0067 15.3315 1.875 15 1.875H5C4.66848 1.875 4.35054 2.0067 4.11612 2.24112C3.8817 2.47554 3.75 2.79348 3.75 3.125V16.875C3.75 17.2065 3.8817 17.5245 4.11612 17.7589C4.35054 17.9933 4.66848 18.125 5 18.125Z"
-                      stroke="#FFF6E0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M13.75 5.9375C13.9226 5.9375 14.0625 5.79759 14.0625 5.625C14.0625 5.45241 13.9226 5.3125 13.75 5.3125C13.5774 5.3125 13.4375 5.45241 13.4375 5.625C13.4375 5.79759 13.5774 5.9375 13.75 5.9375Z"
-                      fill="#FFF6E0"
-                      stroke="#FFF6E0"
-                    />
-                  </svg>
-                  <p className="text-base">Syarat Umum Pendaftaran</p>
-                </div>
-                <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
-                  <svg className="hidden md:block w-6 h-6 pt-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <g clip-path="url(#clip0_160_74)">
+                <Link href={'#timeline'}>
+                  <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
+                    <svg className="w-6 h-6 mx-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M0 3.125C0 2.08984 0.839844 1.25 1.875 1.25H5.625C6.66016 1.25 7.5 2.08984 7.5 3.125V3.75H15V3.125C15 2.08984 15.8398 1.25 16.875 1.25H20.625C21.6602 1.25 22.5 2.08984 22.5 3.125V6.875C22.5 7.91016 21.6602 8.75 20.625 8.75H16.875C15.8398 8.75 15 7.91016 15 6.875V6.25H7.5V6.875C7.5 6.94141 7.49609 7.00781 7.48828 7.07031L10.625 11.25H14.375C15.4102 11.25 16.25 12.0898 16.25 13.125V16.875C16.25 17.9102 15.4102 18.75 14.375 18.75H10.625C9.58984 18.75 8.75 17.9102 8.75 16.875V13.125C8.75 13.0586 8.75391 12.9922 8.76172 12.9297L5.625 8.75H1.875C0.839844 8.75 0 7.91016 0 6.875V3.125Z"
-                        fill="#FFF6E0"
+                        d="M6.66667 15.8333H14.5833C16.25 15.8333 17.5 14.5833 17.5 12.9166C17.5 11.25 16.25 9.99998 14.5833 9.99998H12.9167H5.41667C3.75 9.99998 2.5 8.74998 2.5 7.08331C2.5 5.41665 3.75 4.16665 5.41667 4.16665L17.5 4.16665"
+                        stroke="#FFF6E0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                       />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_160_74">
-                        <rect width="22.5" height="20" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <p className="text-base">Project List</p>
-                </div>
+                      <path d="M15.4167 6.25L17.5001 4.16667L15.4167 2.08333" stroke="#FFF6E0" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M2.50008 15.8333C2.50008 16.9839 3.43282 17.9167 4.58341 17.9167C5.73401 17.9167 6.66675 16.9839 6.66675 15.8333C6.66675 14.6827 5.73401 13.75 4.58341 13.75C3.43282 13.75 2.50008 14.6827 2.50008 15.8333Z"
+                        fill="#FFF6E0"
+                        stroke="#FFF6E0"
+                      />
+                    </svg>
+                    <p className="text-base">Project Timeline</p>
+                  </div>
+                </Link>
+                <Link href={'/'}>
+                  <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
+                    <svg className="w-6 h-6 mx-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 28 20" fill="none">
+                      <g clip-path="url(#clip0_343_8)">
+                        <path
+                          d="M17.5 12.5C14.1625 12.5 7.5 14.1625 7.5 17.5V20H27.5V17.5C27.5 14.1625 20.8375 12.5 17.5 12.5ZM6.25 7.5V3.75H3.75V7.5H0V10H3.75V13.75H6.25V10H10V7.5M17.5 10C18.8261 10 20.0979 9.47322 21.0355 8.53553C21.9732 7.59785 22.5 6.32608 22.5 5C22.5 3.67392 21.9732 2.40215 21.0355 1.46447C20.0979 0.526784 18.8261 0 17.5 0C16.1739 0 14.9021 0.526784 13.9645 1.46447C13.0268 2.40215 12.5 3.67392 12.5 5C12.5 6.32608 13.0268 7.59785 13.9645 8.53553C14.9021 9.47322 16.1739 10 17.5 10Z"
+                          fill="#FFF6E0"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_343_8">
+                          <rect width="27.5" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p className="text-base">Available Positions</p>
+                  </div>
+                </Link>
+                <Link href={'#project-list'}>
+                  <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
+                    <svg className="w-6 h-6 mx-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <g clip-path="url(#clip0_160_74)">
+                        <path
+                          d="M0 3.125C0 2.08984 0.839844 1.25 1.875 1.25H5.625C6.66016 1.25 7.5 2.08984 7.5 3.125V3.75H15V3.125C15 2.08984 15.8398 1.25 16.875 1.25H20.625C21.6602 1.25 22.5 2.08984 22.5 3.125V6.875C22.5 7.91016 21.6602 8.75 20.625 8.75H16.875C15.8398 8.75 15 7.91016 15 6.875V6.25H7.5V6.875C7.5 6.94141 7.49609 7.00781 7.48828 7.07031L10.625 11.25H14.375C15.4102 11.25 16.25 12.0898 16.25 13.125V16.875C16.25 17.9102 15.4102 18.75 14.375 18.75H10.625C9.58984 18.75 8.75 17.9102 8.75 16.875V13.125C8.75 13.0586 8.75391 12.9922 8.76172 12.9297L5.625 8.75H1.875C0.839844 8.75 0 7.91016 0 6.875V3.125Z"
+                          fill="#FFF6E0"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_160_74">
+                          <rect width="22.5" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p className="text-base">Project List</p>
+                  </div>
+                </Link>
+                <Link href={'/'}>
+                  <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
+                    <svg className="w-6 h-6 mx-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.25 5.625H8.75M6.25 10H13.75M6.25 12.5H13.75M6.25 15H8.75M5 18.125H15C15.3315 18.125 15.6495 17.9933 15.8839 17.7589C16.1183 17.5245 16.25 17.2065 16.25 16.875V3.125C16.25 2.79348 16.1183 2.47554 15.8839 2.24112C15.6495 2.0067 15.3315 1.875 15 1.875H5C4.66848 1.875 4.35054 2.0067 4.11612 2.24112C3.8817 2.47554 3.75 2.79348 3.75 3.125V16.875C3.75 17.2065 3.8817 17.5245 4.11612 17.7589C4.35054 17.9933 4.66848 18.125 5 18.125Z"
+                        stroke="#FFF6E0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.75 5.9375C13.9226 5.9375 14.0625 5.79759 14.0625 5.625C14.0625 5.45241 13.9226 5.3125 13.75 5.3125C13.5774 5.3125 13.4375 5.45241 13.4375 5.625C13.4375 5.79759 13.5774 5.9375 13.75 5.9375Z"
+                        fill="#FFF6E0"
+                        stroke="#FFF6E0"
+                      />
+                    </svg>
+                    <p className="text-base">General Reqirements</p>
+                  </div>
+                </Link>
               </div>
             </div>
             <br />
+          </div>
+          <div className="hidden md:block">
+            <Image src={'/oprec-volunteer/dots-5.png'} alt="dots" width={100} height={100} className="absolute w-12 left-0 -bottom-9" />
           </div>
         </div>
         <div className="hidden md:w-1/2 md:block relative">
@@ -99,83 +128,91 @@ export default function OprecPage() {
           </div>
           <div className="absolute bottom-0 right-0 overflow-hidden" style={{ width: '50%', height: '50%' }}>
             <div className="relative w-full h-full">
-              <Image src={'/oprec-volunteer/dots-group.png'} alt="dots-2" width={150} height={150} className="absolute bottom-28 -right-10 object-cover" />
+              <Image src={'/oprec-volunteer/dots-group.png'} alt="dots-2" width={150} height={150} className="absolute bottom-40 -right-10 object-cover" />
             </div>
           </div>
         </div>
       </div>
       {/* Button dan Orang Mobile */}
       <div className="md:hidden block my-12 pb-32">
-        <Image src={'/oprec-mobile/line-2-mobile.png'} alt='line 2' width={548} height={344} className='object-cover absolute w-full md:hidden block'/>
+        <Image src={'/oprec-mobile/line-2-mobile.png'} alt="line 2" width={548} height={344} className="object-cover absolute w-full md:hidden block" />
         <div className="flex relative">
           <div className="w-1/2 ml-2 mt-6">
             <Image src={'/oprec-mobile/bejo-2.png'} alt="bejo" width={2000} height={2000} className="mx-auto" />
           </div>
           <div className="relative text-sm">
-            <Image src={'/oprec-mobile/dots-2-mobile.png'} alt='dots 3' width={300} height={300} className='object-cover absolute w-20 top-64 -right-20'/>
+            <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 3" width={300} height={300} className="object-cover absolute w-10 top-64 -right-7" />
             <p className="text-sm ml-2 mt-5 mb-3 text-end">Skip ahead & choose!</p>
             <div className="flex flex-col gap-2">
-              <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-9">
-                <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M6.66667 15.8333H14.5833C16.25 15.8333 17.5 14.5833 17.5 12.9166C17.5 11.25 16.25 9.99998 14.5833 9.99998H12.9167H5.41667C3.75 9.99998 2.5 8.74998 2.5 7.08331C2.5 5.41665 3.75 4.16665 5.41667 4.16665L17.5 4.16665"
-                    stroke="#FFF6E0"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path d="M15.4167 6.25L17.5001 4.16667L15.4167 2.08333" stroke="#FFF6E0" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M2.50008 15.8333C2.50008 16.9839 3.43282 17.9167 4.58341 17.9167C5.73401 17.9167 6.66675 16.9839 6.66675 15.8333C6.66675 14.6827 5.73401 13.75 4.58341 13.75C3.43282 13.75 2.50008 14.6827 2.50008 15.8333Z"
-                    fill="#FFF6E0"
-                    stroke="#FFF6E0"
-                  />
-                </svg>
-                <p className="text-xs my-auto text-end">Project Timeline</p>
-              </div>
-              <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end">
-                <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M6.25 5.625H8.75M6.25 10H13.75M6.25 12.5H13.75M6.25 15H8.75M5 18.125H15C15.3315 18.125 15.6495 17.9933 15.8839 17.7589C16.1183 17.5245 16.25 17.2065 16.25 16.875V3.125C16.25 2.79348 16.1183 2.47554 15.8839 2.24112C15.6495 2.0067 15.3315 1.875 15 1.875H5C4.66848 1.875 4.35054 2.0067 4.11612 2.24112C3.8817 2.47554 3.75 2.79348 3.75 3.125V16.875C3.75 17.2065 3.8817 17.5245 4.11612 17.7589C4.35054 17.9933 4.66848 18.125 5 18.125Z"
-                    stroke="#FFF6E0"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.75 5.9375C13.9226 5.9375 14.0625 5.79759 14.0625 5.625C14.0625 5.45241 13.9226 5.3125 13.75 5.3125C13.5774 5.3125 13.4375 5.45241 13.4375 5.625C13.4375 5.79759 13.5774 5.9375 13.75 5.9375Z"
-                    fill="#FFF6E0"
-                    stroke="#FFF6E0"
-                  />
-                </svg>
-                <p className="text-xs my-auto">General Requirements</p>
-              </div>
-              <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-5">
-                <svg xmlns="http://www.w3.org/2000/svg" className='my-auto w-6 h-6 pt-1' width="20" height="20" viewBox="0 0 20 14" fill="none">
-                  <path
-                    d="M12.25 8.75C9.91375 8.75 5.25 9.91375 5.25 12.25V14H19.25V12.25C19.25 9.91375 14.5863 8.75 12.25 8.75ZM4.375 5.25V2.625H2.625V5.25H0V7H2.625V9.625H4.375V7H7V5.25M12.25 7C13.1783 7 14.0685 6.63125 14.7249 5.97487C15.3813 5.3185 15.75 4.42826 15.75 3.5C15.75 2.57174 15.3813 1.6815 14.7249 1.02513C14.0685 0.368749 13.1783 0 12.25 0C11.3217 0 10.4315 0.368749 9.77513 1.02513C9.11875 1.6815 8.75 2.57174 8.75 3.5C8.75 4.42826 9.11875 5.3185 9.77513 5.97487C10.4315 6.63125 11.3217 7 12.25 7Z"
-                    fill="#FFF6E0"
-                  />
-                </svg>
-                <p className="text-xs my-auto">Available Positions</p>
-              </div>
-              <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-[60px]">
-                <svg xmlns="http://www.w3.org/2000/svg" className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 18 14" fill="none">
-                  <path
-                    d="M0 1.65279C0 0.84767 0.653212 0.194458 1.45833 0.194458H4.375C5.18012 0.194458 5.83333 0.84767 5.83333 1.65279V2.1389H11.6667V1.65279C11.6667 0.84767 12.3199 0.194458 13.125 0.194458H16.0417C16.8468 0.194458 17.5 0.84767 17.5 1.65279V4.56946C17.5 5.37458 16.8468 6.02779 16.0417 6.02779H13.125C12.3199 6.02779 11.6667 5.37458 11.6667 4.56946V4.08335H5.83333V4.56946C5.83333 4.62111 5.8303 4.67276 5.82422 4.72137L8.26389 7.97224H11.1806C11.9857 7.97224 12.6389 8.62545 12.6389 9.43057V12.3472C12.6389 13.1524 11.9857 13.8056 11.1806 13.8056H8.26389C7.45877 13.8056 6.80556 13.1524 6.80556 12.3472V9.43057C6.80556 9.37892 6.80859 9.32727 6.81467 9.27866L4.375 6.02779H1.45833C0.653212 6.02779 0 5.37458 0 4.56946V1.65279Z"
-                    fill="#FFF6E0"
-                  />
-                </svg>
-                <p className="text-xs my-auto">Project List</p>
-              </div>
+              <Link href={'#timeline'}>
+                <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-9">
+                  <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.66667 15.8333H14.5833C16.25 15.8333 17.5 14.5833 17.5 12.9166C17.5 11.25 16.25 9.99998 14.5833 9.99998H12.9167H5.41667C3.75 9.99998 2.5 8.74998 2.5 7.08331C2.5 5.41665 3.75 4.16665 5.41667 4.16665L17.5 4.16665"
+                      stroke="#FFF6E0"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path d="M15.4167 6.25L17.5001 4.16667L15.4167 2.08333" stroke="#FFF6E0" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.50008 15.8333C2.50008 16.9839 3.43282 17.9167 4.58341 17.9167C5.73401 17.9167 6.66675 16.9839 6.66675 15.8333C6.66675 14.6827 5.73401 13.75 4.58341 13.75C3.43282 13.75 2.50008 14.6827 2.50008 15.8333Z"
+                      fill="#FFF6E0"
+                      stroke="#FFF6E0"
+                    />
+                  </svg>
+                  <p className="text-xs my-auto text-end">Project Timeline</p>
+                </div>
+              </Link>
+              <Link href={'/'}>
+                <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end">
+                  <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.25 5.625H8.75M6.25 10H13.75M6.25 12.5H13.75M6.25 15H8.75M5 18.125H15C15.3315 18.125 15.6495 17.9933 15.8839 17.7589C16.1183 17.5245 16.25 17.2065 16.25 16.875V3.125C16.25 2.79348 16.1183 2.47554 15.8839 2.24112C15.6495 2.0067 15.3315 1.875 15 1.875H5C4.66848 1.875 4.35054 2.0067 4.11612 2.24112C3.8817 2.47554 3.75 2.79348 3.75 3.125V16.875C3.75 17.2065 3.8817 17.5245 4.11612 17.7589C4.35054 17.9933 4.66848 18.125 5 18.125Z"
+                      stroke="#FFF6E0"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.75 5.9375C13.9226 5.9375 14.0625 5.79759 14.0625 5.625C14.0625 5.45241 13.9226 5.3125 13.75 5.3125C13.5774 5.3125 13.4375 5.45241 13.4375 5.625C13.4375 5.79759 13.5774 5.9375 13.75 5.9375Z"
+                      fill="#FFF6E0"
+                      stroke="#FFF6E0"
+                    />
+                  </svg>
+                  <p className="text-xs my-auto">General Requirements</p>
+                </div>
+              </Link>
+              <Link href={'/'}>
+                <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 14" fill="none">
+                    <path
+                      d="M12.25 8.75C9.91375 8.75 5.25 9.91375 5.25 12.25V14H19.25V12.25C19.25 9.91375 14.5863 8.75 12.25 8.75ZM4.375 5.25V2.625H2.625V5.25H0V7H2.625V9.625H4.375V7H7V5.25M12.25 7C13.1783 7 14.0685 6.63125 14.7249 5.97487C15.3813 5.3185 15.75 4.42826 15.75 3.5C15.75 2.57174 15.3813 1.6815 14.7249 1.02513C14.0685 0.368749 13.1783 0 12.25 0C11.3217 0 10.4315 0.368749 9.77513 1.02513C9.11875 1.6815 8.75 2.57174 8.75 3.5C8.75 4.42826 9.11875 5.3185 9.77513 5.97487C10.4315 6.63125 11.3217 7 12.25 7Z"
+                      fill="#FFF6E0"
+                    />
+                  </svg>
+                  <p className="text-xs my-auto">Available Positions</p>
+                </div>
+              </Link>
+              <Link href={'#project-list'}>
+                <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-[60px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 18 14" fill="none">
+                    <path
+                      d="M0 1.65279C0 0.84767 0.653212 0.194458 1.45833 0.194458H4.375C5.18012 0.194458 5.83333 0.84767 5.83333 1.65279V2.1389H11.6667V1.65279C11.6667 0.84767 12.3199 0.194458 13.125 0.194458H16.0417C16.8468 0.194458 17.5 0.84767 17.5 1.65279V4.56946C17.5 5.37458 16.8468 6.02779 16.0417 6.02779H13.125C12.3199 6.02779 11.6667 5.37458 11.6667 4.56946V4.08335H5.83333V4.56946C5.83333 4.62111 5.8303 4.67276 5.82422 4.72137L8.26389 7.97224H11.1806C11.9857 7.97224 12.6389 8.62545 12.6389 9.43057V12.3472C12.6389 13.1524 11.9857 13.8056 11.1806 13.8056H8.26389C7.45877 13.8056 6.80556 13.1524 6.80556 12.3472V9.43057C6.80556 9.37892 6.80859 9.32727 6.81467 9.27866L4.375 6.02779H1.45833C0.653212 6.02779 0 5.37458 0 4.56946V1.65279Z"
+                      fill="#FFF6E0"
+                    />
+                  </svg>
+                  <p className="text-xs my-auto">Project List</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
       </div>
       {/* Dashboard End */}
       {/* Project Timeline Start */}
-      <div className="flex justify-center items-center md:mt-60">
+      <div id="timeline" className="flex justify-center items-center md:mt-60">
         <div className="hidden md:block">
           <div
-            className="bg-cover bg-center h-72 w-80 text-center items-center justify-center flex flex-col"
+            className="bg-cover bg-center h-72 w-80 text-center items-center justify-center flex flex-co"
             style={{
               backgroundImage: 'url(/oprec-volunteer/bulet-abstrak-2.png)',
             }}
@@ -188,7 +225,7 @@ export default function OprecPage() {
         </div>
         <div className="md:hidden block">
           <div className="text-center items-center justify-center flex flex-col pb-4">
-            <h1 className="text-3xl font-bold whitespace-nowrap z-10">Project Timeline</h1>
+            <h1 className="text-3xl font-bold whitespace-nowrap z-10 mt-20">Project Timeline</h1>
             <p className="whitespace-nowrap overflow-hidden pt-2 text-xs z-10">Simpan tanggal-tanggal penting dibawah ini!</p>
           </div>
           <div className="relative">
@@ -347,9 +384,9 @@ export default function OprecPage() {
       </div>
       {/* Project Timeline End */}
       {/* Project List Start */}
-      <div className="md:w-full flex flex-col justify-center items-center mt-12 md:mt-32">
+      <div id="project-list" className="md:w-full flex flex-col justify-center items-center mt-12 md:mt-32">
         <div className="mb-7 md:mb-20">
-          <h1 className="text-center text-3xl md:text-6xl font-bold whitespace-nowrap">Project List</h1>
+          <h1 className="text-center text-3xl md:text-6xl font-bold whitespace-nowrap mt-20">Project List</h1>
           <p className="md:pt-2 text-center md:text-sm text-xs">
             Proyek kerja kami membutuhkan bantuanmu,
             <br /> Yuk ramaikan acara-acara proyek kerja ini!
