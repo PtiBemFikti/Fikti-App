@@ -55,7 +55,7 @@ export default function OprecPage() {
                     <p className="text-base">Project Timeline</p>
                   </div>
                 </Link>
-                <Link href={'/'}>
+                <Link href={'#positions'}>
                   <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
                     <svg className="w-6 h-6 mx-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 28 20" fill="none">
                       <g clip-path="url(#clip0_343_8)">
@@ -91,7 +91,7 @@ export default function OprecPage() {
                     <p className="text-base">Project List</p>
                   </div>
                 </Link>
-                <Link href={'/'}>
+                <Link href={'#general'}>
                   <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
                     <svg className="w-6 h-6 mx-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -176,7 +176,7 @@ export default function OprecPage() {
                   <p className="text-xs my-auto">Project List</p>
                 </div>
               </Link>
-              <Link href={'/'}>
+              <Link href={'#general'}>
                 <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end">
                   <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -194,7 +194,7 @@ export default function OprecPage() {
                   <p className="text-xs my-auto">General Requirements</p>
                 </div>
               </Link>
-              <Link href={'/'}>
+              <Link href={'#positions'}>
                 <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-5">
                   <svg xmlns="http://www.w3.org/2000/svg" className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 14" fill="none">
                     <path
@@ -434,25 +434,86 @@ export default function OprecPage() {
         </div>
       </div>
       {/* Project List End */}
-      {/* General Requirements Start */}
-      <div className="relative py-12">
-        <div className="bg-[#662549] w-5/6 h-72 rounded-l-[44px] ml-20 md:hidden block">
-          <div className="py-7 px-8">
-            <div className="">
-              <h1 className='font-bold text-2xl'>General Requirements</h1>
-              <p className='text-center font-light text-xs'>Penuhi syarat dibawah ini untuk meningkatkan peluang diterima sebagai relawan di program kerja</p>
-            </div>
-            <div className="">
-              <div className="">
-                
+      <div className="py-20">
+        <Image src={'/oprec-mobile/line-3-mobile.png'} alt='line' width={471} height={804} className='md:hidden block object-cover absolute w-full mx-auto '/>
+        {/* General Requirements Start */}
+        <div id='general' className="relative pb-12 pt-24">
+          <div className="flex justify-end mt-7">
+            <div className="bg-[#662549] md:w-1/2 w-5/6 md:h-[523px] md:rounded-l-[150px] rounded-l-[44px] z-10">
+              <div className="md:ml-9 py-7 px-8">
+                <div className="md:text-center">
+                  <h1 className="font-bold md:text-5xl text-2xl">General Requirements</h1>
+                  <p className="text-center font-light md:text-lg text-xs">Penuhi syarat dibawah ini untuk meningkatkan peluang diterima sebagai relawan di program kerja</p>
+                </div>
+                <div className="py-7 gap-4 grid md:my-2">
+                  <div className="gap-3 flex">
+                    <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-8 h-4" />
+                    <p className="text-xs text-justify md:text-lg">Mahasiswa aktif FIKTI Universitas Gunadarma</p>
+                  </div>
+                  <div className="gap-3 flex">
+                    <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <p className="text-xs text-justify md:text-lg">Memiliki minat dan kompetensi yang relevan dengan program volunteer yang akan dilaksanakan</p>
+                  </div>
+                  <div className="gap-3 flex">
+                    <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <p className="text-xs text-justify md:text-lg">Bersedia dan berkomitmen untuk menjadi bagian dari kepanitiaan acara dan melaksanakan tugas-tugas dengan penuh tanggung jawab</p>
+                  </div>
+                  <div className="gap-3 flex">
+                    <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <p className="text-xs text-justify md:text-lg">Memiliki kemampuan kerja sama tim, manajemen waktu, dan pemprioritasan yang baik.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        {/* General Requirements End */}
+        {/* Available Positions Start */}
+        <div id='positions' className="px-8 md:hidden block">
+          <div className="pt-24">
+            <h1 className="font-bold text-2xl">Available Positions</h1>
+            <p className="text-sm z-10">Divisi-divisi ini membutuhkan bantuanmu, Mari ramaikan acara-acara proyek ini!</p>
+          </div>
+          <div className="flex relative">
+            <div className="w-1/2 flex relative py-4">
+              <div className="w-56 h-48 backdrop-blur-[4.199999809265137px] bg-[#FFFFFF1A] rounded-tr-3xl rounded-bl-3xl px-3 py-3 gap-2 grid">
+                <div className="flex gap-3">
+                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
+                  <p className="text-xs underline">Divisi Acara</p>
+                </div>
+                <div className="flex gap-3">
+                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
+                  <p className="text-xs underline">Divisi Humas</p>
+                </div>
+                <div className="flex gap-3">
+                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
+                  <p className="text-xs underline">Divisi Sponsorship</p>
+                </div>
+                <div className="flex gap-3">
+                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
+                  <p className="text-xs underline">Divisi Perlengkapan</p>
+                </div>
+                <div className="flex gap-3">
+                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
+                  <p className="text-xs underline">Divisi Konsumsi</p>
+                </div>
+                <div className="flex gap-3">
+                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
+                  <p className="text-xs underline">Divisi Media</p>
+                </div>
+                <div className="flex gap-3">
+                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
+                  <p className="text-xs underline">Divisi Danus</p>
+                </div>
+              </div>
+            </div>
+            <div className="pl-10 pt-3">
+              <Image src={'/oprec-mobile/bejo-3.png'} alt="bejo" width={130} height={180} className="h-52" />
+            </div>
+          </div>
+        </div>
+        {/* Available Positions End */}
       </div>
-      {/* General Requirements End */}
-      {/* Available Positions Start */}
-      {/* Available Positions End */}
     </div>
   );
 }
