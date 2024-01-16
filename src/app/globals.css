@@ -24,3 +24,7 @@ body {
     ),
     linear-gradient(245deg, #340660 0%, #380766 120.85%);
 }
+
+.join {
+  background: linear-gradient(353deg, #270548 58.57%, rgba(39, 5, 72, 0.00) 94.66%);
+}

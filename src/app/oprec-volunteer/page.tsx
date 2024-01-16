@@ -12,7 +12,7 @@ export default function OprecPage() {
         {/* gambar mobile */}
         <Image src={'/oprec-mobile/line-1-mobile.png'} alt="line-1" width={417} height={319} className="object-cover absolute mx-auto w-full -top-8 md:hidden block" />
         <div className="">
-          <Image src={'/oprec-mobile/lingkaran-1-mobile.png'} alt="lingkaran" width={100} height={100} className="object-cover absolute ml-64 w-36 h-36 -top-2 md:hidden block" />
+          <Image src={'/oprec-mobile/lingkaran-1-mobile.png'} alt="lingkaran" width={100} height={100} className="object-cover absolute ml-[246px] w-36 h-36 -top-2 md:hidden block" />
           <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 2" width={85} height={35} className="object-cover absolute right-1 w-10 top-36 md:hidden block" />
         </div>
         <Image src={'/oprec-mobile/dots-mobile.png'} alt="dots 1" width={85} height={35} className="object-cover absolute -ml-1 w-12 h-12 top-14 md:hidden block" />
@@ -143,7 +143,7 @@ export default function OprecPage() {
             <Image src={'/oprec-mobile/bejo-2.png'} alt="bejo" width={2000} height={2000} className="mx-auto" />
           </div>
           <div className="relative text-sm">
-            <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 3" width={300} height={300} className="object-cover absolute w-10 top-64 -right-7" />
+            <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 3" width={300} height={300} className="object-cover absolute w-10 top-64 ml-36" />
             <p className="text-sm ml-2 mt-5 mb-3 text-end">Skip ahead & choose!</p>
             <div className="flex flex-col gap-2">
               <Link href={'#timeline'}>
@@ -318,8 +318,8 @@ export default function OprecPage() {
       </div>
       {/* Timeline Mobile End */}
       <br />
-      <div className="hidden md:block relative">
-        <div className="md:w-[320px] md:h-[120px] flex main items-start flex-column rounded-e-[24px] shadow-md">
+      <div className="relative pt-3">
+        <div className="md:w-[320px] md:h-[120px] w-2/3 h-36 flex main items-start flex-column rounded-e-[24px] shadow-md">
           <div className=" text-md m-auto">
             Hubungi untuk informasi lebih lanjut
             <div className="flex gap-3 mt-2">
@@ -401,7 +401,7 @@ export default function OprecPage() {
               <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">HEROES X</h2>
               <p className="text-xs md:text-sm pt-1">Hero of Educational and Social X</p>
             </div>
-            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
+            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px] bg-cover bg-no-repeat" style={{ backgroundImage: 'url(/oprec-volunteer/list-bg-1.png)' }}>
               <p className="text-sm md:text-lg text-justify">
                 HEROES X (Hero of Education and Social X) adalah kegiatan bakti sosial yang dilaksanakan oleh Mahasiswa/i FIKTI UG di wilayah yang memiliki suatu permasalahan dalam keseharian. Acara ini terdapat kegiatan seperti melakukan
                 sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya. Kegiatan akan berlangsung selama 3 hari.
@@ -412,7 +412,7 @@ export default function OprecPage() {
             <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-t-[48px]">
               <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">TECHNOFAIR 11.0</h2>
             </div>
-            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
+            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px] bg-cover bg-no-repeat" style={{ backgroundImage: 'url(/oprec-volunteer/list-bg-2.png)' }}>
               <p className="text-sm md:text-lg text-justify">
                 TechnoFair adalah program kerja unggulan Departemen akademik BEM FIKTI dan merupakan event IT terbesar di FIKTI yang dilaksanakan setiap tahun untuk mewadahi mahasiswa FIKTI UG dalam menyalurkan minat dan bakat di bidang
                 akademik. Event ini berisi rangkaian acara berupa seminar, workshop, dan kompetisi.
@@ -424,7 +424,7 @@ export default function OprecPage() {
               <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">FIKTI SPACE 3.0</h2>
               <p className="text-xs md:text-sm pt-1">FIKTI Sport & Art Championship</p>
             </div>
-            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px]">
+            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px] bg-cover bg-no-repeat" style={{ backgroundImage: 'url(/oprec-volunteer/list-bg-3.png)' }}>
               <p className="text-sm md:text-lg text-justify">
                 FIKTI SPACE (FIKTI Sport & Art Championship) adalah suatu rangkaian acara gabungan dari dua proker BEM FIKTI UG sebelumnya yaitu FAF dan FOSC berupa kompetisi olahraga dan seni budaya yang dilaksanakan oleh BEM FIKTI UG guna
                 meningkatkan rasa sportivitas dan kreatifitas.
@@ -435,12 +435,18 @@ export default function OprecPage() {
       </div>
       {/* Project List End */}
       <div className="py-20">
-        <Image src={'/oprec-mobile/line-3-mobile.png'} alt='line' width={471} height={804} className='md:hidden block object-cover absolute w-full mx-auto '/>
+        <Image src={'/oprec-mobile/line-3-mobile.png'} alt="line" width={471} height={804} className="md:hidden block object-cover absolute w-full mx-auto " />
         {/* General Requirements Start */}
-        <div id='general' className="relative pb-12 pt-24">
+        <div className="hidden md:block">
+          <Image src={'/oprec-mobile/line-9.png'} alt="line" width={1509} height={1011} className="w-full absolute -mt-7" />
+        </div>
+        <div id="general" className="relative pb-28 pt-28 md:pt-24 md:pb-48">
           <div className="flex justify-end mt-7">
-            <div className="bg-[#662549] md:w-1/2 w-5/6 md:h-[523px] md:rounded-l-[150px] rounded-l-[44px] z-10">
-              <div className="md:ml-9 py-7 px-8">
+            <div className="hidden md:block pr-12">
+              <Image src={'/oprec-mobile/bejo-4.png'} alt="bejo dekstop" width={600} height={600} className="w-full" />
+            </div>
+            <div className="bg-[#662549] md:w-1/2 w-5/6 md:h-[623px] md:rounded-l-[150px] rounded-l-[44px] z-10">
+              <div className="md:ml-9 py-7 px-8 md:py-20">
                 <div className="md:text-center">
                   <h1 className="font-bold md:text-5xl text-2xl">General Requirements</h1>
                   <p className="text-center font-light md:text-lg text-xs">Penuhi syarat dibawah ini untuk meningkatkan peluang diterima sebagai relawan di program kerja</p>
@@ -467,52 +473,181 @@ export default function OprecPage() {
             </div>
           </div>
         </div>
+        <div className="relative -mt-20 md:-mt-48 md:pb-32 flex justify-end">
+          <div className="md:w-[320px] md:h-[120px] w-2/3 h-36 flex main items-start flex-column rounded-l-[24px] shadow-md">
+            <div className=" text-md m-auto">
+              Hubungi untuk informasi lebih lanjut
+              <div className="flex gap-3 mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <g clip-path="url(#clip0_49_303)">
+                    <path
+                      d="M0.0557861 24.7193L1.74422 18.5604C0.703599 16.7539 0.153755 14.712 0.153755 12.6111C0.153755 6.05325 5.49422 0.718872 12.0459 0.718872C15.2269 0.718872 18.2114 1.9559 20.4628 4.20731C22.7077 6.45215 23.9447 9.44325 23.9447 12.6176C23.9447 19.1754 18.6042 24.5098 12.0525 24.5098H12.0459C10.0561 24.5098 8.09954 24.0125 6.36516 23.0632L0.0557861 24.7193ZM6.65297 20.9168L7.01297 21.1329C8.53125 22.0362 10.2722 22.5073 12.0459 22.5139H12.0525C17.5045 22.5139 21.9352 18.0828 21.9352 12.6312C21.9352 9.987 20.9077 7.50637 19.0425 5.64122C17.1773 3.77606 14.6967 2.742 12.0525 2.742C6.60047 2.742 2.16329 7.17309 2.16329 12.6247C2.16329 14.4898 2.68688 16.3095 3.675 17.8868L3.91079 18.26L2.90954 21.9054L6.65297 20.9168Z"
+                      fill="#FFF6E0"
+                    />
+                    <path
+                      d="M0.467819 24.3068L2.09766 18.3575C1.08985 16.6165 0.566257 14.6398 0.566257 12.6176C0.566257 6.28856 5.71688 1.13794 12.0459 1.13794C15.1153 1.13794 18.0019 2.3356 20.168 4.50216C22.3345 6.67528 23.5322 9.55481 23.5256 12.6242C23.5256 18.9533 18.375 24.1039 12.0459 24.1039H12.0394C10.1152 24.1039 8.23032 23.6197 6.55501 22.7098L0.467819 24.3068Z"
+                      fill="url(#paint0_linear_49_303)"
+                    />
+                    <path
+                      d="M0.0557861 24.7193L1.74422 18.5604C0.703599 16.7539 0.153755 14.712 0.153755 12.6111C0.153755 6.05325 5.49422 0.718872 12.0459 0.718872C15.2269 0.718872 18.2114 1.9559 20.4628 4.20731C22.7077 6.45215 23.9447 9.44325 23.9447 12.6176C23.9447 19.1754 18.6042 24.5098 12.0525 24.5098H12.0459C10.0561 24.5098 8.09954 24.0125 6.36516 23.0632L0.0557861 24.7193ZM6.65297 20.9168L7.01297 21.1329C8.53125 22.0362 10.2722 22.5073 12.0459 22.5139H12.0525C17.5045 22.5139 21.9352 18.0828 21.9352 12.6312C21.9352 9.987 20.9077 7.50637 19.0425 5.64122C17.1773 3.77606 14.6967 2.742 12.0525 2.742C6.60047 2.742 2.16329 7.17309 2.16329 12.6247C2.16329 14.4898 2.68688 16.3095 3.675 17.8868L3.91079 18.26L2.90954 21.9054L6.65297 20.9168Z"
+                      fill="url(#paint1_linear_49_303)"
+                    />
+                    <path
+                      d="M9.07453 7.64374C8.85188 7.1464 8.61656 7.13983 8.40703 7.13327C8.23688 7.12671 8.03391 7.12671 7.8375 7.12671C7.64109 7.12671 7.32047 7.1989 7.04578 7.49983C6.77109 7.79421 6.00516 8.51421 6.00516 9.98046C6.00516 11.4401 7.07203 12.8534 7.21594 13.0564C7.36641 13.2528 9.27094 16.3484 12.2948 17.5395C14.8083 18.5276 15.3188 18.3312 15.8616 18.2858C16.4048 18.2333 17.6222 17.5658 17.8706 16.872C18.1195 16.1783 18.1195 15.5825 18.0408 15.4583C17.9686 15.3341 17.7661 15.2619 17.4713 15.1114C17.1769 14.9609 15.7106 14.2409 15.4425 14.143C15.1678 14.045 14.9714 13.9925 14.775 14.2934C14.5786 14.5878 14.0091 15.2619 13.8323 15.4583C13.6622 15.6547 13.4855 15.6809 13.1911 15.5305C12.8967 15.38 11.9344 15.0659 10.8023 14.0576C9.91875 13.2725 9.32344 12.297 9.14672 12.0026C8.97656 11.7083 9.12703 11.5447 9.2775 11.3942C9.40828 11.2634 9.57188 11.0473 9.72235 10.8706C9.87281 10.6939 9.91875 10.5762 10.0167 10.3733C10.1147 10.1769 10.0692 10.0001 9.99047 9.84968C9.91875 9.69874 9.34266 8.23296 9.07453 7.64374Z"
+                      fill="#FFF6E0"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient id="paint0_linear_49_303" x1="11.9967" y1="24.307" x2="11.9967" y2="1.13822" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#20B038" />
+                      <stop offset="1" stop-color="#60D66A" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_49_303" x1="12" y1="24.7193" x2="12" y2="0.719341" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#F9F9F9" />
+                      <stop offset="1" stop-color="white" />
+                    </linearGradient>
+                    <clipPath id="clip0_49_303">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.72168)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                +62-8517-3330-443 (Iqbal)
+              </div>
+              <div className="flex gap-3 mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <g clip-path="url(#clip0_49_343)">
+                    <path d="M20.4 0.72168H3.6C1.61177 0.72168 0 2.33345 0 4.32168V21.1217C0 23.1099 1.61177 24.7217 3.6 24.7217H20.4C22.3882 24.7217 24 23.1099 24 21.1217V4.32168C24 2.33345 22.3882 0.72168 20.4 0.72168Z" fill="#00B900" />
+                    <path
+                      d="M20.7656 11.5498C20.6719 13.6592 19.7812 15.1123 18.375 16.3779C15.8906 18.5811 11.9531 21.2998 11.4375 20.8779C10.9219 20.2217 12.4219 18.6748 10.5 18.4404C6.375 17.8779 3.23438 14.9717 3.23438 11.5498C3.23438 7.70605 7.21875 4.51855 12.0469 4.51855C16.875 4.51855 20.9062 7.70605 20.7656 11.5498Z"
+                      fill="#FFF6E0"
+                    />
+                    <path
+                      d="M17.3906 11.5967H15.7969M17.3906 9.90918H15.7031V13.2842H17.3906M11.625 13.2842V9.90918L14.1562 13.2842V9.90918M9.98438 13.2842V9.90918M6.89062 9.90918V13.2842H8.625"
+                      stroke="#00B900"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_49_343">
+                      <rect width="24" height="24" fill="white" transform="translate(0 0.72168)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                @baliqstic (Iqbal)
+              </div>
+            </div>
+          </div>
+        </div>
         {/* General Requirements End */}
         {/* Available Positions Start */}
-        <div id='positions' className="px-8 md:hidden block">
-          <div className="pt-24">
+        <div id="positions" className="md:px-0 px-8">
+          {/* Divisi mobile */}
+          <div className="pt-24 md:hidden block">
             <h1 className="font-bold text-2xl">Available Positions</h1>
             <p className="text-sm z-10">Divisi-divisi ini membutuhkan bantuanmu, Mari ramaikan acara-acara proyek ini!</p>
           </div>
-          <div className="flex relative">
-            <div className="w-1/2 flex relative py-4">
-              <div className="w-56 h-48 backdrop-blur-[4.199999809265137px] bg-[#FFFFFF1A] rounded-tr-3xl rounded-bl-3xl px-3 py-3 gap-2 grid">
-                <div className="flex gap-3">
-                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
-                  <p className="text-xs underline">Divisi Acara</p>
+          <div className="flex relative md:pt-32">
+            <div className="hidden md:block">
+              <Image src={'/oprec-volunteer/persegi-panjang.png'} alt="persegi panjang" width={90} height={443} className="absolute flex justify-start z-10 pt-4" />
+            </div>
+            <div className="w-1/2 md:w-2/3 flex relative py-4">
+              <div className="w-56 h-48 md:w-3/4 md:h-[443px] backdrop-blur-[4.199999809265137px] bg-[#FFFFFF1A] rounded-tr-3xl rounded-bl-3xl md:rounded-r-[64px] md:rounded-l-none px-3 py-3 md:py-4 gap-2 grid">
+                <div className="md:px-40 md:py-10 hidden md:block md:w-full md:ml-9">
+                  <h1 className="font-bold text-4xl text-center">Available Positions</h1>
+                  <p className="text-center text-md z-10">Divisi-divisi dibawah ini membutuhkan bantuanmu, Yuk ramaikan acara-acara proyek kerja ini!</p>
                 </div>
-                <div className="flex gap-3">
-                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
-                  <p className="text-xs underline">Divisi Humas</p>
-                </div>
-                <div className="flex gap-3">
-                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
-                  <p className="text-xs underline">Divisi Sponsorship</p>
-                </div>
-                <div className="flex gap-3">
-                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
-                  <p className="text-xs underline">Divisi Perlengkapan</p>
-                </div>
-                <div className="flex gap-3">
-                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
-                  <p className="text-xs underline">Divisi Konsumsi</p>
-                </div>
-                <div className="flex gap-3">
-                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
-                  <p className="text-xs underline">Divisi Media</p>
-                </div>
-                <div className="flex gap-3">
-                  <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} />
-                  <p className="text-xs underline">Divisi Danus</p>
+                <div className="md:pl-40 md:-mt-32 md:flex md:justify-center md:-ml-20 md:gap-7 md:pb-12">
+                  <div className="grid gap-2 md:-mt-2">
+                    <div className="flex gap-4">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Acara</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-6">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Humas</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-6">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Sponsorship</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-6">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Perlengkapan</p>
+                    </div>
+                  </div>
+                  <div className="mt-2 grid gap-2 md:-mt-2">
+                    <div className="flex gap-4">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Konsumsi</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-11">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Media</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-14">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Danus</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="pl-10 pt-3">
-              <Image src={'/oprec-mobile/bejo-3.png'} alt="bejo" width={130} height={180} className="h-52" />
+            <div className="pl-10 pt-10 md:-ml-48 md:-mt-16">
+              <Image src={'/oprec-volunteer/bejo-5.png'} alt="bejo" width={500} height={500} className="w-full hidden md:block" />
+              <Image src={'/oprec-mobile/bejo-3.png'} alt="bejo" width={130} height={180} className="w-full md:hidden block" />
             </div>
           </div>
         </div>
         {/* Available Positions End */}
+        {/* Join Start */}
+        <div className="join relative w-full pt-20 top-20 md:pt-28">
+          <div className="pb-10">
+            <div className="flex justify-center items-center">
+              <Image src={'/oprec-volunteer/text-line.png'} alt="text line" width={128} height={22} className="absolute object-cover w-52 md:w-56 mx-auto mt-24 md:mt-28 md:mr-80" />
+            </div>
+            <div className="md:flex md:justify-center md:items-center md:gap-20">
+              <div className="grid gap-6">
+                <h1 className="text-center text-5xl font-bold z-10 font-Lato md:text-start md:text-6xl">Join us.</h1>
+                <p className="text-center text-sm md:text-justify md:text-md">
+                  Kami mengajak kamu untuk bergabung <br /> dengan kami dan membuat perbedaan. <br /> Daftarkan diri kamu sekarang juga!
+                </p>
+              </div>
+              <Link href={'https://forms.gle/xC9AfiJyr8srdDZB8'}>
+                <div className="flex justify-center items-center py-7">
+                  <div className="flex items-center justify-center w-52 h-16 gap-2 bg-[#F39F5A] rounded-full">
+                    <button className="text-xl font-bold">Join Now!</button>
+                    <svg className="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 21 20" fill="none">
+                      <rect x="0.75" y="0.75" width="19.5" height="18.5" rx="9.25" stroke="#FFF6E0" stroke-width="1.5" />
+                      <path
+                        d="M7 4.57176L7 14.8575C7.00031 14.9616 7.02716 15.0637 7.07767 15.1527C7.12819 15.2417 7.20045 15.3144 7.28667 15.3627C7.3729 15.4111 7.46983 15.4334 7.56703 15.4272C7.66423 15.4211 7.75802 15.3867 7.8383 15.3278L14.784 10.1849C15.072 9.97176 15.072 9.45861 14.784 9.2449L7.8383 4.10204C7.75818 4.04251 7.66435 4.0076 7.56699 4.00111C7.46963 3.99461 7.37246 4.01678 7.28605 4.06519C7.19964 4.11361 7.12729 4.18643 7.07686 4.27574C7.02643 4.36504 6.99985 4.46742 7 4.57176Z"
+                        fill="#FFF6E0"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="">
+              <Image src={'/oprec-volunteer/line-10.png'} alt="line" width={22} height={33} className="md:hidden block w-10 ml-14 -mt-5" />
+              <div className="flex justify-end items-end">
+                <svg className="mr-96 -mt-12" xmlns="http://www.w3.org/2000/svg" width="40" height="78" viewBox="0 0 68 105" fill="none">
+                  <path
+                    opacity="0.5"
+                    d="M0.334608 11C0.334608 16.891 5.11024 21.6667 11.0013 21.6667C16.8923 21.6667 21.6679 16.891 21.6679 11C21.6679 5.10896 16.8923 0.333333 11.0013 0.333333C5.11024 0.333333 0.334608 5.10896 0.334608 11ZM55.3669 46.1873L53.3692 46.0926L55.3669 46.1873ZM11.0013 78.0757L13.0011 78.0501L11.0013 78.0757ZM65.9506 104.999C67.0548 105.027 67.9721 104.154 67.9994 103.049C68.0267 101.945 67.1536 101.028 66.0494 101.001L65.9506 104.999ZM11.0013 11C10.4468 12.9216 10.4466 12.9215 10.4465 12.9215C10.4467 12.9216 10.4468 12.9216 10.4472 12.9217C10.448 12.9219 10.4495 12.9224 10.4517 12.923C10.456 12.9243 10.4631 12.9263 10.4728 12.9292C10.4923 12.9349 10.5225 12.9437 10.563 12.9558C10.6441 12.9798 10.7665 13.0164 10.9276 13.0656C11.2497 13.1638 11.7261 13.3119 12.3344 13.5089C13.5513 13.9029 15.2943 14.4919 17.3849 15.2675C21.5722 16.8211 27.125 19.1128 32.629 22.0734C38.151 25.0436 43.522 28.6332 47.425 32.7487C51.3273 36.8634 53.5954 41.3182 53.3692 46.0926L57.3647 46.2819C57.6616 40.0142 54.6455 34.5494 50.3274 29.9962C46.0099 25.4436 40.2241 21.6167 34.5239 18.5507C28.8058 15.475 23.071 13.1107 18.7762 11.5173C16.6258 10.7195 14.8291 10.1122 13.5666 9.70342C12.9352 9.49897 12.437 9.34401 12.0944 9.23953C11.9232 9.18729 11.7907 9.14766 11.7 9.12077C11.6547 9.10732 11.6197 9.09705 11.5956 9.08999C11.5835 9.08645 11.5741 9.08372 11.5674 9.08178C11.5641 9.08082 11.5615 9.08005 11.5595 9.07949C11.5585 9.0792 11.5576 9.07893 11.5571 9.07879C11.5563 9.07856 11.5557 9.07839 11.0013 11ZM53.3692 46.0926C53.1588 50.5324 50.8156 53.3154 47.0078 55.4067C43.0637 57.5727 37.8164 58.838 32.236 60.1785C26.8187 61.4798 21.05 62.8591 16.6839 65.3544C14.4636 66.6233 12.5038 68.2333 11.1135 70.3614C9.70916 72.511 8.96269 75.0725 9.00144 78.1013L13.0011 78.0501C12.9716 75.7463 13.5289 73.9777 14.4622 72.5492C15.4095 71.0991 16.8214 69.883 18.6687 68.8272C22.4379 66.6731 27.5883 65.4088 33.1703 64.0679C38.5893 62.7661 44.4214 61.3905 48.9332 58.9127C53.5812 56.3601 57.0702 52.4963 57.3647 46.2819L53.3692 46.0926ZM9.00144 78.1013C9.0884 84.8988 13.1348 89.9325 18.6138 93.5796C24.0707 97.212 31.2004 99.6583 38.1478 101.322C45.1247 102.994 52.0701 103.911 57.2568 104.411C59.8541 104.662 62.0193 104.809 63.5384 104.893C64.2981 104.935 64.8967 104.961 65.3076 104.978C65.513 104.986 65.6715 104.991 65.7798 104.994C65.8339 104.996 65.8755 104.997 65.9041 104.998C65.9184 104.999 65.9295 104.999 65.9372 104.999C65.9411 104.999 65.9442 104.999 65.9464 104.999C65.9475 104.999 65.9486 104.999 65.9491 104.999C65.95 104.999 65.9506 104.999 66 103C66.0494 101.001 66.0496 101.001 66.0496 101.001C66.0494 101.001 66.0492 101.001 66.0486 101.001C66.0475 101.001 66.0456 101.001 66.0428 101C66.0374 101 66.0286 101 66.0166 101C65.9926 100.999 65.9557 100.998 65.9064 100.996C65.8076 100.993 65.659 100.988 65.4637 100.981C65.0732 100.965 64.4964 100.94 63.7599 100.899C62.2866 100.817 60.1762 100.674 57.6409 100.43C52.5625 99.9398 45.8147 99.0458 39.0796 97.4325C32.315 95.8121 25.7139 93.5007 20.8303 90.2498C15.9688 87.0138 13.0649 83.0388 13.0011 78.0501L9.00144 78.1013Z"
+                    fill="#FFF6E0"
+                  />
+                </svg>
+              </div>
+              <div className="md:flex md:justify-end">
+                <div className="w-40 ml-5 -mt-3 md:mr-44 md:w-48 md:-mt-5">
+                  <p className="text-justify text-md font-light opacity-50">kamu akan dialihkan ke link formulir pendaftaran yang kami sediakan!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Join End */}
       </div>
     </div>
   );
