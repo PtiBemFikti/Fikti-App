@@ -1,8 +1,37 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import 'animate.css';
+import { useEffect, useState } from 'react';
 
 export default function OprecPage() {
+  // useEffect(() => {
+  //   const modal = document.getElementById('modal');
+  //   const btn = document.getElementById('btn');
+  //   const img = document.getElementById('img');
+  //   // const [isHidden, setIsHidden] = useState(true);
+
+  //   const btnAnimate = () => {
+  //     modal?.classList.remove('animate__fadeInRight', 'animate__fadeOutRight');
+  //     modal?.classList.add('animate__animated', 'animate__fadeInRight');
+
+  //     setTimeout(() => {
+  //       modal?.classList.remove('animate__fadeInRight');
+  //       modal?.classList.add('animate__animated', 'animate__fadeOutRight');
+  //     }, 2000);
+  //   };
+
+  //   if (btn?.addEventListener('click', btnAnimate)) {
+  //     return () => {
+  //       btn.removeEventListener('click', btnAnimate);
+  //     };
+  //   } else {
+  //     return img;
+  //   }
+  // }, []);
+
   return (
     <div className="main w-full font-Lato text-[#FFF6E0]">
       {/* Dashboard Start */}
@@ -559,44 +588,70 @@ export default function OprecPage() {
                 </div>
                 <div className="md:pl-40 md:-mt-32 md:flex md:justify-center md:-ml-20 md:gap-7 md:pb-12">
                   <div className="grid gap-2 md:-mt-2">
-                    <div className="flex gap-4">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Acara</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-6">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Humas</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-6">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Sponsorship</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-6">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Perlengkapan</p>
-                    </div>
+                    <button id="btn">
+                      <div className="flex gap-4">
+                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                        <p className="text-xs md:text-xl underline md:pb-1 hover:text-[#F39F5A] after:text-[#B67744]">Divisi Acara</p>
+                      </div>
+                    </button>
+                    <button>
+                      <div className="flex gap-4 md:-mt-6">
+                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                        <p className="text-xs md:text-xl underline md:pb-1 hover:text-[#F39F5A] after:text-[#B67744]">Divisi Humas</p>
+                      </div>
+                    </button>
+                    <button>
+                      <div className="flex gap-4 md:-mt-6">
+                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                        <p className="text-xs md:text-xl underline md:pb-1 hover:text-[#F39F5A] after:text-[#B67744]">Divisi Sponsorship</p>
+                      </div>
+                    </button>
+                    <button>
+                      <div className="flex gap-4 md:-mt-6">
+                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                        <p className="text-xs md:text-xl underline md:pb-1 hover:text-[#F39F5A] after:text-[#B67744]">Divisi Perlengkapan</p>
+                      </div>
+                    </button>
                   </div>
                   <div className="mt-2 grid gap-2 md:-mt-2">
-                    <div className="flex gap-4">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Konsumsi</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-11">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Media</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-14">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl underline md:pb-1">Divisi Danus</p>
-                    </div>
+                    <button>
+                      <div className="flex gap-4">
+                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                        <p className="text-xs md:text-xl underline md:pb-1 hover:text-[#F39F5A] after:text-[#B67744]">Divisi Konsumsi</p>
+                      </div>
+                    </button>
+                    <button>
+                      <div className="flex gap-4 md:-mt-11">
+                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                        <p className="text-xs md:text-xl underline md:pb-1 hover:text-[#F39F5A] after:text-[#B67744]">Divisi Media</p>
+                      </div>
+                    </button>
+                    <button>
+                      <div className="flex gap-4 md:-mt-14">
+                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                        <p className="text-xs md:text-xl underline md:pb-1 hover:text-[#F39F5A] after:text-[#B67744]">Divisi Danus</p>
+                      </div>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div className="pl-10 pt-10 md:-ml-48 md:-mt-16">
               <Image src={'/oprec-volunteer/bejo-5.png'} alt="bejo" width={500} height={500} className="w-full hidden md:block" />
-              <Image src={'/oprec-mobile/bejo-3.png'} alt="bejo" width={130} height={180} className="w-full md:hidden block" />
+              <Image id="img" src={'/oprec-mobile/bejo-3.png'} alt="bejo" width={130} height={180} className="w-full md:hidden block" />
             </div>
+            {/* Modal Box Start*/}
+            <div id="modal" className="-ml-6 mt-5 hidden">
+              <div className="w-40 h-20 md:w-40 mx-auto flex flex-col">
+                <div className="bg-[#270548] w-full h-26 px-6 py-7 rounded-t-[48px]">
+                  <h2 className="text-xl md:text-3xl font-bold whitespace-nowrap">Divisi Acara</h2>
+                </div>
+                <div className="px-7 md:px-auto py-5 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px] bg-cover bg-no-repeat">
+                  <p className=" text-[9px] md:text-lg text-center">Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll</p>
+                </div>
+              </div>
+            </div>
+            {/* Modal Box End */}
           </div>
         </div>
         {/* Available Positions End */}
@@ -615,7 +670,7 @@ export default function OprecPage() {
               </div>
               <Link href={'https://forms.gle/xC9AfiJyr8srdDZB8'}>
                 <div className="flex justify-center items-center py-7">
-                  <div className="flex items-center justify-center w-52 h-16 gap-2 bg-[#F39F5A] rounded-full">
+                  <div className="flex items-center justify-center w-52 h-16 gap-2 bg-[#F39F5A] rounded-full hover:bg-[#C27F48] hover:transition-colors">
                     <button className="text-xl font-bold">Join Now!</button>
                     <svg className="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 21 20" fill="none">
                       <rect x="0.75" y="0.75" width="19.5" height="18.5" rx="9.25" stroke="#FFF6E0" stroke-width="1.5" />

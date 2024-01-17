@@ -13,6 +13,7 @@
     "@iconify/icons-ic": "^1.2.13",
     "@iconify/react": "^4.1.1",
     "@motionone/utils": "^10.16.3",
+    "animate.css": "^4.1.1",
     "framer-motion": "^10.16.12",
     "next": "^14.0.3",
     "popmotion": "^11.0.5",
