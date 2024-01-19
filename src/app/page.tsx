@@ -1,12 +1,12 @@
 "use client";
 
-import Dashboard from "../components/dashboard";
-import Dept from "@/components/dept";
-import VisiMisi from "@/components/visimisi";
-import CoreValue from "@/components/coreValue";
-import ParallaxText from "@/components/parallaxText";
+import Dashboard from "../components/landing-page/dashboard";
+import Dept from "@/components/landing-page/dept";
+import VisiMisi from "@/components/landing-page/visimisi";
+import CoreValue from "@/components/landing-page/coreValue";
+import ParallaxText from "@/components/landing-page/parallaxText";
 import { motion, useScroll, useSpring } from "framer-motion";
-import { Example } from "@/components/slider";
+import { Example } from "@/components/landing-page/slider";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();

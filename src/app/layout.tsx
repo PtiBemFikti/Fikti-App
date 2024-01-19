@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Lato, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import Navbar from "@/components/landing-page/navbar";
+import Footer from "@/components/landing-page/footer";
 
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
