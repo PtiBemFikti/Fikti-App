@@ -5,121 +5,61 @@ import Image from 'next/image';
 import Link from 'next/link';
 import 'animate.css';
 import { useEffect, useState } from 'react';
-import { animate } from 'framer-motion';
-import { useAnimate, stagger, motion } from 'framer-motion';
-
-// const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
-
-// function useMenuAnimation(isOpen: boolean) {
-//   const [scope, animate] = useAnimate();
-
-//   useEffect(() => {
-//     animate('.arrow', { rotate: isOpen ? 180 : 0 }, { duration: 0.2 });
-
-//     animate(
-//       'ul',
-//       {
-//         clipPath: isOpen ? 'inset(0% 0% 0% 0% round 10px)' : 'inset(10% 50% 90% 50% round 10px)',
-//       },
-//       {
-//         type: 'spring',
-//         bounce: 0,
-//         duration: 0.5,
-//       }
-//     );
-
-//     animate('li', isOpen ? { opacity: 1, scale: 1, filter: 'blur(0px)' } : { opacity: 0, scale: 0.3, filter: 'blur(20px)' }, {
-//       duration: 0.2,
-//       delay: isOpen ? staggerMenuItems : 0,
-//     });
-//   }, [isOpen]);
-
-//   return scope;
-// }
 
 export default function OprecPage() {
-  // const descriptions = [
-  //   {
-  //     title: 'Divisi Acara',
-  //     deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll'
-  //   },
-  //   {
-  //     title: 'Divisi Humas',
-  //     deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll'
-  //   },
-  //   {
-  //     title: 'Divisi Sponsorship',
-  //     deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll'
-  //   },
-  //   {
-  //     title: 'Divisi Perlengkapan',
-  //     deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll'
-  //   },
-  //   {
-  //     title: 'Divisi Konsumsi',
-  //     deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll'
-  //   },
-  //   {
-  //     title: 'Divisi Media',
-  //     deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll'
-  //   },
-  //   {
-  //     title: 'Divisi Danus',
-  //     deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll'
-  //   },
-  // ];
+  const descriptions = [
+    {
+      title: 'Divisi Acara',
+      deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll',
+    },
+    {
+      title: 'Divisi Humas',
+      deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll',
+    },
+    {
+      title: 'Divisi Sponsorship',
+      deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll',
+    },
+    {
+      title: 'Divisi Perlengkapan',
+      deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll',
+    },
+    {
+      title: 'Divisi Konsumsi',
+      deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll',
+    },
+    {
+      title: 'Divisi Media',
+      deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll',
+    },
+    {
+      title: 'Divisi Danus',
+      deksripsi: 'Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll',
+    },
+  ];
 
-  // const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  // const [currentIndex, setCurrentIndex] = useState(0)
 
-  // const btnAnimate = () => {
-  //   setShowModal(true);
-  // };
+  const btnAnimate = () => {
+    setShowModal(true);
+    // setCurrentIndex(index)
+  };
 
-  // useEffect(() => {
-  //   let timeout: any;
-  //   if (showModal) {
-  //     timeout = setTimeout(() => {
-  //       setShowModal(false);
-  //     }, 5000);
-  //   }
-  //   return () => {
-  //     clearTimeout(timeout);
-  //   };
-  // }, [showModal]);
-  // const [isOpen, setIsOpen] = useState(false);
-  // const scope = useMenuAnimation(isOpen);
+  useEffect(() => {
+    let timeout: any;
+    if (showModal) {
+      timeout = setTimeout(() => {
+        setShowModal(false);
+      }, 5000);
+    }
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [showModal]);
 
   return (
     <div className="main w-full font-Lato text-[#FFF6E0]">
-      {/* <div
-        style={{
-          position: "fixed",
-          bottom: -210,
-          left: 200,
-          width: 100,
-          height: 100,
-          background: "white",
-        }}
-      />
-      <motion.button
-        whileTap={{ scale: 0.97 }}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        Menu
-        <div className="arrow" style={{ transformOrigin: "50% 55%" }}>
-          <svg width="15" height="15" viewBox="0 0 20 20">
-            <path d="M0 7 L 20 7 L 10 16" />
-          </svg>
-        </div>
-      </motion.button>
-      <ul
-        style={{
-          pointerEvents: isOpen ? "auto" : "none",
-          clipPath: "inset(10% 50% 90% 50% round 10px)",
-        }}
-      >
-        <p>Diadiand</p>
-      </ul>{" "} */}
       {/* Dashboard Start */}
       <div className="flex relative">
         <Image src={'/oprec-volunteer/line-9.png'} alt="line-bg" width={1029} height={975} className="object-cover absolute mx-auto w-full -top-7 hidden md:block" />
@@ -679,20 +619,20 @@ export default function OprecPage() {
               <Image src={'/oprec-volunteer/persegi-panjang.png'} alt="persegi panjang" width={90} height={443} className="absolute flex justify-start z-10 pt-4" />
             </div>
             <div className="w-1/2 md:w-2/3 flex relative py-4">
-              <div className="w-56 h-48 md:w-3/4 md:h-[443px] backdrop-blur-[4.199999809265137px] bg-[#FFFFFF1A] rounded-tr-3xl rounded-bl-3xl md:rounded-r-[64px] md:rounded-l-none px-3 py-3 md:py-4 gap-2 grid z-10">
+              <div className="w-56 h-48 md:w-3/4 md:h-[443px] backdrop-blur-[4.199999809265137px] bg-[#FFFFFF1A] rounded-tr-3xl rounded-bl-3xl md:rounded-r-[64px] md:rounded-l-none px-3 py-3 md:py-4 gap-2 grid">
                 <div className="md:px-40 md:py-10 hidden md:block md:w-full md:ml-9">
                   <h1 className="font-bold text-4xl text-center">Available Positions</h1>
                   <p className="text-center text-md z-10">Divisi-divisi dibawah ini membutuhkan bantuanmu, Yuk ramaikan acara-acara proyek kerja ini!</p>
                 </div>
                 <div className="md:pl-40 md:-mt-32 md:flex md:justify-center md:-ml-20 md:gap-7 md:pb-12">
                   <div className="grid gap-2 md:-mt-2">
-                    <button type="button">
+                    <button type="button" onClick={btnAnimate}>
                       <div className="flex gap-4">
                         <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
                         <p className="text-xs md:text-xl underline md:pb-1 hover:text-[#F39F5A] after:text-[#B67744]">Divisi Acara</p>
                       </div>
                     </button>
-                    <button type="button">
+                    <button type="button" onClick={btnAnimate}>
                       <div className="flex gap-4 md:-mt-6">
                         <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
                         <p className="text-xs md:text-xl underline md:pb-1 hover:text-[#F39F5A] after:text-[#B67744]">Divisi Humas</p>
@@ -737,27 +677,29 @@ export default function OprecPage() {
             <div className="md:hidden block">
               <Image src={'/oprec-mobile/dots-6.png'} alt="dots" width={85} height={35} className="w-28 mt-32 -ml-10 absolute" />
             </div>
-            <div className="pl-10 pt-10 md:-ml-48 md:-mt-16 relative">
+            <div className={`pl-10 pt-10 md:-ml-48 md:-mt-16 relative animate__animated ${showModal ? 'animate__fadeOutRight' : 'animate__fadeInRight'}`}>
               <Image src={'/oprec-volunteer/bejo-5.png'} alt="bejo" width={500} height={500} className="w-full hidden md:block" />
-              <Image src={'/oprec-mobile/bejo-3.png'} alt="bejo" width={130} height={180} className={`w-full md:hidden block z-10`} />
+              <Image src={'/oprec-mobile/bejo-3.png'} alt="bejo" width={130} height={180} className={`w-full md:hidden block z-10 `} />
             </div>
 
             <div className="md:block hidden">
               <Image src={'/oprec-mobile/dots-3.png'} alt="dots" width={170} height={90} className="w-24 -ml-3 absolute" />
             </div>
             {/* Modal Box Start*/}
-            {/* <div className={`relative p-4 w-full max-w-2xl max-h-full`}>
-              <div className="-ml-10 relative">
-                <div className="w-40 md:w-2/3 mx-auto flex flex-col">
-                  <div className="bg-[#270548] w-full h-26 px-6 py-7 rounded-t-[48px]">
-                    <h2 className="text-xl md:text-3xl font-bold whitespace-nowrap text-center">Divisi Acara</h2>
-                  </div>
-                  <div className="px-7 md:px-auto py-5 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px] bg-cover bg-no-repeat">
-                    <p className="text-[9px] md:text-2xl text-center">Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll</p>
+            {showModal && (
+              <div className={`relative p-4 w-full max-w-2xl max-h-full z-10`}>
+                <div className={`-ml-10 relative animate__animated ${!showModal ? 'animate__fadeOutRight' : 'animate__fadeInRight'}`}>
+                  <div className="w-40 md:w-1/2 mx-auto flex flex-col">
+                    <div className="bg-[#270548] w-full h-26 px-6 py-7 rounded-t-[48px]">
+                      <h2 className="text-xl md:text-3xl font-bold whitespace-nowrap text-center">Divisi Acara</h2>
+                    </div>
+                    <div className="px-7 md:px-auto py-5 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px] bg-cover bg-no-repeat">
+                      <p className="text-[9px] md:text-2xl text-center">Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div> */}
+            )}
             {/* Modal Box End */}
           </div>
         </div>
