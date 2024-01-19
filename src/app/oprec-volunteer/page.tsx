@@ -27,8 +27,8 @@ export default function OprecPage() {
         <div className="bg-[#662549] w-3/4 h-44 rounded-e-[40px] md:w-2/3 md:h-5/6 md:rounded-e-[200px] mt-28 md:mt-36 z-10">
           <div className="md:ml-20 md:my-12 md:py-12">
             <div className="ml-3 my-4">
-              <h2 className="text-md md:text-4xl">Open Recruitment Volunteer</h2>
-              <h1 className="text-3xl md:text-6xl font-bold">Harmoni Serasi</h1>
+              <h2 className="text-lg md:text-5xl font-bold  pb-3">Open Recruitment Volunteer</h2>
+              <h1 className="text-md md:text-4xl">BEM FIKTI UG 2023 / 2024</h1>
             </div>
             <div className="md:ml-0">
               <div className="ml-3 my-4">
@@ -329,9 +329,9 @@ export default function OprecPage() {
       <div className="relative pt-3">
         <div className="md:w-[320px] md:h-36 w-2/3 h-28 flex main items-start flex-column rounded-e-[24px] shadow-md">
           <div className=" text-md m-auto">
-            <p className='text-xs md:text-lg'>Hubungi untuk informasi lebih lanjut</p>
+            <p className="text-xs md:text-lg">Hubungi untuk informasi lebih lanjut</p>
             <div className="flex gap-3 mt-2">
-              <svg className='w-5 md:w-8' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+              <svg className="w-5 md:w-8" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                 <g clip-path="url(#clip0_49_303)">
                   <path
                     d="M0.0557861 24.7193L1.74422 18.5604C0.703599 16.7539 0.153755 14.712 0.153755 12.6111C0.153755 6.05325 5.49422 0.718872 12.0459 0.718872C15.2269 0.718872 18.2114 1.9559 20.4628 4.20731C22.7077 6.45215 23.9447 9.44325 23.9447 12.6176C23.9447 19.1754 18.6042 24.5098 12.0525 24.5098H12.0459C10.0561 24.5098 8.09954 24.0125 6.36516 23.0632L0.0557861 24.7193ZM6.65297 20.9168L7.01297 21.1329C8.53125 22.0362 10.2722 22.5073 12.0459 22.5139H12.0525C17.5045 22.5139 21.9352 18.0828 21.9352 12.6312C21.9352 9.987 20.9077 7.50637 19.0425 5.64122C17.1773 3.77606 14.6967 2.742 12.0525 2.742C6.60047 2.742 2.16329 7.17309 2.16329 12.6247C2.16329 14.4898 2.68688 16.3095 3.675 17.8868L3.91079 18.26L2.90954 21.9054L6.65297 20.9168Z"
@@ -364,10 +364,10 @@ export default function OprecPage() {
                   </clipPath>
                 </defs>
               </svg>
-              <p className='text-xs md:text-lg pt-1 md:pt-0'>+62-8517-3330-443 (Iqbal)</p>
+              <p className="text-xs md:text-lg pt-1 md:pt-0">+62-8517-3330-443 (Iqbal)</p>
             </div>
             <div className="flex gap-3 mt-2">
-              <svg className='w-5 md:w-8' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+              <svg className="w-5 md:w-8" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                 <g clip-path="url(#clip0_49_343)">
                   <path d="M20.4 0.72168H3.6C1.61177 0.72168 0 2.33345 0 4.32168V21.1217C0 23.1099 1.61177 24.7217 3.6 24.7217H20.4C22.3882 24.7217 24 23.1099 24 21.1217V4.32168C24 2.33345 22.3882 0.72168 20.4 0.72168Z" fill="#00B900" />
                   <path
@@ -387,7 +387,7 @@ export default function OprecPage() {
                   </clipPath>
                 </defs>
               </svg>
-              <p className='text-xs md:text-lg pt-1 md:pt-0'>@afifahzhra_ (Afifah)</p>
+              <p className="text-xs md:text-lg pt-1 md:pt-0">@afifahzhra_ (Afifah)</p>
             </div>
           </div>
         </div>
@@ -446,12 +446,35 @@ export default function OprecPage() {
         </div>
       </div>
       {/* Project List End */}
+      {/* Penjelasan Divisi Start */}
+      <div className="">
+        {/* AccordionCard Start*/}
+        <div className="container mx-auto px-4 my-16 md:my-14">
+          <AccordionCard title="Divisi Acara" content="Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll" />
+          <AccordionCard
+            title="Divisi Humas"
+            content="Membangun komunikasi yang aktif  dan memelihara hubungan yang baik dengan pihak internal maupun eksternal. Seperti menyampaikan informasi melalui social media, mengadakan live report, publikasi kegiatan, menjadi contact person, dll"
+          />
+          <AccordionCard
+            title="Divisi Sponsorship"
+            content="Menjadi penghubung dengan pihak eksternal dalam membantu menyukseskan acara. Seperti menyusun proposal sponsor, membuat keperluan yang dibutuhkan dalam kerja sama, mencari dan menghubungi pihak sponsor/partner, dll"
+          />
+          <AccordionCard
+            title="Divisi Perlengkapan"
+            content="Pengelolaan keperluan perlengkapan yang akan dibutuhkan ketika acara berlangsung. Seperti melakukan survey tempat, mengkoordinir persiapan serta peminjaman     alat perlengkapan selama rangkaian acara, dll"
+          />
+          <AccordionCard title="Divisi Konsumsi" content="Mengatur keuangan dalam mencari konsumsi yang ada. Seperti menyiapkan konsumsi untuk panitia dan peserta, bekerja sama dengan divisi sponsor untuk sponsor makanan,dll" />
+          <AccordionCard title="Divisi Media" content="Pembuatan konten menarik dan dokumentasi selama acara berlangsung. Seperti mengelola pembuatan berbagai design yang dibutuhkan dalam acara, melakukan dokumentasi, dll" />
+          <AccordionCard title="Divisi Danus" content="Mencari dana dan mengelola dana yang akan digunakan untuk acara. Seperti mencari ide danusan, mendata pemasukan dari penjualan, aktif dalam kegiatan danusan, dll" />
+          <AccordionCard title="Divisi Kesehatan" content="Mencari dana dan mengelola dana yang akan digunakan untuk acara. Seperti mencari ide danusan, mendata pemasukan dari penjualan, aktif dalam kegiatan danusan, dll" />
+        </div>
+        {/* AccordionCard End*/}
+      </div>
+      {/* Penjelasan Divisi End */}
       <div className="py-20">
         <Image src={'/oprec-mobile/line-3-mobile.png'} alt="line" width={471} height={804} className="md:hidden block object-cover absolute w-full mx-auto " />
         {/* General Requirements Start */}
-        <div className="md:block hidden relative">
-          {/* <Image src={'/oprec-mobile/dots-3.png'} alt="dots" width={170} height={90} className="w-24 ml-[1325px] mt-10 absolute" /> */}
-        </div>
+        <div className="md:block hidden relative">{/* <Image src={'/oprec-mobile/dots-3.png'} alt="dots" width={170} height={90} className="w-24 ml-[1325px] mt-10 absolute" /> */}</div>
         <div className="hidden md:block">
           <Image src={'/oprec-mobile/line-9.png'} alt="line" width={1509} height={1011} className="w-full absolute -mt-7" />
         </div>
@@ -495,9 +518,9 @@ export default function OprecPage() {
         <div className="relative -mt-20 md:-mt-48 md:pb-32 flex justify-end">
           <div className="md:w-[320px] md:h-36 w-2/3 h-28 flex main items-start flex-column rounded-l-[24px] shadow-md">
             <div className=" text-md m-auto">
-              <p className='text-xs md:text-lg'>Hubungi untuk informasi lebih lanjut</p>
+              <p className="text-xs md:text-lg">Hubungi untuk informasi lebih lanjut</p>
               <div className="flex gap-3 mt-2">
-                <svg className='w-5 md:w-8' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <svg className="w-5 md:w-8" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g clip-path="url(#clip0_49_303)">
                     <path
                       d="M0.0557861 24.7193L1.74422 18.5604C0.703599 16.7539 0.153755 14.712 0.153755 12.6111C0.153755 6.05325 5.49422 0.718872 12.0459 0.718872C15.2269 0.718872 18.2114 1.9559 20.4628 4.20731C22.7077 6.45215 23.9447 9.44325 23.9447 12.6176C23.9447 19.1754 18.6042 24.5098 12.0525 24.5098H12.0459C10.0561 24.5098 8.09954 24.0125 6.36516 23.0632L0.0557861 24.7193ZM6.65297 20.9168L7.01297 21.1329C8.53125 22.0362 10.2722 22.5073 12.0459 22.5139H12.0525C17.5045 22.5139 21.9352 18.0828 21.9352 12.6312C21.9352 9.987 20.9077 7.50637 19.0425 5.64122C17.1773 3.77606 14.6967 2.742 12.0525 2.742C6.60047 2.742 2.16329 7.17309 2.16329 12.6247C2.16329 14.4898 2.68688 16.3095 3.675 17.8868L3.91079 18.26L2.90954 21.9054L6.65297 20.9168Z"
@@ -530,10 +553,10 @@ export default function OprecPage() {
                     </clipPath>
                   </defs>
                 </svg>
-                <p className='text-xs md:text-lg pt-1 md:pt-0'>+62-8517-3330-443 (Iqbal)</p>
+                <p className="text-xs md:text-lg pt-1 md:pt-0">+62-8517-3330-443 (Iqbal)</p>
               </div>
               <div className="flex gap-3 mt-2">
-                <svg className='w-5 md:w-8' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <svg className="w-5 md:w-8" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g clip-path="url(#clip0_49_343)">
                     <path d="M20.4 0.72168H3.6C1.61177 0.72168 0 2.33345 0 4.32168V21.1217C0 23.1099 1.61177 24.7217 3.6 24.7217H20.4C22.3882 24.7217 24 23.1099 24 21.1217V4.32168C24 2.33345 22.3882 0.72168 20.4 0.72168Z" fill="#00B900" />
                     <path
@@ -553,7 +576,7 @@ export default function OprecPage() {
                     </clipPath>
                   </defs>
                 </svg>
-                <p className='text-xs md:text-lg pt-1 md:pt-0'>@afifahzhra_ (Afifah)</p>
+                <p className="text-xs md:text-lg pt-1 md:pt-0">@afifahzhra_ (Afifah)</p>
               </div>
             </div>
           </div>
@@ -576,57 +599,47 @@ export default function OprecPage() {
               <Image src={'/oprec-volunteer/persegi-panjang.png'} alt="persegi panjang" width={90} height={443} className="absolute flex justify-start pt-4 z-10" />
             </div>
             <div className="w-1/2 md:w-2/3 flex relative py-4">
-              <div className="w-56 h-48 md:w-3/4 md:h-[443px] backdrop-blur-[4.199999809265137px] bg-[#FFFFFF1A] rounded-tr-3xl rounded-bl-3xl md:rounded-r-[64px] md:rounded-l-none px-3 py-3 md:py-4 gap-2 grid z-10 md:z-0">
+              <div className="w-56 h-54 md:w-3/4 md:h-[443px] backdrop-blur-[4.199999809265137px] bg-[#FFFFFF1A] rounded-tr-3xl rounded-bl-3xl md:rounded-r-[64px] md:rounded-l-none px-3 py-3 md:py-4 gap-2 grid z-10 md:z-0">
                 <div className="md:px-40 md:py-10 hidden md:block md:w-full md:ml-9">
                   <h1 className="font-bold text-4xl text-center">Available Positions</h1>
                   <p className="text-center text-md z-10">Divisi-divisi dibawah ini membutuhkan bantuanmu, Yuk ramaikan acara-acara proyek kerja ini!</p>
                 </div>
                 <div className="md:pl-40 md:-mt-32 md:flex md:justify-center md:-ml-20 md:gap-7 md:pb-12">
                   <div className="grid gap-2 md:-mt-2">
-                    <button type="button">
-                      <div className="flex gap-4">
-                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                        <p className="text-xs md:text-xl underline md:pb-1">Divisi Acara</p>
-                      </div>
-                    </button>
-                    <button type="button">
-                      <div className="flex gap-4 md:-mt-6">
-                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                        <p className="text-xs md:text-xl underline md:pb-1">Divisi Humas</p>
-                      </div>
-                    </button>
-                    <button type="button">
-                      <div className="flex gap-4 md:-mt-6">
-                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                        <p className="text-xs md:text-xl underline md:pb-1">Divisi Sponsorship</p>
-                      </div>
-                    </button>
-                    <button type="button">
-                      <div className="flex gap-4 md:-mt-6">
-                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                        <p className="text-xs md:text-xl underline md:pb-1">Divisi Perlengkapan</p>
-                      </div>
-                    </button>
+                    <div className="flex gap-4">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl md:pb-1">Divisi Acara</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-6">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl md:pb-1">Divisi Humas</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-6">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl md:pb-1">Divisi Sponsorship</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-6">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl md:pb-1">Divisi Perlengkapan</p>
+                    </div>
                   </div>
                   <div className="mt-2 grid gap-2 md:-mt-2">
-                    <button type="button">
-                      <div className="flex gap-4">
-                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                        <p className="text-xs md:text-xl underline md:pb-1">Divisi Konsumsi</p>
-                      </div>
-                    </button>
-                    <button type="button">
-                      <div className="flex gap-4 md:-mt-11">
-                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                        <p className="text-xs md:text-xl underline md:pb-1">Divisi Media</p>
-                      </div>
-                    </button>
-                    <button type="button">
-                      <div className="flex gap-4 md:-mt-14">
-                        <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                        <p className="text-xs md:text-xl underline md:pb-1">Divisi Danus</p>
-                      </div>
-                    </button>
+                    <div className="flex gap-4">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl md:pb-1">Divisi Konsumsi</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-6">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl md:pb-1">Divisi Media</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-6">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl md:pb-1">Divisi Danus</p>
+                    </div>
+                    <div className="flex gap-4 md:-mt-6">
+                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
+                      <p className="text-xs md:text-xl md:pb-1">Divisi Kesehatan</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -639,26 +652,9 @@ export default function OprecPage() {
               <Image src={'/oprec-mobile/bejo-3.png'} alt="bejo" width={130} height={180} className={`w-full md:hidden block z-10`} />
             </div>
 
-            <div className="md:block hidden">
-              {/* <Image src={'/oprec-mobile/dots-3.png'} alt="dots" width={170} height={90} className="w-24 -ml-3 absolute object-cover overflow-hidden"/> */}
-            </div>
+            <div className="md:block hidden">{/* <Image src={'/oprec-mobile/dots-3.png'} alt="dots" width={170} height={90} className="w-24 -ml-3 absolute object-cover overflow-hidden"/> */}</div>
           </div>
         </div>
-        {/* Penjelasan Divisi Start */}
-        <div className="">
-          {/* AccordionCard Start*/}
-          <div className="container mx-auto px-4 my-16 md:my-14">
-            <AccordionCard title="Divisi Acara" content="Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll" />
-            <AccordionCard title="Divisi Humas" content="Membangun komunikasi yang aktif  dan memelihara hubungan yang baik dengan pihak internal maupun eksternal. Seperti menyampaikan informasi melalui social media, mengadakan live report, publikasi kegiatan, menjadi contact person, dll" />
-            <AccordionCard title="Divisi Sponsorship" content="Menjadi penghubung dengan pihak eksternal dalam membantu menyukseskan acara. Seperti menyusun proposal sponsor, membuat keperluan yang dibutuhkan dalam kerja sama, mencari dan menghubungi pihak sponsor/partner, dll" />
-            <AccordionCard title="Divisi Perlengkapan" content="Pengelolaan keperluan perlengkapan yang akan dibutuhkan ketika acara berlangsung. Seperti melakukan survey tempat, mengkoordinir persiapan serta peminjaman     alat perlengkapan selama rangkaian acara, dll" />
-            <AccordionCard title="Divisi Konsumsi" content="Mengatur keuangan dalam mencari konsumsi yang ada. Seperti menyiapkan konsumsi untuk panitia dan peserta, bekerja sama dengan divisi sponsor untuk sponsor makanan,dll" />
-            <AccordionCard title="Divisi Media" content="Pembuatan konten menarik dan dokumentasi selama acara berlangsung. Seperti mengelola pembuatan berbagai design yang dibutuhkan dalam acara, melakukan dokumentasi, dll" />
-            <AccordionCard title="Divisi Danus" content="Mencari dana dan mengelola dana yang akan digunakan untuk acara. Seperti mencari ide danusan, mendata pemasukan dari penjualan, aktif dalam kegiatan danusan, dll" />
-          </div>
-          {/* AccordionCard End*/}
-        </div>
-        {/* Penjelasan Divisi End */}
         {/* Available Positions End */}
 
         {/* Join Start */}
@@ -674,10 +670,14 @@ export default function OprecPage() {
                   Kami mengajak kamu untuk bergabung <br /> dengan kami dan membuat perbedaan. <br /> Daftarkan diri kamu sekarang juga!
                 </p>
               </div>
-              <Link href={'https://forms.gle/xC9AfiJyr8srdDZB8'}>
+              <Link href={'https://forms.gle/xC9AfiJyr8srdDZB8'} target='_blank'>
                 <div className="flex justify-center items-center py-7">
                   <div className="flex items-center justify-center w-52 h-16 gap-2 bg-[#F39F5A] rounded-full hover:bg-[#C27F48] hover:transition-colors">
-                    <button className="text-xl font-bold">Join Now!</button>
+                    <button className="text-xl font-bold">
+                      <p>
+                        Join Now!
+                      </p>
+                    </button>
                     <svg className="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 21 20" fill="none">
                       <rect x="0.75" y="0.75" width="19.5" height="18.5" rx="9.25" stroke="#FFF6E0" stroke-width="1.5" />
                       <path
