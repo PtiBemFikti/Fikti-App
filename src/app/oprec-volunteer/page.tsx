@@ -573,10 +573,10 @@ export default function OprecPage() {
           </div>
           <div className="flex relative md:pt-32">
             <div className="hidden md:block">
-              <Image src={'/oprec-volunteer/persegi-panjang.png'} alt="persegi panjang" width={90} height={443} className="absolute flex justify-start z-10 pt-4" />
+              <Image src={'/oprec-volunteer/persegi-panjang.png'} alt="persegi panjang" width={90} height={443} className="absolute flex justify-start pt-4 z-10" />
             </div>
             <div className="w-1/2 md:w-2/3 flex relative py-4">
-              <div className="w-56 h-48 md:w-3/4 md:h-[443px] backdrop-blur-[4.199999809265137px] bg-[#FFFFFF1A] rounded-tr-3xl rounded-bl-3xl md:rounded-r-[64px] md:rounded-l-none px-3 py-3 md:py-4 gap-2 grid">
+              <div className="w-56 h-48 md:w-3/4 md:h-[443px] backdrop-blur-[4.199999809265137px] bg-[#FFFFFF1A] rounded-tr-3xl rounded-bl-3xl md:rounded-r-[64px] md:rounded-l-none px-3 py-3 md:py-4 gap-2 grid z-10 md:z-0">
                 <div className="md:px-40 md:py-10 hidden md:block md:w-full md:ml-9">
                   <h1 className="font-bold text-4xl text-center">Available Positions</h1>
                   <p className="text-center text-md z-10">Divisi-divisi dibawah ini membutuhkan bantuanmu, Yuk ramaikan acara-acara proyek kerja ini!</p>
@@ -703,7 +703,7 @@ export default function OprecPage() {
               </div>
               <div className="md:flex md:justify-end">
                 <div className="w-40 ml-5 -mt-3 md:mr-44 md:w-48 md:-mt-5">
-                  <p className="text-justify text-md font-light opacity-50">kamu akan dialihkan ke link formulir pendaftaran yang kami sediakan!</p>
+                  <p className="text-md font-light opacity-50">kamu akan dialihkan ke link formulir pendaftaran yang kami sediakan!</p>
                 </div>
               </div>
             </div>
