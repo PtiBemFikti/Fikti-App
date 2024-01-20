@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AccordionCard from '@/components/oprec/AccordionCard';
+import AccordionCardDivisi from '@/components/oprec/AccordionCardDivisi';
 
 export default function OprecPage() {
   return (
@@ -27,14 +28,12 @@ export default function OprecPage() {
         <div className="bg-[#662549] w-3/4 h-44 rounded-e-[40px] md:w-2/3 md:h-5/6 md:rounded-e-[200px] mt-28 md:mt-36 z-10">
           <div className="md:ml-20 md:my-12 md:py-12">
             <div className="ml-3 my-4">
-              <h2 className="text-lg md:text-5xl font-bold  pb-3">Open Recruitment Volunteer</h2>
-              <h1 className="text-md md:text-4xl">BEM FIKTI UG 2023 / 2024</h1>
+              <h2 className="text-md md:text-4xl font-bold  pb-3">OPEN RECRUITMENT VOLUNTEER</h2>
+              <h1 className="text-sm md:text-3xl">BEM FIKTI UG PERIODE 2023 / 2024</h1>
             </div>
             <div className="md:ml-0">
               <div className="ml-3 my-4">
-                <p className="text-xs md:text-lg">
-                  Program kerja yang mewadahi mahasiswa aktif FIKTI UG untuk berkontribusi dalam kepanitiaan acara dan kegiatan yang diselenggarakan oleh <br /> BEM FIKTI UG.
-                </p>
+                <p className="text-xs md:text-lg">Merupakan program kerja yang mewadahi Mahasiswa/i aktif FIKTI UG untuk berkontribusi dalam kepanitiaan acara pada kegiatan yang diselenggarakan oleh BEM FIKTI UG.</p>
               </div>
             </div>
             <br />
@@ -59,10 +58,10 @@ export default function OprecPage() {
                         stroke="#FFF6E0"
                       />
                     </svg>
-                    <p className="text-base">Project Timeline</p>
+                    <p className="text-base">Timeline Oprec Volunteer</p>
                   </div>
                 </Link>
-                <Link href={'#positions'}>
+                <Link href={'#join'}>
                   <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
                     <svg className="w-6 h-6 mx-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 28 20" fill="none">
                       <g clip-path="url(#clip0_343_8)">
@@ -77,7 +76,7 @@ export default function OprecPage() {
                         </clipPath>
                       </defs>
                     </svg>
-                    <p className="text-base">Available Positions</p>
+                    <p className="text-base">Join Volunteer Now!</p>
                   </div>
                 </Link>
                 <Link href={'#project-list'}>
@@ -150,11 +149,10 @@ export default function OprecPage() {
             <Image src={'/oprec-mobile/bejo-2.png'} alt="bejo" width={2000} height={2000} className="mx-auto" />
           </div>
           <div className="relative text-sm">
-            <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 3" width={300} height={300} className="object-cover absolute w-10 top-64 ml-36" />
-            <p className="text-sm ml-2 mt-5 mb-3 text-end">Skip ahead & choose!</p>
-            <div className="flex flex-col gap-2">
+            <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 3" width={300} height={300} className="object-cover absolute w-10 top-64 ml-48" />
+            <div className="flex flex-col gap-2 mt-5">
               <Link href={'#timeline'}>
-                <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-9">
+                <div className="mx-auto px-3 w-48 h-10 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-12">
                   <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.66667 15.8333H14.5833C16.25 15.8333 17.5 14.5833 17.5 12.9166C17.5 11.25 16.25 9.99998 14.5833 9.99998H12.9167H5.41667C3.75 9.99998 2.5 8.74998 2.5 7.08331C2.5 5.41665 3.75 4.16665 5.41667 4.16665L17.5 4.16665"
@@ -169,11 +167,11 @@ export default function OprecPage() {
                       stroke="#FFF6E0"
                     />
                   </svg>
-                  <p className="text-xs my-auto text-end">Project Timeline</p>
+                  <p className="text-xs my-auto text-end">Timeline Oprec Volunteer</p>
                 </div>
               </Link>
               <Link href={'#project-list'}>
-                <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-[60px]">
+                <div className="ml-28 px-3 w-32 h-10 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end">
                   <svg xmlns="http://www.w3.org/2000/svg" className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 18 14" fill="none">
                     <path
                       d="M0 1.65279C0 0.84767 0.653212 0.194458 1.45833 0.194458H4.375C5.18012 0.194458 5.83333 0.84767 5.83333 1.65279V2.1389H11.6667V1.65279C11.6667 0.84767 12.3199 0.194458 13.125 0.194458H16.0417C16.8468 0.194458 17.5 0.84767 17.5 1.65279V4.56946C17.5 5.37458 16.8468 6.02779 16.0417 6.02779H13.125C12.3199 6.02779 11.6667 5.37458 11.6667 4.56946V4.08335H5.83333V4.56946C5.83333 4.62111 5.8303 4.67276 5.82422 4.72137L8.26389 7.97224H11.1806C11.9857 7.97224 12.6389 8.62545 12.6389 9.43057V12.3472C12.6389 13.1524 11.9857 13.8056 11.1806 13.8056H8.26389C7.45877 13.8056 6.80556 13.1524 6.80556 12.3472V9.43057C6.80556 9.37892 6.80859 9.32727 6.81467 9.27866L4.375 6.02779H1.45833C0.653212 6.02779 0 5.37458 0 4.56946V1.65279Z"
@@ -184,7 +182,7 @@ export default function OprecPage() {
                 </div>
               </Link>
               <Link href={'#general'}>
-                <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end">
+                <div className="mx-auto w-44 ml-16 h-10 px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end">
                   <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.25 5.625H8.75M6.25 10H13.75M6.25 12.5H13.75M6.25 15H8.75M5 18.125H15C15.3315 18.125 15.6495 17.9933 15.8839 17.7589C16.1183 17.5245 16.25 17.2065 16.25 16.875V3.125C16.25 2.79348 16.1183 2.47554 15.8839 2.24112C15.6495 2.0067 15.3315 1.875 15 1.875H5C4.66848 1.875 4.35054 2.0067 4.11612 2.24112C3.8817 2.47554 3.75 2.79348 3.75 3.125V16.875C3.75 17.2065 3.8817 17.5245 4.11612 17.7589C4.35054 17.9933 4.66848 18.125 5 18.125Z"
@@ -201,15 +199,15 @@ export default function OprecPage() {
                   <p className="text-xs my-auto">General Requirements</p>
                 </div>
               </Link>
-              <Link href={'#positions'}>
-                <div className="mx-auto px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-5">
+              <Link href={'#join'}>
+                <div className="mx-auto px-3 w-44 h-10 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-16">
                   <svg xmlns="http://www.w3.org/2000/svg" className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 14" fill="none">
                     <path
                       d="M12.25 8.75C9.91375 8.75 5.25 9.91375 5.25 12.25V14H19.25V12.25C19.25 9.91375 14.5863 8.75 12.25 8.75ZM4.375 5.25V2.625H2.625V5.25H0V7H2.625V9.625H4.375V7H7V5.25M12.25 7C13.1783 7 14.0685 6.63125 14.7249 5.97487C15.3813 5.3185 15.75 4.42826 15.75 3.5C15.75 2.57174 15.3813 1.6815 14.7249 1.02513C14.0685 0.368749 13.1783 0 12.25 0C11.3217 0 10.4315 0.368749 9.77513 1.02513C9.11875 1.6815 8.75 2.57174 8.75 3.5C8.75 4.42826 9.11875 5.3185 9.77513 5.97487C10.4315 6.63125 11.3217 7 12.25 7Z"
                       fill="#FFF6E0"
                     />
                   </svg>
-                  <p className="text-xs my-auto">Available Positions</p>
+                  <p className="text-xs my-auto">Join Volunteer Now!</p>
                 </div>
               </Link>
             </div>
@@ -226,19 +224,21 @@ export default function OprecPage() {
               backgroundImage: 'url(/oprec-volunteer/bulet-abstrak-2.png)',
             }}
           >
-            <h1 className="md:text-6xl font-bold whitespace-nowrap">Project Timeline</h1>
-            <p className="whitespace-nowrap overflow-hidden pt-2 md:text-sm">
-              Agar tidak ketinggalan informasi terbaru, yuk, simpan <br /> tanggal-tanggal penting di timeline ini!
+            <h1 className="md:text-6xl font-bold whitespace-nowrap">Timeline Oprec Volunteer</h1>
+            <p className="whitespace-nowrap overflow-hidden pt-2 md:text-lg opacity-50">
+              Agar tidak ketinggalan informasi dan tahap selanjutnya, <br /> yuk, simpan tanggal-tanggal penting di timeline ini!
             </p>
           </div>
         </div>
         <div className="md:hidden block">
           <div className="text-center items-center justify-center flex flex-col pb-4">
-            <h1 className="text-3xl font-bold whitespace-nowrap z-10 mt-20">Project Timeline</h1>
-            <p className="whitespace-nowrap overflow-hidden pt-2 text-xs z-10">Simpan tanggal-tanggal penting dibawah ini!</p>
+            <h1 className="text-2xl font-bold whitespace-nowrap z-10 mt-20">Timeline Oprec Volunteer</h1>
+            <p className="whitespace-nowrap overflow-hidden pt-2 text-xs z-10 text-center opacity-50">
+              Agar tidak ketinggalan informasi dan tahap selanjutnya, <br /> yuk, simpan tanggal-tanggal penting di timeline ini!
+            </p>
           </div>
           <div className="relative">
-            <Image src={'/oprec-mobile/lingkaran-mobile.png'} alt="lingkaran mobile" width={1500} height={1500} className="object-cover w-40 absolute -left-20 -top-56" />
+            <Image src={'/oprec-mobile/lingkaran-mobile.png'} alt="lingkaran mobile" width={1500} height={1500} className="object-cover w-40 absolute -left-14 -top-56" />
           </div>
         </div>
       </div>
@@ -317,7 +317,7 @@ export default function OprecPage() {
       </div> */}
       {/* Project timeline pake gambar */}
       <div className="md:w-full md:mt-5 hidden md:block">
-        <Image src={'/oprec-volunteer/project-frame.png'} alt="dots group" width={1439} height={150} className="mx-auto w-full" />
+        <Image src={'/oprec-volunteer/project-frame.png'} alt="timeline dekstop" width={1439} height={150} className="mx-auto w-full" />
       </div>
       {/* Timeline Mobile Start */}
       <div className="relative md:hidden block w-full mt-5">
@@ -326,10 +326,10 @@ export default function OprecPage() {
       {/* Timeline Mobile End */}
       <br />
       {/* Contact Person 1 Start */}
-      <div className="relative pt-3">
+      <div className="relative -mt-52 pb-32 md:mt-0 md:pb-0 md:pt-3">
         <div className="md:w-[320px] md:h-36 w-2/3 h-28 flex main items-start flex-column rounded-e-[24px] shadow-md">
-          <div className=" text-md m-auto">
-            <p className="text-xs md:text-lg">Hubungi untuk informasi lebih lanjut</p>
+          <div className=" text-md ml-3 mt-3 md:m-auto">
+            <p className="text-xs md:text-lg">Contact Person:</p>
             <div className="flex gap-3 mt-2">
               <svg className="w-5 md:w-8" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                 <g clip-path="url(#clip0_49_303)">
@@ -398,9 +398,8 @@ export default function OprecPage() {
       <div id="project-list" className="md:w-full flex flex-col justify-center items-center mt-12 md:mt-36">
         <div className="mb-7 md:mb-20 z-10">
           <h1 className="text-center text-3xl md:text-6xl font-bold whitespace-nowrap mt-20">Project List</h1>
-          <p className="md:pt-2 text-center md:text-sm text-xs">
-            Proyek kerja kami membutuhkan bantuanmu,
-            <br /> Yuk ramaikan acara-acara proyek kerja ini!
+          <p className="md:pt-2 text-center md:text-lg text-xs opacity-50">
+            Program kerja kami membutuhkan bantuanmu, <br /> yuk, sukseskan bersama program kerja ini!
           </p>
         </div>
         <div className="">
@@ -411,36 +410,118 @@ export default function OprecPage() {
           <div className="w-5/6 md:w-2/3 mx-auto flex flex-col">
             <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-t-[48px]">
               <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">HEROES X</h2>
-              <p className="text-xs md:text-sm pt-1">Hero of Educational and Social X</p>
+              <p className="text-xs md:text-sm pt-1 opacity-50">Hero of Educational and Social</p>
             </div>
-            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px] bg-cover bg-no-repeat" style={{ backgroundImage: 'url(/oprec-volunteer/list-bg-1.png)' }}>
+            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A]">
               <p className="text-sm md:text-lg text-justify">
-                HEROES X (Hero of Education and Social X) adalah kegiatan bakti sosial yang dilaksanakan oleh Mahasiswa/i FIKTI UG di wilayah yang memiliki suatu permasalahan dalam keseharian. Acara ini terdapat kegiatan seperti melakukan
-                sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya. Kegiatan akan berlangsung selama 3 hari.
+                HEROES X (Hero of Education and Social) adalah kegiatan bakti sosial yang dilaksanakan oleh Mahasiswa/i FIKTI UG di wilayah yang memiliki suatu permasalahan dalam keseharian. Acara ini terdapat kegiatan seperti melakukan
+                sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya.
               </p>
+            </div>
+            <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-b-[48px]">
+              <div className="pb-5">
+                <h3 className="md:text-lg text-sm">Divisi yang tersedia pada HEROES X:</h3>
+              </div>
+              <div className="md:flex relative md:justify-around">
+                <div className="">
+                  <AccordionCardDivisi title="Divisi Acara" content="Divisi acara bertugas mengurus rangkaian acara. Divisi ini harus memastikan acara berjalan sesuai dengan konsep yang ditentukan." />
+                  <AccordionCardDivisi title="Divisi Humas" content="Divisi yang menjadi fasilisator dan membangun komunikasi yang aktif dengan pihak internal maupun eksternal." />
+                  <AccordionCardDivisi title="Divisi Perlengkapan" content="Divisi perlengkapan adalah divisi yang bertanggung jawab dalam pengelolaan/pembelian perlengkapan yang akan dibutuhkan ketika acara berlangsung." />
+                </div>
+                <div className="">
+                  <AccordionCardDivisi title="Divisi Media" content="Merupakan divisi yang membidangi bagian informasi visual dan dokumentasi selama acara berlangsung." />
+                  <AccordionCardDivisi title="Divisi Dana Usaha" content="Divisi dana usaha adalah divisi yang bertanggung jawab dalam mencari dana dan mengelola dana yang akan digunakan untuk acara." />
+                  <AccordionCardDivisi title="Divisi Sponsorship" content="Membuat dan memahami kesepakatan dengan pihak kedua, serta menguasai seluruh bagian di dalam proposal sponsorship." />
+                </div>
+              </div>
             </div>
           </div>
           <div className="w-5/6 md:w-2/3 mx-auto flex flex-col">
             <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-t-[48px]">
               <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">TECHNOFAIR 11.0</h2>
             </div>
-            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px] bg-cover bg-no-repeat" style={{ backgroundImage: 'url(/oprec-volunteer/list-bg-2.png)' }}>
+            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A]">
               <p className="text-sm md:text-lg text-justify">
                 TechnoFair adalah program kerja unggulan Departemen akademik BEM FIKTI dan merupakan event IT terbesar di FIKTI yang dilaksanakan setiap tahun untuk mewadahi mahasiswa FIKTI UG dalam menyalurkan minat dan bakat di bidang
                 akademik. Event ini berisi rangkaian acara berupa seminar, workshop, dan kompetisi.
               </p>
             </div>
+            <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-b-[48px]">
+              <div className="pb-5">
+                <h3 className="md:text-lg text-sm">Divisi yang tersedia pada TECHNOFAIR 11.0:</h3>
+              </div>
+              <div className="md:flex relative md:justify-around">
+                <div className="">
+                  <AccordionCardDivisi
+                    title="Divisi Acara"
+                    content="Divisi acara adalah bagian atau unit organisasional yang memiliki tanggung jawab khusus untuk merencanakan, mengelola, dan melaksanakan kegiatan kompetisi, workshop, dan seminar."
+                  />
+                  <AccordionCardDivisi title="Divisi Humas" content="Divisi humas merupakan divisi yang berfungsi untuk membangun, menjalin komunikasi dan memelihara hubungan yang baik dengan publik." />
+                  <AccordionCardDivisi title="Divisi Sponsorship" content="Divisi sponsorship menjadi divisi penghubung yang berinteraksi dan menjalin kerjasama dalam membangun hubungan yang kuat dengan pihak eksternal." />
+                </div>
+                <div className="">
+                  <AccordionCardDivisi title="Divisi Media" content="Divisi media menjadi divisi yang penting dalam mengelola komunikasi untuk menyampaikan informasi melalui berbagai bentuk komunikasi visual kepada publik." />
+                  <AccordionCardDivisi title="Divisi Perlengkapan" content="Divisi perlengkapan berperan penting dalam hal penyediaan serta pengelolaan keperluan perlengkapan yang dibutuhkan dalam keberlangsungan acara." />
+                  <AccordionCardDivisi title="Divisi Dana Usaha" content="Divisi dana usaha merupakan bagian penting yang bertanggungjawab untuk mengelola dana yang dibutuhkan selama keberlangsungan acara." />
+                </div>
+              </div>
+            </div>
           </div>
           <div className="w-5/6 md:w-2/3 mx-auto flex flex-col">
             <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-t-[48px]">
               <h2 className="text-3xl md:text-5xl font-bold whitespace-nowrap">FIKTI SPACE 3.0</h2>
-              <p className="text-xs md:text-sm pt-1">FIKTI Sport & Art Championship</p>
+              <p className="text-xs md:text-sm pt-1 opacity-50">FIKTI Sport & Art Championship</p>
             </div>
-            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A] rounded-b-[48px] bg-cover bg-no-repeat" style={{ backgroundImage: 'url(/oprec-volunteer/list-bg-3.png)' }}>
+            <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A]">
               <p className="text-sm md:text-lg text-justify">
-                FIKTI SPACE (FIKTI Sport & Art Championship) adalah suatu rangkaian acara gabungan dari dua proker BEM FIKTI UG sebelumnya yaitu FAF dan FOSC berupa kompetisi olahraga dan seni budaya yang dilaksanakan oleh BEM FIKTI UG guna
-                meningkatkan rasa sportivitas dan kreatifitas.
+                FIKTI SPACE (FIKTI Sport & Art Championship) adalah suatu rangkaian acara gabungan dari dua proker BEM FIKTI UG sebelumnya yaitu FAF (FIKTI Art Festival) dan FOSC (FIKTI Open Sport Championship) berupa kompetisi olahraga dan
+                seni budaya yang dilaksanakan oleh BEM FIKTI UG guna meningkatkan rasa sportivitas dan kreatifitas.
               </p>
+            </div>
+            <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-b-[48px]">
+              <div className="pb-5">
+                <h3 className="md:text-lg text-sm">Divisi yang tersedia pada FIKTI SPACE:</h3>
+              </div>
+              <div className="md:flex relative md:justify-around">
+                <div className="">
+                  <AccordionCardDivisi
+                    title="Divisi Acara"
+                    content="Divisi ini bertugas untuk mengatur seluruh jalannya pertandingan dari
+                    awal hingga akhir dan berkomitmen penuh terhadap kesuksesan Fikti
+                    Space 3.0 2024."
+                  />
+                  <AccordionCardDivisi
+                    title="Divisi Humas"
+                    content="Divisi Humas merupakan salah satu bagian penting dalam acara Fikti Space 3.0 2024 yang bertugas dalam menyebarkan informasi tersebut ke seluruh Mahasiswa Fikti UG di seluruh region yang ada. Selain itu juga Humas bertugas untuk menjadi narahubung para peserta dan penampil dalam closing ceremony."
+                  />
+                  <AccordionCardDivisi
+                    title="Divisi Operasional"
+                    content="Divisi Operasional bertugas untuk membantu dalam menyiapkan seluruh perlengkapan logistik yang dibutuhkan selama acara berlangsung dan juga Div. Operasional bertanggung jawab dalam pemeliharaan barang inventaris acara."
+                  />
+                </div>
+                <div className="">
+                  <AccordionCardDivisi
+                    title="Divisi Media"
+                    content="Divisi Media dan Creative adalah Divisi yang bertugas dalam pembuatan konsep acara yang dimulai dari pembuatan konten menarik selama kegiatan berlangsung baik dalam media online maupun offline (contoh: bikin properti buat hiasan)."
+                  />
+                  <AccordionCardDivisi
+                    title="Divisi Sponsorship"
+                    content="Divisi ini bertugas untuk menjadi media penghubung antara Fikti Space 3.0 2024 dengan calon perusahaan dalam membantu menyukseskan kegiatan tersebut dan juga Div. Sponsorship diharapkan dapat berkomunikasi dengan baik ke pihak ketiga."
+                  />
+                  <AccordionCardDivisi title="Divisi Konsumsi" content="Divisi ini bertugas untuk mengatur konsumsi para panitia dan juga peserta dan mengatur keuangan dalam mencari konsumsi yang ada." />
+                </div>
+                <div className="">
+                  <AccordionCardDivisi title="Divisi Dana Usaha" content="Divisi ini bertugas untuk membantu dalam pencarian dana acara yang dimana dibutuhkan untuk kelancaran kegiatan." />
+                  <AccordionCardDivisi
+                    title="Divisi Kemanan"
+                    content="Divisi ini bertugas untuk menjaga keamanan dan kenyamanan di Fikti Space 3.0 2024.Divisi Keamanan diwajibkan untuk mengatur crowd selama acara agar tidak terjadinya kerusuhan yang dapat merugikan semua pihak."
+                  />
+                  <AccordionCardDivisi
+                    title="Divisi Kesehatan"
+                    content="Divisi yang bertugas di garda terdepan kesehatan dan keselamatan para peserta dan juga panitia, dimana divisi ini bertugas untuk mengatur barang2 P3K selama acara dan mampu dalam menangani pertolongan pertama jika dibutuhkan."
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -450,7 +531,10 @@ export default function OprecPage() {
       <div className="">
         {/* AccordionCard Start*/}
         <div className="container mx-auto px-4 my-16 md:my-14">
-          <AccordionCard title="Divisi Acara" content="Mengatur seluruh rangkaian acara. Seperti membuat rundown acara beserta kebutuhannya, mencari pemateri, dll" />
+          <div className="py-14">
+            <h2 className="font-bold text-3xl  md:text-6xl text-center">Penjelasan Umum</h2>
+          </div>
+          <AccordionCard title="Divisi Acara" content="Menyusun dan mengkoordinasikan seluruh rangkaian acara, seperti membuat rundown acara serta kebutuhannya, menentukan pemateri acara, dll" />
           <AccordionCard
             title="Divisi Humas"
             content="Membangun komunikasi yang aktif  dan memelihara hubungan yang baik dengan pihak internal maupun eksternal. Seperti menyampaikan informasi melalui social media, mengadakan live report, publikasi kegiatan, menjadi contact person, dll"
@@ -461,12 +545,19 @@ export default function OprecPage() {
           />
           <AccordionCard
             title="Divisi Perlengkapan"
-            content="Pengelolaan keperluan perlengkapan yang akan dibutuhkan ketika acara berlangsung. Seperti melakukan survey tempat, mengkoordinir persiapan serta peminjaman     alat perlengkapan selama rangkaian acara, dll"
+            content="Pengelolaan keperluan perlengkapan yang akan dibutuhkan ketika acara berlangsung. Seperti melakukan survey tempat, mengkoordinir persiapan serta peminjaman alat perlengkapan selama rangkaian acara, dll"
           />
-          <AccordionCard title="Divisi Konsumsi" content="Mengatur keuangan dalam mencari konsumsi yang ada. Seperti menyiapkan konsumsi untuk panitia dan peserta, bekerja sama dengan divisi sponsor untuk sponsor makanan,dll" />
+          <AccordionCard
+            title="Divisi Konsumsi"
+            content="Menentukan kebutuhan konsumsi serta rincian dana yang dibutuhkan konsumsi. Seperti menyiapkan konsumsi untuk panitia dan peserta, bekerja sama dengan divisi sponsor untuk sponsor makanan,dll"
+          />
           <AccordionCard title="Divisi Media" content="Pembuatan konten menarik dan dokumentasi selama acara berlangsung. Seperti mengelola pembuatan berbagai design yang dibutuhkan dalam acara, melakukan dokumentasi, dll" />
-          <AccordionCard title="Divisi Danus" content="Mencari dana dan mengelola dana yang akan digunakan untuk acara. Seperti mencari ide danusan, mendata pemasukan dari penjualan, aktif dalam kegiatan danusan, dll" />
-          <AccordionCard title="Divisi Kesehatan" content="Mencari dana dan mengelola dana yang akan digunakan untuk acara. Seperti mencari ide danusan, mendata pemasukan dari penjualan, aktif dalam kegiatan danusan, dll" />
+          <AccordionCard title="Divisi Dana Usaha" content="Mencari dana dan mengelola dana yang akan digunakan untuk acara. Seperti mencari ide danusan, mendata pemasukan dari penjualan, aktif dalam kegiatan danusan, dll" />
+          <AccordionCard
+            title="Divisi Kesehatan"
+            content="Menjadi garda terdepan kesehatan dan keselamatan para peserta dan juga panitia. Seperti mengatur barang-barang P3K selama acara dan mampu dalam menangani pertolongan pertama jika dibutuhkan."
+          />
+          <AccordionCard title="Divisi Keamanan" content="Menjaga keamanan dan kenyamanan agar kondusif selama acara berlangsung. Seperti mengatur crowd selama acara agar tidak terjadinya kerusuhan yang dapat merugikan semua pihak." />
         </div>
         {/* AccordionCard End*/}
       </div>
@@ -515,10 +606,10 @@ export default function OprecPage() {
           </div>
         </div>
         {/* Contact Person 2 Start*/}
-        <div className="relative -mt-20 md:-mt-48 md:pb-32 flex justify-end">
+        <div className="relative -mt-20 md:-mt-48 md:pb-24 flex justify-end">
           <div className="md:w-[320px] md:h-36 w-2/3 h-28 flex main items-start flex-column rounded-l-[24px] shadow-md">
             <div className=" text-md m-auto">
-              <p className="text-xs md:text-lg">Hubungi untuk informasi lebih lanjut</p>
+              <p className="text-xs md:text-lg">Contact Person:</p>
               <div className="flex gap-3 mt-2">
                 <svg className="w-5 md:w-8" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g clip-path="url(#clip0_49_303)">
@@ -584,81 +675,8 @@ export default function OprecPage() {
         {/* Contact Person 2 End */}
         {/* General Requirements End */}
 
-        {/* Available Positions Start */}
-        <div id="positions" className="md:px-0 px-8">
-          {/* Divisi mobile */}
-          <div className="md:hidden block">
-            <Image src={'/oprec-mobile/lingkaran-4.png'} alt="lingkaran" width={150} height={150} className="w-40 -ml-10 mt-7 absolute object-cover" />
-          </div>
-          <div className="pt-24 md:hidden block z-10 relative">
-            <h1 className="font-bold text-2xl z-10">Available Positions</h1>
-            <p className="text-sm z-10">Divisi-divisi ini membutuhkan bantuanmu, Mari ramaikan acara-acara proyek ini!</p>
-          </div>
-          <div className="flex relative md:pt-32">
-            <div className="hidden md:block">
-              <Image src={'/oprec-volunteer/persegi-panjang.png'} alt="persegi panjang" width={90} height={443} className="absolute flex justify-start pt-4 z-10" />
-            </div>
-            <div className="w-1/2 md:w-2/3 flex relative py-4">
-              <div className="w-56 h-54 md:w-3/4 md:h-[443px] backdrop-blur-[4.199999809265137px] bg-[#FFFFFF1A] rounded-tr-3xl rounded-bl-3xl md:rounded-r-[64px] md:rounded-l-none px-3 py-3 md:py-4 gap-2 grid z-10 md:z-0">
-                <div className="md:px-40 md:py-10 hidden md:block md:w-full md:ml-9">
-                  <h1 className="font-bold text-4xl text-center">Available Positions</h1>
-                  <p className="text-center text-md z-10">Divisi-divisi dibawah ini membutuhkan bantuanmu, Yuk ramaikan acara-acara proyek kerja ini!</p>
-                </div>
-                <div className="md:pl-40 md:-mt-32 md:flex md:justify-center md:-ml-20 md:gap-7 md:pb-12">
-                  <div className="grid gap-2 md:-mt-2">
-                    <div className="flex gap-4">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl md:pb-1">Divisi Acara</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-6">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl md:pb-1">Divisi Humas</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-6">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl md:pb-1">Divisi Sponsorship</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-6">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl md:pb-1">Divisi Perlengkapan</p>
-                    </div>
-                  </div>
-                  <div className="mt-2 grid gap-2 md:-mt-2">
-                    <div className="flex gap-4">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl md:pb-1">Divisi Konsumsi</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-6">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl md:pb-1">Divisi Media</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-6">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl md:pb-1">Divisi Danus</p>
-                    </div>
-                    <div className="flex gap-4 md:-mt-6">
-                      <Image src={'/oprec-mobile/pin.png'} alt="pin" width={15} height={18} className="md:w-6 md:h-7" />
-                      <p className="text-xs md:text-xl md:pb-1">Divisi Kesehatan</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="md:hidden block">
-              <Image src={'/oprec-mobile/dots-6.png'} alt="dots" width={85} height={35} className="w-28 mt-32 -ml-10 absolute" />
-            </div>
-            <div className={`pl-10 pt-10 md:-ml-48 md:-mt-16 relative`}>
-              <Image src={'/oprec-volunteer/bejo-5.png'} alt="bejo" width={500} height={500} className="w-full hidden md:block" />
-              <Image src={'/oprec-mobile/bejo-3.png'} alt="bejo" width={130} height={180} className={`w-full md:hidden block z-10`} />
-            </div>
-
-            <div className="md:block hidden">{/* <Image src={'/oprec-mobile/dots-3.png'} alt="dots" width={170} height={90} className="w-24 -ml-3 absolute object-cover overflow-hidden"/> */}</div>
-          </div>
-        </div>
-        {/* Available Positions End */}
-
         {/* Join Start */}
-        <div className="join relative w-full pt-20 top-20 md:top-20 md:pt-28">
+        <div id="join" className="join relative w-full pt-20 top-20 md:top-20 md:pt-28">
           <div className="pb-10">
             <div className="flex justify-center items-center">
               <Image src={'/oprec-volunteer/text-line.png'} alt="text line" width={128} height={22} className="absolute object-cover w-52 md:w-56 mx-auto mt-24 md:mt-28 md:mr-80" />
@@ -670,13 +688,11 @@ export default function OprecPage() {
                   Kami mengajak kamu untuk bergabung <br /> dengan kami dan membuat perbedaan. <br /> Daftarkan diri kamu sekarang juga!
                 </p>
               </div>
-              <Link href={'https://forms.gle/xC9AfiJyr8srdDZB8'} target='_blank'>
+              <Link href={'https://forms.gle/xC9AfiJyr8srdDZB8'} target="_blank">
                 <div className="flex justify-center items-center py-7">
                   <div className="flex items-center justify-center w-52 h-16 gap-2 bg-[#F39F5A] rounded-full hover:bg-[#C27F48] hover:transition-colors">
                     <button className="text-xl font-bold">
-                      <p>
-                        Join Now!
-                      </p>
+                      <p>Join Now!</p>
                     </button>
                     <svg className="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 21 20" fill="none">
                       <rect x="0.75" y="0.75" width="19.5" height="18.5" rx="9.25" stroke="#FFF6E0" stroke-width="1.5" />
