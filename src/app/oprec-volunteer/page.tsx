@@ -20,26 +20,26 @@ export default function OprecPage() {
         {/* gambar mobile */}
         <Image src={'/oprec-mobile/line-1-mobile.png'} alt="line-1" width={417} height={319} className="object-cover absolute mx-auto w-full -top-8 md:hidden block" />
         <div className="">
-          <Image src={'/oprec-mobile/lingkaran-1-mobile.png'} alt="lingkaran" width={100} height={100} className="object-cover absolute ml-[246px] w-36 h-36 -top-2 md:hidden block" />
+          <Image src={'/oprec-mobile/lingkaran-1-mobile.png'} alt="lingkaran" width={100} height={100} className="object-cover absolute right-0 w-36 h-36 -top-2 md:hidden block" />
           <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 2" width={85} height={35} className="object-cover absolute right-1 w-10 top-36 md:hidden block" />
         </div>
         <Image src={'/oprec-mobile/dots-mobile.png'} alt="dots 1" width={85} height={35} className="object-cover absolute -ml-1 w-12 h-12 top-14 md:hidden block" />
 
-        <div className="bg-[#662549] w-3/4 h-44 rounded-e-[40px] md:w-2/3 md:h-5/6 md:rounded-e-[200px] mt-28 md:mt-36 z-10">
-          <div className="md:ml-20 md:my-12 md:py-12">
-            <div className="ml-3 my-4">
-              <h2 className="text-md md:text-4xl font-bold  pb-3">OPEN RECRUITMENT VOLUNTEER</h2>
-              <h1 className="text-sm md:text-3xl">BEM FIKTI UG PERIODE 2023 / 2024</h1>
+        <div className="bg-[#662549] w-3/4 h-52 rounded-e-[40px] md:w-2/3 md:h-5/6 md:rounded-e-[200px] mt-28 md:mt-36 z-10">
+          <div className="md:ml-10 md:my-12 md:py-12">
+            <div className="ml-4 mt-10">
+              <h2 className="text-sm md:text-4xl font-bold  pb-3">OPEN RECRUITMENT VOLUNTEER</h2>
+              <h1 className="text-xs md:text-3xl">BEM FIKTI UG PERIODE 2023 / 2024</h1>
             </div>
             <div className="md:ml-0">
-              <div className="ml-3 my-4">
-                <p className="text-xs md:text-lg">Merupakan program kerja yang mewadahi Mahasiswa/i aktif FIKTI UG untuk berkontribusi dalam kepanitiaan acara pada kegiatan yang diselenggarakan oleh BEM FIKTI UG.</p>
+              <div className="ml-4 my-4">
+                <p className="text-[10px] md:text-lg">Merupakan program kerja yang mewadahi Mahasiswa/i aktif FIKTI UG untuk berkontribusi dalam kepanitiaan acara pada kegiatan yang diselenggarakan oleh BEM FIKTI UG.</p>
               </div>
             </div>
             <br />
             <div className="hidden md:block ml-3">
               <h4 className="text-2xl font-bold">Periode Pendaftaran:</h4>
-              <h4 className="text-2xl font-bold md:mb-2">15 Januari 2024 - 20 Januari 2024</h4>
+              <h4 className="text-2xl font-bold md:mb-2">22 Januari 2024 - 28 Januari 2024</h4>
               <br />
               <div className="flex flex-wrap gap-3">
                 <Link href={'#timeline'}>
@@ -59,24 +59,6 @@ export default function OprecPage() {
                       />
                     </svg>
                     <p className="text-base">Timeline Oprec Volunteer</p>
-                  </div>
-                </Link>
-                <Link href={'#join'}>
-                  <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
-                    <svg className="w-6 h-6 mx-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 28 20" fill="none">
-                      <g clip-path="url(#clip0_343_8)">
-                        <path
-                          d="M17.5 12.5C14.1625 12.5 7.5 14.1625 7.5 17.5V20H27.5V17.5C27.5 14.1625 20.8375 12.5 17.5 12.5ZM6.25 7.5V3.75H3.75V7.5H0V10H3.75V13.75H6.25V10H10V7.5M17.5 10C18.8261 10 20.0979 9.47322 21.0355 8.53553C21.9732 7.59785 22.5 6.32608 22.5 5C22.5 3.67392 21.9732 2.40215 21.0355 1.46447C20.0979 0.526784 18.8261 0 17.5 0C16.1739 0 14.9021 0.526784 13.9645 1.46447C13.0268 2.40215 12.5 3.67392 12.5 5C12.5 6.32608 13.0268 7.59785 13.9645 8.53553C14.9021 9.47322 16.1739 10 17.5 10Z"
-                          fill="#FFF6E0"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_343_8">
-                          <rect width="27.5" height="20" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <p className="text-base">Join Volunteer Now!</p>
                   </div>
                 </Link>
                 <Link href={'#project-list'}>
@@ -115,6 +97,24 @@ export default function OprecPage() {
                     <p className="text-base">General Reqirements</p>
                   </div>
                 </Link>
+                <Link href={'#join'}>
+                  <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
+                    <svg className="w-6 h-6 mx-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 28 20" fill="none">
+                      <g clip-path="url(#clip0_343_8)">
+                        <path
+                          d="M17.5 12.5C14.1625 12.5 7.5 14.1625 7.5 17.5V20H27.5V17.5C27.5 14.1625 20.8375 12.5 17.5 12.5ZM6.25 7.5V3.75H3.75V7.5H0V10H3.75V13.75H6.25V10H10V7.5M17.5 10C18.8261 10 20.0979 9.47322 21.0355 8.53553C21.9732 7.59785 22.5 6.32608 22.5 5C22.5 3.67392 21.9732 2.40215 21.0355 1.46447C20.0979 0.526784 18.8261 0 17.5 0C16.1739 0 14.9021 0.526784 13.9645 1.46447C13.0268 2.40215 12.5 3.67392 12.5 5C12.5 6.32608 13.0268 7.59785 13.9645 8.53553C14.9021 9.47322 16.1739 10 17.5 10Z"
+                          fill="#FFF6E0"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_343_8">
+                          <rect width="27.5" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p className="text-base">Join Volunteer Now!</p>
+                  </div>
+                </Link>
               </div>
             </div>
             <br />
@@ -146,11 +146,11 @@ export default function OprecPage() {
         <Image src={'/oprec-mobile/line-2-mobile.png'} alt="line 2" width={548} height={344} className="object-cover absolute w-full md:hidden block" />
         <div className="flex relative">
           <div className="w-1/2 ml-2 mt-6">
-            <Image src={'/oprec-mobile/bejo-2.png'} alt="bejo" width={2000} height={2000} className="mx-auto" />
+            <Image src={'/oprec-mobile/bejo-2.png'} alt="bejo" width={2000} height={2000} className="mx-auto ml-5 mt-5 relative" />
           </div>
           <div className="relative text-sm">
-            <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 3" width={300} height={300} className="object-cover absolute w-10 top-64 ml-48" />
-            <div className="flex flex-col gap-2 mt-5">
+            <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 3" width={300} height={300} className="object-cover absolute w-10 top-60 ml-48" />
+            <div className="flex flex-col gap-2 mt-2">
               <Link href={'#timeline'}>
                 <div className="mx-auto px-3 w-48 h-10 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-12">
                   <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +216,7 @@ export default function OprecPage() {
       </div>
       {/* Dashboard End */}
       {/* Project Timeline Start */}
-      <div id="timeline" className="flex justify-center items-center md:mt-60">
+      <div id="timeline" className="flex justify-center items-center md:mt-72">
         <div className="hidden md:block">
           <div
             className="bg-cover bg-center h-72 w-80 text-center items-center justify-center flex flex-col"
@@ -326,7 +326,7 @@ export default function OprecPage() {
       {/* Timeline Mobile End */}
       <br />
       {/* Contact Person 1 Start */}
-      <div className="relative -mt-52 pb-32 md:mt-0 md:pb-0 md:pt-3">
+      <div className="relative -mt-48 pb-32 md:mt-0 md:pb-0 md:pt-3">
         <div className="md:w-[320px] md:h-36 w-2/3 h-28 flex main items-start flex-column rounded-e-[24px] shadow-md">
           <div className=" text-md ml-3 mt-3 md:m-auto">
             <p className="text-xs md:text-lg">Contact Person:</p>
@@ -403,8 +403,10 @@ export default function OprecPage() {
           </p>
         </div>
         <div className="">
-          <Image src={'/oprec-mobile/lingkaran-2.png'} alt="set-lingkaran" width={500} height={500} className="w-64 md:w-96 -mt-52 md:ml-[325px] md:-mt-96 md:hidden block -ml-16 absolute" />
-          <Image src={'/oprec-mobile/lingkaran-3.png'} alt="set-lingkaran" width={500} height={500} className="w-64 md:w-96 mt-96 -ml-48 md:-ml-[710px] md:-mt-7 absolute" />
+          <Image src={'/oprec-mobile/lingkaran-2.png'} alt="set-lingkaran" width={500} height={500} className="w-64 md:w-96 -mt-52 right-0 md:-mt-96 absolute" />
+          <Image src={'/oprec-mobile/lingkaran-3.png'} alt="set-lingkaran" width={500} height={500} className="w-64 md:w-96 mt-96 left-0 md:mt-44 absolute" />
+          <Image src={'/oprec-mobile/lingkaran-2.png'} alt="set-lingkaran" width={500} height={500} className="w-64 md:w-96 pt-96 mt-[630px] right-0 md:mt-[430px] absolute" />
+          <Image src={'/oprec-mobile/lingkaran-3.png'} alt="set-lingkaran" width={500} height={500} className="w-64 md:w-96 pt-96 mt-[1250px] left-0 md:-mt-7 absolute md:hidden block" />
         </div>
         <div className="grid grid-rows-1 gap-7 z-10">
           <div className="w-5/6 md:w-2/3 mx-auto flex flex-col">
@@ -513,7 +515,7 @@ export default function OprecPage() {
                 <div className="">
                   <AccordionCardDivisi title="Divisi Dana Usaha" content="Divisi ini bertugas untuk membantu dalam pencarian dana acara yang dimana dibutuhkan untuk kelancaran kegiatan." />
                   <AccordionCardDivisi
-                    title="Divisi Kemanan"
+                    title="Divisi Keamanan"
                     content="Divisi ini bertugas untuk menjaga keamanan dan kenyamanan di Fikti Space 3.0 2024.Divisi Keamanan diwajibkan untuk mengatur crowd selama acara agar tidak terjadinya kerusuhan yang dapat merugikan semua pihak."
                   />
                   <AccordionCardDivisi
@@ -528,9 +530,9 @@ export default function OprecPage() {
       </div>
       {/* Project List End */}
       {/* Penjelasan Divisi Start */}
-      <div className="">
-        {/* AccordionCard Start*/}
-        <div className="container mx-auto px-4 my-16 md:my-14">
+      {/* <div className=""> */}
+      {/* AccordionCard Start*/}
+      {/* <div className="container mx-auto px-4 my-16 md:my-14">
           <div className="py-14">
             <h2 className="font-bold text-3xl  md:text-6xl text-center">Penjelasan Umum</h2>
           </div>
@@ -558,24 +560,24 @@ export default function OprecPage() {
             content="Menjadi garda terdepan kesehatan dan keselamatan para peserta dan juga panitia. Seperti mengatur barang-barang P3K selama acara dan mampu dalam menangani pertolongan pertama jika dibutuhkan."
           />
           <AccordionCard title="Divisi Keamanan" content="Menjaga keamanan dan kenyamanan agar kondusif selama acara berlangsung. Seperti mengatur crowd selama acara agar tidak terjadinya kerusuhan yang dapat merugikan semua pihak." />
-        </div>
-        {/* AccordionCard End*/}
-      </div>
+        </div> */}
+      {/* AccordionCard End*/}
+      {/* </div> */}
       {/* Penjelasan Divisi End */}
-      <div className="py-20">
+      <div className="py-32">
         <Image src={'/oprec-mobile/line-3-mobile.png'} alt="line" width={471} height={804} className="md:hidden block object-cover absolute w-full mx-auto " />
         {/* General Requirements Start */}
         <div className="md:block hidden relative">{/* <Image src={'/oprec-mobile/dots-3.png'} alt="dots" width={170} height={90} className="w-24 ml-[1325px] mt-10 absolute" /> */}</div>
         <div className="hidden md:block">
           <Image src={'/oprec-mobile/line-9.png'} alt="line" width={1509} height={1011} className="w-full absolute -mt-7" />
         </div>
-        <div id="general" className="relative pb-28 pt-28 md:pt-24 md:pb-48">
+        <div id="general" className="relative pb-28 pt-20 md:pt-16 md:pb-48">
           <div className="flex justify-end mt-7">
-            <div className="hidden md:block pr-12">
+            <div className="hidden md:block pr-12 mt-7">
               <Image src={'/oprec-mobile/bejo-4.png'} alt="bejo dekstop" width={600} height={600} className="w-full" />
             </div>
-            <div className="bg-[#662549] md:w-1/2 w-5/6 md:h-[623px] md:rounded-l-[150px] rounded-l-[44px] z-10">
-              <div className="md:ml-9 py-7 px-8 md:py-20">
+            <div className="bg-[#662549] md:w-1/2 w-5/6 md:h-[723px] md:rounded-l-[150px] rounded-l-[44px] z-10">
+              <div className="md:ml-9 py-7 px-8 md:py-24">
                 <div className="md:text-center">
                   <h1 className="font-bold md:text-5xl text-2xl">General Requirements</h1>
                   <p className="text-center font-light md:text-lg text-xs">Penuhi syarat dibawah ini untuk meningkatkan peluang diterima sebagai relawan di program kerja</p>
@@ -583,30 +585,42 @@ export default function OprecPage() {
                 <div className="py-7 gap-4 grid md:my-2">
                   <div className="gap-3 flex">
                     <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-8 h-4" />
-                    <p className="text-xs text-justify md:text-lg">Mahasiswa aktif FIKTI Universitas Gunadarma</p>
+                    <p className="text-xs text-justify md:text-lg">Mahasiswa Aktif FIKTI Universitas Gunadarma tingkat 1 dan tingkat 2.</p>
                   </div>
                   <div className="gap-3 flex">
                     <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
-                    <p className="text-xs text-justify md:text-lg">Memiliki minat dan kompetensi yang relevan dengan program volunteer yang akan dilaksanakan</p>
+                    <p className="text-xs text-justify md:text-lg">Memiliki Komitmen tinggi dalam menjadi bagian dari kepanitiaan acara.</p>
                   </div>
                   <div className="gap-3 flex">
                     <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
-                    <p className="text-xs text-justify md:text-lg">Bersedia dan berkomitmen untuk menjadi bagian dari kepanitiaan acara dan melaksanakan tugas-tugas dengan penuh tanggung jawab</p>
+                    <p className="text-xs text-justify md:text-lg">Bertanggung jawab atas amanah yang diberikan.</p>
                   </div>
                   <div className="gap-3 flex">
                     <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
-                    <p className="text-xs text-justify md:text-lg">Memiliki kemampuan kerja sama tim, manajemen waktu, dan pemprioritasan yang baik.</p>
+                    <p className="text-xs text-justify md:text-lg">Mampu bekerja sama dalam tim, mengatur waktu dan prioritas dengan baik.</p>
+                  </div>
+                  <div className="gap-3 flex">
+                    <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <p className="text-xs text-justify md:text-lg">Mengisi form pendaftaran yang tertera di website oprec Volunteer.</p>
+                  </div>
+                  <div className="gap-3 flex">
+                    <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <p className="text-xs text-justify md:text-lg">Melengkapi seluruh berkas pendaftaran.</p>
+                  </div>
+                  <div className="gap-3 flex">
+                    <Image src={'/oprec-mobile/toggle-mobile.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <p className="text-xs text-justify md:text-lg">Mengikuti rangkaian tes wawancara.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="md:block hidden">
-            <Image src={'/oprec-mobile/dots-3.png'} alt="dots" width={170} height={90} className="w-24 ml-2 mt-10 absolute" />
+            <Image src={'/oprec-mobile/dots-3.png'} alt="dots" width={170} height={90} className="w-24 left-0 mt-10 absolute" />
           </div>
         </div>
         {/* Contact Person 2 Start*/}
-        <div className="relative -mt-20 md:-mt-48 md:pb-24 flex justify-end">
+        <div className="relative -mt-20 md:-mt-28 md:pb-24 flex justify-end">
           <div className="md:w-[320px] md:h-36 w-2/3 h-28 flex main items-start flex-column rounded-l-[24px] shadow-md">
             <div className=" text-md m-auto">
               <p className="text-xs md:text-lg">Contact Person:</p>
@@ -676,7 +690,7 @@ export default function OprecPage() {
         {/* General Requirements End */}
 
         {/* Join Start */}
-        <div id="join" className="join relative w-full pt-20 top-20 md:top-20 md:pt-28">
+        <div id="join" className="join relative w-full pt-24 top-32 md:top-32 md:pt-28">
           <div className="pb-10">
             <div className="flex justify-center items-center">
               <Image src={'/oprec-volunteer/text-line.png'} alt="text line" width={128} height={22} className="absolute object-cover w-52 md:w-56 mx-auto mt-24 md:mt-28 md:mr-80" />
