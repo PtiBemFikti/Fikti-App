@@ -417,7 +417,7 @@ export default function OprecPage() {
             <div className="px-7 md:px-auto py-7 backdrop-blur-[6.300000190734863px] bg-[#FFFFFF1A]">
               <p className="text-sm md:text-lg text-justify">
                 HEROES X (Hero of Education and Social) adalah kegiatan bakti sosial yang dilaksanakan oleh Mahasiswa/i FIKTI UG di wilayah yang memiliki suatu permasalahan dalam keseharian. Acara ini terdapat kegiatan seperti melakukan
-                sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya.
+                sosialisasi tentang teknologi, kerja bakti, dan kegiatan sosial lainnya. Kegiatan tersebut akan dilakukan selama 3 hari.
               </p>
             </div>
             <div className="bg-[#270548] w-full h-26 px-8 py-7 rounded-b-[48px]">
