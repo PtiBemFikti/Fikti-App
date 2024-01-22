@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
       <div className="flex flex-col md:flex-row justify-start gap-10">
         <div className="flex flex-col gap-3">
           <Image
-            src="/Logo Gunadarma (Universitas Gunadarma) Original PNG.png"
+            src="/logo-universitas-gunadarma.png"
             alt="Logo"
             width={50}
             height={50}
@@ -36,6 +36,7 @@ const Footer: React.FC = () => {
           <Link
             href="http://instagram.com/ug_bemfikti"
             className="text-gray-400 hover:text-purpleText"
+            target="_blank"
           >
             Instagram
           </Link>
@@ -45,24 +46,28 @@ const Footer: React.FC = () => {
           <Link
             href="http://tiktok.com/@ug.bemfikti"
             className="text-gray-400 hover:text-purpleText"
+            target="_blank"
           >
             Tiktok
           </Link>
           <Link
             href="https://youtube.com/@BEMFIKTI"
             className="text-gray-400 hover:text-purpleText"
+            target="_blank"
           >
             Youtube
           </Link>
           <Link
             href="https://www.linkedin.com/in/bem-fikti-ug-b349921b1"
             className="text-gray-400 hover:text-purpleText"
+            target="_blank"
           >
             Linkedin
           </Link>
           <Link
             href="http://instagram.com/fikti.careercenter"
             className="text-gray-400 hover:text-purpleText"
+            target="_blank"
           >
             FIKTI Career Center
           </Link>

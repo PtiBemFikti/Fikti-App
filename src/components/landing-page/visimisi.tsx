@@ -94,7 +94,7 @@ const VisiMisi: React.FC = () => {
         >
           {/* Konten Section 2 */}
           <Image
-            src="/Reading Book.png"
+            src="/Reading-Book.png"
             alt="Section 1 Image"
             className="object-cover mb-2 mx-auto"
             width={250}
