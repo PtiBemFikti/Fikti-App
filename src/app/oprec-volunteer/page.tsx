@@ -39,7 +39,7 @@ export default function OprecPage() {
             <br />
             <div className="hidden md:block ml-3">
               <h4 className="text-2xl font-bold">Periode Pendaftaran:</h4>
-              <h4 className="text-2xl font-bold md:mb-2">22 Januari 2024 - 28 Januari 2024</h4>
+              <h4 className="text-2xl font-bold md:mb-2">23 Januari 2024 - 28 Januari 2024</h4>
               <br />
               <div className="flex flex-wrap gap-3">
                 {/* <Link href={'#timeline'}> */}
