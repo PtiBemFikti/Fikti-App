@@ -43,85 +43,85 @@ export default function OprecPage() {
               <br />
               <div className="flex flex-wrap gap-3">
                 {/* <Link href={'#timeline'}> */}
-                <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
-                  <svg className="w-6 h-6 mx-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M6.66667 15.8333H14.5833C16.25 15.8333 17.5 14.5833 17.5 12.9166C17.5 11.25 16.25 9.99998 14.5833 9.99998H12.9167H5.41667C3.75 9.99998 2.5 8.74998 2.5 7.08331C2.5 5.41665 3.75 4.16665 5.41667 4.16665L17.5 4.16665"
-                      stroke="#FFF6E0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path d="M15.4167 6.25L17.5001 4.16667L15.4167 2.08333" stroke="#FFF6E0" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M2.50008 15.8333C2.50008 16.9839 3.43282 17.9167 4.58341 17.9167C5.73401 17.9167 6.66675 16.9839 6.66675 15.8333C6.66675 14.6827 5.73401 13.75 4.58341 13.75C3.43282 13.75 2.50008 14.6827 2.50008 15.8333Z"
-                      fill="#FFF6E0"
-                      stroke="#FFF6E0"
-                    />
-                  </svg>
-                  <a href="#timeline">
+                <a href="#timeline">
+                  <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
+                    <svg className="w-6 h-6 mx-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.66667 15.8333H14.5833C16.25 15.8333 17.5 14.5833 17.5 12.9166C17.5 11.25 16.25 9.99998 14.5833 9.99998H12.9167H5.41667C3.75 9.99998 2.5 8.74998 2.5 7.08331C2.5 5.41665 3.75 4.16665 5.41667 4.16665L17.5 4.16665"
+                        stroke="#FFF6E0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path d="M15.4167 6.25L17.5001 4.16667L15.4167 2.08333" stroke="#FFF6E0" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M2.50008 15.8333C2.50008 16.9839 3.43282 17.9167 4.58341 17.9167C5.73401 17.9167 6.66675 16.9839 6.66675 15.8333C6.66675 14.6827 5.73401 13.75 4.58341 13.75C3.43282 13.75 2.50008 14.6827 2.50008 15.8333Z"
+                        fill="#FFF6E0"
+                        stroke="#FFF6E0"
+                      />
+                    </svg>
                     <p className="text-base">Timeline Oprec Volunteer</p>
-                  </a>
-                </div>
+                  </div>
+                </a>
                 {/* </Link> */}
                 {/* <Link href={'#project-list'}> */}
-                <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
-                  <svg className="w-6 h-6 mx-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <g clip-path="url(#clip0_160_74)">
-                      <path
-                        d="M0 3.125C0 2.08984 0.839844 1.25 1.875 1.25H5.625C6.66016 1.25 7.5 2.08984 7.5 3.125V3.75H15V3.125C15 2.08984 15.8398 1.25 16.875 1.25H20.625C21.6602 1.25 22.5 2.08984 22.5 3.125V6.875C22.5 7.91016 21.6602 8.75 20.625 8.75H16.875C15.8398 8.75 15 7.91016 15 6.875V6.25H7.5V6.875C7.5 6.94141 7.49609 7.00781 7.48828 7.07031L10.625 11.25H14.375C15.4102 11.25 16.25 12.0898 16.25 13.125V16.875C16.25 17.9102 15.4102 18.75 14.375 18.75H10.625C9.58984 18.75 8.75 17.9102 8.75 16.875V13.125C8.75 13.0586 8.75391 12.9922 8.76172 12.9297L5.625 8.75H1.875C0.839844 8.75 0 7.91016 0 6.875V3.125Z"
-                        fill="#FFF6E0"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_160_74">
-                        <rect width="22.5" height="20" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <a href="#project-list">
+                <a href="#project-list">
+                  <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
+                    <svg className="w-6 h-6 mx-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <g clip-path="url(#clip0_160_74)">
+                        <path
+                          d="M0 3.125C0 2.08984 0.839844 1.25 1.875 1.25H5.625C6.66016 1.25 7.5 2.08984 7.5 3.125V3.75H15V3.125C15 2.08984 15.8398 1.25 16.875 1.25H20.625C21.6602 1.25 22.5 2.08984 22.5 3.125V6.875C22.5 7.91016 21.6602 8.75 20.625 8.75H16.875C15.8398 8.75 15 7.91016 15 6.875V6.25H7.5V6.875C7.5 6.94141 7.49609 7.00781 7.48828 7.07031L10.625 11.25H14.375C15.4102 11.25 16.25 12.0898 16.25 13.125V16.875C16.25 17.9102 15.4102 18.75 14.375 18.75H10.625C9.58984 18.75 8.75 17.9102 8.75 16.875V13.125C8.75 13.0586 8.75391 12.9922 8.76172 12.9297L5.625 8.75H1.875C0.839844 8.75 0 7.91016 0 6.875V3.125Z"
+                          fill="#FFF6E0"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_160_74">
+                          <rect width="22.5" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
                     <p className="text-base">Project List</p>
-                  </a>
-                </div>
+                  </div>
+                </a>
                 {/* </Link> */}
                 {/* <Link href={'#general'}> */}
-                <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
-                  <svg className="w-6 h-6 mx-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M6.25 5.625H8.75M6.25 10H13.75M6.25 12.5H13.75M6.25 15H8.75M5 18.125H15C15.3315 18.125 15.6495 17.9933 15.8839 17.7589C16.1183 17.5245 16.25 17.2065 16.25 16.875V3.125C16.25 2.79348 16.1183 2.47554 15.8839 2.24112C15.6495 2.0067 15.3315 1.875 15 1.875H5C4.66848 1.875 4.35054 2.0067 4.11612 2.24112C3.8817 2.47554 3.75 2.79348 3.75 3.125V16.875C3.75 17.2065 3.8817 17.5245 4.11612 17.7589C4.35054 17.9933 4.66848 18.125 5 18.125Z"
-                      stroke="#FFF6E0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M13.75 5.9375C13.9226 5.9375 14.0625 5.79759 14.0625 5.625C14.0625 5.45241 13.9226 5.3125 13.75 5.3125C13.5774 5.3125 13.4375 5.45241 13.4375 5.625C13.4375 5.79759 13.5774 5.9375 13.75 5.9375Z"
-                      fill="#FFF6E0"
-                      stroke="#FFF6E0"
-                    />
-                  </svg>
-                  <a href="#general">
+                <a href="#general">
+                  <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
+                    <svg className="w-6 h-6 mx-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.25 5.625H8.75M6.25 10H13.75M6.25 12.5H13.75M6.25 15H8.75M5 18.125H15C15.3315 18.125 15.6495 17.9933 15.8839 17.7589C16.1183 17.5245 16.25 17.2065 16.25 16.875V3.125C16.25 2.79348 16.1183 2.47554 15.8839 2.24112C15.6495 2.0067 15.3315 1.875 15 1.875H5C4.66848 1.875 4.35054 2.0067 4.11612 2.24112C3.8817 2.47554 3.75 2.79348 3.75 3.125V16.875C3.75 17.2065 3.8817 17.5245 4.11612 17.7589C4.35054 17.9933 4.66848 18.125 5 18.125Z"
+                        stroke="#FFF6E0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.75 5.9375C13.9226 5.9375 14.0625 5.79759 14.0625 5.625C14.0625 5.45241 13.9226 5.3125 13.75 5.3125C13.5774 5.3125 13.4375 5.45241 13.4375 5.625C13.4375 5.79759 13.5774 5.9375 13.75 5.9375Z"
+                        fill="#FFF6E0"
+                        stroke="#FFF6E0"
+                      />
+                    </svg>
                     <p className="text-base">General Reqirements</p>
-                  </a>
-                </div>
+                  </div>
+                </a>
                 {/* </Link> */}
                 {/* <Link href={'#join'}> */}
-                <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
-                  <svg className="w-6 h-6 mx-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 28 20" fill="none">
-                    <g clip-path="url(#clip0_343_8)">
-                      <path
-                        d="M17.5 12.5C14.1625 12.5 7.5 14.1625 7.5 17.5V20H27.5V17.5C27.5 14.1625 20.8375 12.5 17.5 12.5ZM6.25 7.5V3.75H3.75V7.5H0V10H3.75V13.75H6.25V10H10V7.5M17.5 10C18.8261 10 20.0979 9.47322 21.0355 8.53553C21.9732 7.59785 22.5 6.32608 22.5 5C22.5 3.67392 21.9732 2.40215 21.0355 1.46447C20.0979 0.526784 18.8261 0 17.5 0C16.1739 0 14.9021 0.526784 13.9645 1.46447C13.0268 2.40215 12.5 3.67392 12.5 5C12.5 6.32608 13.0268 7.59785 13.9645 8.53553C14.9021 9.47322 16.1739 10 17.5 10Z"
-                        fill="#FFF6E0"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_343_8">
-                        <rect width="27.5" height="20" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <a href="#join">
+                <a href="#join">
+                  <div className="px-3 py-1 bg-transparent rounded-full border border-brown-1 flex gap-1">
+                    <svg className="w-6 h-6 mx-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 28 20" fill="none">
+                      <g clip-path="url(#clip0_343_8)">
+                        <path
+                          d="M17.5 12.5C14.1625 12.5 7.5 14.1625 7.5 17.5V20H27.5V17.5C27.5 14.1625 20.8375 12.5 17.5 12.5ZM6.25 7.5V3.75H3.75V7.5H0V10H3.75V13.75H6.25V10H10V7.5M17.5 10C18.8261 10 20.0979 9.47322 21.0355 8.53553C21.9732 7.59785 22.5 6.32608 22.5 5C22.5 3.67392 21.9732 2.40215 21.0355 1.46447C20.0979 0.526784 18.8261 0 17.5 0C16.1739 0 14.9021 0.526784 13.9645 1.46447C13.0268 2.40215 12.5 3.67392 12.5 5C12.5 6.32608 13.0268 7.59785 13.9645 8.53553C14.9021 9.47322 16.1739 10 17.5 10Z"
+                          fill="#FFF6E0"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_343_8">
+                          <rect width="27.5" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
                     <p className="text-base">Join Volunteer Now!</p>
-                  </a>
-                </div>
+                  </div>
+                </a>
                 {/* </Link> */}
               </div>
             </div>
@@ -160,27 +160,28 @@ export default function OprecPage() {
             <Image src={'/oprec-mobile/dots-2-mobile.png'} alt="dots 3" width={300} height={300} className="object-cover absolute w-10 top-60 ml-48" />
             <div className="flex flex-col gap-2 mt-2">
               {/* <Link href={'#timeline'}> */}
-              <div className="mx-auto px-3 w-48 h-10 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-12">
-                <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M6.66667 15.8333H14.5833C16.25 15.8333 17.5 14.5833 17.5 12.9166C17.5 11.25 16.25 9.99998 14.5833 9.99998H12.9167H5.41667C3.75 9.99998 2.5 8.74998 2.5 7.08331C2.5 5.41665 3.75 4.16665 5.41667 4.16665L17.5 4.16665"
-                    stroke="#FFF6E0"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path d="M15.4167 6.25L17.5001 4.16667L15.4167 2.08333" stroke="#FFF6E0" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M2.50008 15.8333C2.50008 16.9839 3.43282 17.9167 4.58341 17.9167C5.73401 17.9167 6.66675 16.9839 6.66675 15.8333C6.66675 14.6827 5.73401 13.75 4.58341 13.75C3.43282 13.75 2.50008 14.6827 2.50008 15.8333Z"
-                    fill="#FFF6E0"
-                    stroke="#FFF6E0"
-                  />
-                </svg>
-                <a href="#timeline">
+              <a href="#timeline">
+                <div className="mx-auto px-3 w-48 h-10 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-12">
+                  <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.66667 15.8333H14.5833C16.25 15.8333 17.5 14.5833 17.5 12.9166C17.5 11.25 16.25 9.99998 14.5833 9.99998H12.9167H5.41667C3.75 9.99998 2.5 8.74998 2.5 7.08331C2.5 5.41665 3.75 4.16665 5.41667 4.16665L17.5 4.16665"
+                      stroke="#FFF6E0"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path d="M15.4167 6.25L17.5001 4.16667L15.4167 2.08333" stroke="#FFF6E0" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M2.50008 15.8333C2.50008 16.9839 3.43282 17.9167 4.58341 17.9167C5.73401 17.9167 6.66675 16.9839 6.66675 15.8333C6.66675 14.6827 5.73401 13.75 4.58341 13.75C3.43282 13.75 2.50008 14.6827 2.50008 15.8333Z"
+                      fill="#FFF6E0"
+                      stroke="#FFF6E0"
+                    />
+                  </svg>
                   <p className="text-xs my-auto text-end">Timeline Oprec Volunteer</p>
-                </a>
-              </div>
+                </div>
+              </a>
               {/* </Link> */}
               {/* <Link href={'#project-list'}> */}
+              <a href="#project-list">
                 <div className="ml-28 px-3 w-32 h-10 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end">
                   <svg xmlns="http://www.w3.org/2000/svg" className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 18 14" fill="none">
                     <path
@@ -188,13 +189,12 @@ export default function OprecPage() {
                       fill="#FFF6E0"
                     />
                   </svg>
-                  <a href="#project-list">
                   <p className="text-xs my-auto">Project List</p>
-                    
-                  </a>
                 </div>
+              </a>
               {/* </Link> */}
               {/* <Link href={'#general'}> */}
+              <a href="#general">
                 <div className="mx-auto w-44 ml-16 h-10 px-3 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end">
                   <svg className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -209,13 +209,12 @@ export default function OprecPage() {
                       stroke="#FFF6E0"
                     />
                   </svg>
-                  <a href="#general">
-
                   <p className="text-xs my-auto">General Requirements</p>
-                  </a>
                 </div>
+              </a>
               {/* </Link> */}
               {/* <Link href={'#join'}> */}
+              <a href="#join">
                 <div className="mx-auto px-3 w-44 h-10 py-1 bg-transparent rounded-l-full border border-brown-1 flex gap-1 justify-end items-end ml-16">
                   <svg xmlns="http://www.w3.org/2000/svg" className="my-auto w-6 h-6 pt-1" width="20" height="20" viewBox="0 0 20 14" fill="none">
                     <path
@@ -223,11 +222,9 @@ export default function OprecPage() {
                       fill="#FFF6E0"
                     />
                   </svg>
-                  <a href="#join">
-
                   <p className="text-xs my-auto">Join Volunteer Now!</p>
-                  </a>
                 </div>
+              </a>
               {/* </Link> */}
             </div>
           </div>
