@@ -584,31 +584,31 @@ export default function OprecPage() {
                 </div>
                 <div className="py-7 gap-4 grid md:my-2">
                   <div className="gap-3 flex">
-                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-8 h-4" />
+                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} layout='responsive' priority={true} className="md:w-12 md:h-8 w-8 h-4" />
                     <p className="text-xs text-justify md:text-lg">Mahasiswa Aktif FIKTI Universitas Gunadarma tingkat 1 dan tingkat 2.</p>
                   </div>
                   <div className="gap-3 flex">
-                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} layout='responsive' priority={true} className="md:w-12 md:h-8 w-10 h-4" />
                     <p className="text-xs text-justify md:text-lg">Memiliki Komitmen tinggi dalam menjadi bagian dari kepanitiaan acara.</p>
                   </div>
                   <div className="gap-3 flex">
-                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} layout='responsive' priority={true} className="md:w-12 md:h-8 w-10 h-4" />
                     <p className="text-xs text-justify md:text-lg">Bertanggung jawab atas amanah yang diberikan.</p>
                   </div>
                   <div className="gap-3 flex">
-                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} layout='responsive' priority={true} className="md:w-12 md:h-8 w-10 h-4" />
                     <p className="text-xs text-justify md:text-lg">Mampu bekerja sama dalam tim, mengatur waktu dan prioritas dengan baik.</p>
                   </div>
                   <div className="gap-3 flex">
-                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} layout='responsive' priority={true} className="md:w-12 md:h-8 w-10 h-4" />
                     <p className="text-xs text-justify md:text-lg">Mengisi form pendaftaran yang tertera di website oprec Volunteer.</p>
                   </div>
                   <div className="gap-3 flex">
-                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} layout='responsive' priority={true} className="md:w-12 md:h-8 w-10 h-4" />
                     <p className="text-xs text-justify md:text-lg">Melengkapi seluruh berkas pendaftaran.</p>
                   </div>
                   <div className="gap-3 flex">
-                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} className="md:w-12 md:h-8 w-10 h-4" />
+                    <Image src={'/oprec-mobile/toggle.png'} alt="toggle" width={38} height={18} layout='responsive' priority={true} className="md:w-12 md:h-8 w-10 h-4" />
                     <p className="text-xs text-justify md:text-lg">Mengikuti rangkaian tes wawancara.</p>
                   </div>
                 </div>
