@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
           <Image src="/technofair/logo-tf.png" alt="Logo" width={50} height={50} className="mr-2" />
         </Link>
         <div className="text-[#241525] md:hidden block">
-          <h1 className="font-Lato">TechnoFair 11.0</h1>
+          <h1 className="font-Lato font-bold text-2xl">TechnoFair 11.0</h1>
         </div>
         <div className="hidden md:flex md:gap-10 space-x-4 -ml-96">
           <Link className="block text-[#241525] hover:text-purpleText duration-300 py-2" href="/about">
@@ -66,9 +66,13 @@ const Navbar: React.FC = () => {
         </div>
         <div className="md:block hidden">
           <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
-            <div className="px-5 text-[#241525] ml-3">Sign Up</div>
-            <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center">
-              <p>Sign In</p>
+            <div className="px-5 text-[#241525] ml-3">
+              <button>Sign Up</button>
+            </div>
+            <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42]">
+              <button>
+                Sign In
+              </button>
             </div>
           </div>
         </div>
@@ -96,9 +100,13 @@ const Navbar: React.FC = () => {
           <div className="md:hidden block">
             <div className="flex justify-center items-center">
               <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
-                <div className="px-5 text-[#241525] ml-3">Sign Up</div>
-                <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center">
-                  <p>Sign In</p>
+                <div className="px-5 text-[#241525] ml-3">
+                  <button>Sign Up</button>
+                </div>
+                <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42]">
+                  <button>
+                    Sign In
+                  </button>
                 </div>
               </div>
             </div>
