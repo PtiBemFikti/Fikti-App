@@ -49,26 +49,22 @@ const Navbar: React.FC = () => {
             height={50}
             className="mr-2"
           />
-          <h1 className="text-white font-bold ">FIKTI LEARNING</h1>
-        </Link>
-        <div className="hidden md:flex md:gap-10 space-x-4 mr-8">
-          <Link
-            className="block text-white hover:text-purpleText duration-300 py-2"
-            href="/"
-          >
-            Beranda
           </Link>
-          <Link
-            className="block text-white hover:text-purpleText duration-300 py-2"
-            href="/departemen"
-          >
-            Struktur Organisasi
+          <div className="text-white md:hidden block">
+          <h1 className="font-Lato font-bold text-2xl">FIKTI LEARNING</h1>
+        </div>
+        <div className="hidden md:flex md:gap-10 space-x-4 -ml-96">
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/about">
+            About
           </Link>
-          <Link
-            className="block text-white hover:text-purpleText duration-300 py-2"
-            href="/oprec-volunteer"
-          >
-            Oprec Volunteer
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="#">
+            Events
+          </Link>
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/schedule">
+            Schedule
+          </Link>
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/contact">
+            Contact
           </Link>
           {/* <Link
             className="block text-white hover:text-purpleText duration-300 py-2"
