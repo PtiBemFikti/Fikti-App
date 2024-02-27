@@ -57,14 +57,11 @@ const Navbar: React.FC = () => {
           <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/about">
             About
           </Link>
-          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="#">
-            Events
-          </Link>
           <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/schedule">
-            Schedule
+            Bootcamp
           </Link>
           <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/contact">
-            Contact
+            FAQ
           </Link>
           {/* <Link
             className="block text-white hover:text-purpleText duration-300 py-2"
@@ -85,14 +82,11 @@ const Navbar: React.FC = () => {
           <Link className="text-white hover:text-purpleText text-center" href="/about">
             About
           </Link>
-          <Link className="text-white hover:text-purpleText text-center" href="#">
-            Events
-          </Link>
           <Link className="text-white hover:text-purpleText text-center" href="/schedule">
-            Schedule
+            Bootcamp
           </Link>
           <Link className="text-white hover:text-purpleText text-center" href="/contact">
-            Contact
+            FAQ
           </Link>
 
           {/* <Link className="hover:text-purpleText" href="/dept&biro">
