@@ -1,6 +1,5 @@
 export default function VidYoutube() {
   return (
-    <div className="">
       <div className="video-responsive">
         <iframe
           width="560"
@@ -12,6 +11,5 @@ export default function VidYoutube() {
           allowFullScreen
         />
       </div>
-    </div>
   );
 }

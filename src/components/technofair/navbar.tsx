@@ -70,9 +70,7 @@ const Navbar: React.FC = () => {
               <button>Sign Up</button>
             </div>
             <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42]">
-              <button>
-                Sign In
-              </button>
+              <button>Sign In</button>
             </div>
           </div>
         </div>
@@ -104,9 +102,7 @@ const Navbar: React.FC = () => {
                   <button>Sign Up</button>
                 </div>
                 <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42]">
-                  <button>
-                    Sign In
-                  </button>
+                  <button>Sign In</button>
                 </div>
               </div>
             </div>
