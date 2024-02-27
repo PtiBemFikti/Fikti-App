@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
           </div>
         <div className="md:hidden">
           {/* Hamburger menu icon */}
-          <button onClick={toggleMenu} className={`text-white mr-4 p-1 ${isMenuOpen ? 'bg-[#eeeeee] backdrop-blur-sm shadow-md rounded-md ' : ''}`}>
+          <button onClick={toggleMenu} className={`text-white mr-4 p-1 ${isMenuOpen ? 'bg-[#100819] backdrop-blur-sm shadow-md rounded-md ' : ''}`}>
             <Image src={'/filing/hamburger-btn.png'} alt="Hamburger menu Btn" width={20} height={20} />
           </button>
         </div>
