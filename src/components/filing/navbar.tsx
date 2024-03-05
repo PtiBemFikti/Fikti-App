@@ -57,8 +57,11 @@ const Navbar: React.FC = () => {
           <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/about">
             About
           </Link>
-          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/schedule">
-            Bootcamp
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/bootcamp">
+            Bootcamp List
+          </Link>
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/documentation">
+            Documentation
           </Link>
           <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/contact">
             FAQ
