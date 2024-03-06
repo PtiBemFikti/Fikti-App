@@ -57,8 +57,11 @@ const Navbar: React.FC = () => {
           <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/about">
             About
           </Link>
-          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/schedule">
-            Bootcamp
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/bootcamp">
+            Bootcamp List
+          </Link>
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/documentation">
+            Documentation
           </Link>
           <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/contact">
             FAQ
@@ -70,6 +73,16 @@ const Navbar: React.FC = () => {
             Departemen
           </Link> */}
           </div>
+          <div className="md:block hidden">
+          <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
+            <div className="px-5 text-[#241525] ml-3">
+              <button>Sign Up</button>
+            </div>
+            <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42]">
+              <button>Sign In</button>
+            </div>
+          </div>
+        </div>
         <div className="md:hidden">
           {/* Hamburger menu icon */}
           <button onClick={toggleMenu} className={`text-white mr-4 p-1 ${isMenuOpen ? 'bg-[#100819] backdrop-blur-sm shadow-md rounded-md ' : ''}`}>
@@ -82,12 +95,27 @@ const Navbar: React.FC = () => {
           <Link className="text-white hover:text-purpleText text-center" href="/about">
             About
           </Link>
-          <Link className="text-white hover:text-purpleText text-center" href="/schedule">
-            Bootcamp
+          <Link className="text-white hover:text-purpleText text-center" href="/bootcamp">
+            Bootcamp List
+          </Link>
+          <Link className="text-white hover:text-purpleText text-center" href="/documentation">
+            Documentation
           </Link>
           <Link className="text-white hover:text-purpleText text-center" href="/contact">
             FAQ
           </Link>
+          <div className="md:hidden block">
+            <div className="flex justify-center items-center">
+              <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
+                <div className="px-5 text-[#241525] ml-3">
+                  <button>Sign Up</button>
+                </div>
+                <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42]">
+                  <button>Sign In</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* <Link className="hover:text-purpleText" href="/dept&biro">
             Departemen
