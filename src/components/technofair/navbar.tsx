@@ -5,6 +5,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
+import DropdownMenu from './DropdownMenu';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,20 +37,20 @@ const Navbar: React.FC = () => {
 
   return (
     <motion.nav initial={{ opacity: 1 }} animate={{ opacity: 1 }} transition={{ type: 'keyframes', duration: 0.5, delay: 0.5 }} className="bg-[#ffffff] p-4 sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link href="#" className="flex items-center ml-5">
+      <div className="container mx-auto flex justify-between items-center -mb-32">
+        <Link href="#" className="flex items-center ml-5 mb-32">
           <Image src="/technofair/logo-tf.png" alt="Logo" width={50} height={50} className="mr-2" />
         </Link>
-        <div className="text-[#241525] md:hidden block">
+        <div className="text-[#241525] md:hidden block mb-32">
           <h1 className="font-Lato font-bold text-2xl">TechnoFair 11.0</h1>
         </div>
-        <div className="hidden md:flex md:gap-10 space-x-4 -ml-96">
+        <div className="hidden md:flex md:gap-10 space-x-4 -ml-96 md:pt-2">
           <Link className="block text-[#241525] hover:text-purpleText duration-300 py-2" href="/about">
             About
           </Link>
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 py-2" href="#">
-            Events
-          </Link>
+          <div className="block text-[#241525] hover:text-purpleText duration-300 py-0">
+            <DropdownMenu />
+          </div>
           <Link className="block text-[#241525] hover:text-purpleText duration-300 py-2" href="/schedule">
             Schedule
           </Link>
@@ -65,7 +67,7 @@ const Navbar: React.FC = () => {
           {/* Add more navigation links as needed */}
         </div>
         <div className="md:block hidden">
-          <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
+          <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
             <div className="px-5 text-[#241525] ml-3">
               <button>Sign Up</button>
             </div>
@@ -76,7 +78,7 @@ const Navbar: React.FC = () => {
         </div>
         <div className="md:hidden">
           {/* Hamburger menu icon */}
-          <button onClick={toggleMenu} className={`text-white mr-4 p-1 ${isMenuOpen ? 'bg-[#eeeeee] backdrop-blur-sm shadow-md rounded-md ' : ''}`}>
+          <button onClick={toggleMenu} className={`text-white mr-4 p-1 mb-32 ${isMenuOpen ? 'bg-[#eeeeee] backdrop-blur-sm shadow-md rounded-md ' : ''}`}>
             <Image src={'/technofair/hamburger-btn.png'} alt="Hamburger menu Btn" width={20} height={20} />
           </button>
         </div>
@@ -86,9 +88,9 @@ const Navbar: React.FC = () => {
           <Link className="text-[#241525] hover:text-purpleText text-center" href="/about">
             About
           </Link>
-          <Link className="text-[#241525] hover:text-purpleText text-center" href="#">
-            Events
-          </Link>
+          <div className="text-[#241525] hover:text-purpleText text-center">
+            <DropdownMenu />
+          </div>
           <Link className="text-[#241525] hover:text-purpleText text-center" href="/schedule">
             Schedule
           </Link>
