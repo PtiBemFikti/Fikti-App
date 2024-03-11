@@ -4,6 +4,7 @@ import VidYoutube from '@/components/technofair/video';
 // import AboutPage from '@/components/technofair/about';
 import Image from 'next/image';
 import AboutPage from '@/components/technofair/about';
+import EventPage from '@/components/technofair/event';
 
 export default function TechnofairPage() {
   return (
@@ -15,6 +16,7 @@ export default function TechnofairPage() {
         <VidYoutube />
       </section> */}
       <AboutPage/>
+      <EventPage/>
     </main>
   );
 }
