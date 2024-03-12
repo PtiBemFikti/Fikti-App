@@ -22,56 +22,50 @@ export default function AboutPage() {
       {/* Tampilan Mobile End */}
 
       {/* Tampilan Dekstop Start */}
-        <div className="md:block hidden flex-col">
-      <div className="flex gap-5 justify-center mt-24 mb-6 px-40 w-full text-4xl tracking-tighter font-bold text-black">
-        <div className="flex-auto ml-10">What is FILING?</div>
-        <div className='flex-auto text-4xl font-bold justify-center'> & </div>
-        <div className="flex-auto justify-end ml-20 font-bold text-neutral-800">
-          WHY YOU SHOULD JOIN FILING?
-        </div>
-      </div>
-      <div className="flex-auto justify-center px-40 mt-8 w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-          <div className="flex flex-col w-96">
-            <div className="text-xl w-96 ml-10 text-stone-500">
-              <span className="font-semibold text-stone-500">
+      <div className="md:block hidden mt-2">
+      <div className="flex gap-24 w-full items-start justify-start px-40 mt-20">
+        <div className="justify-center items-center ">
+          <h1 className="text-black font-bold text-3xl ml-10 font-[Circle-Amolens]"> WHAT IS FILING? </h1>          
+            <p className="text-xl w-96 text-justify mx-10 mt-10 text-[#6C6A67]">
+              <span className="font-semibold text-[#6C6A67]">
                 FIKTI Learning
               </span>
-              <span className="font-medium text-stone-500">
+              <span className="font-medium text-[#6C6A67]">
                 {" "}
                 adalah program workshop online yang dirancang khusus untuk
                 mahasiswa FIKTI UG. Dalam 4 kali pertemuan selama satu bulan,
                 kamu akan dibimbing oleh mentor berpengalaman untuk
                 mengembangkan minat dan bakat di bidang teknologi informasi.
               </span>
+            </p>
+        </div>
+        <div className="justify-start items-center">
+          <div className="text-3xl text-black font-bold font-[Circle-Amolens]"> & </div>
+        </div>
+        <div className="justify-center items-center">        
+          <div className="flex text-3xl ml-20 text-black font-bold font-[Circle-Amolens]"> WHY YOU SHOULD JOIN FILING? </div>
+                <div className="flex w-96 justify-start items-center gap-10 ml-16">
+                  <div className="mt-4">                    
+                    <Image src={'/filing/simplicity.png'} alt='simplicity' width={100} height={100} />                
+                      <h1 className="font-bold text-black text-right text-2xl">Simplicity</h1>
+                        <p className="w-40 text-right text-[#6C6A67] text-base font-medium">Learn using quick and simple task requiring only a few minutes</p>
+                  </div>      
+                  
+                  <div className="mt-4">        
+                    <Image src={'/filing/motivation.png'} alt='motivation' width={100} height={100} />
+                      <h1 className="font-bold text-black text-right text-2xl">Motivation</h1>
+                        <p className="w-40 text-right text-[#6C6A67] text-base font-medium">Achieve regular next steps of a course by supporting the motivation system.</p>
+                  </div>
+                  <div className="mt-4">
+                    <Image src={'/filing/support.png'} alt='support' width={100} height={100} />                    
+                      <h1 className="font-bold text-black text-right text-2xl">Supporting</h1>
+                        <p className="w-40 text-right text-[#6C6A67] text-base font-medium">We give our students best support always & all time per day</p>
+                  </div>     
+                </div>                                  
+              </div>
             </div>
           </div>
-          <div className="w-full justify-center items-start gap-12 flex">
-                <div className="w-96 flex-col justify-start items-end gap-1 inline-flex">
-                    <Image src={'/filing/simplicity.png'} alt='simplicity' width={100} height={100} />
-                         <div className="flex-col w-48 h-60 justify-start items-center flex">
-                            <div className="self-stretch flex-col font-bold text-right text-neutral-800 text-2xl ">Simplicity</div>
-                        <div className="flex-col text-right text-stone-400 text-base font-medium">Learn using quick and simple task requiring only a few minutes</div>
-            </div>
-        </div>
-         <div className="w-48 flex-col justify-start items-end gap-1 inline-flex">
-            <Image src={'/filing/motivation.png'} alt='motivation' width={100} height={100} />
-                <div className="self-stretch w-48 h-60 flex-col justify-start items-center flex">
-                    <div className="self-stretch font-bold text-right text-neutral-800 text-2xl">Motivation</div>
-                        <div className="self-stretch text-right text-stone-400 text-base font-medium">Achieve regular next steps of a course by supporting the motivation system.</div>
-            </div>
-        </div>
-        <div className="w-48 flex-col justify-start items-end gap-1 inline-flex">
-            <Image src={'/filing/support.png'} alt='support' width={100} height={100} />
-                <div className="self-stretch w-48 h-60 flex-col justify-start items-center flex">
-                    <div className="self-stretch font-bold text-right text-neutral-800 text-2xl">Supporting</div>
-                        <div className="self-stretch text-right text-stone-400 text-base font-medium">We give our students best support always & all time per day</div>
-                </div>               
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            
       {/* Tampilan Dekstop End */}
     </div>
   );

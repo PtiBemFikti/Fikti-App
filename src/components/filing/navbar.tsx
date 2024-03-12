@@ -56,16 +56,16 @@ const Navbar: React.FC = () => {
           <h1 className="font-Lato font-bold text-2xl">FIKTI LEARNING</h1>
         </div>
         <div className="hidden md:flex md:gap-10 space-x-4 -ml-96">
-          <Link className="block text-[#11111B] hover:text-purpleText duration-300 py-2" href="/about">
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/about">
             About
           </Link>
-          <Link className={`block ${pathname === "/bootcamp" ? "text-purpleText" : "text-[#11111B]"} hover:text-purpleText duration-300 py-2`} href="/bootcamp">
+          <Link className={`block ${pathname === "/bootcamp" ? "text-purpleText" : "text-white"} hover:text-purpleText duration-300 py-2`} href="/bootcamp">
             Bootcamp List
           </Link>
-          <Link className="block text-[#11111B] hover:text-purpleText duration-300 py-2" href="/documentation">
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/documentation">
             Documentation
           </Link>
-          <Link className="block text-[#11111B] hover:text-purpleText duration-300 py-2" href="/contact">
+          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/contact">
             FAQ
           </Link>
           {/* <Link
