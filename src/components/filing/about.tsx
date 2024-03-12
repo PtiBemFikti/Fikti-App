@@ -24,7 +24,7 @@ export default function AboutPage() {
 
       {/* Tampilan Dekstop Start */}
       <div className="md:block hidden mt-2">
-        <div className="flex gap-24 items-center justify-center p-10">
+        <div className="flex gap-24 items-center justify-center p-16">
           <div className="flex p-10">
             <div className="w-1/3 justify-center items-center ">
               <h1 className="text-black font-bold text-3xl ml-10 font-[Circle-Amolens]"> WHAT IS FILING? </h1>
