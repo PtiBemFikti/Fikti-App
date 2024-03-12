@@ -23,8 +23,9 @@ export default function AboutPage() {
 
       {/* Tampilan Dekstop Start */}
       <div className="md:block hidden mt-2">
-      <div className="flex gap-24 w-full items-start justify-start px-40 mt-20">
-        <div className="justify-center items-center ">
+      <div className="flex gap-24 items-start justify-start px-40 mt-8">
+        <div className="flex">
+        <div className="w-1/3 justify-center items-center ">
           <h1 className="text-black font-bold text-3xl ml-10 font-[Circle-Amolens]"> WHAT IS FILING? </h1>          
             <p className="text-xl w-96 text-justify mx-10 mt-10 text-[#6C6A67]">
               <span className="font-semibold text-[#6C6A67]">
@@ -39,13 +40,13 @@ export default function AboutPage() {
               </span>
             </p>
         </div>
-        <div className="justify-start items-center">
+        <div className="px-16">
           <div className="text-3xl text-black font-bold font-[Circle-Amolens]"> & </div>
         </div>
-        <div className="justify-center items-center">        
-          <div className="flex text-3xl ml-20 text-black font-bold font-[Circle-Amolens]"> WHY YOU SHOULD JOIN FILING? </div>
-                <div className="flex w-96 justify-start items-center gap-10 ml-16">
-                  <div className="mt-4">                    
+        <div className="px-16">        
+          <div className="text-3xl ml-20 text-black font-bold font-[Circle-Amolens]"> WHY YOU SHOULD JOIN FILING? </div>
+                <div className="flex w-2/3 justify-start items-center gap-10 ml-4">
+                  <div className="mt-4 ml-4">                    
                     <Image src={'/filing/simplicity.png'} alt='simplicity' width={100} height={100} />                
                       <h1 className="font-bold text-black text-right text-2xl">Simplicity</h1>
                         <p className="w-40 text-right text-[#6C6A67] text-base font-medium">Learn using quick and simple task requiring only a few minutes</p>
@@ -65,6 +66,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+        </div>
             
       {/* Tampilan Dekstop End */}
     </div>
