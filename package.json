@@ -14,11 +14,9 @@
     "@iconify/icons-ic": "^1.2.13",
     "@iconify/react": "^4.1.1",
     "@motionone/utils": "^10.16.3",
-<<<<<<< HEAD
-    "acorn": "^8.11.3",
-=======
+    "@nextui-org/button": "^2.0.27",
     "@nextui-org/react": "^2.2.10",
->>>>>>> 33bf3373b4ad4a1f1107ed1f466a25e6f0b4da44
+    "acorn": "^8.11.3",
     "animate.css": "^4.1.1",
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
