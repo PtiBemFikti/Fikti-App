@@ -5,6 +5,10 @@ import VidYoutube from '@/components/technofair/video';
 import Image from 'next/image';
 import AboutPage from '@/components/technofair/about';
 import EventPage from '@/components/technofair/event';
+<<<<<<< HEAD
+=======
+import SponsorPage from '@/components/technofair/sponsor';
+>>>>>>> 33bf3373b4ad4a1f1107ed1f466a25e6f0b4da44
 
 export default function TechnofairPage() {
   return (
@@ -15,8 +19,14 @@ export default function TechnofairPage() {
       {/* <section className='-mt-[580px] px-4 py-4 flex justify-center items-center mb-5'>
         <VidYoutube />
       </section> */}
+<<<<<<< HEAD
       <AboutPage/>
       <EventPage/>
+=======
+      <AboutPage />
+      <EventPage />
+      {/* <SponsorPage/> */}
+>>>>>>> 33bf3373b4ad4a1f1107ed1f466a25e6f0b4da44
     </main>
   );
 }

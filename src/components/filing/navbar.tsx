@@ -5,10 +5,12 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
+import { usePathname } from "next/navigation";  
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
+  const pathname = usePathname();
 
   const toggleMenu = async () => {
     // Set animasi saat menu dibuka
@@ -32,13 +34,13 @@ const Navbar: React.FC = () => {
     // Update status menu
     setIsMenuOpen(!isMenuOpen);
   };
-
+ 
   return (
     <motion.nav
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-[#060E23] p-4 sticky top-0 z-50"
+      className="bg-[#25243A] p-4 sticky top-0 z-50"
     >
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center ml-5">
@@ -49,7 +51,7 @@ const Navbar: React.FC = () => {
             height={50}
             className="mr-2"
           />
-          </Link>
+          </Link>         
           <div className="text-white md:hidden block">
           <h1 className="font-Lato font-bold text-2xl">FIKTI LEARNING</h1>
         </div>
@@ -57,7 +59,7 @@ const Navbar: React.FC = () => {
           <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/about">
             About
           </Link>
-          <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/bootcamp">
+          <Link className={`block ${pathname === "/bootcamp" ? "text-purpleText" : "text-white"} hover:text-purpleText duration-300 py-2`} href="/bootcamp">
             Bootcamp List
           </Link>
           <Link className="block text-white hover:text-purpleText duration-300 py-2" href="/documentation">
@@ -85,23 +87,23 @@ const Navbar: React.FC = () => {
         </div>
         <div className="md:hidden">
           {/* Hamburger menu icon */}
-          <button onClick={toggleMenu} className={`text-white mr-4 p-1 ${isMenuOpen ? 'bg-[#100819] backdrop-blur-sm shadow-md rounded-md ' : ''}`}>
+          <button onClick={toggleMenu} className={`text-[#11111B] mr-4 p-1 ${isMenuOpen ? 'bg-[#100819] backdrop-blur-sm shadow-md rounded-md ' : ''}`}>
             <Image src={'/filing/hamburger-btn.png'} alt="Hamburger menu Btn" width={20} height={20} />
           </button>
         </div>
       </div>
       {isMenuOpen && (
         <motion.div className="flex flex-col gap-3 md:hidden mt-4" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.5, ease: 'easeInOut' }} onClick={toggleMenu}>
-          <Link className="text-white hover:text-purpleText text-center" href="/about">
+          <Link className="text-[#11111B] hover:text-purpleText text-center" href="/about">
             About
           </Link>
-          <Link className="text-white hover:text-purpleText text-center" href="/bootcamp">
+          <Link className="text-[#11111B] hover:text-purpleText text-center" href="/bootcamp">
             Bootcamp List
           </Link>
-          <Link className="text-white hover:text-purpleText text-center" href="/documentation">
+        <Link className="text-[#11111B] hover:text-purpleText text-center" href="/documentation">
             Documentation
           </Link>
-          <Link className="text-white hover:text-purpleText text-center" href="/contact">
+          <Link className="text-[#11111B] hover:text-purpleText text-center" href="/contact">
             FAQ
           </Link>
           <div className="md:hidden block">
