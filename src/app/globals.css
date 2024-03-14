@@ -26,14 +26,13 @@ body {
 }
 
 .main {
-  background: linear-gradient(
-      63deg,
-      rgba(255, 109, 0, 0.2) 0%,
-      rgba(36, 0, 70, 0.3) 98.79%
-    ),
-    linear-gradient(245deg, #340660 0%, #380766 120.85%);
+  background: linear-gradient(63deg, rgba(255, 109, 0, 0.2) 0%, rgba(36, 0, 70, 0.3) 98.79%), linear-gradient(245deg, #340660 0%, #380766 120.85%);
 }
 
 .join {
-  background: linear-gradient(180deg, rgba(39, 5, 72, 0.00) 0%, #270548 69.5%);
+  background: linear-gradient(180deg, rgba(39, 5, 72, 0) 0%, #270548 69.5%);
+}
+
+.event {
+  background: linear-gradient(180deg, rgba(11, 14, 26, 0) 0%, #371d2a 36.4%, #241525 62.4%, rgba(44, 24, 38, 0) 98.4%);
 }

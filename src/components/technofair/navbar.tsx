@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
-import DropdownMenu from './DropdownMenu';
+import DropdownMenuNav from './DropdownMenu';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const Navbar: React.FC = () => {
@@ -44,17 +44,17 @@ const Navbar: React.FC = () => {
         <div className="text-[#241525] md:hidden block mb-32">
           <h1 className="font-Lato font-bold text-2xl">TechnoFair 11.0</h1>
         </div>
-        <div className="hidden md:flex md:gap-10 space-x-4 -ml-96 md:pt-2">
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 py-2" href="/about">
+        <div className="hidden md:flex md:gap-10 space-x-4 -ml-96 md:mb-32">
+          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="/about">
             About
           </Link>
-          <div className="block text-[#241525] hover:text-purpleText duration-300 py-0">
-            <DropdownMenu />
+          <div className="block text-[#241525] hover:text-purpleText duration-300 py-2">
+            <DropdownMenuNav />
           </div>
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 py-2" href="/schedule">
+          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="/schedule">
             Schedule
           </Link>
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 py-2" href="/contact">
+          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="/contact">
             Contact
           </Link>
           {/* <Link
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
             About
           </Link>
           <div className="text-[#241525] hover:text-purpleText text-center">
-            <DropdownMenu />
+            <DropdownMenuNav />
           </div>
           <Link className="text-[#241525] hover:text-purpleText text-center" href="/schedule">
             Schedule
