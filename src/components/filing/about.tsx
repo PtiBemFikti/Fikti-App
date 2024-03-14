@@ -6,25 +6,46 @@ export default function AboutPage() {
     <div className="">
       {/* Tampilan Mobile Start */}
       <div className="mt-2 md:hidden">
+        <div className="flex items-center justify-center"> 
+          <div className="my-8 px-8">       
+              <h1 className="text-center text-black  text-3xl font-bold font-['Circle Amolens']">WHAT IS FILING?</h1>
+                <p className="text-[#6C6A67] font-semibold mt-6">FIKTI Learning<span className="text-[#6C6A67] text-base font-medium"> adalah program workshop online yang dirancang khusus untuk mahasiswa FIKTI UG. Dalam 4 kali pertemuan selama satu bulan, kamu akan dibimbing oleh mentor berpengalaman untuk mengembangkan minat dan bakat di bidang teknologi informasi.</span></p>
+          </div>
+        </div>
+
         <div className="flex justify-center items-center">
-          <div className="bg-[#241525] px-7 py-4 rounded-[14px]">
-            <h1 className="text-3x1 text-[#FFE8CE] font-bold">WHAT IS FILING?</h1>
+          <div className="my-8 px-8">
+            <div className="text-center text-black text-3xl font-bold font-['Circle Amolens']">WHY YOU SHOULD JOIN FILING?</div>
+              <div className="justify-center items-start gap-5 inline-flex">
+                <div className="flex-col justify-start items-center inline-flex mt-8">
+                  <Image src={'/filing/simplicity.png'} alt="simplicity" width={80} height={80} />                    
+                    <h1 className="font-bold text-black text-2xl">Simplicity</h1>
+                      <p className="w-40 text-center text-[#6C6A67] text-base font-medium">Learn using quick and simple task requiring only a few minutes</p>                  
+                </div>
+
+                <div className="flex-col justify-start items-center inline-flex mt-8">
+                  <Image src={'/filing/motivation.png'} alt="motivation" width={80} height={80} />                
+                    <h1 className="font-bold text-black text-2xl">Motivation</h1>
+                      <p className="w-40 text-center text-[#6C6A67] text-base font-medium ">Achieve regular next steps of a course by supporting the motivation system.</p>              
+                </div>
+                </div>
+              <div className="flex justify-center items-center">
+                <div className="flex-col justify-center items-center inline-flex mt-16">
+                  <Image src={'/filing/support.png'} alt="support" width={80} height={80} />              
+                    <h1 className="font-bold text-black text-2xl">Supporting</h1>
+                      <p className="w-40 text-center text-[#6C6A67] text-base font-medium">We give our students best support always & all time per day</p>                             
+                </div> 
+              </div>           
+              
+            </div>
           </div>
+            
         </div>
-        <div className="px-8">
-          <div className="my-3">
-            <p className="text-[#241525] text-center">
-              FIKTI Learning adalah program workshop online yang dirancang khusus untuk mahasiswa FIKTI UG. Dalam 4 kali pertemuan selama satu bulan, kamu akan dibimbing oleh mentor berpengalaman untuk mengembangkan minat dan bakat di
-              bidang teknologi informasi.
-            </p>
-          </div>
-        </div>
-      </div>
       {/* Tampilan Mobile End */}
 
       {/* Tampilan Dekstop Start */}
       <div className="md:block hidden mt-2">
-        <div className="flex gap-24 items-center justify-center p-16">
+        <div className="flex gap-24 items-center justify-center p-28">
           <div className="flex p-10">
             <div className="w-1/3 justify-center items-center ">
               <h1 className="text-black font-bold text-3xl ml-10 font-[Circle-Amolens]"> WHAT IS FILING? </h1>
