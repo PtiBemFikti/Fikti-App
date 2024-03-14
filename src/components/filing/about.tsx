@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <div className="">
       {/* Tampilan Mobile Start */}
-      <div className="mt-2 md:hidden">
+      <div className="mt-2 md:hidden" id='about'>
         <div className="flex items-center justify-center"> 
           <div className="my-8 px-8">       
               <h1 className="text-center text-black  text-3xl font-bold font-['Circle Amolens']">WHAT IS FILING?</h1>
@@ -44,7 +44,7 @@ export default function AboutPage() {
       {/* Tampilan Mobile End */}
 
       {/* Tampilan Dekstop Start */}
-      <div className="md:block hidden mt-2">
+      <div className="md:block hidden mt-2" id='about'>
         <div className="flex gap-24 items-center justify-center p-28">
           <div className="flex p-10">
             <div className="w-1/3 justify-center items-center ">
