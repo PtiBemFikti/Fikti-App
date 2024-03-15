@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Circle Amolens';
+  src: url('../../public/font/CircleAmolensRegular.ttf') format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   border: solid ed;
