@@ -16,6 +16,9 @@ export default function EventPage() {
               <Image src={'/technofair/content.png'} alt="content" width={736} height={192} />
             </div>
           </div>
+          <div className="">
+            <p className='text-white'>Seminars</p>
+          </div>
         </div>
       </div>
       {/* Tampilan Dekstop End */}
