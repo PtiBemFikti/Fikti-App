@@ -38,7 +38,7 @@ export default function EventPage() {
                     <div>
                       <div className='flex gap-10'>
                         <div className='flex gap-2 '>
-                        <Image src={'/technofair/kalender.png'} alt='kalender' width={16} height={16} />
+                        <Image src={'/technofair/kalender.png'} alt='kalender' width={14} height={14} />
                         <p className='text-sm'>June 22-24, 2024 </p>
                         </div>
                         <div>
