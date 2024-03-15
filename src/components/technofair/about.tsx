@@ -16,7 +16,7 @@ export default function AboutPage() {
             <p className="text-[#241525] text-center">Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.</p>
           </div>
           <div className="my-3">
-            <p className="text-[#241525] text-center">Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quote;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quote;</p>
+            <p className="text-[#241525] text-center">Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quot;</p>
           </div>
         </div>
 
@@ -42,6 +42,9 @@ export default function AboutPage() {
         <div className="flex flex-col justify-center items-center py-6 gap-4">
           <div className="bg-[#241525] w-80 h-14 text-center rounded-[14px]">
             <p className="text-3xl text-[#ffe8ce] font-bold my-2">TechnoFair, In 4 Points</p>
+          </div>
+          <div className="">
+            <Image src={'/technofair/ladies-1.png'} alt="ladies" width={390} height={851} className='absolute object-cover overflow-hidden -ml-48 -z-10'/>
           </div>
           <div className="bg-[#E9E9EDCC] w-80 h-28 rounded-[28px] border-[2px] border-[#DCDCDF80]">
             <p className="text-[#251425] text-center p-3 text-sm">
@@ -98,7 +101,9 @@ export default function AboutPage() {
                 <p className="text-lg text-[#241525] mx-20">Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.</p>
               </div>
               <div className="text-center mt-5">
-                <p className="text-lg text-[#241525] mx-20">Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quote;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quote;</p>
+                <p className="text-lg text-[#241525] mx-20">
+                  Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quot;
+                </p>
               </div>
             </div>
           </div>

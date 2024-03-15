@@ -9,7 +9,7 @@ import SponsorPage from '@/components/technofair/sponsor';
 
 export default function TechnofairPage() {
   return (
-    <main className="bg-white bg-cover bg-no-repeat" style={{ backgroundImage: 'url(/technofair/bg-utama.png)' }}>
+    <main className="bg-white bg-cover bg-no-repeat -z-50" style={{ backgroundImage: 'url(/technofair/bg-utama.png)' }}>
       {/* <Image src={'/technofair/bg-utama.png'} alt="Bg Utama" width={300} height={300} className="bg-cover absolute" /> */}
       <Navbar />
       <Dashboard />
