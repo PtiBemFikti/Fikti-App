@@ -19,7 +19,7 @@ export default function EventPage() {
             </div>
           </div>
           <div className="">
-            <div className="px-14 py-5">
+            <div className="px-14 py-5 flex">
               <p className='text-[#241525] text-2xl font-bold'>Seminars & Workshops</p>
             </div>
 
