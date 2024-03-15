@@ -31,12 +31,24 @@ export default function EventPage() {
                   {/* big data */}
                   <div className='w-20 h-7 rounded-[11px] bg-[#AF5474] text-black'><center>Seminar</center></div>
                   <div className=' w-60 h-72'>
+                    <div className=''>
                     <h1 className=' w-64 h-9 mt-5 font-bold text-xl'>Big Data</h1>
                     <p className=' w-64 h-14 text-sm'>A dynamic language popular for web development, big data, science, and scripting</p>
-                    <p className=' w-60 h-5 mt-5 text-sm'>June 22-24, 2024 </p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Online</p>
-                    <p className=' w-60 h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
+                      </div>
+                    <div>
+                      <div className='flex gap-10'>
+                        <div className='flex gap-2 '>
+                        <Image src={'/technofair/kalender.png'} alt='kalender' width={16} height={16} />
+                        <p className='text-sm'>June 22-24, 2024 </p>
+                        </div>
+                        <div>
+                        <p className='text-sm'>10.30</p>
+                          </div>
+                        </div>
+                    <p className='h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
+                    <p className='h-5 text-sm mt-2'>Online</p>
+                    <p className='h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -47,11 +59,11 @@ export default function EventPage() {
                   <div className='w-20 h-7 rounded-[11px] bg-[#AF5474] text-black'><center>Seminar</center></div>
                   <div className=' w-60 h-72'>
                     <h1 className=' w-64 h-9 mt-5 font-bold text-xl'>Smart City</h1>
-                    <p className=' w-64 h-14 text-sm'>A dynamic language popular for web development, big data, science, and scripting</p>
-                    <p className=' w-60 h-5 mt-5 text-sm'>June 22-24, 2024 </p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Online</p>
-                    <p className=' w-60 h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
+                    <p className='h-14 text-sm'>A dynamic language popular for web development, big data, science, and scripting</p>
+                    <p className='h-5 mt-5 text-sm'>June 22-24, 2024 </p>
+                    <p className='h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
+                    <p className='h-5 text-sm mt-2'>Online</p>
+                    <p className='h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
                   </div>
                 </div>
               </div>
@@ -62,10 +74,10 @@ export default function EventPage() {
                   <div className=' w-60 h-72'>
                     <h1 className=' w-64 h-9 mt-5 font-bold text-xl'>Digital Marketing</h1>
                     <p className=' w-64 h-14 text-sm'>A dynamic language popular for web development, big data, science, and scripting</p>
-                    <p className=' w-60 h-5 mt-5 text-sm'>June 22-24, 2024 </p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Online</p>
-                    <p className=' w-60 h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
+                    <p className='h-5 mt-5 text-sm'>June 22-24, 2024 </p>
+                    <p className='h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
+                    <p className='h-5 text-sm mt-2'>Online</p>
+                    <p className='h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
                   </div>
                 </div></div>
               <div className="w-72 h-96 bg-black rounded-[39px] border-[2px] flex justify-center items-center"><div className="w-64 h-72 m-8">
@@ -75,10 +87,10 @@ export default function EventPage() {
                   <div className=' w-60 h-72'>
                     <h1 className=' w-64 h-9 mt-5 font-bold text-xl'>UI Design</h1>
                     <p className=' w-64 h-14 text-sm'>A dynamic language popular for web development, big data, science, and scripting</p>
-                    <p className=' w-60 h-5 mt-5 text-sm'>June 22-24, 2024 </p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Online</p>
-                    <p className=' w-60 h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
+                    <p className='h-5 mt-5 text-sm'>June 22-24, 2024 </p>
+                    <p className='h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
+                    <p className='h-5 text-sm mt-2'>Online</p>
+                    <p className='h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
                   </div>
                 </div>
               </div>
@@ -100,10 +112,10 @@ export default function EventPage() {
                   <div className=' w-60 h-72'>
                     <h1 className=' w-64 h-9 mt-5 font-bold text-xl'>Smart FIKTI</h1>
                     <p className=' w-64 h-14 text-sm'>A dynamic language popular for web development, big data, science, and scripting</p>
-                    <p className=' w-60 h-5 mt-5 text-sm'>June 22-24, 2024 </p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Online</p>
-                    <p className=' w-60 h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
+                    <p className='h-5 mt-5 text-sm'>June 22-24, 2024 </p>
+                    <p className='h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
+                    <p className='h-5 text-sm mt-2'>Online</p>
+                    <p className='h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
                   </div>
                 </div>
               </div>
@@ -115,10 +127,10 @@ export default function EventPage() {
                   <div className=' w-60 h-72'>
                     <h1 className=' w-64 h-9 mt-5 font-bold text-xl'>Infographic</h1>
                     <p className=' w-64 h-14 text-sm'>A dynamic language popular for web development, big data, science, and scripting</p>
-                    <p className=' w-60 h-5 mt-5 text-sm'>June 22-24, 2024 </p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Online</p>
-                    <p className=' w-60 h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
+                    <p className='h-5 mt-5 text-sm'>June 22-24, 2024 </p>
+                    <p className='h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
+                    <p className='h-5 text-sm mt-2'>Online</p>
+                    <p className='h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
                   </div>
                 </div>
               </div>
@@ -130,10 +142,10 @@ export default function EventPage() {
                   <div className=' w-60 h-72'>
                     <h1 className=' w-64 h-9 mt-5 font-bold text-xl'>Capture the Flag</h1>
                     <p className=' w-64 h-14 text-sm'>A dynamic language popular for web development, big data, science, and scripting</p>
-                    <p className=' w-60 h-5 mt-5 text-sm'>June 22-24, 2024 </p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Online</p>
-                    <p className=' w-60 h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
+                    <p className='>h-5 mt-5 text-sm'>June 22-24, 2024 </p>
+                    <p className='>h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
+                    <p className='>h-5 text-sm mt-2'>Online</p>
+                    <p className='>h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
                   </div>
                 </div>
               </div>
@@ -145,10 +157,10 @@ export default function EventPage() {
                   <div className=' w-60 h-72'>
                     <h1 className=' w-64 h-9 mt-5 font-bold text-xl'>UX Design</h1>
                     <p className=' w-64 h-14 text-sm'>A dynamic language popular for web development, big data, science, and scripting</p>
-                    <p className=' w-60 h-5 mt-5 text-sm'>June 22-24, 2024 </p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
-                    <p className=' w-60 h-5 text-sm mt-2'>Online</p>
-                    <p className=' w-60 h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
+                    <p className='h-5 mt-5 text-sm'>June 22-24, 2024 </p>
+                    <p className='h-5 text-sm mt-2'>Infomation & Cybersecurity</p>
+                    <p className='h-5 text-sm mt-2'>Online</p>
+                    <p className='h-5 text-sm mt-9'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn more</p>
                   </div>
                 </div>
               </div>
