@@ -16,7 +16,7 @@ export default function AboutPage() {
             <p className="text-[#241525] text-center">Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.</p>
           </div>
           <div className="my-3">
-            <p className="text-[#241525] text-center">Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema "Realizing the dynamic technological transformation through collaborative innovation in FutureTech".</p>
+            <p className="text-[#241525] text-center">Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quote;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quote;</p>
           </div>
         </div>
 
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 <p className="text-lg text-[#241525] mx-20">Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.</p>
               </div>
               <div className="text-center mt-5">
-                <p className="text-lg text-[#241525] mx-20">Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema "Realizing the dynamic technological transformation through collaborative innovation in FutureTech".</p>
+                <p className="text-lg text-[#241525] mx-20">Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quote;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quote;</p>
               </div>
             </div>
           </div>

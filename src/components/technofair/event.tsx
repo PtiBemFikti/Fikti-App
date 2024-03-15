@@ -4,9 +4,9 @@ export default function EventPage() {
   return (
     <div className="">
       {/* Tampilan Dekstop Start */}
-      <div className="md:block hidden">
+      <div className="md:block hidden event">
         <div className="">
-          <div className="flex justify-center items-center p-14 mt-20 event">
+          <div className="flex justify-center items-center p-14 mt-20">
             <div className="w-2/3">
               <h1 className="text-white text-6xl font-bold font-[Bricolage-Grotesque]">
                 Our Upcoming <br /> Events
