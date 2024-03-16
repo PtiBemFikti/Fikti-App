@@ -1,13 +1,16 @@
+'use client';
+
 import Image from 'next/image';
+import ElementScroll from './ElementScroll';
 
 export default function EventPage() {
   return (
     <div className="">
       {/* Tampilan Dekstop Start */}
-      <div className="md:block hidden event">
+      <div className="md:block hidden">
         <div className="">
           {/* <Image src={'/technofair/noisy-gradient.png'} alt='bg gradient' width={1440} height={1931} className='absolute object-cover'/> */}
-          <div className="flex justify-center items-center p-14 mt-20">
+          <div className="flex justify-center items-center p-14 mt-20 bg-gradient-to-t from-[#211525] to-white">
             <div className="w-2/3">
               <h1 className="text-white text-6xl font-bold font-[Bricolage-Grotesque]">
                 Our Upcoming <br /> Events
@@ -18,12 +21,12 @@ export default function EventPage() {
             </div>
           </div>
 
-          <div className="py-20 px-14">
+          <div className="py-20 px-14 bg-[#241525]">
             <div className="font-[Poppins]">
               <p className="text-3xl font-bold text-white">Seminars & Workshops</p>
               {/* Card Acara Seminar & Workshops */}
               <div className="py-4 flex justify-center items-center gap-3">
-                <div className="w-72 h-96 bg-[#833f57] border-[#E87C6C3B] border-[2px] rounded-[39px]">
+                <div className="w-72 h-96 bg-[#212427] border-[#E87C6C3B] border-[2px] rounded-[39px]">
                   <div className="p-7">
                     <div className="w-20 h-7 bg-[#af5474] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Seminar</p>
@@ -58,7 +61,7 @@ export default function EventPage() {
                     </div>
                   </div>
                 </div>
-                <div className="w-72 h-96 bg-[#833f57] border-[#E87C6C3B] border-[2px] rounded-[39px]">
+                <div className="w-72 h-96 bg-[#212427] border-[#E87C6C3B] border-[2px] rounded-[39px]">
                   <div className="p-7">
                     <div className="w-20 h-7 bg-[#af5474] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Seminar</p>
@@ -93,7 +96,7 @@ export default function EventPage() {
                     </div>
                   </div>
                 </div>
-                <div className="w-72 h-96 bg-[#833f57] border-[#F9F8713B] border-[2px] rounded-[39px]">
+                <div className="w-72 h-96 bg-[#212427] border-[#F9F8713B] border-[2px] rounded-[39px]">
                   <div className="p-7">
                     <div className="w-24 h-7 bg-[#F9F871] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Workshop</p>
@@ -128,7 +131,7 @@ export default function EventPage() {
                     </div>
                   </div>
                 </div>
-                <div className="w-72 h-96 bg-[#833f57] border-[#F9F8713B] border-[2px] rounded-[39px]">
+                <div className="w-72 h-96 bg-[#212427] border-[#F9F8713B] border-[2px] rounded-[39px]">
                   <div className="p-7">
                     <div className="w-24 h-7 bg-[#F9F871] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Workshop</p>
@@ -167,12 +170,12 @@ export default function EventPage() {
               {/* Cara Acara Seminar & Workshops End */}
             </div>
           </div>
-          <div className="px-14">
+          <div className="px-14 bg-[#241525]">
             <div className="font-[Poppins]">
               <p className="text-3xl font-bold text-white">Competitions</p>
               {/* Card Acara Competitions */}
               <div className="py-4 flex justify-center items-center gap-3">
-                <div className="w-72 h-96 bg-[#833f57] border-[#E6A3563B] border-[2px] rounded-[39px]">
+                <div className="w-72 h-96 bg-[#212427] border-[#E6A3563B] border-[2px] rounded-[39px]">
                   <div className="p-7">
                     <div className="w-28 h-7 bg-[#E6A356] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
@@ -207,7 +210,7 @@ export default function EventPage() {
                     </div>
                   </div>
                 </div>
-                <div className="w-72 h-96 bg-[#833f57] border-[#E6A3563B] border-[2px] rounded-[39px]">
+                <div className="w-72 h-96 bg-[#212427] border-[#E6A3563B] border-[2px] rounded-[39px]">
                   <div className="p-7">
                     <div className="w-28 h-7 bg-[#E6A356] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
@@ -242,7 +245,7 @@ export default function EventPage() {
                     </div>
                   </div>
                 </div>
-                <div className="w-72 h-96 bg-[#833f57] border-[#E6A3563B] border-[2px] rounded-[39px]">
+                <div className="w-72 h-96 bg-[#212427] border-[#E6A3563B] border-[2px] rounded-[39px]">
                   <div className="p-7">
                     <div className="w-28 h-7 bg-[#E6A356] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
@@ -277,7 +280,7 @@ export default function EventPage() {
                     </div>
                   </div>
                 </div>
-                <div className="w-72 h-96 bg-[#833f57] border-[#E6A3563B] border-[2px] rounded-[39px]">
+                <div className="w-72 h-96 bg-[#212427] border-[#E6A3563B] border-[2px] rounded-[39px]">
                   <div className="p-7">
                     <div className="w-28 h-7 bg-[#E6A356] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
@@ -321,7 +324,21 @@ export default function EventPage() {
       {/* Tampilan Dekstop End */}
 
       {/* Tampilan Mobile Start */}
-      
+      <div className="bg-gradient-to-t from-[#241525] to-black pt-28 md:hidden">
+        <div className="">
+          <div className="">
+            <Image src={'/technofair/content-mobile.png'} alt="content mobile" width={390} height={570} />
+          </div>
+          <div className="">
+            <div className="text-center p-10">
+              <p className="text-5xl font-[Bricolage-Grotesque] font-bold text-[#FFF4E7]">Our Upcoming Events</p>
+            </div>
+            <div className="border">
+              <ElementScroll />
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Tampilan Mobile End */}
     </div>
   );
