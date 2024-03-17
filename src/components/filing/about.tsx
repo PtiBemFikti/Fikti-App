@@ -4,18 +4,18 @@ import Image from 'next/image';
 export default function AboutPage() {
   return (
     <div className="">
-      {/* Tampilan Mobile Start */}
+      {/*Mobile*/}
       <div className="mt-2 md:hidden">
         <div className="flex items-center justify-center"> 
           <div className="my-8 px-8">       
-              <h1 className="text-center text-black  text-3xl font-bold font-['Circle Amolens']">WHAT IS FILING?</h1>
+              <h1 className="text-center text-black  text-3xl font-bold font-[arial]">WHAT IS FILING?</h1>
                 <p className="text-[#6C6A67] font-semibold mt-6">FIKTI Learning<span className="text-[#6C6A67] text-base font-medium"> adalah program workshop online yang dirancang khusus untuk mahasiswa FIKTI UG. Dalam 4 kali pertemuan selama satu bulan, kamu akan dibimbing oleh mentor berpengalaman untuk mengembangkan minat dan bakat di bidang teknologi informasi.</span></p>
           </div>
         </div>
 
         <div className="flex justify-center items-center">
-          <div className="my-8 px-8">
-            <div className="text-center text-black text-3xl font-bold font-['Circle Amolens']">WHY YOU SHOULD JOIN FILING?</div>
+          <div className="my-8 px-4">
+            <div className="text-center text-black text-3xl font-bold font-[arial]">WHY YOU SHOULD JOIN FILING?</div>
               <div className="justify-center items-start gap-5 inline-flex">
                 <div className="flex-col justify-start items-center inline-flex mt-8">
                   <Image src={'/filing/simplicity.png'} alt="simplicity" width={80} height={80} />                    
@@ -40,16 +40,15 @@ export default function AboutPage() {
             </div>
           </div>
             
-        </div>
-      {/* Tampilan Mobile End */}
+        </div>     
 
-      {/* Tampilan Dekstop Start */}
+      {/* Dekstop*/}
       <div className="md:block hidden mt-2">
-        <div className="flex gap-24 items-center justify-center p-28">
+        <div className="flex gap-24 items-center justify-center p-10">
           <div className="flex p-10">
             <div className="w-1/3 justify-center items-center ">
-              <h1 className="text-black font-bold text-3xl ml-10 font-[Circle-Amolens]"> WHAT IS FILING? </h1>
-              <p className="text-xl w-96 text-justify mx-10 mt-10 text-[#6C6A67]">
+              <h1 className="text-black font-bold text-3xl ml-10 font-[arial]"> WHAT IS FILING? </h1>
+              <p className="text-xl w-96 text-left mx-10 mt-10 text-[#6C6A67]">
                 <span className="font-semibold text-[#6C6A67]">FIKTI Learning</span>
                 <span className="font-medium text-[#6C6A67]">
                   {' '}
@@ -58,11 +57,11 @@ export default function AboutPage() {
                 </span>
               </p>
             </div>
-            <div className="px-16">
-              <div className="text-3xl text-black font-bold font-[Circle-Amolens]"> & </div>
+            <div className="px-12">
+              <div className="text-3xl text-black font-bold font-[arial]"> & </div>
             </div>
-            <div className="px-16">
-              <div className="text-3xl ml-20 text-black font-bold font-[Circle-Amolens]"> WHY YOU SHOULD JOIN FILING? </div>
+            <div className="px-2">
+              <h1 className="text-3xl ml-20 text-black font-bold font-[arial]"> WHY YOU SHOULD JOIN FILING? </h1>
               <div className="flex w-2/3 justify-start items-center gap-8 ml-4">
                 <div className="mt-4 ml-4 flex-col items-end inline-flex">
                   <Image src={'/filing/simplicity.png'} alt="simplicity" width={100} height={100} />
@@ -85,8 +84,6 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-
-      {/* Tampilan Dekstop End */}
     </div>
   );
 }

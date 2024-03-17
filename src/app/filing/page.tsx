@@ -2,6 +2,7 @@
 import Navbar from '@/components/filing/navbar';
 import AboutPage from '@/components/filing/about';
 import Dashboard from "@/components/filing/dashboard";
+import BootcampPage from '@/components/filing/bootcamp';
 export default function FilingPage() {
 
   return (
@@ -11,9 +12,9 @@ export default function FilingPage() {
         <VidYoutube />
       </section> */}
 
-      <Dashboard />
-
+      <Dashboard />      
       <AboutPage/>
+      <BootcampPage />
 
     </main>
   );

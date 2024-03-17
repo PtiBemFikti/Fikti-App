@@ -16,7 +16,7 @@ const Dashboard: React.FC = () => {
                 <h1 className="bg-[#545350] text-[#F0ECE5] px-2 text-[24px] rounded-3xl font-Poppins font-thin tracking-wide">2024</h1>
               </div>
               <div className="flex flex-col gap-5">
-                <h1 className="font-CircleAmolens text-[40px]">Power Up Your SKills to Face Industry 5.0 with data analyst and web</h1>
+                <h1 className="font-['Circle-Amolens'] font-bold text-[40px]">POWER UP YOUR SKILLS TO FACE INDUSTRY 5.0 WITH DATA ANALYST AND WEB</h1>
                 <h2 className="font-Poppins leading-[30px] text-[20px] text-[#6C6A67]">Get the knowledge and skills you need to thrive in today’s rapidly changing world with our flexible and affordable bootcamp online courses</h2>
                 <div className="flex gap-5">
                   <button className="bg-[#11111B] rounded-md text-[#FEFDFC] text-[16px] leading-6 py-2 px-9 font-semibold">Daftar Sekarang</button>
@@ -37,7 +37,7 @@ const Dashboard: React.FC = () => {
                 <h1 className="bg-[#545350] text-[#F0ECE5] px-2 text-[14px] rounded-3xl font-Poppins font-thin tracking-wide">2024</h1>
               </div>
               <div>
-                <h1 className="font-CircleAmolens text-[30px] text-black leading-[1.05]">Power Up Your SKills to Face Industry 5.0 with data analyst and web</h1>
+                <h1 className="font-[Circle-Amolens] font-bold text-[30px] text-black leading-[1.05]">POWER UP YOUR SKILLS TO FACE INDUSTRY 5.0 WITH DATA ANALYST AND WEB</h1>
               </div>
             </div>
             <Image src={learning2} alt="" className="pt-[180px]" />
