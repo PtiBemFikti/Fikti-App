@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import ElementScroll from './ElementScroll';
 
 export default function EventPage() {
   return (
@@ -37,22 +36,22 @@ export default function EventPage() {
                     </div>
                     <div className="">
                       <div className="flex gap-5">
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
                           <p className="text-[#b9bcc7] text-sm mt-1">June 22-24, 2024</p>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
                           <p className="text-[#b9bcc7] text-sm mt-1">10.30</p>
                         </div>
                       </div>
-                      <div className="flex gap-2 py-4">
+                      <div className="grid grid-flow-col gap-2 py-4">
                         <Image src={'/technofair/pena.png'} alt="pena" width={20} height={10} />
                         <p className="text-[#b9bcc7] text-sm mt-1">Information & Cybersecurity</p>
                       </div>
-                      <div className="flex gap-2">
+                      <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
@@ -72,22 +71,22 @@ export default function EventPage() {
                     </div>
                     <div className="">
                       <div className="flex gap-5">
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
                           <p className="text-[#b9bcc7] text-sm mt-1">June 22-24, 2024</p>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
                           <p className="text-[#b9bcc7] text-sm mt-1">10.30</p>
                         </div>
                       </div>
-                      <div className="flex gap-2 py-4">
+                      <div className="grid grid-flow-col gap-2 py-4">
                         <Image src={'/technofair/pena.png'} alt="pena" width={20} height={10} />
                         <p className="text-[#b9bcc7] text-sm mt-1">Information & Cybersecurity</p>
                       </div>
-                      <div className="flex gap-2">
+                      <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
@@ -107,22 +106,22 @@ export default function EventPage() {
                     </div>
                     <div className="">
                       <div className="flex gap-5">
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
                           <p className="text-[#b9bcc7] text-sm mt-1">June 22-24, 2024</p>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
                           <p className="text-[#b9bcc7] text-sm mt-1">10.30</p>
                         </div>
                       </div>
-                      <div className="flex gap-2 py-4">
+                      <div className="grid grid-flow-col gap-2 py-4">
                         <Image src={'/technofair/pena.png'} alt="pena" width={20} height={10} />
                         <p className="text-[#b9bcc7] text-sm mt-1">Information & Cybersecurity</p>
                       </div>
-                      <div className="flex gap-2">
+                      <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
@@ -142,22 +141,22 @@ export default function EventPage() {
                     </div>
                     <div className="">
                       <div className="flex gap-5">
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
                           <p className="text-[#b9bcc7] text-sm mt-1">June 22-24, 2024</p>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
                           <p className="text-[#b9bcc7] text-sm mt-1">10.30</p>
                         </div>
                       </div>
-                      <div className="flex gap-2 py-4">
+                      <div className="grid grid-flow-col gap-2 py-4">
                         <Image src={'/technofair/pena.png'} alt="pena" width={20} height={10} />
                         <p className="text-[#b9bcc7] text-sm mt-1">Information & Cybersecurity</p>
                       </div>
-                      <div className="flex gap-2">
+                      <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
@@ -186,22 +185,22 @@ export default function EventPage() {
                     </div>
                     <div className="">
                       <div className="flex gap-5">
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
                           <p className="text-[#b9bcc7] text-sm mt-1">June 22-24, 2024</p>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
                           <p className="text-[#b9bcc7] text-sm mt-1">10.30</p>
                         </div>
                       </div>
-                      <div className="flex gap-2 py-4">
+                      <div className="grid grid-flow-col gap-2 py-4">
                         <Image src={'/technofair/pena.png'} alt="pena" width={20} height={10} />
                         <p className="text-[#b9bcc7] text-sm mt-1">Information & Cybersecurity</p>
                       </div>
-                      <div className="flex gap-2">
+                      <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
@@ -221,22 +220,22 @@ export default function EventPage() {
                     </div>
                     <div className="">
                       <div className="flex gap-5">
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
                           <p className="text-[#b9bcc7] text-sm mt-1">June 22-24, 2024</p>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
                           <p className="text-[#b9bcc7] text-sm mt-1">10.30</p>
                         </div>
                       </div>
-                      <div className="flex gap-2 py-4">
+                      <div className="grid grid-flow-col gap-2 py-4">
                         <Image src={'/technofair/pena.png'} alt="pena" width={20} height={10} />
                         <p className="text-[#b9bcc7] text-sm mt-1">Information & Cybersecurity</p>
                       </div>
-                      <div className="flex gap-2">
+                      <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
@@ -256,22 +255,22 @@ export default function EventPage() {
                     </div>
                     <div className="">
                       <div className="flex gap-5">
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
                           <p className="text-[#b9bcc7] text-sm mt-1">June 22-24, 2024</p>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
                           <p className="text-[#b9bcc7] text-sm mt-1">10.30</p>
                         </div>
                       </div>
-                      <div className="flex gap-2 py-4">
+                      <div className="grid grid-flow-col gap-2 py-4">
                         <Image src={'/technofair/pena.png'} alt="pena" width={20} height={10} />
                         <p className="text-[#b9bcc7] text-sm mt-1">Information & Cybersecurity</p>
                       </div>
-                      <div className="flex gap-2">
+                      <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
@@ -291,22 +290,22 @@ export default function EventPage() {
                     </div>
                     <div className="">
                       <div className="flex gap-5">
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
                           <p className="text-[#b9bcc7] text-sm mt-1">June 22-24, 2024</p>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
                           <p className="text-[#b9bcc7] text-sm mt-1">10.30</p>
                         </div>
                       </div>
-                      <div className="flex gap-2 py-4">
+                      <div className="grid grid-flow-col gap-2 py-4">
                         <Image src={'/technofair/pena.png'} alt="pena" width={20} height={10} />
                         <p className="text-[#b9bcc7] text-sm mt-1">Information & Cybersecurity</p>
                       </div>
-                      <div className="flex gap-2">
+                      <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
@@ -333,8 +332,221 @@ export default function EventPage() {
             <div className="text-center p-10">
               <p className="text-5xl font-[Bricolage-Grotesque] font-bold text-[#FFF4E7]">Our Upcoming Events</p>
             </div>
-            <div className="border">
-              <ElementScroll />
+            <div className="">
+              <div className="px-7">
+                <p className="font-bold font-[Poppins] text-xl">Seminar & Workshops</p>
+              </div>
+              <div className="py-5 pl-20 grid grid-flow-col gap-4 overflow-x-auto overflow-y-hidden overflow-hidden pt-4 font-[Poppins]">
+                <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E87C6C3B] rounded-[28px]">
+                  <div className="p-5">
+                    <div className="w-20 h-7 bg-[#AF5474] rounded-[11px]">
+                      <p className="text-center text-[#241525] text-sm p-1">Seminar</p>
+                    </div>
+                    <div className="py-3">
+                      <p className="text-xl italic font-bold">Big Data</p>
+                      <p className="text-sm text-[#B9BCC7] mt-1">A dynamic language popular for web development, big data, science, and scripting.</p>
+                    </div>
+                    <div className="grid grid-flow-row gap-y-2">
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
+                        <p className="text-sm text-[#B9BCC7] mr-10">June 22-24, 2024</p>
+                      </div>
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
+                        <p className="text-sm text-[#B9BCC7] mr-24">10.30 WIB</p>
+                      </div>
+                    </div>
+                    <div className="py-4 flex justify-end items-end gap-4">
+                      <p className="text-base font-bold">Learn More</p>
+                      <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                    </div>
+                  </div>
+                </div>
+                <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E87C6C3B] rounded-[28px]">
+                  <div className="p-5">
+                    <div className="w-20 h-7 bg-[#AF5474] rounded-[11px]">
+                      <p className="text-center text-[#241525] text-sm p-1">Seminar</p>
+                    </div>
+                    <div className="py-3">
+                      <p className="text-xl italic font-bold">Smart City</p>
+                      <p className="text-sm text-[#B9BCC7] mt-1">A dynamic language popular for web development, big data, science, and scripting.</p>
+                    </div>
+                    <div className="grid grid-flow-row gap-y-2">
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
+                        <p className="text-sm text-[#B9BCC7] mr-10">June 22-24, 2024</p>
+                      </div>
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
+                        <p className="text-sm text-[#B9BCC7] mr-24">10.30 WIB</p>
+                      </div>
+                    </div>
+                    <div className="py-4 flex justify-end items-end gap-4">
+                      <p className="text-base font-bold">Learn More</p>
+                      <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="py-5 pl-20 grid grid-flow-col gap-4 overflow-x-auto overflow-y-hidden overflow-hidden pt-4 font-[Poppins]">
+                <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#F9F8713B] rounded-[28px]">
+                  <div className="p-5">
+                    <div className="w-24 h-7 bg-[#F9F871] rounded-[11px]">
+                      <p className="text-center text-[#241525] text-sm p-1">Workshop</p>
+                    </div>
+                    <div className="py-3">
+                      <p className="text-xl italic font-bold">Digital Marketing</p>
+                      <p className="text-sm text-[#B9BCC7] mt-1">A dynamic language popular for web development, big data, science, and scripting.</p>
+                    </div>
+                    <div className="grid grid-flow-row gap-y-2">
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
+                        <p className="text-sm text-[#B9BCC7] mr-10">June 22-24, 2024</p>
+                      </div>
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
+                        <p className="text-sm text-[#B9BCC7] mr-24">10.30 WIB</p>
+                      </div>
+                    </div>
+                    <div className="py-4 flex justify-end items-end gap-4">
+                      <p className="text-base font-bold">Learn More</p>
+                      <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                    </div>
+                  </div>
+                </div>
+                <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#F9F8713B] rounded-[28px]">
+                  <div className="p-5">
+                    <div className="w-24 h-7 bg-[#F9F871] rounded-[11px]">
+                      <p className="text-center text-[#241525] text-sm p-1">Workshop</p>
+                    </div>
+                    <div className="py-3">
+                      <p className="text-xl italic font-bold">UI Design</p>
+                      <p className="text-sm text-[#B9BCC7] mt-1">A dynamic language popular for web development, big data, science, and scripting.</p>
+                    </div>
+                    <div className="grid grid-flow-row gap-y-2">
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
+                        <p className="text-sm text-[#B9BCC7] mr-10">June 22-24, 2024</p>
+                      </div>
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
+                        <p className="text-sm text-[#B9BCC7] mr-24">10.30 WIB</p>
+                      </div>
+                    </div>
+                    <div className="py-4 flex justify-end items-end gap-4">
+                      <p className="text-base font-bold">Learn More</p>
+                      <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="py-4">
+              <div className="px-7">
+                <p className="font-bold font-[Poppins] text-xl">Competitions</p>
+              </div>
+              <div className="py-5 pl-20 grid grid-flow-col gap-4 overflow-x-auto overflow-y-hidden overflow-hidden pt-4 font-[Poppins]">
+                <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E6A3563B] rounded-[28px]">
+                  <div className="p-5">
+                    <div className="w-28 h-7 bg-[#E6A356] rounded-[11px]">
+                      <p className="text-center text-[#241525] text-sm p-1">Competition</p>
+                    </div>
+                    <div className="py-3">
+                      <p className="text-xl italic font-bold">Smart Fikti</p>
+                      <p className="text-sm text-[#B9BCC7] mt-1">A dynamic language popular for web development, big data, science, and scripting.</p>
+                    </div>
+                    <div className="grid grid-flow-row gap-y-2">
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
+                        <p className="text-sm text-[#B9BCC7] mr-10">June 22-24, 2024</p>
+                      </div>
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
+                        <p className="text-sm text-[#B9BCC7] mr-24">10.30 WIB</p>
+                      </div>
+                    </div>
+                    <div className="py-4 flex justify-end items-end gap-4">
+                      <p className="text-base font-bold">Learn More</p>
+                      <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                    </div>
+                  </div>
+                </div>
+                <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E6A3563B] rounded-[28px]">
+                  <div className="p-5">
+                    <div className="w-28 h-7 bg-[#E6A356] rounded-[11px]">
+                      <p className="text-center text-[#241525] text-sm p-1">Competition</p>
+                    </div>
+                    <div className="py-3">
+                      <p className="text-xl italic font-bold">Infographic</p>
+                      <p className="text-sm text-[#B9BCC7] mt-1">A dynamic language popular for web development, big data, science, and scripting.</p>
+                    </div>
+                    <div className="grid grid-flow-row gap-y-2">
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
+                        <p className="text-sm text-[#B9BCC7] mr-10">June 22-24, 2024</p>
+                      </div>
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
+                        <p className="text-sm text-[#B9BCC7] mr-24">10.30 WIB</p>
+                      </div>
+                    </div>
+                    <div className="py-4 flex justify-end items-end gap-4">
+                      <p className="text-base font-bold">Learn More</p>
+                      <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                    </div>
+                  </div>
+                </div>
+                <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E6A3563B] rounded-[28px]">
+                  <div className="p-5">
+                    <div className="w-28 h-7 bg-[#E6A356] rounded-[11px]">
+                      <p className="text-center text-[#241525] text-sm p-1">Competition</p>
+                    </div>
+                    <div className="py-3">
+                      <p className="text-xl italic font-bold">Capture The Flag</p>
+                      <p className="text-sm text-[#B9BCC7] mt-1">A dynamic language popular for web development, big data, science, and scripting.</p>
+                    </div>
+                    <div className="grid grid-flow-row gap-y-2">
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
+                        <p className="text-sm text-[#B9BCC7] mr-10">June 22-24, 2024</p>
+                      </div>
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
+                        <p className="text-sm text-[#B9BCC7] mr-24">10.30 WIB</p>
+                      </div>
+                    </div>
+                    <div className="py-4 flex justify-end items-end gap-4">
+                      <p className="text-base font-bold">Learn More</p>
+                      <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                    </div>
+                  </div>
+                </div>
+                <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E6A3563B] rounded-[28px]">
+                  <div className="p-5">
+                    <div className="w-28 h-7 bg-[#E6A356] rounded-[11px]">
+                      <p className="text-center text-[#241525] text-sm p-1">Competition</p>
+                    </div>
+                    <div className="py-3">
+                      <p className="text-xl italic font-bold">UX Design</p>
+                      <p className="text-sm text-[#B9BCC7] mt-1">A dynamic language popular for web development, big data, science, and scripting.</p>
+                    </div>
+                    <div className="grid grid-flow-row gap-y-2">
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
+                        <p className="text-sm text-[#B9BCC7] mr-10">June 22-24, 2024</p>
+                      </div>
+                      <div className="grid grid-flow-col">
+                        <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
+                        <p className="text-sm text-[#B9BCC7] mr-24">10.30 WIB</p>
+                      </div>
+                    </div>
+                    <div className="py-4 flex justify-end items-end gap-4">
+                      <p className="text-base font-bold">Learn More</p>
+                      <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

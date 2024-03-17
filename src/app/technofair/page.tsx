@@ -6,6 +6,7 @@ import Image from 'next/image';
 import AboutPage from '@/components/technofair/about';
 import EventPage from '@/components/technofair/event';
 import SponsorPage from '@/components/technofair/sponsor';
+import SchedulePage from '@/components/technofair/schedule';
 
 export default function TechnofairPage() {
   return (
@@ -18,6 +19,7 @@ export default function TechnofairPage() {
       </section> */}
       <AboutPage />
       <EventPage />
+      <SchedulePage/>
       {/* <SponsorPage/> */}
     </main>
   );
