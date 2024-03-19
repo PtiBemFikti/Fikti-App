@@ -15,7 +15,7 @@ export default function SchedulePage() {
             </div>
           </div>
           <div className="">
-            <ScheduleTabs />
+            <ScheduleTabs items={items}/>
             {/* <div className="flex justify-center items-center py-3 gap-5">
               <div className="w-48 h-10 bg-[#E87C6C] border-[2px] rounded-[19px]">
                 <p className="text-base font-bold text-center p-1.5">Seminars</p>
