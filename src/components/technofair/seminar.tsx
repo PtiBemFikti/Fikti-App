@@ -32,10 +32,10 @@ export default function SeminarPage() {
           </div>
           <div className="w-96 h-12 px-8 flex mt-5 gap-2">
             <div className="w-44 h-10 border gap-2 text-sm rounded-[16px] justify-center items-center flex"> 
-              <p className="text-black">Hubungi Kami</p>
+              <p className="text-[#6C6A67]">Hubungi Kami</p>
             </div>
-            <div className="w-44 h-10 border rounded-[16px] gap-2 text-sm justify-center items-center flex">
-              <p className="text-black">Daftar Sekarang</p>
+            <div className="w-44 h-10 border rounded-[16px] gap-2 text-sm justify-center items-center flex bg-[#21B573]">
+              <p className="text-white ">Daftar Sekarang</p>
             </div>
           </div>
         </div>
@@ -67,8 +67,17 @@ export default function SeminarPage() {
           </div>
           <div className="px-96">
             <div className="w-[725px] h-[873px] top-[644px] left-[529px] gap-10 border">
-              <div className="text-black">
+              <div className="text-black ">
+              <Image src="/technofair/tandakanan.png" alt="gambar tandakanan" width={10} height={10}/>
                 <p>About Workshop</p>
+                <div className="text-small">
+                  <p>Kegiatan workshop merupakan kegiatan yang berorientasi praktik disertai dengan teori</p>
+                  <p>untuk menambah kemampuan para peserta secara teknis yang sesuai dengan</p>
+                  <p>perkembangan yang ada dalam dunia Teknologi Informasi. Dalam TechnoFair 11.0, salah</p>
+                  <p>satu workshop yang dilaksanakan berjudul "From Concept to Creation: Mastering UI/UX
+                  <p>Design Practices".</p>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
