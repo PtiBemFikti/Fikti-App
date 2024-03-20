@@ -12,12 +12,17 @@ export default function ScheduleTabs({ items }) {
   return (
     <div className="">
       <div className="flex justify-center items-center">
-        <div className="flex gap-5 py-3">
+        <div className="flex md:gap-5 gap-2 py-3">
           {items.map((item: any, index: any) => (
             // eslint-disable-next-line react/jsx-key
             <div className="flex justify-center items-center">
-              <div className="flex flex-col w-48 h-10">
-                <button onClick={() => setSelectedTab(index)} ref={index === 0 ? firstBtnRef : null} key={index} className="text-base font-bold text-center p-1.5 bg-[#E87C6C] rounded-[19px] hover:bg-[#BA6356] focus:ring-2 focus:ring-white focus:bg-[#BA6356]">
+              <div className="flex flex-col md:w-48 md:h-10 w-28 h-9">
+                <button
+                  onClick={() => setSelectedTab(index)}
+                  ref={index === 0 ? firstBtnRef : null}
+                  key={index}
+                  className="md:text-base text-sm font-bold text-center p-1.5 bg-[#E87C6C] rounded-[19px] hover:bg-[#BA6356] focus:ring-2 focus:ring-white focus:bg-[#BA6356]"
+                >
                   {item.title}
                 </button>
               </div>
