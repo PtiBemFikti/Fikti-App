@@ -1,17 +1,17 @@
-import Image from "next/image";
+import React from "react";
 
 export default function SeminarPage() {
   return (
     <div className="px-40 py-20 bg-gradient-to-b from-[#FEFEEA] to-[#F7F9FA]" style={{ width: "100%", height: "698px" }}>
       <div className="mb-2 flex gap-5">
         <div className="w-7 h-7">
-          <Image src="/technofair/tandapanah.png" alt="gambar tandapanah" width={50} height={50}/>
+          <img src="/technofair/tandapanah.png" alt="gambar tandapanah" width={50} height={50}/>
         </div>
         <div className="text-black mt-0.5">Back</div>
       </div>
       <div className="flex justify-center w-11/12">
         <div style={{ width: "461px", height: "346px" }}>
-          <Image src="/technofair/full-2.png" alt="gambar orang" width={800} height={600} />
+          <img src="/technofair/full-2.png" alt="gambar orang" width={800} height={600} />
         </div>
         <div style={{ width: "620px", height: "350"}}>
           <div className="p-2 flex gap-2">
@@ -24,7 +24,7 @@ export default function SeminarPage() {
           <div className="text-black font-bold px-8 p-4">
             <p>Sabtu, 01 Juni 2024</p>
           </div>
-          <div className="text-black text-small px-8">
+          <div className="text-black text-sm px-8">
             <p>Workshop ini akan memperkenalkan Product Management yang</p>
             <p>merupakan bagian dari dunia teknologi yang sedang banyak diminati</p>
             <p>saat ini dan mengimplementasikan skill yang dipersiapkan untuk</p>
@@ -42,25 +42,25 @@ export default function SeminarPage() {
       </div>
       <div className="w-72 h-64 top-[546px] left-40">
         <div className="w-72 h-36 top-24 border">
-          <div className="px-5 mt-1 text-black text-small">
+          <div className="px-5 mt-1 text-black text-sm">
             <p>Details</p>
           </div>
-          <div className="text-black text-small px-16">
+          <div className="text-black text-sm px-16">
             <div className="mt-1 flex">
               <div className="">
-                <Image src="/technofair/tandakanan.png" alt="gambar tandakanan" width={10} height={10}/>
+                <img src="/technofair/tandakanan.png" alt="gambar tandakanan" width={10} height={10}/>
               </div>
               <p>About Workshop</p>
             </div>
             <div className="mt-1 flex">
               <div className="">
-                <Image src="/technofair/tandakanan.png" alt="gambar tandakanan" width={10} height={10}/>
+                <img src="/technofair/tandakanan.png" alt="gambar tandakanan" width={10} height={10}/>
               </div>
               <p>Benefit Workshop</p>
             </div>
             <div className="mt-1 flex">
               <div className="">
-                <Image src="/technofair/tandakanan.png" alt="gambar tandakanan" width={10} height={10}/>
+                <img src="/technofair/tandakanan.png" alt="gambar tandakanan" width={10} height={10}/>
               </div>
               <p>Jadwal & Materi</p>
             </div>
@@ -68,15 +68,14 @@ export default function SeminarPage() {
           <div className="px-96">
             <div className="w-[725px] h-[873px] top-[644px] left-[529px] gap-10 border">
               <div className="text-black ">
-              <Image src="/technofair/tandakanan.png" alt="gambar tandakanan" width={10} height={10}/>
+                <img src="/technofair/tandakanan.png" alt="gambar tandakanan" width={10} height={10}/>
                 <p>About Workshop</p>
-                <div className="text-small">
+                <div className="text-sm">
                   <p>Kegiatan workshop merupakan kegiatan yang berorientasi praktik disertai dengan teori</p>
                   <p>untuk menambah kemampuan para peserta secara teknis yang sesuai dengan</p>
                   <p>perkembangan yang ada dalam dunia Teknologi Informasi. Dalam TechnoFair 11.0, salah</p>
-                  <p>satu workshop yang dilaksanakan berjudul "From Concept to Creation: Mastering UI/UX
+                  <p>satu workshop yang dilaksanakan berjudul "From Concept to Creation: Mastering UI/UX"</p>
                   <p>Design Practices".</p>
-                  </p>
                 </div>
               </div>
             </div>
