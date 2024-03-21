@@ -32,7 +32,7 @@ export default function SchedulePage() {
               <div className="w-84 h-1 bg-[#512B26]"></div>
             </div>
           </div>
-          <div className="">
+          <div className="px-4">
             <ScheduleTabs items={items} />
           </div>
         </div>

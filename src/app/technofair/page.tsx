@@ -8,6 +8,7 @@ import EventPage from '@/components/technofair/event';
 import SponsorPage from '@/components/technofair/sponsor';
 import SchedulePage from '@/components/technofair/schedule';
 import StoryPage from '@/components/technofair/story';
+import FaqPage from '@/components/technofair/faq';
 
 export default function TechnofairPage() {
   return (
@@ -23,8 +24,9 @@ export default function TechnofairPage() {
       <div className="bg-gradient-to-t from-[#0B0E1A] to-[#211525]">
         <SchedulePage />
       </div>
-      <StoryPage/>
-      {/* <SponsorPage/> */}
+      <StoryPage />
+      <SponsorPage />
+      <FaqPage/>
     </main>
   );
 }

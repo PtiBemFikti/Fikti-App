@@ -325,7 +325,7 @@ export default function EventPage() {
       {/* Tampilan Mobile Start */}
       <div className="bg-gradient-to-t from-[#241525] to-black pt-28 md:hidden">
         <div className="">
-          <div className="">
+          <div className="px-4">
             <Image src={'/technofair/content-mobile.png'} alt="content mobile" width={390} height={570} />
           </div>
           <div className="">
