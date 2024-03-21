@@ -1,10 +1,8 @@
-
-import Navbar from '@/components/filing/navbar';
-import AboutPage from '@/components/filing/about';
+import Navbar from "@/components/filing/navbar";
+import AboutPage from "@/components/filing/about";
 import Dashboard from "@/components/filing/dashboard";
-import BootcampPage from '@/components/filing/bootcamp';
+import BootcampPage from "@/components/filing/bootcamp";
 export default function FilingPage() {
-
   return (
     <main className="bg-white bg-cover bg-no-repeat">
       <Navbar />
@@ -12,10 +10,9 @@ export default function FilingPage() {
         <VidYoutube />
       </section> */}
 
-      <Dashboard />      
-      <AboutPage/>
+      <Dashboard />
+      <AboutPage />
       <BootcampPage />
-
     </main>
   );
 }
