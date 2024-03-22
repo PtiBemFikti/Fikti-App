@@ -32,7 +32,7 @@ export default function SchedulePage() {
               <div className="w-84 h-1 bg-[#512B26]"></div>
             </div>
           </div>
-          <div className="px-4">
+          <div className="px-1">
             <ScheduleTabs items={items} />
           </div>
         </div>
@@ -63,7 +63,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-sm">“Kickstart your career in Big Data”</p>
               </div>
-              <Link href={'/'}>
+              <Link href={'#'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -86,7 +86,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-sm">“How Smart City could change the world”</p>
               </div>
-              <Link href={'/'}>
+              <Link href={'#'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -118,7 +118,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-sm">“Kickstart your career in Big Data”</p>
               </div>
-              <Link href={'/'}>
+              <Link href={'#'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -141,7 +141,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-sm">“How Smart City could change the world”</p>
               </div>
-              <Link href={'/'}>
+              <Link href={'#'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -173,7 +173,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-sm">“Kickstart your career in Big Data”</p>
               </div>
-              <Link href={'/'}>
+              <Link href={'#'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -196,7 +196,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-sm">“How Smart City could change the world”</p>
               </div>
-              <Link href={'/'}>
+              <Link href={'#'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -219,7 +219,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-sm">“How Smart City could change the world”</p>
               </div>
-              <Link href={'/'}>
+              <Link href={'#'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -242,7 +242,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-sm">“How Smart City could change the world”</p>
               </div>
-              <Link href={'/'}>
+              <Link href={'#'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>

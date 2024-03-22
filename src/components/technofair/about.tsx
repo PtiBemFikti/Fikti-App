@@ -60,7 +60,7 @@ export default function AboutPage() {
               <Image src={'/technofair/monitor-3.png'} alt="montitor 1" width={50} height={50} />
             </div>
           </div>
-          <div className="flex justify-center items-center mb-9">
+          <div className="flex justify-center items-center">
             <Image src={'/technofair/ladies-1.png'} alt="ladies" width={390} height={851} className="absolute w-full object-cover overflow-hidden mt-44" />
           </div>
           <div className="bg-[#e9e9edcc] w-80 h-48 rounded-[28px] border-[2px] border-[#dcdcdf80] z-10 -mt-4">
