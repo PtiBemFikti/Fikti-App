@@ -6,7 +6,7 @@ export default function AboutPage() {
     <div className="">
       {/* Tampilan Mobile Start */}
       <div className="mt-2 md:hidden">
-        <div className="flex justify-center items-center">
+        <div id='about' className="flex justify-center items-center">
           <div className="bg-[#241525] px-7 py-4 rounded-[14px]">
             <h1 className="text-3xl text-[#FFE8CE] font-bold">What Is TechnoFair ?</h1>
           </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
 
       {/* Tampilan Dekstop Start */}
       <div className="mt-2 md:block hidden">
-        <div className="flex items-center justify-center px-32 gap-10">
+        <div id='about' className="flex items-center justify-center px-32 gap-10">
           <div className="bg-[#E9E9ED] w-1/2 h-96 border-[2px] rounded-[35px]">
             <div className="">
               <div className="flex justify-center items-center my-6">
@@ -130,7 +130,7 @@ export default function AboutPage() {
           <div className="bg-[#E9E9ED] w-10/12 h-[791px] rounded-[49px] border-[2px] flex flex-col">
             <div className="flex gap-5">
               <div className="p-5 ml-3">
-                <Image src={'/technofair/ladies.png'} alt="ladies" width={481} height={467} className="rounded-[28px]" />
+                <Image src={'/technofair/astronaut.png'} alt="astronaut" width={481} height={467} className="rounded-[28px]" />
               </div>
               <div className="p-5 flex flex-col">
                 <div className="bg-[#241525] w-[581px] h-24 rounded-[28px]">

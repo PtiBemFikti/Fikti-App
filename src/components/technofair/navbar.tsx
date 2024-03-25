@@ -45,16 +45,16 @@ const Navbar: React.FC = () => {
           <h1 className="font-Lato font-bold text-2xl">TechnoFair 11.0</h1>
         </div>
         <div className="hidden md:flex md:gap-10 space-x-4 -ml-96 md:mb-32">
-          <a className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#about">
+          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#about">
             About
-          </a>
+          </Link>
           <div className="block text-[#241525] hover:text-purpleText duration-300 py-2">
             <DropdownMenuNav />
           </div>
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="/schedule">
+          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#schedule">
             Schedule
           </Link>
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="/contact">
+          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#contact">
             Contact
           </Link>
           {/* <Link
@@ -85,16 +85,16 @@ const Navbar: React.FC = () => {
       </div>
       {isMenuOpen && (
         <motion.div className="flex flex-col gap-3 md:hidden mt-4" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.5, ease: 'easeInOut' }} onClick={toggleMenu}>
-          <a className="text-[#241525] hover:text-purpleText text-center" href="#about">
+          <Link className="text-[#241525] hover:text-purpleText text-center" href="/about#about">
             About
-          </a>
+          </Link>
           <div className="text-[#241525] hover:text-purpleText text-center">
             <DropdownMenuNav />
           </div>
-          <Link className="text-[#241525] hover:text-purpleText text-center" href="/schedule">
+          <Link className="text-[#241525] hover:text-purpleText text-center" href="#schedule">
             Schedule
           </Link>
-          <Link className="text-[#241525] hover:text-purpleText text-center" href="/contact">
+          <Link className="text-[#241525] hover:text-purpleText text-center" href="#contact">
             Contact
           </Link>
           <div className="md:hidden block">
