@@ -6,8 +6,12 @@ import Card2 from "./Card2";
 
 const Section3: React.FC = () => {
   return (
-    <div className="bg-white min-h-[700px]">
-      <div>
+    <div className="block md:hidden">
+      <div className=" bg-[#11111B] text-center text-[#FEFDFC] p-3">
+        <h1 className="font-CircleAmolens text-[24px]">SAVE THE DATE!</h1>
+        <h1 className="font-Poppins text-[14px] opacity-50">Click here to save the date</h1>
+      </div>
+      <div className="bg-white min-h-[850px]">
         <Card1 title="Pertemuan Pertama" />
         <Card2 title="Pertemuan Kedua" />
         <Card3 title="Pertemuan Ketiga" />
