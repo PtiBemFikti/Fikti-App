@@ -9,7 +9,7 @@ const Dashboard: React.FC = () => {
       <div>
         {/*desktop*/}
         <div className="sm:block hidden">
-          <div className=" bg-gradient-to-b from-slate-200 to-white h-[617px] flex gap-16 items-center justify-center">
+          <div className="bg-gradient-to-b from-slate-200 to-white h-[617px] flex gap-16 items-center justify-center">
             <div className="text-black w-[497px]">
               <div className="flex gap-2">
                 <h1 className="bg-[#545350] text-[#F0ECE5] px-2 text-[24px] gap-[10px] rounded-r-3xl font-Poppins font-thin tracking-wide">FIKTI LEARNING</h1>
