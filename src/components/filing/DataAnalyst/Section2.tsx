@@ -197,7 +197,7 @@ const Section2: React.FC = () => {
             </div>
           </div>
           {/* tampilan desktop, tampilan mobile ada di section3 */}
-          <div className="hidden md:block bg-white min-h-[800px]">
+          <div className="hidden md:block bg-white min-h-[900px] space-y-7 pt-10">
             <Card1 title="Pertemuan Pertama" />
             <Card2 title="Pertemuan Kedua" />
             <Card3 title="Pertemuan Ketiga" />

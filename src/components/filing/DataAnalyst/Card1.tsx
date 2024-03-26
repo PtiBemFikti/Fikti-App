@@ -24,15 +24,15 @@ const Card1: React.FC<AccordionCardProps> = ({ title }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow mb-4 text-slate-600 px-3">
-      <button className="bg-white border-b-1 border-black w-full px-4 py-2 text-left text-sm font-medium hover:bg-white focus:outline-none dark:text-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 " onClick={handleToggle}>
+    <div className="bg-white rounded-lg shadow mb-4 text-[#545350]">
+      <button className="bg-white border-b-1 border-[#545350] w-full py-2 text-left text-sm font-medium hover:bg-white focus:outline-none dark:text-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 " onClick={handleToggle}>
         <div className="flex items-center justify-between">
-          <span className="font-Poppins font-semibold text-[16px] md:text-[30px]">{title}</span>
+          <span className="font-Poppins font-semibold text-[#545350] text-[16px] md:text-[30px]">{title}</span>
           <ChevronDownIcon className={`h-5 w-5 transform ${isOpen ? "rotate-180" : ""}`} />
         </div>
       </button>
       <div ref={contentRef} className={`overflow-hidden transition-all duration-300 ease-out ${isOpen ? "h-auto" : "h-0"}`}>
-        <div className="font-Poppins text-[14px] md:text-[16px] p-4">
+        <div className="font-Poppins text-[14px] text-[#545350] md:text-[16px] p-5">
           <ul className="list-disc">
             <li>Pengenalan terhadap Data dan Dataset lewat MySQL</li>
             <li>Memahami Konsep dasar Data Analyst </li>

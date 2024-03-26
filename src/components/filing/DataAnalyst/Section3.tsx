@@ -11,7 +11,7 @@ const Section3: React.FC = () => {
         <h1 className="font-CircleAmolens text-[24px]">SAVE THE DATE!</h1>
         <h1 className="font-Poppins text-[14px] opacity-50">Click here to save the date</h1>
       </div>
-      <div className="bg-white min-h-[850px]">
+      <div className="bg-white min-h-[850px] px-5 pt-2">
         <Card1 title="Pertemuan Pertama" />
         <Card2 title="Pertemuan Kedua" />
         <Card3 title="Pertemuan Ketiga" />
