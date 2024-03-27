@@ -7,7 +7,7 @@ import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import DropdownMenuNav from './DropdownMenu';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import SignInBtn from './SignInBtn';
+import ModalBox from './ModalBox';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -74,7 +74,8 @@ const Navbar: React.FC = () => {
             </div>
             <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42]">
               <button>
-                <SignInBtn />
+                {/* <ModalBox /> */}
+                Sign In
               </button>
             </div>
           </div>
@@ -108,7 +109,8 @@ const Navbar: React.FC = () => {
                 </div>
                 <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42]">
                   <button>
-                    <SignInBtn />
+                    {/* <ModalBox /> */}
+                    Sign In
                   </button>
                 </div>
               </div>
