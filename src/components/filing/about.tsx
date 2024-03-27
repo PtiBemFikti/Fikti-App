@@ -11,7 +11,7 @@ export default function AboutPage() {
             <h1 className="text-center text-black  text-3xl font-bold font-[arial]">
               WHAT IS FILING?
             </h1>
-            <p id="about" className="text-[#6C6A67] font-semibold mt-6">
+            <p className="text-[#6C6A67] font-semibold mt-6">
               FIKTI Learning
               <span className="text-[#6C6A67] text-base font-medium">
                 {" "}
@@ -24,13 +24,13 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center p-8">
           <div className="my-8">
             <div className="text-center text-black text-3xl font-bold font-[arial]">
               WHY YOU SHOULD JOIN FILING?
             </div>
             <div className="justify-center items-start gap-5 inline-flex">
-              <div className="flex-col justify-start items-center inline-flex mt-8">
+              <div className="flex-col justify-center items-center inline-flex mt-8">
                 <Image
                   src={"/filing/simplicity.png"}
                   alt="simplicity"
@@ -43,7 +43,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="flex-col justify-start items-center inline-flex mt-8">
+              <div className="flex-col justify-center items-center inline-flex mt-8">
                 <Image
                   src={"/filing/motivation.png"}
                   alt="motivation"

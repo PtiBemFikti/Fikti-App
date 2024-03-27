@@ -3,6 +3,7 @@ import AboutPage from "@/components/filing/about";
 import Dashboard from "@/components/filing/dashboard";
 import BootcampPage from "@/components/filing/bootcamp";
 import DocumentationPage from "@/components/filing/documentation";
+import FaqPage from "@/components/filing/faq";
 export default function FilingPage() {
   return (
     <main className="bg-white bg-cover bg-no-repeat">
@@ -14,6 +15,7 @@ export default function FilingPage() {
       <AboutPage />
       <BootcampPage />
       <DocumentationPage />
+      <FaqPage />
     </main>
   );
 }
