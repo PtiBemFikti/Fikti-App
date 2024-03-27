@@ -6,7 +6,7 @@ export default function BootcampPage() {
       <div className="md:block hidden mt-2">
         <div className="py-24">
           <div className="flex justify-between py-4">
-            <div className="flex h-full mt-2">
+            <div className="flex mt-2">
               <Image
                 src="/filing/vector1.png"
                 alt="vector1"

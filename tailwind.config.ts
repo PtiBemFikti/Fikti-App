@@ -6,7 +6,6 @@ const config: Config = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/flowbite-react/lib/**/*.js',
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
 
@@ -34,7 +33,7 @@ const config: Config = {
     },
   },
 
-  plugins: [require('flowbite/plugin'), require('daisyui'), nextui()],
+  plugins: [require('daisyui'), nextui()],
 
 };
 export default config;

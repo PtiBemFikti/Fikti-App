@@ -11,7 +11,7 @@ export default function AboutPage() {
             <h1 className="text-center text-black  text-3xl font-bold font-[arial]">
               WHAT IS FILING?
             </h1>
-            <p className="text-[#6C6A67] font-semibold mt-6">
+            <p id="about" className="text-[#6C6A67] font-semibold mt-6">
               FIKTI Learning
               <span className="text-[#6C6A67] text-base font-medium">
                 {" "}
