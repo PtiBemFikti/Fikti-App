@@ -31,12 +31,17 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
         className="w-full py-2 text-left text-sm font-[Poppins] text-[#FEFDFC] rounded-lg"
         onClick={handleToggle}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-end justify-between">
           <span>{title}</span>
           <ChevronRightIcon
-            className={`h-5 w-5 transform ${isOpen ? "rotate-90" : ""}`}
+            className={`h-6 w-12 transform ${isOpen ? "rotate-90" : ""}`}
           />
         </div>
+        <div
+          className={`w-80 mt-2 h-px border border-white border-opacity-10 ${
+            isOpen ? "border-opacity-100" : ""
+          }`}
+        ></div>
       </button>
       <div
         ref={contentRef}

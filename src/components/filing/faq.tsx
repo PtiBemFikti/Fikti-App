@@ -1,5 +1,4 @@
 import AccordionCard from "./AccordionCard";
-import Image from "next/image";
 
 export default function FaqPage() {
   return (
@@ -38,37 +37,37 @@ export default function FaqPage() {
                   title="Apa itu FILING?"
                   content="FILING adalah program pelatihan intensif yang diselenggarakan oleh Departemen Akademik FIKTI UG untuk membekali mahasiswa/i dengan hardskill dan softskill di bidang Teknologi Informasi."
                 />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
                 <AccordionCard
                   title="Apa saja tema yang ditawarkan dalam Bootcamp FILING?"
                   content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
                 />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
                 <AccordionCard
                   title="Siapa saja yang dapat mengikuti Bootcamp FILING?"
                   content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
                 />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
                 <AccordionCard
                   title="Bagaimana cara mendaftar Bootcamp FILING?"
                   content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
                 />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
                 <AccordionCard
                   title="Apa saja yang akan dipelajari dalam Bootcamp FILING?"
                   content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
                 />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
                 <AccordionCard
                   title="Apakah ada biaya untuk mengikuti Bootcamp FILING?"
                   content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
                 />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
                 <AccordionCard
                   title="Apakah Bootcamp FILING memberikan sertifikat?"
                   content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
                 />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
                 <AccordionCard
                   title="Bagaimana cara mendapatkan informasi lebih lanjut tentang Bootcamp FILING?"
                   content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
@@ -91,32 +90,42 @@ export default function FaqPage() {
           <div className="p-4 flex justify-center items-center">
             <div className="w-96 bg-[#25243A] rounded-3xl p-4">
               <AccordionCard
-                title="Apa itu TechnoFair?"
+                title="Apa itu FILING?"
+                content="FILING adalah program pelatihan intensif yang diselenggarakan oleh Departemen Akademik FIKTI UG untuk membekali mahasiswa/i dengan hardskill dan softskill di bidang Teknologi Informasi."
+              />
+
+              <AccordionCard
+                title="Apa saja tema yang ditawarkan dalam Bootcamp FILING?"
                 content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
               />
-              <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
               <AccordionCard
-                title="Kapan dan dimana TechnoFair 11.0 dilaksanakan?"
+                title="Siapa saja yang dapat mengikuti Bootcamp FILING?"
                 content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
               />
-              <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
               <AccordionCard
-                title="Apakah ada biaya pendaftaran di TechnoFair 11.0?"
+                title="Bagaimana cara mendaftar Bootcamp FILING?"
                 content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
               />
-              <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
               <AccordionCard
-                title="Bagaimana saya mengetahui saya berhasil melakukan registrasi?"
+                title="Apa saja yang akan dipelajari dalam Bootcamp FILING?"
                 content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
               />
-              <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
               <AccordionCard
-                title="Bagaimana saya mengetahui pemenang dalam kompetisi?"
+                title="Apakah ada biaya untuk mengikuti Bootcamp FILING?"
                 content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
               />
-              <div className="w-80 h-0.5 bg-gradient-to-r from-white via-[#B4B1AC] to-[#FEFDFC]"></div>
+
               <AccordionCard
-                title="Apa saja yang akan didapat pemenang dalam kompetisi?"
+                title="Apakah Bootcamp FILING memberikan sertifikat?"
+                content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
+              />
+
+              <AccordionCard
+                title="Bagaimana cara mendapatkan informasi lebih lanjut tentang Bootcamp FILING?"
                 content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG."
               />
             </div>
