@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import DropdownMenuNav from './DropdownMenu';
-import ModalBox from './ModalBox';
+import SignInBox from './SignInBox';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -71,11 +71,8 @@ const Navbar: React.FC = () => {
             <div className="px-5 text-[#241525] ml-3">
               <button>Sign Up</button>
             </div>
-            <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42]">
-              <button>
-                {/* <ModalBox /> */}
-                Sign In
-              </button>
+            <div className="">
+              <SignInBox/>
             </div>
           </div>
         </div>
@@ -106,11 +103,8 @@ const Navbar: React.FC = () => {
                 <div className="px-5 text-[#241525] ml-3">
                   <button>Sign Up</button>
                 </div>
-                <div className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42]">
-                  <button>
-                    {/* <ModalBox /> */}
-                    Sign In
-                  </button>
+                <div className="">
+                  <SignInBox />
                 </div>
               </div>
             </div>
