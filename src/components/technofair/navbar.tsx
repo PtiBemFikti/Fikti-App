@@ -7,6 +7,7 @@ import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import DropdownMenuNav from './DropdownMenu';
 import SignInBox from './SignInBox';
+import SignUpBox from './SignUpBox';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,11 +69,11 @@ const Navbar: React.FC = () => {
         </div>
         <div className="md:block hidden">
           <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
-            <div className="px-5 text-[#241525] ml-3">
-              <button>Sign Up</button>
+            <div className="">
+              <SignUpBox />
             </div>
             <div className="">
-              <SignInBox/>
+              <SignInBox />
             </div>
           </div>
         </div>
@@ -101,7 +102,7 @@ const Navbar: React.FC = () => {
             <div className="flex justify-center items-center">
               <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
                 <div className="px-5 text-[#241525] ml-3">
-                  <button>Sign Up</button>
+                  <SignUpBox />
                 </div>
                 <div className="">
                   <SignInBox />
