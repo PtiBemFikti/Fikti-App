@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden block">
             <div className="flex justify-center items-center">
               <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
-                <div className="px-5 text-[#241525] ml-3">
+                <div className="text-[#241525] ml-3">
                   <SignUpBox />
                 </div>
                 <div className="">

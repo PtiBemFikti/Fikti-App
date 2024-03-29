@@ -4,6 +4,7 @@ import { Lato, Bricolage_Grotesque } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/landing-page/navbar';
 import Footer from '@/components/landing-page/footer';
+import { SessionProvider } from 'next-auth/react';
 
 const disableNavbar = ['/filing', '/technofair'];
 
@@ -23,8 +24,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>BEM FIKTI UG 2024</title>
       </head>
       <body className={`${lato.className}`}>
+        <SessionProvider>
           {!disableNavbar.includes(pathname) && <Navbar />}
           {children}
+        </SessionProvider>
         <Footer />
       </body>
     </html>

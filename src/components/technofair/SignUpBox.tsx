@@ -1,8 +1,15 @@
 import React from 'react';
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from '@nextui-org/react';
+import { useState } from 'react';
+import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 
 export default function SignUpBox() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  const [open, setOpen] = useState(false);
+  const toggle = () => {
+    setOpen(!open);
+  };
 
   return (
     <>
@@ -21,7 +28,7 @@ export default function SignUpBox() {
                       <p className=" text-base font-normal text-[#797979]">Mempermudah kebutuhan pendaftaran event anda!</p>
                     </div>
                   </ModalHeader>
-                  <ModalBody className='text-[#797979] text-sm'>
+                  <ModalBody className="text-[#797979] text-sm">
                     <div className="px-3">
                       <p className="text-sm font-medium">Nama</p>
                       <div className="">
@@ -50,8 +57,11 @@ export default function SignUpBox() {
                     </div>
                     <div className="px-3">
                       <p className="text-sm font-medium">Password</p>
-                      <div className="">
-                        <input type="password" id="password" aria-label="password" placeholder="password" className="w-full h-11 rounded-[16px]" />
+                      <div className="relative">
+                        <div className="">
+                          <input type={(open === false) ? 'password' : 'text'} id="password" aria-label="password" placeholder="password" className="w-full h-11 rounded-[16px]" />
+                        </div>
+                        <div className="text-2xl absolute top-3 right-0 mr-3">{open === false ? <AiFillEye onClick={toggle} /> : <AiFillEyeInvisible onClick={toggle} />}</div>
                       </div>
                     </div>
                   </ModalBody>

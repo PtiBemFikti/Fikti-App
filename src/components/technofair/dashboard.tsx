@@ -52,12 +52,14 @@ const Dashboard: React.FC = () => {
       {/* Tampilan Mobile End */}
       {/* Tampilan Desktop */}
       <div className="md:block hidden">
-        <div className="flex justify-center items-center gap-24 p-7">
+        <div className="">
           <Link href={'/'}>
-            <div className="absolute left-0 top-0 mt-28 pl-7">
-              <Image src={'/technofair/back.png'} alt="back" width={48} height={48} className="" />
+            <div className="">
+              <Image src={'/technofair/back.png'} alt="back" width={48} height={48} className="absolute left-0 top-0 mt-28 ml-9" />
             </div>
           </Link>
+        </div>
+        <div className="flex justify-center items-center gap-24 p-7">
           <div className=" w-[426px] h-[632px] border bg-gradient-to-t from-[#241525] to-[#833f57] rounded-3xl">
             <div className="p-6 font-[Bricolage-Grotesque]">
               <h1 className="font-bold text-4xl">
