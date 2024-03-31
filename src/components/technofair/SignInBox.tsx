@@ -2,6 +2,8 @@ import React from 'react';
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from '@nextui-org/react';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { useState } from 'react';
+import { signIn } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 export default function SignInBox() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -12,6 +14,25 @@ export default function SignInBox() {
     setOpen(!open);
   };
 
+  const { push } = useRouter();
+
+  const handleLogin = async (e: any) => {
+    e.preventdefault();
+    try {
+      const res = await signIn('credentials', {
+        redirect: false,
+        email: e.currentTarget.email.value,
+        password: e.currentTarget.password.value,
+        callbackUrl: '/dashboard',
+      });
+      if (!res?.error) {
+        push('/dashboard');
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <>
       <Button onPress={onOpen} className="rounded-[21px] h-11 bg-[#241525] w-28 mx-3 flex justify-center items-center hover:bg-[#401e42] text-white text-md">
@@ -20,7 +41,7 @@ export default function SignInBox() {
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="">
         <ModalContent className="">
           {(onClose) => (
-            <>
+            <div>
               <div className="text-black font-[Poppins]">
                 <div className="">
                   <ModalHeader className="text-center">
@@ -48,13 +69,13 @@ export default function SignInBox() {
                   </ModalBody>
                   <ModalFooter className="flex justify-center items-center mb-4">
                     <div className="flex flex-col px-3 w-full gap-2 rounded-[16px]">
-                      <Button className="bg-[#241525] text-[#f7f9fa] hover:bg-[#401e42]">Login</Button>
+                      <Button className="bg-[#241525] text-[#f7f9fa] hover:bg-[#401e42]" onSubmit={(e: any) => handleLogin(e)}>Login</Button>
                       <Button className="text-[#262626] bg-[#f0ecf0]">Create an Account</Button>
                     </div>
                   </ModalFooter>
                 </div>
               </div>
-            </>
+            </div>
           )}
         </ModalContent>
       </Modal>

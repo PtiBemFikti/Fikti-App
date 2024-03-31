@@ -11,6 +11,10 @@ export default function SignUpBox() {
     setOpen(!open);
   };
 
+  const handleRegist = async (e: any) => {
+    e.preventdefault();
+  }
+
   return (
     <>
       <Button onPress={onOpen} className="bg-[#DDDFE4] text-md text-[#241525] ml-3">

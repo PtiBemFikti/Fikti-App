@@ -1,16 +1,27 @@
+'use client';
+
 import Navbar from '@/components/technofair/navbar';
 import Dashboard from '@/components/technofair/dashboard';
-import VidYoutube from '@/components/technofair/video';
-// import AboutPage from '@/components/technofair/about';
-import Image from 'next/image';
 import AboutPage from '@/components/technofair/about';
 import EventPage from '@/components/technofair/event';
 import SponsorPage from '@/components/technofair/sponsor';
 import SchedulePage from '@/components/technofair/schedule';
 import StoryPage from '@/components/technofair/story';
 import FaqPage from '@/components/technofair/faq';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 export default function TechnofairPage() {
+  const { data: session, status }: { data: any, status: string} = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (status === 'unauthenticated' || session?.user.role !== 'admin') {
+      router.push('/technofair');
+    }
+  }, [router, session?.user.role, status]);
+
   return (
     <main className="bg-white bg-cover bg-no-repeat -z-50" style={{ backgroundImage: 'url(/technofair/bg-utama.png)' }}>
       {/* <Image src={'/technofair/bg-utama.png'} alt="Bg Utama" width={300} height={300} className="bg-cover absolute" /> */}
@@ -26,7 +37,7 @@ export default function TechnofairPage() {
       </div>
       <StoryPage />
       <SponsorPage />
-      <FaqPage/>
+      <FaqPage />
     </main>
   );
 }
