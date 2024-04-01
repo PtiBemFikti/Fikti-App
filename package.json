@@ -16,7 +16,8 @@
     "@motionone/utils": "^10.16.3",
     "@nextui-org/react": "^2.2.10",
     "animate.css": "^4.1.1",
-    "firebase": "^10.9.0",
+    "bcrypt": "^5.1.1",
+    "firebase": "^10.10.0",
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^10.18.0",
@@ -33,6 +34,7 @@
     "tailwind": "^4.0.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "20.11.0",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18",
