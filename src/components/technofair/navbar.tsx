@@ -8,11 +8,12 @@ import Image from 'next/image';
 import DropdownMenuNav from './DropdownMenu';
 import SignInBox from './SignInBox';
 import SignUpBox from './SignUpBox';
+import { signIn, signOut, useSession } from 'next-auth/react';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
-
+  const { data: session, status }: { data: any; status: string } = useSession();
   const toggleMenu = async () => {
     // Set animasi saat menu dibuka
     await controls.start({
@@ -99,16 +100,31 @@ const Navbar: React.FC = () => {
             Contact
           </Link>
           <div className="md:hidden block">
-            <div className="flex justify-center items-center">
-              <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
-                <div className="text-[#241525] ml-3">
-                  <SignUpBox />
+            {status === 'authenticated' ? (
+              <div className="flex gap-4">
+                <div className="">
+                  <p className="font-[Poppins] text-base">Mio Mirza</p>
                 </div>
                 <div className="">
-                  <SignInBox />
+                  <button onClick={() => signOut()}>
+                    <Image src={'/technofair/profile.png'} alt="Profile" width={48} height={48} />
+                  </button>
                 </div>
               </div>
-            </div>
+            ) : (
+              <div className="flex justify-center items-center">
+                <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
+                  <div className="text-[#241525] ml-3">
+                    <button onClick={() => signIn()}>
+                      <SignUpBox />
+                    </button>
+                  </div>
+                  <div className="">
+                    <SignInBox />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           {/* <Link className="hover:text-purpleText" href="/dept&biro">
             Departemen
