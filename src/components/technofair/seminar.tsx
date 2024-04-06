@@ -43,84 +43,113 @@ export default function SeminarPage() {
         </div>
       </div>
       <div className="flex justify-center items-center py-20">
-      <div className="w-2/3 h-36  flex">
-        <div className=" w-72 h-36 p-3 bg-[#F7F9FA] border-1 shadow-lg rounded-lg border-[#B9BCC7]">
-          <div className="px-5 mt-1 text-black text-sm font-bold">
-            <p>Details</p>
+        <div className="w-2/3  flex">
+          <div className="w-72 -mt-80 h-36 p-3 bg-[#F7F9FA] border-1 shadow-lg rounded-lg border-[#B9BCC7]">
+            <div className="px-5 mt-1 text-black text-sm font-bold">
+              <p>Details</p>
+            </div>
+            <div className="text-black pl-10">
+              <div className="flex flex-col gap-2 ">
+                <div className="flex items-center gap-2 ">
+                  <img className="" src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
+                  <p className="text-sm px-2">About Workshop</p>
+                </div>
+                <div className="flex items-center gap-2 py-2 ">
+                  <img src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
+                  <p className="text-sm px-2">Benefit Workshop</p>
+                </div>
+                <div className="flex items-center gap-2 ">
+                  <img src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
+                  <p className="text-sm px-2">Jadwal & Materi</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="text-black pl-10">
-              <div className="flex gap-2 ">
-                <img className="" src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
-                <p className="text-sm px-2">About Workshop</p>
+        </div>
+        <div className="w-5/6  mr-56">
+          <div className="text-black">
+            <div className="flex items-center gap-6 ">
+              <img className="" src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
+              <p className="font-bold text-xl text-[#31304D]">About Workshop</p>
+            </div>
+            <div className="text-sm p-4">
+              <p>Kegiatan workshop merupakan kegiatan yang berorientasi praktik disertai dengan teori untuk menambah kemampuan para peserta secara teknis yang sesuai dengan perkembangan yang ada dalam dunia Teknologi Informasi. Dalam TechnoFair 11.0, salah satu workshop yang dilaksanakan berjudul "From Concept to Creation: Mastering UI/UX" Design Practices".
+              </p>
+              <br />
+              <p>Workshop ini bermaksud memperkenalkan UI/UX Design yang merupakan bagian dari dunia teknologi yang sedang banyak diminati saat ini dan mengimplementasikan Skill yang dipersiapkan untuk menjadi UI/UX Designer</p>
+              <br />
+            </div>
+          </div>
+          <div className="">
+            <div className="flex items-center gap-7 ">
+              <img className="" src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
+              <p className="font-bold text-xl text-[#31304D]">Benefit Workshop</p>
+            </div>
+            <div className="pl-5">
+              <div className="mt-4">
+                <div className="flex gap-2">
+                  <img className="" src="/technofair/centanghijau.png" alt="gambar centanghijau" width={20} height={15}/>
+                  <p className="text-tiny text-black">Mengetahui pengenalan mengenai dasar UI/UX Design.</p>
+                </div>
+                <div className="flex py-2 gap-2">
+                  <img className="" src="/technofair/centanghijau.png" alt="gambar centanghijau" width={20} height={15}/>
+                  <p className="text-tiny text-black">Mengetahui gambaran bagaimana cara kerja dan implementasi dari UI/UX Design.</p>
+                </div>
+                <div className="flex gap-2">
+                  <img className="" src="/technofair/centanghijau.png" alt="gambar centanghijau" width={20} height={15}/>
+                  <p className=" text-tiny text-black">Mengetahui bagaimana prospek karir UI/UX Designer kepada peserta workshop.</p>
+                </div>
               </div>
-              <div className="flex gap-2 py-2 ">
-                <img src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
-                <p className="text-sm px-2">Benefit Workshop</p>
+            </div>
+          </div>
+          <div>
+            <div className="flex items-center gap-7 mt-7 ">
+              <img className="" src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
+              <p className="font-bold text-[#31304D]">Jadwal & Detail Materi Workshop</p>
+            </div>
+            <div className="mt-4 pl-4 font-bold text-[#212427]">
+              <p>Pelaksanaan Kelas :</p>
+            </div>
+            <div className="mt-4 pl-6 text-black">
+              <div className="flex">
+                <p className="font-bold">Hari, Tanggal &nbsp;</p>
+                <p>:&nbsp;Sabtu, 29 Juli 2024</p>
               </div>
-              <div className="flex gap-2 ">
-                <img src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
-                <p className="text-sm px-2">Jadwal & Materi</p>
+              <div className="flex">
+                <p className="font-bold">Waktu &nbsp;</p>
+                <p>:&nbsp;09.00 - 12.40 WIB</p>
+                <div className=" ml-32 w-72 h-16  bg-black rounded-lg">
+                  <div>
+                    <p className="text-white justify-center items-center flex mt-3 font-bold text-xl">SAVE THE DATE!</p>
+                    <div className="text-[#918e8b] text-tiny items-center justify-center flex">
+                      <p>click here to save the date</p>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div className="flex">
+                <p className="font-bold">Tempat &nbsp;</p>
+                <p>:&nbsp;Labotarium Kampus F4,</p>
+              </div>
+              <p className="text-black font-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Universitas Gunadarma</p>
+            </div>
+            <div className="mt-5 text-black">
+              <div className="flex text-small ">
+                <p className=" font-bold">Materi Workshop </p>
+                <p>From Concept to Creation: Mastering UI/UX Design Practices</p>
+                <br/>
+                <br/>
+              </div>
+              <div className="text-small">
+                <p> • Memperkenalkan dasar UI/UX Design.</p>
+                <p> • Memperkenalkan Figma sebagai software penunjang.</p>
+                <p> • Mengimplementasikan Ilmu Desain UI/UX dengan menggunakan Figma.</p>
+                <p> • Membuat contoh project design landing page suatu website menggunakan Figma.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className=" w-5/6 h-36 gap-10 mr-56">
-            <div className="text-black">
-            <div className="flex gap-6 ">
-                <img className="" src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
-                <p className="font-bold text-xl text-[#31304D]">About Workshop</p>
-              </div>
-              <div className="text-sm p-4">
-                <p>Kegiatan workshop merupakan kegiatan yang berorientasi praktik disertai dengan teori untuk menambah kemampuan para peserta secara teknis yang sesuai dengan perkembangan yang ada dalam dunia Teknologi Informasi. Dalam TechnoFair 11.0, salah satu workshop yang dilaksanakan berjudul "From Concept to Creation: Mastering UI/UX" Design Practices".
-                </p>
-               <br />
-                <p>Workshop ini bermaksud memperkenalkan UI/UX Design yang merupakan bagian dari dunia teknologi yang sedang banyak diminati saat ini dan mengimplementasikan Skill yang dipersiapkan untuk menjadi UI/UX Designer</p>
-                <br />
-              </div>
-            </div>
-            <div className="">
-            <div className="flex gap-7 ">
-                <img className="" src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
-                <p className="font-bold text-xl text-[#31304D]">Benefit Workshop</p>
-              </div>
-              <div className="pl-5">
-              <div className="mt-4">
-              <div className="flex gap-2">
-              <img className="" src="/technofair/centanghijau.png" alt="gambar centanghijau" width={20} height={15}/>
-                <p className="text-tiny">Mengetahui pengenalan mengenai dasar UI/UX Design.</p>
-              </div>
-              <div className="flex py-2 gap-2">
-              <img className="" src="/technofair/centanghijau.png" alt="gambar centanghijau" width={20} height={15}/>
-                <p className="text-tiny">Mengetahui gambaran bagaimana cara kerja dan implementasi dari UI/UX Design.</p>
-              </div>
-              <div className="flex gap-2">
-              <img className="" src="/technofair/centanghijau.png" alt="gambar centanghijau" width={20} height={15}/>
-                <p className=" text-tiny">Mengetahui bagaimana prospek karir UI/UX Designer kepada peserta workshop.</p>
-              </div>
-              </div>
-              </div>
-            </div>
-            <div>
-            <div className="flex gap-7 mt-7 ">
-                <img className="" src="/technofair/tandakanan.png" alt="gambar tandakanan" width={15} height={15}/>
-                <p className="font-bold text-[#31304D]">Jadwal & Detail Materi Workshop</p>
-              </div>
-              <div className="mt-4 pl-4 font-bold text-[#212427]">
-                  <p>Pelaksanaan Kelas :</p>
-                </div>
-                <div className="mt-4 pl-6">
-                  <p>Hari, Tanggal : Sabtu, 29 Juli 2024</p>
-                  <p>Waktu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 09.00 - 12.40 WIB</p>
-                  <p>Tempat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Labotarium Kampus F4,</p>
-                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Universitas Gunadarma</p>
-                </div>
-                <div>
-                  <p className=" text-small">Materi Workshop - From Concept to Creation: Mastering UI/UX Design Practices</p>
-                </div>
-            </div>
-          </div>
-      </div>
-      
     </div>
   );
 }
