@@ -51,17 +51,17 @@ const items: any = [
           <div className="">
             <div className="flex justify-between items-center md:p-2">
               <div className="">
-                <p className="font-bold md:text-xl text-base text-[#FFF4E7]">28 Mei 2022</p>
-                <p className="font-light md:text-base text-sm">13.00 - 16.00</p>
+                <p className="font-bold md:text-xl text-base text-[#FFF4E7]">01 Juni 2024</p>
+                <p className="font-light md:text-base text-sm">09.00 - 12.30 WIB</p>
               </div>
               <div className="md:w-72 w-48">
-                <div className="flex gap-4">
-                  <p className="font-bold md:text-xl text-base text-[#FFF4E7]">Big Data</p>
+                <div className="flex gap-4 w-96">
+                  <p className="font-bold md:text-xl text-base text-[#FFF4E7]">Data Analyst</p>
                   <div className="md:w-24 md:h-6 w-20 bg-[#AF5474] rounded-[28px] py-0.5">
-                    <p className="text-black text-sm text-center">Webinar</p>
+                    <p className="text-black text-sm text-center">Seminar</p>
                   </div>
                 </div>
-                <p className="font-light italic md:text-base text-sm">“Kickstart your career in Big Data”</p>
+                <p className="font-light italic md:text-base text-sm md:w-80">&quot;Visualizing Insights: A Beginner&apos;s Guide to Data Presentation&quot;</p>
               </div>
               <Link href={'#'}>
                 <div className="flex justify-center items-center">
@@ -74,17 +74,17 @@ const items: any = [
           <div className="md:py-0 py-3">
             <div className="flex justify-between items-center md:p-2">
               <div className="">
-                <p className="font-bold md:text-xl text-base text-[#FFF4E7]">29 Mei 2022</p>
-                <p className="font-light md:text-base text-sm">09.00 - 12.00</p>
+                <p className="font-bold md:text-xl text-base text-[#FFF4E7]">20 Juli 2024</p>
+                <p className="font-light md:text-base text-sm">09.00 - 13.00 WIB</p>
               </div>
               <div className="md:w-72 w-48">
-                <div className="flex gap-4">
-                  <p className="font-bold md:text-xl text-base text-[#FFF4E7]">Smart City</p>
+                <div className="flex gap-4 md:w-96 w-72">
+                  <p className="font-bold md:text-xl text-base text-[#FFF4E7]">Artificial Intelligence</p>
                   <div className="md:w-24 h-6 w-20 bg-[#AF5474] rounded-[28px] py-0.5">
-                    <p className="text-black text-sm text-center">Webinar</p>
+                    <p className="text-black text-sm text-center">Seminar</p>
                   </div>
                 </div>
-                <p className="font-light italic md:text-base text-sm">“How Smart City could change the world”</p>
+                <p className="font-light italic md:text-base text-sm md:w-96">&quot;Exploring Innovations and Applications of Artificial Intelligence&quot;</p>
               </div>
               <Link href={'#'}>
                 <div className="flex justify-center items-center">
@@ -106,17 +106,17 @@ const items: any = [
           <div className="">
             <div className="flex justify-between items-center md:p-2">
               <div className="">
-                <p className="font-bold md:text-xl text-base text-[#FFF4E7]">28 Mei 2022</p>
-                <p className="font-light md:text-base text-sm">13.00 - 16.00</p>
+                <p className="font-bold md:text-xl text-base text-[#FFF4E7]">6 Juli 2024</p>
+                <p className="font-light md:text-base text-sm">09.00 - 12.40 WIB</p>
               </div>
               <div className="md:w-80 w-56">
-                <div className="flex gap-4">
-                  <p className="font-bold md:text-xl text-sm text-[#FFF4E7]">Digital Marketing</p>
+                <div className="flex gap-4 w-96">
+                  <p className="font-bold md:text-xl text-sm text-[#FFF4E7]">Product Management</p>
                   <div className="md:w-24 md:h-6 w-20 bg-[#F9F871] rounded-[28px] py-0.5">
                     <p className="text-black text-sm text-center">Workshop</p>
                   </div>
                 </div>
-                <p className="font-light italic md:text-base text-sm">“Kickstart your career in Big Data”</p>
+                <p className="font-light italic md:text-base text-sm">&quot;Building a Strong Foundation: Mastering Product Management Skills&quot;</p>
               </div>
               <Link href={'#'}>
                 <div className="flex justify-center items-center">
@@ -129,17 +129,17 @@ const items: any = [
           <div className="md:py-0 py-3">
             <div className="flex justify-between items-center md:p-2">
               <div className="">
-                <p className="font-bold md:text-xl text-base text-[#FFF4E7]">29 Mei 2022</p>
-                <p className="font-light md:text-base text-sm">09.00 - 12.00</p>
+                <p className="font-bold md:text-xl text-base text-[#FFF4E7]">29 Juli 2024</p>
+                <p className="font-light md:text-base text-sm">09.00 - 12.40 WIB</p>
               </div>
               <div className="md:w-80 w-56">
                 <div className="flex gap-4">
-                  <p className="font-bold md:text-xl text-base text-[#FFF4E7]">UI Design</p>
+                  <p className="font-bold md:text-xl text-base text-[#FFF4E7]">UI/UX Design</p>
                   <div className="md:w-24 h-6 w-20 bg-[#F9F871] rounded-[28px] py-0.5">
                     <p className="text-black text-sm text-center">Workshop</p>
                   </div>
                 </div>
-                <p className="font-light italic md:text-base text-sm">“How Smart City could change the world”</p>
+                <p className="font-light italic md:text-base text-sm md:w-96">&quot;From Concept to Creation: Mastering UI/UX Design Practices&quot;</p>
               </div>
               <Link href={'#'}>
                 <div className="flex justify-center items-center">
