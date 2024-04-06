@@ -18,11 +18,11 @@ export default function SignUpBox() {
     fetch('api/auth/register', {
       method: 'POST',
       body: JSON.stringify({
-        nama: e.target.nama.value,
-        npm: e.target.npm.value,
-        kelas: e.target.kelas.value,
-        email: e.target.email.value,
-        password: e.target.password.value,
+        nama: e.target[0].nama.value,
+        npm: e.target[1].npm.value,
+        kelas: e.target[2].kelas.value,
+        email: e.target[3].email.value,
+        password: e.target[4].password.value,
       }),
     });
   };

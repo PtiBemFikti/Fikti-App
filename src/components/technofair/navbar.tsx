@@ -13,7 +13,7 @@ import { signIn, signOut, useSession } from 'next-auth/react';
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
-  const { data: session, status }: { data: any; status: string } = useSession();
+  const { status }: { status: string } = useSession();
   const toggleMenu = async () => {
     // Set animasi saat menu dibuka
     await controls.start({
@@ -69,14 +69,29 @@ const Navbar: React.FC = () => {
           {/* Add more navigation links as needed */}
         </div>
         <div className="md:block hidden">
-          <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
-            <div className="">
-              <SignUpBox />
+          {status === 'unauthenticated' ? (
+            <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
+              <button onLoad={() => signIn()}>
+                <div className="">
+                  <SignUpBox />
+                </div>
+              </button>
+              <div className="">
+                <SignInBox />
+              </div>
             </div>
-            <div className="">
-              <SignInBox />
+          ) : (
+            <div className="flex gap-4">
+              <div className="">
+                <p className="font-[Poppins] text-base">Mio Mirza</p>
+              </div>
+              <div className="">
+                <button onClick={() => signOut()}>
+                  <Image src={'/technofair/profile.png'} alt="Profile" width={48} height={48} />
+                </button>
+              </div>
             </div>
-          </div>
+          )}
         </div>
         <div className="md:hidden">
           {/* Hamburger menu icon */}
