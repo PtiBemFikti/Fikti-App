@@ -9,7 +9,7 @@ const Dashboard: React.FC = () => {
       <div>
         {/*desktop*/}
         <div className="sm:block hidden">
-          <div className=" bg-gradient-to-b from-slate-200 to-white h-[617px] flex gap-16 items-center justify-center">
+          <div className="bg-gradient-to-b from-slate-200 to-white h-[617px] flex gap-16 items-center justify-center">
             <div className="text-black w-[497px]">
               <Link href="/">
                 <Image

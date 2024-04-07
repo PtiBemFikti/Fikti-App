@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Circle Amolens';
-  src: url('../../public/font/CircleAmolensRegular.ttf') format("ttf");
+  src: url('../../public/font/CircleAmolensRegular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,5 +34,5 @@ body {
 }
 
 .event {
-  background: linear-gradient(180deg, rgba(11, 14, 26, 0) 0%, #371d2a 36.4%, #241525 62.4%, rgba(44, 24, 38, 0) 98.4%);
+  background: linear-gradient(180deg, rgba(11, 14, 26, 0) 0%, #0B0E1A 9.4%);
 }

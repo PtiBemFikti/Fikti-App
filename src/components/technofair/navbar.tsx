@@ -45,9 +45,9 @@ const Navbar: React.FC = () => {
           <h1 className="font-Lato font-bold text-2xl">TechnoFair 11.0</h1>
         </div>
         <div className="hidden md:flex md:gap-10 space-x-4 -ml-96 md:mb-32">
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="/about">
+          <a className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#about">
             About
-          </Link>
+          </a>
           <div className="block text-[#241525] hover:text-purpleText duration-300 py-2">
             <DropdownMenuNav />
           </div>
@@ -85,9 +85,9 @@ const Navbar: React.FC = () => {
       </div>
       {isMenuOpen && (
         <motion.div className="flex flex-col gap-3 md:hidden mt-4" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.5, ease: 'easeInOut' }} onClick={toggleMenu}>
-          <Link className="text-[#241525] hover:text-purpleText text-center" href="/about">
+          <a className="text-[#241525] hover:text-purpleText text-center" href="#about">
             About
-          </Link>
+          </a>
           <div className="text-[#241525] hover:text-purpleText text-center">
             <DropdownMenuNav />
           </div>

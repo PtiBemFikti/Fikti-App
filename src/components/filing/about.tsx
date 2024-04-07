@@ -75,9 +75,10 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Dekstop*/}
-      <div className="md:block hidden mt-2">
-        <div className="flex gap-24 items-center justify-center p-10">
+
+      {/* Tampilan Dekstop Start */}
+      <div className="md:block hidden mt-2" id='about'>
+        <div className="flex gap-24 items-center justify-center p-28">
           <div className="flex p-10">
             <div className="w-1/3 justify-center items-center ">
               <h1 className="text-black font-bold text-3xl ml-10 font-[arial]">
