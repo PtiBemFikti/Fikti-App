@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import dataAnalyst from "@/../public/filing/BootcampImage1.png";
+import dataAnalyst from "@/../public/filing/Data.png";
 
 const Section1: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const Section1: React.FC = () => {
         </Link>
       </div>
       <div className="w-[300px] md:w-full flex flex-wrap gap-10 space-y-3">
-        <Image src={dataAnalyst} alt="" className="mt-4 md:w-[462px] md:h-[346px]" />
+        <Image src={dataAnalyst} alt="" className="mt-4 md:w-[470px] md:h-[350px]" />
         <div className="text-black space-y-2 md:w-[650px] flex flex-col justify-between">
           <h1 className="font-CircleAmolens text-[30px] md:text-[40px]">Data Analyst</h1>
           <h2 className="font-Poppins italic font-light text-[16px]  text-[#6C6A67] md:text-[20px]">&quot;Started The Journey as a Data Analyst with Python & Tableau&quot;</h2>
@@ -29,7 +29,7 @@ const Section1: React.FC = () => {
             <h1 className="text-[#545350] text-[16px]"></h1>
             <h1 className="text-[#545350] text-[16px]">
               Kuasai dan Jadilah Data Analyst dengan Bootcamp FILING! <br />
-              <b>GRATIS, tanpa biaya apapun!</b> <span className="text-[#DF615C]">Kuota Terbatas!</span>
+              <span className="text-[#DF615C]">Kuota Terbatas!</span>
             </h1>
             <h1 className="text-[16px]"></h1>
           </div>

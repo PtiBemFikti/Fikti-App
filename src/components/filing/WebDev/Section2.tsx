@@ -52,6 +52,12 @@ const Section2: React.FC = () => {
               <h1 className="font-light md:font-normal">
                 Di era Society 5.0, data menjadi komponen penting dalam pengambilan keputusan dan pertumbuhan perusahaan. Data Analyst berperan sebagai jembatan antara informasi dan keputusan masa depan dengan mengolah data dan mencari
               </h1>
+              <div>
+                <h1 className="font-light md:font-normal">Biaya Pendaftaran:</h1>
+                <h1 className="font-light md:font-normal">
+                  <b>Rp 30.000/peserta</b> atau <b>Rp 75.000/3 peserta</b>
+                </h1>
+              </div>
             </div>
           </div>
           <div className="font-Poppins text-[#545350] space-y-3">
