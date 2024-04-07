@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
         </div>
         <div className="hidden md:flex md:gap-10 space-x-4 ml-96">
           <Link
-            className="block text-xl text-white hover:text-purpleText duration-300 py-2"
+            className="block text-lg text-white hover:text-purpleText duration-300 py-2"
             href="#about"
           >
             About
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
             className={`block ${
               pathname === "/bootcamp"
                 ? "text-purpleText"
-                : "text-white text-xl"
+                : "text-white text-lg"
             } hover:text-purpleText duration-300 py-2`}
             href="#bootcamp"
           >
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
             className={`block ${
               pathname === "/bootcamp"
                 ? "text-purpleText"
-                : "text-white text-xl"
+                : "text-white text-lg"
             } hover:text-purpleText duration-300 py-2`}
             href="#documentation"
           >
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
           </Link>
 
           <Link
-            className="block text-xl text-white hover:text-purpleText duration-300 py-2"
+            className="block text-lg text-white hover:text-purpleText duration-300 py-2"
             href="#faq"
           >
             FAQ
@@ -125,26 +125,26 @@ const Navbar: React.FC = () => {
           onClick={toggleMenu}
         >
           <Link
-            className="text-white text-xl hover:text-purpleText text-center"
+            className="text-white text-lg hover:text-purpleText text-center"
             href="#about"
             id="AboutPage"
           >
             About
           </Link>
           <Link
-            className="text-white text-xl hover:text-purpleText text-center"
+            className="text-white text-lg hover:text-purpleText text-center"
             href="#bootcamp"
           >
             Bootcamp List
           </Link>
           <Link
-            className="text-white text-xl hover:text-purpleText text-center"
+            className="text-white text-lg hover:text-purpleText text-center"
             href="#documentation"
           >
             Documentation
           </Link>
           <Link
-            className="text-white text-xl hover:text-purpleText text-center"
+            className="text-white text-lg hover:text-purpleText text-center"
             href="#faq"
           >
             FAQ
