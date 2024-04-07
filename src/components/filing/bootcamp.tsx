@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function BootcampPage() {
   return (
     <div className="">
@@ -8,7 +9,7 @@ export default function BootcampPage() {
           <div className="flex justify-between py-4">
             <div className="flex h-full mt-2">
               <Image
-                src="/filing/vector1.png"
+                src="/filing/Vector1.png"
                 alt="vector1"
                 width={500}
                 height={500}
@@ -48,9 +49,11 @@ export default function BootcampPage() {
                         dan keputusan masa depan, dengan mengolah data dan
                         mencari solusi dari berbagai permasalahan.
                       </div>
-                      <button className="w-full mt-4 mx-1 tracking-tight text-stone-400 text-base font-normal font-['Circle-Amolens']">
-                        CLICK TO LEARN MORE
-                      </button>
+                      <Link href="/filing/DataAnalyst">
+                        <button className="w-full mt-4 mx-1 tracking-tight text-stone-400 text-base font-normal font-['Circle-Amolens']">
+                          CLICK TO LEARN MORE
+                        </button>
+                      </Link>
                     </div>
                   </div>
                   <div className="w-1/2 mt-2 ml-4 rounded-3xl border-2 border-stone-400">
@@ -80,9 +83,11 @@ export default function BootcampPage() {
                         digitalisasi ini untuk memperkenalkan dan mempromosikan
                         produk/layanan perusahaan.
                       </div>
-                      <button className="w-full mt-4 mx-1 tracking-tight text-stone-400 text-base font-normal font-['Circle-Amolens']">
-                        CLICK TO LEARN MORE
-                      </button>
+                      <Link href="/filing/WebDevelopment">
+                        <button className="w-full mt-4 mx-1 tracking-tight text-stone-400 text-base font-normal font-['Circle-Amolens']">
+                          CLICK TO LEARN MORE
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -90,7 +95,7 @@ export default function BootcampPage() {
             </div>
             <div className="flex h-full mt-2">
               <Image
-                src="/filing/vector2.png"
+                src="/filing/Vector2.png"
                 alt="vector2"
                 width={500}
                 height={500}
@@ -135,9 +140,11 @@ export default function BootcampPage() {
                 keputusan masa depan, dengan mengolah data dan mencari solusi
                 dari berbagai permasalahan.
               </div>
-              <button className="w-full mt-8 mb-4 text-center text-stone-400 text-sm font-bold font-['Circle-Amolens']">
-                CLICK TO LEARN MORE
-              </button>
+              <Link href="/filing/DataAnalyst">
+                <button className="w-full mt-8 mb-4 text-center text-stone-400 text-sm font-bold font-['Circle-Amolens']">
+                  CLICK TO LEARN MORE
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -170,9 +177,11 @@ export default function BootcampPage() {
                 digitalisasi ini untuk memperkenalkan dan mempromosikan
                 produk/layanan perusahaan.
               </div>
-              <button className="w-full mt-8 mb-4 text-center text-stone-400 text-sm font-bold font-['Circle-Amolens']">
-                CLICK TO LEARN MORE
-              </button>
+              <Link href="/filing/WebDevelopment">
+                <button className="w-full mt-8 mb-4 text-center text-stone-400 text-sm font-bold font-['Circle-Amolens']">
+                  CLICK TO LEARN MORE
+                </button>
+              </Link>
             </div>
           </div>
         </div>

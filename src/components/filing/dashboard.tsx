@@ -38,13 +38,17 @@ const Dashboard: React.FC = () => {
                   rapidly changing world with our flexible and affordable
                   bootcamp online courses
                 </h2>
-                <div className="flex gap-5">
-                  <button className="bg-[#11111B] rounded-md text-[#FEFDFC] text-[16px] leading-6 py-2 px-9 font-semibold">
-                    Learn More
-                  </button>
-                  <button className="border border-[#11111B] rounded-md text-[16px] text-[#11111B] leading-6 py-2 px-9 font-semibold">
-                    Lihat Bootcamp
-                  </button>
+                <div className="flex gap-5 scroll-smooth">
+                  <Link href={"/filing#about"}>
+                    <button className="bg-[#11111B] rounded-md text-[#FEFDFC] text-[16px] leading-6 py-2 px-9 font-semibold">
+                      Learn More
+                    </button>
+                  </Link>
+                  <Link href={"/filing#bootcamp"}>
+                    <button className="border border-[#11111B] rounded-md text-[16px] text-[#11111B] leading-6 py-2 px-9 font-semibold">
+                      Lihat Bootcamp
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -89,15 +93,17 @@ const Dashboard: React.FC = () => {
             <div className="relative ">
               <Image src={vector} alt="" className="md:hidden w-full h-full" />
               <div className="flex justify-center">
-                <div className="w-[330px] flex flex-col gap-3 absolute top-12">
+                <div className="w-[330px] flex flex-col gap-3 absolute top-12 scroll-smooth">
                   <h2 className="font-Poppins leading-[30px] text-[16px] text-[#F0ECE5] text-center">
                     Get the knowledge and skills you need to thrive in today’s
                     rapidly changing world with our flexible and affordable
                     bootcamp online courses
                   </h2>
-                  <button className="bg-[#25243A] w-full rounded-xl font-semibold text-[18px] py-3">
-                    Learn More
-                  </button>
+                  <Link href={"/filing#about"}>
+                    <button className="bg-[#25243A] w-full rounded-xl font-semibold text-[18px] py-3">
+                      Learn More
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

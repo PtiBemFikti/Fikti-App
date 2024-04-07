@@ -5,7 +5,7 @@ import Dashboard from "@/components/filing/dashboard";
 import BootcampPage from "@/components/filing/bootcamp";
 import DocumentationPage from "@/components/filing/documentation";
 import FaqPage from "@/components/filing/faq";
-import { useEffect, useState } from "react";
+
 export default function FilingPage() {
   return (
     <main className="bg-white bg-cover bg-no-repeat scroll-smooth">
