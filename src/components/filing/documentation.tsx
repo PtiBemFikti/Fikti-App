@@ -6,7 +6,7 @@ export default function DocumentationPage() {
       {/*Dekstop*/}
       <div className="md:block hidden mt-2">
         <div className="pb-20">
-          <div className="p-10">
+          <div className="p-28">
             <div className="flex justify-center items-center">
               <div className="text-center font-bold text-3xl font-[arial] tracking-tight text-black">
                 {" "}
