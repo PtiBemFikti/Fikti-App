@@ -15,67 +15,60 @@ export default function DocumentationPage() {
             </div>
             <div className="flex mt-4 overflow-x-auto gap-5">
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={200}
-                height={200}
-                className="w-72 h-72 rounded-3xl pb-8"
+                src="/filing/filingdoc1.png"
+                alt=""
+                width={1000}
+                height={1000}
+                className="w-full h-96 rounded-3xl pb-8"
               />
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={200}
-                height={200}
-                className="w-72 h-72 rounded-3xl pb-8"
+                src="/filing/filingdoc2.png"
+                alt=""
+                width={1000}
+                height={1000}
+                className="w-full h-96 rounded-3xl pb-8"
               />
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={200}
-                height={200}
-                className="w-72 h-72 rounded-3xl pb-8"
+                src="/filing/filingdoc3.png"
+                alt=""
+                width={1000}
+                height={1000}
+                className="w-full h-96 rounded-3xl pb-8"
               />
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={200}
-                height={200}
-                className="w-72 h-72 rounded-3xl pb-8"
+                src="/filing/filingdoc4.png"
+                alt=""
+                width={800}
+                height={1000}
+                className="w-full h-96 rounded-3xl pb-8"
               />
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={200}
-                height={200}
-                className="w-72 h-72 rounded-3xl pb-8"
+                src="/filing/filingdoc5.png"
+                alt=""
+                width={1000}
+                height={1000}
+                className="w-full h-96 rounded-3xl pb-8"
               />
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={200}
-                height={200}
-                className="w-72 h-72 rounded-3xl pb-8"
+                src="/filing/filingdoc6.png"
+                alt=""
+                width={1000}
+                height={1000}
+                className="w-full h-96 rounded-3xl pb-8"
               />
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={200}
-                height={200}
-                className="w-72 h-72 rounded-3xl pb-8"
+                src="/filing/filingdoc7.png"
+                alt=""
+                width={1000}
+                height={1000}
+                className="w-full h-96 rounded-3xl pb-8"
               />
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={200}
-                height={200}
-                className="w-72 h-72 rounded-3xl pb-8"
-              />
-              <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={200}
-                height={200}
-                className="w-72 h-72 rounded-3xl pb-8"
+                src="/filing/filingdoc8.png"
+                alt=""
+                width={1000}
+                height={1000}
+                className="w-full h-96 rounded-3xl pb-8"
               />
             </div>
           </div>
@@ -83,6 +76,9 @@ export default function DocumentationPage() {
       </div>
       {/*Dekstop*/}
 
+      {/* Tampilan Mobile Start */}
+
+      {/* Tampilan Mobile End */}
       {/*Mobile*/}
       <div className="md:hidden mt-2 bg-[#11111B]">
         <div className="py-10">
@@ -91,67 +87,44 @@ export default function DocumentationPage() {
               DOCUMENTATIONS
             </div>
           </div>
-          <div className="justify-center items-center gap-1 flex">
-            <div className="flex gap-1 w-72 mt-2">
+          <div className="justify-center items-center gap-4 flex px-2 pb-4">
+            <div className="flex w-full ">
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={170}
-                height={170}
+                src="/filing/filingdoc2.png"
+                alt=""
+                width={1000}
+                height={1000}
               />
-              <div className="flex flex-col w-40 ">
-                <Image
-                  src="/filing/dumpdoc.png"
-                  alt="dumpdoc"
-                  width={120}
-                  height={120}
-                />
-                <Image
-                  src="/filing/dumpdoc.png"
-                  alt="dumpdoc"
-                  width={120}
-                  height={120}
-                />
-              </div>
             </div>
           </div>
-          <div className="justify-center items-center gap-1 flex">
-            <div className="flex w-72">
+          <div className="justify-center items-center gap-4 flex px-2 pb-4">
+            <div className="flex w-full ">
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={130}
-                height={130}
+                src="/filing/filingdoc1.png"
+                alt=""
+                width={1000}
+                height={1000}
               />
-              <div className="flex w-72">
-                <Image
-                  src="/filing/dumpdoc.png"
-                  alt="dumpdoc"
-                  width={170}
-                  height={170}
-                />
-              </div>
             </div>
           </div>
-          <div className="justify-center items-center gap-1 flex">
-            <div className="flex w-72">
+          <div className="justify-center items-center gap-4 flex px-2 pb-4">
+            <div className="flex w-full ">
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={96}
-                height={96}
+                src="/filing/filingdoc5.png"
+                alt=""
+                width={1000}
+                height={1000}
               />
+            </div>
+          </div>
+
+          <div className="justify-center items-center gap-4 flex">
+            <div className="flex w-full">
               <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={96}
-                height={96}
-              />
-              <Image
-                src="/filing/dumpdoc.png"
-                alt="dumpdoc"
-                width={96}
-                height={96}
+                src="/filing/filingdoc7.png"
+                alt=""
+                width={1000}
+                height={1000}
               />
             </div>
           </div>

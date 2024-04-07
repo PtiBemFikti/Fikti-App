@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import vector from "@/../public/filing/Vector.png";
 import learning2 from "@/../public/filing/learning 2 1.png";
-
+import Link from "next/link";
 const Dashboard: React.FC = () => {
   return (
     <div>
@@ -11,6 +11,15 @@ const Dashboard: React.FC = () => {
         <div className="sm:block hidden">
           <div className=" bg-gradient-to-b from-slate-200 to-white h-[617px] flex gap-16 items-center justify-center">
             <div className="text-black w-[497px]">
+              <Link href="/">
+                <Image
+                  src={"/filing/back.png"}
+                  alt="back"
+                  width={50}
+                  height={50}
+                  className="pb-4"
+                />
+              </Link>
               <div className="flex gap-2">
                 <h1 className="bg-[#545350] text-[#F0ECE5] px-2 text-[24px] gap-[10px] rounded-r-3xl font-Poppins font-thin tracking-wide">
                   FIKTI LEARNING
@@ -51,7 +60,16 @@ const Dashboard: React.FC = () => {
         </div>
         <div className="sm:hidden">
           <div className="bg-gradient-to-b from-slate-200 to-white">
-            <div className="absolute flex flex-col gap-1 w-[308px] pt-10 mx-5">
+            <div className="absolute flex flex-col gap-1 w-[308px] pt-5 mx-5">
+              <Link href="/">
+                <Image
+                  src={"/filing/back.png"}
+                  alt="back"
+                  width={30}
+                  height={30}
+                  className="pb-1"
+                />
+              </Link>
               <div className="flex gap-2">
                 <h1 className="bg-[#545350] text-[#F0ECE5] px-2 text-[14px] gap-[10px] rounded-r-3xl font-Poppins font-thin tracking-wide">
                   FIKTI LEARNING
