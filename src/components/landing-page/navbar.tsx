@@ -5,7 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
-
+import DropdownMenuNav from "./DropdownMenu";
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
@@ -64,12 +64,9 @@ const Navbar: React.FC = () => {
           >
             Struktur Organisasi
           </Link>
-          <Link
-            className="block text-white hover:text-purpleText duration-300 py-2"
-            href="/oprec-volunteer"
-          >
-            Oprec Volunteer
-          </Link>
+          <div>
+            <DropdownMenuNav />
+          </div>
           {/* <Link
             className="block text-white hover:text-purpleText duration-300 py-2"
             href="/dept&biro"
@@ -142,11 +139,8 @@ const Navbar: React.FC = () => {
           >
             Struktur Organisasi
           </Link>
-          <Link
-            className="hover:text-purpleText text-center"
-            href="/oprec-volunteer"
-          >
-            Oprec Volunteer
+          <Link href="">
+            <DropdownMenuNav />
           </Link>
           <Link
             className="flex text-white py-2 px-3 mx-20 justify-center border-2 border-gray-400 hover:bg-orange-600 hover:duration-300 hover:end-10 rounded-full gap-2"
