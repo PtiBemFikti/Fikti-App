@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import dataAnalyst from "@/../public/filing/Data.png";
+import web from "@/../public/filing/Web.png";
 
 const Section1: React.FC = () => {
   return (
@@ -19,16 +19,15 @@ const Section1: React.FC = () => {
         </Link>
       </div>
       <div className="w-[300px] md:w-full flex flex-wrap gap-10 space-y-3">
-        <Image src={dataAnalyst} alt="" className="mt-4 md:w-[470px] md:h-[350px]" />
+        <Image src={web} alt="" className="mt-4 md:w-[462px] md:h-[346px]" />
         <div className="text-black space-y-2 md:w-[650px] flex flex-col justify-between">
-          <h1 className="font-CircleAmolens text-[30px] md:text-[40px]">Data Analyst</h1>
-          <h2 className="font-Poppins italic font-light text-[16px]  text-[#6C6A67] md:text-[20px]">&quot;Started The Journey as a Data Analyst with Python & Tableau&quot;</h2>
+          <h1 className="font-CircleAmolens text-[30px] md:text-[40px]">Web Development</h1>
+          <h2 className="font-Poppins italic font-light text-[16px]  text-[#6C6A67] md:text-[20px]">&quot;Create Interactive Websites to Become a Web Developer with HTML, CSS & JS&quot;</h2>
           <h2 className="font-Poppins text-[14px] md:text-[20px] text-[#545350] font-semibold">27 April 2024 - 18 Mei 2024</h2>
           <div className="hidden md:block font-Poppins space-y-2">
-            <h1 className="text-[#545350] text-[16px]">FILING hadir dengan bootcamp untuk membekali kamu dengan keterampilan dan pengetahuan yang dibutuhkan untuk menjadi Data Analyst yang handal.</h1>
-            <h1 className="text-[#545350] text-[16px]"></h1>
+            <h1 className="text-[#545350] text-[16px]">FILING hadir dengan bootcamp untuk membekali kamu dengan keterampilan dan pengetahuan yang dibutuhkan untuk menjadi Web Developer yang handal.</h1>
             <h1 className="text-[#545350] text-[16px]">
-              Kuasai dan Jadilah Data Analyst dengan Bootcamp FILING! <br />
+              Kuasai dan Jadilah Web Developer dengan Bootcamp FILING! <br />
               <span className="text-[#DF615C]">Kuota Terbatas!</span>
             </h1>
             <h1 className="text-[16px]"></h1>

@@ -39,7 +39,7 @@ const Section2: React.FC = () => {
       </div>
       <div>
         <div className="space-y-7">
-          <div className="font-Poppins text-[#545350] space-y-3">
+          <div className="font-Poppins text-[#545350] space-y-7">
             <div className="flex gap-1 items-center">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-black w-4 h-4 md:w-6 md:h-6">
                 <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
@@ -47,11 +47,10 @@ const Section2: React.FC = () => {
               <h1 className="text-[16px] md:text-[20px] font-bold">About Bootcamp</h1>
             </div>
             <div className="pl-7 text-[14px] md:text-[16px] space-y-3">
-              <h1 className="font-semibold">Kuasai Data dan Jadilah Data Analyst dengan Bootcamp FILING!</h1>
-              <h1 className="font-light md:font-normal">FILING hadir dengan bootcamp untuk membekali kamu dengan keterampilan dan pengetahuan yang dibutuhkan untuk menjadi Data Analyst yang handal.</h1>
+              <h1 className="font-semibold">Kuasai Data dan Jadilah Web Developer dengan Bootcamp FILING!</h1>
+              <h1 className="font-light md:font-normal">FILING hadir dengan bootcamp untuk membekali kamu dengan keterampilan dan pengetahuan yang dibutuhkan untuk menjadi Web Developer yang handal.</h1>
               <h1 className="font-light md:font-normal">
                 Di era Society 5.0, data menjadi komponen penting dalam pengambilan keputusan dan pertumbuhan perusahaan. Data Analyst berperan sebagai jembatan antara informasi dan keputusan masa depan dengan mengolah data dan mencari
-                solusi dari berbagai permasalahan.
               </h1>
               <div>
                 <h1 className="font-light md:font-normal">Biaya Pendaftaran:</h1>
@@ -72,23 +71,23 @@ const Section2: React.FC = () => {
               <h1 className="font-semibold">Materi Kelas:</h1>
               <div className="flex items-center gap-2">
                 <Image src={check} alt="" className="w-8 h-8" />
-                <h1>Memahami intro Data Analyst dan tools yang akan digunakan.</h1>
+                <h1>Memahami intro Web Development dan tools yang akan digunakan.</h1>
               </div>
               <div className="flex items-center gap-2">
                 <Image src={check} alt="" className="w-8 h-8" />
-                <h1>Mengetahui dasar - dasar cara menggunakan Python dan Tableau.</h1>
+                <h1>Mengetahui dasar - dasar cara menggunakan HTML, CSS dan JavaScript.</h1>
               </div>
               <div className="flex items-center gap-2">
                 <Image src={check} alt="" className="w-8 h-8" />
-                <h1>Dapat mengoperasikan tools yang berhubungan dengan Data Analyst.</h1>
+                <h1>Dapat mengoperasikan tools yang berhubungan dengan Web Development.</h1>
               </div>
               <div className="flex items-center gap-2">
                 <Image src={check} alt="" className="w-8 h-8" />
-                <h1>Memperoleh wawasan pengetahuan dan memiliki portofolio pengerjaan project Data Analyst.</h1>
+                <h1>Memperoleh wawasan pengetahuan dan memiliki portofolio pengerjaan project Web Developmet.</h1>
               </div>
             </div>
           </div>
-          <div className="font-Poppins text-[#545350] space-y-7">
+          <div className="font-Poppins text-[#545350] space-y-3">
             <div className="flex gap-1 items-center">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-black w-4 h-4 md:w-6 md:h-6">
                 <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
@@ -203,7 +202,7 @@ const Section2: React.FC = () => {
             </div>
           </div>
           {/* tampilan desktop, tampilan mobile ada di section3 */}
-          <div className="hidden md:block bg-white min-h-[900px] space-y-7 pt-10">
+          <div className="hidden md:block bg-white min-h-[950px] space-y-7 pt-10">
             <Card1 title="Pertemuan Pertama" />
             <Card2 title="Pertemuan Kedua" />
             <Card3 title="Pertemuan Ketiga" />

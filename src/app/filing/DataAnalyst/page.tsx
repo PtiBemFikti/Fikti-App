@@ -6,11 +6,9 @@ import Section3 from "@/components/filing/DataAnalyst/Section3";
 export default function Page() {
   return (
     <div className="bg-white">
-      <div className="block">
-        <Section1 />
-        <Section2 />
-        <Section3 />
-      </div>
+      <Section1 />
+      <Section2 />
+      <Section3 />
     </div>
   );
 }
