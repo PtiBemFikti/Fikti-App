@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
         <div className="text-white md:hidden block">
           <h1 className="font-Lato font-bold text-2xl">FIKTI LEARNING</h1>
         </div>
-        <div className="hidden md:flex md:gap-10 space-x-4 ml-96" id="about">
+        <div className="hidden md:flex md:gap-10 space-x-4 ml-96">
           <Link
             className="block text-xl text-white hover:text-purpleText duration-300 py-2"
             href="#about"
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
                 ? "text-purpleText"
                 : "text-white text-xl"
             } hover:text-purpleText duration-300 py-2`}
-            href="/bootcamp"
+            href="#bootcamp"
           >
             Bootcamp List
           </Link>
@@ -78,14 +78,14 @@ const Navbar: React.FC = () => {
                 ? "text-purpleText"
                 : "text-white text-xl"
             } hover:text-purpleText duration-300 py-2`}
-            href="/bootcamp"
+            href="#documentation"
           >
             Documentation
           </Link>
 
           <Link
             className="block text-xl text-white hover:text-purpleText duration-300 py-2"
-            href="/contact"
+            href="#faq"
           >
             FAQ
           </Link>
@@ -133,19 +133,19 @@ const Navbar: React.FC = () => {
           </Link>
           <Link
             className="text-white text-xl hover:text-purpleText text-center"
-            href="/bootcamp"
+            href="#bootcamp"
           >
             Bootcamp List
           </Link>
           <Link
             className="text-white text-xl hover:text-purpleText text-center"
-            href="/bootcamp"
+            href="#documentation"
           >
             Documentation
           </Link>
           <Link
             className="text-white text-xl hover:text-purpleText text-center"
-            href="/contact"
+            href="#faq"
           >
             FAQ
           </Link>
