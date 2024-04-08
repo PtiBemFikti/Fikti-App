@@ -1,20 +1,31 @@
-
-import Navbar from '@/components/filing/navbar';
-import AboutPage from '@/components/filing/about';
+"use client";
+import Navbar from "@/components/filing/navbar";
+import AboutPage from "@/components/filing/about";
 import Dashboard from "@/components/filing/dashboard";
-export default function FilingPage() {
+import BootcampPage from "@/components/filing/bootcamp";
+import DocumentationPage from "@/components/filing/documentation";
+import FaqPage from "@/components/filing/faq";
 
+export default function FilingPage() {
   return (
-    <main className="bg-white bg-cover bg-no-repeat">
+    <main className="bg-white bg-cover bg-no-repeat scroll-smooth">
       <Navbar />
       {/* <section className='-mt-[580px] px-4 py-4 flex justify-center items-center mb-5'>
-        <VidYoutube />
       </section> */}
 
       <Dashboard />
-
-      <AboutPage/>
-
+      <section id="about">
+        <AboutPage />
+      </section>
+      <section id="bootcamp">
+        <BootcampPage />
+      </section>
+      <section id="documentation">
+        <DocumentationPage />
+      </section>
+      <section id="faq">
+        <FaqPage />
+      </section>
     </main>
   );
 }
