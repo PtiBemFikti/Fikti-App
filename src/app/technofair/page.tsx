@@ -13,7 +13,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 
 export default function TechnofairPage() {
-  const { data: session, status }: { data: any, status: string} = useSession();
+  const { data: session, status }: { data: any; status: string } = useSession();
   const router = useRouter();
 
   useEffect(() => {
@@ -30,14 +30,22 @@ export default function TechnofairPage() {
       {/* <section className='-mt-[580px] px-4 py-4 flex justify-center items-center mb-5'>
         <VidYoutube />
       </section> */}
-      <AboutPage />
+      <section id="about">
+        <div className="pt-20">
+          <AboutPage />
+        </div>
+      </section>
       <EventPage />
       <div className="bg-gradient-to-t from-[#0B0E1A] to-[#211525]">
-        <SchedulePage />
+        <section id="schedule">
+          <SchedulePage />
+        </section>
       </div>
       <StoryPage />
       <SponsorPage />
-      <FaqPage />
+      <section id="faq">
+        <FaqPage />
+      </section>
     </main>
   );
 }

@@ -56,8 +56,8 @@ const Navbar: React.FC = () => {
           <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#schedule">
             Schedule
           </Link>
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#contact">
-            Contact
+          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#faq">
+            FAQ
           </Link>
           {/* <Link
             className="block text-black hover:text-purpleText duration-300 py-2"
@@ -69,7 +69,15 @@ const Navbar: React.FC = () => {
           {/* Add more navigation links as needed */}
         </div>
         <div className="md:block hidden">
-          {status === 'unauthenticated' ? (
+          <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
+            <div className="">
+              <SignUpBox />
+            </div>
+            <div className="">
+              <SignInBox />
+            </div>
+          </div>
+          {/* {status === 'unauthenticated' ? (
             <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
               <button onLoad={() => signIn()}>
                 <div className="">
@@ -91,7 +99,7 @@ const Navbar: React.FC = () => {
                 </button>
               </div>
             </div>
-          )}
+          )} */}
         </div>
         <div className="md:hidden">
           {/* Hamburger menu icon */}
@@ -102,7 +110,7 @@ const Navbar: React.FC = () => {
       </div>
       {isMenuOpen && (
         <motion.div className="flex flex-col gap-3 md:hidden mt-4" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.5, ease: 'easeInOut' }} onClick={toggleMenu}>
-          <Link className="text-[#241525] hover:text-purpleText text-center" href="/about#about">
+          <Link className="text-[#241525] hover:text-purpleText text-center" href="#about">
             About
           </Link>
           <div className="text-[#241525] hover:text-purpleText text-center">
@@ -111,8 +119,8 @@ const Navbar: React.FC = () => {
           <Link className="text-[#241525] hover:text-purpleText text-center" href="#schedule">
             Schedule
           </Link>
-          <Link className="text-[#241525] hover:text-purpleText text-center" href="#contact">
-            Contact
+          <Link className="text-[#241525] hover:text-purpleText text-center" href="#faq">
+            FAQ
           </Link>
           <div className="md:hidden block">
             {status === 'authenticated' ? (
@@ -130,9 +138,7 @@ const Navbar: React.FC = () => {
               <div className="flex justify-center items-center">
                 <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
                   <div className="text-[#241525] ml-3">
-                    <button onClick={() => signIn()}>
-                      <SignUpBox />
-                    </button>
+                    <SignUpBox />
                   </div>
                   <div className="">
                     <SignInBox />

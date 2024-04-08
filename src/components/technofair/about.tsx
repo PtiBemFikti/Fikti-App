@@ -89,7 +89,7 @@ export default function AboutPage() {
 
       {/* Tampilan Dekstop Start */}
       <div className="mt-2 md:block hidden">
-        <div id='about' className="flex items-center justify-center px-32 gap-10">
+        <div className="flex items-center justify-center px-32 gap-10">
           <div className="bg-[#E9E9ED] w-1/2 h-96 border-[2px] rounded-[35px]">
             <div className="">
               <div className="flex justify-center items-center my-6">
