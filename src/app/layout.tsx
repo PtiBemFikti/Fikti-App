@@ -5,7 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/landing-page/navbar";
 import Footer from "@/components/landing-page/footer";
 
-const disableNavbar = ["/filing", "/technofair"];
+const disableNavbar = ["/filing", "/filing/DataAnalyst", "/filing/WebDevelopment", "/technofair"];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -15,11 +15,7 @@ const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
 });
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   return (
     <html lang="en" className="scroll-smooth">
