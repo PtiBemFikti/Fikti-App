@@ -5,7 +5,12 @@ import "./globals.css";
 import Navbar from "@/components/landing-page/navbar";
 import Footer from "@/components/landing-page/footer";
 
-const disableNavbar = ["/filing", "/technofair"];
+const disableNavbar = [
+  "/filing",
+  "/technofair",
+  "/filing/WebDevelopment",
+  "/filing/DataAnalyst",
+];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
