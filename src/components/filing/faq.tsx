@@ -5,7 +5,7 @@ export default function FaqPage() {
     <div className="bg-[#25243A]">
       {/* Dekstop */}
       <div className="md:block hidden">
-        <div className="flex justify-center py-32 gap-20">
+        <div className="flex justify-center py-32 px-10 gap-20">
           <div className="">
             <div className="">
               <p className="text-white text-5xl font-['Circle-Amolens'] font-bold">
@@ -60,7 +60,7 @@ export default function FaqPage() {
 
                 <AccordionCard
                   title="Apakah ada biaya untuk mengikuti Bootcamp FILING?"
-                  content="Untuk biaya 30K/peserta dan 70K/3 peserta."
+                  content="Untuk biaya 30K/peserta dan 75K/3 peserta."
                 />
 
                 <AccordionCard
@@ -117,7 +117,7 @@ export default function FaqPage() {
 
               <AccordionCard
                 title="Apakah ada biaya untuk mengikuti Bootcamp FILING?"
-                content="Untuk biaya 30K/peserta dan 70K/3 peserta."
+                content="Untuk biaya 30K/peserta dan 75K/3 peserta."
               />
 
               <AccordionCard
