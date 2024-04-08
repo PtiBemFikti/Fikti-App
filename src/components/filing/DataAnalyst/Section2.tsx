@@ -196,7 +196,11 @@ const Section2: React.FC = () => {
                   <Image src={Date} alt="" className="w-[390px]" />
                   <div className="rounded-lg bg-[#11111B] text-center text-[#FEFDFC] p-3">
                     <h1 className="font-CircleAmolens text-[24px]">SAVE THE DATE!</h1>
-                    <h1 className="font-Poppins text-[14px] opacity-50">Click here to save the date</h1>
+                    <h1 className="font-Poppins text-[14px] opacity-50">
+                      <a href="https://www.evernote.com/shard/s684/sh/703f1447-958f-2806-0be0-c2b1e0b47394/xhn5FAql2Cs2NXtJCQUiMvo4yQcpoD7sMaarBRPDow8RZbsHL0XU8mxo1w" target="_blank">
+                        Click here to save the date
+                      </a>
+                    </h1>
                   </div>
                 </div>
               </div>
