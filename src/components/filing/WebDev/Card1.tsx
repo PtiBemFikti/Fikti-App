@@ -25,7 +25,7 @@ const Card1: React.FC<AccordionCardProps> = ({ title }) => {
 
   return (
     <div className="bg-white rounded-lg shadow mb-4 text-[#545350]">
-      <button className="bg-white border-b-1 border-[#545350] w-full py-2 text-left text-sm font-medium hover:bg-white focus:outline-none dark:text-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 " onClick={handleToggle}>
+      <button className="bg-white border-b-1 border-[#545350] w-full py-2 text-left text-sm font-medium hover:bg-white focus:outline-none " onClick={handleToggle}>
         <div className="flex items-center justify-between">
           <span className="font-Poppins font-semibold text-[#545350] text-[16px] md:text-[30px]">{title}</span>
           <ChevronDownIcon className={`h-5 w-5 transform ${isOpen ? "rotate-180" : ""}`} />
