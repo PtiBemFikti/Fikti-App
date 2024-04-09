@@ -77,7 +77,7 @@ export default function AboutPage() {
 
       {/* Dekstop*/}
       <div className="md:block hidden mt-2">
-        <div className="flex gap-24 items-center justify-center p-28">
+        <div className="flex items-center justify-center p-28">
           <div className="flex p-10">
             <div className="w-1/3 justify-center items-center ">
               <h1 className="text-black font-bold text-3xl ml-10 font-[arial]">
@@ -135,7 +135,7 @@ export default function AboutPage() {
                   <h1 className="font-bold text-black text-right text-2xl">
                     Motivation
                   </h1>
-                  <p className="w-40 text-right text-[#6C6A67] text-base font-medium">
+                  <p className="w-48 text-right text-[#6C6A67] text-base font-medium">
                     Achieve regular next steps of a course by supporting the
                     motivation system.
                   </p>
