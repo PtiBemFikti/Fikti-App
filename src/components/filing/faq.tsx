@@ -22,10 +22,13 @@ export default function FaqPage() {
               <p className="text-white text-xl font-[Poppins] py-3">
                 Can’t find what you are looking for? feel free to{" "}
                 <span>
-                  <button className="text-white text-xl font-normal font-['Poppins'] underline">
+                  <a
+                    href="https://www.evernote.com/shard/s684/sh/6bba8628-a7cf-c26f-84b8-1996b92a3f4e/npUZo0Vd4Dp0pPWO4yUYoBVraTAj-dTPsxKUT6WEnZLH3_DS4NKOaGWuZg"
+                    className="text-white text-xl font-normal font-['Poppins'] underline"
+                  >
                     {" "}
                     ask us.
-                  </button>
+                  </a>
                 </span>
               </p>
             </div>
@@ -138,7 +141,10 @@ export default function FaqPage() {
             </p>
             <p className="font-[Poppins] text-base py-3">
               Can’t find what you are looking for? feel free to{" "}
-              <a href="#" className="underline">
+              <a
+                href="https://www.evernote.com/shard/s684/sh/6bba8628-a7cf-c26f-84b8-1996b92a3f4e/npUZo0Vd4Dp0pPWO4yUYoBVraTAj-dTPsxKUT6WEnZLH3_DS4NKOaGWuZg"
+                className="underline"
+              >
                 ask us
               </a>
               .
