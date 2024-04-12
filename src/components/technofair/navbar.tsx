@@ -8,12 +8,10 @@ import Image from 'next/image';
 import DropdownMenuNav from './DropdownMenu';
 import SignInBox from './SignInBox';
 import SignUpBox from './SignUpBox';
-import { signIn, signOut, useSession } from 'next-auth/react';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
-  const { status }: { status: string } = useSession();
   const toggleMenu = async () => {
     // Set animasi saat menu dibuka
     await controls.start({
@@ -123,7 +121,17 @@ const Navbar: React.FC = () => {
             FAQ
           </Link>
           <div className="md:hidden block">
-            {status === 'authenticated' ? (
+            <div className="flex justify-center items-center">
+              <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
+                <div className="text-[#241525] ml-3">
+                  <SignUpBox />
+                </div>
+                <div className="">
+                  <SignInBox />
+                </div>
+              </div>
+            </div>
+            {/* {status === 'authenticated' ? (
               <div className="flex gap-4">
                 <div className="">
                   <p className="font-[Poppins] text-base">Mio Mirza</p>
@@ -145,7 +153,7 @@ const Navbar: React.FC = () => {
                   </div>
                 </div>
               </div>
-            )}
+            )} */}
           </div>
           {/* <Link className="hover:text-purpleText" href="/dept&biro">
             Departemen
