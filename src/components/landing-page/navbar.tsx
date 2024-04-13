@@ -139,9 +139,9 @@ const Navbar: React.FC = () => {
           >
             Struktur Organisasi
           </Link>
-          <Link href="">
+          <div className="flex justify-center items-center">
             <DropdownMenuNav />
-          </Link>
+          </div>
           <Link
             className="flex text-white py-2 px-3 mx-20 justify-center border-2 border-gray-400 hover:bg-orange-600 hover:duration-300 hover:end-10 rounded-full gap-2"
             href="https://bit.ly/HotlineFIKTI"
