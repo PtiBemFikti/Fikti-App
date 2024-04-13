@@ -9,22 +9,28 @@ export default function SignUpBox() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   const [open, setOpen] = useState(false);
+  const [error, setError] = useState('');
   const toggle = () => {
     setOpen(!open);
   };
 
+  const isValidEmail = (email: string) => {
+    const emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]\.[A-Z]{2,}$/i;
+    return emailRegEx.test(email);
+  }
+
   const handleRegist = (e: any) => {
     e.preventDefault();
-    fetch('api/auth/register', {
-      method: 'POST',
-      body: JSON.stringify({
-        nama: e.target[0].nama.value,
-        npm: e.target[1].npm.value,
-        kelas: e.target[2].kelas.value,
-        email: e.target[3].email.value,
-        password: e.target[4].password.value,
-      }),
-    });
+    const nama = e.target[0].value;
+    const npm = e.target[1].value;
+    const kelas = e.target[2].value;
+    const email = e.target[3].value;
+    const password = e.target[4].value;
+
+    if(!isValidEmail(email)) {
+      setError('Please enter a valid email address');
+      return;
+    }
   };
 
   return (
@@ -38,7 +44,7 @@ export default function SignUpBox() {
             <>
               <form
                 onSubmit={(e) => {
-                  handleRegist(e);
+                  handleRegist;
                 }}
               >
                 <div className="text-black font-[Poppins]">
@@ -88,6 +94,7 @@ export default function SignUpBox() {
                     </ModalBody>
                     <ModalFooter className="flex justify-center items-center mb-4">
                       <div className="flex flex-col px-3 w-full gap-2 rounded-[16px]">
+                        {/* <p className='text-red-600' >{error && error}</p> */}
                         <Button type="submit" className="bg-[#241525] text-[#f7f9fa] hover:bg-[#401e42]">
                           Create Account
                         </Button>
