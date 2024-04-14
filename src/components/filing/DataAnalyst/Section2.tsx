@@ -9,7 +9,7 @@ import Card4 from "./Card4";
 import Link from "next/link";
 const Section2: React.FC = () => {
   return (
-    <div className="bg-white p-10 flex gap-16 md:px-[150px] md:py-[80px]">
+    <div className="bg-white p-10 flex gap-16 md:px-[50px] md:py-[50px]">
       <div className="hidden md:block border text-black md:w-[580px] h-fit border-[#D8D4CE] px-10 py-5 rounded-lg shadow-xl space-y-2">
         <h1 className="font-Poppins text-[16px] font-semibold">Details</h1>
 
@@ -211,7 +211,7 @@ const Section2: React.FC = () => {
                         </tr>
                         <tr>
                           <td className="font-semibold">Waktu</td>
-                          <td>: 08.30 - 12.00 WIB</td>
+                          <td>: 08.30 - 12.30 WIB</td>
                         </tr>
                         <tr>
                           <td className="font-semibold">Tempat</td>

@@ -100,7 +100,7 @@ const Dashboard: React.FC = () => {
                     bootcamp online courses
                   </h2>
                   <Link href={"/filing#about"}>
-                    <button className="bg-[#25243A] w-full rounded-xl font-semibold text-[18px] py-3">
+                    <button className="bg-white text-black w-full rounded-xl font-semibold text-[18px] py-3">
                       Learn More
                     </button>
                   </Link>

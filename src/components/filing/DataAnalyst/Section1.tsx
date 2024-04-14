@@ -5,7 +5,7 @@ import dataAnalyst from "@/../public/filing/Data.png";
 
 const Section1: React.FC = () => {
   return (
-    <div className="bg-gradient-to-b from-slate-200 to-white  p-10 md:px-[150px] md:py-[80px]">
+    <div className="bg-gradient-to-b from-slate-200 to-white  p-10 md:px-[50px] md:py-[30px]">
       <div className="w-fit">
         <Link href={"/filing"}>
           <div className="flex gap-1">
@@ -40,7 +40,7 @@ const Section1: React.FC = () => {
             Data Analyst
           </h1>
           <h2 className="font-Poppins italic font-light text-[16px]  text-[#6C6A67] md:text-[20px]">
-            &quot;Started The Journey as a Data Analyst with Python &
+            &quot;Started The Journey as a Data Analyst with MySQL, Python &
             Tableau&quot;
           </h2>
           <h2 className="font-Poppins text-[14px] md:text-[20px] text-[#545350] font-semibold">

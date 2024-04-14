@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-[#25243A] p-4 sticky top-0 z-50"
+      className="bg-[#25243A] p-4 md:px-10 sticky top-0 z-50"
     >
       <div className="container mx-auto flex justify-between items-center">
         <Link href="#" className="flex items-center ml-5">

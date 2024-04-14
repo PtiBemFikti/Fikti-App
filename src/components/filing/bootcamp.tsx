@@ -43,8 +43,8 @@ export default function BootcampPage() {
                           DATA ANALYST
                         </div>
                         <div className="mx-1 text-stone-500 text-sm font-light font-['Poppins']">
-                          “Started The Journey as a Data Analyst with Python &
-                          Tableau”
+                          “Started The Journey as a Data Analyst with MySQL,
+                          Python & Tableau”
                         </div>
                         <div className="w-full ml-1 mt-4 text-neutral-600 text-base font-normal font-['Poppins']">
                           Data Analyst berperan sebagai jembatan antara
@@ -137,7 +137,8 @@ export default function BootcampPage() {
                   DATA ANALYST
                 </div>
                 <div className="w-80 px-4 text-stone-500 text-sm font-light font-['Poppins']">
-                  “Started The Journey as a Data Analyst with Python & Tableau”
+                  “Started The Journey as a Data Analyst with MySQL, Python &
+                  Tableau”
                 </div>
                 <div className="mt-1 w-80 px-4 text-neutral-600 text-sm font-normal font-['Poppins']">
                   Data Analyst berperan sebagai jembatan antara informasi dan

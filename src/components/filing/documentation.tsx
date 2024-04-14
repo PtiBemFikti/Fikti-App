@@ -6,14 +6,14 @@ export default function DocumentationPage() {
       {/*Dekstop*/}
       <div className="md:block hidden mt-2">
         <div className="pb-20">
-          <div className="p-28">
+          <div className="p-20">
             <div className="flex justify-center items-center">
               <div className="text-center font-bold text-3xl font-[arial] tracking-tight text-black">
                 {" "}
                 DOCUMENTATION{" "}
               </div>
             </div>
-            <div className="flex mt-4 overflow-x-auto gap-5">
+            <div className="flex mt-4 overflow-x-auto gap-4">
               <Image
                 src="/filing/filingdoc1.png"
                 alt=""
@@ -76,9 +76,6 @@ export default function DocumentationPage() {
       </div>
       {/*Dekstop*/}
 
-      {/* Tampilan Mobile Start */}
-
-      {/* Tampilan Mobile End */}
       {/*Mobile*/}
       <div className="md:hidden mt-2 ">
         <div className="py-10 px-2">

@@ -5,7 +5,7 @@ import web from "@/../public/filing/Web.png";
 
 const Section1: React.FC = () => {
   return (
-    <div className="bg-gradient-to-b from-slate-200 to-white  p-10 md:px-[150px] md:py-[80px]">
+    <div className="bg-gradient-to-b from-slate-200 to-white  p-10 md:px-[50px] md:py-[30px]">
       <div className="w-fit">
         <Link href={"/filing"}>
           <div className="flex gap-1">
