@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { FormEvent } from 'react';
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from '@nextui-org/react';
 import { useState } from 'react';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
@@ -9,28 +9,24 @@ export default function SignUpBox() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   const [open, setOpen] = useState(false);
-  const [error, setError] = useState('');
   const toggle = () => {
     setOpen(!open);
   };
 
-  const isValidEmail = (email: string) => {
-    const emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]\.[A-Z]{2,}$/i;
-    return emailRegEx.test(email);
-  }
-
-  const handleRegist = (e: any) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const nama = e.target[0].value;
-    const npm = e.target[1].value;
-    const kelas = e.target[2].value;
-    const email = e.target[3].value;
-    const password = e.target[4].value;
-
-    if(!isValidEmail(email)) {
-      setError('Please enter a valid email address');
-      return;
-    }
+    const formData = new FormData(e.currentTarget);
+    const response = await fetch('/api/auth/register', {
+      method: 'POST',
+      body: JSON.stringify({
+        nama: formData.get('nama'),
+        npm: formData.get('npm'),
+        kelas: formData.get('kelas'),
+        email: formData.get('email'),
+        password: formData.get('password'),
+      }),
+    });
+    console.log({ response });
   };
 
   return (
@@ -42,11 +38,7 @@ export default function SignUpBox() {
         <ModalContent className="">
           {(onClose) => (
             <>
-              <form
-                onSubmit={(e) => {
-                  handleRegist;
-                }}
-              >
+              <form onSubmit={handleSubmit}>
                 <div className="text-black font-[Poppins]">
                   <div className="">
                     <ModalHeader className="text-center">
