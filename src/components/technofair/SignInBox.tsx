@@ -1,4 +1,6 @@
-import React from 'react';
+'use client'
+
+import React, { FormEvent } from 'react';
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from '@nextui-org/react';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { useState } from 'react';
@@ -16,22 +18,15 @@ export default function SignInBox() {
 
   const { push } = useRouter();
 
-  const handleLogin = async (e: any) => {
-    e.preventdefault();
-    try {
-      const res = await signIn('credentials', {
-        redirect: false,
-        email: e.currentTarget.email.value,
-        password: e.currentTarget.password.value,
-        callbackUrl: '/dashboard',
-      });
-      if (!res?.error) {
-        push('/dashboard');
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    signIn('credentials', {
+      email: formData.get('email'),
+      password: formData.get('password'),
+      redirect: false,
+    });
+  }
 
   return (
     <>
@@ -41,7 +36,7 @@ export default function SignInBox() {
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="">
         <ModalContent className="">
           {(onClose) => (
-            <div>
+            <form onSubmit={handleSubmit}>
               <div className="text-black font-[Poppins]">
                 <div className="">
                   <ModalHeader className="text-center">
@@ -54,14 +49,14 @@ export default function SignInBox() {
                     <div className="px-3">
                       <p className="text-sm font-medium">Email</p>
                       <div className="">
-                        <input type="email" id="email" aria-label="email" placeholder="kenapabandung@gmail.com" className="w-full h-11 rounded-[16px]" />
+                        <input type="email" id="email" name='email' aria-label="email" placeholder="kenapabandung@gmail.com" className="w-full h-11 rounded-[16px]" />
                       </div>
                     </div>
                     <div className="px-3">
                       <p className="text-sm font-medium">Password</p>
                       <div className="relative">
                         <div className="">
-                          <input type={open === false ? 'password' : 'text'} id="password" aria-label="password" placeholder="password" className="w-full h-11 rounded-[16px]" />
+                          <input type={open === false ? 'password' : 'text'} id="password" name='password' aria-label="password" placeholder="password" className="w-full h-11 rounded-[16px]" />
                         </div>
                         <div className="text-2xl absolute top-3 right-0 mr-3">{open === false ? <AiFillEye onClick={toggle} /> : <AiFillEyeInvisible onClick={toggle} />}</div>
                       </div>
@@ -69,13 +64,13 @@ export default function SignInBox() {
                   </ModalBody>
                   <ModalFooter className="flex justify-center items-center mb-4">
                     <div className="flex flex-col px-3 w-full gap-2 rounded-[16px]">
-                      <Button className="bg-[#241525] text-[#f7f9fa] hover:bg-[#401e42]" onSubmit={(e: any) => handleLogin(e)}>Login</Button>
+                      <Button type='submit' className="bg-[#241525] text-[#f7f9fa] hover:bg-[#401e42]">Login</Button>
                       <Button className="text-[#262626] bg-[#f0ecf0]">Create an Account</Button>
                     </div>
                   </ModalFooter>
                 </div>
               </div>
-            </div>
+            </form>
           )}
         </ModalContent>
       </Modal>
