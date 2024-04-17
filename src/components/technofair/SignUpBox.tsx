@@ -86,7 +86,6 @@ export default function SignUpBox() {
                     </ModalBody>
                     <ModalFooter className="flex justify-center items-center mb-4">
                       <div className="flex flex-col px-3 w-full gap-2 rounded-[16px]">
-                        {/* <p className='text-red-600' >{error && error}</p> */}
                         <Button type="submit" className="bg-[#241525] text-[#f7f9fa] hover:bg-[#401e42]">
                           Create Account
                         </Button>
