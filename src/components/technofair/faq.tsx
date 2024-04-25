@@ -14,7 +14,7 @@ export default function FaqPage() {
             </div>
             <div className=" mt-56">
               <p className="text-[#fff4e7] font-[Bricolage-Grotesque] text-5xl font-bold">Contact us</p>
-              <p className="text-[#fff4e7] text-xl font-[Poppins] py-3">Can’t find what you are looking for? feel free to ask us.</p>
+              <p className="text-[#fff4e7] text-xl font-[Poppins] py-3">Can&apos;t find what you are looking for? feel free to ask us.</p>
               <div className="">
                 <div className="flex gap-5 py-2">
                   <div className="flex gap-2">
