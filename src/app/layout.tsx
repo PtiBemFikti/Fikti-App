@@ -7,6 +7,7 @@ import Footer from '@/components/landing-page/footer';
 import { SessionProvider } from 'next-auth/react';
 
 const disableNavbar = ['/filing', '/technofair'];
+const disableFooter = ['/technofair'];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ['latin'],
@@ -27,8 +28,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SessionProvider>
           {!disableNavbar.includes(pathname) && <Navbar />}
           {children}
+          {!disableFooter.includes(pathname) && <Footer />}
         </SessionProvider>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

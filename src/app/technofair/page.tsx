@@ -11,6 +11,7 @@ import FaqPage from '@/components/technofair/faq';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import Footer from '@/components/technofair/footer';
 import { getServerSession } from 'next-auth';
 import Logout from '@/components/technofair/logout';
 
@@ -18,7 +19,6 @@ import Logout from '@/components/technofair/logout';
 export default function TechnofairPage() {
   const { data: session, status }: { data: any; status: string } = useSession();
   const router = useRouter();
-  const sesi = getServerSession();
 
   useEffect(() => {
     if (status === 'unauthenticated' || session?.user.role !== 'admin') {
@@ -50,6 +50,7 @@ export default function TechnofairPage() {
       <section id="faq">
         <FaqPage />
       </section>
+      <Footer/>
     </main>
   );
 }
