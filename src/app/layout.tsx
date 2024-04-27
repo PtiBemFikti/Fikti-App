@@ -10,6 +10,7 @@ const disableNavbar = [
   "/technofair",
   "/filing/WebDevelopment",
   "/filing/DataAnalyst",
+  "/fiktispace",
 ];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
