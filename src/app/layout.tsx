@@ -6,8 +6,8 @@ import Navbar from '@/components/landing-page/navbar';
 import Footer from '@/components/landing-page/footer';
 import { SessionProvider } from 'next-auth/react';
 
-const disableNavbar = ['/filing', '/technofair', '/technofair/details/seminar/data-analyst', '/technofair/details/seminar/artificial-intelligence'];
-const disableFooter = ['/technofair', '/technofair/details/seminar/data-analyst', '/technofair/details/seminar/artificial-intelligence'];
+const disableNavbar = ['/filing', '/technofair', '/technofair/details/seminar/data-analyst', '/technofair/details/seminar/artificial-intelligence', '/technofair/details/workshop/uiux', '/technofair/details/workshop/product-management'];
+const disableFooter = ['/technofair', '/technofair/details/seminar/data-analyst', '/technofair/details/seminar/artificial-intelligence', '/technofair/details/workshop/uiux', '/technofair/details/workshop/product-management'];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ['latin'],

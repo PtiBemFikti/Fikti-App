@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function EventPage() {
   return (
@@ -50,10 +51,10 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Online</p>
                       </div>
                     </div>
-                    <div className="flex gap-4 py-5 justify-end items-end">
+                    <Link href={'/technofair/details/seminar/data-analyst'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
-                    </div>
+                    </Link>
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#E87C6C3B] border-[2px] rounded-[39px]">
@@ -81,10 +82,10 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Online</p>
                       </div>
                     </div>
-                    <div className="flex gap-4 py-5 justify-end items-end">
+                    <Link href={'/technofair/details/seminar/artificial-intelligence'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
-                    </div>
+                    </Link>
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#F9F8713B] border-[2px] rounded-[39px]">
@@ -112,10 +113,10 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Online</p>
                       </div>
                     </div>
-                    <div className="flex gap-4 py-5 justify-end items-end">
+                    <Link href={'/technofair/details/workshop/product-management'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
-                    </div>
+                    </Link>
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#F9F8713B] border-[2px] rounded-[39px]">
@@ -143,10 +144,10 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Online</p>
                       </div>
                     </div>
-                    <div className="flex gap-4 py-5 justify-end items-end">
+                    <Link href={'/technofair/details/workshop/uiux'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>

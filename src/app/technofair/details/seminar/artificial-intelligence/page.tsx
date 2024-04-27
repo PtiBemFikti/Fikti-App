@@ -1,13 +1,13 @@
-import DataAnalyst from '@/components/technofair/details/DataAnalyst';
+import ArtificialIntelligence from '@/components/technofair/details/ArtificialIntelligence';
 import Navbar from '@/components/technofair/navbar';
 import Footer from '@/components/technofair/footer';
 
-export default function dataAnalystPage() {
+export default function artificialIntelligencePage() {
   return (
     <div>
       <Navbar />
       <div className=''>
-        <DataAnalyst />
+        <ArtificialIntelligence />
       </div>
       <Footer />
     </div>

@@ -1,13 +1,13 @@
-import DataAnalyst from '@/components/technofair/details/DataAnalyst';
+import ProductManagement from '@/components/technofair/details/ProductManagement';
 import Navbar from '@/components/technofair/navbar';
 import Footer from '@/components/technofair/footer';
 
-export default function dataAnalystPage() {
+export default function productManagementPage() {
   return (
     <div>
       <Navbar />
       <div className=''>
-        <DataAnalyst />
+        <ProductManagement />
       </div>
       <Footer />
     </div>

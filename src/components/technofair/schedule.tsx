@@ -63,7 +63,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs md:w-80 mt-1">&quot;Visualizing Insights: A Beginner&apos;s Guide to Data Presentation&quot;</p>
               </div>
-              <Link href={'#'}>
+              <Link href={'/technofair/details/seminar/data-analyst'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -86,7 +86,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs md:w-96">&quot;Exploring Innovations and Applications of Artificial Intelligence&quot;</p>
               </div>
-              <Link href={'#'}>
+              <Link href={'/technofair/details/seminar/artificial-intelligence'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -118,7 +118,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs mt-1">&quot;Building a Strong Foundation: Mastering Product Management Skills&quot;</p>
               </div>
-              <Link href={'#'}>
+              <Link href={'/technofair/details/workshop/product-management'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -141,7 +141,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs md:w-96 mt-1">&quot;From Concept to Creation: Mastering UI/UX Design Practices&quot;</p>
               </div>
-              <Link href={'#'}>
+              <Link href={'/technofair/details/workshop/uiux'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>

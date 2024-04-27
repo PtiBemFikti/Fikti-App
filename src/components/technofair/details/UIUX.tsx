@@ -2,16 +2,16 @@ import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
 
-export default function DataAnalyst() {
+export default function UiUx() {
   return (
-    <div className="bg-gradient-to-t from-[#F7F9FA] to-[#F3E5EA]">
+    <div className="bg-gradient-to-t from-[#F7F9FA] to-[#FEFEEA]">
       {/* Tampilan Dekstop start */}
       <div className="md:block hidden">
         <div className="px-40 py-16">
-            <Link href="/technofair" className="flex gap-4">
-              <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
-              <p className="text-xl font-medium text-[#545350]">Back</p>
-            </Link>
+          <Link href="/technofair" className="flex gap-4">
+            <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
+            <p className="text-xl font-medium text-[#545350]">Back</p>
+          </Link>
           <div className="py-3 flex gap-16 font-[Bricolage-Grotesque]">
             <div className="w-1/2">
               <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
@@ -19,16 +19,15 @@ export default function DataAnalyst() {
             <div className="w-1/2">
               <div className="">
                 <div className="flex gap-2">
-                  <p className="text-5xl font-bold text-[#241525]">Data Analyst</p>
-                  <p className="font-bold text-[#B9BCC7] text-xl mt-5">Seminar</p>
+                  <p className="text-5xl font-bold text-[#241525]">UI/UX Design</p>
+                  <p className="font-bold text-[#B9BCC7] text-xl mt-5">Workshop</p>
                 </div>
-                <div className="text-[#212427] text-lg italic font-light font-[Poppins]">Visualizing Insights: A Beginner&apos;s Guide to Data Presentation</div>
+                <div className="text-[#212427] text-lg italic font-light font-[Poppins]">From Concept to Creation: Mastering UI/UX Design Practices</div>
               </div>
-              <div className="text-[#212427] text-xl font-semibold font-[Poppins] py-2">Sabtu, 01 Juni 2024</div>
+              <div className="text-[#212427] text-xl font-semibold font-[Poppins] py-2">Senin, 29 Juli 2024</div>
               <div className="">
                 <p className="text-lg font-normal font-[Poppins] text-[#212427]">
-                  Dalam seminar ini, Tema utama yang akan dibahas adalah Data Analyst akan mempelajari cara efektif menggunakan visualisasi data dalam berkomunikasi, sehingga dapat menyajikan temuan mereka secara menarik dan mudah
-                  dimengerti.
+                  Workshop ini bermaksud memperkenalkan UI/UX Design yang merupakan bagian dari dunia teknologi yang sedang banyak diminati saat ini dan mengimplementasikan Skill yang dipersiapkan untuk menjadi UI/UX Designer
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
@@ -49,11 +48,11 @@ export default function DataAnalyst() {
                   <div className="px-3">
                     <div className="py-2 flex gap-5">
                       <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className="text-[#212427] text-base font-[Poppins]">About Seminar</p>
+                      <p className="text-[#212427] text-base font-[Poppins]">About Workshop</p>
                     </div>
                     <div className="py-2 flex gap-5">
                       <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className="text-[#212427] text-base font-[Poppins]">Benefit Seminar</p>
+                      <p className="text-[#212427] text-base font-[Poppins]">Benefit Workshop</p>
                     </div>
                     <div className="py-2 flex gap-5">
                       <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
@@ -66,47 +65,42 @@ export default function DataAnalyst() {
                 <div className="">
                   <div className="py-2 flex gap-5">
                     <Image src={'/technofair/play.png'} alt="play" width={25} height={25} />
-                    <p className="text-[#31304D] text-xl font-bold font-[Poppins]">About Seminar</p>
+                    <p className="text-[#31304D] text-xl font-bold font-[Poppins]">About Workshop</p>
                   </div>
                   <div className="">
+                    <p className="text-[#212427] text-base font-[Poppins] pt-5 pl-5">
+                      Kegiatan workshop merupakan kegiatan yang berorientasi praktik disertai dengan teori untuk menambah kemampuan para peserta secara teknis yang sesuai dengan perkembangan yang ada dalam dunia Teknologi Informasi. Dalam
+                      TechnoFair 11.0, salah satu workshop yang dilaksanakan berjudul &quot;From Concept to Creation: Mastering UI/UX Design Practices&quot;.
+                    </p>
                     <p className="text-[#212427] text-base font-[Poppins] py-5 pl-5">
-                      Seminar ini bertujuan untuk mengenalkan konsep dasar visualisasi data kepada peserta, serta memperkenalkan peran seorang Data Analyst dalam menyajikan dan mempresentasikan hasil analisis data secara efektif. Selain
-                      itu, seminar ini juga bertujuan untuk membahas teknik dan alat-alat yang dapat digunakan untuk menyajikan informasi secara visual agar lebih mudah dipahami oleh berbagai pemangku kepentingan.
+                      Workshop ini bermaksud memperkenalkan UI/UX Design yang merupakan bagian dari dunia teknologi yang sedang banyak diminati saat ini dan mengimplementasikan Skill yang dipersiapkan untuk menjadi UI/UX Designer.
                     </p>
                   </div>
                 </div>
                 <div className="py-2">
                   <div className="py-2 flex gap-5">
                     <Image src={'/technofair/play.png'} alt="play" width={25} height={25} />
-                    <p className="text-[#31304D] text-xl font-bold font-[Poppins]">Benefit Seminar</p>
+                    <p className="text-[#31304D] text-xl font-bold font-[Poppins]">Benefit Workshop</p>
                   </div>
                   <div className="pl-5">
                     <div className="flex gap-3 py-2">
                       <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} />
-                      <p className="text-[#212427] text-base font-[Poppins]">Mendapat pengetahuan tentang konsep dasar tentang visualisasi data.</p>
+                      <p className="text-[#212427] text-base font-[Poppins]">Mengetahui pengenalan mengenai dasar UI/UX Design.</p>
                     </div>
                     <div className="flex gap-3 py-2">
                       <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} />
-                      <p className="text-[#212427] text-base font-[Poppins]">Mengetahui peran dan tanggung jawab sebagai seorang Data Analyst.</p>
+                      <p className="text-[#212427] text-base font-[Poppins]">Mengetahui gambaran bagaimana cara kerja dan implementasi dari UI/UX Design.</p>
                     </div>
                     <div className="flex gap-3 py-2">
                       <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                      <p className="text-[#212427] text-base font-[Poppins]">Mendapat pengetahuan tentang teknik-teknik dan alat yang digunakan dalam visualisasi data.</p>
-                    </div>
-                    <div className="flex gap-3 py-2">
-                      <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                      <p className="text-[#212427] text-base font-[Poppins]">Mengetahui pentingnya visualisasi data dalam sebuah pengambilan keputusan di berbagai bidang.</p>
-                    </div>
-                    <div className="flex gap-3 py-2">
-                      <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                      <p className="text-[#212427] text-base font-[Poppins]">Mendapat wawasan tentang potensi karir sebagai seorang Data Analyst di berbagai industri.</p>
+                      <p className="text-[#212427] text-base font-[Poppins]">Mengetahui bagaimana prospek karir UI/UX Designer kepada peserta workshop.</p>
                     </div>
                   </div>
                 </div>
                 <div className="py-2">
                   <div className="py-2 flex gap-5">
                     <Image src={'/technofair/play.png'} alt="play" width={25} height={25} />
-                    <p className="text-[#31304D] text-xl font-bold font-[Poppins]">Jadwal & Detail Materi Seminar</p>
+                    <p className="text-[#31304D] text-xl font-bold font-[Poppins]">Jadwal & Detail Materi Workshop</p>
                   </div>
                   <div className="py-5 flex gap-10">
                     <div className="pl-5 w-3/4">
@@ -115,19 +109,19 @@ export default function DataAnalyst() {
                         <div className="flex font-[Poppins] gap-2">
                           <p className="font-semibold text-[#212427] text-base">Hari, Tanggal </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Sabtu, 01 Juni 2024
+                            <strong>:</strong> Senin, 29 Juli 2024
                           </p>
                         </div>
                         <div className="flex font-[Poppins] gap-16">
                           <p className="font-semibold text-[#212427] text-base">Waktu </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> 09.00 - 12.30 WIB
+                            <strong>:</strong> 09.00 - 12.40 WIB
                           </p>
                         </div>
                         <div className="flex font-[Poppins] gap-14">
                           <p className="font-semibold text-[#212427] text-base">Tempat </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Auditorium D461, Kampus D, {'\n'} Universitas Gunadarma
+                            <strong>:</strong> Laboratorium Kampus F4, Universitas Gunadarma
                           </p>
                         </div>
                       </div>
@@ -141,9 +135,7 @@ export default function DataAnalyst() {
                   </div>
                 </div>
                 <div className="py-5">
-                  <AccordionCard title="Materi Seminar 1 - Get to Know the World of Data Analyst" content={'- Menjelaskan latar belakang Data Analyst.'} />
-                  <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-                  <AccordionCard title="Materi Seminar 2 - A Beginner's Guide to Data Presentation" content="- Menjelaskan latar belakang Data Analyst." />
+                  <AccordionCard title="Materi Workshop - From Concept to Creation: Mastering UI/UX Design Practices" content={'- Menjelaskan latar belakang Data Analyst.'} />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
                 </div>
               </div>
@@ -157,21 +149,21 @@ export default function DataAnalyst() {
       <div className="md:hidden">
         <div className="py-4">
           <div className="px-5">
-              <Link href={'/technofair'} className="flex gap-2">
-                <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
-                <p className="text-base font-medium text-[#262626]">Back</p>
-              </Link>
+            <Link href={'/technofair'} className="flex gap-2">
+              <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
+              <p className="text-base font-medium text-[#262626]">Back</p>
+            </Link>
             <div className="py-3">
               <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
             </div>
           </div>
           <div className="px-5">
             <div className="text-[#262626]">
-              <p className="font-[Bricolage-Grotesque] text-4xl font-extrabold">Data Analyst</p>
-              <p className="font-[Poppins] text-base italic font-light">&quot;Visualizing Insights: A Beginner&apos;s Guide to Data Presentation&quot;</p>
+              <p className="font-[Bricolage-Grotesque] text-4xl font-extrabold">UI/UX Design</p>
+              <p className="font-[Poppins] text-base italic font-light">&quot;From Concept to Creation: Mastering UI/UX Design Practices&quot;</p>
             </div>
             <div className="text-[#262626] py-3">
-              <p className="font-[Poppins] text-sm font-medium">Sabtu, 01 Juni 2024</p>
+              <p className="font-[Poppins] text-sm font-medium">Sabtu, 29 Juli 2024</p>
             </div>
           </div>
           <div className="px-5">
@@ -188,40 +180,33 @@ export default function DataAnalyst() {
             <div className="py-10 px-5">
               <div className="flex gap-2">
                 <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                <p className="text-[#31304D] text-base font-bold font-[Poppins]">About Seminar</p>
+                <p className="text-[#31304D] text-base font-bold font-[Poppins]">About Workshop</p>
               </div>
               <div className="font-[Poppins] text-sm text-[#262626] pt-5">
                 <p>
-                  Seminar ini bertujuan untuk mengenalkan konsep dasar visualisasi data kepada peserta, serta memperkenalkan peran seorang Data Analyst dalam menyajikan dan mempresentasikan hasil analisis data secara efektif. Selain itu,
-                  seminar ini juga bertujuan untuk membahas teknik dan alat-alat yang dapat digunakan untuk menyajikan informasi secara visual agar lebih mudah dipahami oleh berbagai pemangku kepentingan.
+                  Kegiatan workshop merupakan kegiatan yang berorientasi praktik disertai dengan teori untuk menambah kemampuan para peserta secara teknis yang sesuai dengan perkembangan yang ada dalam dunia Teknologi Informasi. Dalam
+                  TechnoFair 11.0, salah satu workshop yang dilaksanakan berjudul &quot;From Concept to Creation: Mastering UI/UX Design Practices&quot;.
                 </p>
+                <p className='pt-5'>Workshop ini bermaksud memperkenalkan UI/UX Design yang merupakan bagian dari dunia teknologi yang sedang banyak diminati saat ini dan mengimplementasikan Skill yang dipersiapkan untuk menjadi UI/UX Designer.</p>
               </div>
             </div>
             <div className="py-10 px-5">
               <div className="flex gap-2">
                 <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                <p className="text-[#31304D] text-base font-bold font-[Poppins]">Benefit Seminar</p>
+                <p className="text-[#31304D] text-base font-bold font-[Poppins]">Benefit Workshop</p>
               </div>
               <div className="pl-5">
                 <div className="pt-5 flex gap-3 py-2">
                   <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mendapat pengetahuan tentang konsep dasar tentang visualisasi data.</p>
+                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mengetahui pengenalan mengenai dasar UI/UX Design.</p>
                 </div>
                 <div className="flex gap-3 py-2">
                   <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mengetahui peran dan tanggung jawab sebagai seorang Data Analyst.</p>
+                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mengetahui gambaran bagaimana cara kerja dan implementasi dari UI/UX Design.</p>
                 </div>
                 <div className="flex gap-3 py-2">
                   <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mendapat pengetahuan tentang teknik-teknik dan alat yang digunakan dalam visualisasi data.</p>
-                </div>
-                <div className="flex gap-3 py-2">
-                  <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mengetahui pentingnya visualisasi data dalam sebuah pengambilan keputusan di berbagai bidang.</p>
-                </div>
-                <div className="flex gap-3 py-2">
-                  <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mendapat wawasan tentang potensi karir sebagai seorang Data Analyst di berbagai industri.</p>
+                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mengetahui bagaimana prospek karir UI/UX Designer kepada peserta workshop.</p>
                 </div>
               </div>
             </div>
@@ -237,19 +222,19 @@ export default function DataAnalyst() {
                     <div className="flex font-[Poppins] gap-2">
                       <p className="font-semibold text-[#262626] text-sm">Hari, Tanggal </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> Sabtu, 01 Juni 2024
+                        <strong>:</strong> Senin, 29 Juli 2024
                       </p>
                     </div>
                     <div className="flex font-[Poppins] gap-14">
                       <p className="font-semibold text-[#262626] text-sm">Waktu </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> 09.00 - 12.30 WIB
+                        <strong>:</strong> 09.00 - 12.40 WIB
                       </p>
                     </div>
                     <div className="flex font-[Poppins] gap-12">
                       <p className="font-semibold text-[#262626] text-sm">Tempat </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> Auditorium D461, Kampus D, {'\n'} Universitas Gunadarma
+                        <strong>:</strong> Laboratorium Kampus F4, Universitas Gunadarma
                       </p>
                     </div>
                   </div>
@@ -263,9 +248,7 @@ export default function DataAnalyst() {
               </Link>
             </div>
             <div className="px-5 py-5">
-              <AccordionCard title="Materi Seminar 1 - Get to Know the World of Data Analyst" content={'Menjelaskan latar belakang Data Analyst.'} />
-              <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-              <AccordionCard title="Materi Seminar 2 - A Beginner's Guide to Data Presentation" content="- Menjelaskan latar belakang Data Analyst." />
+              <AccordionCard title="Materi Workshop - From Concept to Creation: Mastering UI/UX Design Practices" content={'Menjelaskan latar belakang Data Analyst.'} />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
             </div>
           </div>

@@ -26,9 +26,9 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
   };
 
   return (
-    <div className="bg-[#F7F9FA] rounded-3xl mb-4 text-[#b9bcc7] font-[Poppins] text-sm font-light">
+    <div className="bg-[#F7F9FA] rounded-3xl mb-4 text-[#212427] font-[Poppins] text-base font-light">
       <button
-        className="bg-[#F7F9FA] w-full px-4 py-2 text-left text-sm font-[Poppins] text-[#241227] rounded-lg hover:bg-[#F7F9FA] "
+        className="bg-[#F7F9FA] w-full px-4 py-2 text-left text-sm md:text-base font-medium italic font-[Poppins] text-[#212427] rounded-lg hover:bg-[#FEFDFC] focus:outline-none focus:ring-2 focus:ring-[#1E2749] focus:ring-offset-2 focus:ring-offset-gray-100 dark:text-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-[#1E27490]"
         onClick={handleToggle}
       >
         <div className="flex items-center justify-between">
@@ -37,7 +37,11 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
         </div>
       </button>
       <div ref={contentRef} className={`overflow-hidden transition-all duration-300 ease-out ${isOpen ? 'h-auto' : 'h-0'}`}>
-        <div className="p-4">{content}</div>
+        <div className="p-4">
+          <ol>
+            <li>{content}</li>
+          </ol>
+        </div>
       </div>
     </div>
   );

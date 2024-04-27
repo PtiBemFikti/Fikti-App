@@ -2,16 +2,16 @@ import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
 
-export default function DataAnalyst() {
+export default function ArtificialIntelligence() {
   return (
     <div className="bg-gradient-to-t from-[#F7F9FA] to-[#F3E5EA]">
       {/* Tampilan Dekstop start */}
       <div className="md:block hidden">
         <div className="px-40 py-16">
-            <Link href="/technofair" className="flex gap-4">
-              <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
-              <p className="text-xl font-medium text-[#545350]">Back</p>
-            </Link>
+          <Link href="/technofair" className="flex gap-4">
+            <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
+            <p className="text-xl font-medium text-[#545350]">Back</p>
+          </Link>
           <div className="py-3 flex gap-16 font-[Bricolage-Grotesque]">
             <div className="w-1/2">
               <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
@@ -19,16 +19,15 @@ export default function DataAnalyst() {
             <div className="w-1/2">
               <div className="">
                 <div className="flex gap-2">
-                  <p className="text-5xl font-bold text-[#241525]">Data Analyst</p>
+                  <p className="text-5xl font-bold text-[#241525]">Artificial Intelligence</p>
                   <p className="font-bold text-[#B9BCC7] text-xl mt-5">Seminar</p>
                 </div>
-                <div className="text-[#212427] text-lg italic font-light font-[Poppins]">Visualizing Insights: A Beginner&apos;s Guide to Data Presentation</div>
+                <div className="text-[#212427] text-lg italic font-light font-[Poppins]">Exploring Innovations and Applications of Artificial Intelligence</div>
               </div>
-              <div className="text-[#212427] text-xl font-semibold font-[Poppins] py-2">Sabtu, 01 Juni 2024</div>
+              <div className="text-[#212427] text-xl font-semibold font-[Poppins] py-2">Sabtu, 20 Juni 2024</div>
               <div className="">
                 <p className="text-lg font-normal font-[Poppins] text-[#212427]">
-                  Dalam seminar ini, Tema utama yang akan dibahas adalah Data Analyst akan mempelajari cara efektif menggunakan visualisasi data dalam berkomunikasi, sehingga dapat menyajikan temuan mereka secara menarik dan mudah
-                  dimengerti.
+                  Seminar bertemakan “Exploring Innovations and Applications of Artificial Intelligence (AI)” akan menjadi langkah untuk memperluas wawasan dan memahami tentang perkembangan terkini dalam dunia Artificial Intelligence (AI).
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
@@ -70,8 +69,8 @@ export default function DataAnalyst() {
                   </div>
                   <div className="">
                     <p className="text-[#212427] text-base font-[Poppins] py-5 pl-5">
-                      Seminar ini bertujuan untuk mengenalkan konsep dasar visualisasi data kepada peserta, serta memperkenalkan peran seorang Data Analyst dalam menyajikan dan mempresentasikan hasil analisis data secara efektif. Selain
-                      itu, seminar ini juga bertujuan untuk membahas teknik dan alat-alat yang dapat digunakan untuk menyajikan informasi secara visual agar lebih mudah dipahami oleh berbagai pemangku kepentingan.
+                      Artificial Intelligence atau Kecerdasan Buatan merujuk pada pengembangan sistem komputer yang dapat mengeksekusi tugas - tugas yang membutuhkan kecerdasan manusia. Seminar ini bermaksud menjelaskan pengertian tentang
+                      Artificial Intelligence (AI) serta membahas inovasi dan penerapannya dalam kehidupan sehari - hari.
                     </p>
                   </div>
                 </div>
@@ -83,23 +82,19 @@ export default function DataAnalyst() {
                   <div className="pl-5">
                     <div className="flex gap-3 py-2">
                       <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} />
-                      <p className="text-[#212427] text-base font-[Poppins]">Mendapat pengetahuan tentang konsep dasar tentang visualisasi data.</p>
-                    </div>
-                    <div className="flex gap-3 py-2">
-                      <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} />
-                      <p className="text-[#212427] text-base font-[Poppins]">Mengetahui peran dan tanggung jawab sebagai seorang Data Analyst.</p>
+                      <p className="text-[#212427] text-base font-[Poppins]">Mendapat pengetahuan tentang pengertian dasar Artificial Intelligence (AI).</p>
                     </div>
                     <div className="flex gap-3 py-2">
                       <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                      <p className="text-[#212427] text-base font-[Poppins]">Mendapat pengetahuan tentang teknik-teknik dan alat yang digunakan dalam visualisasi data.</p>
+                      <p className="text-[#212427] text-base font-[Poppins]">Mengetahui perkembangan Artificial Intelligence (AI) serta mendapatkan inovasi untuk mengembangkan kecerdasan buatan.</p>
                     </div>
                     <div className="flex gap-3 py-2">
                       <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                      <p className="text-[#212427] text-base font-[Poppins]">Mengetahui pentingnya visualisasi data dalam sebuah pengambilan keputusan di berbagai bidang.</p>
+                      <p className="text-[#212427] text-base font-[Poppins]">Mengetahui pengaplikasian Artificial Intelligence (AI) dalam dunia kerja.</p>
                     </div>
                     <div className="flex gap-3 py-2">
                       <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                      <p className="text-[#212427] text-base font-[Poppins]">Mendapat wawasan tentang potensi karir sebagai seorang Data Analyst di berbagai industri.</p>
+                      <p className="text-[#212427] text-base font-[Poppins]">Meningkatkan motivasinya untuk berinovasi dalam bidang Artificial Intelligence (AI).</p>
                     </div>
                   </div>
                 </div>
@@ -115,13 +110,13 @@ export default function DataAnalyst() {
                         <div className="flex font-[Poppins] gap-2">
                           <p className="font-semibold text-[#212427] text-base">Hari, Tanggal </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Sabtu, 01 Juni 2024
+                            <strong>:</strong> Sabtu, 20 Juni 2024
                           </p>
                         </div>
                         <div className="flex font-[Poppins] gap-16">
                           <p className="font-semibold text-[#212427] text-base">Waktu </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> 09.00 - 12.30 WIB
+                            <strong>:</strong> 09.00 - 13.00 WIB
                           </p>
                         </div>
                         <div className="flex font-[Poppins] gap-14">
@@ -141,9 +136,9 @@ export default function DataAnalyst() {
                   </div>
                 </div>
                 <div className="py-5">
-                  <AccordionCard title="Materi Seminar 1 - Get to Know the World of Data Analyst" content={'- Menjelaskan latar belakang Data Analyst.'} />
+                  <AccordionCard title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0" content={'- Menjelaskan latar belakang Data Analyst.'} />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-                  <AccordionCard title="Materi Seminar 2 - A Beginner's Guide to Data Presentation" content="- Menjelaskan latar belakang Data Analyst." />
+                  <AccordionCard title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)" content="- Menjelaskan latar belakang Data Analyst." />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
                 </div>
               </div>
@@ -157,21 +152,21 @@ export default function DataAnalyst() {
       <div className="md:hidden">
         <div className="py-4">
           <div className="px-5">
-              <Link href={'/technofair'} className="flex gap-2">
-                <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
-                <p className="text-base font-medium text-[#262626]">Back</p>
-              </Link>
+            <Link href={'/technofair'} className="flex gap-2">
+              <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
+              <p className="text-base font-medium text-[#262626]">Back</p>
+            </Link>
             <div className="py-3">
               <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
             </div>
           </div>
           <div className="px-5">
             <div className="text-[#262626]">
-              <p className="font-[Bricolage-Grotesque] text-4xl font-extrabold">Data Analyst</p>
-              <p className="font-[Poppins] text-base italic font-light">&quot;Visualizing Insights: A Beginner&apos;s Guide to Data Presentation&quot;</p>
+              <p className="font-[Bricolage-Grotesque] text-4xl font-extrabold">Artificial Intelligence</p>
+              <p className="font-[Poppins] text-base italic font-light">&quot;Exploring Innovations and Applications of Artificial Intelligence&quot;</p>
             </div>
             <div className="text-[#262626] py-3">
-              <p className="font-[Poppins] text-sm font-medium">Sabtu, 01 Juni 2024</p>
+              <p className="font-[Poppins] text-sm font-medium">Sabtu, 20 Juni 2024</p>
             </div>
           </div>
           <div className="px-5">
@@ -192,8 +187,8 @@ export default function DataAnalyst() {
               </div>
               <div className="font-[Poppins] text-sm text-[#262626] pt-5">
                 <p>
-                  Seminar ini bertujuan untuk mengenalkan konsep dasar visualisasi data kepada peserta, serta memperkenalkan peran seorang Data Analyst dalam menyajikan dan mempresentasikan hasil analisis data secara efektif. Selain itu,
-                  seminar ini juga bertujuan untuk membahas teknik dan alat-alat yang dapat digunakan untuk menyajikan informasi secara visual agar lebih mudah dipahami oleh berbagai pemangku kepentingan.
+                  Artificial Intelligence atau Kecerdasan Buatan merujuk pada pengembangan sistem komputer yang dapat mengeksekusi tugas - tugas yang membutuhkan kecerdasan manusia. Seminar ini bermaksud menjelaskan pengertian tentang
+                  Artificial Intelligence (AI) serta membahas inovasi dan penerapannya dalam kehidupan sehari - hari.
                 </p>
               </div>
             </div>
@@ -205,23 +200,19 @@ export default function DataAnalyst() {
               <div className="pl-5">
                 <div className="pt-5 flex gap-3 py-2">
                   <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mendapat pengetahuan tentang konsep dasar tentang visualisasi data.</p>
+                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mendapat pengetahuan tentang pengertian dasar Artificial Intelligence (AI).</p>
                 </div>
                 <div className="flex gap-3 py-2">
                   <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mengetahui peran dan tanggung jawab sebagai seorang Data Analyst.</p>
+                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mengetahui perkembangan Artificial Intelligence (AI) serta mendapatkan inovasi untuk mengembangkan kecerdasan buatan.</p>
                 </div>
                 <div className="flex gap-3 py-2">
                   <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mendapat pengetahuan tentang teknik-teknik dan alat yang digunakan dalam visualisasi data.</p>
+                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mengetahui pengaplikasian Artificial Intelligence (AI) dalam dunia kerja.</p>
                 </div>
                 <div className="flex gap-3 py-2">
                   <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mengetahui pentingnya visualisasi data dalam sebuah pengambilan keputusan di berbagai bidang.</p>
-                </div>
-                <div className="flex gap-3 py-2">
-                  <Image src={'/technofair/ceklis.png'} alt="ceklis" width={24} height={24} className="h-6" />
-                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Mendapat wawasan tentang potensi karir sebagai seorang Data Analyst di berbagai industri.</p>
+                  <p className="text-[#262626] text-sm font-[Poppins] font-medium">Meningkatkan motivasinya untuk berinovasi dalam bidang Artificial Intelligence (AI).</p>
                 </div>
               </div>
             </div>
@@ -237,13 +228,13 @@ export default function DataAnalyst() {
                     <div className="flex font-[Poppins] gap-2">
                       <p className="font-semibold text-[#262626] text-sm">Hari, Tanggal </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> Sabtu, 01 Juni 2024
+                        <strong>:</strong> Sabtu, 20 Juni 2024
                       </p>
                     </div>
                     <div className="flex font-[Poppins] gap-14">
                       <p className="font-semibold text-[#262626] text-sm">Waktu </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> 09.00 - 12.30 WIB
+                        <strong>:</strong> 09.00 - 13.00 WIB
                       </p>
                     </div>
                     <div className="flex font-[Poppins] gap-12">
@@ -263,9 +254,9 @@ export default function DataAnalyst() {
               </Link>
             </div>
             <div className="px-5 py-5">
-              <AccordionCard title="Materi Seminar 1 - Get to Know the World of Data Analyst" content={'Menjelaskan latar belakang Data Analyst.'} />
+              <AccordionCard title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0" content={'Menjelaskan latar belakang Data Analyst.'} />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-              <AccordionCard title="Materi Seminar 2 - A Beginner's Guide to Data Presentation" content="- Menjelaskan latar belakang Data Analyst." />
+              <AccordionCard title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)" content="- Menjelaskan latar belakang Data Analyst." />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
             </div>
           </div>
