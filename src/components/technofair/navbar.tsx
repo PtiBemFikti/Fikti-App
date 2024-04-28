@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
         <div className="text-[#241525] md:hidden block mb-32">
           <h1 className="font-Lato font-bold text-2xl">TechnoFair 11.0</h1>
         </div>
-        <div className="hidden md:flex md:gap-10 space-x-4 -ml-96 md:mb-32">
+        <div className="hidden md:flex md:gap-10 space-x-4 md:ml-[800px] md:mb-32">
           <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#about">
             About
           </Link>
@@ -67,14 +67,14 @@ const Navbar: React.FC = () => {
           {/* Add more navigation links as needed */}
         </div>
         <div className="md:block hidden">
-          <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
+          {/* <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
             <div className="">
               <SignUpBox />
             </div>
             <div className="">
               <SignInBox />
             </div>
-          </div>
+          </div> */}
           {/* {status === 'unauthenticated' ? (
             <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
               <button onLoad={() => signIn()}>
@@ -121,7 +121,7 @@ const Navbar: React.FC = () => {
             FAQ
           </Link>
           <div className="md:hidden block">
-            <div className="flex justify-center items-center">
+            {/* <div className="flex justify-center items-center">
               <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
                 <div className="text-[#241525] ml-3">
                   <SignUpBox />
@@ -130,7 +130,7 @@ const Navbar: React.FC = () => {
                   <SignInBox />
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* {status === 'authenticated' ? (
               <div className="flex gap-4">
                 <div className="">

@@ -40,7 +40,9 @@ export default function TechnofairPage() {
         </div>
       </section>
       <section id="event">
-        <EventPage />
+        <div className="pt-3">
+          <EventPage />
+        </div>
       </section>
       <div className="bg-gradient-to-t from-[#0B0E1A] to-[#211525]">
         <section id="schedule">
