@@ -39,7 +39,9 @@ export default function TechnofairPage() {
           <AboutPage />
         </div>
       </section>
-      <EventPage />
+      <section id="event">
+        <EventPage />
+      </section>
       <div className="bg-gradient-to-t from-[#0B0E1A] to-[#211525]">
         <section id="schedule">
           <SchedulePage />
@@ -50,7 +52,7 @@ export default function TechnofairPage() {
       <section id="faq">
         <FaqPage />
       </section>
-      <Footer/>
+      <Footer />
     </main>
   );
 }

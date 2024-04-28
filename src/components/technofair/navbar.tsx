@@ -45,16 +45,16 @@ const Navbar: React.FC = () => {
           <h1 className="font-Lato font-bold text-2xl">TechnoFair 11.0</h1>
         </div>
         <div className="hidden md:flex md:gap-10 space-x-4 -ml-96 md:mb-32">
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#about">
+          <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#about">
             About
           </Link>
-          <div className="block text-[#241525] hover:text-purpleText duration-300 py-2">
-            <DropdownMenuNav />
-          </div>
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#schedule">
+          <Link href={'#event'} className="block text-[#241525] hover:text-purpleText duration-300">
+            Events
+          </Link>
+          <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#schedule">
             Schedule
           </Link>
-          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#faq">
+          <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#faq">
             FAQ
           </Link>
           {/* <Link
@@ -111,9 +111,9 @@ const Navbar: React.FC = () => {
           <Link className="text-[#241525] hover:text-purpleText text-center" href="#about">
             About
           </Link>
-          <div className="text-[#241525] hover:text-purpleText text-center">
-            <DropdownMenuNav />
-          </div>
+          <Link href={'#event'} className="text-[#241525] hover:text-purpleText text-center">
+            Events
+          </Link>
           <Link className="text-[#241525] hover:text-purpleText text-center" href="#schedule">
             Schedule
           </Link>
