@@ -39,8 +39,12 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
       <div ref={contentRef} className={`overflow-hidden transition-all duration-300 ease-out ${isOpen ? 'h-auto' : 'h-0'}`}>
         <div className="p-4">
           <ul>
+            {/* {content.map((item, index) => {
+              <li key={index}>
+                {item}
+              </li>
+            })} */}
             <li>{content}</li>
-            
           </ul>
         </div>
       </div>

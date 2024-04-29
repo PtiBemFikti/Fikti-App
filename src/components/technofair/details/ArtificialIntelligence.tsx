@@ -1,8 +1,18 @@
 import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function ArtificialIntelligence() {
+  // const router = useRouter;
+  // const { id } = router.query;
+
+  // const accordionContent = {
+  //   1: {
+  //     title: ''
+  //   }
+  // }
+
   return (
     <div className="bg-gradient-to-t from-[#F7F9FA] to-[#F3E5EA]">
       {/* Tampilan Dekstop start */}
@@ -138,7 +148,7 @@ export default function ArtificialIntelligence() {
                 <div className="py-5">
                   <AccordionCard title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0" content={'- Menjelaskan latar belakang Data Analyst.- Mengetahui keterampilan apa yang diperlukan Data Analyst.'} />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-                  <AccordionCard title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)" content="- Menjelaskan latar belakang Data Analyst." />
+                  <AccordionCard title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)" content={"- Menjelaskan latar belakang Data Analyst."} />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
                 </div>
               </div>
@@ -256,7 +266,7 @@ export default function ArtificialIntelligence() {
             <div className="px-5 py-5">
               <AccordionCard title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0" content={'Menjelaskan latar belakang Data Analyst.'} />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-              <AccordionCard title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)" content="- Menjelaskan latar belakang Data Analyst." />
+              <AccordionCard title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)" content={"- Menjelaskan latar belakang Data Analyst."} />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
             </div>
           </div>
