@@ -8,7 +8,7 @@ export default function ArtificialIntelligence() {
       {/* Tampilan Dekstop start */}
       <div className="md:block hidden">
         <div className="px-40 py-16">
-          <Link href="/technofair" className="flex gap-4">
+          <Link href={'/technofair'} className="flex gap-4">
             <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
             <p className="text-xl font-medium text-[#545350]">Back</p>
           </Link>
@@ -136,7 +136,7 @@ export default function ArtificialIntelligence() {
                   </div>
                 </div>
                 <div className="py-5">
-                  <AccordionCard title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0" content={'- Menjelaskan latar belakang Data Analyst.'} />
+                  <AccordionCard title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0" content={'- Menjelaskan latar belakang Data Analyst.- Mengetahui keterampilan apa yang diperlukan Data Analyst.'} />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
                   <AccordionCard title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)" content="- Menjelaskan latar belakang Data Analyst." />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>

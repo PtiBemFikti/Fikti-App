@@ -44,27 +44,29 @@ const Navbar: React.FC = () => {
         <div className="text-[#241525] md:hidden block mb-32">
           <h1 className="font-Lato font-bold text-2xl">TechnoFair 11.0</h1>
         </div>
-        <div className="hidden md:flex md:gap-10 space-x-4 md:ml-[800px] md:mb-32">
-          <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#about">
-            About
-          </Link>
-          <Link href={'#event'} className="block text-[#241525] hover:text-purpleText duration-300">
-            Events
-          </Link>
-          <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#schedule">
-            Schedule
-          </Link>
-          <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#faq">
-            FAQ
-          </Link>
-          {/* <Link
+        <div className="md:absolute md:right-0 md:pr-20">
+          <div className="hidden md:flex md:gap-10 space-x-4 md:mb-32">
+            <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#about">
+              About
+            </Link>
+            <Link href={'#event'} className="block text-[#241525] hover:text-purpleText duration-300">
+              Events
+            </Link>
+            <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#schedule">
+              Schedule
+            </Link>
+            <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#faq">
+              FAQ
+            </Link>
+            {/* <Link
             className="block text-black hover:text-purpleText duration-300 py-2"
             href="/dept&biro"
           >
             Departemen
           </Link> */}
 
-          {/* Add more navigation links as needed */}
+            {/* Add more navigation links as needed */}
+          </div>
         </div>
         <div className="md:block hidden">
           {/* <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">

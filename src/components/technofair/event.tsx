@@ -341,10 +341,10 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 13.00 WIB</p>
                       </div>
                     </div>
-                    <div className="py-4 flex justify-end items-end gap-4">
+                    <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </div>
+                    </Link>
                   </div>
                 </div>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E87C6C3B] rounded-[28px]">
@@ -366,10 +366,10 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 13.00 WIB</p>
                       </div>
                     </div>
-                    <div className="py-4 flex justify-end items-end gap-4">
+                    <Link href={'/technofair/details/seminar/artificial-intelligence'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -393,10 +393,10 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 12.40 WIB</p>
                       </div>
                     </div>
-                    <div className="py-4 flex justify-end items-end gap-4">
+                    <Link href={'/technofair/details/workshop/product-marketing'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </div>
+                    </Link>
                   </div>
                 </div>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#F9F8713B] rounded-[28px]">
@@ -418,10 +418,10 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 12.40 WIB</p>
                       </div>
                     </div>
-                    <div className="py-4 flex justify-end items-end gap-4">
+                    <Link href={'/technofair/details/workshop/uiux'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>

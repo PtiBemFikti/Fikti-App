@@ -26,9 +26,9 @@ const Dashboard: React.FC = () => {
             <p className="text-[#241525] italic text-xl">Realizing the dynamic technological transformation through collaborative innovation in FutureTech.</p>
             <div className="flex justify-center items-center my-7">
               <div className="w-96 h-10 text-center bg-[#241525] rounded-[14px] hover:bg-[#262626] transition duration-100 ease-in-out">
-                <button className="hover:bg-[#262626]">
+                <div className="hover:bg-[#262626]">
                   <p className="my-2 font-bold">What event do we do?</p>
-                </button>
+                </div>
               </div>
             </div>
           </div>
@@ -86,25 +86,25 @@ const Dashboard: React.FC = () => {
             </div>
             <div className="flex gap-3">
               <button>
-                <div className="ml-7 flex gap-1">
+                <Link href={'#event'} className="ml-7 flex gap-1">
                   <div className="flex justify-center items-center w-72 h-16 bg-[#241525] text-center rounded-l-3xl">
                     <p className="text-lg">What event do we do?</p>
                   </div>
                   <div className="bg-[#241525] w-12 h-16 flex justify-center items-center rounded-r-3xl">
                     <Image src={'/technofair/arrow-kanan-bawah-2.png'} alt="arrow kanan bawah" width={12} height={12} />
                   </div>
-                </div>
+                </Link>
               </button>
               {/* <div className="flex justify-center items-center mx-10">
                 <h3 className="text-[#241525] opacity-20 text-2xl">or</h3>
               </div> */}
               <button>
-                <div className="flex bg-[#dddfe4] w-52 h-16 justify-center items-center gap-5 rounded-3xl shadow-md">
+                <Link href={'#about'} className="flex bg-[#dddfe4] w-52 h-16 justify-center items-center gap-5 rounded-3xl shadow-md">
                   <p className="text-[#241525] font-semibold text-lg">Learn More</p>
                   <div className="">
                     <Image src={'/technofair/arrow-kanan-bawah.png'} alt="arrow kanan bawah" width={12} height={12} />
                   </div>
-                </div>
+                </Link>
               </button>
             </div>
           </div>

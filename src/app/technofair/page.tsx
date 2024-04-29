@@ -40,7 +40,7 @@ export default function TechnofairPage() {
         </div>
       </section>
       <section id="event">
-        <div className="pt-3">
+        <div className="md:pt-3">
           <EventPage />
         </div>
       </section>

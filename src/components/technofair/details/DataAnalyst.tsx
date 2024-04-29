@@ -157,10 +157,10 @@ export default function DataAnalyst() {
       <div className="md:hidden">
         <div className="py-4">
           <div className="px-5">
-              <Link href={'/technofair'} className="flex gap-2">
+              <a href={'/technofair'} className="flex gap-2">
                 <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
                 <p className="text-base font-medium text-[#262626]">Back</p>
-              </Link>
+              </a>
             <div className="py-3">
               <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
             </div>
