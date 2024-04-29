@@ -135,7 +135,7 @@ export default function UiUx() {
                   </div>
                 </div>
                 <div className="py-5">
-                  <AccordionCard title="Materi Workshop - From Concept to Creation: Mastering UI/UX Design Practices" content={'- Menjelaskan latar belakang Data Analyst.'} />
+                  <AccordionCard title="Materi Workshop - From Concept to Creation: Mastering UI/UX Design Practices" content={'- Memperkenalkan dasar UI/UX Design.\n- Memperkenalkan Figma sebagai software penunjang.\n- Mengimplementasikan Ilmu Desain UI/UX dengan menggunakan Figma.\n- Membuat contoh project design landing page suatu website menggunakan Figma.'} />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
                 </div>
               </div>
@@ -248,7 +248,7 @@ export default function UiUx() {
               </Link>
             </div>
             <div className="px-5 py-5">
-              <AccordionCard title="Materi Workshop - From Concept to Creation: Mastering UI/UX Design Practices" content={'Menjelaskan latar belakang Data Analyst.'} />
+              <AccordionCard title="Materi Workshop - From Concept to Creation: Mastering UI/UX Design Practices" content={'- Memperkenalkan dasar UI/UX Design.\n- Memperkenalkan Figma sebagai software penunjang.\n- Mengimplementasikan Ilmu Desain UI/UX dengan menggunakan Figma.\n- Membuat contoh project design landing page suatu website menggunakan Figma.'} />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
             </div>
           </div>

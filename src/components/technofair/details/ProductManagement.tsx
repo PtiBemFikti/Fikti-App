@@ -135,7 +135,7 @@ export default function ProductManagement() {
                   </div>
                 </div>
                 <div className="py-5">
-                  <AccordionCard title="Materi Workshop - Building a Strong Foundation : Mastering Product Management Skills" content={'- Menjelaskan latar belakang Data Analyst.'} />
+                  <AccordionCard title="Materi Workshop - Building a Strong Foundation : Mastering Product Management Skills" content={'- Memperkenalkan dasar Product Management.\n- Memperkenalkan berbagai Skills yang dibutuhkan sebagai Product Manager.\n- Memperkenalkan proses pengembangan produk sebagai Product Manager.\n- Mengimplementasikan Ilmu Product Management dengan Real case study sebagai Product Manager.'} />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
                 </div>
               </div>
@@ -250,7 +250,7 @@ export default function ProductManagement() {
               </Link>
             </div>
             <div className="px-5 py-5">
-              <AccordionCard title="Materi Workshop - Building a Strong Foundation : Mastering Product Management Skills" content={'Menjelaskan latar belakang Data Analyst.'} />
+              <AccordionCard title="Materi Workshop - Building a Strong Foundation : Mastering Product Management Skills" content={'- Memperkenalkan dasar Product Management.\n- Memperkenalkan berbagai Skills yang dibutuhkan sebagai Product Manager.\n- Memperkenalkan proses pengembangan produk sebagai Product Manager.\n- Mengimplementasikan Ilmu Product Management dengan Real case study sebagai Product Manager.'} />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
             </div>
           </div>

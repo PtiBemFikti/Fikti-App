@@ -26,9 +26,9 @@ const Dashboard: React.FC = () => {
             <p className="text-[#241525] italic text-xl">Realizing the dynamic technological transformation through collaborative innovation in FutureTech.</p>
             <div className="flex justify-center items-center my-7">
               <div className="w-96 h-10 text-center bg-[#241525] rounded-[14px] hover:bg-[#262626] transition duration-100 ease-in-out">
-                <div className="hover:bg-[#262626]">
+                <Link href={'#event'} className="hover:bg-[#262626]">
                   <p className="my-2 font-bold">What event do we do?</p>
-                </div>
+                </Link>
               </div>
             </div>
           </div>

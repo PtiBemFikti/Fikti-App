@@ -141,9 +141,9 @@ export default function DataAnalyst() {
                   </div>
                 </div>
                 <div className="py-5">
-                  <AccordionCard title="Materi Seminar 1 - Get to Know the World of Data Analyst" content={'- Menjelaskan latar belakang Data Analyst.'} />
+                  <AccordionCard title="Materi Seminar 1 - Get to Know the World of Data Analyst" content={'- Menjelaskan latar belakang Data Analyst.\n- Mengetahui keterampilan apa yang diperlukan Data Analyst.\n- Peran dan hubungan Data Analyst dalam dunia kerja.\n- Tantangan dan peluang seorang Data Analyst dalam dunia kerja.\n- Tips dan trik untuk menjadi seorang Data Analyst.'} />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-                  <AccordionCard title="Materi Seminar 2 - A Beginner's Guide to Data Presentation" content="- Menjelaskan latar belakang Data Analyst." />
+                  <AccordionCard title="Materi Seminar 2 - A Beginner's Guide to Data Presentation" content={'- Menjelaskan dasar-dasar visualisasi data yang efektif.\n- Menjelaskan berbagai jenis visualisasi data serta waktu yang tepat untuk menggunakannya.\n- Tools yang sering digunakan oleh seorang Data Analyst.\n- Menjelaskan identifikasi pola dan tren dalam data yang disajikan secara visual.\n- Tips visualisasi data untuk desain yang lebih efektif dan menarik.'} />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
                 </div>
               </div>
@@ -157,10 +157,10 @@ export default function DataAnalyst() {
       <div className="md:hidden">
         <div className="py-4">
           <div className="px-5">
-              <a href={'/technofair'} className="flex gap-2">
+              <Link href={'/technofair'} className="flex gap-2">
                 <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
                 <p className="text-base font-medium text-[#262626]">Back</p>
-              </a>
+              </Link>
             <div className="py-3">
               <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
             </div>
@@ -263,9 +263,9 @@ export default function DataAnalyst() {
               </Link>
             </div>
             <div className="px-5 py-5">
-              <AccordionCard title="Materi Seminar 1 - Get to Know the World of Data Analyst" content={'Menjelaskan latar belakang Data Analyst.'} />
+              <AccordionCard title="Materi Seminar 1 - Get to Know the World of Data Analyst" content={'- Menjelaskan latar belakang Data Analyst.\n- Mengetahui keterampilan apa yang diperlukan Data Analyst.\n- Peran dan hubungan Data Analyst dalam dunia kerja.\n- Tantangan dan peluang seorang Data Analyst dalam dunia kerja.\n- Tips dan trik untuk menjadi seorang Data Analyst.'} />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-              <AccordionCard title="Materi Seminar 2 - A Beginner's Guide to Data Presentation" content="- Menjelaskan latar belakang Data Analyst." />
+              <AccordionCard title="Materi Seminar 2 - A Beginner's Guide to Data Presentation" content={"- Menjelaskan dasar-dasar visualisasi data yang efektif.\n- Menjelaskan berbagai jenis visualisasi data serta waktu yang tepat untuk menggunakannya.\n- Tools yang sering digunakan oleh seorang Data Analyst.\n- Menjelaskan identifikasi pola dan tren dalam data yang disajikan secara visual.\n- Tips visualisasi data untuk desain yang lebih efektif dan menarik."} />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
             </div>
           </div>

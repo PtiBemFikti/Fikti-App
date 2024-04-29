@@ -146,9 +146,19 @@ export default function ArtificialIntelligence() {
                   </div>
                 </div>
                 <div className="py-5">
-                  <AccordionCard title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0" content={'- Menjelaskan latar belakang Data Analyst.- Mengetahui keterampilan apa yang diperlukan Data Analyst.'} />
+                  <AccordionCard
+                    title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0"
+                    content={
+                      '- Menjelaskan latar belakang Artificial Intelligence (AI).\n- Peranan Artificial Intelligence (AI) di era Society 5.0.\n- Fitur-Fitur dari Artificial Intelligence (AI).\n- Dampak dari Artificial Intelligence (AI) pada pekerjaan manusia.\n- Etika dan keamanan yang terkait dengan penerapan Artificial Intelligence (AI).'
+                    }
+                  />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-                  <AccordionCard title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)" content={"- Menjelaskan latar belakang Data Analyst."} />
+                  <AccordionCard
+                    title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)"
+                    content={
+                      '- Perkembangan terbaru dalam Artificial Intelligence (AI).\n- Inovasi Artificial Intelligence (AI) untuk mengatasi masalah tertentu, meningkatkan efisiensi, atau menciptakan nilai baru.\n- Pengaplikasian Artificial Intelligence (AI) di berbagai bidang pekerjaan.\n- Integrasi Artificial Intelligence (AI) dengan teknologi lain (seperti IoT, Big Data, dan Blockchain).\n- Tantangan dan peluang dalam mengembangkan inovasi Artificial Intelligence (AI) di masa depan.'
+                    }
+                  />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
                 </div>
               </div>
@@ -264,9 +274,19 @@ export default function ArtificialIntelligence() {
               </Link>
             </div>
             <div className="px-5 py-5">
-              <AccordionCard title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0" content={'Menjelaskan latar belakang Data Analyst.'} />
+              <AccordionCard
+                title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0"
+                content={
+                  '- Menjelaskan latar belakang Artificial Intelligence (AI).\n- Peranan Artificial Intelligence (AI) di era Society 5.0.\n- Fitur-Fitur dari Artificial Intelligence (AI).\n- Dampak dari Artificial Intelligence (AI) pada pekerjaan manusia.\n- Etika dan keamanan yang terkait dengan penerapan Artificial Intelligence (AI).'
+                }
+              />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-              <AccordionCard title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)" content={"- Menjelaskan latar belakang Data Analyst."} />
+              <AccordionCard
+                title="Materi Seminar 2 - Unveiling Applications and Innovations of Artificial Intelligence (AI)"
+                content={
+                  '- Perkembangan terbaru dalam Artificial Intelligence (AI).\n- Inovasi Artificial Intelligence (AI) untuk mengatasi masalah tertentu, meningkatkan efisiensi, atau menciptakan nilai baru.\n- Pengaplikasian Artificial Intelligence (AI) di berbagai bidang pekerjaan.\n- Integrasi Artificial Intelligence (AI) dengan teknologi lain (seperti IoT, Big Data, dan Blockchain).\n- Tantangan dan peluang dalam mengembangkan inovasi Artificial Intelligence (AI) di masa depan.'
+                }
+              />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
             </div>
           </div>
