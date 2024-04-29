@@ -1,5 +1,6 @@
 // import ImageAnimation from './ImageAnimation';
 import Image from 'next/image';
+import ScrollImage from './ScrollImage';
 
 export default function StoryPage() {
   return (
@@ -40,6 +41,7 @@ export default function StoryPage() {
                   <div className="">
                     {/* <ImageAnimation /> */}
                     <Image src={'/technofair/image-animation.png'} alt="image animation" width={825} height={734} />
+                    {/* <ScrollImage/> */}
                   </div>
                 </div>
               </div>
