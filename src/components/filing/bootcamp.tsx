@@ -1,3 +1,4 @@
+import { circleAmolens } from "@/styles/font";
 import Image from "next/image";
 import Link from "next/link";
 export default function BootcampPage() {
@@ -74,7 +75,9 @@ export default function BootcampPage() {
                             BOOTCAMP
                           </div>
                         </div>
-                        <div className="mx-1 mt-1 tracking-tight text-start text-gray-800 text-2xl font-bold font-[arial]">
+                        <div
+                          className={`${circleAmolens.className} mx-1 mt-1 tracking-tight text-start text-gray-800 text-2xl font-bold`}
+                        >
                           WEB DEVELOPMENT
                         </div>
                         <div className="mx-1 text-stone-500 text-sm font-light font-['Poppins']">

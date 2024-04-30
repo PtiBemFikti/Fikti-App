@@ -3,6 +3,7 @@ import Image from "next/image";
 import vector from "@/../public/filing/Vector.png";
 import learning2 from "@/../public/filing/learning 2 1.png";
 import Link from "next/link";
+import { circleAmolens } from "@/styles/font";
 const Dashboard: React.FC = () => {
   return (
     <div>
@@ -29,10 +30,13 @@ const Dashboard: React.FC = () => {
                 </h1>
               </div>
               <div className="flex flex-col gap-5">
-                <h1 className="font-['Circle-Amolens'] font-bold text-[40px]">
+                <h1
+                  className={`${circleAmolens.className} text-[40px] font-bold`}
+                >
                   POWER UP YOUR SKILLS TO FACE INDUSTRY 5.0 WITH DATA ANALYST
                   AND WEB
                 </h1>
+
                 <h2 className="font-Poppins leading-[30px] text-[20px] text-[#6C6A67]">
                   Get the knowledge and skills you need to thrive in today’s
                   rapidly changing world with our flexible and affordable
@@ -83,7 +87,9 @@ const Dashboard: React.FC = () => {
                 </h1>
               </div>
               <div>
-                <h1 className="font-[Circle-Amolens] font-bold text-[30px] text-black leading-[1.05]">
+                <h1
+                  className={`${circleAmolens.className} font-bold text-[30px] text-black leading-[1.05]`}
+                >
                   POWER UP YOUR SKILLS TO FACE INDUSTRY 5.0 WITH DATA ANALYST
                   AND WEB
                 </h1>
