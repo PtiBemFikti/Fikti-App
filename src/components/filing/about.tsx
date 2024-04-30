@@ -9,7 +9,9 @@ export default function AboutPage() {
       <div className="mt-2 md:hidden">
         <div className="flex items-center justify-center">
           <div className="my-8 px-8">
-            <h1 className="text-center text-black  text-3xl font-bold font-[arial]">
+            <h1
+              className={`${circleAmolens.className} text-center text-black  text-3xl font-bold`}
+            >
               WHAT IS FILING?
             </h1>
             <p className="text-[#6C6A67] font-semibold mt-6">
@@ -27,7 +29,9 @@ export default function AboutPage() {
 
         <div className="flex justify-center items-center p-8">
           <div className="my-8">
-            <div className="text-center text-black text-3xl font-bold font-[arial]">
+            <div
+              className={`${circleAmolens.className} text-center text-black text-3xl font-bold`}
+            >
               WHY YOU SHOULD JOIN FILING?
             </div>
             <div className="justify-center items-start gap-5 inline-flex">

@@ -122,7 +122,9 @@ export default function BootcampPage() {
       {/*Mobile*/}
       <div className="md:hidden mt-2">
         <div className="flex justify-center items-center p-8">
-          <div className="w-80 text-center tracking-tight text-neutral-800 text-3xl font-bold font-[arial]">
+          <div
+            className={`${circleAmolens.className} w-80 text-center tracking-tight text-neutral-800 text-3xl font-bold`}
+          >
             JOIN OUR BOOTCAMPS
           </div>
         </div>
@@ -144,7 +146,9 @@ export default function BootcampPage() {
                     BOOTCAMP
                   </div>
                 </div>
-                <div className="ml-4 mt-2 text-gray-800 text-2xl tracking-tight font-bold font-['arial']">
+                <div
+                  className={`${circleAmolens.className} ml-4 mt-2 text-gray-800 text-2xl tracking-tight font-bold`}
+                >
                   DATA ANALYST
                 </div>
                 <div className="w-80 px-4 text-stone-500 text-sm font-light font-['Poppins']">
@@ -156,7 +160,9 @@ export default function BootcampPage() {
                   keputusan masa depan, dengan mengolah data dan mencari solusi
                   dari berbagai permasalahan.
                 </div>
-                <button className="w-full mt-8 mb-4 text-center text-stone-400 text-sm font-bold font-['Circle-Amolens']">
+                <button
+                  className={`${circleAmolens.className} w-full mt-8 mb-4 text-center text-stone-400 text-sm font-bold`}
+                >
                   CLICK TO LEARN MORE
                 </button>
               </div>
@@ -181,7 +187,9 @@ export default function BootcampPage() {
                     BOOTCAMP
                   </div>
                 </div>
-                <div className="ml-4 mt-2 text-gray-800 text-2xl tracking-tight font-bold font-['arial']">
+                <div
+                  className={`${circleAmolens.className} ml-4 mt-2 text-gray-800 text-2xl tracking-tight font-bold`}
+                >
                   WEB DEVELOPMENT
                 </div>
                 <div className="w-80 px-4 text-stone-500 text-sm font-light font-['Poppins']">
@@ -193,7 +201,9 @@ export default function BootcampPage() {
                   digitalisasi ini untuk memperkenalkan dan mempromosikan
                   produk/layanan perusahaan.
                 </div>
-                <button className="w-full mt-8 mb-4 text-center text-stone-400 text-sm font-bold font-['Circle-Amolens']">
+                <button
+                  className={`${circleAmolens.className} w-full mt-8 mb-4 text-center text-stone-400 text-sm font-bold`}
+                >
                   CLICK TO LEARN MORE
                 </button>
               </div>
