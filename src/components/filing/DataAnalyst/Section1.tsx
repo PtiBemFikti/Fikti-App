@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import dataAnalyst from "@/../public/filing/Data.png";
+import { circleAmolens } from "@/styles/font";
 
 const Section1: React.FC = () => {
   return (
@@ -36,7 +37,9 @@ const Section1: React.FC = () => {
           className="mt-4 md:w-[470px] md:h-[350px]"
         />
         <div className="text-black space-y-2 md:w-[650px] flex flex-col justify-between">
-          <h1 className="font-CircleAmolens text-[30px] md:text-[40px]">
+          <h1
+            className={`${circleAmolens.className} text-[30px] md:text-[40px]`}
+          >
             Data Analyst
           </h1>
           <h2 className="font-Poppins italic font-light text-[16px]  text-[#6C6A67] md:text-[20px]">

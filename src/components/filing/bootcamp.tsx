@@ -17,7 +17,9 @@ export default function BootcampPage() {
               />
             </div>
             <div className="px-10 w-full">
-              <div className="mt-4 tracking-tight text-center text-black text-3xl font-bold font-[arial]">
+              <div
+                className={`${circleAmolens.className} mt-4 tracking-tight text-center text-black text-3xl font-bold`}
+              >
                 {" "}
                 JOIN OUR BOOTCAMPS{" "}
               </div>
@@ -40,7 +42,9 @@ export default function BootcampPage() {
                             BOOTCAMP
                           </div>
                         </div>
-                        <div className="mx-1 mt-1 tracking-tight text-start text-gray-800 text-2xl font-bold font-[arial]">
+                        <div
+                          className={`${circleAmolens.className} mx-1 mt-1 tracking-tight text-start text-gray-800 text-2xl font-bold`}
+                        >
                           DATA ANALYST
                         </div>
                         <div className="mx-1 text-stone-500 text-sm font-light font-['Poppins']">
@@ -52,7 +56,9 @@ export default function BootcampPage() {
                           informasi dan keputusan masa depan, dengan mengolah
                           data dan mencari solusi dari berbagai permasalahan.
                         </div>
-                        <button className="w-full mt-4 mx-1 tracking-tight text-stone-400 text-base font-normal font-['Circle-Amolens']">
+                        <button
+                          className={`${circleAmolens.className} w-full mt-4 mx-1 tracking-tight text-stone-400 text-base font-normal`}
+                        >
                           CLICK TO LEARN MORE
                         </button>
                       </div>
@@ -90,7 +96,9 @@ export default function BootcampPage() {
                           mempromosikan produk/layanan perusahaan.
                         </div>
 
-                        <button className="w-full mt-4 mx-1 tracking-tight text-stone-400 text-base font-normal font-['Circle-Amolens']">
+                        <button
+                          className={`${circleAmolens.className} w-full mt-4 mx-1 tracking-tight text-stone-400 text-base font-normal`}
+                        >
                           CLICK TO LEARN MORE
                         </button>
                       </div>

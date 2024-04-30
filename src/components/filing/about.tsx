@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { circleAmolens } from "@/styles/font";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -80,7 +81,9 @@ export default function AboutPage() {
         <div className="flex items-center justify-center p-28">
           <div className="flex ">
             <div className="w-1/3 justify-center items-center ">
-              <h1 className="text-black font-bold text-3xl ml-10 font-[arial]">
+              <h1
+                className={`${circleAmolens.className} text-black font-bold text-3xl ml-10`}
+              >
                 {" "}
                 WHAT IS FILING?{" "}
               </h1>
@@ -98,13 +101,17 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="px-12">
-              <div className="text-3xl text-black font-bold font-[arial]">
+              <div
+                className={`${circleAmolens.className} text-3xl text-black font-bold`}
+              >
                 {" "}
                 &{" "}
               </div>
             </div>
             <div className="px-2">
-              <h1 className="text-3xl ml-20 text-black font-bold font-[arial]">
+              <h1
+                className={`${circleAmolens.className} text-3xl ml-20 text-black font-bold`}
+              >
                 {" "}
                 WHY YOU SHOULD JOIN FILING?{" "}
               </h1>

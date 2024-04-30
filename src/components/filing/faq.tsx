@@ -1,3 +1,4 @@
+import { circleAmolens } from "@/styles/font";
 import AccordionCard from "./AccordionCard";
 
 export default function FaqPage() {
@@ -8,7 +9,9 @@ export default function FaqPage() {
         <div className="flex justify-center py-32 px-10 gap-20">
           <div className="">
             <div className="">
-              <p className="text-white text-5xl font-['Circle-Amolens'] font-bold">
+              <p
+                className={`${circleAmolens.className} text-white text-5xl font-medium`}
+              >
                 FREQUENTLY ASKED QUESTIONS
               </p>
               <p className="text-white text-xl font-[Poppins] py-2">
@@ -16,7 +19,9 @@ export default function FaqPage() {
               </p>
             </div>
             <div className="mt-80">
-              <p className="text-white font-['Circle-Amolens'] text-4xl font-bold">
+              <p
+                className={`${circleAmolens.className} text-white text-4xl font-medium`}
+              >
                 CONTACT US
               </p>
               <p className="text-white text-xl font-[Poppins] py-3">

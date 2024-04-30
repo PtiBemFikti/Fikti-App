@@ -7,6 +7,7 @@ import Card2 from "./Card2";
 import Card3 from "./Card3";
 import Card4 from "./Card4";
 import Link from "next/link";
+import { circleAmolens } from "@/styles/font";
 const Section2: React.FC = () => {
   return (
     <div className="bg-white p-10 flex gap-16 md:px-[50px] md:py-[50px]">
@@ -303,7 +304,7 @@ const Section2: React.FC = () => {
                 <div className="flex flex-col gap-2">
                   <Image src={Date} alt="" className="w-[390px]" />
                   <div className="rounded-lg bg-[#11111B] text-center text-[#FEFDFC] p-3">
-                    <h1 className="font-CircleAmolens text-[24px]">
+                    <h1 className={`${circleAmolens.className} text-[24px]`}>
                       SAVE THE DATE!
                     </h1>
                     <h1 className="font-Poppins text-[14px] opacity-50">
