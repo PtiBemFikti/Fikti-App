@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { circleAmolens } from "@/styles/font";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,7 +54,9 @@ const Navbar: React.FC = () => {
           />
         </Link>
         <div className="text-white md:hidden block">
-          <h1 className="font-Lato font-bold text-2xl">FIKTI LEARNING</h1>
+          <h1 className={`${circleAmolens.className} font-bold text-2xl`}>
+            FIKTI LEARNING
+          </h1>
         </div>
         <div className="hidden md:flex md:gap-10 space-x-4 ml-96">
           <Link
