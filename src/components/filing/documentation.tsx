@@ -83,7 +83,9 @@ export default function DocumentationPage() {
       <div className="md:hidden mt-2 ">
         <div className="py-10 px-2">
           <div className="flex justify-center items-center mt-8">
-            <div className="w-72 text-center tracking-tight text-black text-3xl font-bold font-[arial]">
+            <div
+              className={`${circleAmolens.className} w-72 text-center tracking-tight text-black text-3xl font-bold`}
+            >
               DOCUMENTATIONS
             </div>
           </div>
