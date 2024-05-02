@@ -1,4 +1,4 @@
-import AccordionCard from './AccordionCard';
+import Accordion from '@/components/technofair/faq/Accordion';
 import Image from 'next/image';
 
 export default function FaqPage() {
@@ -32,7 +32,10 @@ export default function FaqPage() {
                 </div>
                 <div className="text-sm gap-1">
                   <p className="">
-                    or <a href="#" className='underline'>Others</a>
+                    or{' '}
+                    <a href="#" className="underline">
+                      Others
+                    </a>
                   </p>
                 </div>
               </div>
@@ -40,18 +43,18 @@ export default function FaqPage() {
           </div>
           <div className="">
             <div className="">
-              <div className="w-96 bg-[#1E2749] rounded-3xl p-6">
-                <AccordionCard title="Apa itu TechnoFair?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+              <div className="w-96 bg-[#1e2749] rounded-3xl p-6">
+                <Accordion title="Apa itu TechnoFair?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
                 <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-                <AccordionCard title="Kapan dan dimana TechnoFair 11.0 dilaksanakan?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+                <Accordion title="Kapan dan dimana TechnoFair 11.0 dilaksanakan?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
                 <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-                <AccordionCard title="Apakah ada biaya pendaftaran di TechnoFair 11.0?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+                <Accordion title="Apakah ada biaya pendaftaran di TechnoFair 11.0?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
                 <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-                <AccordionCard title="Bagaimana saya mengetahui saya berhasil melakukan registrasi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+                <Accordion title="Bagaimana saya mengetahui saya berhasil melakukan registrasi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
                 <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-                <AccordionCard title="Bagaimana saya mengetahui pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+                <Accordion title="Bagaimana saya mengetahui pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
                 <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-                <AccordionCard title="Apa saja yang akan didapat pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+                <Accordion title="Apa saja yang akan didapat pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
               </div>
             </div>
           </div>
@@ -68,23 +71,23 @@ export default function FaqPage() {
           </div>
           <div className="p-4 flex justify-center items-center">
             <div className="w-96 bg-[#1E2749] rounded-3xl p-4">
-              <AccordionCard title="Apa itu TechnoFair?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+              <Accordion title="Apa itu TechnoFair?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
               <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-              <AccordionCard title="Kapan dan dimana TechnoFair 11.0 dilaksanakan?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+              <Accordion title="Kapan dan dimana TechnoFair 11.0 dilaksanakan?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
               <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-              <AccordionCard title="Apakah ada biaya pendaftaran di TechnoFair 11.0?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+              <Accordion title="Apakah ada biaya pendaftaran di TechnoFair 11.0?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
               <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-              <AccordionCard title="Bagaimana saya mengetahui saya berhasil melakukan registrasi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+              <Accordion title="Bagaimana saya mengetahui saya berhasil melakukan registrasi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
               <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-              <AccordionCard title="Bagaimana saya mengetahui pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+              <Accordion title="Bagaimana saya mengetahui pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
               <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-              <AccordionCard title="Apa saja yang akan didapat pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+              <Accordion title="Apa saja yang akan didapat pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
             </div>
           </div>
           <div className="py-7 text-center px-4">
             <p className="font-[Bricolage-Grotesque] font-bold text-4xl text-[#fff4e7]">Contact us</p>
             <p className="font-[Poppins] text-base py-3">
-              Can’t find what you are looking for? feel free to{' '}
+              Can&apos;t find what you are looking for? feel free to{' '}
               <a href="#" className="underline">
                 ask us
               </a>

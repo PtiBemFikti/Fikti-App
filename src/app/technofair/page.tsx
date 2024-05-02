@@ -7,7 +7,7 @@ import EventPage from '@/components/technofair/event';
 import SponsorPage from '@/components/technofair/sponsor';
 import SchedulePage from '@/components/technofair/schedule';
 import StoryPage from '@/components/technofair/story';
-import FaqPage from '@/components/technofair/faq';
+import FaqPage from '@/components/technofair/faq/faq';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';

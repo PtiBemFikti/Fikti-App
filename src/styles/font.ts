@@ -3,5 +3,6 @@
 import localFont from 'next/font/local'
  
 const circleAmolens = localFont({ src: '../../public/font/CircleAmolensRegular.ttf' })
+const bricolageGrotesque = localFont({ src: '../../public/font/Bricolage_Grotesque.ttf' })
  
-export { circleAmolens }
+export { circleAmolens, bricolageGrotesque }
