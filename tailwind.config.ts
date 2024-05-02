@@ -15,7 +15,6 @@ const config: Config = {
         Bricolage_Grotesque: ["Bricolage_Grotesque", "sans-serif"],
         Lato: ["Lato", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
-        CircleAmolens: ["Circle Amolens", "sans-serif"],
       },
       colors: {
         background: "#1f0836",
