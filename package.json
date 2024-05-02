@@ -15,6 +15,8 @@
     "@iconify/react": "^4.1.1",
     "@motionone/utils": "^10.16.3",
     "@nextui-org/react": "^2.2.10",
+    "@prisma/client": "^5.12.1",
+    "@vercel/postgres": "^0.8.0",
     "animate.css": "^4.1.1",
     "debug": "^4.3.4",
     "framer-motion": "^10.18.0",
@@ -31,6 +33,7 @@
     "tailwind": "^4.0.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "20.11.0",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18",
@@ -41,6 +44,7 @@
     "eslint": "^8",
     "eslint-config-next": "^14.0.3",
     "postcss": "^8",
+    "prisma": "^5.12.1",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.3.3"
   },
