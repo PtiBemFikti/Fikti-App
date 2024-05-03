@@ -1,5 +1,6 @@
 import Accordion from '@/components/technofair/faq/Accordion';
 import Image from 'next/image';
+import { bricolageGrotesque } from '@/styles/font';
 
 export default function FaqPage() {
   return (
@@ -9,11 +10,11 @@ export default function FaqPage() {
         <div className="flex justify-center py-32 gap-20">
           <div className="">
             <div className="">
-              <p className="text-[#fff4e7] text-5xl font-[Bricolage-Grotesque] font-bold">Frequently Asked Questions</p>
+              <p className={`text-[#fff4e7] text-5xl ${bricolageGrotesque.className} font-bold`}>Frequently Asked Questions</p>
               <p className="text-[#fff4e7] text-sm font-[Poppins] py-2">Everything you need to know about TechnoFair.</p>
             </div>
             <div className=" mt-56">
-              <p className="text-[#fff4e7] font-[Bricolage-Grotesque] text-5xl font-bold">Contact us</p>
+              <p className={`text-[#fff4e7] text-5xl font-bold ${bricolageGrotesque.className}`}>Contact us</p>
               <p className="text-[#fff4e7] text-xl font-[Poppins] py-3">Can&apos;t find what you are looking for? feel free to ask us.</p>
               <div className="">
                 <div className="flex gap-5 py-2">
@@ -66,7 +67,7 @@ export default function FaqPage() {
       <div className="md:hidden">
         <div className="flex-col justify-center items-center py-32 px-4">
           <div className="text-[#fff4e7] text-center">
-            <p className="text-4xl font-bold font-[Bricolage-Grotesque]">Frequently Asked Questions</p>
+            <p className={`text-4xl font-bold ${bricolageGrotesque.className}`}>Frequently Asked Questions</p>
             <p className="font-[Poppins] text-sm py-2">Everything you need to know about TechnoFair.</p>
           </div>
           <div className="p-4 flex justify-center items-center">
@@ -85,7 +86,7 @@ export default function FaqPage() {
             </div>
           </div>
           <div className="py-7 text-center px-4">
-            <p className="font-[Bricolage-Grotesque] font-bold text-4xl text-[#fff4e7]">Contact us</p>
+            <p className={`font-bold text-4xl text-[#fff4e7] ${bricolageGrotesque.className}`}>Contact us</p>
             <p className="font-[Poppins] text-base py-3">
               Can&apos;t find what you are looking for? feel free to{' '}
               <a href="#" className="underline">

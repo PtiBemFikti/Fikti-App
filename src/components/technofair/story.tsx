@@ -1,6 +1,7 @@
 // import ImageAnimation from './ImageAnimation';
 import Image from 'next/image';
 import ScrollImage from './ScrollImage';
+import { bricolageGrotesque } from '@/styles/font';
 
 export default function StoryPage() {
   return (
@@ -11,7 +12,7 @@ export default function StoryPage() {
           <div className="w-full">
             <div className="flex">
               <div className="w-3/6 pt-16">
-                <div className="px-7 font-[Bricolage-Grotesque]">
+                <div className={`px-7 ${bricolageGrotesque.className}`}>
                   <p className="text-[#FFF4E7] text-6xl  font-bold">TechnoFair 11.0</p>
                   <p className="text-[#FFF4E7] text-5xl">More Than Just Pictures, a Story!</p>
                 </div>
@@ -54,7 +55,7 @@ export default function StoryPage() {
       {/* Tampilan Mobile Start */}
       <div className="md:hidden">
         <div className="flex flex-col justify-center items-center">
-          <div className="px-5 text-[#fff4e7] font-[Bricolage-Grotesque] text-center">
+          <div className={`px-5 text-[#fff4e7] ${bricolageGrotesque.className} text-center`}>
             <p className="font-bold text-5xl">TechnoFair 11.0</p>
             <p className="text-4xl">More Than Just Pictures, a Story!</p>
           </div>

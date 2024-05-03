@@ -1,5 +1,6 @@
 'use client';
 
+import { bricolageGrotesque } from '@/styles/font';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -12,7 +13,7 @@ export default function EventPage() {
           {/* <Image src={'/technofair/noisy-gradient.png'} alt='bg gradient' width={1440} height={1931} className='absolute object-cover'/> */}
           <div className="flex justify-center items-center p-14 mt-20 bg-gradient-to-t from-[#211525] to-white">
             <div className="w-2/3">
-              <h1 className="text-white text-6xl font-bold font-[Bricolage-Grotesque]">
+              <h1 className={`text-white text-6xl font-bold ${bricolageGrotesque.className}`}>
                 Our Upcoming <br /> Events
               </h1>
             </div>
@@ -315,7 +316,7 @@ export default function EventPage() {
           </div>
           <div className="">
             <div className="text-center p-10">
-              <p className="text-5xl font-[Bricolage-Grotesque] font-bold text-[#FFF4E7]">Our Upcoming Events</p>
+              <p className={`text-5xl font-bold text-[#FFF4E7] ${bricolageGrotesque.className}`}>Our Upcoming Events</p>
             </div>
             <div className="">
               <div className="px-7">

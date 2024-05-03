@@ -29,7 +29,7 @@ export default function SponsorPage() {
               <div className="w-full bg-white rounded-3xl text-center py-10">
                 <div className="flex justify-between items-center px-9 gap-3">
                   <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
-                  <div className="">
+                  <div className="w-40">
                     <p className="text-sm text-[#262626] font-[Poppins] text-center">MEDIA PARTNERS</p>
                   </div>
                   <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>

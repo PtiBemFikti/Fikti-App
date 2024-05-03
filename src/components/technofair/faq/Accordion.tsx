@@ -28,7 +28,7 @@ const Accordion: React.FC<AccordionCardProps> = ({ title, content }) => {
   return (
     <div className="bg-[#1e2749] rounded-3xl mb-4 text-[#b9bcc7] font-[Poppins] text-sm font-light">
       <button
-        className="bg-[#fff] w-full px-4 py-2 text-left text-sm font-[Poppins] text-[#fff4e7] rounded-lg hover:bg-[#1E2749] focus:outline-none focus:ring-2 focus:ring-[#1E2749] focus:ring-offset-2 focus:ring-offset-gray-100 dark:text-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-[#1E27490]"
+        className="w-full px-4 py-2 text-left text-sm font-[Poppins] text-[#fff4e7] rounded-lg hover:bg-[#1E2749] focus:outline-none focus:ring-2 focus:ring-[#1E2749] focus:ring-offset-2 focus:ring-offset-gray-100 dark:text-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-[#1E27490]"
         onClick={handleToggle}
       >
         <div className="flex items-center justify-between">
