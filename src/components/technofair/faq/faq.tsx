@@ -44,17 +44,17 @@ export default function FaqPage() {
           </div>
           <div className="">
             <div className="">
-              <div className="w-96 bg-[#1e2749] rounded-3xl p-6">
+              <div className="w-96 bg-[#171d37] rounded-3xl p-6">
                 <Accordion title="Apa itu TechnoFair?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
+                <div className="w-80 h-0.5 bg-gradient-to-r from-[#171d37] via-[#AF5474] to-[#FFB560]"></div>
                 <Accordion title="Kapan dan dimana TechnoFair 11.0 dilaksanakan?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
+                <div className="w-80 h-0.5 bg-gradient-to-r from-[#171d37] via-[#AF5474] to-[#FFB560]"></div>
                 <Accordion title="Apakah ada biaya pendaftaran di TechnoFair 11.0?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
+                <div className="w-80 h-0.5 bg-gradient-to-r from-[#171d37] via-[#AF5474] to-[#FFB560]"></div>
                 <Accordion title="Bagaimana saya mengetahui saya berhasil melakukan registrasi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
+                <div className="w-80 h-0.5 bg-gradient-to-r from-[#171d37] via-[#AF5474] to-[#FFB560]"></div>
                 <Accordion title="Bagaimana saya mengetahui pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
-                <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
+                <div className="w-80 h-0.5 bg-gradient-to-r from-[#171d37] via-[#AF5474] to-[#FFB560]"></div>
                 <Accordion title="Apa saja yang akan didapat pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function FaqPage() {
             <p className="font-[Poppins] text-sm py-2">Everything you need to know about TechnoFair.</p>
           </div>
           <div className="p-4 flex justify-center items-center">
-            <div className="w-96 bg-[#1E2749] rounded-3xl p-4">
+            <div className="w-96 bg-[#171d37] rounded-3xl p-4">
               <Accordion title="Apa itu TechnoFair?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
               <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
               <Accordion title="Kapan dan dimana TechnoFair 11.0 dilaksanakan?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />

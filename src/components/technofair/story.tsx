@@ -1,7 +1,7 @@
 // import ImageAnimation from './ImageAnimation';
 import Image from 'next/image';
 import ScrollImage from './ScrollImage';
-import { bricolageGrotesque } from '@/styles/font';
+import { bricolageGrotesque, poppins } from '@/styles/font';
 
 export default function StoryPage() {
   return (
@@ -16,7 +16,7 @@ export default function StoryPage() {
                   <p className="text-[#FFF4E7] text-6xl  font-bold">TechnoFair 11.0</p>
                   <p className="text-[#FFF4E7] text-5xl">More Than Just Pictures, a Story!</p>
                 </div>
-                <div className="pt-96 px-7 font-[Poppins] text-[#f7f9fa]">
+                <div className={`pt-96 px-7 ${poppins.className} text-[#f7f9fa]`}>
                   <p className="text-xl font-light">Lets Chat, Reach Out to Us</p>
                   <div className="flex gap-5 py-2">
                     <div className="flex gap-2">

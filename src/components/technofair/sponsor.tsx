@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { poppins } from '@/styles/font';
 
 export default function SponsorPage() {
   return (
@@ -9,14 +10,14 @@ export default function SponsorPage() {
           <div className="w-11/12">
             <div className="flex gap-8">
               <div className="w-1/6 h-52 bg-white rounded-3xl text-center py-10">
-                <p className=" text-sm text-[#262626] font-[Poppins]">SUPPORTED BY</p>
+                <p className={`text-sm text-[#262626] ${poppins.className}`}>SUPPORTED BY</p>
                 <div className="flex justify-center items-center pt-5">
                   <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={150} height={109} />
                 </div>
               </div>
               <div className="w-5/6 h-52 bg-white rounded-3xl text-center py-10">
                 <div className="flex px-9 gap-3">
-                  <p className="text-sm text-[#262626] font-[Poppins]">SPONSORS</p>
+                  <p className={`text-sm text-[#262626] ${poppins.className}`}>SPONSORS</p>
                   <div className="w-11/12 h-0.5 bg-[#b8bcc7] opacity-30 mt-2"></div>
                 </div>
                 <div className="flex justify-center items-center gap-5 pt-5">
@@ -30,7 +31,7 @@ export default function SponsorPage() {
                 <div className="flex justify-between items-center px-9 gap-3">
                   <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
                   <div className="w-40">
-                    <p className="text-sm text-[#262626] font-[Poppins] text-center">MEDIA PARTNERS</p>
+                    <p className={`text-sm text-[#262626] ${poppins.className} text-center`}>MEDIA PARTNERS</p>
                   </div>
                   <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
                 </div>
@@ -50,7 +51,7 @@ export default function SponsorPage() {
           <div className="w-96 h-48 bg-white rounded-3xl py-8">
             <div className="flex justify-center items-center gap-3">
               <div className="w-20 h-0.5 bg-[#B9BCC7] opacity-30"></div>
-              <p className="font-[Poppins] text-sm font-light text-[#262626]">SUPPORTED BY</p>
+              <p className={`${poppins.className} text-sm font-light text-[#262626]`}>SUPPORTED BY</p>
               <div className="w-20 h-0.5 bg-[#B9BCC7] opacity-30"></div>
             </div>
             <div className="flex justify-center items-center">
@@ -60,7 +61,7 @@ export default function SponsorPage() {
           <div className="w-96 h-40 bg-white rounded-3xl py-8">
             <div className="flex justify-center items-center gap-3">
               <div className="w-20 h-0.5 bg-[#B9BCC7] opacity-30"></div>
-              <p className="font-[Poppins] text-sm font-light text-[#262626]">SPONSORS</p>
+              <p className={`${poppins.className} text-sm font-light text-[#262626]`}>SPONSORS</p>
               <div className="w-20 h-0.5 bg-[#B9BCC7] opacity-30"></div>
             </div>
             <div className="flex justify-center items-center py-5 gap-3">
@@ -71,7 +72,7 @@ export default function SponsorPage() {
           <div className="w-96 bg-white rounded-3xl py-8">
             <div className="flex justify-center items-center gap-3">
               <div className="w-20 h-0.5 bg-[#B9BCC7] opacity-30"></div>
-              <p className="font-[Poppins] text-sm font-light text-[#262626]">MEDIA PARTNER</p>
+              <p className={`${poppins.className} text-sm font-light text-[#262626]`}>MEDIA PARTNER</p>
               <div className="w-20 h-0.5 bg-[#B9BCC7] opacity-30"></div>
             </div>
             <div className="flex justify-center items-center py-5">

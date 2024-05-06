@@ -1,13 +1,14 @@
 import ScheduleTabs from './ScheduleTabs';
 import Image from 'next/image';
 import Link from 'next/link';
+import { poppins } from '@/styles/font';
 
 export default function SchedulePage() {
   return (
     <div className="">
       {/* Tampilan Dekstop Start */}
       <div className="md:block hidden">
-        <div className="py-32 px-14 bg-gradient-to-t from-[#0B0E1A] to-[#211525] font-[Poppins]">
+        <div className={`py-32 px-14 bg-gradient-to-t from-[#0B0E1A] to-[#211525] ${poppins.className}`}>
           <div className="flex justify-center items-center">
             <div className="text-center">
               <p className="text-4xl font-bold">Schedule</p>
@@ -24,7 +25,7 @@ export default function SchedulePage() {
 
       {/* Tampilan Mobile Start */}
       <div className="md:hidden block">
-        <div className="py-32 md:px-14 bg-gradient-to-t from-[#0B0E1A] to-[#211525] font-[Poppins]">
+        <div className={`py-32 md:px-14 bg-gradient-to-t from-[#0B0E1A] to-[#211525] ${poppins.className}`}>
           <div className="flex justify-center items-center py-2">
             <div className="text-center">
               <p className="text-3xl font-bold">Schedule</p>

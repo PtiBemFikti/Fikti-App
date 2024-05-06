@@ -1,6 +1,6 @@
 'use client';
 
-import { bricolageGrotesque } from '@/styles/font';
+import { bricolageGrotesque, poppins } from '@/styles/font';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -23,7 +23,7 @@ export default function EventPage() {
           </div>
 
           <div className="py-20 px-14 bg-[#241525]">
-            <div className="font-[Poppins]">
+            <div className={`${poppins.className}`}>
               <p className="text-3xl font-bold text-white">Seminars & Workshops</p>
               {/* Card Acara Seminar & Workshops */}
               <div className="py-4 flex justify-center items-center gap-3">
@@ -156,7 +156,7 @@ export default function EventPage() {
             </div>
           </div>
           <div className="px-14 bg-[#241525]">
-            <div className="font-[Poppins]">
+            <div className={`${poppins.className}`}>
               <p className="text-3xl font-bold text-white">Competitions</p>
               {/* Card Acara Competitions */}
               <div className="py-4 flex justify-center items-center gap-3">
@@ -320,9 +320,9 @@ export default function EventPage() {
             </div>
             <div className="">
               <div className="px-7">
-                <p className="font-bold font-[Poppins] text-xl">Seminar & Workshops</p>
+                <p className={`font-bold ${poppins.className} text-xl`}>Seminar & Workshops</p>
               </div>
-              <div className="py-5 pl-20 grid grid-flow-col gap-4 overflow-x-auto overflow-y-hidden overflow-hidden pt-4 font-[Poppins]">
+              <div className={`py-5 pl-20 grid grid-flow-col gap-4 overflow-x-auto overflow-y-hidden overflow-hidden pt-4 ${poppins.className}`}>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E87C6C3B] rounded-[28px]">
                   <div className="p-5">
                     <div className="w-20 h-7 bg-[#AF5474] rounded-[11px]">
@@ -374,7 +374,7 @@ export default function EventPage() {
                   </div>
                 </div>
               </div>
-              <div className="py-5 pl-20 grid grid-flow-col gap-4 overflow-x-auto overflow-y-hidden overflow-hidden pt-4 font-[Poppins]">
+              <div className={`py-5 pl-20 grid grid-flow-col gap-4 overflow-x-auto overflow-y-hidden overflow-hidden pt-4 ${poppins.className}`}>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#F9F8713B] rounded-[28px]">
                   <div className="p-5">
                     <div className="w-24 h-7 bg-[#F9F871] rounded-[11px]">
@@ -429,9 +429,9 @@ export default function EventPage() {
             </div>
             <div className="py-4">
               <div className="px-7">
-                <p className="font-bold font-[Poppins] text-xl">Competitions</p>
+                <p className={`font-bold ${poppins.className} text-xl`}>Competitions</p>
               </div>
-              <div className="py-5 pl-20 grid grid-flow-col gap-4 overflow-x-auto overflow-y-hidden overflow-hidden pt-4 font-[Poppins]">
+              <div className={`py-5 pl-20 grid grid-flow-col gap-4 overflow-x-auto overflow-y-hidden overflow-hidden pt-4 ${poppins.className}`}>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E6A3563B] rounded-[28px]">
                   <div className="p-5">
                     <div className="w-28 h-7 bg-[#E6A356] rounded-[11px]">
