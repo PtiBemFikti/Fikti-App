@@ -12,8 +12,6 @@ import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import Footer from '@/components/technofair/footer';
-import { getServerSession } from 'next-auth';
-import Logout from '@/components/technofair/logout';
 
 // eslint-disable-next-line @next/next/no-async-client-component
 export default function TechnofairPage() {
