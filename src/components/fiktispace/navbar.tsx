@@ -88,11 +88,8 @@ const Navbar: React.FC = () => {
         </div>
         <div className="md:block hidden">
           <div className="flex justify-between items-center w-64 h-14 bg-[#0A0723] rounded-[24px] mb-32">
-            <div className="px-5 rounded-[21px] text-lg h-11 bg-white w-28 mx-3 flex justify-center items-center hover:bg-[#D5B2E6] text-[#241525] ml-3">
-              <button>Sign Up</button>
-            </div>
-            <div className="rounded-[21px] text-lg h-11 bg-[#1D1564] w-28 mx-3 flex justify-center items-center hover:bg-[#0A0723]">
-              <button>Sign In</button>
+            <div className="px-5 rounded-[21px] text-lg h-11 bg-[#1D1564] w-48 mx-3 flex justify-center items-center hover:bg-[#110D3C] text-[#F1EAF6] ml-3">
+              <button>Daftar Kompetisi</button>
             </div>
           </div>
         </div>
@@ -147,12 +144,9 @@ const Navbar: React.FC = () => {
           </Link>
           <div className="md:hidden block">
             <div className="flex justify-center items-center">
-              <div className="flex justify-between items-center w-80 h-14 bg-[#0A0723] rounded-[24px]">
-                <div className="px-5 rounded-[21px] text-lg h-11 bg-white w-36 mx-3 flex justify-center items-center hover:bg-[#D5B2E6] text-[#241525]">
-                  <button>Sign Up</button>
-                </div>
-                <div className="rounded-[21px] text-lg h-11 bg-[#1D1564] w-36 mx-3 flex justify-center items-center hover:bg-[#401e42]">
-                  <button>Sign In</button>
+              <div className="flex justify-center items-center w-80 h-14 bg-[#0A0723] rounded-[24px]">
+                <div className="px-5 rounded-[21px] text-lg h-11 bg-[#1D1564] w-48 flex justify-center items-center hover:bg-[#1A135A] text-[#F1EAF6]">
+                  <button>Daftar Kompetisi</button>
                 </div>
               </div>
             </div>
