@@ -5,8 +5,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
+import DropdownMenuNav from './DropdownMenu';
+import SignInBox from './SignInBox';
+import SignUpBox from './SignUpBox';
 
-const Navbar: React.FC = () => {
+const Logout: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
   const toggleMenu = async () => {
@@ -33,47 +36,47 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <motion.nav initial={{ opacity: 1 }} animate={{ opacity: 1 }} transition={{ type: 'keyframes', duration: 0.5, delay: 0.5 }} className="bg-[#ffffff] p-4 top-0 z-50">
+    <motion.nav initial={{ opacity: 1 }} animate={{ opacity: 1 }} transition={{ type: 'keyframes', duration: 0.5, delay: 0.5 }} className="bg-[#ffffff] p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center -mb-32">
-        <Link href="/technofair" className="flex items-center ml-5 mb-32">
+        <Link href="#" className="flex items-center ml-5 mb-32">
           <Image src="/technofair/logo-tf.png" alt="Logo" width={50} height={50} className="mr-2" />
         </Link>
         <div className="text-[#241525] md:hidden block mb-32">
           <h1 className="font-Lato font-bold text-2xl">TechnoFair 11.0</h1>
         </div>
-        <div className="md:absolute md:right-0 md:pr-20">
-          <div className="hidden md:flex md:gap-10 space-x-4 md:mb-32">
-            <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#about">
-              About
-            </Link>
-            <Link href={'#event'} className="block text-[#241525] hover:text-purpleText duration-300">
-              Events
-            </Link>
-            <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#schedule">
-              Schedule
-            </Link>
-            <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#faq">
-              FAQ
-            </Link>
-            {/* <Link
+        <div className="hidden md:flex md:gap-10 space-x-4 -ml-96 md:mb-32">
+          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#about">
+            About
+          </Link>
+          <div className="block text-[#241525] hover:text-purpleText duration-300 py-2">
+            <DropdownMenuNav />
+          </div>
+          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#schedule">
+            Schedule
+          </Link>
+          <Link className="block text-[#241525] hover:text-purpleText duration-300 mt-4" href="#faq">
+            FAQ
+          </Link>
+          {/* <Link
             className="block text-black hover:text-purpleText duration-300 py-2"
             href="/dept&biro"
           >
             Departemen
           </Link> */}
 
-            {/* Add more navigation links as needed */}
-          </div>
+          {/* Add more navigation links as needed */}
         </div>
         <div className="md:block hidden">
-          {/* <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
+          <div className="flex justify-between items-center bg-[#DDDFE4] rounded-[24px] mb-32">
             <div className="">
-              <SignUpBox />
+              <p>Users</p>
             </div>
             <div className="">
-              <SignInBox />
+              <button>
+                <Image src={'/technofair/profile.png'} alt="profile" width={48} height={48} />
+              </button>
             </div>
-          </div> */}
+          </div>
           {/* {status === 'unauthenticated' ? (
             <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
               <button onLoad={() => signIn()}>
@@ -110,9 +113,9 @@ const Navbar: React.FC = () => {
           <Link className="text-[#241525] hover:text-purpleText text-center" href="#about">
             About
           </Link>
-          <Link href={'#event'} className="text-[#241525] hover:text-purpleText text-center">
-            Events
-          </Link>
+          <div className="text-[#241525] hover:text-purpleText text-center">
+            <DropdownMenuNav />
+          </div>
           <Link className="text-[#241525] hover:text-purpleText text-center" href="#schedule">
             Schedule
           </Link>
@@ -120,16 +123,18 @@ const Navbar: React.FC = () => {
             FAQ
           </Link>
           <div className="md:hidden block">
-            {/* <div className="flex justify-center items-center">
-              <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
-                <div className="text-[#241525] ml-3">
-                  <SignUpBox />
+            <div className="flex justify-center items-center">
+              <div className="flex justify-between items-center bg-[#DDDFE4] rounded-[24px]">
+                <div className="">
+                  <p className="text-base">Users</p>
                 </div>
                 <div className="">
-                  <SignInBox />
+                  <button>
+                    <Image src={'/technofair/profile.png'} alt="profile" width={48} height={48} />
+                  </button>
                 </div>
               </div>
-            </div> */}
+            </div>
             {/* {status === 'authenticated' ? (
               <div className="flex gap-4">
                 <div className="">
@@ -164,4 +169,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default Logout;

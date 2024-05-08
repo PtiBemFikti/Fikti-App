@@ -12,7 +12,7 @@ export default function VidYoutube() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         /> */}
-      <Image src={'/technofair/mentahan-vid.png'} alt="video-tf" width={390} height={219} />
+      <Image src={'/technofair/mentahan-vid.png'} alt="video-tf" width={390} height={219} className='w-screen' />
     </div>
   );
 }
