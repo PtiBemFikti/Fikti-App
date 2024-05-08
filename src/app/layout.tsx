@@ -15,8 +15,9 @@ const disableNavbar = [
   '/technofair/details/seminar/artificial-intelligence',
   '/technofair/details/workshop/uiux',
   '/technofair/details/workshop/product-management',
+  '/technofair/details/competitions/capture-the-flag',
 ];
-const disableFooter = ['/technofair', '/technofair/details/seminar/data-analyst', '/technofair/details/seminar/artificial-intelligence', '/technofair/details/workshop/uiux', '/technofair/details/workshop/product-management'];
+const disableFooter = ['/technofair', '/technofair/details/seminar/data-analyst', '/technofair/details/seminar/artificial-intelligence', '/technofair/details/workshop/uiux', '/technofair/details/workshop/product-management', '/technofair/details/competitions/capture-the-flag',];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ['latin'],

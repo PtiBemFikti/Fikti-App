@@ -219,7 +219,7 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-sm">“How Smart City could change the world”</p>
               </div>
-              <Link href={'#'}>
+              <Link href={'/technofair/details/competitions/capture-the-flag'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>

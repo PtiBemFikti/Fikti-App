@@ -259,10 +259,10 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
                       </div>
                     </div>
-                    <div className="flex gap-4 py-5 justify-end items-end">
+                    <Link href={'/technofair/details/competitions/capture-the-flag'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
-                    </div>
+                    </Link>
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#E6A3563B] border-[2px] rounded-[39px]">

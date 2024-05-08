@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
+import { bricolageGrotesque } from '@/styles/font';
 
 export default function ProductManagement() {
   return (
@@ -12,7 +13,7 @@ export default function ProductManagement() {
             <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
             <p className="text-xl font-medium text-[#545350]">Back</p>
           </Link>
-          <div className="py-3 flex gap-16 font-[Bricolage-Grotesque]">
+          <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
             <div className="w-1/2">
               <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
             </div>
@@ -159,7 +160,7 @@ export default function ProductManagement() {
           </div>
           <div className="px-5">
             <div className="text-[#262626]">
-              <p className="font-[Bricolage-Grotesque] text-4xl font-extrabold">Product Management</p>
+              <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Product Management</p>
               <p className="font-[Poppins] text-base italic font-light">&quot;Building a Strong Foundation : Mastering Product Management Skills&quot;</p>
             </div>
             <div className="text-[#262626] py-3">
