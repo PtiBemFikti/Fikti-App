@@ -1,12 +1,14 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 
-export default function ScheduleTabs({ items }) {
+export default function ScheduleTabs({ items }: {items: any}) {
   const [selectedTab, setSelectedTab] = useState(0);
-  const firstBtnRef = useRef();
+  const firstBtnRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
-    firstBtnRef.current.focus();
+    if (firstBtnRef.current) {
+      firstBtnRef.current.focus();
+    }
   }, []);
 
   return (

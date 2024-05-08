@@ -58,50 +58,9 @@ const Navbar: React.FC = () => {
             <Link className="block text-[#241525] hover:text-purpleText duration-300" href="#faq">
               FAQ
             </Link>
-            {/* <Link
-            className="block text-black hover:text-purpleText duration-300 py-2"
-            href="/dept&biro"
-          >
-            Departemen
-          </Link> */}
-
-            {/* Add more navigation links as needed */}
           </div>
         </div>
-        <div className="md:block hidden">
-          {/* <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
-            <div className="">
-              <SignUpBox />
-            </div>
-            <div className="">
-              <SignInBox />
-            </div>
-          </div> */}
-          {/* {status === 'unauthenticated' ? (
-            <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px] mb-32">
-              <button onLoad={() => signIn()}>
-                <div className="">
-                  <SignUpBox />
-                </div>
-              </button>
-              <div className="">
-                <SignInBox />
-              </div>
-            </div>
-          ) : (
-            <div className="flex gap-4">
-              <div className="">
-                <p className="font-[Poppins] text-base">Mio Mirza</p>
-              </div>
-              <div className="">
-                <button onClick={() => signOut()}>
-                  <Image src={'/technofair/profile.png'} alt="Profile" width={48} height={48} />
-                </button>
-              </div>
-            </div>
-          )} */}
-        </div>
-        <div className="md:hidden">
+        <div className="md:hidden sticky">
           {/* Hamburger menu icon */}
           <button onClick={toggleMenu} className={`text-white mr-4 p-1 mb-32 ${isMenuOpen ? 'bg-[#eeeeee] backdrop-blur-sm shadow-md rounded-md ' : ''}`}>
             <Image src={'/technofair/hamburger-btn.png'} alt="Hamburger menu Btn" width={20} height={20} />
@@ -122,45 +81,6 @@ const Navbar: React.FC = () => {
           <Link className="text-[#241525] hover:text-purpleText text-center" href="#faq">
             FAQ
           </Link>
-          <div className="md:hidden block">
-            {/* <div className="flex justify-center items-center">
-              <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
-                <div className="text-[#241525] ml-3">
-                  <SignUpBox />
-                </div>
-                <div className="">
-                  <SignInBox />
-                </div>
-              </div>
-            </div> */}
-            {/* {status === 'authenticated' ? (
-              <div className="flex gap-4">
-                <div className="">
-                  <p className="font-[Poppins] text-base">Mio Mirza</p>
-                </div>
-                <div className="">
-                  <button onClick={() => signOut()}>
-                    <Image src={'/technofair/profile.png'} alt="Profile" width={48} height={48} />
-                  </button>
-                </div>
-              </div>
-            ) : (
-              <div className="flex justify-center items-center">
-                <div className="flex justify-between items-center w-64 h-14 bg-[#DDDFE4] rounded-[24px]">
-                  <div className="text-[#241525] ml-3">
-                    <SignUpBox />
-                  </div>
-                  <div className="">
-                    <SignInBox />
-                  </div>
-                </div>
-              </div>
-            )} */}
-          </div>
-          {/* <Link className="hover:text-purpleText" href="/dept&biro">
-            Departemen
-          </Link> */}
-          {/* Add more navigation links as needed */}
         </motion.div>
       )}
     </motion.nav>

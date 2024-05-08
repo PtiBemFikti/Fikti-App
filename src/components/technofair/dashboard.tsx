@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import RotatingWords from './RotatingWords';
 import RotatingImage from './RotatingImage';
+import { bricolageGrotesque } from '@/styles/font';
 
 const Dashboard: React.FC = () => {
   return (
@@ -12,17 +13,17 @@ const Dashboard: React.FC = () => {
         <div className="flex-col">
           <div className="flex justify-center-items-center p-4 my-7">
             <div className="w-96 h-40 bg-gradient-to-t from-[#241525] to-[#833F57] text-center py-6 rounded-3xl">
-              <h3 className="font-bold text-3xl font-[Bricolage-Grotesque]">
+              <h3 className={`font-bold text-3xl ${bricolageGrotesque}`}>
                 <RotatingWords />
               </h3>
-              <h2 className="font-bold text-5xl mt-5 font-[Bricolage-Grotesque]">In FutureTech</h2>
+              <h2 className={`font-bold text-5xl mt-5 ${bricolageGrotesque}`}>In FutureTech</h2>
             </div>
           </div>
           <div className="py-5 flex justify-center items-center">
             <VidYoutube />
           </div>
           <div className="mx-3 p-3">
-            <h1 className="text-[#241525] text-4xl font-bold font-[Bricolage-Grotesque]">TECHNOFAIR 11.0</h1>
+            <h1 className={`text-[#241525] text-4xl font-bold ${bricolageGrotesque}`}>TECHNOFAIR 11.0</h1>
             <p className="text-[#241525] italic text-xl">Realizing the dynamic technological transformation through collaborative innovation in FutureTech.</p>
             <div className="flex justify-center items-center my-7">
               <div className="w-96 h-10 text-center bg-[#241525] rounded-[14px] hover:bg-[#262626] transition duration-100 ease-in-out">
@@ -61,7 +62,7 @@ const Dashboard: React.FC = () => {
         </div>
         <div className="flex justify-center items-center gap-24 p-7">
           <div className=" w-[426px] h-[632px] border bg-gradient-to-t from-[#241525] to-[#833f57] rounded-3xl">
-            <div className="p-6 font-[Bricolage-Grotesque]">
+            <div className={`p-6 ${bricolageGrotesque}`}>
               <h1 className="font-bold text-4xl">
                 Transformation, <br />
                 Collaborative <br />
@@ -79,7 +80,7 @@ const Dashboard: React.FC = () => {
               <Image src={'/technofair/mentahan-vid.png'} alt="video-tf" width={635} height={219} className=" rounded-t-3xl" />
             </div>
             <div className="px-7 my-6">
-              <h1 className="text-[#241525] font-bold text-6xl font-[Bricolage-Grotesque]">TECHNOFAIR 11.0</h1>
+              <h1 className={`text-[#241525] font-bold text-6xl ${bricolageGrotesque}`}>TECHNOFAIR 11.0</h1>
               <p className="text-[#241525] italic text-xl my-3">
                 Realizing the dynamic technological transformation <br /> through collaborative innovation in FutureTech.
               </p>
