@@ -5,9 +5,6 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
-import DropdownMenuNav from './DropdownMenu';
-import SignInBox from './SignInBox';
-import SignUpBox from './SignUpBox';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
