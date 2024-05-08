@@ -10,4 +10,4 @@ const Urbanist = localFont({ src: '../../public/font/Urbanist-Regular.ttf' });
 const bricolageGrotesque = localFont({ src: '../../public/font/Bricolage_Grotesque.ttf' });
 const poppins = localFont({ src: '../../public/font/Poppins.ttf' });
 
-export { circleAmolens, Guardians, Urbanist };
+export { circleAmolens, Guardians, Urbanist, bricolageGrotesque, poppins };

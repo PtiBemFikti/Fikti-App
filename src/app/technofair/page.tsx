@@ -8,22 +8,10 @@ import SponsorPage from '@/components/technofair/sponsor';
 import SchedulePage from '@/components/technofair/schedule';
 import StoryPage from '@/components/technofair/story';
 import FaqPage from '@/components/technofair/faq/faq';
-import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
 import Footer from '@/components/technofair/footer';
 
 // eslint-disable-next-line @next/next/no-async-client-component
 export default function TechnofairPage() {
-  const { data: session, status }: { data: any; status: string } = useSession();
-  const router = useRouter();
-
-  useEffect(() => {
-    if (status === 'unauthenticated' || session?.user.role !== 'admin') {
-      router.push('/technofair');
-    }
-  }, [router, session?.user.role, status]);
-
   return (
     <main className="bg-white bg-cover bg-no-repeat -z-50 overflow-x-hidden scroll-smooth" style={{ backgroundImage: 'url(/technofair/bg-utama.png)' }}>
       {/* <Image src={'/technofair/bg-utama.png'} alt="Bg Utama" width={300} height={300} className="bg-cover absolute" /> */}

@@ -5,9 +5,18 @@ import './globals.css';
 import Navbar from '@/components/landing-page/navbar';
 import Footer from '@/components/landing-page/footer';
 
-const disableNavbar = ['/filing', '/technofair', '/filing/WebDevelopment', '/filing/DataAnalyst', '/fiktispace', '/technofair/details/seminar/data-analyst', '/technofair/details/seminar/artificial-intelligence', '/technofair/details/workshop/uiux', '/technofair/details/workshop/product-management'];
+const disableNavbar = [
+  '/filing',
+  '/technofair',
+  '/filing/WebDevelopment',
+  '/filing/DataAnalyst',
+  '/fiktispace',
+  '/technofair/details/seminar/data-analyst',
+  '/technofair/details/seminar/artificial-intelligence',
+  '/technofair/details/workshop/uiux',
+  '/technofair/details/workshop/product-management',
+];
 const disableFooter = ['/technofair', '/technofair/details/seminar/data-analyst', '/technofair/details/seminar/artificial-intelligence', '/technofair/details/workshop/uiux', '/technofair/details/workshop/product-management'];
-
 
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ['latin'],
@@ -25,9 +34,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>BEM FIKTI UG 2024</title>
       </head>
       <body className={`${lato.className}`}>
-        {!disableNavbar.includes(pathname) && <Navbar />}
-        {children}
-        {!disableFooter.includes(pathname) && <Footer />}
+          {!disableNavbar.includes(pathname) && <Navbar />}
+          {children}
+          {!disableFooter.includes(pathname) && <Footer />}
         <Footer />
       </body>
     </html>
