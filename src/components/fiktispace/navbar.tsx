@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import DropdownMenuNav from "./DropdownMenu";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Guardians } from "@/styles/font";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,8 +42,8 @@ const Navbar: React.FC = () => {
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
       className="bg-[#0A0723] p-4 sticky top-0 z-50"
     >
-      <div className="container mx-auto flex justify-between items-center -mb-32">
-        <Link href="#" className="flex items-center ml-5 mb-32">
+      <div className="container mx-auto flex justify-between items-center md:-mb-32">
+        <Link href="#" className="flex items-center ml-5 md:mb-32">
           <Image
             src="/fiktispace/logofs.png"
             alt="Logo"
@@ -52,8 +52,10 @@ const Navbar: React.FC = () => {
             className="mr-2"
           />
         </Link>
-        <div className="text-[#F1EAF6] font-['Poppins'] md:hidden block mb-32">
-          <h1 className="font-['Guardians'] font-bold text-3xl">FIKTI SPACE</h1>
+        <div className="text-[#F1EAF6] font-['Poppins'] md:hidden block md:mb-32">
+          <h1 className={`${Guardians.className} font-bold text-xl`}>
+            FIKTI SPACE
+          </h1>
         </div>
         <div className="hidden md:flex md:gap-10 space-x-4 -ml-80 md:mb-32">
           <a
@@ -97,7 +99,7 @@ const Navbar: React.FC = () => {
           {/* Hamburger menu icon */}
           <button
             onClick={toggleMenu}
-            className={`text-white mr-4 p-1 mb-32 ${
+            className={`text-white mr-4 p-1 md:mb-32 ${
               isMenuOpen
                 ? "bg-[#0A0723] backdrop-blur-sm shadow-md rounded-md "
                 : ""

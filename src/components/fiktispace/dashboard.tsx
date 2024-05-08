@@ -1,18 +1,19 @@
 import Image from "next/image";
 import { Guardians, Urbanist } from "@/styles/font";
+import { Link } from "@nextui-org/react";
 export default function DashboardPage() {
   return (
-    <div className="mt-6">
-      <div className="flex ml-6 md:ml-12 w-1/2 h-96 py-2 justify-start items-start gap-4">
-        <div className="h-72 flex-col justify-start items-start gap-3 flex">
-          <a href="/" className="mb-4">
+    <div className="mt-6 overflow-x-hidden">
+      <div className="flex mx-6 md:ml-12 h-screen w-full justify-start items-start gap-4">
+        <div className="flex-col justify-start items-start gap-3 flex">
+          <Link href="/" className="mb-4">
             <Image
               src={"/fiktispace/back.png"}
               alt="back"
               width={40}
               height={40}
             ></Image>
-          </a>
+          </Link>
           <div className="flex-col justify-center items-end md:justify-start md:items-start gap-3 flex">
             <div className={`${Urbanist.className}`}>
               <span className="text-violet-200 text-lg md:text-2xl font-normal">
@@ -67,11 +68,19 @@ export default function DashboardPage() {
           <div className="w-full">
             <div className="h-12 px-6 py-3 bg-gradient-to-r from-teal-600 to-violet-950 rounded-2xl border-0 justify-center items-center gap-2.5 flex">
               <div
-                className={`${Urbanist.className}text-gray-200 md:text-xl font-medium }`}
+                className={`${Urbanist.className}text-violet-200 text-base md:text-xl font-medium }`}
               >
                 What event do we do?
               </div>
             </div>
+          </div>
+          <div className="md:hidden">
+            <Image
+              src={"/fiktispace/fsdashmobile.png"}
+              alt={"dashboard mobile"}
+              width={340}
+              height={320}
+            ></Image>
           </div>
         </div>
       </div>
