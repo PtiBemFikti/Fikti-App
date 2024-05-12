@@ -1,6 +1,7 @@
 import Accordion from '@/components/technofair/faq/Accordion';
 import Image from 'next/image';
 import { bricolageGrotesque } from '@/styles/font';
+import Link from 'next/link';
 
 export default function FaqPage() {
   return (
@@ -18,25 +19,28 @@ export default function FaqPage() {
               <p className="text-[#fff4e7] text-xl font-[Poppins] py-3">Can&apos;t find what you are looking for? feel free to ask us.</p>
               <div className="">
                 <div className="flex gap-5 py-2">
-                  <div className="flex gap-2">
+                  <Link href={'https://www.instagram.com/technofair'} className="flex gap-2">
                     <Image src={'/technofair/instagram.png'} alt="instagram" width={20} height={20} />
                     <p className="text-sm">@technofair</p>
-                  </div>
-                  <div className="flex gap-2">
+                  </Link>
+                  <Link href={'https://twitter.com/technofair?t=2a69wN8oDV7culaW8k0l6A'} className="flex gap-2">
                     <Image src={'/technofair/x.png'} alt="instagram" width={20} height={20} />
                     <p className="text-sm">@technofair</p>
-                  </div>
+                  </Link>
                   <div className="flex gap-2">
-                    <Image src={'/technofair/line.png'} alt="instagram" width={20} height={20} />
-                    <p className="text-sm">@technofair</p>
+                    <Image src={'/technofair/wa.png'} alt="whatsapp" width={20} height={20} />
+                    <p className="text-sm">+62 896-7725-3356 (Sakhila)</p>
                   </div>
                 </div>
                 <div className="text-sm gap-1">
                   <p className="">
                     or{' '}
-                    <a href="#" className="underline">
+                    <Link
+                      href="https://linktr.ee/technofair11?fbclid=PAZXh0bgNhZW0CMTEAAabzjywo6Sk-8qxuYTLdjgLMnVnTeWbm2kbY7zct3gZy6VdLthPUCm0pU8c_aem_AW7cFsvByc5KSlhmde7efcYbBX-geig6t77oEPAV6e9SNR6tz1thTPPyfIyC6xelk5ZLAaWAwnL4NgPZD760f87F"
+                      className="underline"
+                    >
                       Others
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -89,9 +93,12 @@ export default function FaqPage() {
             <p className={`font-bold text-4xl text-[#fff4e7] ${bricolageGrotesque.className}`}>Contact us</p>
             <p className="font-[Poppins] text-base py-3">
               Can&apos;t find what you are looking for? feel free to{' '}
-              <a href="#" className="underline">
+              <Link
+                href="https://linktr.ee/technofair11?fbclid=PAZXh0bgNhZW0CMTEAAabzjywo6Sk-8qxuYTLdjgLMnVnTeWbm2kbY7zct3gZy6VdLthPUCm0pU8c_aem_AW7cFsvByc5KSlhmde7efcYbBX-geig6t77oEPAV6e9SNR6tz1thTPPyfIyC6xelk5ZLAaWAwnL4NgPZD760f87F"
+                className="underline"
+              >
                 ask us
-              </a>
+              </Link>
               .
             </p>
           </div>

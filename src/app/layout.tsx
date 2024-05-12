@@ -38,7 +38,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {!disableNavbar.includes(pathname) && <Navbar />}
           {children}
           {!disableFooter.includes(pathname) && <Footer />}
-        <Footer />
       </body>
     </html>
   );

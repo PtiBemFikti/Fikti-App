@@ -49,7 +49,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col py-3">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
                     <Link href={'/technofair/details/seminar/data-analyst'} className="flex gap-4 py-5 justify-end items-end">
@@ -80,7 +80,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col py-3">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
                     <Link href={'/technofair/details/seminar/artificial-intelligence'} className="flex gap-4 py-5 justify-end items-end">
@@ -111,7 +111,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col py-3">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
                     <Link href={'/technofair/details/workshop/product-management'} className="flex gap-4 py-5 justify-end items-end">
@@ -142,7 +142,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col py-3">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
                     <Link href={'/technofair/details/workshop/uiux'} className="flex gap-4 py-5 justify-end items-end">
@@ -165,8 +165,8 @@ export default function EventPage() {
                     <div className="w-28 h-7 bg-[#E6A356] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
                     </div>
-                    <div className="py-6">
-                      <p className="italic font-bold text-2xl">Smart Fikti</p>
+                    <div className="py-2">
+                      <p className="italic font-bold text-2xl">Competitive Programming</p>
                       <p className="text-sm text-[#B9BCC7] mt-2">A dynamic language popular for web development, big data, science, and scripting.</p>
                     </div>
                     <div className="">
@@ -186,7 +186,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Offline</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
@@ -200,8 +200,8 @@ export default function EventPage() {
                     <div className="w-28 h-7 bg-[#E6A356] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
                     </div>
-                    <div className="py-6">
-                      <p className="italic font-bold text-2xl">Infographic</p>
+                    <div className="py-2">
+                      <p className="italic font-bold text-2xl">Digital Infographic</p>
                       <p className="text-sm text-[#B9BCC7] mt-2">A dynamic language popular for web development, big data, science, and scripting.</p>
                     </div>
                     <div className="">
@@ -221,7 +221,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Offline</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
@@ -256,7 +256,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Offline</p>
                       </div>
                     </div>
                     <Link href={'/technofair/details/competitions/capture-the-flag'} className="flex gap-4 py-5 justify-end items-end">
@@ -271,7 +271,7 @@ export default function EventPage() {
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
                     </div>
                     <div className="py-6">
-                      <p className="italic font-bold text-2xl">UX Designer</p>
+                      <p className="italic font-bold text-2xl">UI/UX Design</p>
                       <p className="text-sm text-[#B9BCC7] mt-2">A dynamic language popular for web development, big data, science, and scripting.</p>
                     </div>
                     <div className="">
@@ -291,7 +291,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Online</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Offline</p>
                       </div>
                     </div>
                     <div className="flex gap-4 py-5 justify-end items-end">
