@@ -16,8 +16,21 @@ const disableNavbar = [
   '/technofair/details/workshop/uiux',
   '/technofair/details/workshop/product-management',
   '/technofair/details/competitions/capture-the-flag',
+  '/technofair/details/competitions/competitive-programming',
+  '/technofair/details/competitions/ui-ux-design',
+  '/technofair/details/competitions/digital-infographic',
 ];
-const disableFooter = ['/technofair', '/technofair/details/seminar/data-analyst', '/technofair/details/seminar/artificial-intelligence', '/technofair/details/workshop/uiux', '/technofair/details/workshop/product-management', '/technofair/details/competitions/capture-the-flag',];
+const disableFooter = [
+  '/technofair',
+  '/technofair/details/seminar/data-analyst',
+  '/technofair/details/seminar/artificial-intelligence',
+  '/technofair/details/workshop/uiux',
+  '/technofair/details/workshop/product-management',
+  '/technofair/details/competitions/capture-the-flag',
+  '/technofair/details/competitions/competitive-programming',
+  '/technofair/details/competitions/ui-ux-design',
+  '/technofair/details/competitions/digital-infographic',
+];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ['latin'],
@@ -35,9 +48,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>BEM FIKTI UG 2024</title>
       </head>
       <body className={`${lato.className}`}>
-          {!disableNavbar.includes(pathname) && <Navbar />}
-          {children}
-          {!disableFooter.includes(pathname) && <Footer />}
+        {!disableNavbar.includes(pathname) && <Navbar />}
+        {children}
+        {!disableFooter.includes(pathname) && <Footer />}
       </body>
     </html>
   );

@@ -8,20 +8,19 @@ export default function SponsorPage() {
         <div className="flex justify-center items-center">
           <div className="w-11/12">
             <div className="flex gap-8">
-              <div className="w-1/6 h-52 bg-white rounded-3xl text-center py-10">
-                <p className=" text-sm text-[#262626] font-[Poppins]">SUPPORTED BY</p>
-                <div className="flex justify-center items-center pt-5">
-                  <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={150} height={109} />
-                </div>
-              </div>
-              <div className="w-5/6 h-52 bg-white rounded-3xl text-center py-10">
-                <div className="flex px-9 gap-3">
-                  <p className="text-sm text-[#262626] font-[Poppins]">SPONSORS</p>
-                  <div className="w-11/12 h-0.5 bg-[#b8bcc7] opacity-30 mt-2"></div>
+              <div className="w-full h-52 bg-white rounded-3xl text-center py-10">
+                <div className="flex justify-between items-center px-9 gap-3">
+                  <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
+                  <div className="">
+                    <p className="text-sm text-[#262626] font-[Poppins] text-center">SPONSORS</p>
+                  </div>
+                  <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
                 </div>
                 <div className="flex justify-center items-center gap-5 pt-5">
                   <Image src={'/technofair/dicoding.png'} alt="dicoding" width={271} height={75} />
-                  <Image src={'/technofair/paragon.png'} alt="paragon corp" width={317} height={75} />
+                  <Image src={'/technofair/frisianflag.png'} alt="frisian flag" width={110} height={110} />
+                  <Image src={'/technofair/dapoerdjoeang.png'} alt="dapoer djoeang" width={110} height={110} />
+                  <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={150} height={75} />
                 </div>
               </div>
             </div>

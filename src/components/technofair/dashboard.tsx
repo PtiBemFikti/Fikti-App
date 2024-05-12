@@ -1,4 +1,3 @@
-import VidYoutube from './video';
 import Image from 'next/image';
 import Link from 'next/link';
 import RotatingWords from './RotatingWords';
@@ -20,7 +19,7 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
           <div className="py-5 flex justify-center items-center">
-            <VidYoutube />
+            <Image src={'/technofair/icon-tf.png'} alt="icon" width={635} height={357} />
           </div>
           <div className="mx-3 p-3">
             <h1 className={`text-[#241525] text-4xl font-bold ${bricolageGrotesque.className}`}>TECHNOFAIR 11.0</h1>
@@ -77,7 +76,7 @@ const Dashboard: React.FC = () => {
           <div className="w-[635px] h-[632px] border bg-[#e9e9ed] rounded-3xl border-gray-100">
             <div className="">
               {/* <VidYoutube /> */}
-              <Image src={'/technofair/mentahan-vid.png'} alt="video-tf" width={635} height={219} className=" rounded-t-3xl" />
+              <Image src={'/technofair/icon-tf.png'} alt="icon" width={635} height={357} />
             </div>
             <div className="px-7 my-6">
               <h1 className={`text-[#241525] font-bold text-6xl ${bricolageGrotesque.className}`}>TECHNOFAIR 11.0</h1>
