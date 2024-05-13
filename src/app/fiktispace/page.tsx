@@ -5,6 +5,7 @@ import DashboardPage from "@/components/fiktispace/dashboard";
 import Navbar from "@/components/fiktispace/navbar";
 import CompetitionPage from "@/components/fiktispace/competition";
 import DocumentationPage from "@/components/fiktispace/documentation";
+import TimelinePage from "@/components/fiktispace/timeline";
 export default function FiktispacePage() {
   return (
     <div>
@@ -14,6 +15,7 @@ export default function FiktispacePage() {
         <AboutPage />
         <div className=" md:hidden bg-[url('/fiktispace/bgmobile.png')] bg-cover bg-no-repeat">
           <CompetitionPage />
+          <TimelinePage />
           <DocumentationPage />
         </div>
       </main>
