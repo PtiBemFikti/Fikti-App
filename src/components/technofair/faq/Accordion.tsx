@@ -12,6 +12,7 @@ interface AccordionCardProps {
 const Accordion: React.FC<AccordionCardProps> = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
+  const formatContent = typeof content === 'string' ? content.replace(/\n/g, '<br>') : content;
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -28,7 +29,7 @@ const Accordion: React.FC<AccordionCardProps> = ({ title, content }) => {
   return (
     <div className="bg-[#1e2749] rounded-3xl mb-4 text-[#b9bcc7] font-[Poppins] text-sm font-light">
       <button
-        className="w-full px-4 py-2 text-left text-sm font-[Poppins] text-[#fff4e7] rounded-lg hover:bg-[#1E2749] focus:outline-none focus:ring-2 focus:ring-[#1E2749] focus:ring-offset-2 focus:ring-offset-[#fff4e7] dark:text-[#fff4e7] dark:bg-[#1e2749] dark:hover:bg-[#1E2739] dark:focus:ring-[#1E2749]"
+        className="w-full px-4 py-2 text-left text-sm font-[Poppins] text-[#fff4e7] rounded-lg hover:bg-[#1E2749] focus:outline-none focus:ring-2 focus:ring-[#1E2749] dark:bg-[#1e2749] dark:hover:bg-[#1E2739] dark:focus:ring-[#1E2749]"
         onClick={handleToggle}
       >
         <div className="flex items-center justify-between">
@@ -37,7 +38,7 @@ const Accordion: React.FC<AccordionCardProps> = ({ title, content }) => {
         </div>
       </button>
       <div ref={contentRef} className={`overflow-hidden transition-all duration-300 ease-out ${isOpen ? 'h-auto' : 'h-0'}`}>
-        <div className="p-4">{content}</div>
+        <p dangerouslySetInnerHTML={{ __html: formatContent || '' }}></p>
       </div>
     </div>
   );

@@ -62,7 +62,12 @@ export default function FaqPage() {
                 <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
                 <Accordion title="Apa saja yang akan didapat pemenang dalam kompetisi?" content="Pemenang Kompetisi akan mendapatkan uang tunai, sertifikat, dan hadiah menarik lainnya." />
                 <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-                <Accordion title="Bagaimana Cara Mendaftar Event?" content="Pemenang Kompetisi akan mendapatkan uang tunai, sertifikat, dan hadiah menarik lainnya." />
+                <Accordion
+                  title="Bagaimana Cara Mendaftar Event?"
+                  content={
+                    '1. Masuk atau membuka website dari TechnoFair 11.0.\n 2. Pergi atau scroll ke page events atau schedule.\n 3. Pilih event apa yang ingin Anda ikuti.\n 4. Lalu klik bagian yang bertuliskan "Learn More" jika melalui page events atau arrow yang ada pada page schedule. Maka Anda akan diarahkan ke dalam page detail dari event yang Anda pilih.\n 5. Jika sudah berada pada page detail dari event yang Anda pilih, Anda bisa langsung mendaftar pada button "Daftar Sekarang", tetapi jika Anda masih belum yakin atau ada yang ingin ditanyakan, Anda dapat klik button "Hubungi Kami".'
+                  }
+                />
               </div>
             </div>
           </div>
@@ -90,9 +95,9 @@ export default function FaqPage() {
               <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
               <Accordion title="Bagaimana saya mengetahui saya berhasil melakukan registrasi?" content="Pemenang akan diinformasikan melalui Social Media TechnoFair 11.0 dan media Discord TechnoFair 11.0." />
               <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-              <Accordion title="Bagaimana saya mengetahui pemenang dalam kompetisi?" content="Pemenang Kompetisi akan mendapatkan uang tunai, sertifikat, dan hadiah menarik lainnya." />
+              <Accordion title="Apa saja yang akan didapat pemenang dalam kompetisi?" content="Pemenang Kompetisi akan mendapatkan uang tunai, sertifikat, dan hadiah menarik lainnya." />
               <div className="w-80 h-0.5 bg-gradient-to-r from-[#1E2749] via-[#AF5474] to-[#FFB560]"></div>
-              <Accordion title="Apa saja yang akan didapat pemenang dalam kompetisi?" content="TechnoFair adalah event IT terbesar yang diselenggarakan oleh BEM FIKTI UG." />
+              <Accordion title="Bagaimana Cara Mendaftar Event?" content={'1. Masuk atau membuka website dari TechnoFair 11.0.\n 2. Pergi atau scroll ke page events atau schedule.\n 3. Pilih event apa yang ingin Anda ikuti.\n 4. Lalu klik bagian yang bertuliskan "Learn More" jika melalui page events atau arrow yang ada pada page schedule. Maka Anda akan diarahkan ke dalam page detail dari event yang Anda pilih.\n 5. Jika sudah berada pada page detail dari event yang Anda pilih, Anda bisa langsung mendaftar pada button "Daftar Sekarang", tetapi jika Anda masih belum yakin atau ada yang ingin ditanyakan, Anda dapat klik button "Hubungi Kami".'}/>
             </div>
           </div>
           <div className="py-7 text-center px-4">
