@@ -49,22 +49,18 @@ export default function SponsorPage() {
           <div className="w-96 h-48 bg-white rounded-3xl py-8">
             <div className="flex justify-center items-center gap-3">
               <div className="w-20 h-0.5 bg-[#B9BCC7] opacity-30"></div>
-              <p className="font-[Poppins] text-sm font-light text-[#262626]">SUPPORTED BY</p>
-              <div className="w-20 h-0.5 bg-[#B9BCC7] opacity-30"></div>
-            </div>
-            <div className="flex justify-center items-center">
-              <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={200} height={100} />
-            </div>
-          </div>
-          <div className="w-96 h-40 bg-white rounded-3xl py-8">
-            <div className="flex justify-center items-center gap-3">
-              <div className="w-20 h-0.5 bg-[#B9BCC7] opacity-30"></div>
               <p className="font-[Poppins] text-sm font-light text-[#262626]">SPONSORS</p>
               <div className="w-20 h-0.5 bg-[#B9BCC7] opacity-30"></div>
             </div>
-            <div className="flex justify-center items-center py-5 gap-3">
-              <Image src={'/technofair/dicoding.png'} alt="dicoding" width={108} height={30} />
-              <Image src={'/technofair/paragon.png'} alt="Paragon Corp" width={127} height={30} />
+            <div className="">
+              <div className="flex justify-center items-center gap-3">
+                <Image src={'/technofair/dicoding.png'} alt="dicoding" width={108} height={30} />
+                <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={127} height={30} />
+              </div>
+              <div className="flex justify-center items-center gap-3">
+                <Image src={'/technofair/frisianflag.png'} alt="frisianflag" width={55} height={55} />
+                <Image src={'/technofair/dapoerdjoeang.png'} alt="dapoerdjoeang" width={55} height={55} />
+              </div>
             </div>
           </div>
           <div className="w-96 bg-white rounded-3xl py-8">

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -19,12 +19,7 @@ body {
 }
 
 .main {
-  background: linear-gradient(
-      63deg,
-      rgba(255, 109, 0, 0.2) 0%,
-      rgba(36, 0, 70, 0.3) 98.79%
-    ),
-    linear-gradient(245deg, #340660 0%, #380766 120.85%);
+  background: linear-gradient(63deg, rgba(255, 109, 0, 0.2) 0%, rgba(36, 0, 70, 0.3) 98.79%), linear-gradient(245deg, #340660 0%, #380766 120.85%);
 }
 
 .join {
@@ -33,4 +28,12 @@ body {
 
 .event {
   background: linear-gradient(180deg, rgba(11, 14, 26, 0) 0%, #0b0e1a 9.4%);
+}
+
+.decimal {
+  list-style-type: decimal;
+}
+
+.alpha {
+  list-style-type: lower-alpha;
 }
