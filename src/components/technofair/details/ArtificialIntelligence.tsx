@@ -133,13 +133,13 @@ export default function ArtificialIntelligence() {
                         <div className="flex font-[Poppins] gap-14">
                           <p className="font-semibold text-[#212427] text-base">Tempat </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Auditorium D461, Kampus D, {'\n'} Universitas Gunadarma
+                            <strong>:</strong> Auditorium D462, Kampus D, Universitas Gunadarma 
                           </p>
                         </div>
                       </div>
                     </div>
                     <div className="w-2/4 pt-14">
-                      <Link href={'#'} className="w-80 h-20 bg-[#11111B] rounded-[8px] text-center flex flex-col justify-center items-center">
+                      <Link href={'https://calendar.app.google/G8Z6d3vKLXpWV3uh8'} className="w-80 h-20 bg-[#11111B] rounded-[8px] text-center flex flex-col justify-center items-center">
                         <p className="font-[Poppins] font-extrabold text-2xl text-[#FEFDFC]">SAVE THE DATE!</p>
                         <p className="font-[Poppins] text-sm text-[#FEFDFC] opacity-40">click here to save the date</p>
                       </Link>
@@ -261,7 +261,7 @@ export default function ArtificialIntelligence() {
                     <div className="flex font-[Poppins] gap-12">
                       <p className="font-semibold text-[#262626] text-sm">Tempat </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> Auditorium D461, Kampus D, {'\n'} Universitas Gunadarma
+                        <strong>:</strong> Auditorium D462, Kampus D, Universitas Gunadarma 
                       </p>
                     </div>
                   </div>
@@ -269,7 +269,7 @@ export default function ArtificialIntelligence() {
               </div>
             </div>
             <div className="py-3">
-              <Link href={'#'} className="flex flex-col justify-center items-center text-center w-screen h-20 bg-[#11111b]">
+              <Link href={'https://calendar.app.google/G8Z6d3vKLXpWV3uh8'} className="flex flex-col justify-center items-center text-center w-screen h-20 bg-[#11111b]">
                 <p className="font-[Poppins] text-[#fefdfc] text-2xl font-extrabold">SAVE THE DATE!</p>
                 <p className="text-sm font-[Poppins] text-[#fefdfc] opacity-40">click here to save the date</p>
               </Link>

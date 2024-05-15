@@ -240,7 +240,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col gap-2 py-4">
                         <Image src={'/technofair/pena.png'} alt="pena" width={20} height={10} />
-                        <p className="text-[#b9bcc7] text-sm mt-1 pr-16">UI/UX & Designing</p>
+                        <p className="text-[#b9bcc7] text-sm mt-1 pr-24">UI/UX & Design</p>
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="internet" width={20} height={10} />

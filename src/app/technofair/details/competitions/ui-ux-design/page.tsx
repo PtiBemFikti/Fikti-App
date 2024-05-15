@@ -1,13 +1,13 @@
-import UiUxCompe from '@/components/technofair/details/UIUXCompe';
+import UIUXCompePage from '@/components/technofair/details/UIUXCompe';
 import Navbar from '@/components/technofair/navbar';
 import Footer from '@/components/technofair/footer';
 
-export default function captureTheFlagPage() {
+export default function uiUxCompePage() {
   return (
     <div>
       <Navbar />
       <div className=''>
-        <UiUxCompe />
+        <UIUXCompePage />
       </div>
       <Footer />
     </div>

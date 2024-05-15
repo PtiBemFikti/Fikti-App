@@ -38,7 +38,8 @@ export default function CaptureTheFlagPage() {
               <div className={`text-[#212427] text-xl font-semibold ${poppins.className} py-2`}>Sabtu, 01 Juni 2024</div>
               <div className="">
                 <p className={`text-lg font-normal ${poppins.className} text-[#212427]`}>
-                Kompetisi ini memiliki mekanisme dimana sebuah tim diminta untuk mengambil sebuah file atau string yang sudah disembunyikan sistem, serta mendeteksi lalu mengeksploitasi kelemahan untuk mendapatkan dan mengumpulkan flag sebanyak-banyaknya.
+                  Kompetisi ini memiliki mekanisme dimana sebuah tim diminta untuk mengambil sebuah file atau string yang sudah disembunyikan sistem, serta mendeteksi lalu mengeksploitasi kelemahan untuk mendapatkan dan mengumpulkan flag
+                  sebanyak-banyaknya.
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
@@ -49,14 +50,16 @@ export default function CaptureTheFlagPage() {
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
                 </Link>
                 <div className="mt-9 text-base text-[#212427]">
-                  <p><strong>Rp 80.000</strong>/Tim</p>
+                  <p>
+                    <strong>Rp 80.000</strong>/Tim
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div className="py-24">
             <div className="flex gap-20">
-              <div className=" w-2/6 h-60 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg">
+              <div className=" w-2/6 h-40 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg">
                 <div className="px-5 py-2">
                   <p className={`text-[#31304D] text-sm ${poppins.className} font-semibold`}>Details</p>
                   <div className="px-3">
@@ -67,10 +70,6 @@ export default function CaptureTheFlagPage() {
                     <div className="py-2 flex gap-5">
                       <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
                       <p className={`text-[#212427] text-base ${poppins.className}`}>Ketentuan Karya</p>
-                    </div>
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className={`text-[#212427] text-base ${poppins.className}`}>Tema & Subtema</p>
                     </div>
                     <div className="py-2 flex gap-5">
                       <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
@@ -89,106 +88,47 @@ export default function CaptureTheFlagPage() {
                     <ol className={`decimal text-[#212427] text-base ${poppins.className} py-5 pl-5 text-justify`}>
                       <li>Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 11.0 (www.technofair.id).</li>
                       <li>
-                        Peserta merupakan pelajar mahasiswa/i aktif S1/D4/D3/D2/D1 Universitas Gunadarma, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi
-                        terkait yang diunggah pada Google Form.
+                        Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait
+                        yang diunggah pada Google Form di website TechnoFair 11.0.
                       </li>
                       <li>Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-                      <li>Setiap anggota peserta harus berasal dari kampus Universitas Gunadarma dan diperbolehkan dari jurusan/program studi yang berbeda. </li>
-                      <li>
-                        Peserta bukan merupakan panitia <em>TechnoFair</em> 11.0.
-                      </li>
-                      <li>Setiap peserta diperbolehkan mengikuti lebih dari 1 kompetisi yang berbeda.</li>
-                      <li>
-                        Setiap Peserta harus telah terdaftar pada website <em>TechnoFair</em> 11.0 dan tidak dapat digantikan oleh orang lain.
-                      </li>
-                      <li>
-                        Para peserta wajib mengikuti/follow akun instagram <em>TechnoFair</em> 11.0 (@technofair)
-                      </li>
-                      <li>Peserta yang tidak memenuhi persyaratan pendaftaran sampai batas waktu yang telah ditentukan akan dinyatakan gugur.</li>
-                      <li>
-                        Peserta finalis kompetisi Digital Infographic Competition <em>TechnoFair</em> 11.0 wajib menghadiri acara <em>Closing Ceremony</em> yang diselenggarakan pada <em>Zoom cloud meetings</em>.
-                      </li>
-                      <li>Karya yang dibuat wajib memenuhi ketentuan karya.</li>
-                      <li>
-                        <em>TechnoFair</em> 11.0 berhak untuk mempublikasikan karya peserta yang diikutsertakan pada kompetisi <em>TechnoFair</em> 11.0 dengan tetap mencantumkan nama peserta dan tidak untuk tujuan komersial.
-                      </li>
-                      <li>
-                        Panitia <em>TechnoFair</em> 11.0 berhak untuk mendiskualifikasi peserta yang melanggar peraturan selama berjalannya kompetisi.
-                      </li>
-                      <li>
-                        Panitia <em>TechnoFair</em> 11.0 berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam karya yang dikompetisikan ataupun dalam proses pelaksanaan kompetisi.
-                      </li>
-                      <li>
-                        Panitia tidak bertanggung jawab apabila ada klaim dari pihak lain atas ketidak aslian karya peserta <strong>(Plagiarisme)</strong>.
-                      </li>
-                      <li>
-                        Keputusan juri dan panitia <em>TechnoFair</em> 11.0 bersifat mutlak dan tidak dapat diganggu gugat.
-                      </li>
-                      <li>
-                        Seluruh atau sebagian peraturan dan ketentuan yang terdapat pada <em>rulebook</em> dapat berubah sewaktu-waktu.
-                      </li>
-                      <li>
-                        Segala bentuk perubahan yang terjadi akan diberitahukan pada website <em>TechnoFair</em> 11.0.
-                      </li>
+                      <li>Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+                      <li>Peserta yang tidak memenuhi persyaratan pendaftaran sampai waktu yang ditentukan akan dinyatakan gugur.</li>
+                      <li>Peserta bukan merupakan panitia TechnoFair 11.0 dan tidak memiliki keterkaitan dalam proses pembuatan soal Capture The Flag.</li>
+                      <li>Setiap peserta hanya boleh terdaftar pada 1 tim pada cabang kompetisi yang sama.</li>
+                      <li>Setiap peserta hanya dapat menjadi ketua tim pada maksimal 1 kompetisi.</li>
+                      <li>Peserta yang merupakan pemenang kompetisi TechnoFair 11.0 wajib menghadiri acara Closing Ceremony yang diselenggarakan secara offline di Auditorium J167, Kampus J1, Universitas Gunadarma.</li>
+                      <li>Panitia TechnoFair 11.0 berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam proses pelaksanaan kompetisi.</li>
+                      <li>Panitia berhak mendiskualifikasi tim yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi TechnoFair 11.0</li>
+                      <li>Keputusan juri dan panitia TechnoFair 11.0 bersifat mutlak dan tidak dapat diganggu gugat.</li>
                     </ol>
                   </div>
                 </div>
                 <div className="py-2">
                   <div className="py-2 flex gap-5">
                     <Image src={'/technofair/play.png'} alt="play" width={25} height={25} />
-                    <p className={`text-[#31304D] text-xl font-bold ${poppins.className}`}>Ketentuan Karya</p>
+                    <p className={`text-[#31304D] text-xl font-bold ${poppins.className}`}>Ketentuan Kompetisi</p>
                   </div>
                   <div className="pl-5">
                     <ol className={`decimal text-[#212427] text-base ${poppins.className} py-5 pl-5 text-justify`}>
-                      <li>Hasil karya peserta harus sesuai dengan tema yang sudah disediakan.</li>
-                      <li>Hasil karya yang dibuat adalah karya orisinal yang dibuat oleh peserta dan belum pernah dipublikasikan serta dapat dipertanggungjawabkan keasliannya.</li>
+                      <li>Format kompetisi adalah Jeopardy.</li>
+                      <li>Kompetisi akan dilaksanakan di platform CTFd.</li>
+                      <li>Kompetisi dilaksanakan selama 6 jam.</li>
+                      <li>Jumlah soal adalah 40 sampai 45 soal.</li>
+                      <li>Scoreboard akan dibekukan 1 jam sebelum waktu kompetisi berakhir.</li>
                       <li>
-                        Hak kekayaan intelektual dari karya peserta pada kompetisi <em>TechnoFair</em> 11.0 akan tetap menjadi hak peserta.
+                        Setiap peserta wajib mengumpulkan writeups yang berisi penjelasan mengenai langkah-langkah penyelesaian soal dengan jelas dan dikirim selambat-lambatnya 12 jam setelah kompetisi berakhir dengan format sebagai berikut
+                        (nama soal, langkah penyelesaian, dan flag), soal akan dibuka sampai batas pengumpulan writeups.
                       </li>
-                      <li>Peserta dapat menggunakan aplikasi Adobe Illustrator, Adobe Photoshop, Corel Draw, Inkscape atau aplikasi sejenisnya.</li>
-                      <li>Peserta kompetisi poster dapat mengirimkan maksimal 2 buah karya untuk peserta yang sama, dimana biaya pendaftaran untuk 1 buah karya sebesar Rp20.000,00</li>
-                      <li>
-                        Peserta diwajibkan mengunggah hasil karya ke website <em>TechnoFair</em> 11.0 dengan ukuran A3 (3508 x 4961 <em>pixels</em>) dengan resolusi minimal 300 <em>ppi</em> dan format JPG (.jpg).
-                      </li>
-                      <li>Poster dilarang mengandung unsur SARA, pornografi, kekerasan, maupun provokasi.</li>
-                      <li>Setiap poster wajib disertai dengan narasi singkat dengan maksimal 300 kata dalam format .pdf (Template narasi singkat dapat diunduh di bit.ly/technofair-11)</li>
-                      <li>Setiap poster wajib disertai dengan lembar orisinalitas yang di dalam nya terdapat tanda tangan Peserta dengan format .pdf (Template lembar orisinalitas dapat diunduh di bit.ly/technofair-11)</li>
-                      <li>
-                        Peserta wajib menyertakan sitasi/referensi di bagian bawah poster jika menggunakan kutipan ataupun mengambil gambar dari sumber lain. Apabila peserta menggunakan kutipan maupun gambar milik orang lain dan tidak
-                        disertakan sitasi/referensinya maka karya poster akan dianggap sebagai plagiarisme dan didiskualifikasi.
-                      </li>
-                      <li>
-                        Peserta wajib mencantumkan logo <em>TechnoFair</em> 11.0 (logo dapat diunduh di bit.ly/technofair-11) pada poster.
-                      </li>
+                      <li>Writeups dikumpulkan pada email technofair.kompetisi@gmail.com dengan subject CTF_TECHNOFAIR 11.0_(nama tim).</li>
+                      <li>Peserta dengan poin terbanyak dan writeups yang valid akan keluar sebagai juara.</li>
+                      <li>Peserta dilarang bekerja sama dengan peserta atau tim lain dalam bentuk apapun.</li>
+                      <li>Peserta dilarang merusak soal, mengubah flag, merusak server dan hal-hal lain yang dapat merugikan peserta lain dan mengganggu jalannya kompetisi.</li>
+                      <li>Peserta dilarang menggunakan automated tools yang membebani server, seperti SQL Map, dir buster, nmap, dll. </li>
+                      <li>Jika peserta melanggar ketentuan kompetisi dan ketahuan oleh panitia, maka peserta akan didiskualifikasi.</li>
+                      <li>Scoring akan dilakukan secara dinamis dengan fungsi scoring yang default dari platform CTFd.</li>
+                      <li>Peserta dalam satu kelompok harus berasal dari instansi yang sama.</li>
                     </ol>
-                  </div>
-                </div>
-                <div className="py-2">
-                  <div className="py-2 flex gap-5">
-                    <Image src={'/technofair/play.png'} alt="play" width={25} height={25} />
-                    <p className={`text-[#31304D] text-xl font-bold ${poppins.className}`}>Tema & Subtema</p>
-                  </div>
-                  <div className="py-5 gap-10 pl-5 text-[#212427]">
-                    <div className="flex">
-                      <p className="text-base">Tema:</p>
-                      <p className="text-xl italic text-center">&quot;Concrete Actions in Implementing Technological Developments in the Disruptive Era.&quot;</p>
-                    </div>
-                    {/* <div className="w-2/4 pt-14">
-                      <Link href={'#'} className="w-80 h-20 bg-[#11111B] rounded-[8px] text-center flex flex-col justify-center items-center">
-                      <p className={`${poppins.className} font-extrabold text-2xl text-[#FEFDFC]`}>SAVE THE DATE!</p>
-                      <p className={`${poppins.className} text-sm text-[#FEFDFC] opacity-40`}>click here to save the date</p>
-                      </Link>
-                    </div> */}
-                    <div className="py-5">
-                      <p>
-                        Subtema: <strong>(Peserta hanya memilih satu)</strong>
-                      </p>
-                      <ol className="decimal italic pl-20">
-                        <li>&quot;Impact Caused by Implementing Technological Developments in the Disruptive Era&quot;</li>
-                        <li>&quot;Strategy to implement Technological Developments in the Disruptive Era&quot;</li>
-                        <li>&quot;Challenge of Implementing Technological Developments in the Disruptive Era&quot;</li>
-                      </ol>
-                    </div>
                   </div>
                 </div>
                 <div className="py-2">
@@ -197,74 +137,67 @@ export default function CaptureTheFlagPage() {
                     <p className={`text-[#31304D] text-xl font-bold ${poppins.className}`}>Tahapan Kompetisi</p>
                   </div>
                   <div className="py-5 pl-5 text-[#212427]">
-                    <p className="text-xl font-bold">Babak Penyisihan</p>
-                    <ol className="decimal text-justify pl-6">
-                      <li>Pada babak penyisihan ini, peserta sudah mengumpulkan poster, narasi singkat, dan lembar orisinalitas pada website bit.ly/technofair-11</li>
-                      <li>Format pengiriman berkas penyisihan pada website TechnoFair 11.0 :</li>
-                      <ol className="pl-5 alpha">
-                        <li>Poster dikumpulkan dalam format JPG (.jpg) dengan format nama file: Poster_Nama Peserta_Judul Karya</li>
-                        <li>Narasi singkat dikumpulkan dalam bentuk PDF(.pdf) dengan format nama file: Narasi Singkat Poster_Nama Peserta_Judul Karya.</li>
-                        <li>Lembar orisinalitas dikumpulkan dalam bentuk PDF(.pdf) dengan format nama file: Lembar Orisinalitas_Nama Peserta_Judul Karya.</li>
-                        <li>Poster diunggah pada dashboard peserta di bit.ly/technofair-11</li>
-                      </ol>
-                      <li>
-                        Pada babak ini, dari seluruh peserta yang terdaftar akan dilakukan penilaian oleh juri TechnoFair 11.0 dan akan dilakukan penyisihan sehingga hanya tersisa 15 peserta dengan nilai tertinggi. Dari 15 peserta tersebut
-                        akan terpilih 3 sebagai pemenang juara umum (juara 1, 2, dan 3). Peserta yang sudah menjadi juara umum (juara 1, 2, dan 3) pada babak penyisihan masih mempunyai kesempatan untuk mendapatkan juara kategori poster
-                        favorit pada babak <em>e-voting</em>.
-                      </li>
+                    <p className="text-xl font-bold">Babak Pemanasan</p>
+                    <ol className="decimal pl-6">
+                      <li>Format babak pemanasan adalah Jeopardy.</li>
+                      <li>Babak pemanasan akan dilakukan secara online menggunakan platform CTFd.</li>
+                      <li>Babak pemanasan akan dilaksanakan selama 6 jam</li>
+                      <li>Jumlah soal babak pemanasan adalah sebanyak 5 soal.</li>
+                      <li>Pemanasan akan dilaksanakan pada tanggal 27 Juni 2024 jam 15.00 - 21.00 WIB.</li>
+                      <li>Penilaian ditentukan dari seberapa tinggi peringkat dan total nilai yang didapatkan masing-masing tim.</li>
+                      <li>Bobot nilai bersifat dinamis, dimana akan berkurang seiring dengan banyaknya peserta yang dapat menyelesaikan soal tersebut.</li>
+                      <li>Pemanasan bersifat tidak wajib (boleh mengikuti ataupun tidak).</li>
                     </ol>
                   </div>
                   <div className="py-3 pl-5 text-[#212427]">
-                    <p className="text-xl font-bold">Babak E-Voting</p>
-                    <p className="">
-                      Pada babak e-voting, hasil karya poster 15 Peserta yang lolos pada babak penyisihan akan diunggah di Instagram TechnoFair 11.0. Poster yang memiliki jumlah likes terbanyak akan meraih juara kategori poster favorit.
-                    </p>
+                    <p className="text-xl font-bold">Babak Penyisihan</p>
+                    <ol className="decimal pl-6">
+                      <li>Format babak penyisihan adalah Jeopardy.</li>
+                      <li>Babak penyisihan akan dilakukan secara online menggunakan platform CTFd.</li>
+                      <li>Babak penyisihan akan dilaksanakan selama 6 jam.</li>
+                      <li>Jumlah soal babak penyisihan adalah minimal 30 soal.</li>
+                      <li>Penyisihan akan dilaksanakan pada tanggal 30 Juni 2024 jam 09.00 - 15.00 WIB.</li>
+                      <li>Penilaian ditentukan dari seberapa tinggi peringkat dan total nilai yang didapatkan masing-masing tim.</li>
+                      <li>Bobot nilai bersifat dinamis, dimana akan berkurang seiring dengan banyaknya peserta yang dapat menyelesaikan soal tersebut.</li>
+                      <li>Scoreboard akan dibekukan 1 jam sebelum kompetisi berakhir.</li>
+                      <li>
+                        Setiap tim wajib membuat writeups dengan format nama-tim.pdf yang dikumpulkan adalah nama soal, langkah penyelesaian, dan flag, selambat-lambatnya (12 jam) setelah kompetisi berakhir (soal tetap dibuka setelah
+                        kompetisi berakhir).
+                      </li>
+                      <li>Tim-tim yang berhak mengikuti babak final adalah 10 tim dengan peringkat teratas yang telah mengumpulkan writeup yang valid.</li>
+                      <li>Peserta dilarang bekerjasama dengan peserta/tim lain dalam bentuk apapun.</li>
+                      <li>Peserta dilarang melakukan hal-hal yang dapat merusak soal atau merugikan peserta lain.</li>
+                      <li>Peserta yang terbukti melakukan kecurangan dan pelanggaran akan di diskualifikasi.</li>
+                      <li>Peserta akan menerima email yang berisi username dan password untuk akun tim pada platform yang akan diberitahukan setelah tim selesai melaksanakan konfirmasi pembayaran dan sebelum babak penyisihan dimulai.</li>
+                      <li>Kesalahan dan ketidaksesuaian substansi dalam penjabaran langkah pengerjaan dapat mengakibatkan tidak diperhitungkannya nilai soal dalam penentuan finalis.</li>
+                    </ol>
+                  </div>
+                  <div className="py-3 pl-5 text-[#212427]">
+                    <p className="text-xl font-bold">Babak Final</p>
+                    <ol className="decimal pl-6">
+                      <li>Final CTF TECHNOFAIR 11.0 akan dilaksanakan secara offline di Auditorium J167, Kampus J1, Universitas Gunadarma.</li>
+                      <li>Scoreboard dibekukan 1 jam sebelum kompetisi berakhir (masih bisa mengumpulkan flag / jawaban).</li>
+                      <li>
+                        Setiap tim wajib membuat writeups dengan format nama-tim.pdf yang dikumpulkan adalah nama soal, langkah penyelesaian, dan flag, selambat-lambatnya (1 jam) setelah kompetisi berakhir (soal tetap dibuka setelah
+                        kompetisi berakhir).
+                      </li>
+                      <li>Final dilaksanakan menggunakan sistem Jeopardy.</li>
+                      <li>Final akan dilaksanakan pada tanggal 13 Juli 2024 jam … WIB.</li>
+                      <li>Penilaian ditentukan dari seberapa tinggi peringkat dan total nilai yang didapatkan masing-masing tim.</li>
+                      <li>Bobot nilai bersifat dinamis, dimana akan berkurang seiring dengan banyaknya peserta yang dapat menyelesaikan soal tersebut.</li>
+                      <li>Mekanisme pengerjaan soal adalah peserta melakukan submisi flag pada submission form untuk setiap soal yang berhasil diselesaikan.</li>
+                      <li>Selama kompetisi berlangsung peserta dilarang:</li>
+                      <ol className="alpha pl-10">
+                        <li>Bekerjasama dalam bentuk apapun dengan yang bukan termasuk peserta dalam tim yang bersangkutan.</li>
+                        <li>Menyebabkan suatu kerugian atau gangguan dalam bentuk apapun terhadap peserta lain maupun panitia.</li>
+                        <li>Tim yang diindikasikan melakukan pelanggaran atau kecurangan akan diberikan sanksi (diskualifikasi atau pengurangan poin).</li>
+                      </ol>
+                      <li>Informasi mengenai final Capture The Flag TechnoFair 11.0 akan diinformasikan lebih lanjut.</li>
+                      <li>Kesalahan dan ketidaksesuaian substansi dalam penjabaran langkah pengerjaan dapat mengakibatkan tidak diperhitungkannya nilai soal dalam penentuan finalis.</li>
+                    </ol>
                   </div>
                 </div>
-                <div className="py-2">
-                  <div className="py-2 flex gap-5">
-                    <Image src={'/technofair/play.png'} alt="play" width={25} height={25} />
-                    <p className={`text-[#31304D] text-xl font-bold ${poppins.className}`}>Kriteria Penilaian</p>
-                  </div>
-                  <div className="py-5 pl-5 text-[#212427]">
-                    <div className="">
-                      <p className="font-bold">Babak Penyisihan</p>
-                    </div>
-                    <div className="">
-                      <ol className="pl-7 decimal">
-                        <li>
-                          Keunikan Karya dan Orisinalitas Karya - <strong>15 Poin</strong>
-                        </li>
-                        <li>
-                          Kesesuaian dengan Tema - <strong>15 Poin</strong>
-                        </li>
-                        <li>
-                          Visualisasi Karya (Tata Letak, Gambar, Warna) - <strong>25 Poin</strong>
-                        </li>
-                        <li>
-                          Pesan konten yang disampaikan (Jelas, komunikatif, edukatif, informatif) - <strong>25 Poin</strong>
-                        </li>
-                        <li>
-                          Nilai Gagasan - <strong>20 Poin</strong>
-                        </li>
-                      </ol>
-                      <div className="w-36 border text-center rounded-lg">
-                        <p className="font-bold">Total - 100 Poin</p>
-                      </div>
-                    </div>
-                    <div className="py-5 text-[#212427]">
-                      <p className="font-bold">Babak E-Voting</p>
-                      <ol className="pl-7 decimal">
-                        <li>
-                          Hasil Penilaian Audiens (like, view, share) - <strong>100 Poin</strong>
-                        </li>
-                      </ol>
-                      <div className="w-36 border text-center rounded-lg">
-                        <p className="font-bold">Total - 100 Poin</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 {/* <div className="py-5">
                   <AccordionCard
                     title="Materi Seminar 1 - How Artificial Intelligence (AI) Works in Society 5.0"
@@ -302,8 +235,8 @@ export default function CaptureTheFlagPage() {
           </div>
           <div className="px-5">
             <div className="text-[#262626]">
-              <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Digital Infographic</p>
-              <p className={`${poppins.className} text-base italic font-light`}>Digital Infographic Fusion: Digital Design Challenge</p>
+              <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Capture The Flag</p>
+              <p className={`${poppins.className} text-base italic font-light`}>Capture The Flag Competition of TechnoFair 11.0</p>
             </div>
             <div className="text-[#262626] py-3">
               <p className={`${poppins.className} text-sm font-medium`}>Sabtu, 01 Juni 2024</p>
@@ -326,104 +259,50 @@ export default function CaptureTheFlagPage() {
                 <p className={`text-[#31304D] text-base font-bold ${poppins.className}`}>Ketentuan Umum</p>
               </div>
               <div className={`${poppins.className} text-base text-[#262626] pt-5`}>
-                <ol className={`decimal text-[#212427] text-sm ${poppins.className} py-5 pl-8`}>
-                  <li>Peserta adalah pihak yang telah menyelesaikan alur dan mekanisme pendaftaran pada website resmi TechnoFair 11.0 (bit.ly/technofair-11).</li>
+                <ol className={`decimal text-[#212427] text-sm ${poppins.className} py-5 pl-10`}>
+                  <li>Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 11.0 (www.technofair.id).</li>
                   <li>
-                    Peserta merupakan pelajar mahasiswa/i aktif S1/D4/D3/D2/D1 Universitas Gunadarma, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait
-                    yang diunggah pada Google Form.
+                    Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait
+                    yang diunggah pada Google Form di website TechnoFair 11.0.
                   </li>
                   <li>Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-                  <li>Setiap anggota peserta harus berasal dari kampus Universitas Gunadarma dan diperbolehkan dari jurusan/program studi yang berbeda. </li>
-                  <li>
-                    Peserta bukan merupakan panitia <em>TechnoFair</em> 11.0.
-                  </li>
-                  <li>Setiap peserta diperbolehkan mengikuti lebih dari 1 kompetisi yang berbeda.</li>
-                  <li>
-                    Setiap Peserta harus telah terdaftar pada website <em>TechnoFair</em> 11.0 dan tidak dapat digantikan oleh orang lain.
-                  </li>
-                  <li>
-                    Para peserta wajib mengikuti/follow akun instagram <em>TechnoFair</em> 11.0 (@technofair)
-                  </li>
-                  <li>Peserta yang tidak memenuhi persyaratan pendaftaran sampai batas waktu yang telah ditentukan akan dinyatakan gugur.</li>
-                  <li>
-                    Peserta finalis kompetisi Digital Infographic Competition <em>TechnoFair</em> 11.0 wajib menghadiri acara <em>Closing Ceremony</em> yang diselenggarakan pada <em>Zoom cloud meetings</em>.
-                  </li>
-                  <li>Karya yang dibuat wajib memenuhi ketentuan karya.</li>
-                  <li>
-                    <em>TechnoFair</em> 11.0 berhak untuk mempublikasikan karya peserta yang diikutsertakan pada kompetisi <em>TechnoFair</em> 11.0 dengan tetap mencantumkan nama peserta dan tidak untuk tujuan komersial.
-                  </li>
-                  <li>
-                    Panitia <em>TechnoFair</em> 11.0 berhak untuk mendiskualifikasi peserta yang melanggar peraturan selama berjalannya kompetisi.
-                  </li>
-                  <li>
-                    Panitia <em>TechnoFair</em> 11.0 berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam karya yang dikompetisikan ataupun dalam proses pelaksanaan kompetisi.
-                  </li>
-                  <li>
-                    Panitia tidak bertanggung jawab apabila ada klaim dari pihak lain atas ketidak aslian karya peserta <strong>(Plagiarisme)</strong>.
-                  </li>
-                  <li>
-                    Keputusan juri dan panitia <em>TechnoFair</em> 11.0 bersifat mutlak dan tidak dapat diganggu gugat.
-                  </li>
-                  <li>
-                    Seluruh atau sebagian peraturan dan ketentuan yang terdapat pada <em>rulebook</em> dapat berubah sewaktu-waktu.
-                  </li>
-                  <li>
-                    Segala bentuk perubahan yang terjadi akan diberitahukan pada website <em>TechnoFair</em> 11.0.
-                  </li>
+                  <li>Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+                  <li>Peserta yang tidak memenuhi persyaratan pendaftaran sampai waktu yang ditentukan akan dinyatakan gugur.</li>
+                  <li>Peserta bukan merupakan panitia TechnoFair 11.0 dan tidak memiliki keterkaitan dalam proses pembuatan soal Capture The Flag.</li>
+                  <li>Setiap peserta hanya boleh terdaftar pada 1 tim pada cabang kompetisi yang sama.</li>
+                  <li>Setiap peserta hanya dapat menjadi ketua tim pada maksimal 1 kompetisi.</li>
+                  <li>Peserta yang merupakan pemenang kompetisi TechnoFair 11.0 wajib menghadiri acara Closing Ceremony yang diselenggarakan secara offline di Auditorium J167, Kampus J1, Universitas Gunadarma.</li>
+                  <li>Panitia TechnoFair 11.0 berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam proses pelaksanaan kompetisi.</li>
+                  <li>Panitia berhak mendiskualifikasi tim yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi TechnoFair 11.0</li>
+                  <li>Keputusan juri dan panitia TechnoFair 11.0 bersifat mutlak dan tidak dapat diganggu gugat.</li>
                 </ol>
               </div>
             </div>
             <div className="py-10 px-5">
               <div className="flex gap-2">
                 <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                <p className={`text-[#31304D] text-base font-bold ${poppins.className}`}>Ketentuan Karya</p>
+                <p className={`text-[#31304D] text-base font-bold ${poppins.className}`}>Ketentuan Kompetisi</p>
               </div>
-              <div className="pl-5">
-                <ol className={`decimal text-[#212427] text-base ${poppins.className} py-5 pl-3`}>
-                  <li>Hasil karya peserta harus sesuai dengan tema yang sudah disediakan.</li>
-                  <li>Hasil karya yang dibuat adalah karya orisinal yang dibuat oleh peserta dan belum pernah dipublikasikan serta dapat dipertanggungjawabkan keasliannya.</li>
+              <div className="">
+                <ol className={`decimal text-[#212427] text-sm ${poppins.className} py-5 pl-10`}>
+                  <li>Format kompetisi adalah Jeopardy.</li>
+                  <li>Kompetisi akan dilaksanakan di platform CTFd.</li>
+                  <li>Kompetisi dilaksanakan selama 6 jam.</li>
+                  <li>Jumlah soal adalah 40 sampai 45 soal.</li>
+                  <li>Scoreboard akan dibekukan 1 jam sebelum waktu kompetisi berakhir.</li>
                   <li>
-                    Hak kekayaan intelektual dari karya peserta pada kompetisi <em>TechnoFair</em> 11.0 akan tetap menjadi hak peserta.
+                    Setiap peserta wajib mengumpulkan writeups yang berisi penjelasan mengenai langkah-langkah penyelesaian soal dengan jelas dan dikirim selambat-lambatnya 12 jam setelah kompetisi berakhir dengan format sebagai berikut
+                    (nama soal, langkah penyelesaian, dan flag), soal akan dibuka sampai batas pengumpulan writeups.
                   </li>
-                  <li>Peserta dapat menggunakan aplikasi Adobe Illustrator, Adobe Photoshop, Corel Draw, Inkscape atau aplikasi sejenisnya.</li>
-                  <li>Peserta kompetisi poster dapat mengirimkan maksimal 2 buah karya untuk peserta yang sama, dimana biaya pendaftaran untuk 1 buah karya sebesar Rp20.000,00</li>
-                  <li>
-                    Peserta diwajibkan mengunggah hasil karya ke website <em>TechnoFair</em> 11.0 dengan ukuran A3 (3508 x 4961 <em>pixels</em>) dengan resolusi minimal 300 <em>ppi</em> dan format JPG (.jpg).
-                  </li>
-                  <li>Poster dilarang mengandung unsur SARA, pornografi, kekerasan, maupun provokasi.</li>
-                  <li>Setiap poster wajib disertai dengan narasi singkat dengan maksimal 300 kata dalam format .pdf (Template narasi singkat dapat diunduh di bit.ly/technofair-11)</li>
-                  <li>Setiap poster wajib disertai dengan lembar orisinalitas yang di dalam nya terdapat tanda tangan Peserta dengan format .pdf (Template lembar orisinalitas dapat diunduh di bit.ly/technofair-11)</li>
-                  <li>
-                    Peserta wajib menyertakan sitasi/referensi di bagian bawah poster jika menggunakan kutipan ataupun mengambil gambar dari sumber lain. Apabila peserta menggunakan kutipan maupun gambar milik orang lain dan tidak
-                    disertakan sitasi/referensinya maka karya poster akan dianggap sebagai plagiarisme dan didiskualifikasi.
-                  </li>
-                  <li>
-                    Peserta wajib mencantumkan logo <em>TechnoFair</em> 11.0 (logo dapat diunduh di bit.ly/technofair-11) pada poster.
-                  </li>
+                  <li>Writeups dikumpulkan pada email technofair.kompetisi@gmail.com dengan subject CTF_TECHNOFAIR 11.0_(nama tim).</li>
+                  <li>Peserta dengan poin terbanyak dan writeups yang valid akan keluar sebagai juara.</li>
+                  <li>Peserta dilarang bekerja sama dengan peserta atau tim lain dalam bentuk apapun.</li>
+                  <li>Peserta dilarang merusak soal, mengubah flag, merusak server dan hal-hal lain yang dapat merugikan peserta lain dan mengganggu jalannya kompetisi.</li>
+                  <li>Peserta dilarang menggunakan automated tools yang membebani server, seperti SQL Map, dir buster, nmap, dll. </li>
+                  <li>Jika peserta melanggar ketentuan kompetisi dan ketahuan oleh panitia, maka peserta akan didiskualifikasi.</li>
+                  <li>Scoring akan dilakukan secara dinamis dengan fungsi scoring yang default dari platform CTFd.</li>
+                  <li>Peserta dalam satu kelompok harus berasal dari instansi yang sama.</li>
                 </ol>
-              </div>
-            </div>
-            <div className={`py-10 px-5 ${poppins.className}`}>
-              <div className="flex gap-2">
-                <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                <p className={`text-[#31304D] text-base font-bold ${poppins.className}`}>Tema & Subtema</p>
-              </div>
-              <div className="flex py-5">
-                <div className="text-[#212427]">
-                  <div className="">
-                    <p className="pl-7">Tema:</p>
-                    <p className="px-7 text-center font-bold italic">&quot;Concrete Actions in Implementing Technological Developments in the Disruptive Era&quot;</p>
-                  </div>
-                  <div className="pl-7">
-                    <p>Subtema:</p>
-                    <p className="font-bold">(Peserta hanya memilih satu)</p>
-                    <ol className="decimal italic pl-6">
-                      <li>&quot;Impact Caused by Implementing Technological Developments in the Disruptive Era&quot;</li>
-                      <li>&quot;Strategy to implement Technological Developments in the Disruptive Era&quot;</li>
-                      <li>&quot;Challenge of Implementing Technological Developments in the Disruptive Era&quot;</li>
-                    </ol>
-                  </div>
-                </div>
               </div>
             </div>
             <div className={`py-10 px-5 ${poppins.className}`}>
@@ -431,73 +310,65 @@ export default function CaptureTheFlagPage() {
                 <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
                 <p className={`text-[#31304D] font-bold ${poppins.className}`}>Tahapan Kompetisi</p>
               </div>
-              <div className="py-5 pl-7 text-[#212427]">
-                <p className="font-bold">Babak Penyisihan</p>
-                <ol className="decimal text-justify pl-6 text-sm">
-                  <li>Pada babak penyisihan ini, peserta sudah mengumpulkan poster, narasi singkat, dan lembar orisinalitas pada website bit.ly/technofair-11</li>
-                  <li>Format pengiriman berkas penyisihan pada website TechnoFair 11.0 :</li>
-                  <ol className="pl-5 alpha">
-                    <li>Poster dikumpulkan dalam format JPG (.jpg) dengan format nama file: Poster_Nama Peserta_Judul Karya</li>
-                    <li>Narasi singkat dikumpulkan dalam bentuk PDF(.pdf) dengan format nama file: Narasi Singkat Poster_Nama Peserta_Judul Karya.</li>
-                    <li>Lembar orisinalitas dikumpulkan dalam bentuk PDF(.pdf) dengan format nama file: Lembar Orisinalitas_Nama Peserta_Judul Karya.</li>
-                    <li>Poster diunggah pada dashboard peserta di bit.ly/technofair-11</li>
-                  </ol>
-                  <li>
-                    Pada babak ini, dari seluruh peserta yang terdaftar akan dilakukan penilaian oleh juri TechnoFair 11.0 dan akan dilakukan penyisihan sehingga hanya tersisa 15 peserta dengan nilai tertinggi. Dari 15 peserta tersebut akan
-                    terpilih 3 sebagai pemenang juara umum (juara 1, 2, dan 3). Peserta yang sudah menjadi juara umum (juara 1, 2, dan 3) pada babak penyisihan masih mempunyai kesempatan untuk mendapatkan juara kategori poster favorit pada
-                    babak <em>e-voting</em>.
-                  </li>
+              <div className="py-5 pl-5 text-[#212427]">
+                <p className=" font-bold">Babak Pemanasan</p>
+                <ol className="decimal pl-10 text-sm">
+                  <li>Format babak pemanasan adalah Jeopardy.</li>
+                  <li>Babak pemanasan akan dilakukan secara online menggunakan platform CTFd.</li>
+                  <li>Babak pemanasan akan dilaksanakan selama 6 jam</li>
+                  <li>Jumlah soal babak pemanasan adalah sebanyak 5 soal.</li>
+                  <li>Pemanasan akan dilaksanakan pada tanggal 27 Juni 2024 jam 15.00 - 21.00 WIB.</li>
+                  <li>Penilaian ditentukan dari seberapa tinggi peringkat dan total nilai yang didapatkan masing-masing tim.</li>
+                  <li>Bobot nilai bersifat dinamis, dimana akan berkurang seiring dengan banyaknya peserta yang dapat menyelesaikan soal tersebut.</li>
+                  <li>Pemanasan bersifat tidak wajib (boleh mengikuti ataupun tidak).</li>
                 </ol>
               </div>
-              <div className="py-3 pl-5 text-[#212427]">
-                <p className="font-bold">Babak E-Voting</p>
-                <p className="text-sm">
-                  Pada babak e-voting, hasil karya poster 15 Peserta yang lolos pada babak penyisihan akan diunggah di Instagram TechnoFair 11.0. Poster yang memiliki jumlah likes terbanyak akan meraih juara kategori poster favorit.
-                </p>
-              </div>
-            </div>
-            <div className="px-5 py-10">
-              <div className="py-2 flex gap-5">
-                <Image src={'/technofair/play.png'} alt="play" width={25} height={25} />
-                <p className={`text-[#31304D] font-bold ${poppins.className}`}>Kriteria Penilaian</p>
+              <div className="py-5 pl-5 text-[#212427]">
+                <p className=" font-bold">Babak Penyisihan</p>
+                <ol className="decimal pl-10 text-sm">
+                  <li>Format babak penyisihan adalah Jeopardy.</li>
+                  <li>Babak penyisihan akan dilakukan secara online menggunakan platform CTFd.</li>
+                  <li>Babak penyisihan akan dilaksanakan selama 6 jam.</li>
+                  <li>Jumlah soal babak penyisihan adalah minimal 30 soal.</li>
+                  <li>Penyisihan akan dilaksanakan pada tanggal 30 Juni 2024 jam 09.00 - 15.00 WIB.</li>
+                  <li>Penilaian ditentukan dari seberapa tinggi peringkat dan total nilai yang didapatkan masing-masing tim.</li>
+                  <li>Bobot nilai bersifat dinamis, dimana akan berkurang seiring dengan banyaknya peserta yang dapat menyelesaikan soal tersebut.</li>
+                  <li>Scoreboard akan dibekukan 1 jam sebelum kompetisi berakhir.</li>
+                  <li>
+                    Setiap tim wajib membuat writeups dengan format nama-tim.pdf yang dikumpulkan adalah nama soal, langkah penyelesaian, dan flag, selambat-lambatnya (12 jam) setelah kompetisi berakhir (soal tetap dibuka setelah kompetisi
+                    berakhir).
+                  </li>
+                  <li>Tim-tim yang berhak mengikuti babak final adalah 10 tim dengan peringkat teratas yang telah mengumpulkan writeup yang valid.</li>
+                  <li>Peserta dilarang bekerjasama dengan peserta/tim lain dalam bentuk apapun.</li>
+                  <li>Peserta dilarang melakukan hal-hal yang dapat merusak soal atau merugikan peserta lain.</li>
+                  <li>Peserta yang terbukti melakukan kecurangan dan pelanggaran akan di diskualifikasi.</li>
+                  <li>Peserta akan menerima email yang berisi username dan password untuk akun tim pada platform yang akan diberitahukan setelah tim selesai melaksanakan konfirmasi pembayaran dan sebelum babak penyisihan dimulai.</li>
+                  <li>Kesalahan dan ketidaksesuaian substansi dalam penjabaran langkah pengerjaan dapat mengakibatkan tidak diperhitungkannya nilai soal dalam penentuan finalis.</li>
+                </ol>
               </div>
               <div className="py-5 pl-5 text-[#212427]">
-                <div className="">
-                  <p className="font-bold">Babak Penyisihan</p>
-                </div>
-                <div className="">
-                  <ol className="pl-7 decimal text-sm">
-                    <li>
-                      Keunikan Karya dan Orisinalitas Karya - <strong>15 Poin</strong>
-                    </li>
-                    <li>
-                      Kesesuaian dengan Tema - <strong>15 Poin</strong>
-                    </li>
-                    <li>
-                      Visualisasi Karya (Tata Letak, Gambar, Warna) - <strong>25 Poin</strong>
-                    </li>
-                    <li>
-                      Pesan konten yang disampaikan (Jelas, komunikatif, edukatif, informatif) - <strong>25 Poin</strong>
-                    </li>
-                    <li>
-                      Nilai Gagasan - <strong>20 Poin</strong>
-                    </li>
+                <p className=" font-bold">Babak Final</p>
+                <ol className="decimal pl-10 text-sm">
+                  <li>Final CTF TECHNOFAIR 11.0 akan dilaksanakan secara offline di Auditorium J167, Kampus J1, Universitas Gunadarma.</li>
+                  <li>Scoreboard dibekukan 1 jam sebelum kompetisi berakhir (masih bisa mengumpulkan flag / jawaban).</li>
+                  <li>
+                    Setiap tim wajib membuat writeups dengan format nama-tim.pdf yang dikumpulkan adalah nama soal, langkah penyelesaian, dan flag, selambat-lambatnya (1 jam) setelah kompetisi berakhir (soal tetap dibuka setelah kompetisi
+                    berakhir).
+                  </li>
+                  <li>Final dilaksanakan menggunakan sistem Jeopardy.</li>
+                  <li>Final akan dilaksanakan pada tanggal 13 Juli 2024 jam … WIB.</li>
+                  <li>Penilaian ditentukan dari seberapa tinggi peringkat dan total nilai yang didapatkan masing-masing tim.</li>
+                  <li>Bobot nilai bersifat dinamis, dimana akan berkurang seiring dengan banyaknya peserta yang dapat menyelesaikan soal tersebut.</li>
+                  <li>Mekanisme pengerjaan soal adalah peserta melakukan submisi flag pada submission form untuk setiap soal yang berhasil diselesaikan.</li>
+                  <li>Selama kompetisi berlangsung peserta dilarang:</li>
+                  <ol className="alpha pl-10">
+                    <li>Bekerjasama dalam bentuk apapun dengan yang bukan termasuk peserta dalam tim yang bersangkutan.</li>
+                    <li>Menyebabkan suatu kerugian atau gangguan dalam bentuk apapun terhadap peserta lain maupun panitia.</li>
+                    <li>Tim yang diindikasikan melakukan pelanggaran atau kecurangan akan diberikan sanksi (diskualifikasi atau pengurangan poin).</li>
                   </ol>
-                  <div className="w-36 border text-center rounded-lg">
-                    <p className="font-bold">Total - 100 Poin</p>
-                  </div>
-                </div>
-                <div className="py-5 text-[#212427]">
-                  <p className="font-bold">Babak E-Voting</p>
-                  <ol className="pl-7 decimal text-sm">
-                    <li>
-                      Hasil Penilaian Audiens (like, view, share) - <strong>100 Poin</strong>
-                    </li>
-                  </ol>
-                  <div className="w-36 border text-center rounded-lg">
-                    <p className="font-bold">Total - 100 Poin</p>
-                  </div>
-                </div>
+                  <li>Informasi mengenai final Capture The Flag TechnoFair 11.0 akan diinformasikan lebih lanjut.</li>
+                  <li>Kesalahan dan ketidaksesuaian substansi dalam penjabaran langkah pengerjaan dapat mengakibatkan tidak diperhitungkannya nilai soal dalam penentuan finalis.</li>
+                </ol>
               </div>
             </div>
           </div>
