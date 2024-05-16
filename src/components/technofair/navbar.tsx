@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
+import { poppins } from '@/styles/font';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,11 +36,11 @@ const Navbar: React.FC = () => {
   return (
     <motion.nav initial={{ opacity: 1 }} animate={{ opacity: 1 }} transition={{ type: 'keyframes', duration: 0.5, delay: 0.5 }} className="bg-[#ffffff] p-4 top-0 sticky z-50">
       <div className="container mx-auto flex justify-between items-center -mb-32">
-        <Link href="/technofair" className="flex items-center ml-5 mb-32">
-          <Image src="/technofair/logo-tf.png" alt="Logo" width={50} height={50} className="mr-20" />
+        <Link href="/technofair" className="flex justify-center items-center ml-5 mb-32">
+          <Image src="/technofair/logo-tf.png" alt="Logo" width={50} height={50} className="" />
         </Link>
-        <div className="text-[#241525] md:hidden block mb-32">
-          <h1 className="font-Lato font-bold text-2xl">TechnoFair 11.0</h1>
+        <div className={`text-[#241525] md:hidden block mb-32`}>
+          <h1 className={`font-Lato font-bold text-xl text-center mx-7 ${poppins.className}`}>TechnoFair 11.0</h1>
         </div>
         <div className="md:absolute md:right-0 md:pr-20">
           <div className="hidden md:flex md:gap-10 space-x-4 md:mb-32">
