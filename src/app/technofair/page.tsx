@@ -1,5 +1,3 @@
-'use client';
-
 import Navbar from '@/components/technofair/navbar';
 import Dashboard from '@/components/technofair/dashboard';
 import AboutPage from '@/components/technofair/about';

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
+import { bricolageGrotesque } from '@/styles/font';
 
 export default function ProductManagement() {
   return (
@@ -12,7 +13,7 @@ export default function ProductManagement() {
             <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
             <p className="text-xl font-medium text-[#545350]">Back</p>
           </Link>
-          <div className="py-3 flex gap-16 font-[Bricolage-Grotesque]">
+          <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
             <div className="w-1/2">
               <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
             </div>
@@ -121,13 +122,13 @@ export default function ProductManagement() {
                         <div className="flex font-[Poppins] gap-14">
                           <p className="font-semibold text-[#212427] text-base">Tempat </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Laboratorium Kampus F4, Universitas Gunadarma
+                            <strong>:</strong> Laboratorium D448, Kampus D, Universitas Gunadarma
                           </p>
                         </div>
                       </div>
                     </div>
                     <div className="w-2/4 pt-14">
-                      <Link href={'#'} className="w-80 h-20 bg-[#11111B] rounded-[8px] text-center flex flex-col justify-center items-center">
+                      <Link href={'https://calendar.app.google/pvXNoTDn29LMSBDD7'} className="w-80 h-20 bg-[#11111B] rounded-[8px] text-center flex flex-col justify-center items-center">
                         <p className="font-[Poppins] font-extrabold text-2xl text-[#FEFDFC]">SAVE THE DATE!</p>
                         <p className="font-[Poppins] text-sm text-[#FEFDFC] opacity-40">click here to save the date</p>
                       </Link>
@@ -159,7 +160,7 @@ export default function ProductManagement() {
           </div>
           <div className="px-5">
             <div className="text-[#262626]">
-              <p className="font-[Bricolage-Grotesque] text-4xl font-extrabold">Product Management</p>
+              <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Product Management</p>
               <p className="font-[Poppins] text-base italic font-light">&quot;Building a Strong Foundation : Mastering Product Management Skills&quot;</p>
             </div>
             <div className="text-[#262626] py-3">
@@ -236,7 +237,7 @@ export default function ProductManagement() {
                     <div className="flex font-[Poppins] gap-12">
                       <p className="font-semibold text-[#262626] text-sm">Tempat </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> Laboratorium Kampus F4, Universitas Gunadarma
+                        <strong>:</strong> Laboratorium D448, Kampus D, Universitas Gunadarma
                       </p>
                     </div>
                   </div>
@@ -244,7 +245,7 @@ export default function ProductManagement() {
               </div>
             </div>
             <div className="py-3">
-              <Link href={'#'} className="flex flex-col justify-center items-center text-center w-screen h-20 bg-[#11111b]">
+              <Link href={'https://calendar.app.google/pvXNoTDn29LMSBDD7'} className="flex flex-col justify-center items-center text-center w-screen h-20 bg-[#11111b]">
                 <p className="font-[Poppins] text-[#fefdfc] text-2xl font-extrabold">SAVE THE DATE!</p>
                 <p className="text-sm font-[Poppins] text-[#fefdfc] opacity-40">click here to save the date</p>
               </Link>

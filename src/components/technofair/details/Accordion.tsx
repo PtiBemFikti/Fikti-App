@@ -30,7 +30,7 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
   return (
     <div className="bg-[#F7F9FA] rounded-3xl mb-4 text-[#212427] font-[Poppins] text-sm md:text-base font-light">
       <button
-        className="bg-[#F7F9FA] w-full px-4 py-2 text-left text-xs md:text-base font-medium italic font-[Poppins] text-[#212427] rounded-lg hover:bg-[#FEFDFC] focus:outline-none focus:ring-2 focus:ring-[#1E2749] focus:ring-offset-2 focus:ring-offset-gray-100 dark:text-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-[#1E27490]"
+        className="bg-[#F7F9FA] w-full px-4 py-2 text-left text-xs md:text-base font-medium italic font-[Poppins] text-[#212427] rounded-lg hover:bg-[#FEFDFC] focus:outline-none focus:ring-2 focus:ring-[#F7F9FA] focus:ring-offset-2 focus:ring-offset-[#212427] dark:text-[#212427] dark:bg-[#F7F9FA] dark:hover:bg-[#F7F9FA] dark:focus:ring-[#F7F9FA]"
         onClick={handleToggle}
       >
         <div className="grid grid-flow-col items-center justify-between">

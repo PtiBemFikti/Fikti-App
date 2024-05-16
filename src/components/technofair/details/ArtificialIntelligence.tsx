@@ -2,6 +2,7 @@ import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { bricolageGrotesque } from '@/styles/font';
 
 export default function ArtificialIntelligence() {
   // const router = useRouter;
@@ -22,15 +23,15 @@ export default function ArtificialIntelligence() {
             <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
             <p className="text-xl font-medium text-[#545350]">Back</p>
           </Link>
-          <div className="py-3 flex gap-16 font-[Bricolage-Grotesque]">
+          <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
             <div className="w-1/2">
               <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
             </div>
             <div className="w-1/2">
               <div className="">
                 <div className="flex gap-2">
-                  <p className="text-5xl font-bold text-[#241525]">Artificial Intelligence</p>
-                  <p className="font-bold text-[#B9BCC7] text-xl mt-5">Seminar</p>
+                  <p className="text-4xl font-bold text-[#241525]">Artificial Intelligence</p>
+                  <p className="font-bold text-[#B9BCC7] text-xl mt-3">Seminar</p>
                 </div>
                 <div className="text-[#212427] text-lg italic font-light font-[Poppins]">Exploring Innovations and Applications of Artificial Intelligence</div>
               </div>
@@ -132,13 +133,13 @@ export default function ArtificialIntelligence() {
                         <div className="flex font-[Poppins] gap-14">
                           <p className="font-semibold text-[#212427] text-base">Tempat </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Auditorium D461, Kampus D, {'\n'} Universitas Gunadarma
+                            <strong>:</strong> Auditorium D462, Kampus D, Universitas Gunadarma 
                           </p>
                         </div>
                       </div>
                     </div>
                     <div className="w-2/4 pt-14">
-                      <Link href={'#'} className="w-80 h-20 bg-[#11111B] rounded-[8px] text-center flex flex-col justify-center items-center">
+                      <Link href={'https://calendar.app.google/G8Z6d3vKLXpWV3uh8'} className="w-80 h-20 bg-[#11111B] rounded-[8px] text-center flex flex-col justify-center items-center">
                         <p className="font-[Poppins] font-extrabold text-2xl text-[#FEFDFC]">SAVE THE DATE!</p>
                         <p className="font-[Poppins] text-sm text-[#FEFDFC] opacity-40">click here to save the date</p>
                       </Link>
@@ -182,7 +183,7 @@ export default function ArtificialIntelligence() {
           </div>
           <div className="px-5">
             <div className="text-[#262626]">
-              <p className="font-[Bricolage-Grotesque] text-4xl font-extrabold">Artificial Intelligence</p>
+              <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Artificial Intelligence</p>
               <p className="font-[Poppins] text-base italic font-light">&quot;Exploring Innovations and Applications of Artificial Intelligence&quot;</p>
             </div>
             <div className="text-[#262626] py-3">
@@ -260,7 +261,7 @@ export default function ArtificialIntelligence() {
                     <div className="flex font-[Poppins] gap-12">
                       <p className="font-semibold text-[#262626] text-sm">Tempat </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> Auditorium D461, Kampus D, {'\n'} Universitas Gunadarma
+                        <strong>:</strong> Auditorium D462, Kampus D, Universitas Gunadarma 
                       </p>
                     </div>
                   </div>
@@ -268,7 +269,7 @@ export default function ArtificialIntelligence() {
               </div>
             </div>
             <div className="py-3">
-              <Link href={'#'} className="flex flex-col justify-center items-center text-center w-screen h-20 bg-[#11111b]">
+              <Link href={'https://calendar.app.google/G8Z6d3vKLXpWV3uh8'} className="flex flex-col justify-center items-center text-center w-screen h-20 bg-[#11111b]">
                 <p className="font-[Poppins] text-[#fefdfc] text-2xl font-extrabold">SAVE THE DATE!</p>
                 <p className="text-sm font-[Poppins] text-[#fefdfc] opacity-40">click here to save the date</p>
               </Link>
