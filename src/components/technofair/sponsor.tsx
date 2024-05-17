@@ -62,6 +62,7 @@ export default function SponsorPage() {
                     <Image src={'/technofair/bemft-unj.png'} alt="bemft-unj" width={146} height={100} />
                     <Image src={'/technofair/bemfisip-upn.png'} alt="bem fisip upn" width={100} height={100} />
                     <Image src={'/technofair/bemfti-untar.png'} alt="bem fti untar" width={100} height={100} />
+                    <Image src={'/technofair/academic-insight.jpg'} alt="academin insight" width={100} height={100} />
                     <Image src={'/technofair/bemfik-upn.png'} alt="bemfik upn" width={100} height={100} />
                     <Image src={'/technofair/himsi-fasilkom.png'} alt="himsi fasilkom" width={103} height={100} />
                     <Image src={'/technofair/bemfasilkom-unsika.png'} alt="bem fasilkom unsika" width={100} height={100} />
@@ -119,7 +120,7 @@ export default function SponsorPage() {
                 <Image src={'/technofair/snap.png'} alt="snap" width={75} height={75} />
               </div>
               <div className="flex gap-2">
-                <Image src={'/technofair/unila.png'} alt="unila" width={75} height={75} />
+                <Image src={'/technofaira/academic-insight.jpg'} alt="academic insight" width={75} height={75} />
                 <Image src={'/technofair/bemgeo-unj.png'} alt="bem geo unj" width={103} height={75} />
                 <Image src={'/technofair/radioug.png'} alt="radioug" width={75} height={75} />
               </div>
@@ -134,6 +135,7 @@ export default function SponsorPage() {
                 <Image src={'/technofair/bemfik-upn.png'} alt="bemfik upn" width={75} height={75} />
               </div>
               <div className="flex gap-2">
+                <Image src={'/technofair/unila.png'} alt="unila" width={75} height={75} />
                 <Image src={'/technofair/himsi-fasilkom.png'} alt="himsi fasilkom" width={75} height={75} />
                 <Image src={'/technofair/bemfasilkom-unsika.png'} alt="bem fasilkom unsika" width={75} height={75} />
               </div>
