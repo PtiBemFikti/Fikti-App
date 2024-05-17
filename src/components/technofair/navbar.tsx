@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
           <Image src="/technofair/logo-tf.png" alt="Logo" width={50} height={50} className="" />
         </Link>
         <div className={`text-[#241525] md:hidden block mb-32`}>
-          <h1 className={`font-Lato font-bold text-xl text-center mx-7 ${poppins.className}`}>TechnoFair 11.0</h1>
+          <h1 className={`font-Lato font-bold text-xl text-center mx-9 ${poppins.className}`}>TechnoFair 11.0</h1>
         </div>
         <div className="md:absolute md:right-0 md:pr-20">
           <div className="hidden md:flex md:gap-10 space-x-4 md:mb-32">

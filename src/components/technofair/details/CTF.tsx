@@ -43,7 +43,7 @@ export default function CaptureTheFlagPage() {
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link href={'https://www.evernote.com/shard/s525/sh/5ac285fa-4b12-3c3a-070c-5e7e15014d43/ibUTPYheiqmlECLau3UCV_5Xps5clgIgmjYwTemgtIKKARhVANiane8gpA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
                 <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
@@ -258,7 +258,7 @@ export default function CaptureTheFlagPage() {
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link href={'https://www.evernote.com/shard/s525/sh/5ac285fa-4b12-3c3a-070c-5e7e15014d43/ibUTPYheiqmlECLau3UCV_5Xps5clgIgmjYwTemgtIKKARhVANiane8gpA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
               <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">

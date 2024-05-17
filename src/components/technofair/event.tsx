@@ -364,8 +364,8 @@ export default function EventPage() {
                     <div className="w-24 h-7 bg-[#F9F871] rounded-[11px]">
                       <p className="text-center text-[#241525] text-sm p-1">Workshop</p>
                     </div>
-                    <div className="py-3">
-                      <p className="text-lg italic font-bold">Product Marketing</p>
+                    <div className="py-1">
+                      <p className="text-lg italic font-bold">Product Management</p>
                       <p className="text-sm text-[#B9BCC7] mt-3">Building a Strong Foundation: Mastering Product Management Skills.</p>
                     </div>
                     <div className="grid grid-flow-row gap-y-2">
@@ -378,7 +378,7 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 12.40 WIB</p>
                       </div>
                     </div>
-                    <Link href={'/technofair/details/workshop/product-marketing'} className="py-4 flex justify-end items-end gap-4">
+                    <Link href={'/technofair/details/workshop/product-management'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
                     </Link>
@@ -400,7 +400,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
-                        <p className="text-sm text-[#B9BCC7] mr-12">13.30 - 17.10 WIB</p>
+                        <p className="text-sm text-[#B9BCC7] mr-16">13.30 - 17.10 WIB</p>
                       </div>
                     </div>
                     <Link href={'/technofair/details/workshop/uiux'} className="py-4 flex justify-end items-end gap-4">

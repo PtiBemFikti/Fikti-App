@@ -2,7 +2,7 @@ import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { bricolageGrotesque } from '@/styles/font';
+import { bricolageGrotesque, poppins } from '@/styles/font';
 
 export default function ArtificialIntelligence() {
   // const router = useRouter;
@@ -18,16 +18,16 @@ export default function ArtificialIntelligence() {
     <div className="bg-gradient-to-t from-[#F7F9FA] to-[#F3E5EA]">
       {/* Tampilan Dekstop start */}
       <div className="md:block hidden">
-        <div className="px-40 py-16">
-          <Link href={'/technofair'} className="flex gap-4">
-            <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
-            <p className="text-xl font-medium text-[#545350]">Back</p>
-          </Link>
+        <div className={`px-40 py-16 ${poppins.className}`}>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
-            <div className="w-1/2">
+            <div className="w-1/2 py-4">
               <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
             </div>
             <div className="w-1/2">
+              <Link href={'/technofair'} className="flex gap-4">
+                <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
+                <p className="text-xl font-medium text-[#545350]">Back</p>
+              </Link>
               <div className="">
                 <div className="flex gap-2">
                   <p className="text-4xl font-bold text-[#241525]">Artificial Intelligence</p>
@@ -42,7 +42,7 @@ export default function ArtificialIntelligence() {
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link href={'https://www.evernote.com/shard/s525/sh/d71e43d4-adc9-206c-2ba1-2f6cb92dc855/wCD5okfunAps2fwHskhHoo39pEQ_1TGuWOPuXgP4p2v9r44vR8D9ohVmeA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                   <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
                 </Link>
                 <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
@@ -133,7 +133,7 @@ export default function ArtificialIntelligence() {
                         <div className="flex font-[Poppins] gap-14">
                           <p className="font-semibold text-[#212427] text-base">Tempat </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Auditorium D462, Kampus D, Universitas Gunadarma 
+                            <strong>:</strong> Auditorium D462, Kampus D, Universitas Gunadarma
                           </p>
                         </div>
                       </div>
@@ -173,15 +173,15 @@ export default function ArtificialIntelligence() {
       <div className="md:hidden">
         <div className="py-4">
           <div className="px-5">
-            <Link href={'/technofair'} className="flex gap-2">
-              <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
-              <p className="text-base font-medium text-[#262626]">Back</p>
-            </Link>
             <div className="py-3">
               <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
             </div>
           </div>
           <div className="px-5">
+            <Link href={'/technofair'} className="flex gap-2">
+              <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
+              <p className="text-base font-medium text-[#262626]">Back</p>
+            </Link>
             <div className="text-[#262626]">
               <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Artificial Intelligence</p>
               <p className="font-[Poppins] text-base italic font-light">&quot;Exploring Innovations and Applications of Artificial Intelligence&quot;</p>
@@ -192,7 +192,7 @@ export default function ArtificialIntelligence() {
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link href={'https://www.evernote.com/shard/s525/sh/d71e43d4-adc9-206c-2ba1-2f6cb92dc855/wCD5okfunAps2fwHskhHoo39pEQ_1TGuWOPuXgP4p2v9r44vR8D9ohVmeA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                 <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
               </Link>
               <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
@@ -261,7 +261,7 @@ export default function ArtificialIntelligence() {
                     <div className="flex font-[Poppins] gap-12">
                       <p className="font-semibold text-[#262626] text-sm">Tempat </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> Auditorium D462, Kampus D, Universitas Gunadarma 
+                        <strong>:</strong> Auditorium D462, Kampus D, Universitas Gunadarma
                       </p>
                     </div>
                   </div>
