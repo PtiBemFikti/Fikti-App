@@ -32,7 +32,7 @@ export default function ProductManagement() {
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'https://www.evernote.com/shard/s525/sh/c037adc3-7fcb-41cd-badf-4e191d036237/QGNCD45kRRaMEkJ8yfBZq41XW92Hznuwox6UwQj7fNanh1MWce7jw6Hj3A'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                   <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
                 </Link>
                 <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
@@ -174,7 +174,7 @@ export default function ProductManagement() {
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'https://www.evernote.com/shard/s525/sh/c037adc3-7fcb-41cd-badf-4e191d036237/QGNCD45kRRaMEkJ8yfBZq41XW92Hznuwox6UwQj7fNanh1MWce7jw6Hj3A'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                 <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
               </Link>
               <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
