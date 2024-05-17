@@ -364,7 +364,7 @@ export default function EventPage() {
                     <div className="w-24 h-7 bg-[#F9F871] rounded-[11px]">
                       <p className="text-center text-[#241525] text-sm p-1">Workshop</p>
                     </div>
-                    <div className="py-1">
+                    <div className="py-0.5">
                       <p className="text-lg italic font-bold">Product Management</p>
                       <p className="text-sm text-[#B9BCC7] mt-3">Building a Strong Foundation: Mastering Product Management Skills.</p>
                     </div>
@@ -389,7 +389,7 @@ export default function EventPage() {
                     <div className="w-24 h-7 bg-[#F9F871] rounded-[11px]">
                       <p className="text-center text-[#241525] text-sm p-1">Workshop</p>
                     </div>
-                    <div className="py-3">
+                    <div className="py-4">
                       <p className="text-lg italic font-bold">UI/UX Design</p>
                       <p className="text-sm text-[#B9BCC7] mt-3">From Concept to Creation: Mastering UI/UX Design Practices.</p>
                     </div>
