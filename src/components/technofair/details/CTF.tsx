@@ -258,6 +258,11 @@ export default function CaptureTheFlagPage() {
             <div className="text-[#262626] py-3">
               <p className={`${poppins.className} text-sm font-medium`}>Sabtu, 01 Juni 2024</p>
             </div>
+            <div className="text-sm text-[#212427]">
+              <p>
+                <strong>Rp 80.000</strong>/Tim
+              </p>
+            </div>
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">

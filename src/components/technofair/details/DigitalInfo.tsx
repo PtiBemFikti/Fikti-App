@@ -53,7 +53,7 @@ export default function DigitalInfoPage() {
                 </Link>
                 <div className="mt-9 text-base text-[#212427]">
                   <p>
-                    <strong>Rp 20.000</strong>/Tim
+                    <strong>Rp 20.000</strong>/Peserta
                   </p>
                 </div>
               </div>
@@ -336,6 +336,11 @@ export default function DigitalInfoPage() {
             </div>
             <div className="text-[#262626] py-3">
               <p className={`${poppins.className} text-sm font-medium`}>Sabtu, 01 Juni 2024</p>
+            </div>
+            <div className="text-sm text-[#212427]">
+              <p>
+                <strong>Rp 20.000</strong>/Peserta
+              </p>
             </div>
           </div>
           <div className="px-5">

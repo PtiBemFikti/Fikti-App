@@ -1,6 +1,9 @@
+'use client';
+
 import ScheduleTabs from './ScheduleTabs';
 import Image from 'next/image';
 import Link from 'next/link';
+import { toast } from 'sonner';
 
 export default function SchedulePage() {
   return (
@@ -63,11 +66,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs md:w-80 mt-1">&quot;Visualizing Insights: A Beginner&apos;s Guide to Data Presentation&quot;</p>
               </div>
-              <Link href={'/technofair/details/seminar/data-analyst'}>
+              <div className="">
+                <button onClick={() => toast.error('Acara tidak tersedia')}>
+                  <div className="flex justify-center items-center">
+                    <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
+                  </div>
+                </button>
+              </div>
+              {/* <Link href={'/technofair/details/seminar/data-analyst'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link>
+              </Link> */}
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
@@ -86,11 +96,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs md:w-96">&quot;Exploring Innovations and Applications of Artificial Intelligence&quot;</p>
               </div>
-              <Link href={'/technofair/details/seminar/artificial-intelligence'}>
+              <div className="">
+                <button onClick={() => toast.error('Acara tidak tersedia')}>
+                  <div className="flex justify-center items-center">
+                    <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
+                  </div>
+                </button>
+              </div>
+              {/* <Link href={'/technofair/details/seminar/data-analyst'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link>
+              </Link> */}
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
@@ -118,11 +135,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs mt-1">&quot;Building a Strong Foundation: Mastering Product Management Skills&quot;</p>
               </div>
-              <Link href={'/technofair/details/workshop/product-management'}>
+              <div className="">
+                <button onClick={() => toast.error('Acara tidak tersedia')}>
+                  <div className="flex justify-center items-center">
+                    <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
+                  </div>
+                </button>
+              </div>
+              {/* <Link href={'/technofair/details/seminar/data-analyst'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link>
+              </Link> */}
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
@@ -141,11 +165,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs md:w-96 mt-1">&quot;From Concept to Creation: Mastering UI/UX Design Practices&quot;</p>
               </div>
-              <Link href={'/technofair/details/workshop/uiux'}>
+              <div className="">
+                <button onClick={() => toast.error('Acara tidak tersedia')}>
+                  <div className="flex justify-center items-center">
+                    <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
+                  </div>
+                </button>
+              </div>
+              {/* <Link href={'/technofair/details/seminar/data-analyst'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link>
+              </Link> */}
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
