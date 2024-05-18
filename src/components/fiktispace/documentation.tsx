@@ -2,10 +2,10 @@ import Image from "next/image";
 import { Guardians } from "@/styles/font";
 export default function DocumentationPage() {
   return (
-    <div className="mt-8 overflow-x-hidden">
+    <div className="mt-8">
       <div className="my-8 px-6">
         <div className="flex justify-center">
-          <div className="items-center justify-center">
+          <div>
             <h1 className={`text-[#E8E8F0] text-lg ${Guardians.className}`}>
               Documentation
             </h1>

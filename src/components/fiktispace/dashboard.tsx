@@ -3,7 +3,7 @@ import { Guardians, Urbanist } from "@/styles/font";
 import { Link } from "@nextui-org/react";
 export default function DashboardPage() {
   return (
-    <div className="mt-6 overflow-x-hidden">
+    <div className="mt-6">
       <div className="flex mx-6 md:ml-12 h-screen w-full justify-start items-start gap-4">
         <div className="flex-col justify-start items-start gap-3 flex">
           <Link href="/" className="mb-4">

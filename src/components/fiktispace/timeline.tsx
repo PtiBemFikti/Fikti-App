@@ -12,8 +12,8 @@ export default function TimelinePage() {
             Timeline
             <div className="mt-4">
               <Image
-                className="ml-14"
-                src={"/fiktispace/timeline.png"}
+                className="ml-8"
+                src={"/fiktispace/Frame 113 1.png"}
                 alt="timeline"
                 width={504}
                 height={500}

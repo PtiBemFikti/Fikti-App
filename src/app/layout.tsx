@@ -12,6 +12,7 @@ const disableNavbar = [
   "/filing/DataAnalyst",
   "/fiktispace",
 ];
+const disableFooter = ["/fiktispace"];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -35,7 +36,7 @@ export default function RootLayout({
       <body className={`${lato.className}`}>
         {!disableNavbar.includes(pathname) && <Navbar />}
         {children}
-        <Footer />
+        {!disableFooter.includes(pathname) && <Footer />}
       </body>
     </html>
   );
