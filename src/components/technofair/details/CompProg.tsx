@@ -19,16 +19,16 @@ export default function CaptureTheFlagPage() {
       {/* Tampilan Dekstop start */}
       <div className="md:block hidden">
         <div className={`px-40 py-16 ${poppins.className}`}>
-          <Link href={'/technofair'} className="flex gap-4">
-            <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
-            <p className="text-xl font-medium text-[#545350]">Back</p>
-          </Link>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
-            <div className="w-1/2">
-              <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
+            <div className="w-1/2 py-7">
+              <Image src={'/technofair/competitive-programming.png'} alt="competitive programming" width={461} height={346} className="rounded-2xl" />
             </div>
             <div className="w-1/2 py-8">
               <div className="">
+                <Link href={'/technofair'} className="flex gap-4">
+                  <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
+                  <p className="text-xl font-medium text-[#545350]">Back</p>
+                </Link>
                 <div className="flex gap-2">
                   <p className="text-3xl font-bold text-[#241525]">Competitive Programming</p>
                   <p className="font-bold text-[#B9BCC7] text-xl mt-3">Competitions</p>
@@ -43,10 +43,13 @@ export default function CaptureTheFlagPage() {
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link
+                  href={'https://www.evernote.com/shard/s525/sh/2559197a-e8b4-4ae9-5bf7-a9005fdae78c/cE881yNWVPePZUAwztmMr1xqOX1DRXR-pkAl_pvPpLDr_OshzFYZQvpiuQ'}
+                  className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+                >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
-                <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <Link href={'https://docs.google.com/forms/d/1xp_ZFuEkN7Eiu5MbpfXezdrChtPoUra5kzoVxqiypp8/edit?ts=66460c90'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
                 </Link>
                 <div className="mt-9 text-base text-[#212427]">
@@ -86,20 +89,33 @@ export default function CaptureTheFlagPage() {
                   </div>
                   <div className="pl-5">
                     <ol className={`decimal text-[#212427] text-base ${poppins.className} py-5 pl-5`}>
-                      <li>Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TechnoFair 11.0 (bit.ly/technofair-11).</li>
+                      <li>
+                        Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada <em>website</em> resmi <em>TechnoFair</em> 11.0 (bit.ly/technofair-11).
+                      </li>
                       <li>Peserta merupakan mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa yang masih aktif atau surat keterangan resmi dari perguruan tinggi terkait yang diunggah pada dashboard tim.</li>
                       <li>Peserta melengkapi berkas yang diminta dengan benar dan legal secara hukum sesuai dengan timeline pendaftaran yang diberikan.</li>
-                      <li>Peserta yang tidak melengkapi berkas pendaftaran sampai waktu yang ditentukan dinyatakan gugur.</li>
-                      <li>Satu tim terdiri dari maksimal 3 anggota dimana setiap anggota tim harus berasal dari perguruan tinggi yang sama dan diperbolehkan dari jurusan/program studi yang berbeda.</li>
-                      <li>Peserta bukan merupakan panitia kompetisi Competitive Programming TechnoFair 11.0.</li>
+                      <li>
+                        Peserta yang tidak melengkapi berkas pendaftaran sampai waktu yang ditentukan dinyatakan <strong>gugur</strong>.
+                      </li>
+                      <li>
+                        Satu tim terdiri dari <strong>maksimal</strong> 3 anggota dimana setiap anggota tim harus berasal dari perguruan tinggi yang sama dan diperbolehkan dari jurusan/program studi yang berbeda.
+                      </li>
+                      <li>
+                        Peserta bukan merupakan panitia kompetisi <em>Competitive Programming TechnoFair</em> 11.0.
+                      </li>
                       <li>Setiap peserta hanya boleh terdaftar tepat 1 tim pada cabang kompetisi yang sama.</li>
                       <li>Setiap peserta hanya dapat menjadi ketua tim pada maksimal 1 kompetisi.</li>
                       <li>Peserta tidak boleh diwakilkan ataupun mewakilkan orang lain yang bukan dirinya sendiri.</li>
-                      <li>Peserta pemenang kompetisi Competitive Programming TechnoFair 11.0 wajib menghadiri acara Closing Ceremony yang diselenggarakan secara offline di Auditorium J167, Kampus J1, Universitas Gunadarma.</li>
+                      <li>
+                        Peserta pemenang kompetisi <em>Competitive Programming TechnoFair</em> 11.0 wajib menghadiri acara <em>Closing Ceremony</em> yang diselenggarakan secara <em>offline</em> di Auditorium J167, Kampus J1, Universitas
+                        Gunadarma.
+                      </li>
                       <li>Karya yang digunakan peserta dalam lomba harus merupakan karya orisinil dari peserta.</li>
                       <li>Hak Kekayaan Intelektual dari karya peserta pada kompetisi ini akan tetap menjadi hak peserta.</li>
                       <li>Peserta dilarang bekerja sama dengan peserta dari tim lain dalam bentuk apapun serta melakukan hal-hal yang dapat mengganggu berjalannya lomba atau merugikan peserta lain.</li>
-                      <li>Panitia berhak mendiskualifikasi peserta yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi Competitive Programming TechnoFair 11.0.</li>
+                      <li>
+                        Panitia berhak mendiskualifikasi peserta yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi <em>Competitive Programming TechnoFair</em> 11.0.
+                      </li>
                       <li>Panitia berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam karya yang dilombakan ataupun dalam proses pelaksanaan perlombaan.</li>
                       <li>Keputusan juri dan panitia bersifat mutlak dan tidak dapat diganggu gugat.</li>
                       <li>Panitia dapat mengubah seluruh atau sebagian konten dalam rulebook sewaktu-waktu.</li>
@@ -169,7 +185,7 @@ export default function CaptureTheFlagPage() {
                         Peserta diperbolehkan membawa kode-kode yang sudah pernah dibuat sendiri ataupun tulisan lainnya dengan syarat tulisan tersebut dibuat sebelum lomba dalam bentuk fisik kertas A4 dengan jumlah halaman maksimal 25
                         halaman.
                       </li>
-                      <li>Selama final, peserta dilarang berkomunikasi dengan peserta atau oran glain dan peserta dilarang mengganggu peserta lain dalam ruangan lomba.</li>
+                      <li>Selama final, peserta dilarang berkomunikasi dengan peserta atau orang lain dan peserta dilarang mengganggu peserta lain dalam ruangan lomba.</li>
                       <li>Selama final, peserta dilarang mengakses internet melalui komputer ataupun perangkat lainnya.</li>
                       <li>Peserta yang terbukti melakukan kecurangan dan/atau pelanggaran akan didiskualifikasi.</li>
                     </ol>
@@ -203,15 +219,15 @@ export default function CaptureTheFlagPage() {
       <div className="md:hidden">
         <div className="py-4">
           <div className="px-5">
+            <div className="py-3">
+              <Image src={'/technofair/competitive-programming.png'} alt="competitive programming" width={461} height={346} className="rounded-xl" />
+            </div>
+          </div>
+          <div className="px-5">
             <Link href={'/technofair'} className="flex gap-2">
               <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
               <p className="text-base font-medium text-[#262626]">Back</p>
             </Link>
-            <div className="py-3">
-              <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
-            </div>
-          </div>
-          <div className="px-5">
             <div className="text-[#262626]">
               <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Competitive Programming</p>
               <p className={`${poppins.className} text-base italic font-light`}>Competitive Programming of TechnoFair 11.0</p>
@@ -219,13 +235,21 @@ export default function CaptureTheFlagPage() {
             <div className="text-[#262626] py-3">
               <p className={`${poppins.className} text-sm font-medium`}>Sabtu, 01 Juni 2024</p>
             </div>
+            <div className="text-sm text-[#212427]">
+              <p>
+                <strong>Rp 80.000</strong>/Tim
+              </p>
+            </div>
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link
+                href={'https://www.evernote.com/shard/s525/sh/2559197a-e8b4-4ae9-5bf7-a9005fdae78c/cE881yNWVPePZUAwztmMr1xqOX1DRXR-pkAl_pvPpLDr_OshzFYZQvpiuQ'}
+                className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+              >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link href={'https://docs.google.com/forms/d/1xp_ZFuEkN7Eiu5MbpfXezdrChtPoUra5kzoVxqiypp8/edit?ts=66460c90'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
               </Link>
             </div>
@@ -238,20 +262,33 @@ export default function CaptureTheFlagPage() {
               </div>
               <div className={`${poppins.className} text-base text-[#262626] pt-5`}>
                 <ol className={`decimal text-[#212427] text-sm ${poppins.className} py-5 pl-10`}>
-                  <li>Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TechnoFair 11.0 (bit.ly/technofair-11).</li>
+                  <li>
+                    Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada <em>website</em> resmi <em>TechnoFair</em> 11.0 (bit.ly/technofair-11).
+                  </li>
                   <li>Peserta merupakan mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa yang masih aktif atau surat keterangan resmi dari perguruan tinggi terkait yang diunggah pada dashboard tim.</li>
                   <li>Peserta melengkapi berkas yang diminta dengan benar dan legal secara hukum sesuai dengan timeline pendaftaran yang diberikan.</li>
-                  <li>Peserta yang tidak melengkapi berkas pendaftaran sampai waktu yang ditentukan dinyatakan gugur.</li>
-                  <li>Satu tim terdiri dari maksimal 3 anggota dimana setiap anggota tim harus berasal dari perguruan tinggi yang sama dan diperbolehkan dari jurusan/program studi yang berbeda.</li>
-                  <li>Peserta bukan merupakan panitia kompetisi Competitive Programming TechnoFair 11.0.</li>
+                  <li>
+                    Peserta yang tidak melengkapi berkas pendaftaran sampai waktu yang ditentukan dinyatakan <strong>gugur</strong>.
+                  </li>
+                  <li>
+                    Satu tim terdiri dari <strong>maksimal</strong> 3 anggota dimana setiap anggota tim harus berasal dari perguruan tinggi yang sama dan diperbolehkan dari jurusan/program studi yang berbeda.
+                  </li>
+                  <li>
+                    Peserta bukan merupakan panitia kompetisi <em>Competitive Programming TechnoFair</em> 11.0.
+                  </li>
                   <li>Setiap peserta hanya boleh terdaftar tepat 1 tim pada cabang kompetisi yang sama.</li>
                   <li>Setiap peserta hanya dapat menjadi ketua tim pada maksimal 1 kompetisi.</li>
                   <li>Peserta tidak boleh diwakilkan ataupun mewakilkan orang lain yang bukan dirinya sendiri.</li>
-                  <li>Peserta pemenang kompetisi Competitive Programming TechnoFair 11.0 wajib menghadiri acara Closing Ceremony yang diselenggarakan secara offline di Auditorium J167, Kampus J1, Universitas Gunadarma.</li>
+                  <li>
+                    Peserta pemenang kompetisi <em>Competitive Programming TechnoFair</em> 11.0 wajib menghadiri acara <em>Closing Ceremony</em> yang diselenggarakan secara <em>offline</em> di Auditorium J167, Kampus J1, Universitas
+                    Gunadarma.
+                  </li>
                   <li>Karya yang digunakan peserta dalam lomba harus merupakan karya orisinil dari peserta.</li>
                   <li>Hak Kekayaan Intelektual dari karya peserta pada kompetisi ini akan tetap menjadi hak peserta.</li>
                   <li>Peserta dilarang bekerja sama dengan peserta dari tim lain dalam bentuk apapun serta melakukan hal-hal yang dapat mengganggu berjalannya lomba atau merugikan peserta lain.</li>
-                  <li>Panitia berhak mendiskualifikasi peserta yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi Competitive Programming TechnoFair 11.0.</li>
+                  <li>
+                    Panitia berhak mendiskualifikasi peserta yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi <em>Competitive Programming TechnoFair</em> 11.0.
+                  </li>
                   <li>Panitia berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam karya yang dilombakan ataupun dalam proses pelaksanaan perlombaan.</li>
                   <li>Keputusan juri dan panitia bersifat mutlak dan tidak dapat diganggu gugat.</li>
                   <li>Panitia dapat mengubah seluruh atau sebagian konten dalam rulebook sewaktu-waktu.</li>
@@ -265,21 +302,33 @@ export default function CaptureTheFlagPage() {
               </div>
               <div className="">
                 <ol className={`decimal text-[#212427] text-sm ${poppins.className} py-5 pl-10`}>
-                  <li>Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TechnoFair 11.0 (bit.ly/technofair-11).</li>
+                  <li>
+                    Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada <em>website</em> resmi <em>TechnoFair</em> 11.0 (bit.ly/technofair-11).
+                  </li>
                   <li>
                     Peserta merupakan mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form
-                    pada website TechnoFair 11.0.
+                    pada <em>website TechnoFair</em> 11.0.
                   </li>
                   <li>Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
                   <li>Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
                   <li>Peserta yang tidak memenuhi persyaratan pendaftaran sampai waktu yang ditentukan akan dinyatakan gugur.</li>
-                  <li>Peserta bukan merupakan panitia TechnoFair 11.0 dan tidak memiliki keterkaitan dalam proses pembuatan soal Competitive Programming.</li>
+                  <li>
+                    Peserta bukan merupakan panitia <em>TechnoFair</em> 11.0 dan tidak memiliki keterkaitan dalam proses pembuatan soal <em>Competitive Programming</em>.
+                  </li>
                   <li>Setiap peserta hanya boleh terdaftar pada 1 tim pada cabang kompetisi yang sama.</li>
                   <li>Setiap peserta hanya dapat menjadi ketua tim pada maksimal 1 kompetisi.</li>
-                  <li>Peserta yang merupakan pemenang kompetisi TechnoFair 11.0 wajib menghadiri acara Closing Ceremony yang diselenggarakan secara offline di Auditorium J167, Kampus J1, Universitas Gunadarma.</li>
-                  <li>Panitia TechnoFair 11.0 berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam proses pelaksanaan kompetisi.</li>
-                  <li>Panitia berhak mendiskualifikasi tim yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi TechnoFair 11.0</li>
-                  <li>Keputusan juri dan panitia TechnoFair 11.0 bersifat mutlak dan tidak dapat diganggu gugat.</li>
+                  <li>
+                    Peserta yang merupakan pemenang kompetisi <em>TechnoFair</em> 11.0 wajib menghadiri acara <em>Closing Ceremony</em> yang diselenggarakan secara <em>offline</em> di Auditorium J167, Kampus J1, Universitas Gunadarma.
+                  </li>
+                  <li>
+                    Panitia <em>TechnoFair</em> 11.0 berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam proses pelaksanaan kompetisi.
+                  </li>
+                  <li>
+                    Panitia berhak mendiskualifikasi tim yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi <em>TechnoFair</em> 11.0
+                  </li>
+                  <li>
+                    Keputusan juri dan panitia <em>TechnoFair</em> 11.0 bersifat mutlak dan tidak dapat diganggu gugat.
+                  </li>
                 </ol>
               </div>
             </div>
@@ -320,7 +369,7 @@ export default function CaptureTheFlagPage() {
                   <li>
                     Peserta diperbolehkan membawa kode-kode yang sudah pernah dibuat sendiri ataupun tulisan lainnya dengan syarat tulisan tersebut dibuat sebelum lomba dalam bentuk fisik kertas A4 dengan jumlah halaman maksimal 25 halaman.
                   </li>
-                  <li>Selama final, peserta dilarang berkomunikasi dengan peserta atau oran glain dan peserta dilarang mengganggu peserta lain dalam ruangan lomba.</li>
+                  <li>Selama final, peserta dilarang berkomunikasi dengan peserta atau orang lain dan peserta dilarang mengganggu peserta lain dalam ruangan lomba.</li>
                   <li>Selama final, peserta dilarang mengakses internet melalui komputer ataupun perangkat lainnya.</li>
                   <li>Peserta yang terbukti melakukan kecurangan dan/atau pelanggaran akan didiskualifikasi.</li>
                 </ol>

@@ -19,16 +19,16 @@ export default function CaptureTheFlagPage() {
       {/* Tampilan Dekstop start */}
       <div className="md:block hidden">
         <div className={`px-40 py-16 ${poppins.className}`}>
-          <Link href={'/technofair'} className="flex gap-4">
-            <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
-            <p className="text-xl font-medium text-[#545350]">Back</p>
-          </Link>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
-            <div className="w-1/2">
-              <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
+            <div className="w-1/2 py-7">
+              <Image src={'/technofair/capture-the-flag.png'} alt="Capture The Flag" width={461} height={346} className="rounded-2xl" />
             </div>
             <div className="w-1/2 py-8">
               <div className="">
+                <Link href={'/technofair'} className="flex gap-4">
+                  <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
+                  <p className="text-xl font-medium text-[#545350]">Back</p>
+                </Link>
                 <div className="flex gap-2">
                   <p className="text-4xl font-bold text-[#241525]">Capture The Flag</p>
                   <p className="font-bold text-[#B9BCC7] text-xl mt-3">Competitions</p>
@@ -43,10 +43,13 @@ export default function CaptureTheFlagPage() {
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link
+                  href={'https://www.evernote.com/shard/s525/sh/5ac285fa-4b12-3c3a-070c-5e7e15014d43/ibUTPYheiqmlECLau3UCV_5Xps5clgIgmjYwTemgtIKKARhVANiane8gpA'}
+                  className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+                >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
-                <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <Link href={'https://docs.google.com/forms/d/10Xj6u0p0ykHcUwsDVXA__O1ZiuBWjwgVU2wXfJRm0ao/edit'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
                 </Link>
                 <div className="mt-9 text-base text-[#212427]">
@@ -86,7 +89,7 @@ export default function CaptureTheFlagPage() {
                   </div>
                   <div className="pl-5">
                     <ol className={`decimal text-[#212427] text-base ${poppins.className} py-5 pl-5 text-justify`}>
-                      <li>Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 11.0 (www.technofair.id).</li>
+                      <li>Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 11.0 (https://bit.ly/technofair-11).</li>
                       <li>
                         Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait
                         yang diunggah pada Google Form di website TechnoFair 11.0.
@@ -99,7 +102,7 @@ export default function CaptureTheFlagPage() {
                       <li>Setiap peserta hanya dapat menjadi ketua tim pada maksimal 1 kompetisi.</li>
                       <li>Peserta yang merupakan pemenang kompetisi TechnoFair 11.0 wajib menghadiri acara Closing Ceremony yang diselenggarakan secara offline di Auditorium J167, Kampus J1, Universitas Gunadarma.</li>
                       <li>Panitia TechnoFair 11.0 berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam proses pelaksanaan kompetisi.</li>
-                      <li>Panitia berhak mendiskualifikasi tim yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi TechnoFair 11.0</li>
+                      <li>Panitia berhak mendiskualifikasi tim yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi TechnoFair 11.0.</li>
                       <li>Keputusan juri dan panitia TechnoFair 11.0 bersifat mutlak dan tidak dapat diganggu gugat.</li>
                     </ol>
                   </div>
@@ -111,22 +114,36 @@ export default function CaptureTheFlagPage() {
                   </div>
                   <div className="pl-5">
                     <ol className={`decimal text-[#212427] text-base ${poppins.className} py-5 pl-5 text-justify`}>
-                      <li>Format kompetisi adalah Jeopardy.</li>
-                      <li>Kompetisi akan dilaksanakan di platform CTFd.</li>
+                      <li>
+                        Format kompetisi adalah <em>Jeopardy</em>.
+                      </li>
+                      <li>
+                        Kompetisi akan dilaksanakan di <em>platform</em> CTFd.
+                      </li>
                       <li>Kompetisi dilaksanakan selama 6 jam.</li>
                       <li>Jumlah soal adalah 40 sampai 45 soal.</li>
-                      <li>Scoreboard akan dibekukan 1 jam sebelum waktu kompetisi berakhir.</li>
                       <li>
-                        Setiap peserta wajib mengumpulkan writeups yang berisi penjelasan mengenai langkah-langkah penyelesaian soal dengan jelas dan dikirim selambat-lambatnya 12 jam setelah kompetisi berakhir dengan format sebagai berikut
-                        (nama soal, langkah penyelesaian, dan flag), soal akan dibuka sampai batas pengumpulan writeups.
+                        <em>Scoreboard</em> akan dibekukan 1 jam sebelum waktu kompetisi berakhir.
                       </li>
-                      <li>Writeups dikumpulkan pada email technofair.kompetisi@gmail.com dengan subject CTF_TECHNOFAIR 11.0_(nama tim).</li>
-                      <li>Peserta dengan poin terbanyak dan writeups yang valid akan keluar sebagai juara.</li>
+                      <li>
+                        Setiap peserta wajib mengumpulkan <em>writeups</em> yang berisi penjelasan mengenai langkah-langkah penyelesaian soal dengan jelas dan dikirim selambat-lambatnya 12 jam setelah kompetisi berakhir dengan format
+                        sebagai berikut (nama soal, langkah penyelesaian, dan flag), soal akan dibuka sampai batas pengumpulan <em>writeups</em>.
+                      </li>
+                      <li>
+                        <em>Writeups</em> dikumpulkan pada email <strong>technofair.kompetisi@gmail.com</strong> dengan subject <strong>CTF_TECHNOFAIR 11.0_(nama tim)</strong>.
+                      </li>
+                      <li>
+                        Peserta dengan poin terbanyak dan <em>writeups</em> yang valid akan keluar sebagai juara.
+                      </li>
                       <li>Peserta dilarang bekerja sama dengan peserta atau tim lain dalam bentuk apapun.</li>
                       <li>Peserta dilarang merusak soal, mengubah flag, merusak server dan hal-hal lain yang dapat merugikan peserta lain dan mengganggu jalannya kompetisi.</li>
-                      <li>Peserta dilarang menggunakan automated tools yang membebani server, seperti SQL Map, dir buster, nmap, dll. </li>
+                      <li>
+                        Peserta dilarang menggunakan <em>automated tools</em> yang membebani server, seperti <em>SQL Map, dir buster, nmap,</em> dll.{' '}
+                      </li>
                       <li>Jika peserta melanggar ketentuan kompetisi dan ketahuan oleh panitia, maka peserta akan didiskualifikasi.</li>
-                      <li>Scoring akan dilakukan secara dinamis dengan fungsi scoring yang default dari platform CTFd.</li>
+                      <li>
+                        <em>Scoring</em> akan dilakukan secara dinamis dengan fungsi <em>scoring</em> yang <em>default</em> dari <em>platform</em> CTFd.
+                      </li>
                       <li>Peserta dalam satu kelompok harus berasal dari instansi yang sama.</li>
                     </ol>
                   </div>
@@ -225,15 +242,15 @@ export default function CaptureTheFlagPage() {
       <div className="md:hidden">
         <div className="py-4">
           <div className="px-5">
+            <div className="py-3">
+              <Image src={'/technofair/capture-the-flag.png'} alt="Capture The Flag" width={461} height={346} className="rounded-xl" />
+            </div>
+          </div>
+          <div className="px-5">
             <Link href={'/technofair'} className="flex gap-2">
               <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
               <p className="text-base font-medium text-[#262626]">Back</p>
             </Link>
-            <div className="py-3">
-              <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
-            </div>
-          </div>
-          <div className="px-5">
             <div className="text-[#262626]">
               <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Capture The Flag</p>
               <p className={`${poppins.className} text-base italic font-light`}>Capture The Flag Competition of TechnoFair 11.0</p>
@@ -241,13 +258,21 @@ export default function CaptureTheFlagPage() {
             <div className="text-[#262626] py-3">
               <p className={`${poppins.className} text-sm font-medium`}>Sabtu, 01 Juni 2024</p>
             </div>
+            <div className="text-sm text-[#212427]">
+              <p>
+                <strong>Rp 80.000</strong>/Tim
+              </p>
+            </div>
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link
+                href={'https://www.evernote.com/shard/s525/sh/5ac285fa-4b12-3c3a-070c-5e7e15014d43/ibUTPYheiqmlECLau3UCV_5Xps5clgIgmjYwTemgtIKKARhVANiane8gpA'}
+                className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+              >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link href={'https://docs.google.com/forms/d/10Xj6u0p0ykHcUwsDVXA__O1ZiuBWjwgVU2wXfJRm0ao/edit'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
               </Link>
             </div>
@@ -260,7 +285,7 @@ export default function CaptureTheFlagPage() {
               </div>
               <div className={`${poppins.className} text-base text-[#262626] pt-5`}>
                 <ol className={`decimal text-[#212427] text-sm ${poppins.className} py-5 pl-10`}>
-                  <li>Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 11.0 (www.technofair.id).</li>
+                  <li>Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 11.0 (https://bit.ly/technofair-11).</li>
                   <li>
                     Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait
                     yang diunggah pada Google Form di website TechnoFair 11.0.
@@ -273,7 +298,7 @@ export default function CaptureTheFlagPage() {
                   <li>Setiap peserta hanya dapat menjadi ketua tim pada maksimal 1 kompetisi.</li>
                   <li>Peserta yang merupakan pemenang kompetisi TechnoFair 11.0 wajib menghadiri acara Closing Ceremony yang diselenggarakan secara offline di Auditorium J167, Kampus J1, Universitas Gunadarma.</li>
                   <li>Panitia TechnoFair 11.0 berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam proses pelaksanaan kompetisi.</li>
-                  <li>Panitia berhak mendiskualifikasi tim yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi TechnoFair 11.0</li>
+                  <li>Panitia berhak mendiskualifikasi tim yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi TechnoFair 11.0.</li>
                   <li>Keputusan juri dan panitia TechnoFair 11.0 bersifat mutlak dan tidak dapat diganggu gugat.</li>
                 </ol>
               </div>
@@ -285,22 +310,36 @@ export default function CaptureTheFlagPage() {
               </div>
               <div className="">
                 <ol className={`decimal text-[#212427] text-sm ${poppins.className} py-5 pl-10`}>
-                  <li>Format kompetisi adalah Jeopardy.</li>
-                  <li>Kompetisi akan dilaksanakan di platform CTFd.</li>
+                  <li>
+                    Format kompetisi adalah <em>Jeopardy</em>.
+                  </li>
+                  <li>
+                    Kompetisi akan dilaksanakan di <em>platform</em> CTFd.
+                  </li>
                   <li>Kompetisi dilaksanakan selama 6 jam.</li>
                   <li>Jumlah soal adalah 40 sampai 45 soal.</li>
-                  <li>Scoreboard akan dibekukan 1 jam sebelum waktu kompetisi berakhir.</li>
                   <li>
-                    Setiap peserta wajib mengumpulkan writeups yang berisi penjelasan mengenai langkah-langkah penyelesaian soal dengan jelas dan dikirim selambat-lambatnya 12 jam setelah kompetisi berakhir dengan format sebagai berikut
-                    (nama soal, langkah penyelesaian, dan flag), soal akan dibuka sampai batas pengumpulan writeups.
+                    <em>Scoreboard</em> akan dibekukan 1 jam sebelum waktu kompetisi berakhir.
                   </li>
-                  <li>Writeups dikumpulkan pada email technofair.kompetisi@gmail.com dengan subject CTF_TECHNOFAIR 11.0_(nama tim).</li>
-                  <li>Peserta dengan poin terbanyak dan writeups yang valid akan keluar sebagai juara.</li>
+                  <li>
+                    Setiap peserta wajib mengumpulkan <em>writeups</em> yang berisi penjelasan mengenai langkah-langkah penyelesaian soal dengan jelas dan dikirim selambat-lambatnya 12 jam setelah kompetisi berakhir dengan format sebagai
+                    berikut (nama soal, langkah penyelesaian, dan flag), soal akan dibuka sampai batas pengumpulan <em>writeups</em>.
+                  </li>
+                  <li>
+                    <em>Writeups</em> dikumpulkan pada email <strong>technofair.kompetisi@gmail.com</strong> dengan subject <strong>CTF_TECHNOFAIR 11.0_(nama tim)</strong>.
+                  </li>
+                  <li>
+                    Peserta dengan poin terbanyak dan <em>writeups</em> yang valid akan keluar sebagai juara.
+                  </li>
                   <li>Peserta dilarang bekerja sama dengan peserta atau tim lain dalam bentuk apapun.</li>
                   <li>Peserta dilarang merusak soal, mengubah flag, merusak server dan hal-hal lain yang dapat merugikan peserta lain dan mengganggu jalannya kompetisi.</li>
-                  <li>Peserta dilarang menggunakan automated tools yang membebani server, seperti SQL Map, dir buster, nmap, dll. </li>
+                  <li>
+                    Peserta dilarang menggunakan <em>automated tools</em> yang membebani server, seperti <em>SQL Map, dir buster, nmap,</em> dll.{' '}
+                  </li>
                   <li>Jika peserta melanggar ketentuan kompetisi dan ketahuan oleh panitia, maka peserta akan didiskualifikasi.</li>
-                  <li>Scoring akan dilakukan secara dinamis dengan fungsi scoring yang default dari platform CTFd.</li>
+                  <li>
+                    <em>Scoring</em> akan dilakukan secara dinamis dengan fungsi <em>scoring</em> yang <em>default</em> dari <em>platform</em> CTFd.
+                  </li>
                   <li>Peserta dalam satu kelompok harus berasal dari instansi yang sama.</li>
                 </ol>
               </div>

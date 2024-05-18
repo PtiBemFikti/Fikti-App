@@ -1,23 +1,23 @@
 import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
-import { bricolageGrotesque } from '@/styles/font';
+import { bricolageGrotesque, poppins } from '@/styles/font';
 
 export default function DataAnalyst() {
   return (
     <div className="bg-gradient-to-t from-[#F7F9FA] to-[#F3E5EA]">
       {/* Tampilan Dekstop start */}
       <div className="md:block hidden">
-        <div className="px-40 py-16">
-            <Link href="/technofair" className="flex gap-4">
-              <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
-              <p className="text-xl font-medium text-[#545350]">Back</p>
-            </Link>
+        <div className={`px-40 py-16 ${poppins.className}`}>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
-            <div className="w-1/2">
+            <div className="w-1/2 py-6">
               <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
             </div>
             <div className="w-1/2">
+              <Link href={'/technofair'} className="flex gap-4">
+                <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
+                <p className="text-xl font-medium text-[#545350]">Back</p>
+              </Link>
               <div className="">
                 <div className="flex gap-2">
                   <p className="text-5xl font-bold text-[#241525]">Data Analyst</p>
@@ -33,10 +33,10 @@ export default function DataAnalyst() {
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                   <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
                 </Link>
-                <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <Link href={'https://forms.gle/KY2VLsbuhwMGXpJ57'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
                 </Link>
               </div>
@@ -142,9 +142,19 @@ export default function DataAnalyst() {
                   </div>
                 </div>
                 <div className="py-5">
-                  <AccordionCard title="Materi Seminar 1 - Get to Know the World of Data Analyst" content={'- Menjelaskan latar belakang Data Analyst.\n- Mengetahui keterampilan apa yang diperlukan Data Analyst.\n- Peran dan hubungan Data Analyst dalam dunia kerja.\n- Tantangan dan peluang seorang Data Analyst dalam dunia kerja.\n- Tips dan trik untuk menjadi seorang Data Analyst.'} />
+                  <AccordionCard
+                    title="Materi Seminar 1 - Get to Know the World of Data Analyst"
+                    content={
+                      '- Menjelaskan latar belakang Data Analyst.\n- Mengetahui keterampilan apa yang diperlukan Data Analyst.\n- Peran dan hubungan Data Analyst dalam dunia kerja.\n- Tantangan dan peluang seorang Data Analyst dalam dunia kerja.\n- Tips dan trik untuk menjadi seorang Data Analyst.'
+                    }
+                  />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-                  <AccordionCard title="Materi Seminar 2 - A Beginner's Guide to Data Presentation" content={'- Menjelaskan dasar-dasar visualisasi data yang efektif.\n- Menjelaskan berbagai jenis visualisasi data serta waktu yang tepat untuk menggunakannya.\n- Tools yang sering digunakan oleh seorang Data Analyst.\n- Menjelaskan identifikasi pola dan tren dalam data yang disajikan secara visual.\n- Tips visualisasi data untuk desain yang lebih efektif dan menarik.'} />
+                  <AccordionCard
+                    title="Materi Seminar 2 - A Beginner's Guide to Data Presentation"
+                    content={
+                      '- Menjelaskan dasar-dasar visualisasi data yang efektif.\n- Menjelaskan berbagai jenis visualisasi data serta waktu yang tepat untuk menggunakannya.\n- Tools yang sering digunakan oleh seorang Data Analyst.\n- Menjelaskan identifikasi pola dan tren dalam data yang disajikan secara visual.\n- Tips visualisasi data untuk desain yang lebih efektif dan menarik.'
+                    }
+                  />
                   <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
                 </div>
               </div>
@@ -158,15 +168,15 @@ export default function DataAnalyst() {
       <div className="md:hidden">
         <div className="py-4">
           <div className="px-5">
-              <Link href={'/technofair'} className="flex gap-2">
-                <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
-                <p className="text-base font-medium text-[#262626]">Back</p>
-              </Link>
             <div className="py-3">
               <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
             </div>
           </div>
           <div className="px-5">
+            <Link href={'/technofair'} className="flex gap-2">
+              <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
+              <p className="text-base font-medium text-[#262626]">Back</p>
+            </Link>
             <div className="text-[#262626]">
               <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Data Analyst</p>
               <p className="font-[Poppins] text-base italic font-light">&quot;Visualizing Insights: A Beginner&apos;s Guide to Data Presentation&quot;</p>
@@ -177,10 +187,10 @@ export default function DataAnalyst() {
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                 <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
               </Link>
-              <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link href={'https://forms.gle/KY2VLsbuhwMGXpJ57'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
               </Link>
             </div>
@@ -264,9 +274,19 @@ export default function DataAnalyst() {
               </Link>
             </div>
             <div className="px-5 py-5">
-              <AccordionCard title="Materi Seminar 1 - Get to Know the World of Data Analyst" content={'- Menjelaskan latar belakang Data Analyst.\n- Mengetahui keterampilan apa yang diperlukan Data Analyst.\n- Peran dan hubungan Data Analyst dalam dunia kerja.\n- Tantangan dan peluang seorang Data Analyst dalam dunia kerja.\n- Tips dan trik untuk menjadi seorang Data Analyst.'} />
+              <AccordionCard
+                title="Materi Seminar 1 - Get to Know the World of Data Analyst"
+                content={
+                  '- Menjelaskan latar belakang Data Analyst.\n- Mengetahui keterampilan apa yang diperlukan Data Analyst.\n- Peran dan hubungan Data Analyst dalam dunia kerja.\n- Tantangan dan peluang seorang Data Analyst dalam dunia kerja.\n- Tips dan trik untuk menjadi seorang Data Analyst.'
+                }
+              />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
-              <AccordionCard title="Materi Seminar 2 - A Beginner's Guide to Data Presentation" content={"- Menjelaskan dasar-dasar visualisasi data yang efektif.\n- Menjelaskan berbagai jenis visualisasi data serta waktu yang tepat untuk menggunakannya.\n- Tools yang sering digunakan oleh seorang Data Analyst.\n- Menjelaskan identifikasi pola dan tren dalam data yang disajikan secara visual.\n- Tips visualisasi data untuk desain yang lebih efektif dan menarik."} />
+              <AccordionCard
+                title="Materi Seminar 2 - A Beginner's Guide to Data Presentation"
+                content={
+                  '- Menjelaskan dasar-dasar visualisasi data yang efektif.\n- Menjelaskan berbagai jenis visualisasi data serta waktu yang tepat untuk menggunakannya.\n- Tools yang sering digunakan oleh seorang Data Analyst.\n- Menjelaskan identifikasi pola dan tren dalam data yang disajikan secara visual.\n- Tips visualisasi data untuk desain yang lebih efektif dan menarik.'
+                }
+              />
               <div className="w-full h-0.5 bg-[#212427] mb-3"></div>
             </div>
           </div>

@@ -9,7 +9,7 @@ export default function AboutPage() {
       <div className={`mt-2 md:hidden ${poppins.className}`}>
         <div className="flex justify-center items-center">
           <div className="bg-[#241525] px-7 py-4 rounded-[14px]">
-            <h1 className="text-3xl text-[#FFE8CE] font-bold">What Is TechnoFair ?</h1>
+            <h1 className="text-2xl text-[#FFE8CE] font-bold">What Is TechnoFair ?</h1>
           </div>
         </div>
         <div className="px-8">

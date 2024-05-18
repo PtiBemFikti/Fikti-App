@@ -37,3 +37,11 @@ body {
 .alpha {
   list-style-type: lower-alpha;
 }
+
+.disc {
+  list-style-type: disc;
+}
+
+.roman {
+  list-style-type: upper-roman;
+}

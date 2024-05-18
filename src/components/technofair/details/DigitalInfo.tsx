@@ -19,15 +19,15 @@ export default function DigitalInfoPage() {
       {/* Tampilan Dekstop start */}
       <div className="md:block hidden">
         <div className={`px-40 py-16 ${poppins.className}`}>
-          <Link href={'/technofair'} className="flex gap-4">
-            <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
-            <p className="text-xl font-medium text-[#545350]">Back</p>
-          </Link>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
-            <div className="w-1/2">
-              <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
+            <div className="w-1/2 py-5">
+              <Image src={'/technofair/digital-infographic.png'} alt="UI/UX Design" width={461} height={346} className="rounded-2xl" />
             </div>
             <div className="w-1/2 py-8">
+              <Link href={'/technofair'} className="flex gap-4">
+                <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
+                <p className="text-xl font-medium text-[#545350]">Back</p>
+              </Link>
               <div className="">
                 <div className="flex gap-2">
                   <p className="text-4xl font-bold text-[#241525]">Digital Infographic</p>
@@ -42,12 +42,20 @@ export default function DigitalInfoPage() {
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link
+                  href={'https://www.evernote.com/shard/s525/sh/a46ebdfc-4492-01b1-3550-627dded5739b/fh3XJOSeqpCcTFe7eYY4WPBc_gv99RoGCe-9LTNgVCSJ02dAxm3Y2Lr1cw'}
+                  className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+                >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
-                <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <Link href={'https://docs.google.com/forms/d/1745ixauhKbSD-PpMf5rYzE19fxZPiERGV8osbYqX3WA/edit'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
                 </Link>
+                <div className="mt-9 text-base text-[#212427]">
+                  <p>
+                    <strong>Rp 20.000</strong>/Peserta
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -93,6 +101,7 @@ export default function DigitalInfoPage() {
                         Peserta merupakan pelajar mahasiswa/i aktif S1/D4/D3/D2/D1 Universitas Gunadarma, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi
                         terkait yang diunggah pada Google Form.
                       </li>
+                      <li>Kompetisi bersifat perorangan atau individu.</li>
                       <li>Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
                       <li>Setiap anggota peserta harus berasal dari kampus Universitas Gunadarma dan diperbolehkan dari jurusan/program studi yang berbeda. </li>
                       <li>
@@ -107,7 +116,8 @@ export default function DigitalInfoPage() {
                       </li>
                       <li>Peserta yang tidak memenuhi persyaratan pendaftaran sampai batas waktu yang telah ditentukan akan dinyatakan gugur.</li>
                       <li>
-                        Peserta finalis kompetisi Digital Infographic Competition <em>TechnoFair</em> 11.0 wajib menghadiri acara <em>Closing Ceremony</em> yang diselenggarakan pada <em>Zoom cloud meetings</em>.
+                        Peserta finalis kompetisi <em>Digital Infographic Competition TechnoFair</em> 11.0 <strong> wajib</strong> menghadiri acara <em>Closing Ceremony</em> yang diselenggarakan secara <em>offline</em> di Auditorium J167.
+                        Kampus J1, Universitas Gunadarma.
                       </li>
                       <li>Karya yang dibuat wajib memenuhi ketentuan karya.</li>
                       <li>
@@ -129,7 +139,7 @@ export default function DigitalInfoPage() {
                         Seluruh atau sebagian peraturan dan ketentuan yang terdapat pada <em>rulebook</em> dapat berubah sewaktu-waktu.
                       </li>
                       <li>
-                        Segala bentuk perubahan yang terjadi akan diberitahukan pada website <em>TechnoFair</em> 11.0.
+                        Segala bentuk perubahan yang terjadi akan diberitahukan pada <em>website TechnoFair</em> 11.0.
                       </li>
                     </ol>
                   </div>
@@ -147,19 +157,19 @@ export default function DigitalInfoPage() {
                         Hak kekayaan intelektual dari karya peserta pada kompetisi <em>TechnoFair</em> 11.0 akan tetap menjadi hak peserta.
                       </li>
                       <li>Peserta dapat menggunakan aplikasi Adobe Illustrator, Adobe Photoshop, Corel Draw, Inkscape atau aplikasi sejenisnya.</li>
-                      <li>Peserta kompetisi poster dapat mengirimkan maksimal 2 buah karya untuk peserta yang sama, dimana biaya pendaftaran untuk 1 buah karya sebesar Rp20.000,00</li>
+                      <li>Peserta kompetisi poster dapat mengirimkan maksimal 1 buah karya untuk peserta yang sama, dimana biaya pendaftaran untuk 1 buah karya sebesar Rp20.000,00</li>
                       <li>
                         Peserta diwajibkan mengunggah hasil karya ke website <em>TechnoFair</em> 11.0 dengan ukuran A3 (3508 x 4961 <em>pixels</em>) dengan resolusi minimal 300 <em>ppi</em> dan format JPG (.jpg).
                       </li>
                       <li>Poster dilarang mengandung unsur SARA, pornografi, kekerasan, maupun provokasi.</li>
-                      <li>Setiap poster wajib disertai dengan narasi singkat dengan maksimal 300 kata dalam format .pdf (Template narasi singkat dapat diunduh di bit.ly/technofair-11)</li>
-                      <li>Setiap poster wajib disertai dengan lembar orisinalitas yang di dalam nya terdapat tanda tangan Peserta dengan format .pdf (Template lembar orisinalitas dapat diunduh di bit.ly/technofair-11)</li>
+                      <li>Setiap poster wajib disertai dengan narasi singkat dengan maksimal 300 kata dalam format .pdf (Template narasi singkat dapat diunduh di bit.ly/LembarNarasiTF11)</li>
+                      <li>Setiap poster wajib disertai dengan lembar orisinalitas yang di dalam nya terdapat tanda tangan Peserta dengan format .pdf (Template lembar orisinalitas dapat diunduh di TEMPLATE)</li>
                       <li>
                         Peserta wajib menyertakan sitasi/referensi di bagian bawah poster jika menggunakan kutipan ataupun mengambil gambar dari sumber lain. Apabila peserta menggunakan kutipan maupun gambar milik orang lain dan tidak
                         disertakan sitasi/referensinya maka karya poster akan dianggap sebagai plagiarisme dan didiskualifikasi.
                       </li>
                       <li>
-                        Peserta wajib mencantumkan logo <em>TechnoFair</em> 11.0 (logo dapat diunduh di bit.ly/technofair-11) pada poster.
+                        Peserta wajib mencantumkan logo <em>TechnoFair</em> 11.0 (logo dapat diunduh di TEMPLATE) pada poster.
                       </li>
                     </ol>
                   </div>
@@ -172,7 +182,7 @@ export default function DigitalInfoPage() {
                   <div className="py-5 gap-10 pl-5 text-[#212427]">
                     <div className="flex">
                       <p className="text-base">Tema:</p>
-                      <p className="text-xl italic text-center">&quot;Concrete Actions in Implementing Technological Developments in the Disruptive Era.&quot;</p>
+                      <p className="text-xl italic text-center">&quot;Realizing the Dynamic Technological Transformation Through Collaborative Innovation in FutureTech.&quot;</p>
                     </div>
                     {/* <div className="w-2/4 pt-14">
                       <Link href={'#'} className="w-80 h-20 bg-[#11111B] rounded-[8px] text-center flex flex-col justify-center items-center">
@@ -185,9 +195,9 @@ export default function DigitalInfoPage() {
                         Subtema: <strong>(Peserta hanya memilih satu)</strong>
                       </p>
                       <ol className="decimal italic pl-20">
-                        <li>&quot;Impact Caused by Implementing Technological Developments in the Disruptive Era&quot;</li>
-                        <li>&quot;Strategy to implement Technological Developments in the Disruptive Era&quot;</li>
-                        <li>&quot;Challenge of Implementing Technological Developments in the Disruptive Era&quot;</li>
+                        <li>&quot;Etika dan Keberlanjutan dalam Transformasi Teknologi&quot;</li>
+                        <li>&quot;Peran Kolaborasi dalam Pengembangan Teknologi Masa Depan&quot;</li>
+                        <li>&quot;Tren Teknologi Dinamis dan Dampaknya pada Masyarakat&quot;</li>
                       </ol>
                     </div>
                   </div>
@@ -200,25 +210,43 @@ export default function DigitalInfoPage() {
                   <div className="py-5 pl-5 text-[#212427]">
                     <p className="text-xl font-bold">Babak Penyisihan</p>
                     <ol className="decimal text-justify pl-6">
-                      <li>Pada babak penyisihan ini, peserta sudah mengumpulkan poster, narasi singkat, dan lembar orisinalitas pada website bit.ly/technofair-11</li>
-                      <li>Format pengiriman berkas penyisihan pada website TechnoFair 11.0 :</li>
+                      <li>Pada babak penyisihan ini, peserta sudah mengumpulkan poster, narasi singkat, dan lembar orisinalitas pada link form pengumpulan yang terdapat di website https://bit.ly/technofair-11</li>
+                      <li>
+                        Format pengiriman berkas penyisihan pada <em>website TechnoFair</em> 11.0 :
+                      </li>
                       <ol className="pl-5 alpha">
                         <li>Poster dikumpulkan dalam format JPG (.jpg) dengan format nama file: Poster_Nama Peserta_Judul Karya</li>
                         <li>Narasi singkat dikumpulkan dalam bentuk PDF(.pdf) dengan format nama file: Narasi Singkat Poster_Nama Peserta_Judul Karya.</li>
                         <li>Lembar orisinalitas dikumpulkan dalam bentuk PDF(.pdf) dengan format nama file: Lembar Orisinalitas_Nama Peserta_Judul Karya.</li>
-                        <li>Poster diunggah pada dashboard peserta di bit.ly/technofair-11</li>
+                        <li>
+                          Poster diunggah pada link form pengumpulan yang terdapat di dalam <em>website TechnoFair</em> 11.0 (https://bit.ly/technofair-11)
+                        </li>
                       </ol>
                       <li>
-                        Pada babak ini, dari seluruh peserta yang terdaftar akan dilakukan penilaian oleh juri TechnoFair 11.0 dan akan dilakukan penyisihan sehingga hanya tersisa 15 peserta dengan nilai tertinggi. Dari 15 peserta tersebut
-                        akan terpilih 3 sebagai pemenang juara umum (juara 1, 2, dan 3). Peserta yang sudah menjadi juara umum (juara 1, 2, dan 3) pada babak penyisihan masih mempunyai kesempatan untuk mendapatkan juara kategori poster
-                        favorit pada babak <em>e-voting</em>.
+                        Pada babak ini, dari seluruh peserta yang terdaftar akan dilakukan penilaian oleh juri <em>TechnoFair</em> 11.0 dan akan dilakukan penyisihan sehingga hanya tersisa 9 peserta dengan nilai tertinggi. Dari 9 peserta
+                        tersebut akan terpilih 3 sebagai pemenang juara umum (juara 1, 2, dan 3).
                       </li>
+                      <li>Kepada 9 peserta finalis dengan nilai tertinggi wajib membuat video penjelasan terkait hasil karya digital infografis yang telah dibuat dengan ketentuan sebagai berikut:</li>
+                      <ol className="pl-5 alpha">
+                        <li>Video menjelaskan karya poster yang telah dibuat.</li>
+                        <li>Video yang dikirimkan adalah karya asli milik individu dan belum pernah dipublikasikan.</li>
+                        <li>Video dibuat sekreatif mungkin dengan minimal durasi 1 menit dan maksimal 3 menit.</li>
+                        <li>Video yang dibuat tidak mengandung unsur SARA, pornografi, sadisme, dan hal-hal yang bersifat merendahkan atau melecehkan pihak lain.</li>
+                        <li>
+                          Pengumpulan video menggunakan link form pengumpulan yang dikumpulkan dalam bentuk .MP4 melalui website (https://bit.ly/technofair-11), pastikan akses yang diberikan untuk pengguna yang memiliki link dapat
+                          membukanya.
+                        </li>
+                        <li>Video yang telah dibuat akan dipublikasikan di akun Instagram TechnoFair 11.0.</li>
+                        <li>Setiap peserta wajib menaati peraturan yang telah ditentukan.</li>
+                      </ol>
+                      <li> Khusus 9 karya digital infografis terbaik akan di posting bersama video penjelasan melalui akun Instagram @technofair dengan ketentuan penilaian berdasarkan jumlah like.</li>
                     </ol>
                   </div>
                   <div className="py-3 pl-5 text-[#212427]">
                     <p className="text-xl font-bold">Babak E-Voting</p>
                     <p className="">
-                      Pada babak e-voting, hasil karya poster 15 Peserta yang lolos pada babak penyisihan akan diunggah di Instagram TechnoFair 11.0. Poster yang memiliki jumlah likes terbanyak akan meraih juara kategori poster favorit.
+                      Pada babak <em>e-voting</em>, hasil karya poster 9 Peserta yang lolos pada babak penyisihan akan diunggah di Instagram <em>TechnoFair</em> 11.0. Poster yang memiliki jumlah like terbanyak akan menjadi juara umum{' '}
+                      <em>Digital Infographic Competition</em>.
                     </p>
                   </div>
                 </div>
@@ -293,15 +321,15 @@ export default function DigitalInfoPage() {
       <div className="md:hidden">
         <div className="py-4">
           <div className="px-5">
+            <div className="py-3">
+              <Image src={'/technofair/digital-infographic.png'} alt="UI/UX Design" width={461} height={346} className="rounded-xl" />
+            </div>
+          </div>
+          <div className="px-5">
             <Link href={'/technofair'} className="flex gap-2">
               <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
               <p className="text-base font-medium text-[#262626]">Back</p>
             </Link>
-            <div className="py-3">
-              <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
-            </div>
-          </div>
-          <div className="px-5">
             <div className="text-[#262626]">
               <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Digital Infographic</p>
               <p className={`${poppins.className} text-base italic font-light`}>Digital Infographic Fusion: Digital Design Challenge</p>
@@ -309,13 +337,21 @@ export default function DigitalInfoPage() {
             <div className="text-[#262626] py-3">
               <p className={`${poppins.className} text-sm font-medium`}>Sabtu, 01 Juni 2024</p>
             </div>
+            <div className="text-sm text-[#212427]">
+              <p>
+                <strong>Rp 20.000</strong>/Peserta
+              </p>
+            </div>
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'#'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link
+                href={'https://www.evernote.com/shard/s525/sh/a46ebdfc-4492-01b1-3550-627dded5739b/fh3XJOSeqpCcTFe7eYY4WPBc_gv99RoGCe-9LTNgVCSJ02dAxm3Y2Lr1cw'}
+                className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+              >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              <Link href={'#'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link href={'https://docs.google.com/forms/d/1745ixauhKbSD-PpMf5rYzE19fxZPiERGV8osbYqX3WA/edit'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
               </Link>
             </div>
@@ -333,6 +369,7 @@ export default function DigitalInfoPage() {
                     Peserta merupakan pelajar mahasiswa/i aktif S1/D4/D3/D2/D1 Universitas Gunadarma, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait
                     yang diunggah pada Google Form.
                   </li>
+                  <li>Kompetisi bersifat perorangan atau individu.</li>
                   <li>Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
                   <li>Setiap anggota peserta harus berasal dari kampus Universitas Gunadarma dan diperbolehkan dari jurusan/program studi yang berbeda. </li>
                   <li>
@@ -347,7 +384,8 @@ export default function DigitalInfoPage() {
                   </li>
                   <li>Peserta yang tidak memenuhi persyaratan pendaftaran sampai batas waktu yang telah ditentukan akan dinyatakan gugur.</li>
                   <li>
-                    Peserta finalis kompetisi Digital Infographic Competition <em>TechnoFair</em> 11.0 wajib menghadiri acara <em>Closing Ceremony</em> yang diselenggarakan pada <em>Zoom cloud meetings</em>.
+                    Peserta finalis kompetisi <em>Digital Infographic Competition TechnoFair</em> 11.0 <strong> wajib</strong> menghadiri acara <em>Closing Ceremony</em> yang diselenggarakan secara <em>offline</em> di Auditorium J167.
+                    Kampus J1, Universitas Gunadarma.
                   </li>
                   <li>Karya yang dibuat wajib memenuhi ketentuan karya.</li>
                   <li>
@@ -369,7 +407,7 @@ export default function DigitalInfoPage() {
                     Seluruh atau sebagian peraturan dan ketentuan yang terdapat pada <em>rulebook</em> dapat berubah sewaktu-waktu.
                   </li>
                   <li>
-                    Segala bentuk perubahan yang terjadi akan diberitahukan pada website <em>TechnoFair</em> 11.0.
+                    Segala bentuk perubahan yang terjadi akan diberitahukan pada <em>website TechnoFair</em> 11.0.
                   </li>
                 </ol>
               </div>
@@ -380,26 +418,26 @@ export default function DigitalInfoPage() {
                 <p className={`text-[#31304D] text-base font-bold ${poppins.className}`}>Ketentuan Karya</p>
               </div>
               <div className="pl-5">
-                <ol className={`decimal text-[#212427] text-base ${poppins.className} py-5 pl-3`}>
+                <ol className={`decimal text-[#212427] text-sm ${poppins.className} py-5 pl-3`}>
                   <li>Hasil karya peserta harus sesuai dengan tema yang sudah disediakan.</li>
                   <li>Hasil karya yang dibuat adalah karya orisinal yang dibuat oleh peserta dan belum pernah dipublikasikan serta dapat dipertanggungjawabkan keasliannya.</li>
                   <li>
                     Hak kekayaan intelektual dari karya peserta pada kompetisi <em>TechnoFair</em> 11.0 akan tetap menjadi hak peserta.
                   </li>
                   <li>Peserta dapat menggunakan aplikasi Adobe Illustrator, Adobe Photoshop, Corel Draw, Inkscape atau aplikasi sejenisnya.</li>
-                  <li>Peserta kompetisi poster dapat mengirimkan maksimal 2 buah karya untuk peserta yang sama, dimana biaya pendaftaran untuk 1 buah karya sebesar Rp20.000,00</li>
+                  <li>Peserta kompetisi poster dapat mengirimkan maksimal 1 buah karya untuk peserta yang sama, dimana biaya pendaftaran untuk 1 buah karya sebesar Rp20.000,00</li>
                   <li>
                     Peserta diwajibkan mengunggah hasil karya ke website <em>TechnoFair</em> 11.0 dengan ukuran A3 (3508 x 4961 <em>pixels</em>) dengan resolusi minimal 300 <em>ppi</em> dan format JPG (.jpg).
                   </li>
                   <li>Poster dilarang mengandung unsur SARA, pornografi, kekerasan, maupun provokasi.</li>
-                  <li>Setiap poster wajib disertai dengan narasi singkat dengan maksimal 300 kata dalam format .pdf (Template narasi singkat dapat diunduh di bit.ly/technofair-11)</li>
-                  <li>Setiap poster wajib disertai dengan lembar orisinalitas yang di dalam nya terdapat tanda tangan Peserta dengan format .pdf (Template lembar orisinalitas dapat diunduh di bit.ly/technofair-11)</li>
+                  <li>Setiap poster wajib disertai dengan narasi singkat dengan maksimal 300 kata dalam format .pdf (Template narasi singkat dapat diunduh di bit.ly/LembarNarasiTF11)</li>
+                  <li>Setiap poster wajib disertai dengan lembar orisinalitas yang di dalam nya terdapat tanda tangan Peserta dengan format .pdf (Template lembar orisinalitas dapat diunduh di TEMPLATE)</li>
                   <li>
                     Peserta wajib menyertakan sitasi/referensi di bagian bawah poster jika menggunakan kutipan ataupun mengambil gambar dari sumber lain. Apabila peserta menggunakan kutipan maupun gambar milik orang lain dan tidak
                     disertakan sitasi/referensinya maka karya poster akan dianggap sebagai plagiarisme dan didiskualifikasi.
                   </li>
                   <li>
-                    Peserta wajib mencantumkan logo <em>TechnoFair</em> 11.0 (logo dapat diunduh di bit.ly/technofair-11) pada poster.
+                    Peserta wajib mencantumkan logo <em>TechnoFair</em> 11.0 (logo dapat diunduh di TEMPLATE) pada poster.
                   </li>
                 </ol>
               </div>
@@ -413,15 +451,15 @@ export default function DigitalInfoPage() {
                 <div className="text-[#212427]">
                   <div className="">
                     <p className="pl-7">Tema:</p>
-                    <p className="px-7 text-center font-bold italic">&quot;Concrete Actions in Implementing Technological Developments in the Disruptive Era&quot;</p>
+                    <p className="px-7 text-center font-bold italic">&quot;Realizing the Dynamic Technological Transformation Through Collaborative Innovation in FutureTech.&quot;</p>
                   </div>
                   <div className="pl-7">
                     <p>Subtema:</p>
                     <p className="font-bold">(Peserta hanya memilih satu)</p>
-                    <ol className="decimal italic pl-6">
-                      <li>&quot;Impact Caused by Implementing Technological Developments in the Disruptive Era&quot;</li>
-                      <li>&quot;Strategy to implement Technological Developments in the Disruptive Era&quot;</li>
-                      <li>&quot;Challenge of Implementing Technological Developments in the Disruptive Era&quot;</li>
+                    <ol className="decimal italic pl-6 text-sm">
+                      <li>&quot;Etika dan Keberlanjutan dalam Transformasi Teknologi&quot;</li>
+                      <li>&quot;Peran Kolaborasi dalam Pengembangan Teknologi Masa Depan&quot;</li>
+                      <li>&quot;Tren Teknologi Dinamis dan Dampaknya pada Masyarakat&quot;</li>
                     </ol>
                   </div>
                 </div>
@@ -435,25 +473,42 @@ export default function DigitalInfoPage() {
               <div className="py-5 pl-7 text-[#212427]">
                 <p className="font-bold">Babak Penyisihan</p>
                 <ol className="decimal text-justify pl-6 text-sm">
-                  <li>Pada babak penyisihan ini, peserta sudah mengumpulkan poster, narasi singkat, dan lembar orisinalitas pada website bit.ly/technofair-11</li>
-                  <li>Format pengiriman berkas penyisihan pada website TechnoFair 11.0 :</li>
+                  <li>Pada babak penyisihan ini, peserta sudah mengumpulkan poster, narasi singkat, dan lembar orisinalitas pada link form pengumpulan yang terdapat di website https://bit.ly/technofair-11</li>
+                  <li>
+                    Format pengiriman berkas penyisihan pada <em>website TechnoFair</em> 11.0 :
+                  </li>
                   <ol className="pl-5 alpha">
                     <li>Poster dikumpulkan dalam format JPG (.jpg) dengan format nama file: Poster_Nama Peserta_Judul Karya</li>
                     <li>Narasi singkat dikumpulkan dalam bentuk PDF(.pdf) dengan format nama file: Narasi Singkat Poster_Nama Peserta_Judul Karya.</li>
                     <li>Lembar orisinalitas dikumpulkan dalam bentuk PDF(.pdf) dengan format nama file: Lembar Orisinalitas_Nama Peserta_Judul Karya.</li>
-                    <li>Poster diunggah pada dashboard peserta di bit.ly/technofair-11</li>
+                    <li>
+                      Poster diunggah pada link form pengumpulan yang terdapat di dalam <em>website TechnoFair</em> 11.0 (https://bit.ly/technofair-11)
+                    </li>
                   </ol>
                   <li>
-                    Pada babak ini, dari seluruh peserta yang terdaftar akan dilakukan penilaian oleh juri TechnoFair 11.0 dan akan dilakukan penyisihan sehingga hanya tersisa 15 peserta dengan nilai tertinggi. Dari 15 peserta tersebut akan
-                    terpilih 3 sebagai pemenang juara umum (juara 1, 2, dan 3). Peserta yang sudah menjadi juara umum (juara 1, 2, dan 3) pada babak penyisihan masih mempunyai kesempatan untuk mendapatkan juara kategori poster favorit pada
-                    babak <em>e-voting</em>.
+                    Pada babak ini, dari seluruh peserta yang terdaftar akan dilakukan penilaian oleh juri <em>TechnoFair</em> 11.0 dan akan dilakukan penyisihan sehingga hanya tersisa 9 peserta dengan nilai tertinggi. Dari 9 peserta
+                    tersebut akan terpilih 3 sebagai pemenang juara umum (juara 1, 2, dan 3).
                   </li>
+                  <li>Kepada 9 peserta finalis dengan nilai tertinggi wajib membuat video penjelasan terkait hasil karya digital infografis yang telah dibuat dengan ketentuan sebagai berikut:</li>
+                  <ol className="pl-5 alpha">
+                    <li>Video menjelaskan karya poster yang telah dibuat.</li>
+                    <li>Video yang dikirimkan adalah karya asli milik individu dan belum pernah dipublikasikan.</li>
+                    <li>Video dibuat sekreatif mungkin dengan minimal durasi 1 menit dan maksimal 3 menit.</li>
+                    <li>Video yang dibuat tidak mengandung unsur SARA, pornografi, sadisme, dan hal-hal yang bersifat merendahkan atau melecehkan pihak lain.</li>
+                    <li>
+                      Pengumpulan video menggunakan link form pengumpulan yang dikumpulkan dalam bentuk .MP4 melalui website (https://bit.ly/technofair-11), pastikan akses yang diberikan untuk pengguna yang memiliki link dapat membukanya.
+                    </li>
+                    <li>Video yang telah dibuat akan dipublikasikan di akun Instagram TechnoFair 11.0.</li>
+                    <li>Setiap peserta wajib menaati peraturan yang telah ditentukan.</li>
+                  </ol>
+                  <li> Khusus 9 karya digital infografis terbaik akan di posting bersama video penjelasan melalui akun Instagram @technofair dengan ketentuan penilaian berdasarkan jumlah like.</li>
                 </ol>
               </div>
               <div className="py-3 pl-5 text-[#212427]">
                 <p className="font-bold">Babak E-Voting</p>
                 <p className="text-sm">
-                  Pada babak e-voting, hasil karya poster 15 Peserta yang lolos pada babak penyisihan akan diunggah di Instagram TechnoFair 11.0. Poster yang memiliki jumlah likes terbanyak akan meraih juara kategori poster favorit.
+                  Pada babak <em>e-voting</em>, hasil karya poster 9 Peserta yang lolos pada babak penyisihan akan diunggah di Instagram <em>TechnoFair</em> 11.0. Poster yang memiliki jumlah like terbanyak akan menjadi juara umum{' '}
+                  <em>Digital Infographic Competition</em>.
                 </p>
               </div>
             </div>
@@ -492,7 +547,7 @@ export default function DigitalInfoPage() {
                   <p className="font-bold">Babak E-Voting</p>
                   <ol className="pl-7 decimal text-sm">
                     <li>
-                      Hasil Penilaian Audiens (like, view, share) - <strong>100 Poin</strong>
+                      Hasil Penilaian Audiens <em>(like, view, share)</em> - <strong>100 Poin</strong>
                     </li>
                   </ol>
                   <div className="w-36 border text-center rounded-lg">

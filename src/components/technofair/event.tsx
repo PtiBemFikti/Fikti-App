@@ -3,6 +3,7 @@
 import { bricolageGrotesque } from '@/styles/font';
 import Image from 'next/image';
 import Link from 'next/link';
+import { toast } from 'sonner';
 
 export default function EventPage() {
   return (
@@ -52,10 +53,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
-                    <Link href={'/technofair/details/seminar/data-analyst'} className="flex gap-4 py-5 justify-end items-end">
+                    <div className="flex justify-end items-end">
+                      <button onClick={() => toast.error('Acara tidak tersedia')} className="flex gap-4 py-5">
+                        <p className=" text-base font-bold text-white">Learn more</p>
+                        <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
+                      </button>
+                    </div>
+                    {/* <Link href={'/technofair/details/seminar/data-analyst'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#E87C6C3B] border-[2px] rounded-[39px]">
@@ -83,10 +90,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
-                    <Link href={'/technofair/details/seminar/artificial-intelligence'} className="flex gap-4 py-5 justify-end items-end">
+                    <div className="flex justify-end items-end">
+                      <button onClick={() => toast.error('Acara tidak tersedia')} className="flex gap-4 py-5">
+                        <p className=" text-base font-bold text-white">Learn more</p>
+                        <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
+                      </button>
+                    </div>
+                    {/* <Link href={'/technofair/details/seminar/artificial-intelligence'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#F9F8713B] border-[2px] rounded-[39px]">
@@ -114,10 +127,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
-                    <Link href={'/technofair/details/workshop/product-management'} className="flex gap-4 py-5 justify-end items-end">
+                    <div className="flex justify-end items-end">
+                      <button onClick={() => toast.error('Acara tidak tersedia')} className="flex gap-4 py-5 justify-end items-end">
+                        <p className=" text-base font-bold text-white">Learn more</p>
+                        <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
+                      </button>
+                    </div>
+                    {/* <Link href={'/technofair/details/workshop/uiux'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#F9F8713B] border-[2px] rounded-[39px]">
@@ -145,10 +164,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
-                    <Link href={'/technofair/details/workshop/uiux'} className="flex gap-4 py-5 justify-end items-end">
+                    <div className="flex justify-end items-end">
+                      <button onClick={() => toast.error('Acara tidak tersedia')} className="flex gap-4 py-5 justify-end items-end">
+                        <p className=" text-base font-bold text-white">Learn more</p>
+                        <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
+                      </button>
+                    </div>
+                    {/* <Link href={'/technofair/details/workshop/uiux'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -258,9 +283,9 @@ export default function EventPage() {
                     <div className="w-28 h-7 bg-[#E6A356] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
                     </div>
-                    <div className="py-5">
+                    <div className="py-9">
                       <p className="italic font-bold text-2xl">Digital Infographic</p>
-                      <p className="text-sm text-[#B9BCC7] mt-2">&quot;Infographic Fusion: Digital Design Challenge&quot;</p>
+                      <p className="text-sm text-[#B9BCC7] mt-2">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
                     </div>
                     <div className="">
                       <div className="">
@@ -326,10 +351,16 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 12.25 WIB</p>
                       </div>
                     </div>
-                    <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
+                    <div className="flex justify-end items-end">
+                      <button onClick={() => toast.error('Acara tidak tersedia')} className="py-4 flex justify-end items-end gap-4">
+                        <p className="text-base font-bold">Learn More</p>
+                        <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                      </button>
+                    </div>
+                    {/* <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E87C6C3B] rounded-[28px]">
@@ -351,10 +382,16 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 13.00 WIB</p>
                       </div>
                     </div>
-                    <Link href={'/technofair/details/seminar/artificial-intelligence'} className="py-4 flex justify-end items-end gap-4">
+                    <div className="flex justify-end items-end">
+                      <button onClick={() => toast.error('Acara tidak tersedia')} className="py-4 flex justify-end items-end gap-4">
+                        <p className="text-base font-bold">Learn More</p>
+                        <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                      </button>
+                    </div>
+                    {/* <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -364,8 +401,8 @@ export default function EventPage() {
                     <div className="w-24 h-7 bg-[#F9F871] rounded-[11px]">
                       <p className="text-center text-[#241525] text-sm p-1">Workshop</p>
                     </div>
-                    <div className="py-3">
-                      <p className="text-lg italic font-bold">Product Marketing</p>
+                    <div className="py-0.5">
+                      <p className="text-lg italic font-bold">Product Management</p>
                       <p className="text-sm text-[#B9BCC7] mt-3">Building a Strong Foundation: Mastering Product Management Skills.</p>
                     </div>
                     <div className="grid grid-flow-row gap-y-2">
@@ -378,10 +415,16 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 12.40 WIB</p>
                       </div>
                     </div>
-                    <Link href={'/technofair/details/workshop/product-marketing'} className="py-4 flex justify-end items-end gap-4">
+                    <div className="flex justify-end items-end">
+                      <button onClick={() => toast.error('Acara tidak tersedia')} className="py-4 flex justify-end items-end gap-4">
+                        <p className="text-base font-bold">Learn More</p>
+                        <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                      </button>
+                    </div>
+                    {/* <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#F9F8713B] rounded-[28px]">
@@ -389,7 +432,7 @@ export default function EventPage() {
                     <div className="w-24 h-7 bg-[#F9F871] rounded-[11px]">
                       <p className="text-center text-[#241525] text-sm p-1">Workshop</p>
                     </div>
-                    <div className="py-3">
+                    <div className="py-4">
                       <p className="text-lg italic font-bold">UI/UX Design</p>
                       <p className="text-sm text-[#B9BCC7] mt-3">From Concept to Creation: Mastering UI/UX Design Practices.</p>
                     </div>
@@ -400,13 +443,19 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
-                        <p className="text-sm text-[#B9BCC7] mr-12">13.30 - 17.10 WIB</p>
+                        <p className="text-sm text-[#B9BCC7] mr-16">13.30 - 17.10 WIB</p>
                       </div>
                     </div>
-                    <Link href={'/technofair/details/workshop/uiux'} className="py-4 flex justify-end items-end gap-4">
+                    <div className="flex justify-end items-end">
+                      <button onClick={() => toast.error('Acara tidak tersedia')} className="py-4 flex justify-end items-end gap-4">
+                        <p className="text-base font-bold">Learn More</p>
+                        <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
+                      </button>
+                    </div>
+                    {/* <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -417,7 +466,7 @@ export default function EventPage() {
               </div>
               <div className="py-5 pl-20 grid grid-flow-col gap-4 overflow-x-auto overflow-y-hidden overflow-hidden pt-4 font-[Poppins]">
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E6A3563B] rounded-[28px]">
-                  <div className="p-5">
+                  <div className="p-6">
                     <div className="w-28 h-7 bg-[#E6A356] rounded-[11px]">
                       <p className="text-center text-[#241525] text-sm p-1">Competition</p>
                     </div>
@@ -492,13 +541,13 @@ export default function EventPage() {
                   </div>
                 </div>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E6A3563B] rounded-[28px]">
-                  <div className="p-5">
+                  <div className="p-4">
                     <div className="w-28 h-7 bg-[#E6A356] rounded-[11px]">
                       <p className="text-center text-[#241525] text-sm p-1">Competition</p>
                     </div>
-                    <div className="py-7">
+                    <div className="py-5">
                       <p className="text-xl italic font-bold">Digital Infographic</p>
-                      <p className="text-sm text-[#B9BCC7] mt-1">&quot;Infographic Fusion: Digital Design Challenge&quot;</p>
+                      <p className="text-sm text-[#B9BCC7] mt-1">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
                     </div>
                     <div className="grid grid-flow-row gap-y-2">
                       <div className="grid grid-flow-col">
