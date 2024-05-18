@@ -258,9 +258,9 @@ export default function EventPage() {
                     <div className="w-28 h-7 bg-[#E6A356] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
                     </div>
-                    <div className="py-5">
+                    <div className="py-9">
                       <p className="italic font-bold text-2xl">Digital Infographic</p>
-                      <p className="text-sm text-[#B9BCC7] mt-2">&quot;Infographic Fusion: Digital Design Challenge&quot;</p>
+                      <p className="text-sm text-[#B9BCC7] mt-2">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
                     </div>
                     <div className="">
                       <div className="">
@@ -498,7 +498,7 @@ export default function EventPage() {
                     </div>
                     <div className="py-7">
                       <p className="text-xl italic font-bold">Digital Infographic</p>
-                      <p className="text-sm text-[#B9BCC7] mt-1">&quot;Infographic Fusion: Digital Design Challenge&quot;</p>
+                      <p className="text-sm text-[#B9BCC7] mt-1">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
                     </div>
                     <div className="grid grid-flow-row gap-y-2">
                       <div className="grid grid-flow-col">

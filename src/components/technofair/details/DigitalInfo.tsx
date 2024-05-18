@@ -21,7 +21,7 @@ export default function DigitalInfoPage() {
         <div className={`px-40 py-16 ${poppins.className}`}>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
             <div className="w-1/2 py-5">
-              <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
+              <Image src={'/technofair/digital-infographic.png'} alt="UI/UX Design" width={461} height={346} className="rounded-2xl" />
             </div>
             <div className="w-1/2 py-8">
               <Link href={'/technofair'} className="flex gap-4">
@@ -42,7 +42,10 @@ export default function DigitalInfoPage() {
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'https://www.evernote.com/shard/s525/sh/a46ebdfc-4492-01b1-3550-627dded5739b/fh3XJOSeqpCcTFe7eYY4WPBc_gv99RoGCe-9LTNgVCSJ02dAxm3Y2Lr1cw'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link
+                  href={'https://www.evernote.com/shard/s525/sh/a46ebdfc-4492-01b1-3550-627dded5739b/fh3XJOSeqpCcTFe7eYY4WPBc_gv99RoGCe-9LTNgVCSJ02dAxm3Y2Lr1cw'}
+                  className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+                >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
                 <Link href={'https://docs.google.com/forms/d/1745ixauhKbSD-PpMf5rYzE19fxZPiERGV8osbYqX3WA/edit'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
@@ -319,7 +322,7 @@ export default function DigitalInfoPage() {
         <div className="py-4">
           <div className="px-5">
             <div className="py-3">
-              <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
+              <Image src={'/technofair/digital-infographic.png'} alt="UI/UX Design" width={461} height={346} className="rounded-xl" />
             </div>
           </div>
           <div className="px-5">
@@ -337,7 +340,10 @@ export default function DigitalInfoPage() {
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'https://www.evernote.com/shard/s525/sh/a46ebdfc-4492-01b1-3550-627dded5739b/fh3XJOSeqpCcTFe7eYY4WPBc_gv99RoGCe-9LTNgVCSJ02dAxm3Y2Lr1cw'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link
+                href={'https://www.evernote.com/shard/s525/sh/a46ebdfc-4492-01b1-3550-627dded5739b/fh3XJOSeqpCcTFe7eYY4WPBc_gv99RoGCe-9LTNgVCSJ02dAxm3Y2Lr1cw'}
+                className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+              >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
               <Link href={'https://docs.google.com/forms/d/1745ixauhKbSD-PpMf5rYzE19fxZPiERGV8osbYqX3WA/edit'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">

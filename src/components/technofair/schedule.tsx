@@ -240,7 +240,7 @@ const items: any = [
                     <p className="text-black text-xs text-center">Competition</p>
                   </div>
                 </div>
-                <p className="font-light italic md:text-sm text-xs">&quot;Infographic Fusion: Digital Design Challenge&quot;</p>
+                <p className="font-light italic md:text-sm text-xs">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
               </div>
               <Link href={'/technofair/details/competition/digital-infographic'}>
                 <div className="flex justify-center items-center">

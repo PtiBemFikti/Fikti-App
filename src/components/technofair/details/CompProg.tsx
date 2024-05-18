@@ -21,7 +21,7 @@ export default function CaptureTheFlagPage() {
         <div className={`px-40 py-16 ${poppins.className}`}>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
             <div className="w-1/2 py-7">
-              <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
+              <Image src={'/technofair/competitive-programming.png'} alt="competitive programming" width={461} height={346} className="rounded-2xl" />
             </div>
             <div className="w-1/2 py-8">
               <div className="">
@@ -43,7 +43,10 @@ export default function CaptureTheFlagPage() {
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'https://www.evernote.com/shard/s525/sh/2559197a-e8b4-4ae9-5bf7-a9005fdae78c/cE881yNWVPePZUAwztmMr1xqOX1DRXR-pkAl_pvPpLDr_OshzFYZQvpiuQ'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link
+                  href={'https://www.evernote.com/shard/s525/sh/2559197a-e8b4-4ae9-5bf7-a9005fdae78c/cE881yNWVPePZUAwztmMr1xqOX1DRXR-pkAl_pvPpLDr_OshzFYZQvpiuQ'}
+                  className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+                >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
                 <Link href={'https://docs.google.com/forms/d/1xp_ZFuEkN7Eiu5MbpfXezdrChtPoUra5kzoVxqiypp8/edit?ts=66460c90'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
@@ -217,7 +220,7 @@ export default function CaptureTheFlagPage() {
         <div className="py-4">
           <div className="px-5">
             <div className="py-3">
-              <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
+              <Image src={'/technofair/competitive-programming.png'} alt="competitive programming" width={461} height={346} className="rounded-xl" />
             </div>
           </div>
           <div className="px-5">
@@ -235,7 +238,10 @@ export default function CaptureTheFlagPage() {
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'https://www.evernote.com/shard/s525/sh/2559197a-e8b4-4ae9-5bf7-a9005fdae78c/cE881yNWVPePZUAwztmMr1xqOX1DRXR-pkAl_pvPpLDr_OshzFYZQvpiuQ'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link
+                href={'https://www.evernote.com/shard/s525/sh/2559197a-e8b4-4ae9-5bf7-a9005fdae78c/cE881yNWVPePZUAwztmMr1xqOX1DRXR-pkAl_pvPpLDr_OshzFYZQvpiuQ'}
+                className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+              >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
               <Link href={'https://docs.google.com/forms/d/1xp_ZFuEkN7Eiu5MbpfXezdrChtPoUra5kzoVxqiypp8/edit?ts=66460c90'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">

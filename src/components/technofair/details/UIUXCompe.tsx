@@ -21,7 +21,7 @@ export default function UIUXCompePage() {
         <div className={`px-40 py-16 ${poppins.className}`}>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
             <div className="w-1/2 py-12">
-              <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
+              <Image src={'/technofair/UI-UX-design.png'} alt="UI/UX Design" width={461} height={346} className="rounded-2xl" />
             </div>
             <div className="w-1/2 py-8">
               <Link href={'/technofair'} className="flex gap-4">
@@ -38,12 +38,15 @@ export default function UIUXCompePage() {
               <div className={`text-[#212427] text-xl font-semibold ${poppins.className} py-2`}>Sabtu, 01 Juni 2024</div>
               <div className="">
                 <p className={`text-lg font-normal ${poppins.className} text-[#212427]`}>
-                  <em>UI/UX Design Competition</em> adalah salah satu kompetisi untuk menunjukkan bakat dan kemampuan peserta dalam membangun desain antarmuka sistem/produk yang berorientasi kepada kenyamanan dan kemudahan pengguna (user) dalam
-                  menggunakan sistem/produk tersebut.
+                  <em>UI/UX Design Competition</em> adalah salah satu kompetisi untuk menunjukkan bakat dan kemampuan peserta dalam membangun desain antarmuka sistem/produk yang berorientasi kepada kenyamanan dan kemudahan pengguna (user)
+                  dalam menggunakan sistem/produk tersebut.
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link
+                  href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'}
+                  className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+                >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
                 <Link href={'https://docs.google.com/forms/d/1SNT6S5bN1iLsRDJDZohjhraXtT2-uiUggg090eQu3mQ/edit'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
@@ -334,7 +337,7 @@ export default function UIUXCompePage() {
         <div className="py-4">
           <div className="px-5">
             <div className="py-3">
-              <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
+              <Image src={'/technofair/UI-UX-design.png'} alt="UI/UX Design" width={461} height={346} className="rounded-xl" />
             </div>
           </div>
           <div className="px-5">
@@ -352,7 +355,10 @@ export default function UIUXCompePage() {
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link
+                href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'}
+                className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+              >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
               <Link href={'https://docs.google.com/forms/d/1SNT6S5bN1iLsRDJDZohjhraXtT2-uiUggg090eQu3mQ/edit'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
