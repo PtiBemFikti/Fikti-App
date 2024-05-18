@@ -44,7 +44,7 @@ export default function CaptureTheFlagPage() {
               </div>
               <div className="pt-2 flex gap-4">
                 <Link
-                  href={'https://www.evernote.com/shard/s525/sh/2559197a-e8b4-4ae9-5bf7-a9005fdae78c/cE881yNWVPePZUAwztmMr1xqOX1DRXR-pkAl_pvPpLDr_OshzFYZQvpiuQ'}
+                  href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'}
                   className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]"
                 >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
@@ -244,7 +244,7 @@ export default function CaptureTheFlagPage() {
           <div className="px-5">
             <div className="pt-2 flex gap-4">
               <Link
-                href={'https://www.evernote.com/shard/s525/sh/2559197a-e8b4-4ae9-5bf7-a9005fdae78c/cE881yNWVPePZUAwztmMr1xqOX1DRXR-pkAl_pvPpLDr_OshzFYZQvpiuQ'}
+                href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'}
                 className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]"
               >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>

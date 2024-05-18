@@ -93,7 +93,7 @@ export default function AboutPage() {
         <div className="flex items-center justify-center px-32 gap-10">
           <div className="bg-[#E9E9ED] w-1/2 h-96 border-[2px] rounded-[35px]">
             <div className="">
-              <div className="flex justify-center items-center my-6">
+              <div className="flex justify-center items-center my-7">
                 <div className="w-96 h-20 bg-[#241525] flex justify-center items-center rounded-3xl">
                   <h1 className="font-bold text-[#FFE8CE] text-3xl">What is TechnoFair ?</h1>
                 </div>
@@ -102,7 +102,7 @@ export default function AboutPage() {
                 <p className="text-base text-[#241525] mx-20">Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.</p>
               </div>
               <div className="text-center mt-5">
-                <p className="text-lg text-[#241525] mx-20">
+                <p className="text-base text-[#241525] mx-20">
                   Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quot;
                 </p>
               </div>

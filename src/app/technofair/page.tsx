@@ -7,32 +7,33 @@ import SchedulePage from '@/components/technofair/schedule';
 import StoryPage from '@/components/technofair/story';
 import FaqPage from '@/components/technofair/faq/faq';
 import Footer from '@/components/technofair/footer';
+import Layout from '../layout';
+import { Metadata } from 'next';
+import Head from 'next/head';
+import { useEffect } from 'react';
 
+export const metadata: Metadata = {
+  title: 'TechnoFair 11.0',
+  description: 'TechnoFair 11.0',
+  icons: {
+    icon: '/tehcnofair/logo-tf.png',
+  }
+};
 // eslint-disable-next-line @next/next/no-async-client-component
 export default function TechnofairPage() {
   return (
-    <main className="bg-white bg-cover bg-no-repeat -z-50 overflow-x-hidden scroll-smooth" style={{ backgroundImage: 'url(/technofair/bg-utama.png)' }}>
-      {/* <Image src={'/technofair/bg-utama.png'} alt="Bg Utama" width={300} height={300} className="bg-cover absolute" /> */}
+    <main className="bg-white bg-cover bg-no-repeat overflow-x-hidden" style={{ backgroundImage: 'url(/technofair/bg-utama.png)' }}>
       <Navbar />
       <Dashboard />
-      {/* <section className='-mt-[580px] px-4 py-4 flex justify-center items-center mb-5'>
-        <VidYoutube />
-      </section> */}
       <section id="about">
-        <div className="pt-20">
-          <AboutPage />
-        </div>
+        <AboutPage />
       </section>
       <section id="event">
-        <div className="md:pt-3">
-          <EventPage />
-        </div>
+        <EventPage />
       </section>
-      <div className="bg-gradient-to-t from-[#0B0E1A] to-[#211525]">
-        <section id="schedule">
-          <SchedulePage />
-        </section>
-      </div>
+      <section id='schedule' className='bg-gradient-to-t from-[#0B0E1A] to-[#211525]'>
+        <SchedulePage />
+      </section>
       <StoryPage />
       <SponsorPage />
       <section id="faq">

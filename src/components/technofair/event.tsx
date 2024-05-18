@@ -25,7 +25,7 @@ export default function EventPage() {
 
           <div className="py-20 px-14 bg-[#241525]">
             <div className="font-[Poppins]">
-              <p className="text-3xl font-bold text-white">Seminars & Workshops</p>
+              <p className="text-3xl font-bold text-white text-center">Seminars & Workshops</p>
               {/* Card Acara Seminar & Workshops */}
               <div className="py-4 flex justify-center items-center gap-3">
                 <div className="w-72 h-96 bg-[#212427] border-[#E87C6C3B] border-[2px] rounded-[39px]">
@@ -54,7 +54,7 @@ export default function EventPage() {
                       </div>
                     </div>
                     <div className="flex justify-end items-end">
-                      <button onClick={() => toast.error('Acara tidak tersedia')} className="flex gap-4 py-5">
+                      <button onClick={() => toast.error('Coming Soon')} className="flex gap-4 py-5">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
@@ -91,7 +91,7 @@ export default function EventPage() {
                       </div>
                     </div>
                     <div className="flex justify-end items-end">
-                      <button onClick={() => toast.error('Acara tidak tersedia')} className="flex gap-4 py-5">
+                      <button onClick={() => toast.error('Coming Soon')} className="flex gap-4 py-5">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
@@ -128,7 +128,7 @@ export default function EventPage() {
                       </div>
                     </div>
                     <div className="flex justify-end items-end">
-                      <button onClick={() => toast.error('Acara tidak tersedia')} className="flex gap-4 py-5 justify-end items-end">
+                      <button onClick={() => toast.error('Coming Soon')} className="flex gap-4 py-5 justify-end items-end">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
@@ -165,7 +165,7 @@ export default function EventPage() {
                       </div>
                     </div>
                     <div className="flex justify-end items-end">
-                      <button onClick={() => toast.error('Acara tidak tersedia')} className="flex gap-4 py-5 justify-end items-end">
+                      <button onClick={() => toast.error('Coming Soon')} className="flex gap-4 py-5 justify-end items-end">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
@@ -182,7 +182,7 @@ export default function EventPage() {
           </div>
           <div className="px-14 bg-[#241525]">
             <div className="font-[Poppins]">
-              <p className="text-3xl font-bold text-white">Competitions</p>
+              <p className="text-3xl font-bold text-white text-center">Competitions</p>
               {/* Card Acara Competitions */}
               <div className="py-4 flex justify-center items-center gap-3">
                 <div className="w-72 h-96 bg-[#212427] border-[#E6A3563B] border-[2px] rounded-[39px]">
@@ -352,7 +352,7 @@ export default function EventPage() {
                       </div>
                     </div>
                     <div className="flex justify-end items-end">
-                      <button onClick={() => toast.error('Acara tidak tersedia')} className="py-4 flex justify-end items-end gap-4">
+                      <button onClick={() => toast.error('Coming Soon')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
@@ -383,7 +383,7 @@ export default function EventPage() {
                       </div>
                     </div>
                     <div className="flex justify-end items-end">
-                      <button onClick={() => toast.error('Acara tidak tersedia')} className="py-4 flex justify-end items-end gap-4">
+                      <button onClick={() => toast.error('Coming Soon')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
@@ -416,7 +416,7 @@ export default function EventPage() {
                       </div>
                     </div>
                     <div className="flex justify-end items-end">
-                      <button onClick={() => toast.error('Acara tidak tersedia')} className="py-4 flex justify-end items-end gap-4">
+                      <button onClick={() => toast.error('Coming Soon')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
@@ -447,7 +447,7 @@ export default function EventPage() {
                       </div>
                     </div>
                     <div className="flex justify-end items-end">
-                      <button onClick={() => toast.error('Acara tidak tersedia')} className="py-4 flex justify-end items-end gap-4">
+                      <button onClick={() => toast.error('Coming Soon')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
