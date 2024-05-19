@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   description: 'TechnoFair 11.0',
   icons: {
     icon: '/tehcnofair/logo-tf.png',
+    apple: '/technofair/logo-tf.png',
   }
 };
 // eslint-disable-next-line @next/next/no-async-client-component
