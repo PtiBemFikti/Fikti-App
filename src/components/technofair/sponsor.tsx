@@ -6,24 +6,39 @@ export default function SponsorPage() {
       {/* Tampilan Dekstop Start */}
       <div className="md:block hidden py-52">
         <div className="flex justify-center items-center">
-          <div className="w-11/12">
-            <div className="flex gap-5">
-              <div className="w-2/12 h-52 bg-white rounded-3xl text-center py-10">
-                <div className="flex justify-between items-center px-9 gap-3">
-                  <div className="px-5 text-center">
-                    <p className="text-sm text-[#262626] font-[Poppins] text-center">SUPPORTED BY</p>
-                  </div>
+          <div className="w-11/12 flex flex-col gap-5">
+            <div className="w-full h-72 bg-white rounded-3xl text-center py-10">
+              <div className="flex justify-between items-center px-9 gap-3">
+                <div className="w-full h-0.5 bg-[#b8bcc7] opacity-30"></div>
+                <div className="w-full">
+                  <p className="text-sm text-[#262626] font-[Poppins] text-center">OFFICIAL EXCLUSIVE CLOUD HOSTING PARTNER</p>
                 </div>
-                <div className="flex justify-center items-center py-5">
-                  <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={150} height={75} />
-                </div>
+                <div className="w-full h-0.5 bg-[#b8bcc7] opacity-30"></div>
               </div>
-              <div className="flex gap-8 w-10/12">
+              <div className="flex justify-center items-center py-5">
+                <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={300} height={150} />
+              </div>
+            </div>
+            <div className="w-full h-72 bg-white rounded-3xl text-center py-10">
+              <div className="flex justify-between items-center px-9 gap-3">
+                <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
+                <div className="w-48">
+                  <p className="text-sm text-[#262626] font-[Poppins] text-center">COMMUNITY PARTNER</p>
+                </div>
+                <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
+              </div>
+              <div className="flex justify-center items-center py-10 gap-5">
+                <Image src={'/technofair/ccug.png'} alt="ccug" width={100} height={100} />
+                <Image src={'/technofair/gundario.png'} alt="gundario" width={100} height={100} />
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div className="flex gap-8 w-full">
                 <div className="w-full h-52 bg-white rounded-3xl text-center py-10">
                   <div className="flex justify-between items-center px-9 gap-3">
                     <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
-                    <div className="">
-                      <p className="text-sm text-[#262626] font-[Poppins] text-center">SPONSORS</p>
+                    <div className="w-56">
+                      <p className="text-sm text-[#262626] font-[Poppins] text-center">SPONSORS & PARTNERSHIP</p>
                     </div>
                     <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
                   </div>
@@ -35,11 +50,11 @@ export default function SponsorPage() {
                 </div>
               </div>
             </div>
-            <div className="py-5">
+            <div className="">
               <div className="w-full bg-white rounded-3xl text-center py-10">
                 <div className="flex justify-between items-center px-9 gap-3">
                   <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
-                  <div className="w-40">
+                  <div className="w-36">
                     <p className="text-sm text-[#262626] font-[Poppins] text-center">MEDIA PARTNERS</p>
                   </div>
                   <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
@@ -57,8 +72,6 @@ export default function SponsorPage() {
                     <Image src={'/technofair/radioug.png'} alt="radioug" width={100} height={100} />
                   </div>
                   <div className="flex gap-5">
-                    <Image src={'/technofair/ccug.png'} alt="ccug" width={100} height={100} />
-                    <Image src={'/technofair/gundario.png'} alt="gundario" width={100} height={100} />
                     <Image src={'/technofair/bemft-unj.png'} alt="bemft-unj" width={146} height={100} />
                     <Image src={'/technofair/bemfisip-upn.png'} alt="bem fisip upn" width={100} height={100} />
                     <Image src={'/technofair/bemfti-untar.png'} alt="bem fti untar" width={100} height={100} />
@@ -80,10 +93,19 @@ export default function SponsorPage() {
         <div className="flex flex-col justify-center items-center p-4 gap-3">
           <div className="w-full h-48 bg-white rounded-3xl py-8">
             <div className="flex justify-center items-center gap-3">
-              <p className="font-[Poppins] text-sm font-light text-[#262626]">SUPPORTED BY</p>
+              <p className="font-[Poppins] text-sm font-light text-[#262626]">OFFICIAL EXCLUSIVE CLOUD HOSTING PARTNER</p>
             </div>
             <div className="flex justify-center items-center py-5">
               <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={127} height={30} />
+            </div>
+          </div>
+          <div className="w-full h-48 bg-white rounded-3xl py-8">
+            <div className="flex justify-center items-center gap-3">
+              <p className="font-[Poppins] text-sm font-light text-[#262626]">COMMUNITY PARTNER</p>
+            </div>
+            <div className="flex justify-center items-center py-5 gap-3">
+              <Image src={'/technofair/ccug.png'} alt="ccug" width={75} height={75} />
+              <Image src={'/technofair/gundario.png'} alt="gundario" width={75} height={75} />
             </div>
           </div>
           <div className="w-full h-48 bg-white rounded-3xl py-8">
@@ -120,14 +142,14 @@ export default function SponsorPage() {
                 <Image src={'/technofair/snap.png'} alt="snap" width={75} height={75} />
               </div>
               <div className="flex gap-2">
-                <Image src={'/technofaira/academic-insight.jpg'} alt="academic insight" width={75} height={75} />
-                <Image src={'/technofair/bemgeo-unj.png'} alt="bem geo unj" width={103} height={75} />
+                <Image src={'/technofair/academic-insight.jpg'} alt="academic insight" width={75} height={75} />
                 <Image src={'/technofair/radioug.png'} alt="radioug" width={75} height={75} />
+                <Image src={'/technofair/himsi-fasilkom.png'} alt="himsi fasilkom" width={75} height={75} />
               </div>
               <div className="flex gap-2">
-                <Image src={'/technofair/ccug.png'} alt="ccug" width={75} height={75} />
-                <Image src={'/technofair/gundario.png'} alt="gundario" width={75} height={75} />
+                <Image src={'/technofair/unila.png'} alt="unila" width={75} height={75} />
                 <Image src={'/technofair/bemft-unj.png'} alt="bemft-unj" width={109.34} height={75} />
+                <Image src={'/technofair/bemfasilkom-unsika.png'} alt="bem fasilkom unsika" width={75} height={75} />
               </div>
               <div className="flex gap-2">
                 <Image src={'/technofair/bemfisip-upn.png'} alt="bem fisip upn" width={75} height={75} />
@@ -135,9 +157,7 @@ export default function SponsorPage() {
                 <Image src={'/technofair/bemfik-upn.png'} alt="bemfik upn" width={75} height={75} />
               </div>
               <div className="flex gap-2">
-                <Image src={'/technofair/unila.png'} alt="unila" width={75} height={75} />
-                <Image src={'/technofair/himsi-fasilkom.png'} alt="himsi fasilkom" width={75} height={75} />
-                <Image src={'/technofair/bemfasilkom-unsika.png'} alt="bem fasilkom unsika" width={75} height={75} />
+                <Image src={'/technofair/bemgeo-unj.png'} alt="bem geo unj" width={103} height={75} />
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@ export default function AboutPage() {
             <h1 className="text-2xl text-[#FFE8CE] font-bold">What Is TechnoFair ?</h1>
           </div>
         </div>
-        <div className="px-8">
+        <div className="px-8 text-sm">
           <div className="my-3">
             <p className="text-[#241525] text-center">Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.</p>
           </div>

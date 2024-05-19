@@ -19,7 +19,7 @@ export default function UIUXCompePage() {
       {/* Tampilan Dekstop start */}
       <div className="md:block hidden">
         <div className={`px-40 py-16 ${poppins.className}`}>
-          <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
+          <div className={`py-3 flex gap-2 ${bricolageGrotesque.className}`}>
             <div className="w-1/2 py-12">
               <Image src={'/technofair/UI-UX-design.png'} alt="UI/UX Design" width={461} height={346} className="rounded-2xl" />
             </div>
@@ -49,7 +49,7 @@ export default function UIUXCompePage() {
                 >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
-                <Link href={'https://docs.google.com/forms/d/1SNT6S5bN1iLsRDJDZohjhraXtT2-uiUggg090eQu3mQ/edit'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <Link href={'https://docs.google.com/forms/d/1SNT6S5bN1iLsRDJDZohjhraXtT2-uiUggg090eQu3mQ/viewform?edit_requested=true'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
                 </Link>
                 <div className="mt-9 text-base text-[#212427]">
@@ -62,28 +62,35 @@ export default function UIUXCompePage() {
           </div>
           <div className="py-24">
             <div className="flex gap-20">
-              <div className=" w-2/6 h-48 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg">
-                <div className="px-5 py-2">
-                  <p className={`text-[#31304D] text-sm ${poppins.className} font-semibold`}>Details</p>
-                  <div className="px-3">
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className={`text-[#212427] text-base ${poppins.className}`}>Ketentuan Umum</p>
-                    </div>
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className={`text-[#212427] text-base ${poppins.className}`}>Ketentuan Kompetisi</p>
-                    </div>
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className={`text-[#212427] text-base ${poppins.className}`}>Tahapan Kompetisi</p>
-                    </div>
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className={`text-[#212427] text-base ${poppins.className}`}>Kriteria Penilaian</p>
+              <div className="w-2/6 flex flex-col gap-5">
+                <div className=" w-72 h-48 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg">
+                  <div className="px-5 py-2">
+                    <p className={`text-[#31304D] text-sm ${poppins.className} font-semibold`}>Details</p>
+                    <div className="px-3">
+                      <div className="py-2 flex gap-5">
+                        <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
+                        <p className={`text-[#212427] text-base ${poppins.className}`}>Ketentuan Umum</p>
+                      </div>
+                      <div className="py-2 flex gap-5">
+                        <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
+                        <p className={`text-[#212427] text-base ${poppins.className}`}>Ketentuan Kompetisi</p>
+                      </div>
+                      <div className="py-2 flex gap-5">
+                        <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
+                        <p className={`text-[#212427] text-base ${poppins.className}`}>Tahapan Kompetisi</p>
+                      </div>
+                      <div className="py-2 flex gap-5">
+                        <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
+                        <p className={`text-[#212427] text-base ${poppins.className}`}>Kriteria Penilaian</p>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <Link href={'https://drive.google.com/drive/folders/1E-AU-L_NfF9NMD1DtIVYQLuylwbDpUuY?usp=drive_link'} className="">
+                  <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
+                    <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
+                  </div>
+                </Link>
               </div>
               <div className="w-5/6">
                 <div className="">
@@ -358,7 +365,7 @@ export default function UIUXCompePage() {
               </p>
             </div>
           </div>
-          <div className="px-5">
+          <div className="px-5 flex flex-col gap-4">
             <div className="pt-2 flex gap-4">
               <Link
                 href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'}
@@ -366,10 +373,16 @@ export default function UIUXCompePage() {
               >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              <Link href={'https://docs.google.com/forms/d/1SNT6S5bN1iLsRDJDZohjhraXtT2-uiUggg090eQu3mQ/edit'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link href={'https://docs.google.com/forms/d/1SNT6S5bN1iLsRDJDZohjhraXtT2-uiUggg090eQu3mQ/viewform?edit_requested=true'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
               </Link>
             </div>
+            <Link
+              href={'https://drive.google.com/drive/folders/1E-AU-L_NfF9NMD1DtIVYQLuylwbDpUuY?usp=drive_link'}
+              className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}
+            >
+              <p className="text-[#6c6a67]">Lihat Rulebook</p>
+            </Link>
           </div>
           <div className="">
             <div className="py-10 px-5">
