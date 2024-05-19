@@ -5,7 +5,7 @@ export default function FaqPage() {
     <div className="bg-[#25243A]">
       {/* Dekstop */}
       <div className="md:block hidden">
-        <div className="flex justify-center py-32 gap-20">
+        <div className="flex justify-center py-32 px-10 gap-20">
           <div className="">
             <div className="">
               <p className="text-white text-5xl font-['Circle-Amolens'] font-bold">
@@ -22,10 +22,13 @@ export default function FaqPage() {
               <p className="text-white text-xl font-[Poppins] py-3">
                 Can’t find what you are looking for? feel free to{" "}
                 <span>
-                  <button className="text-white text-xl font-normal font-['Poppins'] underline">
+                  <a
+                    href="https://www.evernote.com/shard/s684/sh/6bba8628-a7cf-c26f-84b8-1996b92a3f4e/npUZo0Vd4Dp0pPWO4yUYoBVraTAj-dTPsxKUT6WEnZLH3_DS4NKOaGWuZg"
+                    className="text-white text-xl font-normal font-['Poppins'] underline"
+                  >
                     {" "}
                     ask us.
-                  </button>
+                  </a>
                 </span>
               </p>
             </div>
@@ -60,7 +63,7 @@ export default function FaqPage() {
 
                 <AccordionCard
                   title="Apakah ada biaya untuk mengikuti Bootcamp FILING?"
-                  content="Untuk biaya 30K/peserta dan 70K/3 peserta."
+                  content="Untuk biaya 30K/peserta dan 75K/3 peserta."
                 />
 
                 <AccordionCard
@@ -117,7 +120,7 @@ export default function FaqPage() {
 
               <AccordionCard
                 title="Apakah ada biaya untuk mengikuti Bootcamp FILING?"
-                content="Untuk biaya 30K/peserta dan 70K/3 peserta."
+                content="Untuk biaya 30K/peserta dan 75K/3 peserta."
               />
 
               <AccordionCard
@@ -138,7 +141,10 @@ export default function FaqPage() {
             </p>
             <p className="font-[Poppins] text-base py-3">
               Can’t find what you are looking for? feel free to{" "}
-              <a href="#" className="underline">
+              <a
+                href="https://www.evernote.com/shard/s684/sh/6bba8628-a7cf-c26f-84b8-1996b92a3f4e/npUZo0Vd4Dp0pPWO4yUYoBVraTAj-dTPsxKUT6WEnZLH3_DS4NKOaGWuZg"
+                className="underline"
+              >
                 ask us
               </a>
               .

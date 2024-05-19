@@ -1,0 +1,15 @@
+POST  http://localhost:3000/API/V1/Auth/Register
+
+{
+    "name":"Appa Jay",
+    "email":"appaJay@gmail.com",
+    "password":"12343241"
+}
+
+###login user
+POST  http://localhost:3000/API/V1/Auth/Login
+
+{
+    "email":"appaJay@gmail.com",
+    "password":"12343241"
+}

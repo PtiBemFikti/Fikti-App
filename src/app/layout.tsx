@@ -5,7 +5,12 @@ import "./globals.css";
 import Navbar from "@/components/landing-page/navbar";
 import Footer from "@/components/landing-page/footer";
 
-const disableNavbar = ["/filing", "/technofair"];
+const disableNavbar = [
+  "/filing",
+  "/technofair",
+  "/filing/WebDevelopment",
+  "/filing/DataAnalyst",
+];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -23,9 +28,7 @@ export default function RootLayout({
   const pathname = usePathname();
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <title>BEM FIKTI UG 2024</title>
-      </head>
+      <title>BEM FIKTI 2024</title>
       <body className={`${lato.className}`}>
         {!disableNavbar.includes(pathname) && <Navbar />}
         {children}
