@@ -34,8 +34,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <motion.nav initial={{ opacity: 1 }} animate={{ opacity: 1 }} transition={{ type: 'keyframes', duration: 0.5, delay: 0.5 }} className="bg-[#ffffff] p-4 top-0 sticky z-50">
-      <div className="container mx-auto flex justify-between items-center -mb-32">
+    <motion.nav initial={{ opacity: 1 }} animate={{ opacity: 1 }} transition={{ type: 'keyframes', duration: 0.5, delay: 0.5 }} className="bg-[#ffffff] p-4 top-0 sticky z-10">
+      <div className="md:mx-10 flex justify-between items-center -mb-32">
         <Link href="/technofair" className="flex justify-center items-center ml-5 mb-32">
           <Image src="/technofair/logo-tf.png" alt="Logo" width={50} height={50} className="" />
         </Link>

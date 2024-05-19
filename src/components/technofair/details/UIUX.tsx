@@ -32,10 +32,16 @@ export default function UiUx() {
                 </p>
               </div>
               <div className="pt-2 flex gap-4">
-                <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+                <Link
+                  href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'}
+                  className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+                >
                   <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
                 </Link>
-                <Link href={'https://docs.google.com/forms/d/1Z-W7PSNcUNLekwsuP1s-7wdZztfQhvSdRzxKUmDR-M8/viewform?pli=1&pli=1&pli=1&edit_requested=true'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <Link
+                  href={'https://docs.google.com/forms/d/1Z-W7PSNcUNLekwsuP1s-7wdZztfQhvSdRzxKUmDR-M8/viewform?pli=1&pli=1&pli=1&edit_requested=true'}
+                  className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]"
+                >
                   <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
                 </Link>
               </div>
@@ -43,21 +49,23 @@ export default function UiUx() {
           </div>
           <div className="py-24">
             <div className="flex gap-20">
-              <div className=" w-2/6 h-40 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg">
-                <div className="px-5 py-2">
-                  <p className="text-[#31304D] text-sm font-[Poppins] font-semibold">Details</p>
-                  <div className="px-3">
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className="text-[#212427] text-base font-[Poppins]">About Workshop</p>
-                    </div>
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className="text-[#212427] text-base font-[Poppins]">Benefit Workshop</p>
-                    </div>
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className="text-[#212427] text-base font-[Poppins]">Jadwal & Materi</p>
+              <div className="w-2/6 flex flex-col gap-3">
+                <div className="w-72 h-40 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg">
+                  <div className="px-5 py-2">
+                    <p className="text-[#31304D] text-sm font-[Poppins] font-semibold">Details</p>
+                    <div className="px-3">
+                      <div className="py-2 flex gap-5">
+                        <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
+                        <p className="text-[#212427] text-base font-[Poppins]">About Workshop</p>
+                      </div>
+                      <div className="py-2 flex gap-5">
+                        <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
+                        <p className="text-[#212427] text-base font-[Poppins]">Benefit Workshop</p>
+                      </div>
+                      <div className="py-2 flex gap-5">
+                        <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
+                        <p className="text-[#212427] text-base font-[Poppins]">Jadwal & Materi</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -174,10 +182,16 @@ export default function UiUx() {
           </div>
           <div className="px-5">
             <div className="pt-2 flex gap-4">
-              <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
+              <Link
+                href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'}
+                className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]"
+              >
                 <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
               </Link>
-              <Link href={'https://docs.google.com/forms/d/1Z-W7PSNcUNLekwsuP1s-7wdZztfQhvSdRzxKUmDR-M8/viewform?pli=1&pli=1&pli=1&edit_requested=true'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link
+                href={'https://docs.google.com/forms/d/1Z-W7PSNcUNLekwsuP1s-7wdZztfQhvSdRzxKUmDR-M8/viewform?pli=1&pli=1&pli=1&edit_requested=true'}
+                className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]"
+              >
                 <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
               </Link>
             </div>

@@ -19,7 +19,7 @@ export default function CaptureTheFlagPage() {
       {/* Tampilan Dekstop start */}
       <div className="md:block hidden">
         <div className={`px-40 py-16 ${poppins.className}`}>
-          <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
+          <div className={`py-3 flex gap-2 ${bricolageGrotesque.className}`}>
             <div className="w-1/2 py-7">
               <Image src={'/technofair/capture-the-flag.png'} alt="Capture The Flag" width={461} height={346} className="rounded-2xl" />
             </div>
@@ -44,7 +44,7 @@ export default function CaptureTheFlagPage() {
               </div>
               <div className="pt-2 flex gap-4">
                 <Link
-                  href={'https://www.evernote.com/shard/s525/sh/5ac285fa-4b12-3c3a-070c-5e7e15014d43/ibUTPYheiqmlECLau3UCV_5Xps5clgIgmjYwTemgtIKKARhVANiane8gpA'}
+                  href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'}
                   className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]"
                 >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
@@ -62,24 +62,31 @@ export default function CaptureTheFlagPage() {
           </div>
           <div className="py-24">
             <div className="flex gap-20">
-              <div className=" w-2/6 h-40 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg">
-                <div className="px-5 py-2">
-                  <p className={`text-[#31304D] text-sm ${poppins.className} font-semibold`}>Details</p>
-                  <div className="px-3">
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className={`text-[#212427] text-base ${poppins.className}`}>Ketentuan Umum</p>
-                    </div>
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className={`text-[#212427] text-base ${poppins.className}`}>Ketentuan Karya</p>
-                    </div>
-                    <div className="py-2 flex gap-5">
-                      <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                      <p className={`text-[#212427] text-base ${poppins.className}`}>Tahapan Kompetisi</p>
+              <div className="w-2/6 flex flex-col gap-3">
+                <div className="w-72 h-40 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg">
+                  <div className="px-5 py-2">
+                    <p className={`text-[#31304D] text-sm ${poppins.className} font-semibold`}>Details</p>
+                    <div className="px-3">
+                      <div className="py-2 flex gap-5">
+                        <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
+                        <p className={`text-[#212427] text-base ${poppins.className}`}>Ketentuan Umum</p>
+                      </div>
+                      <div className="py-2 flex gap-5">
+                        <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
+                        <p className={`text-[#212427] text-base ${poppins.className}`}>Ketentuan Karya</p>
+                      </div>
+                      <div className="py-2 flex gap-5">
+                        <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
+                        <p className={`text-[#212427] text-base ${poppins.className}`}>Tahapan Kompetisi</p>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <Link href={'https://drive.google.com/drive/folders/1EspN_wlBeK8J1CHVxApL9kcpn5mMptEZ?usp=drive_link'} className="">
+                  <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
+                    <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
+                  </div>
+                </Link>
               </div>
               <div className="w-5/6">
                 <div className="">
@@ -264,10 +271,10 @@ export default function CaptureTheFlagPage() {
               </p>
             </div>
           </div>
-          <div className="px-5">
+          <div className="px-5 flex flex-col gap-4">
             <div className="pt-2 flex gap-4">
               <Link
-                href={'https://www.evernote.com/shard/s525/sh/5ac285fa-4b12-3c3a-070c-5e7e15014d43/ibUTPYheiqmlECLau3UCV_5Xps5clgIgmjYwTemgtIKKARhVANiane8gpA'}
+                href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'}
                 className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]"
               >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
@@ -276,6 +283,9 @@ export default function CaptureTheFlagPage() {
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
               </Link>
             </div>
+            <Link href={'https://drive.google.com/drive/folders/1EspN_wlBeK8J1CHVxApL9kcpn5mMptEZ?usp=drive_link'} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
+              <p className='text-[#6c6a67]'>Lihat Rulebook</p>
+            </Link>
           </div>
           <div className="">
             <div className="py-10 px-5">
