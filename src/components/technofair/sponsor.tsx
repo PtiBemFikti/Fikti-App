@@ -15,8 +15,8 @@ export default function SponsorPage() {
                 </div>
                 <div className="w-full h-0.5 bg-[#b8bcc7] opacity-30"></div>
               </div>
-              <div className="flex justify-center items-center py-5">
-                <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={300} height={150} />
+              <div className="flex justify-center items-center">
+                <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={400} height={200} />
               </div>
             </div>
             <div className="flex gap-5">
@@ -30,7 +30,7 @@ export default function SponsorPage() {
                     <div className="w-1/2 h-0.5 bg-[#b8bcc7] opacity-30"></div>
                   </div>
                   <div className="flex justify-center items-center gap-5 py-10">
-                    <Image src={'/technofair/dicoding.png'} alt="dicoding" width={271} height={75} />
+                    <Image src={'/technofair/dicoding.png'} alt="dicoding" width={230} height={75} />
                     <Image src={'/technofair/frisianflag.png'} alt="frisian flag" width={110} height={110} />
                     <Image src={'/technofair/dapoerdjoeang.png'} alt="dapoer djoeang" width={110} height={110} />
                   </div>
@@ -95,8 +95,8 @@ export default function SponsorPage() {
             <div className="flex justify-center items-center gap-3">
               <p className="font-[Poppins] text-sm font-light text-[#262626]">OFFICIAL EXCLUSIVE CLOUD HOSTING PARTNER</p>
             </div>
-            <div className="flex justify-center items-center py-5">
-              <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={127} height={30} />
+            <div className="flex justify-center items-center py-3">
+              <Image src={'/technofair/dewaweb.png'} alt="dewaweb" width={185} height={30} />
             </div>
           </div>
           <div className="w-full h-48 bg-white rounded-3xl py-8">

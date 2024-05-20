@@ -1,8 +1,11 @@
+'use client'
+
 import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
 import { bricolageGrotesque, poppins } from '@/styles/font';
 import { useRouter } from 'next/router';
+import { toast } from 'sonner';
 
 export default function CaptureTheFlagPage() {
   // const router = useRouter;
@@ -82,11 +85,16 @@ export default function CaptureTheFlagPage() {
                     </div>
                   </div>
                 </div>
-                <Link href={'https://drive.google.com/drive/folders/1UFrhbUsT0tqQWJPFqwHWulhCp7lH9vRc?usp=drive_link'} className="">
+                <button onClick={() => toast.error('Coming Soon')} className="">
                   <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
                     <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
                   </div>
-                </Link>
+                </button>
+                {/* <Link href={'https://drive.google.com/drive/folders/1UFrhbUsT0tqQWJPFqwHWulhCp7lH9vRc?usp=drive_link'} className="">
+                  <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
+                    <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
+                  </div>
+                </Link> */}
               </div>
               <div className="w-5/6">
                 <div className="">
@@ -260,9 +268,12 @@ export default function CaptureTheFlagPage() {
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
               </Link>
             </div>
-            <Link href={'https://drive.google.com/drive/folders/1UFrhbUsT0tqQWJPFqwHWulhCp7lH9vRc?usp=drive_link'} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
+            <button onClick={() => toast.error('Coming Soon')} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
               <p className='text-[#6c6a67]'>Lihat Rulebook</p>
-            </Link>
+            </button>
+            {/* <Link href={'https://drive.google.com/drive/folders/1UFrhbUsT0tqQWJPFqwHWulhCp7lH9vRc?usp=drive_link'} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
+              <p className='text-[#6c6a67]'>Lihat Rulebook</p>
+            </Link> */}
           </div>
           <div className="">
             <div className="py-10 px-5">

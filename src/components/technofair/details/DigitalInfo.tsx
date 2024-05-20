@@ -33,7 +33,7 @@ export default function DigitalInfoPage() {
                   <p className="text-4xl font-bold text-[#241525]">Digital Infographic</p>
                   <p className="font-bold text-[#B9BCC7] text-xl mt-3">Competitions</p>
                 </div>
-                <div className={`text-[#212427] text-lg italic font-light ${poppins.className}`}>Digital Infographic Fusion: Digital Design Challenge</div>
+                <div className={`text-[#212427] text-lg italic font-light ${poppins.className}`}>&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</div>
               </div>
               <div className={`text-[#212427] text-xl font-semibold ${poppins.className} py-2`}>Sabtu, 01 Juni 2024</div>
               <div className="">
@@ -89,7 +89,7 @@ export default function DigitalInfoPage() {
                     </div>
                   </div>
                 </div>
-                <Link href={'https://drive.google.com/drive/folders/1vaJe_0X1SixHMmIzRqsMrj0jDigmaB69?usp=drive_link'} className="">
+                <Link href={'https://drive.google.com/file/d/1TQ0idskCjTPrR1B6pPyO5zeJOv6y9vM_/view?usp=drive_link'} className="">
                   <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
                     <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
                   </div>
@@ -187,9 +187,9 @@ export default function DigitalInfoPage() {
                     <p className={`text-[#31304D] text-xl font-bold ${poppins.className}`}>Tema & Subtema</p>
                   </div>
                   <div className="py-5 gap-10 pl-5 text-[#212427]">
-                    <div className="flex">
+                    <div className="flex gap-5">
                       <p className="text-base">Tema:</p>
-                      <p className="text-xl italic text-center">&quot;Realizing the Dynamic Technological Transformation Through Collaborative Innovation in FutureTech.&quot;</p>
+                      <p className="text-xl italic text-center font-bold">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
                     </div>
                     {/* <div className="w-2/4 pt-14">
                       <Link href={'#'} className="w-80 h-20 bg-[#11111B] rounded-[8px] text-center flex flex-col justify-center items-center">
@@ -339,7 +339,7 @@ export default function DigitalInfoPage() {
             </Link>
             <div className="text-[#262626]">
               <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Digital Infographic</p>
-              <p className={`${poppins.className} text-base italic font-light`}>Digital Infographic Fusion: Digital Design Challenge</p>
+              <p className={`${poppins.className} text-base italic font-light`}>&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
             </div>
             <div className="text-[#262626] py-3">
               <p className={`${poppins.className} text-sm font-medium`}>Sabtu, 01 Juni 2024</p>
@@ -363,7 +363,7 @@ export default function DigitalInfoPage() {
               </Link>
             </div>
             <Link
-              href={'https://drive.google.com/drive/folders/1vaJe_0X1SixHMmIzRqsMrj0jDigmaB69?usp=drive_link'}
+              href={'https://drive.google.com/file/d/1TQ0idskCjTPrR1B6pPyO5zeJOv6y9vM_/view?usp=drive_link'}
               className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}
             >
               <p className="text-[#6c6a67]">Lihat Rulebook</p>
@@ -464,7 +464,7 @@ export default function DigitalInfoPage() {
                 <div className="text-[#212427]">
                   <div className="">
                     <p className="pl-7">Tema:</p>
-                    <p className="px-7 text-center font-bold italic">&quot;Realizing the Dynamic Technological Transformation Through Collaborative Innovation in FutureTech.&quot;</p>
+                    <p className="px-7 text-center font-bold italic">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
                   </div>
                   <div className="pl-7">
                     <p>Subtema:</p>

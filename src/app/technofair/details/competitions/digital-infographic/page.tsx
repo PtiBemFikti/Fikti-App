@@ -5,10 +5,10 @@ import { Metadata } from 'next';
 import NavbarNoComponents from '@/components/technofair/NavbarNoComponents';
 
 export const metadata: Metadata = {
-  title: 'TechnoFair 11.0',
-  description: 'TechnoFair 11.0',
+  title: 'Digital Infographic - TechnoFair 11.0',
+  description: 'Digital Infographic - TechnoFair 11.0',
   icons: {
-    icon: '/tehcnofair/logo-tf.png',
+    icon: '/technofair/logo-tf.png',
     apple: '/technofair/logo-tf.png',
   }
 };

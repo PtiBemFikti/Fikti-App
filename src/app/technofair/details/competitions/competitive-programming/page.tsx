@@ -6,15 +6,14 @@ import NavbarNoComponents from '@/components/technofair/NavbarNoComponents';
 
 
 export const metadata: Metadata = {
-  title: 'TechnoFair 11.0',
-  description: 'TechnoFair 11.0',
+  title: 'Competitive Programming - TechnoFair 11.0',
+  description: 'Competitive Programming - TechnoFair 11.0',
   icons: {
-    icon: '/tehcnofair/logo-tf.png',
-    apple: '/technofair/logo-tf.png',
+    icon: '/technofair/logo-tf.png',
   }
 };
 
-export default function captureTheFlagPage() {
+export default function competitiveProgrammingPage() {
   return (
     <div>
       <NavbarNoComponents />
