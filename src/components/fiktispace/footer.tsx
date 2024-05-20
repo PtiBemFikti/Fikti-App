@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           <p>FIKTI SPACE</p>
         </div>
         <div className="flex">
-          <div className="flex flex-col text-center mt-4">
+          <div className="flex flex-col text-center mt-4 gap-1">
             <h1 className="text-xl">Social media</h1>
             <Link
               href="http://instagram.com/ug_bemfikti"
@@ -79,57 +79,34 @@ const Footer: React.FC = () => {
             </Link>
           </div>
 
-          <div className="flex-initial mt-4 px-2 md:w-96">
+          <div className="flex-initial mt-4 px-6 md:w-96">
             <h1 className="text-xl text-center mb-2">Kontak</h1>
-            <Link href="/" className="text-gray-400 hover:text-purpleText">
-              <p className="mb-5 w-36 text-center text-xs">
-                Pusat Kegiatan Mahasiswa (PUSGIWA) Gedung 4 Lantai 3 Kampus E
-                Universitas Gunadarma Jl. Komjen Pol. M. Jasin Kelapa Dua Depok
-              </p>
-            </Link>
-
-            <div className="flex flex-row gap-5 items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-8 h-8 align-top"
-                width="24"
-                height="24"
-              ></svg>
-              <Link href="/" className="text-gray-400 hover:text-purpleText">
+            <div className="flex justify-center items-center">
+              <div className="w-36 flex items-center justify-center text-center text-xs">
+                <Link href="/" className="text-gray-400 hover:text-purpleText">
+                  <p>
+                    Pusat Kegiatan Mahasiswa (PUSGIWA) Gedung 4 Lantai 3 Kampus
+                    E Universitas Gunadarma Jl. Komjen Pol. M. Jasin Kelapa Dua
+                    Depok
+                  </p>
+                </Link>
+              </div>
+            </div>
+            <div className="mt-2">
+              <Link
+                href="/"
+                className="text-gray-400 text-base hover:text-purpleText"
+              >
                 <p>bemfikti.ug@gmail.com</p>
               </Link>
             </div>
-
-            <div className="flex flex-row gap-5 items-center mb-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-8 h-8 align-top"
-                width="24"
-                height="24"
-              ></svg>
-              <Link href="/" className="text-gray-400 hover:text-purpleText">
+            <div className="items-center mb-5">
+              <Link
+                href="/"
+                className="text-gray-400 text-center text-base hover:text-purpleText"
+              >
                 <p>+62 877-8524-7632</p>
               </Link>
-            </div>
-            <div className="flex flex-row gap-5 items-center mb-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-32 md:w-28 h-8 align-top"
-                width="24"
-                height="24"
-              ></svg>
             </div>
           </div>
         </div>

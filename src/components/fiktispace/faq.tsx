@@ -27,15 +27,14 @@ export default function FaqPage() {
             Everything you need to know about FIKTI SPACE.
           </div>
           <div className="w-[360px] mt-4 bg-[#FFFFFF1F] border-0 rounded-lg">
-            <AccordionCard title="SOON" content="SABAR" />
-            <AccordionCard title="SOON" content="SABAR" />
-            <AccordionCard title="SOON" content="SABAR" />
-            <AccordionCard title="SOON" content="SABAR" />
-            <AccordionCard title="SOON" content="SABAR" />
-            <AccordionCard title="SOON" content="SABAR" />
-            <AccordionCard title="SOON" content="SABAR" />
-            <AccordionCard title="SOON" content="SABAR" />
-            <AccordionCard title="SOON" content="SABAR" />
+            <AccordionCard
+              title="Apakah kompetisi ini bisa diikuti oleh mahasiswa seluruh fakultas?"
+              content="SABAR"
+            />
+            <AccordionCard
+              title="Apa bisa reschedule jadwal? (Khusus Kompetisi Olahraga)"
+              content="SABAR"
+            />
           </div>
           <div className="flex justify-center mt-4">
             <div
