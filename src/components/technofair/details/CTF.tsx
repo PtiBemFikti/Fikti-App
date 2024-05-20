@@ -94,6 +94,9 @@ export default function CaptureTheFlagPage() {
                     <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
                   </div>
                 </Link> */}
+                <div className="py-7">
+                  <Image src={'/technofair/timeline-ctf.png'} alt='timeline ctf' width={275} height={768}/>
+                </div>
               </div>
               <div className="w-5/6">
                 <div className="">
@@ -296,6 +299,9 @@ export default function CaptureTheFlagPage() {
             {/* <Link href={'https://drive.google.com/drive/folders/1EspN_wlBeK8J1CHVxApL9kcpn5mMptEZ?usp=drive_link'} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
               <p className='text-[#6c6a67]'>Lihat Rulebook</p>
             </Link> */}
+            <div className="">
+              <Image src={'/technofair/timeline-ctf.png'} alt='timeline ctf' width={175} height={568}/>
+            </div>
           </div>
           <div className="">
             <div className="py-10 px-5">
