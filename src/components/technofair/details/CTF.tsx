@@ -51,9 +51,12 @@ export default function CaptureTheFlagPage() {
                 >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
-                <Link href={'https://docs.google.com/forms/d/10Xj6u0p0ykHcUwsDVXA__O1ZiuBWjwgVU2wXfJRm0ao/edit'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <button onClick={() => toast.error('Coming Soon')} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-                </Link>
+                </button>
+                {/* <Link href={'https://docs.google.com/forms/d/10Xj6u0p0ykHcUwsDVXA__O1ZiuBWjwgVU2wXfJRm0ao/edit'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                  <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
+                </Link> */}
                 <div className="mt-9 text-base text-[#212427]">
                   <p>
                     <strong>Rp 80.000</strong>/Tim
@@ -94,6 +97,9 @@ export default function CaptureTheFlagPage() {
                     <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
                   </div>
                 </Link> */}
+                <div className="py-7">
+                  <Image src={'/technofair/timeline-ctf.png'} alt='timeline ctf' width={275} height={768}/>
+                </div>
               </div>
               <div className="w-5/6">
                 <div className="">
@@ -286,9 +292,12 @@ export default function CaptureTheFlagPage() {
               >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              <Link href={'https://docs.google.com/forms/d/10Xj6u0p0ykHcUwsDVXA__O1ZiuBWjwgVU2wXfJRm0ao/edit'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <button onClick={() => toast.error('Coming Soon')} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-              </Link>
+              </button>
+              {/* <Link href={'https://docs.google.com/forms/d/10Xj6u0p0ykHcUwsDVXA__O1ZiuBWjwgVU2wXfJRm0ao/edit'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
+              </Link> */}
             </div>
             <button onClick={() => toast.error('Coming Soon')} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
               <p className='text-[#6c6a67]'>Lihat Rulebook</p>
@@ -296,6 +305,9 @@ export default function CaptureTheFlagPage() {
             {/* <Link href={'https://drive.google.com/drive/folders/1EspN_wlBeK8J1CHVxApL9kcpn5mMptEZ?usp=drive_link'} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
               <p className='text-[#6c6a67]'>Lihat Rulebook</p>
             </Link> */}
+            <div className="">
+              <Image src={'/technofair/timeline-ctf.png'} alt='timeline ctf' width={175} height={568}/>
+            </div>
           </div>
           <div className="">
             <div className="py-10 px-5">

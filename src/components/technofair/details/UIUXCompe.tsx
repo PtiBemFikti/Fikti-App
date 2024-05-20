@@ -35,7 +35,7 @@ export default function UIUXCompePage() {
                 </div>
                 <div className={`text-[#212427] text-lg italic font-light ${poppins.className}`}>Enhancing Modern Visual with UI/UX Design</div>
               </div>
-              <div className={`text-[#212427] text-xl font-semibold ${poppins.className} py-2`}>Sabtu, 01 Juni 2024</div>
+              <div className={`text-[#212427] text-xl font-semibold ${poppins.className} py-2`}>Senin, 20 Mei 2024</div>
               <div className="">
                 <p className={`text-lg font-normal ${poppins.className} text-[#212427]`}>
                   <em>UI/UX Design Competition</em> adalah salah satu kompetisi untuk menunjukkan bakat dan kemampuan peserta dalam membangun desain antarmuka sistem/produk yang berorientasi kepada kenyamanan dan kemudahan pengguna (user)
@@ -49,7 +49,7 @@ export default function UIUXCompePage() {
                 >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
-                <Link href={'https://docs.google.com/forms/d/1SNT6S5bN1iLsRDJDZohjhraXtT2-uiUggg090eQu3mQ/viewform?edit_requested=true'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <Link href={'https://bit.ly/RegistrationUIUXTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
                 </Link>
                 <div className="mt-9 text-base text-[#212427]">
@@ -86,11 +86,14 @@ export default function UIUXCompePage() {
                     </div>
                   </div>
                 </div>
-                <Link href={'https://drive.google.com/drive/folders/1E-AU-L_NfF9NMD1DtIVYQLuylwbDpUuY?usp=drive_link'} className="">
+                <Link href={'https://drive.google.com/file/d/1Y-MZrxtNFelT7wPA3VEKScldD45dMt_1/view?usp=drive_link'} className="">
                   <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
                     <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
                   </div>
                 </Link>
+                <div className="py-7">
+                  <Image src={'/technofair/timeline-uiuxcompe.png'} alt='timeline uiux' width={289} height={765}/>
+                </div>
               </div>
               <div className="w-5/6">
                 <div className="">
@@ -357,7 +360,7 @@ export default function UIUXCompePage() {
               <p className={`${poppins.className} text-base italic font-light`}>Enhancing Modern Visual with UI/UX Design</p>
             </div>
             <div className="text-[#262626] py-3">
-              <p className={`${poppins.className} text-sm font-medium`}>Sabtu, 01 Juni 2024</p>
+              <p className={`${poppins.className} text-sm font-medium`}>Senin, 20 Mei 2024</p>
             </div>
             <div className="text-sm text-[#212427]">
               <p>
@@ -373,16 +376,19 @@ export default function UIUXCompePage() {
               >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              <Link href={'https://docs.google.com/forms/d/1SNT6S5bN1iLsRDJDZohjhraXtT2-uiUggg090eQu3mQ/viewform?edit_requested=true'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link href={'https://bit.ly/RegistrationUIUXTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
               </Link>
             </div>
             <Link
-              href={'https://drive.google.com/drive/folders/1E-AU-L_NfF9NMD1DtIVYQLuylwbDpUuY?usp=drive_link'}
+              href={'https://drive.google.com/file/d/1Y-MZrxtNFelT7wPA3VEKScldD45dMt_1/view?usp=drive_link'}
               className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}
             >
               <p className="text-[#6c6a67]">Lihat Rulebook</p>
             </Link>
+            <div className="py-3">
+              <Image src={'/technofair/timeline-uiuxcompe.png'} alt='timeline uiux' width={259} height={765}/>
+            </div>
           </div>
           <div className="">
             <div className="py-10 px-5">
