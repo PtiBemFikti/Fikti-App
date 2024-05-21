@@ -35,7 +35,7 @@ export default function DigitalInfoPage() {
                 </div>
                 <div className={`text-[#212427] text-lg italic font-light ${poppins.className}`}>&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</div>
               </div>
-              <div className={`text-[#212427] text-xl font-semibold ${poppins.className} py-2`}>Senin, 20 Mei 2024</div>
+              <div className={`text-[#212427] text-xl font-semibold ${poppins.className} py-2`}>Selasa, 21 Mei 2024</div>
               <div className="">
                 <p className={`text-lg font-normal ${poppins.className} text-[#212427]`}>
                   Digital Infographic Competition merupakan kompetisi dimana para peserta membuat sebuah poster Digital infografis yang mengandung pesan atau informasi mengenai data-data sesuai tema yang diberikan{' '}
@@ -89,7 +89,7 @@ export default function DigitalInfoPage() {
                     </div>
                   </div>
                 </div>
-                <Link href={'https://drive.google.com/file/d/1iJalon_mEB8cb0dO0bgZHlM3LWowoEBg/view?usp=drive_link'} className="">
+                <Link href={'https://drive.google.com/file/d/1pB5xH82Os_5oJc5ft5-I3QwSq2CCQokz/view?usp=sharing'} className="">
                   <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
                     <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
                   </div>
@@ -345,7 +345,7 @@ export default function DigitalInfoPage() {
               <p className={`${poppins.className} text-base italic font-light`}>&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
             </div>
             <div className="text-[#262626] py-3">
-              <p className={`${poppins.className} text-sm font-medium`}>Senin, 20 Mei 2024</p>
+              <p className={`${poppins.className} text-sm font-medium`}>Selasa, 21 Mei 2024</p>
             </div>
             <div className="text-sm text-[#212427]">
               <p>
@@ -366,7 +366,7 @@ export default function DigitalInfoPage() {
               </Link>
             </div>
             <Link
-              href={'https://drive.google.com/file/d/1iJalon_mEB8cb0dO0bgZHlM3LWowoEBg/view?usp=drive_link'}
+              href={'https://drive.google.com/file/d/1pB5xH82Os_5oJc5ft5-I3QwSq2CCQokz/view?usp=sharing'}
               className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}
             >
               <p className="text-[#6c6a67]">Lihat Rulebook</p>
