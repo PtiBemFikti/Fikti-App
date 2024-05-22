@@ -4,17 +4,17 @@ import Image from "next/image";
 
 export default function CompetitionPage() {
   return (
-    <div className="mt-4 md:hidden">
+    <div className="mt-4 md:w-1/2">
       <div className="flex items-center justify-center">
         <div className="my-8 px-8">
           <div>
             <h1
-              className={`font-bold text-lg text-gray-200 tracking wide ${Guardians.className}`}
+              className={`font-bold text-lg md:text-3xl text-gray-200 tracking wide ${Guardians.className}`}
             >
               COMPETITION LIST
             </h1>
             <p
-              className={`text-gray-100 text-sm text-center ${Urbanist.className}`}
+              className={`text-gray-100 text-sm md:text-xl text-center ${Urbanist.className}`}
             >
               choose and click to learn more!
             </p>
@@ -26,6 +26,7 @@ export default function CompetitionPage() {
               alt="sport"
               width={180}
               height={180}
+              loading="eager"
             ></Image>
             <div>
               <h1
@@ -63,6 +64,7 @@ export default function CompetitionPage() {
               alt="esport"
               width={180}
               height={180}
+              loading="eager"
             ></Image>
             <div>
               <h1
@@ -86,6 +88,7 @@ export default function CompetitionPage() {
               alt="art"
               width={180}
               height={180}
+              loading="eager"
             ></Image>
             <div>
               <h1

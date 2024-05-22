@@ -15,9 +15,11 @@ export default function FiktispacePage() {
         <Navbar />
         <DashboardPage />
         <AboutPage />
-        <div className=" md:hidden bg-[url('/fiktispace/bgmobile.png')] bg-cover bg-no-repeat">
-          <CompetitionPage />
-          <TimelinePage />
+        <div>
+          <div className="md:flex md:bg-[url('/fiktispace/bgdesktop.png')] bg-[url('/fiktispace/bgmobile.png')] bg-cover bg-no-repeat">
+            <CompetitionPage />
+            <TimelinePage />
+          </div>
           <DocumentationPage />
         </div>
         <div className="bg-gradient-to-b from-[#010417] to-[#261441]">
