@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import web from "@/../public/filing/Web.png";
+import { circleAmolens } from "@/styles/font";
 
 const Section1: React.FC = () => {
   return (
@@ -32,7 +33,9 @@ const Section1: React.FC = () => {
       <div className="w-[300px] md:w-full flex flex-wrap gap-10 space-y-3">
         <Image src={web} alt="" className="mt-4 md:w-[462px] md:h-[346px]" />
         <div className="text-black space-y-2 md:w-[650px] flex flex-col justify-between">
-          <h1 className="font-CircleAmolens text-[30px] md:text-[40px]">
+          <h1
+            className={`${circleAmolens.className} text-[30px] md:text-[40px]`}
+          >
             Web Development
           </h1>
           <h2 className="font-Poppins italic font-light text-[16px]  text-[#6C6A67] md:text-[20px]">

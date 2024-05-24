@@ -36,3 +36,19 @@ body {
 .event {
   background: linear-gradient(180deg, rgba(11, 14, 26, 0) 0%, #0b0e1a 9.4%);
 }
+
+.decimal {
+  list-style-type: decimal;
+}
+
+.alpha {
+  list-style-type: lower-alpha;
+}
+
+.disc {
+  list-style-type: disc;
+}
+
+.roman {
+  list-style-type: upper-roman;
+}

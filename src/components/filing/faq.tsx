@@ -1,3 +1,4 @@
+import { circleAmolens } from "@/styles/font";
 import AccordionCard from "./AccordionCard";
 
 export default function FaqPage() {
@@ -8,7 +9,9 @@ export default function FaqPage() {
         <div className="flex justify-center py-32 px-10 gap-20">
           <div className="">
             <div className="">
-              <p className="text-white text-5xl font-['Circle-Amolens'] font-bold">
+              <p
+                className={`${circleAmolens.className} text-white text-5xl font-medium`}
+              >
                 FREQUENTLY ASKED QUESTIONS
               </p>
               <p className="text-white text-xl font-[Poppins] py-2">
@@ -16,7 +19,9 @@ export default function FaqPage() {
               </p>
             </div>
             <div className="mt-80">
-              <p className="text-white font-['Circle-Amolens'] text-4xl font-bold">
+              <p
+                className={`${circleAmolens.className} text-white text-4xl font-medium`}
+              >
                 CONTACT US
               </p>
               <p className="text-white text-xl font-[Poppins] py-3">
@@ -87,7 +92,7 @@ export default function FaqPage() {
       <div className="md:hidden">
         <div className="flex-col justify-center items-center py-32 px-4">
           <div className="text-[#fff4e7] text-center">
-            <p className="text-4xl font-bold font-['Circle-Amolens']">
+            <p className={`${circleAmolens.className} text-4xl font-bold`}>
               FREQUENTLY ASKED QUESTIONS
             </p>
           </div>
@@ -136,7 +141,9 @@ export default function FaqPage() {
             </div>
           </div>
           <div className="py-7 text-center px-4">
-            <p className="font-[Bricolage-Grotesque] font-bold text-4xl text-[#fff4e7]">
+            <p
+              className={`${circleAmolens.className} font-bold text-4xl text-[#fff4e7]`}
+            >
               Contact us
             </p>
             <p className="font-[Poppins] text-base py-3">

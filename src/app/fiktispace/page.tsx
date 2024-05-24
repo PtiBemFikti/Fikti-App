@@ -1,15 +1,16 @@
-import DashboardPage from "@/components/fiktispace/dashboard";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Fikti Space 2024",
-  description: "asdfasfsaf",
-};
+import DashboardPage from "@/components/fiktispace/dashboard";
+import Navbar from "@/components/fiktispace/navbar";
+
 
 export default function FiktispacePage() {
   return (
     <div>
-      <DashboardPage />
+      <main className="bg-[#010417] bg-cover bg-no-repeat scroll-smooth">
+        <Navbar />
+        <DashboardPage />
+      </main>
     </div>
   );
 }

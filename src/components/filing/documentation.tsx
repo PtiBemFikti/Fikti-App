@@ -1,3 +1,4 @@
+import { circleAmolens } from "@/styles/font";
 import Image from "next/image";
 
 export default function DocumentationPage() {
@@ -8,7 +9,9 @@ export default function DocumentationPage() {
         <div className="pb-20">
           <div className="p-20">
             <div className="flex justify-center items-center">
-              <div className="text-center font-bold text-3xl font-[arial] tracking-tight text-black">
+              <div
+                className={`${circleAmolens.className} text-center font-bold text-3xl tracking-tight text-black`}
+              >
                 {" "}
                 DOCUMENTATION{" "}
               </div>
@@ -80,7 +83,9 @@ export default function DocumentationPage() {
       <div className="md:hidden mt-2 ">
         <div className="py-10 px-2">
           <div className="flex justify-center items-center mt-8">
-            <div className="w-72 text-center tracking-tight text-black text-3xl font-bold font-[arial]">
+            <div
+              className={`${circleAmolens.className} w-72 text-center tracking-tight text-black text-3xl font-bold`}
+            >
               DOCUMENTATIONS
             </div>
           </div>
