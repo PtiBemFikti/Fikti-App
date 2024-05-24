@@ -38,7 +38,7 @@ export default function CaptureTheFlagPage() {
                 </div>
                 <div className={`text-[#212427] text-lg italic font-light ${poppins.className}`}>Competitive Programming of TechnoFair 11.0</div>
               </div>
-              <div className={`text-[#212427] text-xl font-semibold ${poppins.className} py-2`}>Sabtu, 01 Juni 2024</div>
+              <div className={`text-[#212427] text-xl font-semibold ${poppins.className} py-2`}>Jum&apos;at, 24 Mei 2024</div>
               <div className="">
                 <p className={`text-lg font-normal ${poppins.className} text-[#212427]`}>
                   Kompetisi ini ditujukan untuk menguji kemampuan pemecahan masalah dengan menyelesaikan sejumlah masalah pemrograman yang berbeda tingkat kesulitannya dengan bahasa pemrograman tertentu dalam batasan waktu dan memori yang
@@ -52,12 +52,12 @@ export default function CaptureTheFlagPage() {
                 >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
-                <button onClick={() => toast.error('Coming Soon')} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                {/* <button onClick={() => toast.error('Coming Soon')} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-                </button>
-                {/* <Link href={'https://docs.google.com/forms/d/1xp_ZFuEkN7Eiu5MbpfXezdrChtPoUra5kzoVxqiypp8/edit?ts=66460c90'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                </button> */}
+                <Link href={'https://docs.google.com/forms/d/1xp_ZFuEkN7Eiu5MbpfXezdrChtPoUra5kzoVxqiypp8/edit?ts=66460c90'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-                </Link> */}
+                </Link>
                 <div className="mt-9 text-base text-[#212427]">
                   <p>
                     <strong>Rp 80.000</strong>/Tim
@@ -88,19 +88,19 @@ export default function CaptureTheFlagPage() {
                     </div>
                   </div>
                 </div>
-                <button onClick={() => toast.error('Coming Soon')} className="">
+                {/* <button onClick={() => toast.error('Coming Soon')} className="">
                   <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
                     <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
                   </div>
-                </button>
+                </button> */}
+                <Link href={'https://drive.google.com/drive/folders/1UFrhbUsT0tqQWJPFqwHWulhCp7lH9vRc?usp=drive_link'} className="">
+                  <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
+                    <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
+                  </div>
+                </Link>
                 <div className="py-7">
                   <Image src={'/technofair/timeline-comprog.png'} alt='timeline competitive programming' width={275} height={768}/>
                 </div>
-                {/* <Link href={'https://drive.google.com/drive/folders/1UFrhbUsT0tqQWJPFqwHWulhCp7lH9vRc?usp=drive_link'} className="">
-                  <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
-                    <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
-                  </div>
-                </Link> */}
               </div>
               <div className="w-5/6">
                 <div className="">
@@ -254,7 +254,7 @@ export default function CaptureTheFlagPage() {
               <p className={`${poppins.className} text-base italic font-light`}>Competitive Programming of TechnoFair 11.0</p>
             </div>
             <div className="text-[#262626] py-3">
-              <p className={`${poppins.className} text-sm font-medium`}>Sabtu, 01 Juni 2024</p>
+              <p className={`${poppins.className} text-sm font-medium`}>Jum&apos;at, 24 Mei 2024</p>
             </div>
             <div className="text-sm text-[#212427]">
               <p>
@@ -270,16 +270,19 @@ export default function CaptureTheFlagPage() {
               >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              <button onClick={() => toast.error('Coming Soon')} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link href={'https://docs.google.com/forms/d/1xp_ZFuEkN7Eiu5MbpfXezdrChtPoUra5kzoVxqiypp8/edit?ts=66460c90'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-              </button>
+              </Link>
+              {/* <button onClick={() => toast.error('Coming Soon')} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
+              </button> */}
             </div>
-            <button onClick={() => toast.error('Coming Soon')} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
+            {/* <button onClick={() => toast.error('Coming Soon')} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
               <p className='text-[#6c6a67]'>Lihat Rulebook</p>
-            </button>
-            {/* <Link href={'https://drive.google.com/drive/folders/1UFrhbUsT0tqQWJPFqwHWulhCp7lH9vRc?usp=drive_link'} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
+            </button> */}
+            <Link href={'https://drive.google.com/drive/folders/1UFrhbUsT0tqQWJPFqwHWulhCp7lH9vRc?usp=drive_link'} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
               <p className='text-[#6c6a67]'>Lihat Rulebook</p>
-            </Link> */}
+            </Link>
             <div className="py-3">
               <Image src={'/technofair/timeline-comprog.png'} alt='timeline comprog' width={256} height={568}/>
             </div>
