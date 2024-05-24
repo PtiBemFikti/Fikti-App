@@ -55,7 +55,7 @@ export default function CaptureTheFlagPage() {
                 {/* <button onClick={() => toast.error('Coming Soon')} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
                 </button> */}
-                <Link href={'https://docs.google.com/forms/d/1xp_ZFuEkN7Eiu5MbpfXezdrChtPoUra5kzoVxqiypp8/edit?ts=66460c90'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <Link href={'https://bit.ly/RegistrationCPTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
                 </Link>
                 <div className="mt-9 text-base text-[#212427]">
@@ -93,7 +93,7 @@ export default function CaptureTheFlagPage() {
                     <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
                   </div>
                 </button> */}
-                <Link href={'https://drive.google.com/drive/folders/1UFrhbUsT0tqQWJPFqwHWulhCp7lH9vRc?usp=drive_link'} className="">
+                <Link href={'https://drive.google.com/file/d/1A_TdQFm9bf_N46Z5QiPxvscsMwngpJfN/view?usp=sharing'} className="">
                   <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
                     <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
                   </div>
@@ -270,7 +270,7 @@ export default function CaptureTheFlagPage() {
               >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              <Link href={'https://docs.google.com/forms/d/1xp_ZFuEkN7Eiu5MbpfXezdrChtPoUra5kzoVxqiypp8/edit?ts=66460c90'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link href={'https://bit.ly/RegistrationCPTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
               </Link>
               {/* <button onClick={() => toast.error('Coming Soon')} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
@@ -280,7 +280,7 @@ export default function CaptureTheFlagPage() {
             {/* <button onClick={() => toast.error('Coming Soon')} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
               <p className='text-[#6c6a67]'>Lihat Rulebook</p>
             </button> */}
-            <Link href={'https://drive.google.com/drive/folders/1UFrhbUsT0tqQWJPFqwHWulhCp7lH9vRc?usp=drive_link'} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
+            <Link href={'https://drive.google.com/file/d/1A_TdQFm9bf_N46Z5QiPxvscsMwngpJfN/view?usp=sharing'} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
               <p className='text-[#6c6a67]'>Lihat Rulebook</p>
             </Link>
             <div className="py-3">
