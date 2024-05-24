@@ -1,13 +1,8 @@
-import type { Config } from 'tailwindcss';
-import { nextui } from '@nextui-org/react';
+import type { Config } from "tailwindcss";
+import { nextui } from "@nextui-org/react";
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}", "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"],
 
   theme: {
     extend: {
@@ -15,6 +10,8 @@ const config: Config = {
         Bricolage_Grotesque: ["Bricolage_Grotesque", "sans-serif"],
         Lato: ["Lato", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
+        CircleAmolens: ["Circle Amolens", "sans-serif"],
+        Urbanist: ["Urbanist", "sans-serif"],
       },
       colors: {
         background: "#1f0836",
@@ -29,10 +26,13 @@ const config: Config = {
         "purple-normal": "#340660",
         "red-normal-1": "#833344",
       },
+      listStyleType: {
+        "lower-alpha": "lower-alpha",
+        "upper-alpha": "upper-alpha",
+      },
     },
   },
 
-  plugins: [require('daisyui'), nextui()],
-
+  plugins: [require("daisyui"), nextui()],
 };
 export default config;

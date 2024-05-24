@@ -57,8 +57,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const pathname = usePathname();
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-      </head>
       <body className={`${lato.className}`}>
         {!disableNavbar.includes(pathname) && <Navbar />}
         {children}
