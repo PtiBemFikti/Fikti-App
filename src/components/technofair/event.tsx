@@ -198,7 +198,7 @@ export default function EventPage() {
                       <div className="">
                         <div className="grid grid-flow-col">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
-                          <p className="text-[#b9bcc7] text-sm mt-1 pr-7">June 23 - July 27, 2024</p>
+                          <p className="text-[#b9bcc7] text-sm mt-1 pr-7">May 24 - July 27, 2024</p>
                         </div>
                       </div>
                       <div className="grid grid-flow-col gap-2 py-4">
@@ -229,7 +229,7 @@ export default function EventPage() {
                       <div className="">
                         <div className="grid grid-flow-col gap-2">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
-                          <p className="text-[#b9bcc7] text-sm mt-1 pr-10">June 23 - July 27, 2024</p>
+                          <p className="text-[#b9bcc7] text-sm mt-1 pr-10">May 24 - July 27, 2024</p>
                         </div>
                       </div>
                       <div className="grid grid-flow-col gap-2 py-4">
@@ -477,7 +477,7 @@ export default function EventPage() {
                     <div className="grid grid-flow-row gap-y-2">
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
-                        <p className="text-sm text-[#B9BCC7]">June 23 - July 27, 2024</p>
+                        <p className="text-sm text-[#B9BCC7]">May 24 - July 27, 2024</p>
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="jam" width={16} height={16} />
@@ -502,7 +502,7 @@ export default function EventPage() {
                     <div className="grid grid-flow-row gap-y-2">
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
-                        <p className="text-sm text-[#B9BCC7]">June 23 - July 27, 2024</p>
+                        <p className="text-sm text-[#B9BCC7]">May 24 - July 27, 2024</p>
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/internet.png'} alt="jam" width={16} height={16} />

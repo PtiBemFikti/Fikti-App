@@ -86,7 +86,7 @@ export default function UIUXCompePage() {
                     </div>
                   </div>
                 </div>
-                <Link href={'https://drive.google.com/file/d/1pPxXNOtJFJL9CQmfIzGl_J43FAytf8jJ/view?usp=sharing'} className="">
+                <Link href={'https://drive.google.com/file/d/1ixNVmKcynnsLhlQlxp0ZcLoNm1htl1QG/view?usp=sharing'} className="">
                   <div className="w-72 h-14 bg-[#F7F9FA] rounded-[8px] border-[#B9BCC7] border shadow-lg flex justify-center items-center hover:bg-[#eaeaea]">
                     <p className={`text-center text-[#212427] ${poppins.className}`}>Lihat Rulebook</p>
                   </div>
@@ -381,7 +381,7 @@ export default function UIUXCompePage() {
               </Link>
             </div>
             <Link
-              href={'https://drive.google.com/file/d/1pPxXNOtJFJL9CQmfIzGl_J43FAytf8jJ/view?usp=sharing'}
+              href={'https://drive.google.com/file/d/1ixNVmKcynnsLhlQlxp0ZcLoNm1htl1QG/view?usp=sharing'}
               className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}
             >
               <p className="text-[#6c6a67]">Lihat Rulebook</p>

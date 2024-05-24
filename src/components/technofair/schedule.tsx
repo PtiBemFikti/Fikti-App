@@ -192,7 +192,7 @@ const items: any = [
           <div className="">
             <div className="flex justify-between items-center md:p-2">
               <div className="">
-                <p className="font-bold md:text-base text-xs text-[#FFF4E7]">June 23 - July 13, 2024</p>
+                <p className="font-bold md:text-base text-xs text-[#FFF4E7]">May 24 - July 13, 2024</p>
                 <p className="font-light md:text-sm text-xs">Hybrid</p>
               </div>
               <div className="md:w-72 w-56">
@@ -215,7 +215,7 @@ const items: any = [
           <div className="md:py-0 py-3">
             <div className="flex justify-between items-center md:p-2">
               <div className="">
-                <p className="font-bold md:text-base text-xs text-[#FFF4E7]">June 23 - July 13, 2024</p>
+                <p className="font-bold md:text-base text-xs text-[#FFF4E7]">May 24 - July 13, 2024</p>
                 <p className="font-light md:text-sm text-xs">Hybrid</p>
               </div>
               <div className="md:w-72 w-56">
