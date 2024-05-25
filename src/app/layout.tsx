@@ -33,6 +33,7 @@ const disableFooter = [
   "/technofair/details/competitions/competitive-programming",
   "/technofair/details/competitions/ui-ux-design",
   "/technofair/details/competitions/digital-infographic",
+  "/fiktispace",
 ];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
