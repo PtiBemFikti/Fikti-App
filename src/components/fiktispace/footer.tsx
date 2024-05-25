@@ -8,7 +8,7 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <footer className="p-4 bottom-0">
-      <div className="flex flex-col md:flex-row justify-start items-center gap-2 md:px-16 mt-16">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:px-16 mt-16">
         <div className="md:hidden flex-col">
           <div className="flex md:flex-col justify-center items-center mt-4 gap-3">
             <Image
