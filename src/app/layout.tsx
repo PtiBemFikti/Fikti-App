@@ -4,7 +4,6 @@ import { Lato, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/landing-page/navbar";
 import Footer from "@/components/landing-page/footer";
-import { Toaster } from "sonner";
 // import { Head } from 'next/document';
 // import { Metadata } from 'next';
 
@@ -22,6 +21,13 @@ const disableNavbar = [
   "/technofair/details/competitions/competitive-programming",
   "/technofair/details/competitions/ui-ux-design",
   "/technofair/details/competitions/digital-infographic",
+  "/fiktispace/Competition/Futsal",
+  "/fiktispace/Competition/Basketball",
+  "/fiktispace/Competition/Badminton",
+  "/fiktispace/Competition/MobileLegend",
+  "/fiktispace/Competition/DigitalPoster",
+  "/fiktispace/Competition/Fotografi",
+  "/fiktispace/Competition/SoloVocal",
 ];
 const disableFooter = [
   "/technofair",
@@ -34,6 +40,13 @@ const disableFooter = [
   "/technofair/details/competitions/ui-ux-design",
   "/technofair/details/competitions/digital-infographic",
   "/fiktispace",
+  "/fiktispace/Competition/Futsal",
+  "/fiktispace/Competition/Basketball",
+  "/fiktispace/Competition/Badminton",
+  "/fiktispace/Competition/MobileLegend",
+  "/fiktispace/Competition/DigitalPoster",
+  "/fiktispace/Competition/Fotografi",
+  "/fiktispace/Competition/SoloVocal",
 ];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
@@ -65,7 +78,6 @@ export default function RootLayout({
       <body className={`${lato.className}`}>
         {!disableNavbar.includes(pathname) && <Navbar />}
         {children}
-        <Toaster position="top-right" richColors />
         {!disableFooter.includes(pathname) && <Footer />}
       </body>
     </html>
