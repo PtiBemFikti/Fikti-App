@@ -7,6 +7,10 @@ import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import DropdownMenuNav from "./DropdownMenu";
 import { Guardians } from "@/styles/font";
+import OlahragaDropdown from "./OlahragaDropdown";
+import SeniDropdown from "./SeniDropdown";
+import EsportDropdown from "./EsportDropdown";
+import DaftarDropdown from "./DaftarDropdown";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,13 +73,13 @@ const Navbar: React.FC = () => {
           </div>
           <Link
             className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300 mt-4"
-            href="/schedule"
+            href="#schedule"
           >
             Schedule
           </Link>
           <Link
             className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300 mt-4"
-            href="/contact"
+            href="#contact"
           >
             Contacts
           </Link>
@@ -90,9 +94,9 @@ const Navbar: React.FC = () => {
         </div>
         <div className="md:block hidden">
           <div className="flex justify-between items-center w-64 h-14 bg-[#0A0723] rounded-[24px] mb-32">
-            <div className="px-5 rounded-[21px] text-lg h-11 bg-[#1D1564] w-48 mx-3 flex justify-center items-center hover:bg-[#110D3C] text-[#F1EAF6] ml-3">
-              <button>Daftar Kompetisi</button>
-            </div>
+            {/* <div className="px-5 rounded-[21px] text-lg h-11 w-48 mx-3 flex justify-center items-center ml-3"> */}
+            <DaftarDropdown />
+            {/* </div> */}
           </div>
         </div>
         <div className="md:hidden">
@@ -130,7 +134,13 @@ const Navbar: React.FC = () => {
             About
           </Link>
           <div className="text-[#F1EAF6] hover:text-purpleText text-lg text-center">
-            <DropdownMenuNav />
+            <OlahragaDropdown />
+          </div>
+          <div className="text-[#F1EAF6] hover:text-purpleText text-lg text-center">
+            <EsportDropdown />
+          </div>
+          <div className="text-[#F1EAF6] hover:text-purpleText text-lg text-center">
+            <SeniDropdown />
           </div>
           <Link
             className="text-[#F1EAF6] hover:text-purpleText text-lg text-center"
@@ -147,9 +157,9 @@ const Navbar: React.FC = () => {
           <div className="md:hidden block">
             <div className="flex justify-center items-center">
               <div className="flex justify-center items-center w-80 h-14 bg-[#0A0723] rounded-[24px]">
-                <div className="px-5 rounded-[21px] text-lg h-11 bg-[#1D1564] w-48 flex justify-center items-center hover:bg-[#1A135A] text-[#F1EAF6]">
-                  <button>Daftar Kompetisi</button>
-                </div>
+                {/* <div className="px-5 rounded-[21px] text-lg h-11 bg-[#1D1564] w-48 flex justify-center items-center hover:bg-[#1A135A] text-[#F1EAF6]"> */}
+                <DaftarDropdown />
+                {/* </div> */}
               </div>
             </div>
           </div>

@@ -24,9 +24,11 @@ export default function FiktispacePage() {
               <TimelinePage />
             </div>
           </section>
-          <div className="md:bg-[url('/fiktispace/bgdesktop.svg')] bg-[url('/fiktispace/bgmobile.png')] bg-cover bg-no-repeat">
-            <DocumentationPage />
-          </div>
+          <section id="documentation">
+            <div className="md:bg-[url('/fiktispace/bgdesktop.svg')] bg-[url('/fiktispace/bgmobile.png')] bg-cover bg-no-repeat">
+              <DocumentationPage />
+            </div>
+          </section>
         </div>
         <div className="bg-gradient-to-b from-[#010417] to-[#261441]">
           <section id="contact">
