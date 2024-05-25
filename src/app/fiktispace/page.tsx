@@ -14,16 +14,24 @@ export default function FiktispacePage() {
       <main className="bg-[#010417] bg-cover bg-no-repeat scroll-smooth overflow-x-hidden">
         <Navbar />
         <DashboardPage />
-        <AboutPage />
+        <section id="about">
+          <AboutPage />
+        </section>
         <div>
-          <div className="md:flex md:bg-[url('/fiktispace/bgdesktop.png')] bg-[url('/fiktispace/bgmobile.png')] bg-cover bg-no-repeat">
-            <CompetitionPage />
-            <TimelinePage />
+          <section id="schedule">
+            <div className="md:flex md:bg-[url('/fiktispace/bgdesktop.svg')] bg-[url('/fiktispace/bgmobile.png')] bg-cover bg-no-repeat">
+              <CompetitionPage />
+              <TimelinePage />
+            </div>
+          </section>
+          <div className="md:bg-[url('/fiktispace/bgdesktop.svg')] bg-[url('/fiktispace/bgmobile.png')] bg-cover bg-no-repeat">
+            <DocumentationPage />
           </div>
-          <DocumentationPage />
         </div>
         <div className="bg-gradient-to-b from-[#010417] to-[#261441]">
-          <FaqPage />
+          <section id="contact">
+            <FaqPage />
+          </section>
           <FooterPage />
         </div>
       </main>

@@ -90,7 +90,7 @@ export default function DocumentationPage() {
       </div>
 
       {/*Desktop*/}
-      <div className="mt-8">
+      <div className="md:block hidden mt-8">
         <div className="my-8 px-6">
           <div className="flex justify-center">
             <div>

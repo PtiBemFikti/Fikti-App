@@ -32,11 +32,9 @@ export default function DropdownMenuNav() {
         </Button>
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions">
-        <DropdownItem className="text-[#251425] text-lg">Seminar</DropdownItem>
-        <DropdownItem className="text-[#241525] text-lg">Workshop</DropdownItem>
-        <DropdownItem className="text-[#241525] text-lg">
-          Competition
-        </DropdownItem>
+        <DropdownItem className="text-[#251425] text-lg">Olahraga</DropdownItem>
+        <DropdownItem className="text-[#241525] text-lg">Esport</DropdownItem>
+        <DropdownItem className="text-[#241525] text-lg">Seni</DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );

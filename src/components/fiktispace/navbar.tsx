@@ -123,26 +123,26 @@ const Navbar: React.FC = () => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
           onClick={toggleMenu}
         >
-          <a
+          <Link
             className="text-[#F1EAF6] hover:text-purpleText text-lg text-center"
             href="#about"
           >
             About
-          </a>
+          </Link>
           <div className="text-[#F1EAF6] hover:text-purpleText text-lg text-center">
             <DropdownMenuNav />
           </div>
           <Link
             className="text-[#F1EAF6] hover:text-purpleText text-lg text-center"
-            href="/schedule"
+            href="#schedule"
           >
             Schedule
           </Link>
           <Link
             className="text-[#F1EAF6] hover:text-purpleText text-lg text-center"
-            href="/contact"
+            href="#contact"
           >
-            Contacts
+            Contact
           </Link>
           <div className="md:hidden block">
             <div className="flex justify-center items-center">
@@ -153,10 +153,6 @@ const Navbar: React.FC = () => {
               </div>
             </div>
           </div>
-          {/* <Link className="hover:text-purpleText" href="/dept&biro">
-            Departemen
-          </Link> */}
-          {/* Add more navigation links as needed */}
         </motion.div>
       )}
     </motion.nav>

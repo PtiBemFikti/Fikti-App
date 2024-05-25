@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function TimelinePage() {
   return (
-    <div className="mt-4 md:w-1/2">
+    <div className="mt-12 md:w-1/2">
       <div className="flex justify-end">
         <div className="my-8 px-8 md:px-0">
           <div
@@ -15,7 +15,7 @@ export default function TimelinePage() {
                 className="ml-8"
                 src={"/fiktispace/timeline.png"}
                 alt="timeline"
-                width={504}
+                width={500}
                 height={500}
                 priority={true}
               ></Image>

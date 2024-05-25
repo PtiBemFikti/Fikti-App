@@ -93,7 +93,7 @@ export default function DashboardPage() {
         <div className="flex-wrap shadow-[#010417]">
           <div className="flex gap-[10px] justify-center items-end">
             <div className="flex-col mt-20 gap-3 flex">
-              <Link href="/" className="mb-4">
+              <Link href="/" className="mb-8">
                 <Image
                   src={"/fiktispace/back.png"}
                   alt="back"
