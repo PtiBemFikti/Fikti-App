@@ -38,12 +38,6 @@ export default function OlahragaDropdown() {
           Futsal
         </DropdownItem>
         <DropdownItem
-          href="/fiktispace/Competition/Basketball"
-          className="text-[#241525]"
-        >
-          3-on-3 Basketball
-        </DropdownItem>
-        <DropdownItem
           href="/fiktispace/Competition/Badminton"
           className="text-[#241525]"
         >

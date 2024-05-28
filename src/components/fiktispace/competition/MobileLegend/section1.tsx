@@ -21,8 +21,19 @@ export default function Section1() {
         <Link href={"/fiktispace"}>
           <div className="flex gap-1">
             <button className="rounded-full border border-[#545350]">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="text-[#545350] w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="text-[#545350] w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
               </svg>
             </button>
             <h1 className="text-[#545350] font-Poppins text-[16px]">Back</h1>
@@ -32,9 +43,16 @@ export default function Section1() {
       <div className="md:flex md:gap-14">
         <div className="w-80 flex flex-col gap-5">
           <div className="bg-[#EBF8F9] rounded-2xl">
-            <Image src="/fiktispace/competition/MobileLegend.png" alt="" width={320} height={360} />
+            <Image
+              src="/fiktispace/competition/MobileLegend.png"
+              alt=""
+              width={320}
+              height={360}
+            />
             <div className="flex font-Urbanist px-3 py-4 justify-center gap-2 items-center">
-              <h1 className="text-[#301443] font-bold text-3xl">Mobile Legend</h1>
+              <h1 className="text-[#301443] font-bold text-3xl">
+                Mobile Legend
+              </h1>
               <div className="font-light text-[#B9B6CF] text-2xl">
                 <h1>Kompetisi</h1>
                 <h1>E-Sport</h1>
@@ -43,7 +61,9 @@ export default function Section1() {
           </div>
           <button className="bg-[#1D1564] w-full rounded-2xl h-16">
             <Link href={"https://forms.gle/Tkmgy6UerEhMpVbdA"}>
-              <h1 className="text-[#E8E8F0] font-Urbanist text-xl md:text-2xl">Daftar Sekarang</h1>
+              <h1 className="text-[#E8E8F0] font-Urbanist text-xl md:text-2xl">
+                Daftar Sekarang
+              </h1>
             </Link>
           </button>
           <div className="font-Urbanist px-4 py-3 flex flex-col gap-3 bg-[#EBF8F9] rounded-2xl">
@@ -62,16 +82,32 @@ export default function Section1() {
               </p>
             </div>
             <div className="flex items-center gap-2">
-              <Image src="/fiktispace/competition/alert.png" alt="" width={28} height={28} className="w-8 h-8" />
+              <Image
+                src="/fiktispace/competition/alert.png"
+                alt=""
+                width={28}
+                height={28}
+                className="w-8 h-8"
+              />
               <p className="font-Urbanist text-[#595652] text-sm tracking-tight leading-tight">
-                <span className="font-bold italic ">Hello SpaceNation!</span> Mohon untuk membaca ketentuan yang tersedia pada halaman ini sebelum mendaftar ya!
+                <span className="font-bold italic ">Hello SpaceNation!</span>{" "}
+                Mohon untuk membaca ketentuan yang tersedia pada halaman ini
+                sebelum mendaftar ya!
               </p>
             </div>
           </div>
           <div className="font-Urbanist text-[#050A10] px-4 py-3 flex flex-col gap-3 bg-[#EBF8F9] rounded-2xl">
-            <p className="text-sm font-bold">Untuk informasi lebih lanjut, bisa menghubungi kami di kontak berikut!</p>
+            <p className="text-sm font-bold">
+              Untuk informasi lebih lanjut, bisa menghubungi kami di kontak
+              berikut!
+            </p>
             <div className="flex gap-2">
-              <Image src="/fiktispace/competition/Whatsapp.png" alt="" width={30.22} height={30} />
+              <Image
+                src="/fiktispace/competition/Whatsapp.png"
+                alt=""
+                width={30.22}
+                height={30}
+              />
               <div className="text-xs">
                 <p>
                   0812-7310-1307 <b>(Vany)</b>
@@ -82,7 +118,12 @@ export default function Section1() {
               </div>
             </div>
             <div className="flex gap-2">
-              <Image src="/fiktispace/competition/Line.png" alt="" width={30.22} height={30} />
+              <Image
+                src="/fiktispace/competition/Line.png"
+                alt=""
+                width={30.22}
+                height={30}
+              />
               <div className="text-xs">
                 <p>
                   @vanysln <b>(Vany)</b>
@@ -95,26 +136,57 @@ export default function Section1() {
           </div>
         </div>
         <div className="md:w-[752px]">
-          <Image src="/fiktispace/competition/Banner.png" alt="" width={752} height={360} className="md:block hidden" />
+          <Image
+            src="/fiktispace/competition/Banner.png"
+            alt=""
+            width={752}
+            height={360}
+            className="md:block hidden"
+          />
           <div className="font-Urbanist text-[#000000] border border-[#39BCBF] px-6 py-3 rounded-xl mt-4 w-fit">
             <h1>
-              Peserta di <b>wajibkan</b> membawa 2 Device (1 untuk bermain dan 1 untuk oncam saat pertandingan)
+              Peserta di <b>wajibkan</b> menggunakan 2 Device (1 untuk bermain
+              dan 1 untuk oncam saat pertandingan)
             </h1>
           </div>
           <div className="flex p-3 flex-col gap-3">
             <div className="flex gap-4 items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-black w-4 h-4 md:w-6 md:h-6">
-                <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="text-black w-4 h-4 md:w-6 md:h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                  clip-rule="evenodd"
+                />
               </svg>
-              <h1 className=" text-[#16104B] font-Urbanist text-[16px] md:text-2xl font-bold">Peraturan dan Ketentuan Umum</h1>
+              <h1 className=" text-[#16104B] font-Urbanist text-[16px] md:text-2xl font-bold">
+                Peraturan dan Ketentuan Umum
+              </h1>
             </div>
             <ol className="text-black list-decimal pl-10 md:pl-14 font-Urbanist text-sm md:text-base">
-              <li>Peserta merupakan mahasiswa aktif FIKTI Universitas Gunadarma.</li>
-              <li>Wajib memiliki KRS/blanko pembayaran Universitas Gunadarma.</li>
-              <li>Peserta yang dapat bermain hanyalah peserta yang terdaftar dalam pendaftaran.</li>
-              <li>Seluruh informasi, peraturan, dan kebijakan yang sudah diberikan pada proses pendaftaran wajib dipahami dan dipatuhi oleh seluruh peserta.</li>
               <li>
-                Dilarang membawa rokok / vape / pod / alat sejenisnya. Jika benda-benda tersebut ditemukan, maka akan disita oleh pihak panitia dan akan dikembalikan setelah pertanding...
+                Peserta merupakan mahasiswa aktif FIKTI Universitas Gunadarma.
+              </li>
+              <li>
+                Wajib memiliki KRS/blanko pembayaran Universitas Gunadarma.
+              </li>
+              <li>
+                Peserta yang dapat bermain hanyalah peserta yang terdaftar dalam
+                pendaftaran.
+              </li>
+              <li>
+                Seluruh informasi, peraturan, dan kebijakan yang sudah diberikan
+                pada proses pendaftaran wajib dipahami dan dipatuhi oleh seluruh
+                peserta.
+              </li>
+              <li>
+                Dilarang membawa rokok / vape / pod / alat sejenisnya. Jika
+                benda-benda tersebut ditemukan, maka akan disita oleh pihak
+                panitia dan akan dikembalikan setelah pertanding...
                 <span className="text-blue-400">
                   <button onClick={handleModal1}>see more</button>
                 </span>
@@ -123,18 +195,41 @@ export default function Section1() {
           </div>
           <div className="flex p-3 flex-col gap-3">
             <div className="flex gap-4 items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-black w-4 h-4 md:w-6 md:h-6">
-                <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="text-black w-4 h-4 md:w-6 md:h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                  clip-rule="evenodd"
+                />
               </svg>
-              <h1 className=" text-[#16104B] font-Urbanist text-[16px] md:text-2xl font-bold">Syarat dan Ketentuan Peserta</h1>
+              <h1 className=" text-[#16104B] font-Urbanist text-[16px] md:text-2xl font-bold">
+                Syarat dan Ketentuan Peserta
+              </h1>
             </div>
-            <h1 className="text-black pl-8 md:pl-10 font-Urbanist text-base md:text-lg font-bold">Peserta:</h1>
+            <h1 className="text-black pl-8 md:pl-10 font-Urbanist text-base md:text-lg font-bold">
+              Peserta:
+            </h1>
             <ol className="text-black list-decimal pl-10 md:pl-14 font-Urbanist text-sm md:text-base">
-              <li>Mahasiswa FIKTI Universitas Gunadarma aktif (Tingkat 1 - 4)</li>
-              <li>Daftar pemain harus berisi nama lengkap, username, dan ID Account dari akun mobile legend yang akan dimainkan pada pertandingan.</li>
-              <li>Daftar pemain harus diterima oleh Panitia Pertandingan 30 menit sebelum pertandingan.</li>
               <li>
-                Wajib memberikan KRS asli kepada panitia, maksimal 30 menit sebelum pertandingan...
+                Mahasiswa FIKTI Universitas Gunadarma aktif (Tingkat 1 - 4)
+              </li>
+              <li>
+                Daftar pemain harus berisi nama lengkap, username, dan ID
+                Account dari akun mobile legend yang akan dimainkan pada
+                pertandingan.
+              </li>
+              <li>
+                Daftar pemain harus diterima oleh Panitia Pertandingan 30 menit
+                sebelum pertandingan.
+              </li>
+              <li>
+                Wajib memberikan KRS asli kepada panitia, maksimal 30 menit
+                sebelum pertandingan...
                 <span className="text-blue-400">
                   <button onClick={handleModal2}>see more</button>
                 </span>
@@ -143,17 +238,42 @@ export default function Section1() {
           </div>
           <div className="flex p-3 flex-col gap-3">
             <div className="flex gap-4 items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-black w-4 h-4 md:w-6 md:h-6">
-                <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="text-black w-4 h-4 md:w-6 md:h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                  clip-rule="evenodd"
+                />
               </svg>
-              <h1 className=" text-[#16104B] font-Urbanist text-[16px] md:text-2xl font-bold">Catatan Penting</h1>
+              <h1 className=" text-[#16104B] font-Urbanist text-[16px] md:text-2xl font-bold">
+                Catatan Penting
+              </h1>
             </div>
             <ol className="text-black list-decimal pl-10 md:pl-14 font-Urbanist text-sm md:text-base">
-              <li>Keputusan panitia adalah mutlak dan tidak dapat diganggu gugat.</li>
-              <li>Peserta yang sudah mendaftarkan dirinya dianggap telah setuju dengan segala peraturan yang ada.</li>
-              <li>Rules dapat berganti sewaktu-waktu berdasarkan hasil diskusi panitia FIKTISPACE 3.0.</li>
-              <li>Jika terdapat suatu tindakan yang berkaitan dengan perlombaan dan tidak ada dalam aturan maka akan jadi keputusan panitia mencegah hal yg tidak diinginkan.</li>
-              <li>Hal-hal yang belum diatur dalam aturan ini akan diatur kemudian.</li>
+              <li>
+                Keputusan panitia adalah mutlak dan tidak dapat diganggu gugat.
+              </li>
+              <li>
+                Peserta yang sudah mendaftarkan dirinya dianggap telah setuju
+                dengan segala peraturan yang ada.
+              </li>
+              <li>
+                Rules dapat berganti sewaktu-waktu berdasarkan hasil diskusi
+                panitia FIKTISPACE 3.0.
+              </li>
+              <li>
+                Jika terdapat suatu tindakan yang berkaitan dengan perlombaan
+                dan tidak ada dalam aturan maka akan jadi keputusan panitia
+                mencegah hal yg tidak diinginkan.
+              </li>
+              <li>
+                Hal-hal yang belum diatur dalam aturan ini akan diatur kemudian.
+              </li>
             </ol>
           </div>
         </div>

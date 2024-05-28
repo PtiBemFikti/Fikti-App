@@ -93,11 +93,6 @@ const DropdownMenuNav: React.FC = () => {
                       Futsal
                     </li>
                   </Link>
-                  <Link href={"/fiktispace/Competition/Basketball"}>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-base">
-                      3-on-3 Basketball
-                    </li>
-                  </Link>
                   <Link href={"/fiktispace/Competition/Badminton"}>
                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-base">
                       Badminton

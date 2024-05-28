@@ -43,15 +43,6 @@ export default function CompetitionPage() {
                   </div>
                 </Link>
               </div>
-              <div className="mt-2 w-36 h-7 px-4 py-4 bg-[#D3BFE24D] rounded-2xl border border-[#D3BFE226] justify-start items-center flex">
-                <Link href="/fiktispace/Competition/Basketball">
-                  <div
-                    className={`text-center text-violet-200 text-sm ${Urbanist.className}`}
-                  >
-                    3-on-3 Basketball
-                  </div>
-                </Link>
-              </div>
               <div className="mt-2 w-28 h-7 px-4 py-4 bg-[#D3BFE24D] rounded-2xl border border-[#D3BFE226] justify-start items-center flex">
                 <Link href="/fiktispace/Competition/Badminton">
                   <div
