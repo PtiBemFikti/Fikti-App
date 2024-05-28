@@ -46,7 +46,7 @@ export default function FaqPage() {
           >
             Everything you need to know about FIKTI SPACE.
           </div>
-          <div className="w-[360px] mt-4 bg-[#FFFFFF1F] p-4 md:w-[563px] border-0 rounded-lg md:hidden">
+          <div className="w-[320px] mt-4 bg-[#FFFFFF1F] p-4 md:w-[563px] border-0 rounded-lg md:hidden">
             <AccordionCard
               title="Apakah kompetisi ini bisa diikuti oleh mahasiswa seluruh fakultas?"
               content="Untuk kompetisi olahraga hanya Mahasiswa FIKTI yang bisa berpartisipasi, sedangkan untuk kompetisi seni bisa diikuti oleh seluruh Mahasiswa/i Universitas Gunadarma."

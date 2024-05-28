@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
           />
         </Link>
         <div className="text-[#F1EAF6] font-['Poppins'] md:hidden block md:mb-32">
-          <h1 className={`${Guardians.className} font-bold text-xl`}>
+          <h1 className={`${Guardians.className} font-bold text-lg`}>
             FIKTI SPACE
           </h1>
         </div>

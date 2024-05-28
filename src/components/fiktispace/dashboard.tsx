@@ -5,83 +5,85 @@ export default function DashboardPage() {
   return (
     <div>
       <div className="mt-6 md:hidden">
-        <div className="flex mx-6 h-screen w-full justify-start items-start gap-4">
-          <div className="flex-col justify-start items-start gap-3 flex">
-            <Link href="/" className="mb-4">
-              <Image
-                src={"/fiktispace/back.png"}
-                alt="back"
-                width={35}
-                height={35}
-              ></Image>
-            </Link>
-            <div className="flex-col justify-center items-end md:justify-start md:items-start gap-3 flex">
-              <div className={`${Urbanist.className}`}>
-                <span className="text-violet-200 text-lg font-normal">
-                  Welcome to
-                </span>
-                <span className="text-violet-200 text-base font-semibold">
-                  {" "}
-                  FIKTI Sport and Art Championship
-                </span>
-              </div>
-              <div className="flex-col justify-start items-start gap-3 flex">
-                <div className="justify-start items-start gap-5 flex">
-                  <div className="flex-col justify-center items-end gap-1 flex">
-                    <div
-                      className={`${Guardians.className} font-normal text-violet-200 text-3xl`}
-                    >
-                      FIKTI
+        <div className="flex justify-center items-center">
+          <div className="flex px-6 h-screen justify-start items-start gap-4">
+            <div className="flex-col justify-start items-start gap-3 flex">
+              <Link href="/" className="mb-4">
+                <Image
+                  src={"/fiktispace/back.png"}
+                  alt="back"
+                  width={35}
+                  height={35}
+                ></Image>
+              </Link>
+              <div className="flex-col justify-center items-center md:justify-start md:items-start gap-3 flex">
+                <div className={`${Urbanist.className}`}>
+                  <span className="text-violet-200 text-sm md:text-lg font-normal">
+                    Welcome to
+                  </span>
+                  <span className="text-violet-200 text-base md:text-lg font-semibold">
+                    {" "}
+                    FIKTI Sport and Art Championship
+                  </span>
+                </div>
+                <div className="flex-col justify-center items-start gap-3 flex">
+                  <div className="justify-start items-start gap-5 flex">
+                    <div className="flex-col justify-center items-end gap-1 flex">
+                      <div
+                        className={`${Guardians.className} font-normal text-violet-200 text-2xl`}
+                      >
+                        FIKTI
+                      </div>
+                      <div
+                        className={`${Guardians.className} font-normal text-violet-200 text-2xl`}
+                      >
+                        SPACE
+                      </div>
                     </div>
                     <div
-                      className={`${Guardians.className} font-normal text-violet-200 text-3xl`}
+                      className={`${Guardians.className} font-normal text-violet-200 text-7xl`}
                     >
-                      SPACE
+                      3.0
                     </div>
                   </div>
                   <div
-                    className={`${Guardians.className} font-normal text-violet-200 text-7xl`}
+                    className={`${Guardians.className} justify-start items-start gap-1 flex`}
                   >
-                    3.0
-                  </div>
-                </div>
-                <div
-                  className={`${Guardians.className} justify-start items-start gap-1 flex`}
-                >
-                  <div className="text-violet-200 text-base font-normal">
-                    Harmony
-                  </div>
-                  <div className="text-violet-200 text-base font-normal">
-                    Of
-                  </div>
-                  <div className="text-violet-200 text-base font-normal">
-                    Body
-                  </div>
-                  <div className="text-violet-200 text-base font-normal">
-                    And
-                  </div>
-                  <div className="text-violet-200 text-base font-normal">
-                    Soul
+                    <div className="text-violet-200 text-sm font-normal">
+                      Harmony
+                    </div>
+                    <div className="text-violet-200 text-sm font-normal">
+                      Of
+                    </div>
+                    <div className="text-violet-200 text-sm font-normal">
+                      Body
+                    </div>
+                    <div className="text-violet-200 text-sm font-normal">
+                      And
+                    </div>
+                    <div className="text-violet-200 text-sm font-normal">
+                      Soul
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="w-full">
-              <div className="h-12 px-6 py-3 bg-gradient-to-r from-teal-600 to-violet-950 rounded-2xl border-0 justify-center items-center gap-2.5 flex">
-                <div
-                  className={`${Urbanist.className}text-violet-200 text-base md:text-xl font-medium }`}
-                >
-                  What event do we do?
+              <div className="w-[310px]">
+                <div className="h-12 px-6 py-3 bg-gradient-to-r from-teal-600 to-violet-950 rounded-2xl border-0 justify-center items-center gap-2.5 flex">
+                  <div
+                    className={`${Urbanist.className}text-violet-200 text-base md:text-xl font-medium }`}
+                  >
+                    What event do we do?
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <Image
-                src={"/fiktispace/fsdashmobile.png"}
-                alt={"dashboard mobile"}
-                width={340}
-                height={320}
-              ></Image>
+              <div className="w-full justify-center items-center">
+                <Image
+                  src={"/fiktispace/fsdashmobile.png"}
+                  alt={"dashboard mobile"}
+                  width={310}
+                  height={320}
+                ></Image>
+              </div>
             </div>
           </div>
         </div>
