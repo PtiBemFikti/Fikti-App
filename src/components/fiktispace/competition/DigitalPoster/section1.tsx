@@ -94,7 +94,7 @@ export default function Section1() {
               <Image
                 src="/fiktispace/competition/Whatsapp.png"
                 alt=""
-                width={30.22}
+                width={28}
                 height={30}
               />
               <div className="text-xs">

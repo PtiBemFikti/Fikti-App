@@ -95,23 +95,7 @@ export default function Section1() {
               <Image
                 src="/fiktispace/competition/Whatsapp.png"
                 alt=""
-                width={30.22}
-                height={30}
-              />
-              <div className="text-xs">
-                <p>
-                  0858-1182-9114 <b>(Nashwa Afifa Zahra)</b>
-                </p>
-                <p>
-                  0812-9445-0030 <b>(Yearin Alamanda M)</b>
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-2">
-              <Image
-                src="/fiktispace/competition/Line.png"
-                alt=""
-                width={30.22}
+                width={28}
                 height={30}
               />
               <div className="text-xs">
@@ -125,6 +109,22 @@ export default function Section1() {
                     0812-9445-0030 <b>(Yearin Alamanda M)</b>
                   </p>
                 </Link>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <Image
+                src="/fiktispace/competition/Line.png"
+                alt=""
+                width={30.22}
+                height={30}
+              />
+              <div className="text-xs">
+                <p>
+                  @naaashwa <b>(Nashwa Afifa Zahra)</b>
+                </p>
+                <p>
+                  @year.out <b>(Yearin Alamanda M)</b>
+                </p>
               </div>
             </div>
           </div>
