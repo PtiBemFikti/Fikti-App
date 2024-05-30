@@ -109,12 +109,16 @@ export default function Section1() {
                 height={30}
               />
               <div className="text-xs">
-                <p>
-                  0858-1182-9114 <b>(Nashwa Afifa Zahra)</b>
-                </p>
-                <p>
-                  0812-9445-0030 <b>(Yearin Alamanda M)</b>
-                </p>
+                <Link href="https://wa.me/6285811829114">
+                  <p>
+                    0858-1182-9114 <b>(Nashwa Afifa Zahra)</b>
+                  </p>
+                </Link>
+                <Link href="https://wa.me/6281299450030">
+                  <p>
+                    0812-9445-0030 <b>(Yearin Alamanda M)</b>
+                  </p>
+                </Link>
               </div>
             </div>
             <div className="flex gap-2">

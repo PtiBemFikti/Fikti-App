@@ -75,42 +75,18 @@ const Footer: React.FC = () => {
           <div className="flex flex-col text-center mt-4 gap-1">
             <h1 className="text-xl">Social Media</h1>
             <Link
-              href="http://instagram.com/ug_bemfikti"
+              href="https://www.instagram.com/fiktispace.ug"
               className="text-gray-400 hover:text-purpleText"
               target="_blank"
             >
               Instagram
             </Link>
-            <Link href="/" className="text-gray-400 hover:text-purpleText">
-              X
-            </Link>
             <Link
-              href="http://tiktok.com/@ug.bemfikti"
+              href="https://tiktok.com/@fiktispace"
               className="text-gray-400 hover:text-purpleText"
               target="_blank"
             >
               Tiktok
-            </Link>
-            <Link
-              href="https://youtube.com/@BEMFIKTI"
-              className="text-gray-400 hover:text-purpleText"
-              target="_blank"
-            >
-              Youtube
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/bem-fikti-ug-b349921b1"
-              className="text-gray-400 hover:text-purpleText"
-              target="_blank"
-            >
-              Linkedin
-            </Link>
-            <Link
-              href="http://instagram.com/fikti.careercenter"
-              className="text-gray-400 hover:text-purpleText"
-              target="_blank"
-            >
-              FIKTI Career Center
             </Link>
           </div>
 

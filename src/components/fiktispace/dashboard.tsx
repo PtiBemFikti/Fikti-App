@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Guardians, Urbanist } from "@/styles/font";
-import { Link } from "@nextui-org/react";
+import Link from "next/link";
 export default function DashboardPage() {
   return (
     <div>
@@ -67,7 +67,7 @@ export default function DashboardPage() {
                   </div>
                 </div>
               </div>
-              <a href="#schedule">
+              <Link href="#schedule">
                 <div className="w-[310px]">
                   <div className="h-12 px-6 py-3 bg-gradient-to-r from-teal-600 to-violet-950 rounded-2xl border-0 justify-center items-center gap-2.5 flex">
                     <div
@@ -77,7 +77,7 @@ export default function DashboardPage() {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
               <div className="w-full justify-center items-center">
                 <Image
                   src={"/fiktispace/fsdashmobile.png"}
@@ -154,7 +154,7 @@ export default function DashboardPage() {
                   </div>
                 </div>
               </div>
-              <a href="#schedule">
+              <Link href="#schedule">
                 <div className="w-[570px]">
                   <div className="h-12 px-6 py-3 bg-gradient-to-r from-teal-600 to-violet-950 rounded-2xl border-0 justify-center items-center gap-2.5 flex">
                     <div
@@ -164,7 +164,7 @@ export default function DashboardPage() {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="flex gap-[10px]">

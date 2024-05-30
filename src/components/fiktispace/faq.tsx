@@ -1,6 +1,7 @@
 import { Guardians, Urbanist } from "@/styles/font";
 import AccordionCard from "./AccordionCard";
 import Image from "next/image";
+import Link from "next/link";
 export default function FaqPage() {
   return (
     <div className="mt-4">
@@ -80,9 +81,11 @@ export default function FaqPage() {
                 height={30}
               ></Image>
               <div>
-                <p className={`text-sm ${Urbanist.className}`}>
-                  0812-9140-9632 (Shinta Dwiapriati)
-                </p>
+                <Link href="https://wa.me/6281291409632">
+                  <p className={`text-sm ${Urbanist.className}`}>
+                    0812-9140-9632 (Shinta Dwiapriati)
+                  </p>
+                </Link>
                 <p className={`text-sm ${Urbanist.className}`}>
                   0855-9111-1068 (Favian Gusti)
                 </p>
@@ -146,12 +149,16 @@ export default function FaqPage() {
             height={30}
           ></Image>
           <div>
-            <p className={`text-sm ${Urbanist.className}`}>
-              0812-9140-9632 (Shinta Dwiapriati)
-            </p>
-            <p className={`text-sm ${Urbanist.className}`}>
-              0855-9111-1068 (Favian Gusti)
-            </p>
+            <Link href="https://wa.me/6281291409632">
+              <p className={`text-sm ${Urbanist.className}`}>
+                0812-9140-9632 (Shinta Dwiapriati)
+              </p>
+            </Link>
+            <Link href="https://wa.me/6285591111068">
+              <p className={`text-sm ${Urbanist.className}`}>
+                0855-9111-1068 (Favian Gusti)
+              </p>
+            </Link>
           </div>
           <div className="flex ml-4 gap-2">
             <Image
