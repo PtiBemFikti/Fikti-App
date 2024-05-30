@@ -145,8 +145,8 @@ export default function Section1() {
           />
           <div className="font-Urbanist text-[#000000] border border-[#39BCBF] px-6 py-3 rounded-xl mt-4 w-fit">
             <h1>
-              Peserta di <b>wajibkan</b> menggunakan 2 Device (1 untuk bermain
-              dan 1 untuk oncam saat pertandingan)
+              Peserta di <b>wajibkan</b> menggunakan 2 Device (1 Device
+              digunakan untuk bermain dan 1 untuk oncam saat pertandingan)
             </h1>
           </div>
           <div className="flex p-3 flex-col gap-3">
