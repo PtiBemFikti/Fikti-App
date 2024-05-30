@@ -67,15 +67,17 @@ export default function DashboardPage() {
                   </div>
                 </div>
               </div>
-              <div className="w-[310px]">
-                <div className="h-12 px-6 py-3 bg-gradient-to-r from-teal-600 to-violet-950 rounded-2xl border-0 justify-center items-center gap-2.5 flex">
-                  <div
-                    className={`${Urbanist.className}text-violet-200 text-base md:text-xl font-medium }`}
-                  >
-                    What event do we do?
+              <a href="#schedule">
+                <div className="w-[310px]">
+                  <div className="h-12 px-6 py-3 bg-gradient-to-r from-teal-600 to-violet-950 rounded-2xl border-0 justify-center items-center gap-2.5 flex">
+                    <div
+                      className={`${Urbanist.className}text-violet-200 text-base md:text-xl font-medium }`}
+                    >
+                      What event do we do?
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
               <div className="w-full justify-center items-center">
                 <Image
                   src={"/fiktispace/fsdashmobile.png"}
@@ -152,17 +154,19 @@ export default function DashboardPage() {
                   </div>
                 </div>
               </div>
-
-              <div className="w-[570px]">
-                <div className="h-12 px-6 py-3 bg-gradient-to-r from-teal-600 to-violet-950 rounded-2xl border-0 justify-center items-center gap-2.5 flex">
-                  <div
-                    className={`${Urbanist.className}text-violet-200 text-xl font-medium }`}
-                  >
-                    What event do we do?
+              <a href="#schedule">
+                <div className="w-[570px]">
+                  <div className="h-12 px-6 py-3 bg-gradient-to-r from-teal-600 to-violet-950 rounded-2xl border-0 justify-center items-center gap-2.5 flex">
+                    <div
+                      className={`${Urbanist.className}text-violet-200 text-xl font-medium }`}
+                    >
+                      What event do we do?
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
+
             <div className="flex gap-[10px]">
               <Image
                 src={"/fiktispace/fsdashdesktop1.png"}
