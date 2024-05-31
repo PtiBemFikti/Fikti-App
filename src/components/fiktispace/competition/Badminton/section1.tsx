@@ -70,7 +70,7 @@ export default function Section1() {
             </h1>
             <div className="font-Urbanist text-[#050A10] text-sm tracking-tighter">
               <p>
-                <b>Periode Pendaftaran:</b> 23 Mei - 7 Juni 2024
+                <b>Periode Pendaftaran:</b> 31 Mei - 7 Juni 2024
               </p>
               <p>
                 <b>Technical Meeting:</b> 16 Juni 2024
