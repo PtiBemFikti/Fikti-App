@@ -66,7 +66,7 @@ export default function Section1() {
           </button>
           <div className="font-Urbanist px-4 py-3 flex flex-col gap-3 bg-[#E8E8F0] rounded-2xl">
             <h1 className="text-[#56257A] font-bold text-4xl text-center md:text-left">
-              Rp150.000<span className="text-lg text-[#B9B6CF]">/Tim</span>
+              Rp200.000<span className="text-lg text-[#B9B6CF]">/Tim</span>
             </h1>
             <div className="font-Urbanist text-[#050A10] text-sm tracking-tighter">
               <p>
