@@ -50,7 +50,7 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
         <div className="py-4">{content}</div>
       </div>
       <div
-        className={`w-80 mt-2 h-px md:w-[515px] bg-gradient-to-r from-[#2B8D8F] to-[#1D1564]`}
+        className={`w-[275px] mt-2 h-px md:w-[515px] bg-gradient-to-r from-[#2B8D8F] to-[#1D1564]`}
       ></div>
     </div>
   );
