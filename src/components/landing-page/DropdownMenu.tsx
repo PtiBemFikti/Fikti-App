@@ -40,7 +40,7 @@ export default function DropdownMenuNav() {
         <DropdownItem href="/technofair" className="text-[#241525]">
           TechnoFair
         </DropdownItem>
-        <DropdownItem href="" className="text-[#241525]">
+        <DropdownItem href="/fiktispace" className="text-[#241525]">
           FIKTI Space
         </DropdownItem>
       </DropdownMenu>
