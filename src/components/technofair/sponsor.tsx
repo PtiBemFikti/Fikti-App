@@ -33,6 +33,7 @@ export default function SponsorPage() {
                     <Image src={'/technofair/dicoding.png'} alt="dicoding" width={230} height={75} />
                     <Image src={'/technofair/frisianflag.png'} alt="frisian flag" width={110} height={110} />
                     <Image src={'/technofair/dapoerdjoeang.png'} alt="dapoer djoeang" width={110} height={110} />
+                    <Image src={'/technofair/jh-square.png'} alt="Jagoan Hosting" width={224} height={75} />
                   </div>
                 </div>
               </div>
@@ -112,6 +113,7 @@ export default function SponsorPage() {
               </div>
               <div className="flex justify-center items-center gap-3">
                 <Image src={'/technofair/frisianflag.png'} alt="frisianflag" width={55} height={55} />
+                <Image src={'/technofair/jh-square.png'} alt="jagoan hosting" width={90} height={30} />
               </div>
             </div>
           </div>
