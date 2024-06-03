@@ -107,7 +107,7 @@ export default function Section1() {
                 height={30}
               />
               <div className="text-xs">
-                <Link href="https://wa.me/6281355584206">
+                <Link href="https://wa.me/6281383862288">
                   <p>
                     0813-5558-4206 <b>(Naufal)</b>
                   </p>
