@@ -23,11 +23,11 @@ export default function ArtificialIntelligence() {
             <div className="w-1/2 py-4">
               <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
             </div>
-            <div className="w-1/2">
-              <Link href={'/technofair'} className="flex gap-4">
+            <div className="w-1/2 py-6">
+              {/* <Link href={'/technofair'} className="flex gap-4">
                 <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
                 <p className="text-xl font-medium text-[#545350]">Back</p>
-              </Link>
+              </Link> */}
               <div className="">
                 <div className="flex gap-2">
                   <p className="text-4xl font-bold text-[#241525]">Artificial Intelligence</p>
@@ -45,7 +45,7 @@ export default function ArtificialIntelligence() {
                 <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                   <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
                 </Link>
-                <Link href={'https://forms.gle/qTtsq4TNjh528FbW8'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <Link href={'https://bit.ly/RegistrationSeminarAI-TF11-0'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
                 </Link>
               </div>
@@ -178,10 +178,10 @@ export default function ArtificialIntelligence() {
             </div>
           </div>
           <div className="px-5">
-            <Link href={'/technofair'} className="flex gap-2">
+            {/* <Link href={'/technofair'} className="flex gap-2">
               <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
               <p className="text-base font-medium text-[#262626]">Back</p>
-            </Link>
+            </Link> */}
             <div className="text-[#262626]">
               <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Artificial Intelligence</p>
               <p className="font-[Poppins] text-base italic font-light">&quot;Exploring Innovations and Applications of Artificial Intelligence&quot;</p>
@@ -195,7 +195,7 @@ export default function ArtificialIntelligence() {
               <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                 <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
               </Link>
-              <Link href={'https://forms.gle/qTtsq4TNjh528FbW8'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link href={'https://bit.ly/RegistrationSeminarAI-TF11-0'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
               </Link>
             </div>
@@ -269,7 +269,7 @@ export default function ArtificialIntelligence() {
               </div>
             </div>
             <div className="py-3">
-              <Link href={'https://calendar.app.google/G8Z6d3vKLXpWV3uh8'} className="flex flex-col justify-center items-center text-center w-screen h-20 bg-[#11111b]">
+              <Link href={'https://calendar.app.google/G8Z6d3vKLXpWV3uh8'} className="flex flex-col justify-center items-center text-center w-full h-20 bg-[#11111b]">
                 <p className="font-[Poppins] text-[#fefdfc] text-2xl font-extrabold">SAVE THE DATE!</p>
                 <p className="text-sm font-[Poppins] text-[#fefdfc] opacity-40">click here to save the date</p>
               </Link>

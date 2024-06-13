@@ -13,11 +13,11 @@ export default function UiUx() {
             <div className="w-1/2 py-5">
               <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
             </div>
-            <div className="w-1/2">
-              <Link href="/technofair" className="flex gap-4">
+            <div className="w-1/2 py-6">
+              {/* <Link href="/technofair" className="flex gap-4">
                 <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
                 <p className="text-xl font-medium text-[#545350]">Back</p>
-              </Link>
+              </Link> */}
               <div className="">
                 <div className="flex gap-2">
                   <p className="text-5xl font-bold text-[#241525]">UI/UX Design</p>
@@ -39,7 +39,7 @@ export default function UiUx() {
                   <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
                 </Link>
                 <Link
-                  href={'https://docs.google.com/forms/d/1Z-W7PSNcUNLekwsuP1s-7wdZztfQhvSdRzxKUmDR-M8/viewform?pli=1&pli=1&pli=1&edit_requested=true'}
+                  href={'https://bit.ly/RegistrationWorkshopUIUX-TF11'}
                   className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]"
                 >
                   <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
@@ -168,10 +168,10 @@ export default function UiUx() {
             </div>
           </div>
           <div className="px-5">
-            <Link href={'/technofair'} className="flex gap-2">
+            {/* <Link href={'/technofair'} className="flex gap-2">
               <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
               <p className="text-base font-medium text-[#262626]">Back</p>
-            </Link>
+            </Link> */}
             <div className="text-[#262626]">
               <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>UI/UX Design</p>
               <p className="font-[Poppins] text-base italic font-light">&quot;From Concept to Creation: Mastering UI/UX Design Practices&quot;</p>
@@ -189,7 +189,7 @@ export default function UiUx() {
                 <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
               </Link>
               <Link
-                href={'https://docs.google.com/forms/d/1Z-W7PSNcUNLekwsuP1s-7wdZztfQhvSdRzxKUmDR-M8/viewform?pli=1&pli=1&pli=1&edit_requested=true'}
+                href={'https://bit.ly/RegistrationWorkshopUIUX-TF11'}
                 className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]"
               >
                 <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
