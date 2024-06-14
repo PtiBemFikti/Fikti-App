@@ -11,7 +11,7 @@ export default function DataAnalyst() {
         <div className={`px-40 py-16 ${poppins.className}`}>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
             <div className="w-1/2 py-6">
-              <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
+              <Image src={'/technofair/DA.png'} alt="DA" width={461} height={346} className='rounded-2xl' />
             </div>
             <div className="w-1/2 py-6">
               {/* <Link href={'/technofair'} className="flex gap-4">
@@ -169,7 +169,7 @@ export default function DataAnalyst() {
         <div className="py-4">
           <div className="px-5">
             <div className="py-3">
-              <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
+              <Image src={'/technofair/DA.png'} alt='DA' width={461} height={346} className='rounded-xl'/>
             </div>
           </div>
           <div className="px-5">

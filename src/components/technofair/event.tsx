@@ -289,7 +289,7 @@ export default function EventPage() {
                     <div className="w-28 h-7 bg-[#E6A356] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
                     </div>
-                    <div className="py-5">
+                    <div className="py-9">
                       <p className="italic font-bold text-2xl">Digital Infographic</p>
                       <p className="text-sm text-[#B9BCC7] mt-2">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
                     </div>
