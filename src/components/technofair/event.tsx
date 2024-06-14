@@ -41,7 +41,7 @@ export default function EventPage() {
                       <div className="grid grid-flow-col gap-1 pt-4">
                         <div className="grid grid-flow-col">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
-                          <p className="text-[#b9bcc7] text-sm mt-1 ">29 Juni 2024</p>
+                          <p className="text-[#b9bcc7] text-sm mt-1 ">06 Juli 2024</p>
                         </div>
                         <div className="grid grid-flow-col">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
@@ -53,16 +53,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('Coming Soon')} className="flex gap-4 py-5">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/seminar/data-analyst'} className="flex gap-4 py-5 justify-end items-end">
+                    </div> */}
+                    <Link href={'/technofair/details/seminar/data-analyst'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#E87C6C3B] border-[2px] rounded-[39px]">
@@ -90,16 +90,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('Coming Soon')} className="flex gap-4 py-5">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/seminar/artificial-intelligence'} className="flex gap-4 py-5 justify-end items-end">
+                    </div> */}
+                    <Link href={'/technofair/details/seminar/artificial-intelligence'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#F9F8713B] border-[2px] rounded-[39px]">
@@ -119,7 +119,7 @@ export default function EventPage() {
                         </div>
                         <div className="grid grid-flow-col">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
-                          <p className="text-[#b9bcc7] text-sm mt-1 ">09.00 - 12.40 WIB</p>
+                          <p className="text-[#b9bcc7] text-sm mt-1 ">13.30 - 17.10 WIB</p>
                         </div>
                       </div>
                       <div className="grid grid-flow-col py-3">
@@ -127,16 +127,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('Coming Soon')} className="flex gap-4 py-5 justify-end items-end">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/workshop/uiux'} className="flex gap-4 py-5 justify-end items-end">
+                    </div> */}
+                    <Link href={'/technofair/details/workshop/product-management'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#F9F8713B] border-[2px] rounded-[39px]">
@@ -156,7 +156,7 @@ export default function EventPage() {
                         </div>
                         <div className="grid grid-flow-col">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
-                          <p className="text-[#b9bcc7] text-sm mt-1 ">13.30 - 17.10 WIB</p>
+                          <p className="text-[#b9bcc7] text-sm mt-1 ">09.00 - 12.40 WIB</p>
                         </div>
                       </div>
                       <div className="grid grid-flow-col py-3">
@@ -164,16 +164,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 -ml-28">Offline</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('Coming Soon')} className="flex gap-4 py-5 justify-end items-end">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/workshop/uiux'} className="flex gap-4 py-5 justify-end items-end">
+                    </div> */}
+                    <Link href={'/technofair/details/workshop/uiux'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -289,7 +289,7 @@ export default function EventPage() {
                     <div className="w-28 h-7 bg-[#E6A356] rounded-xl">
                       <p className="text-[#241525] text-sm text-center pt-1">Competition</p>
                     </div>
-                    <div className="py-5">
+                    <div className="py-9">
                       <p className="italic font-bold text-2xl">Digital Infographic</p>
                       <p className="text-sm text-[#B9BCC7] mt-2">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
                     </div>
@@ -309,16 +309,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Hybrid</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('The Registration Has Been Closed')} className="flex gap-4 py-5 justify-end items-end">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/competitions/digital-infographic'} className="flex gap-4 py-5 justify-end items-end">
+                    </div> */}
+                    <Link href={'/technofair/details/competitions/digital-infographic'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -356,23 +356,23 @@ export default function EventPage() {
                     <div className="grid grid-flow-row gap-y-2">
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
-                        <p className="text-sm text-[#B9BCC7] mr-20">29 Juni 2024</p>
+                        <p className="text-sm text-[#B9BCC7] mr-20">06 Juli 2024</p>
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
                         <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 12.25 WIB</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('Coming Soon')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
+                    </div> */}
+                    <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E87C6C3B] rounded-[28px]">
@@ -394,16 +394,16 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 13.00 WIB</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('Coming Soon')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
+                    </div> */}
+                    <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -424,19 +424,19 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
-                        <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 12.40 WIB</p>
+                        <p className="text-sm text-[#B9BCC7] mr-12">13.30 - 17.10 WIB</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('Coming Soon')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
+                    </div> */}
+                    <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#F9F8713B] rounded-[28px]">
@@ -455,19 +455,19 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
-                        <p className="text-sm text-[#B9BCC7] mr-16">13.30 - 17.10 WIB</p>
+                        <p className="text-sm text-[#B9BCC7] mr-16">09.00 - 12.40 WIB</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('Coming Soon')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
+                    </div> */}
+                    <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -577,16 +577,16 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-28">Hybrid</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('The Registration Has Been Closed')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/competitions/digital-infographic'} className="py-4 flex justify-end items-end gap-4">
+                    </div> */}
+                    <Link href={'/technofair/details/competitions/digital-infographic'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               </div>

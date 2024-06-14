@@ -11,13 +11,13 @@ export default function ProductManagement() {
         <div className={`px-40 py-16 ${poppins.className}`}>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
             <div className="w-1/2 py-3">
-              <Image src={'/technofair/gambar1.png'} alt="gambar 1" width={461} height={346} />
+              <Image src={'/technofair/pm.png'} alt="pm" width={461} height={346} className='rounded-2xl'/>
             </div>
-            <div className="w-1/2">
-              <Link href="/technofair" className="flex gap-4">
+            <div className="w-1/2 py-6">
+              {/* <Link href="/technofair" className="flex gap-4">
                 <Image src={'/technofair/btn-back.png'} alt="button back" width={28} height={28} />
                 <p className="text-xl font-medium text-[#545350]">Back</p>
-              </Link>
+              </Link> */}
               <div className="">
                 <div className="flex gap-2">
                   <p className="text-4xl font-bold text-[#241525]">Product Management</p>
@@ -35,7 +35,7 @@ export default function ProductManagement() {
                 <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[16px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                   <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
                 </Link>
-                <Link href={'https://docs.google.com/forms/d/17-a4UGsGpDUyze7hLQ9x_GEh88H-Bm6vKRZjIhCZwZY/viewform?edit_requested=true'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <Link href={'https://bit.ly/RegistrationWorkshopPM-TF11'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
                 </Link>
               </div>
@@ -116,7 +116,7 @@ export default function ProductManagement() {
                         <div className="flex font-[Poppins] gap-16">
                           <p className="font-semibold text-[#212427] text-base">Waktu </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> 09.00 - 12.40 WIB
+                            <strong>:</strong> 13.30 - 17.10 WIB
                           </p>
                         </div>
                         <div className="flex font-[Poppins] gap-14">
@@ -156,14 +156,14 @@ export default function ProductManagement() {
         <div className="py-4">
           <div className="px-5">
             <div className="py-3">
-              <div className="w-full h-64 bg-[#E9E9ED] rounded-[15px]"></div>
+              <Image src={'/technofair/pm.png'} alt='pm' width={461} height={346} className='rounded-xl'/>
             </div>
           </div>
           <div className="px-5">
-            <Link href={'/technofair'} className="flex gap-2">
+            {/* <Link href={'/technofair'} className="flex gap-2">
               <Image src={'/technofair/btn-back.png'} alt="button back" width={24} height={24} />
               <p className="text-base font-medium text-[#262626]">Back</p>
-            </Link>
+            </Link> */}
             <div className="text-[#262626]">
               <p className={`${bricolageGrotesque.className} text-4xl font-extrabold`}>Product Management</p>
               <p className="font-[Poppins] text-base italic font-light">&quot;Building a Strong Foundation : Mastering Product Management Skills&quot;</p>
@@ -177,7 +177,7 @@ export default function ProductManagement() {
               <Link href={'https://www.evernote.com/shard/s525/sh/3e2f8fd8-0a98-30c9-c8b2-9d7653a084c8/JFRBMYKaNZmaczI2FlEAViQHcsugmyqSH2Fqy3EqVas2_r-MJv297IhWOA'} className="w-44 h-14 bg-[#FEFDFC] rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7]">
                 <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
               </Link>
-              <Link href={'https://docs.google.com/forms/d/17-a4UGsGpDUyze7hLQ9x_GEh88H-Bm6vKRZjIhCZwZY/viewform?edit_requested=true'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <Link href={'https://bit.ly/RegistrationWorkshopPM-TF11'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
               </Link>
             </div>

@@ -54,7 +54,7 @@ const items: any = [
           <div className="">
             <div className="flex justify-between items-center md:p-2">
               <div className="">
-                <p className="font-bold md:text-xl text-sm text-[#FFF4E7]">29 Juni 2024</p>
+                <p className="font-bold md:text-xl text-sm text-[#FFF4E7]">06 Juli 2024</p>
                 <p className="font-light md:text-base text-xs">09.00 - 12.25 WIB</p>
               </div>
               <div className="md:w-72 w-48">
@@ -66,18 +66,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs md:w-80 mt-1">&quot;Visualizing Insights: A Beginner&apos;s Guide to Data Presentation&quot;</p>
               </div>
-              <div className="">
+              {/* <div className="">
                 <button onClick={() => toast.error('Coming Soon')}>
                   <div className="flex justify-center items-center">
                     <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                   </div>
                 </button>
-              </div>
-              {/* <Link href={'/technofair/details/seminar/data-analyst'}>
+              </div> */}
+              <Link href={'/technofair/details/seminar/data-analyst'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link> */}
+              </Link>
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
@@ -96,18 +96,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs md:w-96">&quot;Exploring Innovations and Applications of Artificial Intelligence&quot;</p>
               </div>
-              <div className="">
+              {/* <div className="">
                 <button onClick={() => toast.error('Coming Soon')}>
                   <div className="flex justify-center items-center">
                     <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                   </div>
                 </button>
-              </div>
-              {/* <Link href={'/technofair/details/seminar/data-analyst'}>
+              </div> */}
+              <Link href={'/technofair/details/seminar/data-analyst'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link> */}
+              </Link>
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
@@ -124,7 +124,7 @@ const items: any = [
             <div className="flex justify-between items-center md:p-2">
               <div className="">
                 <p className="font-bold md:text-xl text-sm text-[#FFF4E7]">06 Juli 2024</p>
-                <p className="font-light md:text-base text-xs">09.00 - 12.40 WIB</p>
+                <p className="font-light md:text-base text-xs">13.30 - 17.10 WIB</p>
               </div>
               <div className="md:w-80 w-56">
                 <div className="flex gap-2 w-96">
@@ -135,18 +135,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs mt-1">&quot;Building a Strong Foundation: Mastering Product Management Skills&quot;</p>
               </div>
-              <div className="">
+              {/* <div className="">
                 <button onClick={() => toast.error('Coming Soon')}>
                   <div className="flex justify-center items-center">
                     <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                   </div>
                 </button>
-              </div>
-              {/* <Link href={'/technofair/details/seminar/data-analyst'}>
+              </div> */}
+              <Link href={'/technofair/details/seminar/data-analyst'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link> */}
+              </Link>
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
@@ -154,7 +154,7 @@ const items: any = [
             <div className="flex justify-between items-center md:p-2">
               <div className="">
                 <p className="font-bold md:text-xl text-sm text-[#FFF4E7]">29 Juni 2024</p>
-                <p className="font-light md:text-base text-xs">13.30 - 17.10 WIB</p>
+                <p className="font-light md:text-base text-xs">09.00 - 12.40 WIB</p>
               </div>
               <div className="md:w-80 w-56">
                 <div className="flex gap-2">
@@ -165,18 +165,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs md:w-96 mt-1">&quot;From Concept to Creation: Mastering UI/UX Design Practices&quot;</p>
               </div>
-              <div className="">
+              {/* <div className="">
                 <button onClick={() => toast.error('Coming Soon')}>
                   <div className="flex justify-center items-center">
                     <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                   </div>
                 </button>
-              </div>
-              {/* <Link href={'/technofair/details/seminar/data-analyst'}>
+              </div> */}
+              <Link href={'/technofair/details/seminar/data-analyst'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link> */}
+              </Link>
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
@@ -280,18 +280,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-sm text-xs">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
               </div>
-              <div className="">
+              {/* <div className="">
                 <button onClick={() => toast.error('The Registration Has Been Closed')}>
                   <div className="flex justify-center items-center">
                     <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                   </div>
                 </button>
-              </div>
-              {/* <Link href={'/technofair/details/competitions/digital-infographic'}>
+              </div> */}
+              <Link href={'/technofair/details/competitions/digital-infographic'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link> */}
+              </Link>
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
