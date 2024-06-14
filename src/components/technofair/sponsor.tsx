@@ -142,7 +142,7 @@ export default function SponsorPage() {
                 <Image src={'/technofair/bempsi.png'} alt="bempsi" width={49} height={75} />
               </div>
               <div className="flex gap-2">
-                <Image src={'/technofair/bemfti.png'} alt="bemfti" width={85} height={75} />
+                <Image src={'/technofair/bemfti-ug.png'} alt="bemfti" width={85} height={75} />
                 <Image src={'/technofair/bemfikom.png'} alt="bemfikom" width={75} height={75} />
                 <Image src={'/technofair/anakgundardotco.png'} alt="anakgundardotco" width={75} height={75} />
               </div>
