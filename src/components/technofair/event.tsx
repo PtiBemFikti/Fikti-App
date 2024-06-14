@@ -41,7 +41,7 @@ export default function EventPage() {
                       <div className="grid grid-flow-col gap-1 pt-4">
                         <div className="grid grid-flow-col">
                           <Image src={'/technofair/kalender.png'} alt="kalender" width={20} height={16} />
-                          <p className="text-[#b9bcc7] text-sm mt-1 ">29 Juni 2024</p>
+                          <p className="text-[#b9bcc7] text-sm mt-1 ">06 Juli 2024</p>
                         </div>
                         <div className="grid grid-flow-col">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
@@ -119,7 +119,7 @@ export default function EventPage() {
                         </div>
                         <div className="grid grid-flow-col">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
-                          <p className="text-[#b9bcc7] text-sm mt-1 ">09.00 - 12.40 WIB</p>
+                          <p className="text-[#b9bcc7] text-sm mt-1 ">13.30 - 17.10 WIB</p>
                         </div>
                       </div>
                       <div className="grid grid-flow-col py-3">
@@ -156,7 +156,7 @@ export default function EventPage() {
                         </div>
                         <div className="grid grid-flow-col">
                           <Image src={'/technofair/jam.png'} alt="jam" width={20} height={10} />
-                          <p className="text-[#b9bcc7] text-sm mt-1 ">13.30 - 17.10 WIB</p>
+                          <p className="text-[#b9bcc7] text-sm mt-1 ">09.00 - 12.40 WIB</p>
                         </div>
                       </div>
                       <div className="grid grid-flow-col py-3">
@@ -356,7 +356,7 @@ export default function EventPage() {
                     <div className="grid grid-flow-row gap-y-2">
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/kalender.png'} alt="kalender" width={16} height={17} />
-                        <p className="text-sm text-[#B9BCC7] mr-20">29 Juni 2024</p>
+                        <p className="text-sm text-[#B9BCC7] mr-20">06 Juli 2024</p>
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
@@ -424,7 +424,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
-                        <p className="text-sm text-[#B9BCC7] mr-12">09.00 - 12.40 WIB</p>
+                        <p className="text-sm text-[#B9BCC7] mr-12">13.30 - 17.10 WIB</p>
                       </div>
                     </div>
                     {/* <div className="flex justify-end items-end">
@@ -455,7 +455,7 @@ export default function EventPage() {
                       </div>
                       <div className="grid grid-flow-col">
                         <Image src={'/technofair/jam.png'} alt="jam" width={16} height={16} />
-                        <p className="text-sm text-[#B9BCC7] mr-16">13.30 - 17.10 WIB</p>
+                        <p className="text-sm text-[#B9BCC7] mr-16">09.00 - 12.40 WIB</p>
                       </div>
                     </div>
                     {/* <div className="flex justify-end items-end">

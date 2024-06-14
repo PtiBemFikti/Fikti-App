@@ -34,6 +34,7 @@ export default function SponsorPage() {
                     <Image src={'/technofair/frisianflag.png'} alt="frisian flag" width={110} height={110} />
                     <Image src={'/technofair/dapoerdjoeang.png'} alt="dapoer djoeang" width={110} height={110} />
                     <Image src={'/technofair/jh-square.png'} alt="Jagoan Hosting" width={224} height={75} />
+                    <Image src={'/technofair/cakap.jpeg'} alt="ohsquare" width={230} height={110} />
                   </div>
                 </div>
               </div>
@@ -63,23 +64,22 @@ export default function SponsorPage() {
                 <div className="flex flex-col justify-center items-center gap-5 pt-5">
                   <div className="flex gap-5">
                     <Image src={'/technofair/ugtv.png'} alt="ugtv" width={100} height={100} />
-                    <Image src={'/technofair/commadesign.png'} alt="comma design" width={90} height={100} />
-                    <Image src={'/technofair/bempsi.png'} alt="bempsi" width={65} height={100} />
-                    <Image src={'/technofair/bemfti.png'} alt="bemfti" width={100} height={100} />
-                    <Image src={'/technofair/bemfikom.png'} alt="bemfikom" width={100} height={100} />
-                    <Image src={'/technofair/snap.png'} alt="snap" width={100} height={100} />
-                    <Image src={'/technofair/unila.png'} alt="unila" width={100} height={100} />
-                    <Image src={'/technofair/bemgeo-unj.png'} alt="bem geo unj" width={103} height={100} />
+                    <Image src={'/technofair/commadesign.png'} alt="comma design" width={100} height={100} />
+                    <Image src={'/technofair/anakgundardotco.png'} alt="anakgundardotco" width={100} height={100} />
+                    <Image src={'/technofair/bemfti-ug.png'} alt="bemfti" width={110} height={100} />
+                    <Image src={'/technofair/bemfikom.jpg'} alt="bemfikom" width={110} height={100} />
+                    <Image src={'/technofair/himakom-unila.png'} alt="himakom unila" width={100} height={100} />
+                    <Image src={'/technofair/bempsi.png'} alt="bempsi" width={100} height={100} className='w-16'/>
                     <Image src={'/technofair/radioug.png'} alt="radioug" width={100} height={100} />
                   </div>
                   <div className="flex gap-5">
-                    <Image src={'/technofair/bemft-unj.png'} alt="bemft-unj" width={146} height={100} />
-                    <Image src={'/technofair/bemfisip-upn.png'} alt="bem fisip upn" width={100} height={100} />
-                    <Image src={'/technofair/bemfti-untar.png'} alt="bem fti untar" width={100} height={100} />
-                    <Image src={'/technofair/academic-insight.jpg'} alt="academin insight" width={100} height={100} />
-                    <Image src={'/technofair/bemfik-upn.png'} alt="bemfik upn" width={100} height={100} />
-                    <Image src={'/technofair/himsi-fasilkom.png'} alt="himsi fasilkom" width={103} height={100} />
-                    <Image src={'/technofair/bemfasilkom-unsika.png'} alt="bem fasilkom unsika" width={100} height={100} />
+                    <Image src={'/technofair/bemft-unj.png'} alt="bemft-unj" width={150} height={100} />
+                    <Image src={'/technofair/himti-uin.jpg'} alt="himti uin" width={110} height={100} />
+                    <Image src={'/technofair/himsi-unsri.png'} alt="himsi unsri" width={140} height={100} />
+                    <Image src={'/technofair/academic-insight.jpg'} alt="academic insight" width={110} height={100} />
+                    <Image src={'/technofair/bemfik-upnvj.jpg'} alt="bemfik-upnvj" width={100} height={100} />
+                    <Image src={'/technofair/himti-ubl.jpg'} alt="himti ubl" width={100} height={100} />
+                    <Image src={'/technofair/seputar-seminar.png'} alt="seputar seminar" width={110} height={100} />
                   </div>
                 </div>
               </div>

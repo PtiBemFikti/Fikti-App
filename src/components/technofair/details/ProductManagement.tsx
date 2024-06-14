@@ -116,7 +116,7 @@ export default function ProductManagement() {
                         <div className="flex font-[Poppins] gap-16">
                           <p className="font-semibold text-[#212427] text-base">Waktu </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> 09.00 - 12.40 WIB
+                            <strong>:</strong> 13.30 - 17.10 WIB
                           </p>
                         </div>
                         <div className="flex font-[Poppins] gap-14">

@@ -54,7 +54,7 @@ const items: any = [
           <div className="">
             <div className="flex justify-between items-center md:p-2">
               <div className="">
-                <p className="font-bold md:text-xl text-sm text-[#FFF4E7]">29 Juni 2024</p>
+                <p className="font-bold md:text-xl text-sm text-[#FFF4E7]">06 Juli 2024</p>
                 <p className="font-light md:text-base text-xs">09.00 - 12.25 WIB</p>
               </div>
               <div className="md:w-72 w-48">
@@ -124,7 +124,7 @@ const items: any = [
             <div className="flex justify-between items-center md:p-2">
               <div className="">
                 <p className="font-bold md:text-xl text-sm text-[#FFF4E7]">06 Juli 2024</p>
-                <p className="font-light md:text-base text-xs">09.00 - 12.40 WIB</p>
+                <p className="font-light md:text-base text-xs">13.30 - 17.10 WIB</p>
               </div>
               <div className="md:w-80 w-56">
                 <div className="flex gap-2 w-96">
@@ -154,7 +154,7 @@ const items: any = [
             <div className="flex justify-between items-center md:p-2">
               <div className="">
                 <p className="font-bold md:text-xl text-sm text-[#FFF4E7]">29 Juni 2024</p>
-                <p className="font-light md:text-base text-xs">13.30 - 17.10 WIB</p>
+                <p className="font-light md:text-base text-xs">09.00 - 12.40 WIB</p>
               </div>
               <div className="md:w-80 w-56">
                 <div className="flex gap-2">

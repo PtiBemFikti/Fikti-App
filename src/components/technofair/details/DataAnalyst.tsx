@@ -25,7 +25,7 @@ export default function DataAnalyst() {
                 </div>
                 <div className="text-[#212427] text-lg italic font-light font-[Poppins]">Visualizing Insights: A Beginner&apos;s Guide to Data Presentation</div>
               </div>
-              <div className="text-[#212427] text-xl font-semibold font-[Poppins] py-2">Sabtu, 01 Juni 2024</div>
+              <div className="text-[#212427] text-xl font-semibold font-[Poppins] py-2">Sabtu, 06 Juli 2024</div>
               <div className="">
                 <p className="text-lg font-normal font-[Poppins] text-[#212427]">
                   Dalam seminar ini, Tema utama yang akan dibahas adalah Data Analyst akan mempelajari cara efektif menggunakan visualisasi data dalam berkomunikasi, sehingga dapat menyajikan temuan mereka secara menarik dan mudah
@@ -116,7 +116,7 @@ export default function DataAnalyst() {
                         <div className="flex font-[Poppins] gap-2">
                           <p className="font-semibold text-[#212427] text-base">Hari, Tanggal </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Sabtu, 01 Juni 2024
+                            <strong>:</strong> Sabtu, 06 Juni 2024
                           </p>
                         </div>
                         <div className="flex font-[Poppins] gap-16">
