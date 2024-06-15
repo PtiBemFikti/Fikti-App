@@ -116,7 +116,7 @@ export default function DataAnalyst() {
                         <div className="flex font-[Poppins] gap-2">
                           <p className="font-semibold text-[#212427] text-base">Hari, Tanggal </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Sabtu, 06 Juni 2024
+                            <strong>:</strong> Sabtu, 06 Juli 2024
                           </p>
                         </div>
                         <div className="flex font-[Poppins] gap-16">
@@ -182,7 +182,7 @@ export default function DataAnalyst() {
               <p className="font-[Poppins] text-base italic font-light">&quot;Visualizing Insights: A Beginner&apos;s Guide to Data Presentation&quot;</p>
             </div>
             <div className="text-[#262626] py-3">
-              <p className="font-[Poppins] text-sm font-medium">Sabtu, 01 Juni 2024</p>
+              <p className="font-[Poppins] text-sm font-medium">Sabtu, 06 Juli 2024</p>
             </div>
           </div>
           <div className="px-5">
@@ -248,7 +248,7 @@ export default function DataAnalyst() {
                     <div className="flex font-[Poppins] gap-2">
                       <p className="font-semibold text-[#262626] text-sm">Hari, Tanggal </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> Sabtu, 01 Juni 2024
+                        <strong>:</strong> Sabtu, 06 Juli 2024
                       </p>
                     </div>
                     <div className="flex font-[Poppins] gap-14">

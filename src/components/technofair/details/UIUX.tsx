@@ -25,7 +25,7 @@ export default function UiUx() {
                 </div>
                 <div className="text-[#212427] text-lg italic font-light font-[Poppins]">From Concept to Creation: Mastering UI/UX Design Practices</div>
               </div>
-              <div className="text-[#212427] text-xl font-semibold font-[Poppins] py-2">Senin, 29 Juli 2024</div>
+              <div className="text-[#212427] text-xl font-semibold font-[Poppins] py-2">Senin, 29 Juni 2024</div>
               <div className="">
                 <p className="text-lg font-normal font-[Poppins] text-[#212427]">
                   Workshop ini bermaksud memperkenalkan UI/UX Design yang merupakan bagian dari dunia teknologi yang sedang banyak diminati saat ini dan mengimplementasikan Skill yang dipersiapkan untuk menjadi UI/UX Designer
@@ -118,7 +118,7 @@ export default function UiUx() {
                         <div className="flex font-[Poppins] gap-2">
                           <p className="font-semibold text-[#212427] text-base">Hari, Tanggal </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Senin, 29 Juli 2024
+                            <strong>:</strong> Sabtu, 29 Juni 2024
                           </p>
                         </div>
                         <div className="flex font-[Poppins] gap-16">
@@ -177,7 +177,7 @@ export default function UiUx() {
               <p className="font-[Poppins] text-base italic font-light">&quot;From Concept to Creation: Mastering UI/UX Design Practices&quot;</p>
             </div>
             <div className="text-[#262626] py-3">
-              <p className="font-[Poppins] text-sm font-medium">Sabtu, 29 Juli 2024</p>
+              <p className="font-[Poppins] text-sm font-medium">Sabtu, 29 Juni 2024</p>
             </div>
           </div>
           <div className="px-5">
@@ -235,7 +235,7 @@ export default function UiUx() {
             <div className="py-10 px-5">
               <div className="flex gap-2">
                 <Image src={'/technofair/play.png'} alt="play" width={20} height={20} />
-                <p className="text-[#31304D] text-base font-bold font-[Poppins]">Jadwal & Detail Materi Seminar</p>
+                <p className="text-[#31304D] text-base font-bold font-[Poppins]">Jadwal & Detail Materi Workshop</p>
               </div>
               <div className="pt-5 flex gap-10">
                 <div className="">
@@ -244,7 +244,7 @@ export default function UiUx() {
                     <div className="flex font-[Poppins] gap-2">
                       <p className="font-semibold text-[#262626] text-sm">Hari, Tanggal </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> Senin, 29 Juli 2024
+                        <strong>:</strong> Sabtu, 29 Juni 2024
                       </p>
                     </div>
                     <div className="flex font-[Poppins] gap-14">
