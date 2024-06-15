@@ -35,7 +35,7 @@ export default function ArtificialIntelligence() {
                 </div>
                 <div className="text-[#212427] text-lg italic font-light font-[Poppins]">Exploring Innovations and Applications of Artificial Intelligence</div>
               </div>
-              <div className="text-[#212427] text-xl font-semibold font-[Poppins] py-2">Sabtu, 20 Juni 2024</div>
+              <div className="text-[#212427] text-xl font-semibold font-[Poppins] py-2">Sabtu, 27 Juli 2024</div>
               <div className="">
                 <p className="text-lg font-normal font-[Poppins] text-[#212427]">
                   Seminar bertemakan “Exploring Innovations and Applications of Artificial Intelligence (AI)” akan menjadi langkah untuk memperluas wawasan dan memahami tentang perkembangan terkini dalam dunia Artificial Intelligence (AI).
@@ -121,7 +121,7 @@ export default function ArtificialIntelligence() {
                         <div className="flex font-[Poppins] gap-2">
                           <p className="font-semibold text-[#212427] text-base">Hari, Tanggal </p>
                           <p className="text-[#212427] text-base">
-                            <strong>:</strong> Sabtu, 20 Juni 2024
+                            <strong>:</strong> Sabtu, 27 Juli 2024
                           </p>
                         </div>
                         <div className="flex font-[Poppins] gap-16">
@@ -187,7 +187,7 @@ export default function ArtificialIntelligence() {
               <p className="font-[Poppins] text-base italic font-light">&quot;Exploring Innovations and Applications of Artificial Intelligence&quot;</p>
             </div>
             <div className="text-[#262626] py-3">
-              <p className="font-[Poppins] text-sm font-medium">Sabtu, 20 Juni 2024</p>
+              <p className="font-[Poppins] text-sm font-medium">Sabtu, 27 Juli 2024</p>
             </div>
           </div>
           <div className="px-5">
@@ -249,7 +249,7 @@ export default function ArtificialIntelligence() {
                     <div className="flex font-[Poppins] gap-2">
                       <p className="font-semibold text-[#262626] text-sm">Hari, Tanggal </p>
                       <p className="text-[#262626] text-sm">
-                        <strong>:</strong> Sabtu, 20 Juni 2024
+                        <strong>:</strong> Sabtu, 27 Juli 2024
                       </p>
                     </div>
                     <div className="flex font-[Poppins] gap-14">
