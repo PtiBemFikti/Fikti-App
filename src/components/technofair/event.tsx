@@ -400,7 +400,7 @@ export default function EventPage() {
                         <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
                     </div> */}
-                    <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
+                    <Link href={'/technofair/details/seminar/artificial-intelligence'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan.png'} alt="arrow" width={16} height={16} className="mb-1" />
                     </Link>
@@ -433,7 +433,7 @@ export default function EventPage() {
                         <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
                     </div> */}
-                    <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
+                    <Link href={'/technofair/details/seminar/product-management'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
                     </Link>
@@ -464,7 +464,7 @@ export default function EventPage() {
                         <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
                     </div> */}
-                    <Link href={'/technofair/details/seminar/data-analyst'} className="py-4 flex justify-end items-end gap-4">
+                    <Link href={'/technofair/details/seminar/uiux'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-kuning.png'} alt="arrow" width={16} height={16} className="mb-1" />
                     </Link>
