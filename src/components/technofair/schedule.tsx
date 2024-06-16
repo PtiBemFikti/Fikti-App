@@ -103,7 +103,7 @@ const items: any = [
                   </div>
                 </button>
               </div> */}
-              <Link href={'/technofair/details/seminar/data-analyst'}>
+              <Link href={'/technofair/details/seminar/artificial-intelligence'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -142,7 +142,7 @@ const items: any = [
                   </div>
                 </button>
               </div> */}
-              <Link href={'/technofair/details/seminar/data-analyst'}>
+              <Link href={'/technofair/details/workshop/product-management'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
@@ -172,7 +172,7 @@ const items: any = [
                   </div>
                 </button>
               </div> */}
-              <Link href={'/technofair/details/seminar/data-analyst'}>
+              <Link href={'/technofair/details/workshop/uiux'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
