@@ -29,6 +29,7 @@ const disableNavbar = [
   "/fiktispace/Competition/DigitalPoster",
   "/fiktispace/Competition/Fotografi",
   "/fiktispace/Competition/SoloVocal",
+  "/pemira",
 ];
 const disableFooter = [
   "/technofair",
@@ -48,6 +49,7 @@ const disableFooter = [
   "/fiktispace/Competition/DigitalPoster",
   "/fiktispace/Competition/Fotografi",
   "/fiktispace/Competition/SoloVocal",
+  "/pemira",
 ];
 
 const bricolage_Grotesque = Bricolage_Grotesque({
@@ -79,7 +81,7 @@ export default function RootLayout({
       <body className={`${lato.className}`}>
         {!disableNavbar.includes(pathname) && <Navbar />}
         {children}
-        <Toaster position="top-right" richColors/>
+        <Toaster position="top-right" richColors />
         {!disableFooter.includes(pathname) && <Footer />}
       </body>
     </html>
