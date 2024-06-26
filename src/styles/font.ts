@@ -9,5 +9,8 @@ const Guardians = localFont({ src: '../../public/font/Guardians.ttf' });
 const Urbanist = localFont({ src: '../../public/font/Urbanist-Regular.ttf' });
 const bricolageGrotesque = localFont({ src: '../../public/font/Bricolage_Grotesque.ttf' });
 const poppins = localFont({ src: '../../public/font/Poppins.ttf' });
+const terminaTest = localFont({src: '../../public/font/Termina-Test.otf'});
+const terminaTestBold = localFont({src: '../../public/font/TerminaTest-Bold.otf'});
+const epilogue = localFont({src: '../../public/font/Epilogue.ttf'});
 
-export { circleAmolens, Guardians, Urbanist, bricolageGrotesque, poppins };
+export { circleAmolens, Guardians, Urbanist, bricolageGrotesque, poppins, terminaTest, terminaTestBold, epilogue };
