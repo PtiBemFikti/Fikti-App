@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Footer() {
     return (
-        <footer className="bg-[#ffffff] bottom-0 pt-10 md:pt-24 py-2">
+        <footer className="bg-[#ffffff] bottom-0 pt-10 md:pt-24 py-6">
             <div className={`text-[#344054] flex flex-col justify-center items-center ${epilogue.className} font-bold`}>
                 <p>Have a question or need assistance</p>
                 <div className="flex gap-14 py-5">
