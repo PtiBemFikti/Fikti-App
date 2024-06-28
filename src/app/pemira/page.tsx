@@ -1,6 +1,8 @@
 import Navbar from '@/components/pemira/navbar';
 import { Metadata } from 'next';
 import Dashboard from '@/components/pemira/dashboard';
+import Footer from '@/components/pemira/footer';
+import VoteResult from '@/components/pemira/voteResult';
 
 export const metadata: Metadata = {
   title: 'Pemira UG 2024/2025',
@@ -17,6 +19,8 @@ export default function PemiraPage() {
       <div className="md:w-full md:h-96 md:bg-[url('/pemira/dashboard.png')] md:bg-cover md:bg-no-repeat md:bg-center bg-[#101415E5]">
         <Dashboard />
       </div>
+      <VoteResult />
+      <Footer />
     </main>
   );
 }
