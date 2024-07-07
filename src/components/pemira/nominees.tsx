@@ -2,7 +2,7 @@ import Image from "next/image";
 import { epilogue } from "@/styles/font";
 export default function Nominees() {
   return (
-    <div className="py-16">
+    <div className="py-16 md:pt-36">
       <div className="flex justify-center items-center">
         <div className="flex-col">
           <h1
