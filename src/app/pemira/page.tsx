@@ -15,15 +15,25 @@ export const metadata: Metadata = {
 
 export default function PemiraPage() {
   return (
-    <main className="bg-white scroll-smooth">
-      <div className="bg-[#101415] h-80 md:w-full md:h-[38rem] md:bg-[url('/pemira/bgdesktop.png')] md:bg-cover md:bg-no-repeat md:bg-center">
-        <Navbar />
-        <Dashboard />
-        <Halo />
-      </div>
-      <Nominees />
-      <VoteResult />
-      <Footer />
-    </main>
+    <div>
+      <main className="bg-white scroll-smooth bg-cover bg-no-repeat">
+        <div className="bg-[#101415] h-96 md:w-full md:h-[38rem] md:bg-[url('/pemira/bgdesktop.png')] bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          <Dashboard />
+          <Halo />
+        </div>
+        <div>
+          <section id="nominees">
+            <Nominees />
+          </section>
+        </div>
+        <div>
+          <section id="vote">
+            <VoteResult />
+          </section>
+        </div>
+        <Footer />
+      </main>
+    </div>
   );
 }

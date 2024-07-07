@@ -67,7 +67,7 @@ export default function Halo() {
         </div>
       </div>
       <div className="md:hidden block">
-        <div className="flex justify-center items-center h-36 gap-2">
+        <div className="flex justify-center items-center h-36">
           <div className="flex w-72 h-24 bg-gradient-to-l from-[#1B92FF] to-[#105899] px-4 py-5 rounded-xl">
             <div className="flex-col">
               <h1

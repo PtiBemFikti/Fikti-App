@@ -181,12 +181,6 @@ const Navbar: React.FC = () => {
           >
             Live Report
           </Link>
-          <Link
-            className="text-white text-lg hover:text-purpleText text-center"
-            href="#faq"
-          >
-            FAQ
-          </Link>
 
           {/* <Link className="hover:text-purpleText" href="/dept&biro">
             Departemen
