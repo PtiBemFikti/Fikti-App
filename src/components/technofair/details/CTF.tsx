@@ -51,12 +51,12 @@ export default function CaptureTheFlagPage() {
                 >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
-                {/* <button onClick={() => toast.error('Coming Soon')} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <button onClick={() => toast.error('The Registration Has Been Closed')} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-                </button> */}
-                <Link href={'https://bit.ly/RegistrationCTFTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                </button>
+                {/* <Link href={'https://bit.ly/RegistrationCTFTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-                </Link>
+                </Link> */}
                 <div className="mt-9 text-base text-[#212427]">
                   <p>
                     <strong>Rp 80.000</strong>/Tim
@@ -292,12 +292,12 @@ export default function CaptureTheFlagPage() {
               >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              {/* <button onClick={() => toast.error('Coming Soon')} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              <button onClick={() => toast.error('The Registration Has Been Closed')} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-              </button> */}
-              <Link href={'https://bit.ly/RegistrationCTFTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              </button>
+              {/* <Link href={'https://bit.ly/RegistrationCTFTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-              </Link>
+              </Link> */}
             </div>
             {/* <button onClick={() => toast.error('Coming Soon')} className={`w-full h-14 bg-[#FEFDFC] ${poppins.className} rounded-[8px] border flex justify-center items-center hover:bg-[#FAF9F7] shadow-md`}>
               <p className='text-[#6c6a67]'>Lihat Rulebook</p>

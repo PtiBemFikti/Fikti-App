@@ -210,16 +210,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Hybrid</p>
                       </div>
                     </div>
-                    {/* <Link href={'/technofair/details/competitions/competitive-programming'} className="flex gap-4 py-5 justify-end items-end">
+                    <Link href={'/technofair/details/competitions/competitive-programming'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link> */}
-                    <div className="flex justify-end items-end">
+                    </Link>
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('The Registration Has Been Closed')} className="flex gap-4 py-5 justify-end items-end">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#E6A3563B] border-[2px] rounded-[39px]">
@@ -247,16 +247,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Hybrid</p>
                       </div>
                     </div>
-                    {/* <Link href={'/technofair/details/competitions/capture-the-flag'} className="flex gap-4 py-5 justify-end items-end">
+                    <Link href={'/technofair/details/competitions/capture-the-flag'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link> */}
-                    <div className="flex justify-end items-end">
+                    </Link>
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('The Registration Has Been Closed')} className="flex gap-4 py-5 justify-end items-end">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#E6A3563B] border-[2px] rounded-[39px]">
@@ -284,16 +284,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Hybrid</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('The Registration Has Been Closed')} className="flex gap-4 py-5 justify-end items-end">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/competitions/ui-ux-design'} className="flex gap-4 py-5 justify-end items-end">
+                    </div> */}
+                    <Link href={'/technofair/details/competitions/ui-ux-design'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
                 <div className="w-72 h-96 bg-[#212427] border-[#E6A3563B] border-[2px] rounded-[39px]">
@@ -321,16 +321,16 @@ export default function EventPage() {
                         <p className="text-[#b9bcc7] text-sm mt-1 mr-36">Hybrid</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('The Registration Has Been Closed')} className="flex gap-4 py-5 justify-end items-end">
                         <p className=" text-base font-bold text-white">Learn more</p>
                         <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/competitions/digital-infographic'} className="flex gap-4 py-5 justify-end items-end">
+                    </div> */}
+                    <Link href={'/technofair/details/competitions/digital-infographic'} className="flex gap-4 py-5 justify-end items-end">
                       <p className=" text-base font-bold text-white">Learn more</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow kanan" width={23} height={12} />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -508,16 +508,16 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-28">Hybrid</p>
                       </div>
                     </div>
-                    {/* <Link href={'/technofair/details/competitions/competitive-programming'} className="py-4 flex justify-end items-end gap-4">
+                    <Link href={'/technofair/details/competitions/competitive-programming'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link> */}
-                    <div className="flex justify-end items-end">
+                    </Link>
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('The Registration Has Been Closed')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E6A3563B] rounded-[28px]">
@@ -539,16 +539,16 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-28">Hybrid</p>
                       </div>
                     </div>
-                    {/* <Link href={'/technofair/details/competitions/capture-the-flag'} className="py-4 flex justify-end items-end gap-4">
+                    <Link href={'/technofair/details/competitions/capture-the-flag'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link> */}
-                    <div className="flex justify-end items-end">
+                    </Link>
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('The Registration Has Been Closed')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E6A3563B] rounded-[28px]">
@@ -570,16 +570,16 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-28">Hybrid</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('The Registration Has Been Closed')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/competitions/ui-ux-design'} className="py-4 flex justify-end items-end gap-4">
+                    </div> */}
+                    <Link href={'/technofair/details/competitions/ui-ux-design'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
                 <div className="w-60 h-72 bg-[#212427] border-[2px] border-[#E6A3563B] rounded-[28px]">
@@ -601,16 +601,16 @@ export default function EventPage() {
                         <p className="text-sm text-[#B9BCC7] mr-28">Hybrid</p>
                       </div>
                     </div>
-                    <div className="flex justify-end items-end">
+                    {/* <div className="flex justify-end items-end">
                       <button onClick={() => toast.error('The Registration Has Been Closed')} className="py-4 flex justify-end items-end gap-4">
                         <p className="text-base font-bold">Learn More</p>
                         <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
                       </button>
-                    </div>
-                    {/* <Link href={'/technofair/details/competitions/digital-infographic'} className="py-4 flex justify-end items-end gap-4">
+                    </div> */}
+                    <Link href={'/technofair/details/competitions/digital-infographic'} className="py-4 flex justify-end items-end gap-4">
                       <p className="text-base font-bold">Learn More</p>
                       <Image src={'/technofair/arrow-kanan-oranye.png'} alt="arrow" width={16} height={16} className="mb-1" />
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               </div>

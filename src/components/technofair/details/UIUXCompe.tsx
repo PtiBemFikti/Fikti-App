@@ -1,3 +1,6 @@
+'use client';
+
+import { toast } from 'sonner';
 import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
@@ -49,9 +52,14 @@ export default function UIUXCompePage() {
                 >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
-                <Link href={'https://bit.ly/RegistrationUIUXTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                {/* <Link href={'https://bit.ly/RegistrationUIUXTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-                </Link>
+                </Link> */}
+                <div className="">
+                  <button onClick={() => toast.error('The Registration Has Been Closed')} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                    <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
+                  </button>
+                </div>
                 <div className="mt-9 text-base text-[#212427]">
                   <p>
                     <strong>Rp 65.000</strong>/Tim
@@ -92,7 +100,7 @@ export default function UIUXCompePage() {
                   </div>
                 </Link>
                 <div className="py-7">
-                  <Image src={'/technofair/timeline-uiuxcompe.png'} alt='timeline uiux' width={289} height={765}/>
+                  <Image src={'/technofair/timeline-uiuxcompe.png'} alt="timeline uiux" width={289} height={765} />
                 </div>
               </div>
               <div className="w-5/6">
@@ -376,9 +384,14 @@ export default function UIUXCompePage() {
               >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              <Link href={'https://bit.ly/RegistrationUIUXTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              {/* <Link href={'https://bit.ly/RegistrationUIUXTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-              </Link>
+              </Link> */}
+              <div className="">
+                <button onClick={() => toast.error('The Registration Has Been Closed')} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+                  <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
+                </button>
+              </div>
             </div>
             <Link
               href={'https://drive.google.com/file/d/1ixNVmKcynnsLhlQlxp0ZcLoNm1htl1QG/view?usp=sharing'}
@@ -387,7 +400,7 @@ export default function UIUXCompePage() {
               <p className="text-[#6c6a67]">Lihat Rulebook</p>
             </Link>
             <div className="py-3">
-              <Image src={'/technofair/timeline-uiuxcompe.png'} alt='timeline uiux' width={259} height={765}/>
+              <Image src={'/technofair/timeline-uiuxcompe.png'} alt="timeline uiux" width={259} height={765} />
             </div>
           </div>
           <div className="">

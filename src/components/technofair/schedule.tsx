@@ -204,18 +204,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs">&quot;Mastering Competitive Coding Challenges&quot;</p>
               </div>
-              {/* <Link href={'/technofair/details/competitions/competitive-programming'}>
+              <Link href={'/technofair/details/competitions/competitive-programming'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link> */}
-              <div className="">
+              </Link>
+              {/* <div className="">
                 <button onClick={() => toast.error('The Registration Has Been Closed')}>
                   <div className="flex justify-center items-center">
                     <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                   </div>
                 </button>
-              </div>
+              </div> */}
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
@@ -234,18 +234,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs">&quot;Securing the Network & Be a Cyber Defenders&quot;</p>
               </div>
-              {/* <Link href={'/technofair/details/competitions/capture-the-flag'}>
+              <Link href={'/technofair/details/competitions/capture-the-flag'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link> */}
-              <div className="">
+              </Link>
+              {/* <div className="">
                 <button onClick={() => toast.error('The Registration Has Been Closed')}>
                   <div className="flex justify-center items-center">
                     <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                   </div>
                 </button>
-              </div>
+              </div> */}
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
@@ -264,18 +264,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-base text-xs">&quot;Enhancing Modern Visuals with UI/UX Design&quot;</p>
               </div>
-              <div className="">
+              {/* <div className="">
                 <button onClick={() => toast.error('The Registration Has Been Closed')}>
                   <div className="flex justify-center items-center">
                     <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                   </div>
                 </button>
-              </div>
-              {/* <Link href={'/technofair/details/competitions/ui-ux-design'}>
+              </div> */}
+              <Link href={'/technofair/details/competitions/ui-ux-design'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link> */}
+              </Link>
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>
@@ -294,18 +294,18 @@ const items: any = [
                 </div>
                 <p className="font-light italic md:text-sm text-xs">&quot;Dynamic Collaboration: Pioneering Future Technologies&quot;</p>
               </div>
-              <div className="">
+              {/* <div className="">
                 <button onClick={() => toast.error('The Registration Has Been Closed')}>
                   <div className="flex justify-center items-center">
                     <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                   </div>
                 </button>
-              </div>
-              {/* <Link href={'/technofair/details/competitions/digital-infographic'}>
+              </div> */}
+              <Link href={'/technofair/details/competitions/digital-infographic'}>
                 <div className="flex justify-center items-center">
                   <Image src={'/technofair/arrow-kanan-bulet.png'} alt="arrow kanan bulet" width={30} height={30} />
                 </div>
-              </Link> */}
+              </Link>
             </div>
             <div className="w-full bg-[#FFF4E71A] h-0.5 md:mt-0 mt-4"></div>
           </div>

@@ -1,3 +1,6 @@
+'use client';
+
+import { toast } from 'sonner';
 import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
@@ -11,7 +14,7 @@ export default function UiUx() {
         <div className={`px-40 py-16 ${poppins.className}`}>
           <div className={`py-3 flex gap-16 ${bricolageGrotesque.className}`}>
             <div className="w-1/2 py-5">
-              <Image src={'/technofair/ui-ux.png'} alt="uiux" width={461} height={346} className='rounded-2xl'/>
+              <Image src={'/technofair/ui-ux.png'} alt="uiux" width={461} height={346} className="rounded-2xl" />
             </div>
             <div className="w-1/2 py-6">
               {/* <Link href="/technofair" className="flex gap-4">
@@ -38,12 +41,14 @@ export default function UiUx() {
                 >
                   <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
                 </Link>
-                <Link
-                  href={'https://bit.ly/RegistrationWorkshopUIUX-TF11'}
-                  className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]"
-                >
+                {/* <Link href={'https://bit.ly/RegistrationWorkshopUIUX-TF11'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
-                </Link>
+                </Link> */}
+                <div className="">
+                  <button onClick={() => toast.error('The Registration Has Been Closed')} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                    <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -164,7 +169,7 @@ export default function UiUx() {
         <div className="py-4">
           <div className="px-5">
             <div className="py-3">
-              <Image src={'/technofair/ui-ux.png'} alt='uiux' width={461} height={346} className='rounded-xl'/>
+              <Image src={'/technofair/ui-ux.png'} alt="uiux" width={461} height={346} className="rounded-xl" />
             </div>
           </div>
           <div className="px-5">
@@ -188,12 +193,14 @@ export default function UiUx() {
               >
                 <p className="text-[#6C6A67] font-[Poppins] text-base font-semibold">Hubungi Kami</p>
               </Link>
-              <Link
-                href={'https://bit.ly/RegistrationWorkshopUIUX-TF11'}
-                className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]"
-              >
+              {/* <Link href={'https://bit.ly/RegistrationWorkshopUIUX-TF11'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
-              </Link>
+              </Link> */}
+              <div className="">
+                <button onClick={() => toast.error('The Registration Has Been Closed')} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+                  <p className="text-[#FEFDFC] font-[Poppins] text-base font-semibold">Daftar Sekarang</p>
+                </button>
+              </div>
             </div>
           </div>
           <div className="">

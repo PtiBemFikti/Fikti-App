@@ -1,8 +1,11 @@
+'use client';
+
 import Image from 'next/image';
 import AccordionCard from './Accordion';
 import Link from 'next/link';
 import { bricolageGrotesque, poppins } from '@/styles/font';
 import { useRouter } from 'next/router';
+import { toast } from 'sonner';
 
 export default function DigitalInfoPage() {
   // const router = useRouter;
@@ -48,9 +51,14 @@ export default function DigitalInfoPage() {
                 >
                   <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
                 </Link>
-                <Link href={'https://bit.ly/RegistrationDICTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                {/* <Link href={'https://bit.ly/RegistrationDICTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
                   <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-                </Link>
+                </Link> */}
+                <div className="">
+                  <button onClick={() => toast.error('The Registration Has Been Closed')} className="w-48 h-14 bg-[#21B573] rounded-[16px] border flex justify-center items-center hover:bg-[#1C9760]">
+                    <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
+                  </button>
+                </div>
                 <div className="mt-9 text-base text-[#212427]">
                   <p className="">
                     <strong>Rp 20.000</strong>/Peserta
@@ -95,7 +103,7 @@ export default function DigitalInfoPage() {
                   </div>
                 </Link>
                 <div className="py-7">
-                  <Image src={'/technofair/timeline-digitalinfo.png'} alt='timeline digital info' width={289} height={822}/>
+                  <Image src={'/technofair/timeline-digitalinfo.png'} alt="timeline digital info" width={289} height={822} />
                 </div>
               </div>
               <div className="w-5/6">
@@ -361,9 +369,14 @@ export default function DigitalInfoPage() {
               >
                 <p className={`text-[#6C6A67] ${poppins.className} text-base font-semibold`}>Hubungi Kami</p>
               </Link>
-              <Link href={'https://bit.ly/RegistrationDICTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+              {/* <Link href={'https://bit.ly/RegistrationDICTechnoFair11-0'} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
                 <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
-              </Link>
+              </Link> */}
+              <div className="">
+              <button onClick={() => toast.error('The Registration Has Been Closed')} className="w-48 h-14 bg-[#21B573] rounded-[8px] border flex justify-center items-center hover:bg-[#1C9760]">
+                <p className={`text-[#FEFDFC] ${poppins.className} text-base font-semibold`}>Daftar Sekarang</p>
+              </button>
+              </div>
             </div>
             <Link
               href={'https://drive.google.com/file/d/1Br-GaBbOvjXgS66Pb9qqG1_j-QN8quaU/view?usp=sharing'}
@@ -372,7 +385,7 @@ export default function DigitalInfoPage() {
               <p className="text-[#6c6a67]">Lihat Rulebook</p>
             </Link>
             <div className="py-3">
-              <Image src={'/technofair/timeline-digitalinfo.png'} alt='timeline digital info' width={259} height={768}/>
+              <Image src={'/technofair/timeline-digitalinfo.png'} alt="timeline digital info" width={259} height={768} />
             </div>
           </div>
           <div className="">
