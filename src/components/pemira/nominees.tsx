@@ -11,7 +11,7 @@ export default function Nominees() {
             Meet the Nominees
           </h1>
           <p
-            className={`${epilogue.className} text-gray-400 text-sm md:text-xl text-center`}
+            className={`${epilogue.className} text-gray-400 text-sm md:text-xl text-center pb-10`}
           >
             Get to know the nominee profiles
           </p>

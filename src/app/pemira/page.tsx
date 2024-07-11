@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'PEMIRA UG 2024/2025',
   description: 'PEMIRA UG 2024/2025',
   icons: {
-    icon: '/pemira/logo-fikti.png',
+    icon: '/pemira/logo-pemira.png',
   },
 };
 
@@ -18,10 +18,12 @@ export default function PemiraPage() {
     <div>
       <main className="bg-white scroll-smooth bg-cover bg-no-repeat">
         <Navbar />
-        <div className="bg-[#101415] md:w-full md:h-[38rem] md:bg-[url('/pemira/bgdesktop.png')] bg-cover bg-no-repeat bg-center">
+        <div className="bg-[#101415] md:w-full md:h-[38rem] h-52 md:bg-[url('/pemira/bgdesktop.png')] bg-cover bg-no-repeat bg-center">
           <Dashboard />
+          <div className="py-2 md:py-28">
+            <Halo />
+          </div>
         </div>
-        <Halo />
         <div>
           <section id="nominees">
             <Nominees />
