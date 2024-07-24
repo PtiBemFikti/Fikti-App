@@ -85,6 +85,10 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
+        <div className="">
+          <input type="text" />
+        </div>
+
         {/* <Link
             className="block text-white hover:text-purpleText duration-300 py-2"
             href="/dept&biro"
