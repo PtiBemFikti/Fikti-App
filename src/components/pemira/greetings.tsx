@@ -1,6 +1,16 @@
+'use client';
+
 import { epilogue } from '@/styles/font';
 import Image from 'next/image';
+// import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from '@nextui-org/react';
+import VotePopUp from './votepopup';
+
 export default function Halo() {
+  const handlePopUp: any = () => {
+    const modal = document.getElementById('vote-popup') as HTMLDialogElement;
+    modal.showModal();
+  };
+
   return (
     <div>
       <div className="md:block hidden">
@@ -30,7 +40,7 @@ export default function Halo() {
                   </div>
                 </div>
                 <div className="flex justify-end items-center w-20">
-                  <button>
+                  <button onClick={handlePopUp}>
                     <Image src={'/pemira/arrowright.png'} alt="arrow" width={48} height={48}></Image>
                   </button>
                 </div>
@@ -55,13 +65,16 @@ export default function Halo() {
               </div>
             </div>
             <div className="flex justify-end items-center">
-              <button>
+              <button onClick={handlePopUp}>
                 <Image src={'/pemira/arrowright.png'} alt="arrow" width={35} height={35}></Image>
               </button>
             </div>
           </div>
         </div>
       </div>
+      <dialog id="vote-popup" className="modal">
+        <VotePopUp />
+      </dialog>
     </div>
   );
 }
