@@ -1,6 +1,11 @@
 import { epilogue } from "@/styles/font";
 import Image from "next/image";
 export default function Halo() {
+  const handlePopUp: any = () => {
+    const modal = document.getElementById("vote-popup") as HTMLDialogElement;
+    modal.showModal();
+  };
+
   return (
     <div>
       <div className="md:block hidden">
@@ -106,6 +111,9 @@ export default function Halo() {
           </div>
         </div>
       </div>
+      <dialog id="vote-popup" className="modal">
+        <VotePopUp />
+      </dialog>
     </div>
   );
 }
