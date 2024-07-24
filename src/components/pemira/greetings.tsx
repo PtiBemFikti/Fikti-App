@@ -35,32 +35,33 @@ export default function Halo() {
                   </h1>
                 </div>
               </div>
-              <button onClick={handlePopUp}>
-                <div className="flex w-1/2 h-28 bg-gradient-to-l from-[#669BBC] to-[#003049] shadow-black shadow-custom-right-bottom px-4 py-6 rounded-xl">
-                  <div className="flex flex-col gap-2">
-                    <h1
-                      className={`${epilogue.className} text-white text-2xl font-bold`}
-                    >
-                      Cast Your Vote
-                    </h1>
-                    <div className="flex w-64 h-7 gap-2">
-                      <div className="flex px-3 py-1 bg-red-500 rounded-lg">
-                        <div className="flex justify-center items-center gap-2">
-                          <div className="w-2.5 h-2.5 bg-gray-100 rounded-full"></div>
-                          <h1
-                            className={`${epilogue.className} text-gray-100 text-xl`}
-                          >
-                            LIVE
-                          </h1>
-                        </div>
-                      </div>
-                      <div
-                        className={`${epilogue.className} text-gray-100 text-xl`}
-                      >
-                        Vote is open now
+
+              <div className="flex w-1/2 h-28 bg-gradient-to-l from-[#669BBC] to-[#003049] shadow-black shadow-custom-right-bottom px-4 py-6 rounded-xl">
+                <div className="flex flex-col gap-2">
+                  <h1
+                    className={`${epilogue.className} text-white text-2xl font-bold`}
+                  >
+                    Cast Your Vote
+                  </h1>
+                  <div className="flex w-64 h-7 gap-2">
+                    <div className="flex px-3 py-1 bg-red-500 rounded-lg">
+                      <div className="flex justify-center items-center gap-2">
+                        <div className="w-2.5 h-2.5 bg-gray-100 rounded-full"></div>
+                        <h1
+                          className={`${epilogue.className} text-gray-100 text-xl`}
+                        >
+                          LIVE
+                        </h1>
                       </div>
                     </div>
+                    <div
+                      className={`${epilogue.className} text-gray-100 text-xl`}
+                    >
+                      Vote is open now
+                    </div>
                   </div>
+                </div>
+                <button onClick={handlePopUp}>
                   <div className="flex justify-end items-center w-20">
                     <Image
                       src={"/pemira/arrowright.png"}
@@ -69,8 +70,8 @@ export default function Halo() {
                       height={48}
                     ></Image>
                   </div>
-                </div>
-              </button>
+                </button>
+              </div>
             </div>
           </div>
         </div>
