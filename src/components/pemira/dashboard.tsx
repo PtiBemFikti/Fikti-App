@@ -21,11 +21,11 @@ export default function Dashboard() {
           </div>
           <div className="md:hidden block">
             <Image
-              src={"/pemira/Logo Group.svg"}
-              alt="logo-group"
+              src={"/pemira/logopemira.svg"}
+              alt=""
               width={125}
               height={94}
-              className="w-48"
+              className="w-28"
             />
           </div>
         </div>
