@@ -30,6 +30,9 @@ const disableNavbar = [
   "/fiktispace/Competition/Fotografi",
   "/fiktispace/Competition/SoloVocal",
   "/pemira",
+  "/pemira/DetailPaslon1",
+  "/pemira/DetailPaslon2",
+  "/pemira/DetailPaslon3",
 ];
 const disableFooter = [
   "/technofair",
@@ -50,6 +53,9 @@ const disableFooter = [
   "/fiktispace/Competition/Fotografi",
   "/fiktispace/Competition/SoloVocal",
   "/pemira",
+  "/pemira/DetailPaslon1",
+  "/pemira/DetailPaslon2",
+  "/pemira/DetailPaslon3",
 ];
 
 const bricolage_Grotesque = Bricolage_Grotesque({

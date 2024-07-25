@@ -5,6 +5,7 @@ import { epilogue } from "@/styles/font";
 import ModalPaslon1 from "./modalPaslon1";
 import ModalPaslon2 from "./modalPaslon2";
 import ModalPaslon3 from "./modalPaslon3";
+import Link from "next/link";
 
 const handleModalPaslon1 = () => {
   const modal = document.getElementById("my_modal_1") as HTMLDialogElement;
@@ -162,84 +163,90 @@ export default function Candidates() {
       {/* Mobile */}
       <div className="mt-4 md:hidden">
         <div className="flex justify-start items-center gap-2 px-6">
-          <div className="w-24 h-28 bg-white rounded-3xl border-1">
-            <div className="flex-col">
-              <Image
-                src={"/pemira/aldi.jpg"}
-                alt={"yudha"}
-                width={200}
-                height={300}
-                className="rounded-3xl"
-              ></Image>
-              <p
-                className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-              >
-                Aldi Abdullah
-              </p>
-              <p
-                className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-              >
-                &
-              </p>
-              <p
-                className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-              >
-                Syka Qoriainan
-              </p>
+          <Link href={"/pemira/DetailPaslon1"}>
+            <div className="w-28 h-28 bg-white rounded-3xl border-1">
+              <div className="flex-col">
+                <Image
+                  src={"/pemira/yudha.jpg"}
+                  alt={"yudha"}
+                  width={250}
+                  height={300}
+                  className="rounded-3xl"
+                ></Image>
+                <p
+                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
+                >
+                  Yudha Ari
+                </p>
+                <p
+                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
+                >
+                  &
+                </p>
+                <p
+                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
+                >
+                  Agita Sonia
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="w-28 h-28 bg-white rounded-3xl border-1">
-            <div className="flex-col">
-              <Image
-                src={"/pemira/yudha.jpg"}
-                alt={"yudha"}
-                width={250}
-                height={300}
-                className="rounded-3xl"
-              ></Image>
-              <p
-                className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-              >
-                Yudha Ari
-              </p>
-              <p
-                className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-              >
-                &
-              </p>
-              <p
-                className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-              >
-                Agita Sonia
-              </p>
+          </Link>
+          <Link href={"/pemira/DetailPaslon2"}>
+            <div className="w-28 h-28 bg-white rounded-3xl border-1">
+              <div className="flex-col">
+                <Image
+                  src={"/pemira/lutpi.jpg"}
+                  alt={"lutpi"}
+                  width={250}
+                  height={300}
+                  className="rounded-3xl"
+                ></Image>
+                <p
+                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
+                >
+                  Lutfi Hakim Mulih
+                </p>
+                <p
+                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
+                >
+                  &
+                </p>
+                <p
+                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
+                >
+                  Fella Salsabila
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="w-28 h-28 bg-white rounded-3xl border-1">
-            <div className="flex-col">
-              <Image
-                src={"/pemira/lutpi.jpg"}
-                alt={"lutpi"}
-                width={250}
-                height={300}
-                className="rounded-3xl"
-              ></Image>
-              <p
-                className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-              >
-                Lutfi Hakim Mulih
-              </p>
-              <p
-                className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-              >
-                &
-              </p>
-              <p
-                className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-              >
-                Fella Salsabila
-              </p>
+          </Link>
+          <Link href={"/pemira/DetailPaslon3"}>
+            <div className="w-24 h-28 bg-white rounded-3xl border-1">
+              <div className="flex-col">
+                <Image
+                  src={"/pemira/aldi.jpg"}
+                  alt={"yudha"}
+                  width={200}
+                  height={200}
+                  className="rounded-3xl"
+                ></Image>
+                <p
+                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
+                >
+                  Aldi Abdullah
+                </p>
+                <p
+                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
+                >
+                  &
+                </p>
+                <p
+                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
+                >
+                  Syka Qoriainan
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
