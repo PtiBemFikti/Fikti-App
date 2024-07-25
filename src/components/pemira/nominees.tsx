@@ -8,12 +8,12 @@ export default function Nominees() {
           <h1
             className={`${epilogue.className} text-neutral-900 text-3xl md:text-4xl font-bold text-center`}
           >
-            Meet the Nominees
+            Meet the Candidates
           </h1>
           <p
             className={`${epilogue.className} text-gray-400 text-sm md:text-xl text-center pb-10`}
           >
-            Get to know the nominee profiles
+            Get to know the candidate profiles
           </p>
           <div className="flex justify-start items-center gap-16">
             <div className="w-60 h-96 bg-white rounded-3xl border-1 md:block hidden">

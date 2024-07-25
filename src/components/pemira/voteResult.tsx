@@ -1,4 +1,5 @@
 import { epilogue } from "@/styles/font";
+import { Urbanist } from "@/styles/font";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -48,20 +49,20 @@ export default function VoteResult() {
                   alt="ceklis"
                   width={16}
                   height={16}
-                  className="w-5 md:w-6"
+                  className="w-5 md:w-7"
                 />
-                <p className="text-[#101415] font-bold mt-1 md:text-2xl">
+                <p className="text-[#101415] font-bold mt-1 md:text-3xl">
                   Total Votes
                 </p>
               </div>
-              <div className="text-sm text-[#98A2B3] py-5 md:py-3 md:text-xl">
+              <div className={`text-sm text-[#98A2B3] py-5 md:py-3 md:text-xl ${Urbanist.className}`}>
                 <p>Jumlah suara yang sudah terkonfirmasi</p>
               </div>
-              <div className="flex justify-center items-center">
-                <p className="font-bold text-3xl md:text-6xl text-[#101415]">
+              <div className={`flex justify-center items-center ${Urbanist.className}`}>
+                <p className="font-bold text-3xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049]">
                   1.200
                 </p>
-                <p className="text-[#98A2B3] text-sm md:text-3xl font-bold pt-3">
+                <p className="text-[#98A2B3] text-sm md:text-3xl pt-3">
                   /2.400
                 </p>
               </div>

@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
             Home
           </Link>
           <Link className={`block ${pathname === '/nominasi' ? 'text-purpleText' : 'text-white text-lg'} hover:text-purpleText duration-300 py-2`} href="#nominasi">
-            Nominees
+            Candidates
           </Link>
           <Link className={`block ${pathname === '/livereport' ? 'text-purpleText' : 'text-white text-lg'} hover:text-purpleText duration-300 py-2`} href="#livereport">
             Live Report
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
             Home
           </Link>
           <Link className="text-white text-lg hover:text-purpleText text-center" href="#bootcamp">
-            Nominees
+            Candidates
           </Link>
           <Link className="text-white text-lg hover:text-purpleText text-center" href="#documentation">
             Live Report
