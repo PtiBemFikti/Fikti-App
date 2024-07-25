@@ -1,6 +1,13 @@
+"use client";
 import Link from "next/link";
 import { Urbanist, epilogue } from "@/styles/font";
 import Image from "next/image";
+import VotePopUp from "../votepopup";
+
+const handlePopUp: any = () => {
+  const modal = document.getElementById("vote-popup") as HTMLDialogElement;
+  modal.showModal();
+};
 export default function DetailPaslon3() {
   return (
     <div className="md:hidden block p-6">
@@ -32,7 +39,10 @@ export default function DetailPaslon3() {
             className="rounded-3xl"
           ></Image>
         </div>
-        <div className="flex w-full h-28 bg-gradient-to-l from-[#669BBC] to-[#003049] shadow-black shadow-custom-right-bottom px-4 py-6 rounded-xl mt-4">
+        <div
+          onClick={handlePopUp}
+          className="flex w-full h-28 bg-gradient-to-l from-[#669BBC] to-[#003049] shadow-black shadow-custom-right-bottom px-4 py-6 rounded-xl mt-4"
+        >
           <div className="flex flex-col gap-2">
             <h1
               className={`${epilogue.className} text-white text-2xl font-bold`}
@@ -201,6 +211,9 @@ export default function DetailPaslon3() {
           </div>
         </div>
       </div>
+      <dialog id="vote-popup" className="modal">
+        <VotePopUp />
+      </dialog>
     </div>
   );
 }

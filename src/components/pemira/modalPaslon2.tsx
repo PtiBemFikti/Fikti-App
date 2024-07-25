@@ -1,7 +1,14 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { epilogue, Urbanist } from "@/styles/font";
+import VotePopUp from "./votepopup";
+
+const handlePopUp: any = () => {
+  const modal = document.getElementById("vote-popup") as HTMLDialogElement;
+  modal.showModal();
+};
 
 export default function ModalPaslon2() {
   return (
@@ -24,7 +31,10 @@ export default function ModalPaslon2() {
               className="rounded-3xl"
             />
           </div>
-          <div className="flex gap-7 h-24 bg-gradient-to-l from-[#669BBC] to-[#003049] px-4 py-5 rounded-xl shadow-black shadow-custom-right-bottom">
+          <div
+            onClick={handlePopUp}
+            className="flex gap-7 h-24 bg-gradient-to-l from-[#669BBC] to-[#003049] px-4 py-5 rounded-xl shadow-black shadow-custom-right-bottom"
+          >
             <div className="flex-col">
               <h1
                 className={`${epilogue.className} text-white text-2xl font-bold`}
@@ -227,6 +237,9 @@ export default function ModalPaslon2() {
           </div>
         </div>
       </div>
+      <dialog id="vote-popup" className="modal">
+        <VotePopUp />
+      </dialog>
     </div>
   );
 }
