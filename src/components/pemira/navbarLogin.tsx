@@ -7,10 +7,8 @@ import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { ChevronDownIcon } from '@heroicons/react/solid';
-import { epilogue } from '@/styles/font';
-import LoginPopUp from './Auth/login';
 
-const Navbar: React.FC = () => {
+const NavbarLogin: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
   const pathname = usePathname();
@@ -18,11 +16,6 @@ const Navbar: React.FC = () => {
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
-  };
-
-  const handlePopUp: any = () => {
-    const modal = document.getElementById('login-popup') as HTMLDialogElement;
-    modal.showModal();
   };
 
   const toggleMenu = async () => {
@@ -73,10 +66,9 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <div className="hidden md:block">
-          <button className={`md:w-24 bg-gradient-to-l from-[#669BBC] to-[#003049] md:px-6 md:py-3 md:rounded-lg ${epilogue.className}`} onClick={handlePopUp}>
-            {/* <Image src={'/pemira/user.svg'} alt="user" width={25} height={25}></Image>
-            <ChevronDownIcon className={`h-6 w-12 transform ${isOpen ? '-rotate-180' : ''}`} /> */}
-            Login
+          <button className="flex items-center" onClick={handleToggle}>
+            <Image src={'/pemira/user.svg'} alt="user" width={25} height={25}></Image>
+            <ChevronDownIcon className={`h-6 w-12 transform ${isOpen ? '-rotate-180' : ''}`} />
           </button>
         </div>
       </div>
@@ -119,15 +111,6 @@ const Navbar: React.FC = () => {
           <Link className="text-white text-lg hover:text-purpleText text-center" href="#documentation">
             Live Report
           </Link>
-          <div className="block md:hidden">
-            <div className="flex justify-center items-center">
-              <button className={`bg-gradient-to-l from-[#669BBC] to-[#003049] text-sm px-6 py-3 rounded-lg ${epilogue.className}`} onClick={handlePopUp}>
-                {/* <Image src={'/pemira/user.svg'} alt="user" width={25} height={25}></Image>
-            <ChevronDownIcon className={`h-6 w-12 transform ${isOpen ? '-rotate-180' : ''}`} /> */}
-                Login
-              </button>
-            </div>
-          </div>
 
           {/* <Link className="hover:text-purpleText" href="/dept&biro">
             Departemen
@@ -135,11 +118,8 @@ const Navbar: React.FC = () => {
           {/* Add more navigation links as needed */}
         </motion.div>
       )}
-      <dialog id="login-popup" className="modal">
-        <LoginPopUp />
-      </dialog>
     </motion.nav>
   );
 };
 
-export default Navbar;
+export default NavbarLogin;
