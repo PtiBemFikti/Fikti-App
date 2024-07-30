@@ -8,12 +8,16 @@ import { useEffect, useState } from 'react';
 
 export default function VoteResult() {
   const [targetDate, setTargetDate] = useState<Date>(() => {
-    const savedDate = localStorage.getItem('targetDate');
-    return savedDate ? new Date(savedDate) : new Date(Date.now() + 2 * 24 * 60 * 60 * 1000);
+    if (typeof window !== "undefined") {
+      const savedDate = localStorage.getItem('targetDate');
+      return savedDate ? new Date(savedDate) : new Date(Date.now() + 2 * 24 * 60 * 60 * 1000);
+    } else {
+      return new Date(Date.now() + 2 * 24 * 60 * 60 * 1000);
+    }
   });
 
   useEffect(() => {
-    if (!localStorage.getItem('targetDate')) {
+    if (typeof window !== "undefined" && !localStorage.getItem('targetDate')) {
       const newTargetDate = new Date(Date.now() + 2 * 24 * 60 * 60 * 1000);
       localStorage.setItem('targetDate', newTargetDate.toString());
       setTargetDate(newTargetDate);
@@ -23,7 +27,9 @@ export default function VoteResult() {
   const addTime = (hours: number) => {
     const newTargetDate = new Date(targetDate.getTime() + hours * 60 * 60 * 1000);
     setTargetDate(newTargetDate);
-    localStorage.setItem('targetDate', newTargetDate.toString());
+    if (typeof window !== "undefined") {
+      localStorage.setItem('targetDate', newTargetDate.toString());
+    }
   };
 
   return (
@@ -76,8 +82,8 @@ export default function VoteResult() {
               </div>
             </div>
           </div>
-          <div className="px-4  md:px-0">
-            <div className="w-full bg-[#EAECF0] rounded-3xl p-6 flex justify-between gap-2 md:py-9">
+          <div className="px-4 md:px-0">
+            <div className="w-full bg-[#EAECF0] rounded-3xl p-6 flex justify-between gap-2 md:py-8">
               <div>
                 <p className="font-bold text-[#101415] md:text-3xl">Voting Ends In</p>
                 <div className="py-4 md:py-2">
@@ -93,8 +99,8 @@ export default function VoteResult() {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2">
-          <div className="bg-[#EAECF0] w-full p-4 md:rounded-3xl md:gap-5 md:px-12 md:py-9">
+        <div className="md:w-1/2 md:py-3">
+          <div className="bg-[#EAECF0] w-full p-4 md:rounded-3xl md:gap-5 md:px-12 md:py-16">
             <div className="flex justify-between">
               <p className="text-[#101415] font-bold md:text-2xl">Election Summary</p>
               <Image src={'/pemira/bar.png'} alt="bar" width={24} height={24} className="md:w-7" />
@@ -120,25 +126,6 @@ export default function VoteResult() {
                 </div>
               </div>
               <div className="py-3">
-                <div className="w-full bg-[#F0F2F4] rounded-xl flex justify-between items-center">
-                  <div className="flex items-center gap-3">
-                    <div>
-                      <Image src={'/pemira/opet.png'} alt="orang" width={65} height={65} />
-                    </div>
-                    <div className="text-[#101415]">
-                      <p className="font-bold md:text-xl text-sm">Andre Setiawan &</p>
-                      <p className="font-bold md:text-xl text-sm">John Smith</p>
-                    </div>
-                  </div>
-                  <div className="text-[#101415] text-2xl px-6">
-                    <div className={` ${Urbanist.className} flex md:gap-2 gap-1`}>
-                      <p className="md:text-4xl bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049] font-bold">350</p>
-                      <p className="md:text-base text-[#98A2B3] md:mt-3 text-sm mt-2">Votes</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="py-3 md:py-0">
                 <div className="w-full bg-[#F0F2F4] rounded-xl flex justify-between items-center">
                   <div className="flex items-center gap-3">
                     <div>
