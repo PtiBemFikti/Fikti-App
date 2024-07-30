@@ -17,8 +17,9 @@ export default function LoginPopUp() {
           <input type="text" placeholder="Masukkan NPM Anda" className="w-full p-3 md:p-5 bg-[#F0F2F4] border border-[#98A2B3] border-solid rounded-xl text-sm md:text-base text-[#98A2B3]" />
           <input type="password" placeholder="Password" className="w-full p-3 md:p-5 bg-[#F0F2F4] border border-[#98A2B3] border-solid rounded-xl text-sm md:text-base text-[#98A2B3]" />
         </div>
-        <div className="px-6 md:px-12 py-5">
+        <div className="px-6 md:px-12 py-5 flex flex-col gap-2">
           <button className="w-full p-3 md:p-5 bg-gradient-to-l from-[#669BBC] to-[#003049] rounded-xl text-[#F0F2F4] font-bold md:text-xl">Login</button>
+          <button className="w-full p-3 md:p-5 bg-gradient-to-l from-[#669BBC] to-[#003049] rounded-xl text-[#F0F2F4] font-bold md:text-xl">Login dengan Google</button>
         </div>
       </form>
     </div>
