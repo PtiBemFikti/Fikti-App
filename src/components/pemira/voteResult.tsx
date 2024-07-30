@@ -99,8 +99,8 @@ export default function VoteResult() {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 md:py-3">
-          <div className="bg-[#EAECF0] w-full p-4 md:rounded-3xl md:gap-5 md:px-12 md:py-16">
+        <div className="md:w-1/2 md:py-3 py-5 px-5">
+          <div className="bg-[#EAECF0] w-full p-4 md:rounded-3xl rounded-3xl md:gap-5 md:px-12 md:py-16">
             <div className="flex justify-between">
               <p className="text-[#101415] font-bold md:text-2xl">Election Summary</p>
               <Image src={'/pemira/bar.png'} alt="bar" width={24} height={24} className="md:w-7" />
