@@ -19,7 +19,7 @@ export default function LoginPopUp() {
         </div>
         <div className="px-6 md:px-12 py-5 flex flex-col gap-2">
           <button className="w-full p-3 md:p-5 bg-gradient-to-l from-[#669BBC] to-[#003049] rounded-xl text-[#F0F2F4] font-bold md:text-xl">Login</button>
-          <button className="w-full p-3 md:p-5 bg-gradient-to-l from-[#669BBC] to-[#003049] rounded-xl text-[#F0F2F4] font-bold md:text-xl">Login dengan Google</button>
+          {/* <button className="w-full p-3 md:p-5 bg-gradient-to-l from-[#669BBC] to-[#003049] rounded-xl text-[#F0F2F4] font-bold md:text-xl">Login dengan Google</button> */}
         </div>
       </form>
     </div>
