@@ -84,8 +84,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden block">
           <div className="text-sm">
             <div className="flex gap-1">
-              <p>Hello, </p>
-              <p className="text-[#FFCD1B]">User</p>
+              <p>Hello Warga FIKTI</p>
             </div>
             <p>
               Welcome to <strong>PEMIRA FIKTI UG 2024</strong>

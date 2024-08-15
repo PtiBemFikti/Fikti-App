@@ -1,0 +1,48 @@
+steps:
+# membuat container image
+- name: gcr.io/cloud-builders/docker
+  args: [
+    'build',
+    '-t',
+    'gcr.io/$PROJECT_ID/fikti-frontend',
+    '.'
+  ]
+
+# push image ke container registry
+- name: gcr.io/cloud-builders/docker
+  args: [
+    'push',
+    'gcr.io/$PROJECT_ID/fikti-frontend'
+  ]
+
+# deploy container image ke cloud run (region asia-southeast2)
+- name: gcr.io/cloud-builders/docker
+  args: [
+    'run',
+    'deploy',
+    'fikti-frontend-service-jakarta',
+    '--image',
+    'gcr.io/$PROJECT_ID/fikti-frontend',
+    '--region',
+    'asia-southeast2',
+    '--platform',
+    'managed',
+    '--allow-unauthenticated'
+  ]
+
+# deploy container image ke cloud run (region us-central1)
+- name: gcr.io/cloud-builders/docker
+  args: [
+    'run',
+    'deploy',
+    'fikti-frontend-service-us',
+    '--image',
+    'gcr.io/$PROJECT_ID/fikti-frontend',
+    '--region',
+    'us-central1',
+    '--platform',
+    'managed',
+    '--allow-unauthenticated'
+  ]
+images:
+- 'gcr.io/$PROJECT_ID/fikti-frontend'
