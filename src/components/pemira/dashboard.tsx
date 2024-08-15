@@ -16,7 +16,7 @@ export default function Dashboard() {
             <p
               className={`${epilogue.className} text-sm md:text-3xl md:w-3/4 w-full font-light`}
             >
-              Rayakan Demokrasi yang Transparan dan Terintegrasi
+              Sinergi FIKTI Dalam Demokrasi #SuaraFIKTI
             </p>
           </div>
           <div className="md:hidden block">

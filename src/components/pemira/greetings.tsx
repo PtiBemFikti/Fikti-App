@@ -17,16 +17,11 @@ export default function Halo() {
               <div className="w-1/2">
                 <div>
                   <h1>
-                    <span
-                      className={`${epilogue.className} text-neutral-900 text-2xl font-normal`}
-                    >
-                      Hello,{" "}
-                    </span>
-                    <span
+                    <p
                       className={`${epilogue.className} text-neutral-900 text-2xl font-bold`}
                     >
-                      Andre Setiawan 👋🏻
-                    </span>
+                      Hello, Warga FIKTI👋🏻
+                    </p>
                     <p
                       className={`${epilogue.className} mt-1 text-gray-400 text-xl font-normal`}
                     >
