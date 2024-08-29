@@ -117,45 +117,6 @@ export default function Candidates() {
             <dialog id="my_modal_2" className="modal">
               <ModalPaslon2 />
             </dialog>
-            <div className="w-60 h-96 bg-white rounded-3xl border-1 md:block hidden">
-              <button onClick={handleModalPaslon3}>
-                <div className="flex-col">
-                  <Image
-                    src={"/pemira/aldi.jpg"}
-                    alt={"yudha"}
-                    width={210}
-                    height={300}
-                    className="rounded-3xl"
-                  ></Image>
-                  <p
-                    className={`${epilogue.className} text-neutral-900 text-2xl text-left px-4 mt-2`}
-                  >
-                    Aldi Abdullah
-                  </p>
-                  <p
-                    className={`${epilogue.className} text-neutral-900 text-2xl text-left px-4`}
-                  >
-                    &
-                  </p>
-                  <p
-                    className={`${epilogue.className} text-neutral-900 text-2xl text-left px-4`}
-                  >
-                    Syka Qoriainan
-                  </p>
-                </div>
-                <div className="flex items-end justify-end px-4">
-                  <Image
-                    src={"/pemira/expand.svg"}
-                    alt="expand"
-                    width={20}
-                    height={20}
-                  ></Image>
-                </div>
-              </button>
-            </div>
-            <dialog id="my_modal_3" className="modal">
-              <ModalPaslon3 />
-            </dialog>
           </div>
         </div>
       </div>
@@ -215,34 +176,6 @@ export default function Candidates() {
                   className={`${epilogue.className} text-neutral-900 text-sm text-center`}
                 >
                   Fella Salsabila
-                </p>
-              </div>
-            </div>
-          </Link>
-          <Link href={"/pemira/DetailPaslon3"}>
-            <div className="w-24 h-28 bg-white rounded-3xl border-1">
-              <div className="flex-col">
-                <Image
-                  src={"/pemira/aldi.jpg"}
-                  alt={"yudha"}
-                  width={200}
-                  height={200}
-                  className="rounded-3xl"
-                ></Image>
-                <p
-                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-                >
-                  Aldi Abdullah
-                </p>
-                <p
-                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-                >
-                  &
-                </p>
-                <p
-                  className={`${epilogue.className} text-neutral-900 text-sm text-center`}
-                >
-                  Syka Qoriainan
                 </p>
               </div>
             </div>

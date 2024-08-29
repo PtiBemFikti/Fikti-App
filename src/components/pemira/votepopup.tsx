@@ -50,21 +50,6 @@ export default function VotePopUp() {
               </div>
             </div>
           </div>
-          <div className="px-6 md:px-12">
-            <div className="w-full bg-[#F0F2F4] rounded-xl p-1">
-              <div className="flex justify-between items-center">
-                <div className="flex gap-3">
-                  <Image src={'/pemira/dummy.png'} alt="profile" width={60} height={60} className="rounded-xl md:hidden" />
-                  <Image src={'/pemira/dummy.png'} alt="profile" width={83} height={83} className="rounded-xl hidden md:block" />
-                  <div className="text-black text-sm md:text-base flex flex-col justify-center">
-                    <p>Andre Setiawan</p>
-                    <p>John Smith</p>
-                  </div>
-                </div>
-                <Radio value="vote-3" className=''></Radio>
-              </div>
-            </div>
-          </div>
         </RadioGroup>
         <div className="px-6 py-5 flex gap-3 md:px-12 md:py-10">
           <button className="btn btn-ghost bg-[#EAECF0] w-32 md:w-1/2 text-black py-3 text-center md:text-xl rounded-lg text-sm">Cancel</button>

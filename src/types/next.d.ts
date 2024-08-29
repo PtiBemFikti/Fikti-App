@@ -1,9 +1,9 @@
-// types/next.d.ts
-import { NextApiRequest } from "next";
-import { Multer } from "multer";
+import NextAuth, { DefaultSession } from "next-auth";
 
-declare module "next" {
-  interface NextApiRequest {
-    file?: Express.Multer.File; // Menambahkan properti file
+declare module "next-auth" {
+  interface Session {
+    user: {
+      id: string; // tambahkan properti id
+    } & DefaultSession["user"];
   }
 }

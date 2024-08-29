@@ -93,13 +93,10 @@ export default function VoteResult() {
                   <CountDown targetDate={targetDate} />
                 </div>
               </div>
-              <div className="text-[#669BBC] cursor-pointer" onClick={() => addTime(1)}>
-                <p className="underline">Tambah 1 Jam</p>
-              </div>
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 md:py-3 py-5 px-5">
+        <div className="md:w-1/2 md:px-1 md:py-3 py-5 px-5">
           <div className="bg-[#EAECF0] w-full p-4 md:rounded-3xl rounded-3xl md:gap-5 md:px-12 md:py-16">
             <div className="flex justify-between">
               <p className="text-[#101415] font-bold md:text-2xl">Election Summary</p>
