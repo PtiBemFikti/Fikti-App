@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
           <Link href="#" className="flex items-center ml-5">
             <Image
               src="/pemira/logo-pemira.png"
-              alt="logo univ"
+              alt="logo pemira"
               width={40}
               height={40}
             />

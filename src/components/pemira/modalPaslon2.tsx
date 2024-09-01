@@ -24,7 +24,7 @@ export default function ModalPaslon2() {
         <div className="w-80 flex flex-col gap-5">
           <div className="bg-[#DDDCE8] rounded-2xl">
             <Image
-              src="/pemira/lutpi.jpg"
+              src="/pemira/2.png"
               alt=""
               width={320}
               height={360}
@@ -83,7 +83,7 @@ export default function ModalPaslon2() {
                     <p
                       className={`${Urbanist.className} text-[#101415] text-xl`}
                     >
-                      Andre Setiawan
+                      Muhammad Dante Saputra
                     </p>
                   </div>
                   <div className="mt-2">
@@ -95,7 +95,7 @@ export default function ModalPaslon2() {
                     <p
                       className={`${Urbanist.className} text-[#101415] text-xl`}
                     >
-                      12346789
+                      10121804
                     </p>
                   </div>
                   <div className="mt-2">
@@ -107,7 +107,7 @@ export default function ModalPaslon2() {
                     <p
                       className={`${Urbanist.className} text-[#101415] text-xl`}
                     >
-                      2KA33
+                      3KA03
                     </p>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ export default function ModalPaslon2() {
                     <p
                       className={`${Urbanist.className} text-[#101415] text-xl`}
                     >
-                      Kevin De Bruyne
+                      Daffa Aldion Rafidbudiman
                     </p>
                   </div>
                   <div className="mt-2">
@@ -133,7 +133,7 @@ export default function ModalPaslon2() {
                     <p
                       className={`${Urbanist.className} text-[#101415] text-xl`}
                     >
-                      12345678
+                      10121294
                     </p>
                   </div>
                   <div className="mt-2">
@@ -145,7 +145,7 @@ export default function ModalPaslon2() {
                     <p
                       className={`${Urbanist.className} text-[#101415] text-xl`}
                     >
-                      2KA34
+                      3KA03
                     </p>
                   </div>
                 </div>
@@ -153,90 +153,171 @@ export default function ModalPaslon2() {
             </div>
           </div>
           <div className="flex flex-col">
-            <div className="w-[660px] h-[236px] p-3 bg-[#EAECF0] rounded-xl mt-4">
+            <div className="w-[660px] h-[290px] p-3 bg-[#EAECF0] rounded-xl mt-4">
               <h2
                 className={`${epilogue.className} text-black font-bold text-2xl ml-2`}
               >
                 Pengalaman
               </h2>
-              <div className="ml-8">
-                <ol
-                  className={`${Urbanist.className} list-disc text-black text-lg`}
-                >
-                  <li>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </li>
-                  <li>
-                    Lorem Ipsum has been the industry`&apos;s standard dummy
-                    text ever since the 1500s
-                  </li>
-                  <li>
-                    When an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book.
-                  </li>
-                </ol>
+              <div className="flex justify-between gap-2.5">
+                <div className="flex flex-col w-1/2">
+                  <p
+                    className={`${Urbanist.className} list-disc text-black font-bold text-lg ml-2`}
+                  >
+                    Ketua
+                  </p>
+                  <div className="ml-8">
+                    <ol
+                      className={`${Urbanist.className} list-disc text-black text-base`}
+                    >
+                      <li>Staff Biro LITBANG 2022/2023</li>
+                      <li>Koordinator Acara PKKMB 2023</li>
+                      <li>Koordinator Lapangan LDK 2023</li>
+                      <li>Ketua Forum Besar 2022/2023</li>
+                      <li>Kepala Biro LITBANG 2023/2024</li>
+                      <li>Data Scientist - PT. United Tracktors Tbk</li>
+                      <li>Data science & AI - Startup Campus</li>
+                    </ol>
+                  </div>
+                </div>
+                <div className="flex flex-col w-1/2">
+                  <p
+                    className={`${Urbanist.className} list-disc text-black font-bold text-lg ml-2`}
+                  >
+                    Wakil Ketua
+                  </p>
+                  <div className="ml-8">
+                    <ol
+                      className={`${Urbanist.className} list-disc text-black text-base`}
+                    >
+                      <li>Magang Staff BEM 2021</li>
+                      <li>Staff ORSB 2022/2023</li>
+                      <li>Kepala Departemen ORSB 2023/2024</li>
+                      <li>Ketua Pelaksana Olimpiade Gunadarma 2024</li>
+                      <li>Bangkit Academy Machine Learning</li>
+                    </ol>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="w-[660px] h-[236px] p-3 bg-[#EAECF0] rounded-xl mt-4">
-            <div className="flex justify-between gap-2.5">
-              <div className="flex flex-col ml-2 w-1/2">
-                <div>
-                  <h2
-                    className={`${epilogue.className} text-black font-bold text-2xl`}
-                  >
-                    Visi & Misi
-                  </h2>
-                </div>
-                <div>
-                  <ol
-                    className={`${Urbanist.className} list-disc text-black text-base ml-6`}
-                  >
-                    <li>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </li>
-                    <li>
-                      Lorem Ipsum has been the industry standard dummy text ever
-                      since the 1500s
-                    </li>
-                    <li>
-                      When an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book.
-                    </li>
-                  </ol>
-                </div>
-              </div>
-              <div className="flex flex-col w-1/2">
-                <div>
-                  <h2
-                    className={`${epilogue.className} text-black font-bold text-2xl`}
-                  >
-                    Program Kerja
-                  </h2>
-                  <ol
-                    className={`${Urbanist.className} list-disc text-black text-base ml-6`}
-                  >
-                    <li>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </li>
-                    <li>
-                      Lorem Ipsum has been the industry standard dummy text ever
-                      since the 1500s
-                    </li>
-                    <li>
-                      When an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book.
-                    </li>
-                  </ol>
-                </div>
-              </div>
+          <div className="w-[660px] h-[330px] p-3 bg-[#EAECF0] rounded-xl mt-4">
+            <div>
+              <h2
+                className={`${epilogue.className} text-black font-bold text-2xl ml-2`}
+              >
+                Visi & Misi
+              </h2>
+            </div>
+            <div>
+              <p
+                className={`${epilogue.className} text-black font-bold text-lg ml-2`}
+              >
+                Visi
+              </p>
+              <p
+                className={`${Urbanist.className} text-black text-base ml-2 text-justify`}
+              >
+                Menjadikan Badan Eksekutif Mahasiswa sebagai fasilitator yang
+                bersinergi dan solid dengan seluruh mahasiswa fikti untuk
+                menciptakan lingkungan yang mendukung perkembangan secara
+                Inovatif, Inklusif dan Progresif.
+              </p>
+
+              <p
+                className={`${epilogue.className} text-black font-bold text-lg mt-1 ml-2`}
+              >
+                Misi
+              </p>
+              <ol
+                className={`${Urbanist.className} list-disc text-black text-base ml-6`}
+              >
+                <li>
+                  Mengoptimalkan sumber daya fungsionaris internal BEM FIKTI dan
+                  Mahasiswa agar menciptakan regenerasi yang aktif , berkompeten
+                  dan berkualitas.
+                </li>
+                <li>
+                  Mempererat hubungan seluruh mahasiswa Fikti untuk mewujudkan
+                  lingkungan yang solid dan bersinergi.
+                </li>
+                <li>
+                  Mengakomodasi, mengembangkan, dan mengapresiasi minat, bakat,
+                  serta potensi diri mahasiswa Fikti guna memicu
+                  pengaktualisasian diri.
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div className="w-[660px] h-[490px] p-3 bg-[#EAECF0] rounded-xl mt-4 mr-8">
+            <div>
+              <h2
+                className={`${epilogue.className} text-black font-bold text-2xl ml-2`}
+              >
+                Program Kerja
+              </h2>
+              <p
+                className={`${epilogue.className} text-black font-bold text-lg ml-2`}
+              >
+                Program Kerja Inovasi
+              </p>
+              <ol
+                className={`${Urbanist.className} list-disc text-black text-base ml-6 text-justify`}
+              >
+                <li>
+                  <span className="font-bold text-lg">
+                    Akademik Bersinergi{" "}
+                  </span>
+                  <br />
+                  Membuat komunitas berkelanjutan dimana mahasiswa fikti bisa
+                  saling sharing mengenai akademi dan bisa mengembangkan
+                  wawasan.
+                </li>
+                <li>
+                  <span className="font-bold text-lg">FIKTI Berkarir</span>
+                  <br />
+                  Sebuah wadah program kerja untuk mahasiswa fikti dalam
+                  mendapatkan informasi seputar karir dan mengadakan kegiatan
+                  pra-karir.
+                </li>
+                <li>
+                  <span className="font-bold text-lg">
+                    Pusat Kegiatan FIKTI (PUKTI)
+                  </span>
+                  <br />
+                  Pusat komunitas fikti untuk mahasiswa fikti dapat melakukan
+                  kegiatan dan mendapatkan informasiterkait poker yang ada diBEM
+                  FIKTI.
+                </li>
+              </ol>
+              <p
+                className={`${epilogue.className} text-black font-bold text-lg ml-2`}
+              >
+                Terobosan Kegiatan
+              </p>
+              <ol
+                className={`${Urbanist.className} list-disc text-black text-base ml-6 text-justify`}
+              >
+                <li>
+                  <span className="font-bold text-lg">
+                    Nyore Bareng FIKTI (RILL){" "}
+                  </span>
+                  <br />
+                  Kegiatan dimana para anggota BEM FIKTI akan secara berkala
+                  terjun langsung dan berkumpul pada sore hari dengan
+                  menggunakan identitas PDH (Pakaian Dinas Harian) sebagai tanda
+                  pengenal BEM. Kegiatan ini bertujuan untuk lebih mendekatkan
+                  diri dengan para mahasiswa FIKTI, sehingga keberadaan BEM
+                  FIKTI dapat lebih terlihat dan terasa oleh seluruh mahasiswa
+                  FIKTI.
+                </li>
+              </ol>
             </div>
           </div>
         </div>
       </div>
+
       <dialog id="vote-popup" className="modal">
         <VotePopUp />
       </dialog>

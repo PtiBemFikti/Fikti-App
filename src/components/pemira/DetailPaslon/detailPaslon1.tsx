@@ -33,8 +33,8 @@ export default function DetailPaslon1() {
         </div>
         <div className="mt-2">
           <Image
-            src={"/pemira/yudha.jpg"}
-            alt={"yudha"}
+            src={"/pemira/1.png"}
+            alt={"1"}
             width={340}
             height={360}
             className="rounded-3xl"
@@ -77,7 +77,7 @@ export default function DetailPaslon1() {
                 Ketua
               </p>
               <p className={`${Urbanist.className} text-black text-xl`}>
-                Andre Setiawan
+                Muhammad Naufal Kamil
               </p>
             </div>
             <div className="flex gap-20">
@@ -86,7 +86,7 @@ export default function DetailPaslon1() {
                   NPM
                 </p>
                 <p className={`${Urbanist.className} text-black text-xl`}>
-                  10122174
+                  1021878
                 </p>
               </div>
               <div>
@@ -94,7 +94,7 @@ export default function DetailPaslon1() {
                   Kelas
                 </p>
                 <p className={`${Urbanist.className} text-black text-xl`}>
-                  2KA69
+                  3KA05
                 </p>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function DetailPaslon1() {
                   Wakil Ketua
                 </p>
                 <p className={`${Urbanist.className} text-black text-xl`}>
-                  Kevin De Bruyne
+                  Arya Dwi Prasetyo
                 </p>
               </div>
               <div className="flex gap-20">
@@ -115,7 +115,7 @@ export default function DetailPaslon1() {
                     NPM
                   </p>
                   <p className={`${Urbanist.className} text-black text-xl`}>
-                    10122293
+                    10121211
                   </p>
                 </div>
                 <div>
@@ -125,14 +125,14 @@ export default function DetailPaslon1() {
                     Kelas
                   </p>
                   <p className={`${Urbanist.className} text-black text-xl`}>
-                    2KA71
+                    3KA11
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="h-[365px] p-6 bg-[#eaecf0] rounded-xl mt-4">
+        <div className="h-[560px] p-6 bg-[#eaecf0] rounded-xl mt-4">
           <div className="flex flex-col">
             <h1
               className={`${epilogue.className} text-black text-2xl font-bold`}
@@ -140,26 +140,56 @@ export default function DetailPaslon1() {
               Pengalaman
             </h1>
             <div>
-              <ol
-                className={`${Urbanist.className} text-black text-xl mt-4 list-disc ml-6`}
+              <p
+                className={`${Urbanist.className} text-black font-bold text-lg`}
               >
-                <li>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </li>
-                <li>
-                  Lorem Ipsum has been the industry`&apos;s standard dummy text
-                  ever since the 1500s
-                </li>
-                <li>
-                  When an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book.
-                </li>
-              </ol>
+                Ketua
+              </p>
+              <div className="ml-4">
+                <ol
+                  className={`${Urbanist.className} list-disc text-black text-base`}
+                >
+                  <li>
+                    Staff Departemen Politik dan Kesejahteraan Mahasiswa
+                    2022/2023
+                  </li>
+                  <li>Koordinator Divisi Humas Heroes IX</li>
+                  <li>Moderator Debat PEMIRA 2023</li>
+                  <li>
+                    Kepala Departemen Politik dan Kesejahteraan Mahasiswa
+                    2022/2023
+                  </li>
+                  <li>
+                    Celerates Acceleration Program- Web Development & UI UX
+                    Design
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div>
+              <p
+                className={`${Urbanist.className} text-black font-bold text-lg mt-2`}
+              >
+                Wakil Ketua
+              </p>
+              <div className="ml-4">
+                <ol
+                  className={`${Urbanist.className} list-disc text-black text-base`}
+                >
+                  <li>Staff Departemen Olahraga dan Seni Budaya 2022/2023</li>
+                  <li>Ketua Divisi Sponsorship FIKTI Space 2.0</li>
+                  <li>Master of Ceremony PKKMB Universitas Gunadarma 2023</li>
+                  <li>
+                    Data Analytics & Software Development With AI RevoU Tech
+                    Academy
+                  </li>
+                  <li>Data Analisis PT. Wijaya Karya</li>
+                </ol>
+              </div>
             </div>
           </div>
         </div>
-        <div className="h-[732px] p-6 bg-[#eaecf0] rounded-xl mt-4">
+        <div className="h-[865px] p-6 bg-[#eaecf0] rounded-xl mt-4">
           <div className="flex flex-col">
             <h1
               className={`${epilogue.className} text-black text-2xl font-bold`}
@@ -167,45 +197,127 @@ export default function DetailPaslon1() {
               Visi Misi
             </h1>
             <div>
+              <p
+                className={`${epilogue.className} text-black font-bold text-lg`}
+              >
+                Visi
+              </p>
+              <p
+                className={`${Urbanist.className} text-black text-base text-justify`}
+              >
+                Mewujudkan BEM FIKTI UG sebagai wadah yang akrab, informatif,
+                memiliki daya guna, serta menjadi support sistem bagi mahasiswa
+                sehingga menjadikan FIKTI yang dekat, bersahabat dan produktif.
+              </p>
+              <p
+                className={`${epilogue.className} text-black font-bold text-lg mt-1`}
+              >
+                Misi
+              </p>
               <ol
-                className={`${Urbanist.className} text-black text-xl mt-4 list-disc ml-6`}
+                className={`${Urbanist.className} list-disc text-black text-justify text-base ml-4`}
               >
                 <li>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Mewujudkan penyaluran informasi secara masif guna memastikan
+                  informasi yang ada agar tersampaikan ke mahasiswa melalui
+                  penyampaian secara langsung di kampus dan didukung oleh sosial
+                  media.
                 </li>
                 <li>
-                  Lorem Ipsum has been the industry`&apos;s standard dummy text
-                  ever since the 1500s
+                  Menjadi BEM FIKTI yang suportif dalam hal akademik maupun non
+                  akademik dalam rangka meningkatkan Kompetensi serta daya saing
+                  mahasiswa FIKTI dan juga kedekatan antara BEM dengan mahasiswa
                 </li>
                 <li>
-                  When an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book.
+                  Guna memastikan kehadiran BEM FIKTI dalam menyelesaikan
+                  permasalahan mahasiswa sebagai bentuk advokasi, BEM FIKTI
+                  berkomitmen untuk selalu aktif dan responsif dalam menangani
+                  setiap isu dan keluhan yang dihadapi oleh mahasiswa.
+                </li>
+                <li>
+                  Menempatkan koordinator wilayah di lokasi kampus Salemba,
+                  Kalimalang, dan Karawaci sebagai perwakilan BEM FIKTI yang
+                  dapat mengakomodasi mahasiswa di luar lokasi kampus Depok.
                 </li>
               </ol>
             </div>
           </div>
-          <div className="mt-8">
+        </div>
+        <div className="h-[920px] p-6 bg-[#eaecf0] rounded-xl mt-4">
+          <div className="flex flex-col">
             <h1
               className={`${epilogue.className} text-black text-2xl font-bold`}
             >
               Program Kerja
             </h1>
             <div>
+              <p
+                className={`${epilogue.className} text-black font-bold text-lg`}
+              >
+                Program Kerja Inovasi
+              </p>
               <ol
-                className={`${Urbanist.className} text-black text-xl mt-4 list-disc ml-6`}
+                className={`${Urbanist.className} list-disc text-black text-base ml-4 text-justify`}
               >
                 <li>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  <span className="font-bold text-lg">
+                    Intern With BEM FIKTI{" "}
+                  </span>
+                  <br />
+                  Program magang &quot;Intern with BEM FIKTI&quot; ditawarkan
+                  oleh Badan Eksekutif Mahasiswa (BEM) Fakultas Ilmu Komputer
+                  dan Teknologi Informasi (FIKTI) di Universitas Gunadarma.
+                  Program ini bertujuan memberikan kesempatan kepada mahasiswa
+                  untuk terlibat langsung dalam aktivitas dan proyek yang
+                  dijalankan oleh BEM FIKTI.
                 </li>
                 <li>
-                  Lorem Ipsum has been the industry`&apos;s standard dummy text
-                  ever since the 1500s
+                  <span className="font-bold text-lg">Gelar Budaya</span>
+                  <br />
+                  Menyelenggarakan pertunjukan Musik sebagai wadah penyaluran
+                  minat mahasiswa terkait seni serta dalam rangka mendekatkan
+                  hubungan antara BEM FIKTI dengan mahasiswa.
+                </li>
+              </ol>
+              <p
+                className={`${epilogue.className} text-black font-bold text-lg`}
+              >
+                Terobosan Kegiatan
+              </p>
+              <ol
+                className={`${Urbanist.className} list-disc text-black text-base ml-4 text-justify`}
+              >
+                <li>
+                  <span className="font-bold text-lg">
+                    Koordinator Wilayah{" "}
+                  </span>
+                  <br />
+                  Koordinator Wilayah di Badan Eksekutif Mahasiswa (BEM)
+                  bertanggung jawab untuk mengkoordinasikan dan memastikan
+                  keterlibatan BEM di berbagai kampus selain Depok. Peran ini
+                  bertujuan untuk menyebarkan informasi dan aktivitas BEM secara
+                  merata, sehingga seluruh mahasiswa di berbagai lokasi
+                  merasakan kehadiran dan manfaat dari organisasi BEM.
+                </li>
+              </ol>
+              <p
+                className={`${epilogue.className} text-black font-bold text-lg`}
+              >
+                Program Kerja Unggulan
+              </p>
+              <ol
+                className={`${Urbanist.className} list-disc text-black text-base ml-4 text-justify`}
+              >
+                <li>
+                  <span className="font-bold text-lg">Technofair </span>
                 </li>
                 <li>
-                  When an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book.
+                  <span className="font-bold text-lg">
+                    HEROES (Hero Of Education and Social){" "}
+                  </span>
+                </li>
+                <li>
+                  <span className="font-bold text-lg">FIKTI SPACE </span>
                 </li>
               </ol>
             </div>

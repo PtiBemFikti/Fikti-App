@@ -27,25 +27,25 @@ export default function Candidates() {
             Meet the Candidates
           </h1>
           <p
-            className={`${epilogue.className} text-gray-400 text-sm md:text-xl text-center pb-10`}
+            className={`${epilogue.className} text-gray-400 text-sm md:text-xl text-center md:pb-10 pb-5`}
           >
             Get to know the nominee profiles
           </p>
           <div className="flex justify-start items-center gap-16">
-            <div className="w-60 h-96 bg-white rounded-3xl border-1 md:block hidden">
+            <div className="w-[22rem] h-[29rem] bg-white rounded-3xl border-1 md:block hidden">
               <button onClick={handleModalPaslon1}>
                 <div className="flex-col">
                   <Image
-                    src={"/pemira/yudha.jpg"}
-                    alt={"yudha"}
-                    width={250}
+                    src={"/pemira/1.png"}
+                    alt={"1"}
+                    width={350}
                     height={300}
                     className="rounded-3xl"
                   ></Image>
                   <p
                     className={`${epilogue.className} text-neutral-900 text-2xl px-4 mt-2 text-left`}
                   >
-                    Yudha Ari
+                    Muhammad Naufal Kamil
                   </p>
                   <p
                     className={`${epilogue.className} text-neutral-900 px-4 text-2xl text-left`}
@@ -55,7 +55,7 @@ export default function Candidates() {
                   <p
                     className={`${epilogue.className} text-neutral-900 px-4 text-2xl text-left`}
                   >
-                    Agita Sonia
+                    Arya Dwi Prasetyo
                   </p>
                 </div>
                 <div className="flex items-end justify-end px-4">
@@ -71,20 +71,20 @@ export default function Candidates() {
             <dialog id="my_modal_1" className="modal">
               <ModalPaslon1 />
             </dialog>
-            <div className="w-60 h-96 bg-white rounded-3xl border-1 md:block hidden">
+            <div className="w-[22rem] h-[29rem] bg-white rounded-3xl border-1 md:block hidden">
               <button onClick={handleModalPaslon2}>
                 <div className="flex-col">
                   <Image
-                    src={"/pemira/lutpi.jpg"}
-                    alt={"yudha"}
-                    width={230}
+                    src={"/pemira/2.png"}
+                    alt={"2"}
+                    width={350}
                     height={300}
                     className="rounded-3xl"
                   ></Image>
                   <p
                     className={`${epilogue.className} text-neutral-900 text-2xl text-left px-4 mt-2`}
                   >
-                    Lutfi Hakim Mulih
+                    Muhammad Dante Saputra
                   </p>
                   <p
                     className={`${epilogue.className} text-neutral-900 text-2xl text-left px-4`}
@@ -94,7 +94,7 @@ export default function Candidates() {
                   <p
                     className={`${epilogue.className} text-neutral-900 text-2xl text-left px-4`}
                   >
-                    Fella Salsabila
+                    Daffa Aldion Rafidbudiman
                   </p>
                 </div>
 
@@ -119,19 +119,19 @@ export default function Candidates() {
       <div className="mt-4 md:hidden">
         <div className="flex justify-center items-center gap-2 px-6">
           <Link href={"/pemira/DetailPaslon1"}>
-            <div className="w-28 h-28 bg-white rounded-3xl border-1">
+            <div className="w-36 h-28 bg-white rounded-3xl border-1">
               <div className="flex-col">
                 <Image
-                  src={"/pemira/yudha.jpg"}
-                  alt={"yudha"}
-                  width={250}
+                  src={"/pemira/1.png"}
+                  alt={"1"}
+                  width={300}
                   height={300}
                   className="rounded-3xl"
                 ></Image>
                 <p
                   className={`${epilogue.className} text-neutral-900 text-sm text-center`}
                 >
-                  Yudha Ari
+                  Muhammad Naufal Kamil
                 </p>
                 <p
                   className={`${epilogue.className} text-neutral-900 text-sm text-center`}
@@ -141,26 +141,27 @@ export default function Candidates() {
                 <p
                   className={`${epilogue.className} text-neutral-900 text-sm text-center`}
                 >
-                  Agita Sonia
+                  Arya Dwi Prasetyo
                 </p>
               </div>
             </div>
           </Link>
           <Link href={"/pemira/DetailPaslon2"}>
-            <div className="w-28 h-28 bg-white rounded-3xl border-1">
+            <div className="w-36 h-28 bg-white rounded-3xl border-1">
               <div className="flex-col">
                 <Image
-                  src={"/pemira/lutpi.jpg"}
-                  alt={"lutpi"}
-                  width={250}
+                  src={"/pemira/2.png"}
+                  alt={"2"}
+                  width={300}
                   height={300}
                   className="rounded-3xl"
                 ></Image>
                 <p
                   className={`${epilogue.className} text-neutral-900 text-sm text-center`}
                 >
-                  Lutfi Hakim Mulih
+                  Muhammad Dante Saputra
                 </p>
+
                 <p
                   className={`${epilogue.className} text-neutral-900 text-sm text-center`}
                 >
@@ -169,7 +170,7 @@ export default function Candidates() {
                 <p
                   className={`${epilogue.className} text-neutral-900 text-sm text-center`}
                 >
-                  Fella Salsabila
+                  Daffa Aldion Rafidbudiman
                 </p>
               </div>
             </div>
