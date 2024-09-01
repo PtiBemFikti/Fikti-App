@@ -131,7 +131,7 @@ export default function DetailPaslon2() {
             </div>
           </div>
         </div>
-        <div className="h-[460px] p-6 bg-[#eaecf0] rounded-xl mt-4">
+        <div className="h-[550px] p-6 bg-[#eaecf0] rounded-xl mt-4">
           <div className="flex flex-col">
             <h1
               className={`${epilogue.className} text-black text-2xl font-bold`}
@@ -176,7 +176,7 @@ export default function DetailPaslon2() {
             </div>
           </div>
         </div>
-        <div className="h-[560px] p-6 bg-[#eaecf0] rounded-xl mt-4">
+        <div className="h-[600px] p-6 bg-[#eaecf0] rounded-xl mt-4">
           <div className="flex flex-col">
             <h1
               className={`${epilogue.className} text-black text-2xl font-bold`}
@@ -224,7 +224,7 @@ export default function DetailPaslon2() {
             </div>
           </div>
         </div>
-        <div className="h-[785px] p-6 bg-[#eaecf0] rounded-xl mt-4">
+        <div className="h-[860px] p-6 bg-[#eaecf0] rounded-xl mt-4">
           <div className="flex flex-col">
             <h1
               className={`${epilogue.className} text-black text-2xl font-bold`}
