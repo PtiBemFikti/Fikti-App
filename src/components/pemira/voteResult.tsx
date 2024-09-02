@@ -24,14 +24,6 @@ export default function VoteResult() {
     }
   }, []);
 
-  const addTime = (hours: number) => {
-    const newTargetDate = new Date(targetDate.getTime() + hours * 60 * 60 * 1000);
-    setTargetDate(newTargetDate);
-    if (typeof window !== "undefined") {
-      localStorage.setItem('targetDate', newTargetDate.toString());
-    }
-  };
-
   return (
     <div className={`bg-[#ffffff] ${epilogue.className} py-10 md:px-24`}>
       <div className="bg-[#EAECF0] w-full py-6 md:rounded-3xl md:flex md:justify-between">
@@ -93,9 +85,6 @@ export default function VoteResult() {
                   <CountDown targetDate={targetDate} />
                 </div>
               </div>
-              <div className="text-[#669BBC] cursor-pointer" onClick={() => addTime(1)}>
-                <p className="underline">Tambah 1 Jam</p>
-              </div>
             </div>
           </div>
         </div>
@@ -105,16 +94,16 @@ export default function VoteResult() {
               <p className="text-[#101415] font-bold md:text-2xl">Election Summary</p>
               <Image src={'/pemira/bar.png'} alt="bar" width={24} height={24} className="md:w-7" />
             </div>
-            <div className="md:py-6 md:flex md:flex-col md:gap-5">
+            <div className="md:py-12 md:flex md:flex-col md:gap-5">
               <div className="py-3 md:py-0">
                 <div className="w-full bg-[#F0F2F4] rounded-xl flex justify-between items-center">
                   <div className="flex items-center gap-3">
                     <div>
-                      <Image src={'/pemira/opet.png'} alt="orang" width={65} height={65} />
+                      <Image src={'/pemira/1.png'} alt="orang" width={80} height={65} />
                     </div>
                     <div className="text-[#101415]">
-                      <p className="font-bold md:text-xl text-sm">Andre Setiawan &</p>
-                      <p className="font-bold md:text-xl text-sm">John Smith</p>
+                      <p className="font-bold md:text-md text-sm">Muhammad Naufal Kamil &</p>
+                      <p className="font-bold md:text-md text-sm">Arya Dwi Prasetyo</p>
                     </div>
                   </div>
                   <div className="text-[#101415] text-2xl px-6">
@@ -128,31 +117,12 @@ export default function VoteResult() {
               <div className="py-3">
                 <div className="w-full bg-[#F0F2F4] rounded-xl flex justify-between items-center">
                   <div className="flex items-center gap-3">
-                    <div>
-                      <Image src={'/pemira/opet.png'} alt="orang" width={65} height={65} />
+                    <div className=''>
+                      <Image src={'/pemira/2.png'} alt="orang" width={80} height={65} />
                     </div>
                     <div className="text-[#101415]">
-                      <p className="font-bold md:text-xl text-sm">Andre Setiawan &</p>
-                      <p className="font-bold md:text-xl text-sm">John Smith</p>
-                    </div>
-                  </div>
-                  <div className="text-[#101415] text-2xl px-6">
-                    <div className={` ${Urbanist.className} flex md:gap-2 gap-1`}>
-                      <p className="md:text-4xl bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049] font-bold">350</p>
-                      <p className="md:text-base text-[#98A2B3] md:mt-3 text-sm mt-2">Votes</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="py-3 md:py-0">
-                <div className="w-full bg-[#F0F2F4] rounded-xl flex justify-between items-center">
-                  <div className="flex items-center gap-3">
-                    <div>
-                      <Image src={'/pemira/opet.png'} alt="orang" width={65} height={65} />
-                    </div>
-                    <div className="text-[#101415]">
-                      <p className="font-bold md:text-xl text-sm">Andre Setiawan &</p>
-                      <p className="font-bold md:text-xl text-sm">John Smith</p>
+                      <p className="font-bold md:text-md text-sm">Muhammad Dante Saputra &</p>
+                      <p className="font-bold md:text-md text-sm">Daffa Aldion Rafidbudiman</p>
                     </div>
                   </div>
                   <div className="text-[#101415] text-2xl px-6">
