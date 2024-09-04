@@ -18,7 +18,7 @@ const CountDown: React.FC<CountdownProps> = () => {
     const daysUntilFriday = (5 - dayOfWeek + 7) % 7; // 5 represents Friday
     const nextFriday = new Date(now);
     nextFriday.setDate(now.getDate() + daysUntilFriday);
-    nextFriday.setHours(23, 59, 0, 0); // Set to 23:59:00
+    nextFriday.setHours(20, 59, 0, 0); // Set to 20:59:00
 
     return nextFriday;
   };
@@ -65,15 +65,27 @@ const CountDown: React.FC<CountdownProps> = () => {
     <div className="flex space-x-4 md:space-x-20">
       {Object.keys(timeLeft).map((interval) => (
         <div key={interval} className="flex flex-col items-center">
-          <p className={`${Urbanist.className} text-4xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049]`}>
+          <p
+            className={`${Urbanist.className} text-4xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049]`}
+          >
             {padWithZero(timeLeft[interval as keyof TimeLeft])}
           </p>
           <p className="text-[#98A2B3] md:text-4xl">
-            {interval === 'days' ? 'Hari' : interval === 'hours' ? 'Jam' : interval === 'minutes' ? 'Menit' : 'Detik'}
+            {interval === "days"
+              ? "Hari"
+              : interval === "hours"
+              ? "Jam"
+              : interval === "minutes"
+              ? "Menit"
+              : "Detik"}
           </p>
         </div>
       ))}
-      {Object.keys(timeLeft).length === 0 && <span className='bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049] text-3xl font-bold'>Waktu Habis!</span>}
+      {Object.keys(timeLeft).length === 0 && (
+        <span className="bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049] text-3xl font-bold">
+          Waktu Habis!
+        </span>
+      )}
     </div>
   );
 };
