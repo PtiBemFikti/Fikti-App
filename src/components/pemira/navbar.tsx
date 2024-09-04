@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
             Candidates
           </Link>
           <Link className={`block ${pathname === '/livereport' ? 'text-purpleText' : 'text-white text-lg'} hover:text-purpleText duration-300 py-2`} href="#vote">
-            Live Report
+            Vote Ends
           </Link>
         </div>
         <div className="hidden md:block">
@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
             Candidates
           </Link>
           <Link className="text-white text-lg hover:text-purpleText text-center" href="#vote">
-            Live Report
+            Vote Ends
           </Link>
           <div className="block md:hidden">
             <div className="flex justify-center items-center">

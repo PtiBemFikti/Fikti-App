@@ -25,7 +25,7 @@ export default function PemiraPage() {
           </div>
         </div>
         <div>
-          <section id="candidates">
+          <section id="candidates" className="py-8 md:py-0">
             <Candidates />
           </section>
         </div>
