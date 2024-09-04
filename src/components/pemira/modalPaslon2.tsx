@@ -200,7 +200,7 @@ export default function ModalPaslon2() {
               </div>
             </div>
           </div>
-          <div className="w-[660px] h-[330px] p-3 bg-[#EAECF0] rounded-xl mt-4">
+          <div className="w-[660px] h-[350px] p-3 bg-[#EAECF0] rounded-xl mt-4">
             <div>
               <h2
                 className={`${epilogue.className} text-black font-bold text-2xl ml-2`}

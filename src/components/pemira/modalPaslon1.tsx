@@ -151,7 +151,7 @@ export default function ModalPaslon1() {
             </div>
           </div>
           <div className="flex flex-col">
-            <div className="w-[660px] h-[290px] p-3 bg-[#EAECF0] rounded-xl mt-4">
+            <div className="w-[660px] h-[330px] p-3 bg-[#EAECF0] rounded-xl mt-4">
               <h2
                 className={`${epilogue.className} text-black font-bold text-2xl ml-2`}
               >
@@ -213,7 +213,7 @@ export default function ModalPaslon1() {
               </div>
             </div>
           </div>
-          <div className="w-[660px] h-[470px] p-3 bg-[#EAECF0] rounded-xl mt-4">
+          <div className="w-[660px] h-[500px] p-3 bg-[#EAECF0] rounded-xl mt-4">
             <div>
               <h2
                 className={`${epilogue.className} text-black font-bold text-2xl ml-2`}
@@ -268,7 +268,7 @@ export default function ModalPaslon1() {
             </div>
           </div>
 
-          <div className="w-[660px] h-[600px] p-3 bg-[#EAECF0] rounded-xl mt-4 mr-8">
+          <div className="w-[660px] h-[610px] p-3 bg-[#EAECF0] rounded-xl mt-4 mr-8">
             <div>
               <h2
                 className={`${epilogue.className} text-black font-bold text-2xl ml-2`}
