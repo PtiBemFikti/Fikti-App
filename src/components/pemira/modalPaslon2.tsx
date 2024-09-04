@@ -31,33 +31,32 @@ export default function ModalPaslon2() {
               className="rounded-3xl"
             />
           </div>
-          <div
-            onClick={handlePopUp}
-            className="flex gap-7 h-24 bg-gradient-to-l from-[#669BBC] to-[#003049] px-4 py-5 rounded-xl shadow-black shadow-custom-right-bottom"
-          >
-            <div className="flex-col">
-              <h1
-                className={`${epilogue.className} text-white text-2xl font-bold`}
-              >
-                Cast Your Vote
-              </h1>
-              <div className="flex justify-center items-center py-2 gap-2">
-                <div className="flex w-15 h-5 px-2 py-2 bg-[#CC112F] rounded-md">
-                  <div className="flex justify-center items-center gap-2">
-                    <div className="w-2 h-2 bg-gray-100 rounded-full mb-1"></div>
-                    <h1
-                      className={`${epilogue.className} text-gray-100 text-base`}
-                    >
-                      LIVE
-                    </h1>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdp8aPdIYsPe131b5WpIfqo-099qmG0EzROB6UFVRwTdM48Xg/viewform">
+            <div className="flex gap-7 h-24 bg-gradient-to-l from-[#669BBC] to-[#003049] px-4 py-5 rounded-xl shadow-black shadow-custom-right-bottom">
+              <div className="flex-col">
+                <h1
+                  className={`${epilogue.className} text-white text-2xl font-bold`}
+                >
+                  Cast Your Vote
+                </h1>
+                <div className="flex justify-center items-center py-2 gap-2">
+                  <div className="flex w-15 h-5 px-2 py-2 bg-[#CC112F] rounded-md">
+                    <div className="flex justify-center items-center gap-2">
+                      <div className="w-2 h-2 bg-gray-100 rounded-full mb-1"></div>
+                      <h1
+                        className={`${epilogue.className} text-gray-100 text-base`}
+                      >
+                        LIVE
+                      </h1>
+                    </div>
                   </div>
-                </div>
-                <div className={`${epilogue.className} text-gray-100`}>
-                  Vote is open now
+                  <div className={`${epilogue.className} text-gray-100`}>
+                    Vote is open now
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
         <div className="flex flex-col">
           <h1 className={`${epilogue.className} text-black font-bold text-3xl`}>

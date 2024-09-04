@@ -2,11 +2,12 @@
 import { epilogue } from "@/styles/font";
 import Image from "next/image";
 import VotePopUp from "./votepopup";
+import Link from "next/link";
 export default function Halo() {
-  const handlePopUp: any = () => {
-    const modal = document.getElementById("vote-popup") as HTMLDialogElement;
-    modal.showModal();
-  };
+  // const handlePopUp: any = () => {
+  //   const modal = document.getElementById("vote-popup") as HTMLDialogElement;
+  //   modal.showModal();
+  // };
 
   return (
     <div>
@@ -56,7 +57,7 @@ export default function Halo() {
                     </div>
                   </div>
                 </div>
-                <button onClick={handlePopUp}>
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdp8aPdIYsPe131b5WpIfqo-099qmG0EzROB6UFVRwTdM48Xg/viewform">
                   <div className="flex justify-end items-center w-20">
                     <Image
                       src={"/pemira/arrowright.png"}
@@ -65,7 +66,7 @@ export default function Halo() {
                       height={48}
                     ></Image>
                   </div>
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -73,7 +74,7 @@ export default function Halo() {
       </div>
       <div className="md:hidden block">
         <div className="flex justify-center items-center h-36">
-          <button onClick={handlePopUp}>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdp8aPdIYsPe131b5WpIfqo-099qmG0EzROB6UFVRwTdM48Xg/viewform">
             <div className="flex gap-7 h-24 bg-gradient-to-l from-[#669BBC] to-[#003049] px-4 py-5 rounded-xl shadow-black shadow-custom-right-bottom">
               <div className="flex-col">
                 <h1
@@ -106,7 +107,7 @@ export default function Halo() {
                 ></Image>
               </div>
             </div>
-          </button>
+          </Link>
         </div>
       </div>
       <dialog id="vote-popup" className="modal">
