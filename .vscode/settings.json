@@ -4,5 +4,7 @@
     "titleBar.activeBackground": "#65236E",
     "titleBar.activeForeground": "#FCF8FD"
   },
-  "cSpell.words": ["Hari"]
+  "cSpell.words": ["Hari"],
+  "pieces.cloudCapabilities": "Blended",
+  "pieces.telemetry": true
 }
