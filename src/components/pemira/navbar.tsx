@@ -83,13 +83,22 @@ const Navbar: React.FC = () => {
           >
             Candidates
           </Link>
-          <Link className={`block ${pathname === '/livereport' ? 'text-purpleText' : 'text-white text-lg'} hover:text-purpleText duration-300 py-2`} href="#vote">
+          <Link
+            className={`block ${
+              pathname === "/livereport"
+                ? "text-purpleText"
+                : "text-white text-lg"
+            } hover:text-purpleText duration-300 py-2`}
+            href="#vote"
+          >
             Vote Ends
           </Link>
         </div>
         <div className="hidden md:block">
           <Link
-            href={"/"}
+            href={
+              "https://docs.google.com/forms/d/e/1FAIpQLSdp8aPdIYsPe131b5WpIfqo-099qmG0EzROB6UFVRwTdM48Xg/viewform"
+            }
             className={`md:w-24 bg-gradient-to-l from-[#669BBC] to-[#003049] md:px-6 md:py-3 md:rounded-lg ${epilogue.className}`}
           >
             {/* <Image src={'/pemira/user.svg'} alt="user" width={25} height={25}></Image>
@@ -158,13 +167,18 @@ const Navbar: React.FC = () => {
           >
             Candidates
           </Link>
-          <Link className="text-white text-lg hover:text-purpleText text-center" href="#vote">
+          <Link
+            className="text-white text-lg hover:text-purpleText text-center"
+            href="#vote"
+          >
             Vote Ends
           </Link>
           <div className="block md:hidden">
             <div className="flex justify-center items-center">
               <Link
-                href={"/"}
+                href={
+                  "https://docs.google.com/forms/d/e/1FAIpQLSdp8aPdIYsPe131b5WpIfqo-099qmG0EzROB6UFVRwTdM48Xg/viewform"
+                }
                 className={`bg-gradient-to-l from-[#669BBC] to-[#003049] text-sm px-6 py-3 rounded-lg ${epilogue.className}`}
               >
                 {/* <Image src={'/pemira/user.svg'} alt="user" width={25} height={25}></Image>
