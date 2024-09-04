@@ -218,7 +218,7 @@ export default function ModalPaslon2() {
                 className={`${Urbanist.className} text-black text-base ml-2 text-justify`}
               >
                 Menjadikan Badan Eksekutif Mahasiswa sebagai fasilitator yang
-                bersinergi dan solid dengan seluruh mahasiswa fikti untuk
+                bersinergi dan solid dengan seluruh mahasiswa FIKTI untuk
                 menciptakan lingkungan yang mendukung perkembangan secara
                 Inovatif, Inklusif dan Progresif.
               </p>
@@ -237,12 +237,12 @@ export default function ModalPaslon2() {
                   dan berkualitas.
                 </li>
                 <li>
-                  Mempererat hubungan seluruh mahasiswa Fikti untuk mewujudkan
+                  Mempererat hubungan seluruh mahasiswa FIKTI untuk mewujudkan
                   lingkungan yang solid dan bersinergi.
                 </li>
                 <li>
                   Mengakomodasi, mengembangkan, dan mengapresiasi minat, bakat,
-                  serta potensi diri mahasiswa Fikti guna memicu
+                  serta potensi diri mahasiswa FIKTI guna memicu
                   pengaktualisasian diri.
                 </li>
               </ol>
@@ -269,14 +269,14 @@ export default function ModalPaslon2() {
                     Akademik Bersinergi{" "}
                   </span>
                   <br />
-                  Membuat komunitas berkelanjutan dimana mahasiswa fikti bisa
+                  Membuat komunitas berkelanjutan dimana mahasiswa FIKTI bisa
                   saling sharing mengenai akademi dan bisa mengembangkan
                   wawasan.
                 </li>
                 <li>
                   <span className="font-bold text-lg">FIKTI Berkarir</span>
                   <br />
-                  Sebuah wadah program kerja untuk mahasiswa fikti dalam
+                  Sebuah wadah program kerja untuk mahasiswa FIKTI dalam
                   mendapatkan informasi seputar karir dan mengadakan kegiatan
                   pra-karir.
                 </li>
@@ -285,7 +285,7 @@ export default function ModalPaslon2() {
                     Pusat Kegiatan FIKTI (PUKTI)
                   </span>
                   <br />
-                  Pusat komunitas fikti untuk mahasiswa fikti dapat melakukan
+                  Pusat komunitas FIKTI untuk mahasiswa FIKTI dapat melakukan
                   kegiatan dan mendapatkan informasiterkait poker yang ada diBEM
                   FIKTI.
                 </li>
