@@ -1,6 +1,6 @@
-'use client';
-import React, { useState, useEffect, useCallback } from 'react';
-import { Urbanist } from '@/styles/font';
+"use client";
+import React, { useState, useEffect, useCallback } from "react";
+import { Urbanist } from "@/styles/font";
 
 interface CountdownProps {
   targetDate: Date;
@@ -44,7 +44,7 @@ const CountDown: React.FC<CountdownProps> = ({ targetDate }) => {
   }, [calculateTimeLeft, mounted, timeLeft]);
 
   useEffect(() => {
-    localStorage.setItem('targetDate', targetDate.toString());
+    localStorage.setItem("targetDate", targetDate.toString());
   }, [targetDate]);
 
   if (!mounted) {
@@ -59,11 +59,19 @@ const CountDown: React.FC<CountdownProps> = ({ targetDate }) => {
     <div className="flex space-x-4">
       {Object.keys(timeLeft).map((interval) => (
         <div key={interval} className="flex flex-col items-center">
-          <p className={`${Urbanist.className} text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049]`}>
+          <p
+            className={`${Urbanist.className} text-4xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049]`}
+          >
             {padWithZero(timeLeft[interval as keyof TimeLeft])}
           </p>
           <p className="text-[#98A2B3]">
-            {interval === 'days' ? 'Hari' : interval === 'hours' ? 'Jam' : interval === 'minutes' ? 'Menit' : 'Detik'}
+            {interval === "days"
+              ? "Hari"
+              : interval === "hours"
+              ? "Jam"
+              : interval === "minutes"
+              ? "Menit"
+              : "Detik"}
           </p>
         </div>
       ))}

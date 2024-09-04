@@ -10,7 +10,14 @@ export default function Footer() {
       >
         <p>Have a question or need assistance</p>
         <div className="flex gap-14 py-5">
-          <Image src={"/pemira/whatsapp.png"} alt="wa" width={32} height={32} />
+          <Link href="http://wa.me/6281294801634">
+            <Image
+              src={"/pemira/whatsapp.png"}
+              alt="wa"
+              width={32}
+              height={32}
+            />
+          </Link>
           <Link href="https://www.instagram.com/pemira_fiktiug/">
             <Image
               src={"/pemira/instagram.png"}
