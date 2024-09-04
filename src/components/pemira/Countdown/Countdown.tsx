@@ -1,6 +1,6 @@
-'use client';
-import React, { useState, useEffect, useCallback } from 'react';
-import { Urbanist } from '@/styles/font';
+"use client";
+import React, { useState, useEffect, useCallback } from "react";
+import { Urbanist } from "@/styles/font";
 
 interface CountdownProps {}
 
@@ -53,7 +53,6 @@ const CountDown: React.FC<CountdownProps> = () => {
       return () => clearTimeout(timer);
     }
   }, [calculateTimeLeft, mounted, timeLeft]);
-
   if (!mounted) {
     return null;
   }
