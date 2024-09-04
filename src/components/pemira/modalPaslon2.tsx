@@ -233,7 +233,7 @@ export default function ModalPaslon2() {
               >
                 <li>
                   Mengoptimalkan sumber daya fungsionaris internal BEM FIKTI dan
-                  Mahasiswa agar menciptakan regenerasi yang aktif , berkompeten
+                  mahasiswa agar menciptakan regenerasi yang aktif, berkompeten
                   dan berkualitas.
                 </li>
                 <li>
@@ -270,7 +270,7 @@ export default function ModalPaslon2() {
                   </span>
                   <br />
                   Membuat komunitas berkelanjutan dimana mahasiswa FIKTI bisa
-                  saling sharing mengenai akademi dan bisa mengembangkan
+                  saling berbagi mengenai akademi dan bisa mengembangkan
                   wawasan.
                 </li>
                 <li>
@@ -286,8 +286,8 @@ export default function ModalPaslon2() {
                   </span>
                   <br />
                   Pusat komunitas FIKTI untuk mahasiswa FIKTI dapat melakukan
-                  kegiatan dan mendapatkan informasiterkait poker yang ada diBEM
-                  FIKTI.
+                  kegiatan dan mendapatkan informasi terkait proker yang ada di
+                  BEM FIKTI.
                 </li>
               </ol>
               <p

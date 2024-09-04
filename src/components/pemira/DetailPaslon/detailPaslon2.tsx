@@ -209,7 +209,7 @@ export default function DetailPaslon2() {
               >
                 <li>
                   Mengoptimalkan sumber daya fungsionaris internal BEM FIKTI dan
-                  Mahasiswa agar menciptakan regenerasi yang aktif , berkompeten
+                  mahasiswa agar menciptakan regenerasi yang aktif, berkompeten
                   dan berkualitas.
                 </li>
                 <li>
@@ -263,8 +263,8 @@ export default function DetailPaslon2() {
                   </span>
                   <br />
                   Pusat Komunitas FIKTI untuk mahasiswa FIKTI dapat melakukan
-                  kegiatan dan mendapatkan informasi terkait proker yang ada
-                  diBEM FIKTI.
+                  kegiatan dan mendapatkan informasi terkait proker yang ada di
+                  BEM FIKTI.
                 </li>
               </ol>
               <p
