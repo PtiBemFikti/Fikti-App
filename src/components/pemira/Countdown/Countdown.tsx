@@ -83,7 +83,7 @@ const CountDown: React.FC<CountdownProps> = () => {
       ))} */}
       {/* {Object.keys(timeLeft).length === 0 && ( */}
       <span className="bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049] text-3xl font-bold">
-        Waktu Habis!
+        Vote Telah di Tutup
       </span>
       {/* )} */}
     </div>
