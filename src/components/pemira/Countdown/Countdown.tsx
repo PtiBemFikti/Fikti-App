@@ -12,58 +12,58 @@ interface TimeLeft {
 }
 
 const CountDown: React.FC<CountdownProps> = () => {
-  const calculateNextFriday = (): Date => {
-    const now = new Date();
-    const dayOfWeek = now.getDay();
-    const daysUntilFriday = (5 - dayOfWeek + 7) % 7; // 5 represents Friday
-    const nextFriday = new Date(now);
-    nextFriday.setDate(now.getDate() + daysUntilFriday);
-    nextFriday.setHours(20, 59, 0, 0); // Set to 20:59:00
+  // const calculateNextFriday = (): Date => {
+  //   const now = new Date();
+  //   const dayOfWeek = now.getDay();
+  //   const daysUntilFriday = (5 - dayOfWeek + 7) % 7; // 5 represents Friday
+  //   const nextFriday = new Date(now);
+  //   nextFriday.setDate(now.getDate() + daysUntilFriday);
+  //   nextFriday.setHours(20, 59, 0, 0); // Set to 20:59:00
 
-    return nextFriday;
-  };
+  //   return nextFriday;
+  // };
 
-  const [targetDate, setTargetDate] = useState<Date>(calculateNextFriday);
+  // const [targetDate, setTargetDate] = useState<Date>(calculateNextFriday);
 
-  const calculateTimeLeft = useCallback(() => {
-    const difference = +targetDate - +new Date();
-    let timeLeft: TimeLeft = {};
+  // const calculateTimeLeft = useCallback(() => {
+  //   const difference = +targetDate - +new Date();
+  //   let timeLeft: TimeLeft = {};
 
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    }
-    return timeLeft;
-  }, [targetDate]);
+  //   if (difference > 0) {
+  //     timeLeft = {
+  //       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+  //       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+  //       minutes: Math.floor((difference / 1000 / 60) % 60),
+  //       seconds: Math.floor((difference / 1000) % 60),
+  //     };
+  //   }
+  //   return timeLeft;
+  // }, [targetDate]);
 
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
-  const [mounted, setMounted] = useState(false);
+  // const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+  // const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-    if (mounted) {
-      const timer = setTimeout(() => {
-        setTimeLeft(calculateTimeLeft());
-      }, 1000);
+  // useEffect(() => {
+  //   setMounted(true);
+  //   if (mounted) {
+  //     const timer = setTimeout(() => {
+  //       setTimeLeft(calculateTimeLeft());
+  //     }, 1000);
 
-      return () => clearTimeout(timer);
-    }
-  }, [calculateTimeLeft, mounted, timeLeft]);
-  if (!mounted) {
-    return null;
-  }
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [calculateTimeLeft, mounted, timeLeft]);
+  // if (!mounted) {
+  //   return null;
+  // }
 
-  const padWithZero = (number: number | undefined) => {
-    return number !== undefined && number < 10 ? `0${number}` : number;
-  };
+  // const padWithZero = (number: number | undefined) => {
+  //   return number !== undefined && number < 10 ? `0${number}` : number;
+  // };
 
   return (
     <div className="flex space-x-4 md:space-x-20">
-      {Object.keys(timeLeft).map((interval) => (
+      {/* {Object.keys(timeLeft).map((interval) => (
         <div key={interval} className="flex flex-col items-center">
           <p
             className={`${Urbanist.className} text-4xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049]`}
@@ -80,12 +80,12 @@ const CountDown: React.FC<CountdownProps> = () => {
               : "Detik"}
           </p>
         </div>
-      ))}
-      {Object.keys(timeLeft).length === 0 && (
-        <span className="bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049] text-3xl font-bold">
-          Waktu Habis!
-        </span>
-      )}
+      ))} */}
+      {/* {Object.keys(timeLeft).length === 0 && ( */}
+      <span className="bg-clip-text text-transparent bg-gradient-to-l from-[#669BBC] to-[#003049] text-3xl font-bold">
+        Waktu Habis!
+      </span>
+      {/* )} */}
     </div>
   );
 };
