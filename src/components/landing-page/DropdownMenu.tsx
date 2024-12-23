@@ -10,7 +10,7 @@ export default function DropdownMenuNav() {
   return (
     <Dropdown>
       <DropdownTrigger>
-        <Button className="bg-[#060E23] text-white hover:text-purpleText text-md">
+        <Button className="bg-transparent text-white font-bold text-base hover:text-purpleText text-md">
           Program Kerja
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,7 @@
 {
   "workbench.colorCustomizations": {
-    "activityBar.background": "#48194E",
-    "titleBar.activeBackground": "#65236E",
+    // "activityBar.background": "#48194E",
+    // "titleBar.activeBackground": "#65236E",
     "titleBar.activeForeground": "#FCF8FD"
   },
   "cSpell.words": ["Hari"],

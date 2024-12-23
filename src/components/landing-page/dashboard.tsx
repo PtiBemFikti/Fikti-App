@@ -62,7 +62,7 @@ const Dashboard: React.FC = () => {
         visible: { opacity: 1 },
       }}
       transition={{ duration: 0.5 }}
-      className="bg-gradient-to-b from-[#091534] to-[#060E23] to-[84%] border-b-2 shadow-xl border-slate-700 w-full py-20 flex flex-col items-center justify-center "
+      className="bg-gradient-to-b from-[#091534] to-[#060E23] to-[84%] border-b-2 shadow-xl border-slate-700 w-full py-32 flex flex-col items-center justify-center "
       // style={{ backgroundImage: "url('/dyz.jpg')" }}
     >
       <Image
