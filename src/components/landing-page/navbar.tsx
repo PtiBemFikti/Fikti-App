@@ -74,29 +74,31 @@ const Navbar: React.FC = () => {
         </Link>
         <div className="hidden md:flex md:gap-10 space-x-4 mr-8">
           <Link
-            className="block  hover:text-purpleText duration-300 py-2"
+            className="relative block group hover:text-purpleText duration-300 py-2"
             href="/"
           >
             Beranda
+            <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
           </Link>
           <Link
-            className="block  hover:text-purpleText duration-300 py-2"
+            className="relative block group hover:text-purpleText duration-300 py-2"
             href="#"
           >
             Tentang
+            <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
           </Link>
           <Link
-            className="block  hover:text-purpleText duration-300 py-2"
+            className="relative block group hover:text-purpleText duration-300 py-2"
             href="/departemen"
           >
             Struktur Organisasi
+            <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
           </Link>
           <div>
             <DropdownMenuNav />
           </div>
-
-          {/* Add more navigation links as needed */}
         </div>
+
         <Link
           className="
             hidden md:flex py-2 px-3 border-white border-2 hover:bg-orange-600 hover:duration-300 hover:end-10 rounded-full"
