@@ -53,8 +53,8 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed text-base font-bold w-full top-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "p-4 bg-black/30 backdrop-blur-lg text-white"
-          : "p-8 top-0 bg-transparent text-white fill-white"
+          ? "p-4 bg-black/30 backdrop-blur-lg text-white max-md:p-0 max-md:py-4"
+          : "p-8 top-0 bg-transparent text-white fill-white max-md:p-0 max-md:py-8"
       }`}
     >
       <div
@@ -147,7 +147,9 @@ const Navbar: React.FC = () => {
       </div>
       {isMenuOpen && (
         <motion.div
-          className="flex flex-col gap-3 md:hidden mt-4"
+          className={`flex flex-col gap-3 md:hidden mt-4 px-4 py-9 w-full transition-none duration-0 ${
+            isScrolled ? " bg-transparent" : " bg-black/30 backdrop-blur-lg"
+          }`}
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
@@ -156,6 +158,9 @@ const Navbar: React.FC = () => {
         >
           <Link className="hover:text-purpleText text-center" href="/">
             Beranda
+          </Link>
+          <Link className="hover:text-purpleText text-center" href="#">
+            Tentang
           </Link>
           <Link
             className="hover:text-purpleText text-center"
