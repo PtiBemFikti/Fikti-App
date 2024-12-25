@@ -66,32 +66,35 @@ const Navbar: React.FC = () => {
           <Image
             src="/logo-fikti.png"
             alt="Logo"
-            width={25}
-            height={25}
+            width={35}
+            height={35}
             className="mr-2"
           />
-          <h1>FIKTI</h1>
+          <div>
+            <h1 className="text-lg">BEM FIKTI 2024</h1>
+            <p className="text-xs font-light">Universitas Gunadarma</p>
+          </div>
         </Link>
         <div className="hidden md:flex md:gap-10 space-x-4 mr-8">
           <Link
             className="relative block group hover:text-purpleText duration-300 py-2"
             href="/"
           >
-            Beranda
+            Home
             <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
           </Link>
           <Link
             className="relative block group hover:text-purpleText duration-300 py-2"
             href="#"
           >
-            Tentang
+            About
             <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
           </Link>
           <Link
             className="relative block group hover:text-purpleText duration-300 py-2"
             href="/departemen"
           >
-            Struktur Organisasi
+            Structure
             <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
           </Link>
           <div>

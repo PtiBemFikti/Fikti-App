@@ -11,7 +11,7 @@ export default function DropdownMenuNav() {
     <Dropdown>
       <DropdownTrigger>
         <Button className="bg-transparent text-white font-bold text-base hover:text-purpleText text-md p-0">
-          Program Kerja
+          Projects
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
