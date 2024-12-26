@@ -25,6 +25,9 @@ const config: Config = {
         'red-normal': '#662549',
         'purple-normal': '#340660',
         'red-normal-1': '#833344',
+        'green-fikti': '#36B276',
+        'dark-purple': '#25274D',
+        'light-purple': '#6C2A87'
       },
       listStyleType: {
         'lower-alpha': 'lower-alpha',
