@@ -7,11 +7,7 @@ import { FaInstagram, FaTiktok, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 
-import { Permanent_Marker } from "next/font/google";
-const PermanentMarkerFont = Permanent_Marker({
-  subsets: ["latin"],
-  weight: "400",
-});
+import { MonumentExtendedRegular } from "@/styles/font";
 
 const Footer: React.FC = () => {
   return (
@@ -23,7 +19,7 @@ const Footer: React.FC = () => {
         <div className="blop3"></div>
       </div>
       <h1
-        className={`${PermanentMarkerFont.className} max-md:text-[1.5rem] max-md:mx-5 max-md:my-7 relative z-20 text-center text-[5rem] px-5 py-7 mx-40 my-14 border-2 border-white italic font-Bricolage_Grotesque hover:shadow-lg hover:shadow-white hover:bg-white hover:text-black transition-all duration-500 rounded-2xl cursor-pointer`}
+        className={`${MonumentExtendedRegular.className} max-md:text-[1.5rem] max-md:mx-5 max-md:my-7 relative z-20 text-center text-[5rem] px-5 py-7 mx-40 my-14 border-2 border-white italic font-Bricolage_Grotesque hover:shadow-lg hover:shadow-white hover:bg-white hover:text-black transition-all duration-500 rounded-2xl cursor-pointer`}
       >
         KABINET ADIRAKA
       </h1>
@@ -35,22 +31,22 @@ const Footer: React.FC = () => {
           <div className="flex flex-col gap-3">
             <h1 className="text-xl font-bold">Quick Links</h1>
             <Link
-              href="/tentang"
+              href="/about"
               className="group relative text-gray-400 hover:text-purpleText"
             >
-              Tentang
+              About Us
             </Link>
             <Link
               href="#"
               className="group relative text-gray-400 hover:text-purpleText"
             >
-              Projek
+              Organizational Structure
             </Link>
             <Link
               href="#"
               className="group relative text-gray-400 hover:text-purpleText"
             >
-              Struktur Organisasi
+              Our Projects
             </Link>
             <Link
               href="https://www.instagram.com/fikti.careercenter/"
