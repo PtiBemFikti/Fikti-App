@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 700) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed text-base font-bold w-full top-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "p-4 bg-black/30 backdrop-blur-lg text-white max-md:p-0 max-md:py-4"
+          ? "p-4 bg-black/50 backdrop-blur-lg text-white fill-black max-md:p-0 max-md:py-4"
           : "p-8 top-0 bg-transparent text-white fill-white max-md:p-0 max-md:py-8"
       }`}
     >
