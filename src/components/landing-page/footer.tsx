@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
         <div className="blop3"></div>
       </div>
       <h1
-        className={`${MonumentExtendedRegular.className} max-md:text-[1.5rem] max-md:mx-5 max-md:my-7 relative z-20 text-center text-[5rem] px-5 py-7 mx-40 my-14 border-2 border-white italic font-Bricolage_Grotesque hover:shadow-lg hover:shadow-white hover:bg-white hover:text-black transition-all duration-500 rounded-2xl cursor-pointer`}
+        className={`${MonumentExtendedRegular.className} max-md:text-[1.3rem] max-md:mx-5 max-md:my-7 relative z-20 text-center text-[5rem] px-5 py-7 mx-40 my-14 border-2 border-white italic font-Bricolage_Grotesque hover:shadow-lg hover:shadow-white hover:bg-white hover:text-black transition-all duration-500 rounded-2xl cursor-pointer`}
       >
         KABINET ADIRAKA
       </h1>
