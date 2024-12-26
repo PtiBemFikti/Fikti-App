@@ -12,5 +12,7 @@ const poppins = localFont({ src: '../../public/font/Poppins.ttf' });
 const terminaTest = localFont({src: '../../public/font/Termina-Test.otf'});
 const terminaTestBold = localFont({src: '../../public/font/TerminaTest-Bold.otf'});
 const epilogue = localFont({src: '../../public/font/Epilogue.ttf'});
+const MonumentExtendedRegular = localFont({src: '../../public/font/MonumentExtended-Regular.otf'})
+const MonumentExtendedBold = localFont({src: '../../public/font/MonumentExtended-Ultrabold.otf'})
 
-export { circleAmolens, Guardians, Urbanist, bricolageGrotesque, poppins, terminaTest, terminaTestBold, epilogue };
+export { circleAmolens, Guardians, Urbanist, bricolageGrotesque, poppins, terminaTest, terminaTestBold, epilogue, MonumentExtendedRegular, MonumentExtendedBold };
