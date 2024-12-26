@@ -26,7 +26,12 @@ body {
 }
 
 .main {
-  background: linear-gradient(63deg, rgba(255, 109, 0, 0.2) 0%, rgba(36, 0, 70, 0.3) 98.79%), linear-gradient(245deg, #340660 0%, #380766 120.85%);
+  background: linear-gradient(
+      63deg,
+      rgba(255, 109, 0, 0.2) 0%,
+      rgba(36, 0, 70, 0.3) 98.79%
+    ),
+    linear-gradient(245deg, #340660 0%, #380766 120.85%);
 }
 
 .join {
@@ -241,4 +246,77 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-infinite-scroll {
+  animation: infinite-scroll 30s linear infinite;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* animasi logo di hero section */
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
