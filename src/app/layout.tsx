@@ -84,7 +84,7 @@ export default function RootLayout({
   const pathname = usePathname();
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${lato.className}`}>
+      <body className={`${lato.className} overflow-x-hidden`}>
         {!disableNavbar.includes(pathname ?? "") && <Navbar />}
         {children}
         <Toaster position="top-right" richColors />

@@ -1,133 +1,73 @@
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { Bricolage_Grotesque } from "next/font/google";
-import { useInView } from "react-intersection-observer";
-import { url } from "inspector";
 import Image from "next/image";
-const Dashboard: React.FC = () => {
-  const letsPresentControls = useAnimation();
-  const harsasiControls = useAnimation();
-  const fiktiControls = useAnimation(); // Tambah kontrol untuk elemen FIKTI
+import logoAdiraka from "../../../public/LOGO ADIRAKA ROUND.png";
+import { FaArrowDown } from "react-icons/fa";
+import { useState } from "react";
+import Link from "next/link";
+import ImageSlider from "./ImageSlider";
 
-  const [letsPresentRef, letsPresentInView] = useInView({
-    triggerOnce: true,
-  });
+export default function HeroSection() {
+  const [isScrolling, setIsScrolling] = useState(false);
 
-  const [harsasiRef, harsasiInView] = useInView({
-    triggerOnce: true,
-  });
-
-  const [fiktiRef, fiktiInView] = useInView(); // Tambah ref untuk elemen FIKTI
-
-  useEffect(() => {
-    if (letsPresentInView) {
-      letsPresentControls.start("visible");
+  const handleScrollDown = () => {
+    setIsScrolling(true);
+    const nextSection = document.getElementById("about");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
     }
-  }, [letsPresentInView, letsPresentControls]);
-
-  useEffect(() => {
-    if (harsasiInView) {
-      harsasiControls.start("visible");
-    }
-  }, [harsasiInView, harsasiControls]);
-
-  useEffect(() => {
-    if (fiktiInView) {
-      fiktiControls.start("visible");
-    }
-  }, [fiktiInView, fiktiControls]);
-
-  const letsPresentVariants = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0 },
-  };
-
-  const harsasiVariants = {
-    hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0 },
-  };
-
-  const fiktiVariants = {
-    // Varians animasi untuk elemen FIKTI
-    hidden: { opacity: 0, y: -50 },
-    visible: { opacity: 1, y: 0 },
+    setTimeout(() => setIsScrolling(false), 1000); 
   };
 
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={{
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
+    <div
+      className="fixed overflow-x-hidden z-[1] w-full h-screen overflow-hidden flex items-center justify-center max-md:py-44"
+      style={{
+        backgroundImage: `url('/bg-home.jpg')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
-      transition={{ duration: 0.5 }}
-      className="bg-gradient-to-b from-[#091534] to-[#060E23] to-[84%] border-b-2 shadow-xl border-slate-700 w-full py-32 flex flex-col items-center justify-center "
-      // style={{ backgroundImage: "url('/dyz.jpg')" }}
     >
-      <Image
-        src="/logo-kabinet.png"
-        alt="Logo"
-        width={100}
-        height={100}
-        className="mb-5"
-        ref={fiktiRef}
-      />
-      <motion.h1
-        variants={fiktiVariants} // Gunakan varian untuk elemen FIKTI
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.5, delay: 3 }}
-        className="text-base text-center font-medium text-purpleText border-2 border-purpleText rounded-full px-2 py-1"
-        ref={fiktiRef} // Gunakan ref untuk elemen FIKTI
-      >
-        Unlock New Generation
-      </motion.h1>
+      <div className="absolute flex items-center justify-between inset-0 bg-black/50" />
+      <ImageSlider />
 
-      <motion.h1
-        variants={fiktiVariants} // Gunakan varian untuk elemen FIKTI
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.5, delay: 4 }}
-        className="text-8xl md:text-9xl text-center font-black text-white"
-        ref={fiktiRef} // Gunakan ref untuk elemen FIKTI
-      >
-        FIKTI
-      </motion.h1>
-      <div className="flex align-top justify-center">
-        <motion.div
-          initial="hidden"
-          animate={letsPresentControls}
-          variants={letsPresentVariants}
-          transition={{ duration: 0.5, delay: 1 }}
-          className="flex w-full justify-center md:w-1/2 mx-auto text-orangeText mt-4"
-          ref={letsPresentRef}
-        >
-          <motion.div className="p-2 text-start">
-            <h1 className="text-xl md:text-7xl font-bold">
-              LET&apos;S PRESENT
-            </h1>
-            <p className="text-base">#HarmoniYangSerasi</p>
-          </motion.div>
-        </motion.div>
-        <motion.div
-          initial="hidden"
-          animate={harsasiControls}
-          variants={harsasiVariants}
-          transition={{ duration: 0.5, delay: 2 }}
-          className="flex w-full justify-center md:w-1/2 mx-auto text-orangeText mt-4"
-          ref={harsasiRef}
-        >
-          <motion.div className="p-2 text-end">
-            <h1 className="text-xl md:text-7xl font-bold">#HARSASI</h1>
-            <p className="text-base">
-              Start with thunder <br /> & Grow with the rain
-            </p>
-          </motion.div>
-        </motion.div>
+      <div className="relative flex max-md:flex-col-reverse items-center justify-between w-[80%] max-md:w-full text-left max-md:text-center mx-10 max-md:mx-5 max-md:py-44 z-10">
+        {/* Typography */}
+        <div className="lg:w-1/2 flex flex-col items-center lg:items-start animate-fade-in">
+          <h1 className="text-white text-6xl max-md:text-3xl font-bold uppercase tracking-wide leading-tight">
+            Welcome to <br />
+            <span className="text-white">BEM FIKTI UG 2024</span>
+          </h1>
+          <p className="text-gray-300 mt-6 max-md:mt-3 text-lg max-md:text-sm leading-relaxed font-bold">
+            BEM FIKTI UG is a student organization that runs an executive
+            function in the Faculty of Computer Science and Information
+            Technology, Universitas Gunadarma. We aim to be active, responsive,
+            and constructive through various actions, devotions, and services.
+          </p>
+          <Link href="#">
+            <button className="mt-4 mb-8 max-md:px-5 max-md:py-2 max-md:text-sm px-7 py-4 border border-white hover:bg-white hover:text-black hover:shadow-md hover:shadow-white rounded-xl text-white font-bold transition-all duration-300">
+              Discover More
+            </button>
+          </Link>
+        </div>
+
+        {/* Logo */}
+        <div className="lg:w-1/2 max-md:w-[35%] max-md:h-[35%] flex justify-start lg:justify-end mt-10 lg:mt-0 max-md:mt-3">
+          <Image
+            src={logoAdiraka}
+            alt="Logo Adiraka"
+            width={400}
+            height={400}
+            className="drop-shadow-[1px_1px_10px_#efefef] animate-floating"
+          />
+        </div>
       </div>
-    </motion.div>
+      <button
+        onClick={handleScrollDown}
+        className="absolute bottom-2 flex flex-col items-center text-white transition-transform"
+      >
+        <FaArrowDown className="w-8 h-8 animate-bounce" />
+        <span className="text-base font-light">Scroll Down</span>
+      </button>
+    </div>
   );
-};
-
-export default Dashboard;
+}
