@@ -9,6 +9,7 @@ import { Toaster } from "sonner";
 // import { Metadata } from 'next';
 
 const disableNavbar = [
+  "/oprec-volunteer",
   "/filing",
   "/technofair",
   "/filing/WebDevelopment",
@@ -35,6 +36,7 @@ const disableNavbar = [
   "/pemira/DetailPaslon3",
 ];
 const disableFooter = [
+  "/oprec-volunteer",
   "/technofair",
   "/technofair/details/seminar/data-analyst",
   "/technofair/details/seminar/artificial-intelligence",
