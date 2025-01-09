@@ -11,7 +11,7 @@ import { MonumentExtendedRegular } from "@/styles/font";
 
 const OprecFooter: React.FC = () => {
   return (
-    <footer className="relative flex flex-col justify-end bg-[#0c0b1d] h-screen border-t-2 border-slate-700 p-4 bottom-0 overflow-x-hidden">
+    <footer className="relative max-md:h-fit flex flex-col justify-end bg-[#0c0b1d] h-screen border-t-2 border-slate-700 p-4 bottom-0 overflow-x-hidden">
       <h1
         className={`${MonumentExtendedRegular.className} max-md:text-[1.3rem] max-md:mx-5 max-md:my-7 relative z-20 text-center text-[5rem] px-5 py-7 mx-40 my-14 border-2 border-white italic font-Bricolage_Grotesque hover:shadow-lg hover:shadow-white hover:bg-white hover:text-black transition-all duration-500 rounded-2xl cursor-pointer`}
       >
@@ -55,7 +55,7 @@ const OprecFooter: React.FC = () => {
             </p>
           </Link>
 
-          <div className="flex items-center justify-center gap-5">
+          <div className="flex items-center justify-center gap-5 max-md:my-10">
             <Link href="https://www.instagram.com/ug_bemfikti/" target="_blank">
               <FaInstagram
                 size={30}
@@ -87,7 +87,7 @@ const OprecFooter: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex self-end gap-4 max-md:order-1 max-md:self-center">
+        <div className="flex self-end gap-4 max-md:order-1 max-md:hidden">
           <Image
             src="/oprec-volunteer/bg-footer.png"
             alt="Logo"
@@ -116,23 +116,23 @@ const OprecFooter: React.FC = () => {
               <Image
                 src="/logo-universitas-gunadarma.png"
                 alt="Logo"
-                width={35}
-                height={35}
-                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 max-md:w-20 max-md:h-20"
+                width={200}
+                height={200}
+                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 w-10 h-10"
               />
               <Image
                 src="/logo-fikti.png"
                 alt="Logo"
-                width={35}
-                height={35}
-                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 max-md:w-20 max-md:h-24"
+                width={200}
+                height={200}
+                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 w-10 h-14"
               />
               <Image
                 src="/LOGO ADIRAKA ROUND.png"
                 alt="Logo"
-                width={35}
-                height={35}
-                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 max-md:w-20 max-md:h-20"
+                width={200}
+                height={200}
+                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 w-10 h-10"
               />
             </div>
           </div>

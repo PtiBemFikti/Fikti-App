@@ -35,42 +35,44 @@ export default function ProjectList() {
   return (
     <section
       id="project-list"
-      className="w-full h-[80vh] flex flex-col justify-center pt-24"
+      className="w-full h-[80vh] flex flex-col justify-center pt-24 max-md:h-fit"
     >
       <div className="text-center mb-12">
         <h1
-          className={`${MonumentExtendedRegular.className} text-[4rem] md:text-[5rem] font-bold leading-tight`}
+          className={`${MonumentExtendedRegular.className} text-[4rem] max-md:text-[2.2rem] font-bold leading-tight`}
         >
           <span className="bg-gradient-to-r from-[#20202C] via-[#377DFF] to-[#49E0A2] bg-clip-text text-transparent">
             PROJECT LIST
           </span>
         </h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-8 md:px-16">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="relative bg-[#111827] rounded-lg mt-20 h-[350px] pt-20 pb-6 px-6 shadow-lg text-center flex flex-col justify-center items-center"
-          >
-            <div className=" absolute p-4 border-[10px] border-[#FFFFF4] -top-24 left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] rounded-full bg-gray-300 flex items-center justify-center shadow-md">
-              <span className="text-2xl text-gray-500">Logo</span>
-            </div>
-            <h2 className="text-white text-xl font-bold mt-6">
-              {project.title}
-            </h2>
-            <p className="text-white text-sm">{project.subtitle}</p>
-            <button
-              className="mt-4 flex items-center justify-center gap-2 px-6 py-3 bg-[#10B981] hover:bg-[#059669] transition-all duration-300 hover:shadow-[0px_0px_8px_2px] hover:shadow-[#10B981] text-white font-semibold rounded-lg"
-              onClick={() => openModal(project)}
+      <div className="max-md:overflow-x-auto max-md:whitespace-nowrap px-8 md:px-16 max-md:px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4 max-md:flex max-md:w-max gap-8 max-md:gap-3">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="relative bg-[#111827] rounded-lg mt-20 h-[350px] max-md:w-[350px] pt-20 pb-6 px-6 shadow-lg text-center flex flex-col justify-center items-center"
             >
-              <FaInfo
-                className="bg-white fill-[#10B981] p-1 rounded-full"
-                size={25}
-              />
-              Learn More
-            </button>
-          </div>
-        ))}
+              <div className="absolute p-4 border-[10px] border-[#FFFFF4] -top-24 left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] rounded-full bg-gray-300 flex items-center justify-center shadow-md">
+                <span className="text-2xl text-gray-500">Logo</span>
+              </div>
+              <h2 className="text-white text-xl font-bold mt-6">
+                {project.title}
+              </h2>
+              <p className="text-white text-sm">{project.subtitle}</p>
+              <button
+                className="mt-4 flex items-center justify-center gap-2 px-6 py-3 bg-[#10B981] hover:bg-[#059669] transition-all duration-300 hover:shadow-[0px_0px_8px_2px] hover:shadow-[#10B981] text-white font-semibold rounded-lg"
+                onClick={() => openModal(project)}
+              >
+                <FaInfo
+                  className="bg-white fill-[#10B981] p-1 rounded-full"
+                  size={25}
+                />
+                Learn More
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
 
       {isModalOpen && selectedProject && (
