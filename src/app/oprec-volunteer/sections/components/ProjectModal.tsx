@@ -26,13 +26,13 @@ export default function Modal({
       }}
     >
       <div
-        className="relative px-6 rounded-[50px] bg-[#1F2937] w-[80%] h-[80%] max-h-screen max-w-screen flex flex-col justify-center items-center shadow-lg overflow-hidden overflow-y-auto py-20 animate-slideUp"
+        className="relative px-6 max-md:px-0 rounded-[50px] max-md:rounded-[50px_50px_0px_0px] max-md:mt-20 bg-[#1F2937] w-[80%] h-[80%] max-md:w-full max-md:h-full max-h-screen max-w-screen flex flex-col justify-center items-center shadow-lg overflow-hidden overflow-y-auto py-20 animate-slideUp"
         style={{
           animation: "slideUp 1s ease-out",
         }}
       >
         {/* Logo di tengah bagian atas */}
-        <div className="relative mt-60">
+        <div className="relative mt-60 max-md:mt-[50rem]">
           <div className="w-44 h-44 rounded-full bg-gray-300 flex items-center justify-center shadow-lg">
             <span className="text-2xl text-gray-500">Logo</span>
           </div>
