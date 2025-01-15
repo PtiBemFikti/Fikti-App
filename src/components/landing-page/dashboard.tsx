@@ -14,18 +14,19 @@ export default function HeroSection() {
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
-    setTimeout(() => setIsScrolling(false), 1000); 
+    setTimeout(() => setIsScrolling(false), 1000);
   };
 
   return (
     <div
-      className="fixed overflow-x-hidden z-[1] w-full h-screen overflow-hidden flex items-center justify-center max-md:py-44"
-      style={{
-        backgroundImage: `url('/bg-home.jpg')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+      className="relative overflow-x-hidden w-full h-screen overflow-hidden bg-gradient-to-b section-home flex items-center justify-center max-md:py-44"
+
+      // style={{
+      //   // backgroundImage: `url('/bg-home.jpg')`,
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      //   backgroundRepeat: "no-repeat",
+      // }}
     >
       <div className="absolute flex items-center justify-between inset-0 bg-black/50" />
       <ImageSlider />

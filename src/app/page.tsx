@@ -1,7 +1,7 @@
 import Dashboard from "../components/landing-page/dashboard-unused";
 import Dept from "@/components/landing-page/dept";
 import VisiMisi from "@/components/landing-page/visimisi";
-import CoreValue from "@/components/landing-page/coreValue";
+import CoreValue from "@/components/landing-page/coreValue-unused";
 import ParallaxText from "@/components/landing-page/parallaxText";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { Example } from "@/components/landing-page/slider";

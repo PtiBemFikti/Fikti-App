@@ -20,6 +20,7 @@ export default function UtamaPage() {
     <div className="flex max-w-full min-h-screen flex-col items-center justify-between">
       <HeroSection />
       <AboutPage />
+      <CoreValue />
       {/* <VisiMisi /> */}
       {/* <section className="flex justify-center items-center overflow-hidden w-full">
         <div className="w-96 h-96 relative flex justify-center items-center my-20">
