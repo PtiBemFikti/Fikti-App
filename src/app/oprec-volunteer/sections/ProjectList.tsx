@@ -67,10 +67,10 @@ export default function ProjectList() {
                   />
                 </div>
               </div>
-              <h2 className="text-white text-xl font-bold mt-6">
+              <h2 className="text-white text-2xl font-bold mt-6">
                 {project.title}
               </h2>
-              <p className="text-white text-sm">{project.subtitle}</p>
+              <p className="text-white text-lg">{project.subtitle}</p>
               <button
                 className="mt-4 flex items-center justify-center gap-2 px-6 py-3 bg-[#10B981] hover:bg-[#059669] transition-all duration-300 hover:shadow-[0px_0px_8px_2px] hover:shadow-[#10B981] text-white font-semibold rounded-lg"
                 onClick={() => openModal(project)}
@@ -88,55 +88,53 @@ export default function ProjectList() {
 
       {isModalOpen && selectedProject && (
         <Modal>
-          <div className="w-full h-full flex flex-col justify-center items-center mt-28 max-md:mt-2">
-            <button
-              onClick={closeModal}
-              className="self-end text-[#111827] bg-gray-400 hover:bg-gray-500 rounded-full p-2 shadow-md transition-colors mt-8"
-            >
-              <IoClose />
-            </button>
-            <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center shadow-lg">
-              <Image
-                src={selectedProject.logo}
-                alt={`${selectedProject.title} Logo`}
-                width={176}
-                height={176}
-                className="rounded-full object-cover"
-              />
-            </div>
+          <button
+            onClick={closeModal}
+            className="self-end text-[#111827] bg-gray-400 hover:bg-gray-500 rounded-full p-2 shadow-md transition-colors mt-8"
+          >
+            <IoClose />
+          </button>
+          <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center shadow-lg">
+            <Image
+              src={selectedProject.logo}
+              alt={`${selectedProject.title} Logo`}
+              width={176}
+              height={176}
+              className="rounded-full object-cover"
+            />
+          </div>
 
-            {/* Judul dan Subtitle */}
-            <h2 className="text-3xl font-bold text-white mb-2">
-              {selectedProject.title}
-            </h2>
-            <h3 className="text-xl font-medium text-gray-300 mb-4">
-              {selectedProject.subtitle}
+          {/* Judul dan Subtitle */}
+          <h2 className="text-[2.5rem] font-bold text-white mb-2 max-md:text-[2rem]">
+            {selectedProject.title}
+          </h2>
+          <h3 className="text-xl font-medium text-gray-300 mb-4">
+            {selectedProject.subtitle}
+          </h3>
+
+          <p className="text-gray-300 text-2xl mb-6 max-md:text-xl">
+            {selectedProject.description}
+          </p>
+
+          {/* Divisi */}
+          <div className="bg-gray-800 p-4 rounded-lg">
+            <h3 className="text-[2rem] max-md:text-[1.75rem] font-semibold text-white mb-8">
+              Divisi yang tersedia pada {selectedProject.title}
             </h3>
-
-            <p className="text-gray-300 text-lg mb-6">
-              {selectedProject.description}
-            </p>
-
-            {/* Divisi */}
-            <div className="bg-gray-800 p-4 rounded-lg">
-              <h3 className="text-2xl font-semibold text-white mb-4">
-                Divisi yang tersedia pada {selectedProject.title}
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {selectedProject.divisions.map((division, index) => (
-                  <div
-                    key={index}
-                    className="p-4 bg-gray-700 rounded-md shadow-md hover:bg-gray-600 transition-colors"
-                  >
-                    <h4 className="text-xl font-medium text-white mb-2">
-                      {division.name}
-                    </h4>
-                    <p className="text-gray-300 text-sm">
-                      {division.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {selectedProject.divisions.map((division, index) => (
+                <div
+                  key={index}
+                  className="p-4 bg-gray-700 rounded-md shadow-md hover:bg-gray-600 transition-colors"
+                >
+                  <h4 className="text-2xl max-md:text-xl font-semibold text-white mb-2">
+                    {division.name}
+                  </h4>
+                  <p className="text-gray-300 text-xl max-md:text-base">
+                    {division.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </Modal>

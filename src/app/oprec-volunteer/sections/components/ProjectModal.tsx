@@ -1,6 +1,6 @@
-import Image from "next/image";
+"use client";
+
 import { useEffect } from "react";
-import { IoClose, IoCloseCircle } from "react-icons/io5";
 
 export default function Modal({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -15,21 +15,22 @@ export default function Modal({ children }: { children: React.ReactNode }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black bg-opacity-80 backdrop-blur-md flex items-center justify-center animate-fadeIn"
+      className="fixed inset-0 z-50 bg-black bg-opacity-80 backdrop-blur-md h-screen w-screen flex items-center justify-center animate-fadeIn"
       style={{
         animation: "fadeIn 0.5s ease-out",
       }}
     >
       <div
-        className="relative px-6 max-md:px-0 rounded-[50px] max-md:rounded-[50px_50px_0px_0px] max-md:mt-20 bg-[#1F2937] w-[80%] h-[80%] max-md:w-full max-md:h-full max-h-screen max-w-screen flex flex-col justify-center items-center shadow-lg overflow-hidden overflow-y-auto py-20 animate-slideUp"
+        className="relative px-12 max-md:px-5 max-md:mt-32 max-md:pb-20 rounded-[30px] max-md:rounded-t-[30px] bg-[#1F2937]  w-[80%] h-auto max-md:w-full py-8 shadow-lg overflow-hidden overflow-y-auto animate-slideUp"
         style={{
           animation: "slideUp 1s ease-out",
+          maxHeight: "90%",
+          ...(window.innerWidth <= 768 && { maxHeight: "100%" }), // 100% jika max-md
         }}
       >
-        {/* Konten Modal */}
-        <div className="text-white text-center px-8 py-16">{children}</div>
-
-        {/* Tombol Close */}
+        <div className="flex flex-col items-center justify-start gap-6 text-center">
+          {children}
+        </div>
       </div>
     </div>
   );
