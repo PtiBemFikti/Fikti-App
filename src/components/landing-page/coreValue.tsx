@@ -4,67 +4,59 @@ export default function CoreValue() {
   return (
     <section
       id="core-value"
-      className="relative z-10 pb-20 max-md:rounded-none w-screen h-fit section-about text-white max-md:py-10"
+      className="relative z-10 pb-20 w-screen h-fit section-about text-white max-md:py-10"
     >
       <div className="flex flex-col items-center justify-center px-6">
-        <h1 className="text-[4rem] mb-16 font-bold max-md:text-3xl">
+        {/* Title */}
+        <h1 className="text-[4rem] font-bold mb-16 max-md:text-[2.5rem]">
           Core Value
         </h1>
-        <div className="w-[80%] h-fit flex justify-between items-center max-md:flex-col max-md:w-full max-md:gap-12">
-          {/* Core Value Item 1 */}
-          <div className="flex w-[300px] text-center h-[600px] bg-white/30 rounded-full flex-col justify-start items-center max-md:w-[200px] max-md:h-[400px] max-md:py-8">
-            <div className="w-[300px] h-[300px] flex items-center justify-center bg-white rounded-full max-md:w-[200px] max-md:h-[200px]">
-              <Image
-                src="/main/akrab.png"
-                alt="logo"
-                width={200}
-                height={200}
-                className="max-md:w-[200px] h-[200px]"
-              />
-            </div>
-            <h1 className="text-2xl font-bold my-5 max-md:text-xl">Akrab</h1>
-            <p className="text-xl font-semibold px-5 max-md:text-sm">
-              Hubungan erat dengan mahasiswa FIKTI
-            </p>
-          </div>
 
-          {/* Core Value Item 2 */}
-          <div className="flex w-[300px] text-center h-[600px] bg-white/30 rounded-full flex-col justify-start items-center max-md:w-[200px] max-md:h-[400px] max-md:py-8">
-            <div className="w-[300px] h-[300px] flex items-center justify-center bg-white rounded-full max-md:w-[200px] max-md:h-[200px]">
-              <Image
-                src="/main/adfokatif.png"
-                alt="logo"
-                width={200}
-                height={200}
-                className="max-md:w-[200px] h-[200px]"
-              />
-            </div>
-            <h1 className="text-2xl font-bold my-5 max-md:text-xl">
-              Advokatif
-            </h1>
-            <p className="text-xl font-semibold px-5 max-md:text-sm">
-              Menyuarakan kebutuhan dan aspirasi mahasiswa FIKTI
-            </p>
-          </div>
+        {/* Core Values Container */}
+        <div className="w-[80%] flex justify-between items-center gap-8 max-md:flex-col max-md:w-full max-md:gap-12">
+          {[
+            {
+              title: "Akrab",
+              description: "Hubungan erat dengan mahasiswa FIKTI",
+              imageSrc: "/main/akrab.png",
+            },
+            {
+              title: "Advokatif",
+              description: "Menyuarakan kebutuhan dan aspirasi mahasiswa FIKTI",
+              imageSrc: "/main/adfokatif.png",
+            },
+            {
+              title: "Supportif",
+              description: "Saling memberikan dukungan antar mahasiswa FIKTI",
+              imageSrc: "/main/supportif.png",
+            },
+          ].map((value, index) => (
+            <div
+              key={index}
+              className="flex w-[300px] h-[600px] bg-white/30 rounded-full flex-col justify-start items-center text-center max-md:w-[200px] max-md:h-[400px]"
+            >
+              {/* Image Container */}
+              <div className="w-[300px] h-[300px] flex items-center justify-center bg-white rounded-full max-md:w-[200px] max-md:h-[200px]">
+                <Image
+                  src={value.imageSrc}
+                  alt={`${value.title} logo`}
+                  width={200}
+                  height={200}
+                  className="max-md:w-[130px] max-md:h-[130px] w-[200px] h-[200px]"
+                />
+              </div>
 
-          {/* Core Value Item 3 */}
-          <div className="flex w-[300px] text-center h-[600px] bg-white/30 rounded-full flex-col justify-start items-center max-md:w-[200px] max-md:h-[400px] max-md:py-8">
-            <div className="w-[300px] h-[300px] flex items-center justify-center bg-white rounded-full max-md:w-[200px] max-md:h-[200px]">
-              <Image
-                src="/main/supportif.png"
-                alt="logo"
-                width={200}
-                height={200}
-                className="max-md:w-[200px] h-[200px]"
-              />
+              {/* Title */}
+              <h2 className="text-2xl font-bold my-5 max-md:text-xl">
+                {value.title}
+              </h2>
+
+              {/* Description */}
+              <p className="text-xl font-semibold px-5 max-md:text-sm">
+                {value.description}
+              </p>
             </div>
-            <h1 className="text-2xl font-bold my-5 max-md:text-xl">
-              Supportif
-            </h1>
-            <p className="text-xl font-semibold px-5 max-md:text-sm">
-              Saling memberikan dukungan antar mahasiswa FIKTI
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>
