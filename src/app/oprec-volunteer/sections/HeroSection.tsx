@@ -3,6 +3,7 @@ import logoAdiraka from "../../../../public/LOGO ADIRAKA TRANSPARAN.png";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { MonumentExtendedRegular } from "@/styles/font";
+import { IoMdShareAlt } from "react-icons/io";
 
 export default function HeroSectionOprec() {
   return (
@@ -17,6 +18,13 @@ export default function HeroSectionOprec() {
       }}
     >
       <div className="pl-10 flex flex-col items-start max-md:items-center text-left w-1/2 animate-fade-in max-md:pl-0 max-md:w-full max-md:text-center max-md:justify-center">
+        <Link href="/" className="max-md:hidden flex">
+          <IoMdShareAlt
+            size={60}
+            className="hover:fill-gray-400 transition-all duration-250 rotate-180"
+          />
+        </Link>
+
         <p className="text-2xl font-semibold text-blue-500 max-md:text-lg">
           Ayo Bergabung dalam
         </p>
