@@ -11,6 +11,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "OpenSauceSans";
+  src: url("/font/OpenSauceSans-Regular.ttf") format("truetype");
+}
+
+p {
+  font-family: "OpenSauceSans", sans-serif;
+}
+
+
 * {
   border: solid ed;
 }
@@ -20,11 +30,6 @@ body {
   /* background-color: #fff; */
 
   color: #fff;
-}
-
-p {
-  font-family: "OpenSauceSans";
-  src: url("../../public/font/OpenSauceSans-Regular.ttf");
 }
 
 .container {
