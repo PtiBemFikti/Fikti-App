@@ -5,6 +5,7 @@ import { MonumentExtendedRegular } from "@/styles/font";
 import Modal from "./components/ProjectModal";
 import { FaInfo } from "react-icons/fa";
 import projects from "./components/ProjectsData";
+import Image from "next/image";
 
 type Division = {
   name: string;
@@ -16,6 +17,7 @@ type Project = {
   subtitle: string;
   description: string;
   divisions: Division[];
+  logo: string;
 };
 
 export default function ProjectList() {
@@ -53,8 +55,16 @@ export default function ProjectList() {
               key={index}
               className="relative bg-[#111827] rounded-lg mt-20 h-[350px] max-md:w-[350px] pt-20 pb-6 px-6 shadow-lg text-center flex flex-col justify-center items-center"
             >
-              <div className="absolute p-4 border-[10px] border-[#FFFFF4] -top-24 left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] rounded-full bg-gray-300 flex items-center justify-center shadow-md">
-                <span className="text-2xl text-gray-500">Logo</span>
+              <div className="absolute border-[10px] border-[#FFFFF4] -top-24 left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] rounded-full bg-gray-300 flex items-center justify-center shadow-md">
+                <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center shadow-lg">
+                  <Image
+                    src={project.logo}
+                    alt={`${project.title} Logo`}
+                    width={176}
+                    height={176}
+                    className="rounded-full object-cover"
+                  />
+                </div>
               </div>
               <h2 className="text-white text-xl font-bold mt-6">
                 {project.title}
@@ -77,37 +87,48 @@ export default function ProjectList() {
 
       {isModalOpen && selectedProject && (
         <Modal onClose={closeModal}>
-          {/* Judul dan Subtitle */}
-          <h2 className="text-3xl font-bold text-white mb-2">
-            {selectedProject.title}
-          </h2>
-          <h3 className="text-xl font-medium text-gray-300 mb-4">
-            {selectedProject.subtitle}
-          </h3>
-
-          <p className="text-gray-300 text-lg mb-6">
-            {selectedProject.description}
-          </p>
-
-          {/* Divisi */}
-          <div className="bg-gray-800 p-4 rounded-lg">
-            <h3 className="text-2xl font-semibold text-white mb-4">
-              Divisi yang tersedia pada {selectedProject.title}
+          <div className="w-full h-full flex flex-col justify-center items-center mt-28">
+            <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center shadow-lg">
+              <Image
+                src={selectedProject.logo}
+                alt={`${selectedProject.title} Logo`}
+                width={176}
+                height={176}
+                className="rounded-full object-cover"
+              />
+            </div>
+            {/* Judul dan Subtitle */}
+            <h2 className="text-3xl font-bold text-white mb-2">
+              {selectedProject.title}
+            </h2>
+            <h3 className="text-xl font-medium text-gray-300 mb-4">
+              {selectedProject.subtitle}
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {selectedProject.divisions.map((division, index) => (
-                <div
-                  key={index}
-                  className="p-4 bg-gray-700 rounded-md shadow-md hover:bg-gray-600 transition-colors"
-                >
-                  <h4 className="text-xl font-medium text-white mb-2">
-                    {division.name}
-                  </h4>
-                  <p className="text-gray-300 text-sm">
-                    {division.description}
-                  </p>
-                </div>
-              ))}
+
+            <p className="text-gray-300 text-lg mb-6">
+              {selectedProject.description}
+            </p>
+
+            {/* Divisi */}
+            <div className="bg-gray-800 p-4 rounded-lg">
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                Divisi yang tersedia pada {selectedProject.title}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {selectedProject.divisions.map((division, index) => (
+                  <div
+                    key={index}
+                    className="p-4 bg-gray-700 rounded-md shadow-md hover:bg-gray-600 transition-colors"
+                  >
+                    <h4 className="text-xl font-medium text-white mb-2">
+                      {division.name}
+                    </h4>
+                    <p className="text-gray-300 text-sm">
+                      {division.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </Modal>

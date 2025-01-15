@@ -3,18 +3,33 @@ type Division = {
     description: string;
   };
   
-  type Project = {
+type Project = {
     title: string;
     subtitle: string;
     description: string;
     divisions: Division[];
+    logo: string;
   };
   
-
+const imageUrls = [
+    "/logo/AKADEMIK.png",
+    "/logo/AU.png",
+    "/logo/BISMIT.png",
+    "/logo/HUMAS.png",
+    "/logo/LITBANG.png",
+    "/logo/MEDIA.png",
+    "/logo/PTI.png",
+    "/logo/OR.png",
+    "/logo/POLKESMA.png",
+    "/logo/PSDM.png",
+    "/logo/SB.png",
+    "/logo/SOSMAS.png",
+  ];
 const projects: Project[] = [
     {
       title: "Heroes XI",
       subtitle: "(Hero of Education and Social)",
+      logo: "/logo/SOSMAS.png",
       description:
         "HEROES XI (Hero of Education and Social) adalah sebuah kegiatan bakti sosial yang diselenggarakan oleh mahasiswa/i Fakultas Ilmu Komputer dan Teknologi Informasi (FIKTI) Universitas Gunadarma (UG). Kegiatan ini bertujuan untuk memberikan kontribusi positif kepada masyarakat di wilayah yang menghadapi berbagai permasalahan sosial atau tantangan dalam kehidupan sehari-hari.",
       divisions: [
@@ -29,6 +44,7 @@ const projects: Project[] = [
     {
       title: "TechnoFair 11.1",
       subtitle: "",
+      logo: "/logo/AKADEMIK.png",
       description:
         "TechnoFair adalah program kerja unggulan dari Departemen Akademik BEM FIKTI yang merupakan event IT yang dilaksanakan setiap tahun. Acara ini bertujuan untuk mewadahi mahasiswa FIKTI Universitas Gunadarma dalam menyalurkan minat dan bakat mereka di bidang akademik, khususnya di dunia teknologi dan informatika. TechnoFair juga berfungsi sebagai ajang untuk mengembangkan pengetahuan, keterampilan, serta kreativitas di bidang teknologi melalui berbagai kegiatan yang bermanfaat.",
       divisions: [
@@ -43,6 +59,7 @@ const projects: Project[] = [
     {
       title: "FIKTI Space 3.1",
       subtitle: "",
+      logo: "/logo/OR.png",
       description:
         "FIKTI SPACE (FIKTI Sport & Art Championship) adalah sebuah rangkaian acara yang menggabungkan dua program kerja sebelumnya dari BEM FIKTI Universitas Gunadarma, yaitu FAF (FIKTI Art Festival) dan FOSC (FIKTI Open Sport Championship). Acara ini bertujuan untuk menyatukan kompetisi olahraga dan seni budaya dalam satu event dan dirancang untuk memberikan kesempatan kepada mahasiswa FIKTI menyalurkan bakat dan minat mereka dalam bidang olahraga dan seni, serta untuk memperkuat rasa sportivitas dan kreativitas di kalangan mahasiswa.",
       divisions: [
@@ -60,6 +77,7 @@ const projects: Project[] = [
     {
       title: "Gelar Budaya",
       subtitle: "",
+      logo: "/oprec-volunteer/gelar_budaya.png",
       description:
         "Gelar Budaya adalah program kerja unggulan dari Departemen Olahraga dan Seni Budaya yang diselenggarakan dengan tujuan untuk memberikan ruang bagi mahasiswa Universitas Gunadarma, khususnya di FIKTI, untuk berekspresi dalam bidang seni. Acara ini tidak hanya bertujuan untuk menampilkan berbagai karya seni mahasiswa, tetapi juga menjadi sarana untuk mempererat hubungan antar mahasiswa dengan saling mengenal satu sama lain.",
       divisions: [

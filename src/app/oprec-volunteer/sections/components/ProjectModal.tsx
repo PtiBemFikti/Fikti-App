@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect } from "react";
 import { IoClose, IoCloseCircle } from "react-icons/io5";
 
@@ -31,13 +32,6 @@ export default function Modal({
           animation: "slideUp 1s ease-out",
         }}
       >
-        {/* Logo di tengah bagian atas */}
-        <div className="relative mt-60 max-md:mt-[50rem]">
-          <div className="w-44 h-44 rounded-full bg-gray-300 flex items-center justify-center shadow-lg">
-            <span className="text-2xl text-gray-500">Logo</span>
-          </div>
-        </div>
-
         {/* Konten Modal */}
         <div className="text-white text-center px-8 py-16">{children}</div>
 
