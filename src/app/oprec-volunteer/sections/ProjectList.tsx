@@ -6,6 +6,7 @@ import Modal from "./components/ProjectModal";
 import { FaInfo } from "react-icons/fa";
 import projects from "./components/ProjectsData";
 import Image from "next/image";
+import { IoClose } from "react-icons/io5";
 
 type Division = {
   name: string;
@@ -48,14 +49,14 @@ export default function ProjectList() {
           </span>
         </h1>
       </div>
-      <div className="max-md:overflow-x-auto max-md:whitespace-nowrap px-8 md:px-16 max-md:px-4">
+      <div className="max-md:overflow-x-auto max-md:whitespace-nowrap px-8 md:px-16 max-md:px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 max-md:flex max-md:w-max gap-8 max-md:gap-3">
           {projects.map((project, index) => (
             <div
               key={index}
               className="relative bg-[#111827] rounded-lg mt-20 h-[350px] max-md:w-[350px] pt-20 pb-6 px-6 shadow-lg text-center flex flex-col justify-center items-center"
             >
-              <div className="absolute border-[10px] border-[#FFFFF4] -top-24 left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] rounded-full bg-gray-300 flex items-center justify-center shadow-md">
+              <div className="absolute border-[10px] border-[#FFFFF4] -top-24 left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] rounded-full bg-gray-300 flex items-center justify-center">
                 <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center shadow-lg">
                   <Image
                     src={project.logo}
@@ -86,8 +87,14 @@ export default function ProjectList() {
       </div>
 
       {isModalOpen && selectedProject && (
-        <Modal onClose={closeModal}>
-          <div className="w-full h-full flex flex-col justify-center items-center mt-28">
+        <Modal>
+          <div className="w-full h-full flex flex-col justify-center items-center mt-28 max-md:mt-2">
+            <button
+              onClick={closeModal}
+              className="self-end text-[#111827] bg-gray-400 hover:bg-gray-500 rounded-full p-2 shadow-md transition-colors mt-8"
+            >
+              <IoClose />
+            </button>
             <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center shadow-lg">
               <Image
                 src={selectedProject.logo}
@@ -97,6 +104,7 @@ export default function ProjectList() {
                 className="rounded-full object-cover"
               />
             </div>
+
             {/* Judul dan Subtitle */}
             <h2 className="text-3xl font-bold text-white mb-2">
               {selectedProject.title}

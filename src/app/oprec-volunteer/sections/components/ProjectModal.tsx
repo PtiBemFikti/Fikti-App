@@ -2,13 +2,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { IoClose, IoCloseCircle } from "react-icons/io5";
 
-export default function Modal({
-  children,
-  onClose,
-}: {
-  children: React.ReactNode;
-  onClose: () => void;
-}) {
+export default function Modal({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     // Disable scrolling saat modal muncul
     document.body.style.overflow = "hidden";
@@ -36,18 +30,6 @@ export default function Modal({
         <div className="text-white text-center px-8 py-16">{children}</div>
 
         {/* Tombol Close */}
-        <button
-          className="absolute top-10 right-12 text-white text-2xl font-bold"
-          onClick={() => {
-            document.body.style.overflow = "auto"; // Pastikan scrollbar muncul kembali
-            onClose();
-          }}
-          style={{
-            animation: "fadeOut 0.3s ease-in",
-          }}
-        >
-          <IoCloseCircle size={40} />
-        </button>
       </div>
     </div>
   );
