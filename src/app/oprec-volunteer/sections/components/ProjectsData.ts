@@ -77,7 +77,7 @@ const projects: Project[] = [
     {
       title: "Gelar Budaya",
       subtitle: "",
-      logo: "/oprec-volunteer/gelar_budaya.png",
+      logo: "/logo/gelar_budaya.png",
       description:
         "Gelar Budaya adalah program kerja unggulan dari Departemen Olahraga dan Seni Budaya yang diselenggarakan dengan tujuan untuk memberikan ruang bagi mahasiswa Universitas Gunadarma, khususnya di FIKTI, untuk berekspresi dalam bidang seni. Acara ini tidak hanya bertujuan untuk menampilkan berbagai karya seni mahasiswa, tetapi juga menjadi sarana untuk mempererat hubungan antar mahasiswa dengan saling mengenal satu sama lain.",
       divisions: [
