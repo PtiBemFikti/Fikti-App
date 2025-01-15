@@ -4,7 +4,7 @@ export default function CoreValue() {
   return (
     <section
       id="core-value"
-      className="relative z-10 max-md:rounded-none w-screen h-fit section-home text-white max-md:py-10"
+      className="relative z-10 pb-20 max-md:rounded-none w-screen h-fit section-about text-white max-md:py-10"
     >
       <div className="flex flex-col items-center justify-center px-6">
         <h1 className="text-[4rem] mb-16 font-bold max-md:text-3xl">
@@ -12,7 +12,7 @@ export default function CoreValue() {
         </h1>
         <div className="w-[80%] h-fit flex justify-between items-center max-md:flex-col max-md:w-full max-md:gap-12">
           {/* Core Value Item 1 */}
-          <div className="flex w-[300px] text-center h-[600px] bg-black/70 rounded-full flex-col justify-start items-center max-md:w-[200px] max-md:h-[400px] max-md:py-8">
+          <div className="flex w-[300px] text-center h-[600px] bg-white/30 rounded-full flex-col justify-start items-center max-md:w-[200px] max-md:h-[400px] max-md:py-8">
             <div className="w-[300px] h-[300px] flex items-center justify-center bg-white rounded-full max-md:w-[200px] max-md:h-[200px]">
               <Image
                 src="/main/akrab.png"
@@ -29,7 +29,7 @@ export default function CoreValue() {
           </div>
 
           {/* Core Value Item 2 */}
-          <div className="flex w-[300px] text-center h-[600px] bg-black/70 rounded-full flex-col justify-start items-center max-md:w-[200px] max-md:h-[400px] max-md:py-8">
+          <div className="flex w-[300px] text-center h-[600px] bg-white/30 rounded-full flex-col justify-start items-center max-md:w-[200px] max-md:h-[400px] max-md:py-8">
             <div className="w-[300px] h-[300px] flex items-center justify-center bg-white rounded-full max-md:w-[200px] max-md:h-[200px]">
               <Image
                 src="/main/adfokatif.png"
@@ -48,7 +48,7 @@ export default function CoreValue() {
           </div>
 
           {/* Core Value Item 3 */}
-          <div className="flex w-[300px] text-center h-[600px] bg-black/70 rounded-full flex-col justify-start items-center max-md:w-[200px] max-md:h-[400px] max-md:py-8">
+          <div className="flex w-[300px] text-center h-[600px] bg-white/30 rounded-full flex-col justify-start items-center max-md:w-[200px] max-md:h-[400px] max-md:py-8">
             <div className="w-[300px] h-[300px] flex items-center justify-center bg-white rounded-full max-md:w-[200px] max-md:h-[200px]">
               <Image
                 src="/main/supportif.png"
