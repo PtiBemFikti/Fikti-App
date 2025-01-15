@@ -11,7 +11,7 @@ import { MonumentExtendedRegular } from "@/styles/font";
 
 const OprecFooter: React.FC = () => {
   return (
-    <footer className="relative max-md:h-fit flex flex-col justify-end bg-[#0c0b1d] h-screen border-t-2 border-slate-700 p-4 bottom-0 overflow-x-hidden">
+    <footer className="relative max-md:h-fit flex flex-col py-10 justify-end bg-[#0c0b1d] h-fit border-t-2 border-slate-700 p-4 bottom-0 overflow-x-hidden">
       <h1
         className={`${MonumentExtendedRegular.className} max-md:text-[1.3rem] max-md:mx-5 max-md:my-7 relative z-20 text-center text-[5rem] px-5 py-7 mx-40 my-14 border-2 border-white italic font-Bricolage_Grotesque hover:shadow-lg hover:shadow-white hover:bg-white hover:text-black transition-all duration-500 rounded-2xl cursor-pointer`}
       >
