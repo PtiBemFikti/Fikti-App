@@ -18,7 +18,7 @@ export default function HeroSectionOprec() {
       }}
     >
       <div className="pl-10 flex flex-col items-start max-md:items-center text-left w-1/2 animate-fade-in max-md:pl-0 max-md:w-full max-md:text-center max-md:justify-center">
-        <Link href="/" className="max-md:hidden flex">
+        <Link href="/" className="max-md:hidden block">
           <IoMdShareAlt
             size={60}
             className="hover:fill-gray-400 transition-all duration-250 rotate-180"
