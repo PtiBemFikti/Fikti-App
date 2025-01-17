@@ -17,14 +17,22 @@ export default function HeroSectionOprec() {
         backgroundRepeat: "no-repeat",
       }}
     >
+      <Link
+        href="/"
+        className="hidden max-md:flex max-md:absolute max-md:top-24 max-md:left-5"
+      >
+        <IoMdShareAlt
+          size={40}
+          className="hover:fill-gray-400 transition-all duration-250 rotate-180"
+        />
+      </Link>
       <div className="pl-10 flex flex-col items-start max-md:items-center text-left w-1/2 animate-fade-in max-md:pl-0 max-md:w-full max-md:text-center max-md:justify-center">
-        <Link href="/" className="max-md:hidden block">
+        <Link href="/" className="max-md:hidden">
           <IoMdShareAlt
             size={60}
             className="hover:fill-gray-400 transition-all duration-250 rotate-180"
           />
         </Link>
-
         <p className="text-2xl font-semibold text-blue-500 max-md:text-lg">
           Ayo Bergabung dalam
         </p>
