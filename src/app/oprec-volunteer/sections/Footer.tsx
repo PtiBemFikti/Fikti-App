@@ -18,7 +18,7 @@ const OprecFooter: React.FC = () => {
         KABINET ADIRAKA
       </h1>
       <div
-        className="flex flex-col md:flex-row items-start self-end justify-evenly relative z-20
+        className="flex flex-col md:flex-row items-start self-end justify-between mx-40 max-md:mx-1 relative z-20
       "
       >
         <div className="flex flex-col gap-4 w-[13%] max-md:w-full">
@@ -27,7 +27,7 @@ const OprecFooter: React.FC = () => {
             href="mailto:bemfikti.ug@gmail.com"
             className="flex items-center gap-2 text-white hover:text-purpleText"
           >
-            <CiMail size={25} />
+            <CiMail size={25} className="flex-shrink-0" />
             <p className="ml-2">bemfikti.ug@gmail.com</p>
           </Link>
 
@@ -86,7 +86,7 @@ const OprecFooter: React.FC = () => {
             </Link>
           </div>
         </div>
-
+        {/* 
         <div className="flex self-end gap-4 max-md:order-1 max-md:hidden">
           <Image
             src="/oprec-volunteer/bg-footer.png"
@@ -95,7 +95,7 @@ const OprecFooter: React.FC = () => {
             height={800}
             className="opacity-40 bg-cover max-md:w-20 max-md:h-20"
           />
-        </div>
+        </div> */}
         <div className="flex flex-col gap-5 w-[13%] max-md:w-full">
           <div className="flex flex-col gap-3 ">
             <h1 className="text-xl font-bold">Join us</h1>
@@ -125,7 +125,7 @@ const OprecFooter: React.FC = () => {
                 alt="Logo"
                 width={200}
                 height={200}
-                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 w-10 h-14"
+                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 w-10 h-12"
               />
               <Image
                 src="/LOGO ADIRAKA ROUND.png"
@@ -140,7 +140,7 @@ const OprecFooter: React.FC = () => {
       </div>
       <div className="container mt-10  mx-auto relative z-20">
         <p className="text-center border-t-2 pt-3 border-gray-500 text-white text-xs md:text-base font-normal">
-          Copyright © 2024 BEM FIKTI UG - All rights reserved.
+          Copyright © 2025 BEM FIKTI UG & Made with by BIRO PTI
         </p>
       </div>
     </footer>
