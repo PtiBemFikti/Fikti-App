@@ -18,10 +18,10 @@ const OprecFooter: React.FC = () => {
         KABINET ADIRAKA
       </h1>
       <div
-        className="flex flex-col md:flex-row items-start self-end justify-between mx-40 max-md:mx-1 relative z-20
+        className="flex flex-col md:flex-row items-start self-end justify-evenly relative z-20
       "
       >
-        <div className="flex flex-col gap-4 w-[13%] max-md:w-full">
+        <div className="flex flex-col gap-4 w-[14%] max-md:w-full">
           <h1 className="text-xl">Contact Info</h1>
           <Link
             href="mailto:bemfikti.ug@gmail.com"
@@ -38,7 +38,9 @@ const OprecFooter: React.FC = () => {
             rel="noopener noreferrer" // Untuk keamanan
           >
             <FaPhone size={25} />
-            <p className="ml-2">+62 857-2446-7159</p>
+            <p className="ml-2">
+              - Tika (081383700031) <br />- Gungde (0881037387241)
+            </p>
           </Link>
 
           <Link
@@ -86,7 +88,7 @@ const OprecFooter: React.FC = () => {
             </Link>
           </div>
         </div>
-        {/* 
+
         <div className="flex self-end gap-4 max-md:order-1 max-md:hidden">
           <Image
             src="/oprec-volunteer/bg-footer.png"
@@ -95,16 +97,16 @@ const OprecFooter: React.FC = () => {
             height={800}
             className="opacity-40 bg-cover max-md:w-20 max-md:h-20"
           />
-        </div> */}
-        <div className="flex flex-col gap-5 w-[13%] max-md:w-full">
+        </div>
+        <div className="flex flex-col gap-5 w-[15%] max-md:w-full">
           <div className="flex flex-col gap-3 ">
             <h1 className="text-xl font-bold">Join us</h1>
             <p>
-              Kami mengajak kamu untuk bergabung dengan kami dan membuat
-              perbedaan. Daftarkan diri kamu sekarang juga!
+              Kami mengajak Sobat FIKTI untuk bergabung dengan kami dan membuat
+              perbedaan. Daftarkan diri Sobat FIKTI sekarang juga!
             </p>
             <p>
-              Kamu akan dialihkan ke link formulir pendaftaran yang kami
+              Sobat FIKTI akan dialihkan ke link formulir pendaftaran yang kami
               sediakan
             </p>
             <Link href="#">

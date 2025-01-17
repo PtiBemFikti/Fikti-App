@@ -30,21 +30,21 @@ export default function Requirement() {
       <div className="flex mb-4 items-center justify-around gap-20 max-md:flex-col max-md:gap-12">
         {/* Persyaratan Kiri */}
         <div className="flex flex-col text-center h-fit w-[320px] gap-16 max-md:w-full max-md:gap-8">
-          <div className="flex flex-col items-center justify-center max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
+          <div className="flex flex-col items-center h-[150px] gap-2 justify-start max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
             <FaUserGraduate size={40} className="max-md:text-[2rem]" />
             <p className="text-base font-semibold max-md:text-md max-md:px-5 max-md:mt-3">
               Mahasiswa Aktif FIKTI Universitas Gunadarma tingkat 1 dan tingkat
               2.
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center mr-20 max-md:mr-0 max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
+          <div className="flex flex-col items-center h-[150px] gap-2 justify-start mr-20 max-md:mr-0 max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
             <FaHandshake size={40} className="max-md:text-[2rem]" />
             <p className="text-base font-semibold max-md:text-md max-md:px-5 max-md:mt-3">
               Memiliki komitmen tinggi dalam menjadi bagian dari kepanitiaan
               acara.
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
+          <div className="flex flex-col items-center h-[150px] gap-2 justify-start max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
             <FaClipboardCheck size={40} className="max-md:text-[2rem]" />
             <p className="text-base font-semibold max-md:text-md max-md:px-5 max-md:mt-3">
               Bertanggung jawab atas amanah yang diberikan.
@@ -61,20 +61,20 @@ export default function Requirement() {
 
         {/* Persyaratan Kanan */}
         <div className="flex flex-col text-center h-fit w-[320px] gap-16 max-md:w-full max-md:gap-8">
-          <div className="flex flex-col items-center justify-center max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
+          <div className="flex flex-col items-center h-[150px] gap-2 justify-start max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
             <FaUsers size={40} className="max-md:text-[2rem]" />
             <p className="text-base font-semibold max-md:text-md max-md:px-5 max-md:mt-3">
               Mampu bekerja sama dalam tim, mengatur waktu, dan prioritas dengan
               baik.
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center ml-20 max-md:ml-0 max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
+          <div className="flex flex-col h-[150px] gap-2 items-center justify-start ml-20 max-md:ml-0 max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
             <FaFileAlt size={40} className="max-md:text-[2rem]" />
             <p className="text-base font-semibold max-md:text-md max-md:px-5 max-md:mt-3">
               Mengisi form pendaftaran yang tertera di website oprec Volunteer.
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
+          <div className="flex flex-col items-center h-[150px] gap-2 justify-start max-md:bg-[#111827] max-md:text-white py-3 max-md:shadow-md max-md:rounded-2xl">
             <FaCommentDots size={40} className="max-md:text-[2rem]" />
             <p className="text-base font-semibold max-md:text-md max-md:px-5 max-md:mt-3">
               Mengikuti rangkaian tes wawancara.

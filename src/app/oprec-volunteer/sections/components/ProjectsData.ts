@@ -27,8 +27,8 @@ const imageUrls = [
   ];
 const projects: Project[] = [
     {
-      title: "Heroes XI",
-      subtitle: "(Hero of Education and Social)",
+      title: "HEROES XI",
+      subtitle: "",
       logo: "/logo/SOSMAS.png",
       description:
         "HEROES XI (Hero of Education and Social) adalah sebuah kegiatan bakti sosial yang diselenggarakan oleh mahasiswa/i Fakultas Ilmu Komputer dan Teknologi Informasi (FIKTI) Universitas Gunadarma (UG). Kegiatan ini bertujuan untuk memberikan kontribusi positif kepada masyarakat di wilayah yang menghadapi berbagai permasalahan sosial atau tantangan dalam kehidupan sehari-hari.",
@@ -42,7 +42,7 @@ const projects: Project[] = [
       ],
     },
     {
-      title: "TechnoFair 11.1",
+      title: "TechnoFair 12.0",
       subtitle: "",
       logo: "/logo/AKADEMIK.png",
       description:
@@ -57,7 +57,7 @@ const projects: Project[] = [
       ],
     },
     {
-      title: "FIKTI Space 3.1",
+      title: " FIKTI Space 4.0",
       subtitle: "",
       logo: "/logo/OR.png",
       description:
