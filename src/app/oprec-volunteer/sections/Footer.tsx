@@ -80,7 +80,7 @@ const OprecFooter: React.FC = () => {
               />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/bem-fikti-ug-b349921b1?original_referer=https%3A%2F%2Fbemfikti-gunadarma.web.id%2F"
+              href="https://www.linkedin.com/company/bemfikti/"
               target="_blank"
             >
               <FaLinkedin

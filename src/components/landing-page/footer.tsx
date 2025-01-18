@@ -31,17 +31,17 @@ const Footer: React.FC = () => {
           <div className="flex flex-col gap-3">
             <h1 className="text-xl font-bold">Quick Links</h1>
             <Link
-              href="/about"
+              href="#about"
               className="group relative text-gray-400 hover:text-purpleText"
             >
               About Us
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="group relative text-gray-400 hover:text-purpleText"
             >
               Organizational Structure
-            </Link>
+            </Link> */}
             <Link
               href="#"
               className="group relative text-gray-400 hover:text-purpleText"
@@ -139,21 +139,24 @@ const Footer: React.FC = () => {
         <div className="flex flex-col gap-4 w-[13%] max-md:w-full">
           <h1 className="text-xl">Contact Info</h1>
           <Link
-            href="/"
+            href="mailto:bemfikti.ug@gmail.com"
             className="flex items-center gap-2 text-gray-400 hover:text-purpleText"
           >
             <CiMail size={25} />
             <p className="ml-2">bemfikti.ug@gmail.com</p>
           </Link>
+
           <Link
-            href="/"
+            href="https://wa.me/6285150935519"
             className="flex items-center gap-2 text-gray-400 hover:text-purpleText"
           >
             <FaPhone size={25} />
-            <p className="ml-2">+62 877-8524-7632</p>
+            <p className="ml-2">+62 851-5093-5519</p>
           </Link>
           <Link
-            href="/"
+            href="https://www.google.com/maps/place/Universitas+Gunadarma/@-6.363234,106.831725,17z" // Ganti dengan link lokasi spesifik
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-start gap-2 text-gray-400 hover:text-purpleText"
           >
             <FaLocationDot size={25} className="flex-shrink-0" />

@@ -103,9 +103,8 @@ const Navbar: React.FC = () => {
         </div>
 
         <Link
-          className="
-            hidden md:flex py-2 px-3 border-white border-2 hover:bg-orange-600 hover:duration-300 hover:end-10 rounded-full"
-          href="https://bit.ly/HotlineFIKTI"
+          className="hidden md:flex py-2 px-3 border-white border-2 hover:bg-orange-600 hover:duration-300 hover:end-10 rounded-full"
+          href="https://wa.me/6285150935519"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
