@@ -165,12 +165,12 @@ const Navbar: React.FC = () => {
           <Link className="hover:text-purpleText text-center" href="#">
             Tentang
           </Link>
-          <Link
+          {/* <Link
             className="hover:text-purpleText text-center"
             href="/departemen"
           >
             Struktur Organisasi
-          </Link>
+          </Link> */}
           <div className="flex justify-center items-center">
             <DropdownMenuNav />
           </div>
