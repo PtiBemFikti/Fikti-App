@@ -175,7 +175,7 @@ const Navbar: React.FC = () => {
           </div>
           <Link
             className="flex  py-2 px-3 mx-20 justify-center border-2 border-gray-400 hover:bg-orange-600 hover:duration-300 hover:end-10 rounded-full gap-2"
-            href="https://bit.ly/HotlineFIKTI"
+            href="https://wa.me/6285150935519"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
