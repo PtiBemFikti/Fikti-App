@@ -21,9 +21,11 @@ export default function Information() {
           </span>
         </h1>
       </div>
-      <button className="bg-[#10B981] hover:bg-[#059669] text-white text-3xl max-md:text-xl font-semibold px-16 max-md:px-8 py-6 max-md:py-4 rounded-full hover:shadow-[0px_0px_20px_5px] hover:shadow-[#10B981] transition-all">
-        Apply Now!
-      </button>
+      <Link href="https://bit.ly/OpenRegistRecruitmentVolunteer">
+        <button className="bg-[#10B981] hover:bg-[#059669] text-white text-3xl max-md:text-xl font-semibold px-16 max-md:px-8 py-6 max-md:py-4 rounded-full hover:shadow-[0px_0px_20px_5px] hover:shadow-[#10B981] transition-all">
+          Apply Now!
+        </button>
+      </Link>
 
       {/* Additional Information */}
       <div className="text-center mt-16 max-md:mt-10 max-w-3xl">
