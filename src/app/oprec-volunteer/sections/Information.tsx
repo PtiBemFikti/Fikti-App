@@ -1,6 +1,6 @@
 import { MonumentExtendedRegular } from "@/styles/font";
 import Link from "next/link";
-import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Information() {
   return (
@@ -31,22 +31,24 @@ export default function Information() {
           Bingung atau ingin tahu lebih banyak informasi? Jangan ragu untuk
           menghubungi kami! Kami selalu siap membantu menjawab pertanyaanmu.
         </p>
-        <div className="flex items-center justify-center gap-4 mt-10 max-md:mt-6 max-md:gap-4">
+        <div className="flex items-center justify-center gap-4 mt-10 max-md:mt-6 max-md:gap-4 max-md:px-5">
           <Link
-            href="https://wa.me/6285724467159?text=Halo,%20saya%20ingin%20bertanya%20seputar%20oprec%20volunteer."
+            href="https://wa.me/6281383700031?text=Halo,%20saya%20ingin%20bertanya%20seputar%20oprec%20volunteer"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-xl max-md:text-lg font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
+            className="flex items-center justify-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-xl w-[200px] max-md:w-[170px] max-md:text-base font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
           >
-            <AiOutlinePhone size={24} />
-            Hotline
+            <FaWhatsapp size={24} />
+            CP. Tika
           </Link>
           <Link
-            href="mailto:bemfikti.ug@gmail.com"
-            className="flex items-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-xl max-md:text-lg font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
+            href="https://wa.me/62881037387241?text=Halo,%20saya%20ingin%20bertanya%20seputar%20oprec%20volunteer."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-xl w-[200px] max-md:w-[170px] max-md:text-base font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
           >
-            <AiOutlineMail size={24} />
-            Email Us
+            <FaWhatsapp size={24} />
+            CP. Gungde
           </Link>
         </div>
       </div>

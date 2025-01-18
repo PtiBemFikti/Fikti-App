@@ -31,17 +31,19 @@ const OprecFooter: React.FC = () => {
             <p className="ml-2">bemfikti.ug@gmail.com</p>
           </Link>
 
-          <Link
-            href="https://wa.me/6285724467159?text=Halo,%20saya%20ingin%20bertanya%20seputar%20oprec%20volunteer."
-            className="flex items-center gap-2 text-white hover:text-purpleText"
-            target="_blank"
-            rel="noopener noreferrer" // Untuk keamanan
-          >
-            <FaPhone size={25} />
+          <div className="flex items-center gap-2 text-white group">
+            <FaPhone size={25} className="group" />
             <p className="ml-2">
-              - Tika (081383700031) <br />- Gungde (0881037387241)
+              <a
+                href="https://wa.me/6285150935519"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline hover:text-purpleText"
+              >
+                +62 851-5093-5519
+              </a>
             </p>
-          </Link>
+          </div>
 
           <Link
             href="https://www.google.com/maps?q=Pusat+Kegiatan+Mahasiswa+(PUSGIWA)+Gedung+4+Lantai+3+Kampus+E+Universitas+Gunadarma,+Jl.+Komjen+Pol.+M.+Jasin+Kelapa+Dua+Depok"
@@ -109,32 +111,34 @@ const OprecFooter: React.FC = () => {
               Sobat FIKTI akan dialihkan ke link formulir pendaftaran yang kami
               sediakan
             </p>
-            <Link href="#">
+            <Link href="https://bit.ly/OpenRegistRecruitmentVolunteer">
               <button className="flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-green-500 px-16 py-4 transition-all duration-200 hover:shadow-[0px_0px_10px_2px] group shadow-white bg-green-500 rounded-lg font-bold mt-4">
                 Join us
               </button>
             </Link>
             <div className="flex items-center gap-4">
-              <Image
-                src="/logo-universitas-gunadarma.png"
-                alt="Logo"
-                width={200}
-                height={200}
-                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 w-10 h-10"
-              />
-              <Image
-                src="/logo-fikti.png"
-                alt="Logo"
-                width={200}
-                height={200}
-                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 w-10 h-12"
-              />
+              <div className="w-12 h-12 p-2 bg-white rounded-full flex items-center justify-center">
+                <Image
+                  src="/logo-universitas-gunadarma.png"
+                  alt="Logo"
+                  width={200}
+                  height={200}
+                />
+              </div>
+              <div className="w-12 h-12 p-[0.6rem] bg-white rounded-full flex items-center justify-center">
+                <Image
+                  src="/logo-fikti.png"
+                  alt="Logo"
+                  width={200}
+                  height={200}
+                />
+              </div>
               <Image
                 src="/LOGO ADIRAKA ROUND.png"
                 alt="Logo"
                 width={200}
                 height={200}
-                className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 w-10 h-10"
+                className="bg-cover w-12 h-12"
               />
             </div>
           </div>

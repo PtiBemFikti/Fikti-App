@@ -29,7 +29,7 @@ const projects: Project[] = [
     {
       title: "HEROES XI",
       subtitle: "",
-      logo: "/logo/SOSMAS.png",
+      logo: "/oprec-volunteer/logo-heroes-xi.png",
       description:
         "HEROES XI (Hero of Education and Social) adalah sebuah kegiatan bakti sosial yang diselenggarakan oleh mahasiswa/i Fakultas Ilmu Komputer dan Teknologi Informasi (FIKTI) Universitas Gunadarma (UG). Kegiatan ini bertujuan untuk memberikan kontribusi positif kepada masyarakat di wilayah yang menghadapi berbagai permasalahan sosial atau tantangan dalam kehidupan sehari-hari.",
       divisions: [
@@ -44,7 +44,7 @@ const projects: Project[] = [
     {
       title: "TechnoFair 12.0",
       subtitle: "",
-      logo: "/logo/AKADEMIK.png",
+      logo: "/oprec-volunteer/tf-11.png",
       description:
         "TechnoFair adalah program kerja unggulan dari Departemen Akademik BEM FIKTI yang merupakan event IT yang dilaksanakan setiap tahun. Acara ini bertujuan untuk mewadahi mahasiswa FIKTI Universitas Gunadarma dalam menyalurkan minat dan bakat mereka di bidang akademik, khususnya di dunia teknologi dan informatika. TechnoFair juga berfungsi sebagai ajang untuk mengembangkan pengetahuan, keterampilan, serta kreativitas di bidang teknologi melalui berbagai kegiatan yang bermanfaat.",
       divisions: [
@@ -59,7 +59,7 @@ const projects: Project[] = [
     {
       title: " FIKTI Space 4.0",
       subtitle: "",
-      logo: "/logo/OR.png",
+      logo: "/oprec-volunteer/FINAL LOGO FS-03.png",
       description:
         "FIKTI SPACE (FIKTI Sport & Art Championship) adalah sebuah rangkaian acara yang menggabungkan dua program kerja sebelumnya dari BEM FIKTI Universitas Gunadarma, yaitu FAF (FIKTI Art Festival) dan FOSC (FIKTI Open Sport Championship). Acara ini bertujuan untuk menyatukan kompetisi olahraga dan seni budaya dalam satu event dan dirancang untuk memberikan kesempatan kepada mahasiswa FIKTI menyalurkan bakat dan minat mereka dalam bidang olahraga dan seni, serta untuk memperkuat rasa sportivitas dan kreativitas di kalangan mahasiswa.",
       divisions: [

@@ -55,7 +55,7 @@ export default function HeroSectionOprec() {
           FIKTI UG untuk berkontribusi dan menciptakan dampak nyata dalam
           berbagai kegiatan yang diselenggarakan oleh BEM FIKTI UG.
         </p>
-        <Link href="#">
+        <Link href="https://bit.ly/OpenRegistRecruitmentVolunteer">
           <button className="flex items-center justify-center max-md:self-center gap-3 bg-gradient-to-br from-blue-500 to-green-500 px-10 py-4 transition-all duration-200 hover:shadow-[0px_0px_10px_2px] group shadow-white bg-green-500 rounded-lg font-bold mt-8 max-md:text-sm">
             Apply Now
             <FaArrowRight className="transition-all duration-200 group-hover:-rotate-45" />

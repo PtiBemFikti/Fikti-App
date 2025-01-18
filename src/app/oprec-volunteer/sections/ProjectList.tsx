@@ -63,7 +63,7 @@ export default function ProjectList() {
                     alt={`${project.title} Logo`}
                     width={176}
                     height={176}
-                    className="rounded-full object-cover"
+                    className="rounded-full aspect-square object-cover"
                   />
                 </div>
               </div>
