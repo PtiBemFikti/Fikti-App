@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex flex-col justify-center items-center self-end gap-4 max-md:order-1 max-md:self-center">
           <div className="flex justify-center items-center gap-4 border-b-1 pb-4">
-            <div className="w-24 h-24 max-md:w-20 max-md:h-20 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
+            <div className="w-24 h-24 max-md:w-24 max-md:h-24 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
               <Image
                 src="/logo-universitas-gunadarma.png"
                 alt="Logo Universitas Gunadarma"
@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
                 "
               />
             </div>
-            <div className="w-24 h-24 max-md:w-20 max-md:h-fit bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
+            <div className="w-24 h-24 max-md:w-24 max-md:h-24 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
               <Image
                 src="/logo-fikti.png"
                 alt="Logo FIKTI"
