@@ -29,12 +29,12 @@ const Footer: React.FC = () => {
       >
         <div className="flex flex-col gap-5 w-[13%] max-md:w-full">
           <div className="flex flex-col gap-3">
-            <h1 className="text-xl font-bold">Quick Links</h1>
+            <h1 className="text-xl font-bold">Tautan Cepat</h1>
             <Link
               href="#about"
               className="group relative text-gray-400 hover:text-purpleText"
             >
-              About Us
+              Tentang Kami
             </Link>
             {/* <Link
               href="#"
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
               href="#"
               className="group relative text-gray-400 hover:text-purpleText"
             >
-              Our Projects
+              Proyek Kami
             </Link>
             <Link
               href="https://www.instagram.com/fikti.careercenter/"
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex flex-col  gap-4 ">
-            <h1 className="text-xl font-">Our Social Media</h1>
+            <h1 className="text-xl font-">Sosial Media Kami</h1>
             <div className="space-y-4">
               <Link
                 href="https://www.instagram.com/ug_bemfikti/"
@@ -109,35 +109,42 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex flex-col justify-center items-center self-end gap-4 max-md:order-1 max-md:self-center">
           <div className="flex justify-center items-center gap-4 border-b-1 pb-4">
-            <Image
-              src="/logo-universitas-gunadarma.png"
-              alt="Logo"
-              width={100}
-              height={100}
-              className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 max-md:w-20 max-md:h-20"
-            />
-            <Image
-              src="/logo-fikti.png"
-              alt="Logo"
-              width={100}
-              height={100}
-              className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 max-md:w-20 max-md:h-24"
-            />
+            <div className="w-24 h-24 max-md:w-20 max-md:h-20 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
+              <Image
+                src="/logo-universitas-gunadarma.png"
+                alt="Logo Universitas Gunadarma"
+                width={300}
+                height={300}
+                className="bg-cover h-16 w-16
+                "
+              />
+            </div>
+            <div className="w-24 h-24 max-md:w-20 max-md:h-fit bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
+              <Image
+                src="/logo-fikti.png"
+                alt="Logo FIKTI"
+                width={300}
+                height={300}
+                className="bg-cover h-fit w-14
+                "
+              />
+            </div>
             <Image
               src="/LOGO ADIRAKA ROUND.png"
-              alt="Logo"
-              width={100}
-              height={100}
-              className="cursor-pointer bg-cover hover:scale-110 transition-all duration-300 max-md:w-20 max-md:h-20"
+              alt="Logo Kabinet Adiraka"
+              width={300}
+              height={300}
+              className="bg-cover h-24 w-24 cursor-pointer hover:scale-110 transition-all duration-300"
             />
           </div>
+
           <h1 className="text-lg text-center">
             Badan Eksekutif Mahasiswa <br />
             Fakultas Ilmu Komputer dan Teknologi Informasi
           </h1>
         </div>
         <div className="flex flex-col gap-4 w-[13%] max-md:w-full">
-          <h1 className="text-xl">Contact Info</h1>
+          <h1 className="text-xl">Info Kontak</h1>
           <Link
             href="mailto:bemfikti.ug@gmail.com"
             className="flex items-center gap-2 text-gray-400 hover:text-purpleText"

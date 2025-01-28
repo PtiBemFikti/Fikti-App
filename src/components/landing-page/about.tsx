@@ -16,7 +16,7 @@ export default function AboutPage() {
       <div className="flex flex-col items-center justify-center px-6 max-md:px-4">
         {/* Title */}
         <h1 className="relative text-[4rem] max-md:text-[3rem] mb-20 font-bold text-center text-white drop-shadow-lg">
-          About Us
+          Tentang Kami
           <span className="absolute bottom-[-5px] left-1/2 transform -translate-x-1/2 h-1 w-[80%] bg-purple-500 rounded-md" />
         </h1>
 
@@ -32,7 +32,7 @@ export default function AboutPage() {
           <div className="flex flex-col text-left w-[50%] max-md:w-full">
             {/* Vision */}
             <h2 className="text-[3rem] max-md:text-[2rem] max-md:text-center font-bold mb-6">
-              Our Vision
+              Visi Kami
             </h2>
             <p className="text-[1.5rem] max-md:text-[1rem] max-md:text-center leading-relaxed mb-8">
               Mewujudkan BEM FIKTI UG sebagai wadah yang akrab, informatif,
@@ -43,7 +43,7 @@ export default function AboutPage() {
         </div>
         {/* Mission Section */}
         <h2 className="text-[3rem] max-md:text-[2rem] font-bold mt-16 mb-8 text-center">
-          Our Mission
+          Misi Kami
         </h2>
         <div className="flex flex-wrap gap-8 justify-center px-6 max-md:px-4">
           {/* Mission Cards */}

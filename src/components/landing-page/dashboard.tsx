@@ -35,18 +35,19 @@ export default function HeroSection() {
         {/* Typography */}
         <div className="lg:w-1/2 flex flex-col items-center lg:items-start animate-fade-in">
           <h1 className="text-white text-6xl max-md:text-3xl font-bold uppercase tracking-wide leading-tight">
-            Welcome to <br />
+            Selamat Datang di <br />
             <span className="text-white">BEM FIKTI UG 2024</span>
           </h1>
           <p className="text-gray-300 mt-6 max-md:mt-3 text-lg max-md:text-sm leading-relaxed font-bold">
-            BEM FIKTI UG is a student organization that runs an executive
-            function in the Faculty of Computer Science and Information
-            Technology, Universitas Gunadarma. We aim to be active, responsive,
-            and constructive through various actions, devotions, and services.
+            BEM FIKTI UG adalah organisasi mahasiswa yang menjalankan fungsi
+            eksekutif di Fakultas Ilmu Komputer dan Teknologi Informasi,
+            Universitas Gunadarma. Kami bertujuan untuk menjadi aktif,
+            responsif, dan konstruktif melalui berbagai aksi, pengabdian, dan
+            layanan.
           </p>
-          <Link href="#">
+          <Link href="#about">
             <button className="mt-4 mb-8 max-md:px-5 max-md:py-2 max-md:text-sm px-7 py-4 border border-white hover:bg-white hover:text-black hover:shadow-md hover:shadow-white rounded-xl text-white font-bold transition-all duration-300">
-              Discover More
+              Temukan Lebih Banyak
             </button>
           </Link>
         </div>

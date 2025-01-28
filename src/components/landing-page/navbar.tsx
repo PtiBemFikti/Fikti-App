@@ -80,14 +80,14 @@ const Navbar: React.FC = () => {
             className="relative block group hover:text-purpleText duration-300 py-2"
             href="/"
           >
-            Home
+            Beranda
             <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
           </Link>
           <Link
             className="relative block group hover:text-purpleText duration-300 py-2"
             href="#"
           >
-            About
+            Tentang
             <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
           </Link>
           {/* <Link

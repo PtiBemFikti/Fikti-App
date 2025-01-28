@@ -9,7 +9,7 @@ export default function CoreValue() {
       <div className="flex flex-col items-center justify-center px-6">
         {/* Title */}
         <h1 className="relative text-[4rem] max-md:text-[3rem] mb-20 font-bold text-center text-white drop-shadow-lg">
-          Core Value
+          Nilai Inti
           <span className="absolute bottom-[-5px] left-1/2 transform -translate-x-1/2 h-1 w-[80%] bg-purple-500 rounded-md" />
         </h1>
 
