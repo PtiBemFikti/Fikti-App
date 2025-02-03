@@ -3,6 +3,8 @@ import AccordionCard from "./AccordionCard";
 
 export default function FaqPage() {
   return (
+    // bg-gradient-to-r from-[#3F3381] from-[31.41%] via-[#B07FD6] via-[65.27%] to-[#B07FD6] to-[96.84%]
+    // itu buat gradient nanti
     <div className="bg-[#25243A]">
       {/* Dekstop */}
       <div className="md:block hidden">

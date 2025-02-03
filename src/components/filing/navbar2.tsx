@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { circleAmolens } from "@/styles/font";
 
-const Navbar: React.FC = () => {
+const Navbar2: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
   const pathname = usePathname();
@@ -39,35 +39,31 @@ const Navbar: React.FC = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-white p-4 md:px-10 sticky top-0 z-50"
+      className="bg-[#25243A] p-4 md:px-10 sticky top-0 z-50"
     >
       <div className="container mx-auto flex justify-between items-center">
-
-        {/* link */}
-        <div className="hidden md:flex md:gap-10">
+        <div className="hidden md:flex md:gap-10 space-x-4 ml-96">
           <Link
-            className="block text-lg text-black hover:text-purpleText duration-300 py-2"
+            className="block text-lg text-white hover:text-purpleText duration-300 py-2"
             href="#about"
           >
             About
           </Link>
-
           <Link
             className={`block ${
               pathname === "/bootcamp"
                 ? "text-purpleText"
-                : "text-black text-lg"
+                : "text-white text-lg"
             } hover:text-purpleText duration-300 py-2`}
             href="#bootcamp"
           >
             Bootcamp List
           </Link>
-
           <Link
             className={`block ${
               pathname === "/bootcamp"
                 ? "text-purpleText"
-                : "text-black text-lg"
+                : "text-white text-lg"
             } hover:text-purpleText duration-300 py-2`}
             href="#documentation"
           >
@@ -75,15 +71,19 @@ const Navbar: React.FC = () => {
           </Link>
 
           <Link
-            className="block text-lg text-black hover:text-purpleText duration-300 py-2"
+            className="block text-lg text-white hover:text-purpleText duration-300 py-2"
             href="#faq"
           >
             FAQ
           </Link>
+          {/* <Link
+            className="block text-white hover:text-purpleText duration-300 py-2"
+            href="/dept&biro"
+          >
+            Departemen
+          </Link> */}
         </div>
-
-        {/* logo */}
-        <Link href="#" className="block duration-300">
+        <Link href="#" className="flex items-center ml-5">
           <Image
             src="/filing/LOGO FILING.png"
             alt="Logo"
@@ -92,15 +92,11 @@ const Navbar: React.FC = () => {
             className="mr-2"
           />
         </Link>
-
-        {/* contact us */}
-        <div className="text-white block ">
-          <h1 className={`bg-gradient-to-r from-[#3F3381] from-10% to-[#B07FD6] to-75% text-[#F0ECE5] px-7 py-2  text-[17px] rounded-3xl font-serif font-thin tracking-wide`}>
-            Contact Us
+        {/* <div className="text-white md:hidden block">
+          <h1 className={`${circleAmolens.className} font-bold text-2xl`}>
+            FIKTI LEARNING
           </h1>
-        </div>
-
-        {/* hamburger */}
+        </div> */}
         <div className="md:hidden">
           {/* Hamburger menu icon */}
           <button
@@ -120,7 +116,6 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </div>
-
       {isMenuOpen && (
         <motion.div
           className="flex flex-col gap-3 md:hidden mt-4"
@@ -166,4 +161,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;

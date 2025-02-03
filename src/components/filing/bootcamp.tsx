@@ -66,7 +66,7 @@ export default function BootcampPage() {
                   </div>
 
                   <div className="w-1/2 mt-2 ml-4 rounded-3xl border-2 border-stone-400">
-                    <Link href="/filing/WebDevelopment">
+                    <Link href="/filing/CyberSecurity">
                       <div className="p-2">
                         <div className="flex mt-4 items-center justify-center">
                           <Image

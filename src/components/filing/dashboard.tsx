@@ -10,7 +10,7 @@ const Dashboard: React.FC = () => {
       <div>
         {/*desktop*/}
         <div className="sm:block hidden">
-          <div className="bg-gradient-to-b from-slate-200 to-white h-[617px] flex gap-16 items-center justify-center">
+          <div className="bg-[url(/filing/Unsplash-BG.png)] px-52 pb-10">
             <div className="text-black w-[497px]">
               <Link href="/">
                 <Image
@@ -18,54 +18,39 @@ const Dashboard: React.FC = () => {
                   alt="back"
                   width={50}
                   height={50}
-                  className="pb-4"
+                  className="pb-2 pt-5"
                 />
               </Link>
               <div className="flex gap-2">
-                <h1 className="bg-[#545350] text-[#F0ECE5] px-2 text-[24px] gap-[10px] rounded-r-3xl font-Poppins font-thin tracking-wide">
+                <h1 className="bg-gradient-to-r from-[#3F3381] from-10% to-[#B07FD6] to-75% text-[#F0ECE5] px-7 py-2 text-[17px] gap-[10px] rounded-3xl font-serif font-thin tracking-wide">
                   FIKTI LEARNING
                 </h1>
-                <h1 className="bg-[#545350] text-[#F0ECE5] px-2 text-[24px] rounded-3xl font-Poppins font-thin tracking-wide">
-                  2024
+                <h1 className="bg-gradient-to-r from-[#3F3381] from-10% to-[#B07FD6] to-75% text-[#F0ECE5] px-7 py-2  text-[17px] rounded-3xl font-serif font-thin tracking-wide ">
+                  2025
                 </h1>
               </div>
               <div className="flex flex-col gap-5">
                 <h1
-                  className={`${circleAmolens.className} text-[40px] font-bold`}
+                  className={`font-serif text-[40px] font-bold text-white`}
                 >
-                  POWER UP YOUR SKILLS TO FACE INDUSTRY 5.0 WITH DATA ANALYST
-                  AND WEB
+                  POWER UP YOUR SKILLS TO FACE INDUSTRY 5.0 WITH DATA ANALYTICS AND WEB DEVELOMENT
                 </h1>
 
-                <h2 className="font-Poppins leading-[30px] text-[20px] text-[#6C6A67]">
-                  Get the knowledge and skills you need to thrive in today’s
-                  rapidly changing world with our flexible and affordable
-                  bootcamp online courses
+                <h2 className="font-serif leading-[30px] text-[22px] text-white">
+                Get  the knowledge and skills you need to thrive in today’s rapidly changing  world with our flexible and affordable bootcamp online courses
                 </h2>
                 <div className="flex gap-5 scroll-smooth">
-                  <Link href={"/filing#about"}>
-                    <button className="bg-[#11111B] rounded-md text-[#FEFDFC] text-[16px] leading-6 py-2 px-9 font-semibold">
-                      Learn More
-                    </button>
-                  </Link>
                   <Link href={"/filing#bootcamp"}>
-                    <button className="border border-[#11111B] rounded-md text-[16px] text-[#11111B] leading-6 py-2 px-9 font-semibold">
-                      Lihat Bootcamp
+                    <button className="bg-gradient-to-r from-[#3F3381] from-10% to-[#B07FD6] to-75% text-white px-7 text-[17px] font-serif rounded-xl font-semibold py-3">
+                      See Program
                     </button>
                   </Link>
                 </div>
               </div>
             </div>
-            <div>
-              <Image
-                src={"/filing/learning 2 1.png"}
-                alt=""
-                width={600}
-                height={437}
-              />
-            </div>
           </div>
         </div>
+        {/* view Handphone */}
         <div className="sm:hidden">
           <div className="bg-gradient-to-b from-slate-200 to-white">
             <div className="absolute flex flex-col gap-1 w-[308px] pt-5 mx-5">
@@ -105,9 +90,9 @@ const Dashboard: React.FC = () => {
                     rapidly changing world with our flexible and affordable
                     bootcamp online courses
                   </h2>
-                  <Link href={"/filing#about"}>
+                  <Link href={"/filing#bootcamp"}>
                     <button className="bg-white text-black w-full rounded-xl font-semibold text-[18px] py-3">
-                      Learn More
+                      See Program
                     </button>
                   </Link>
                 </div>
