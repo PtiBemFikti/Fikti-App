@@ -2,7 +2,6 @@ import Image from "next/image";
 import logoAdiraka from "../../../public/LOGO ADIRAKA ROUND.png";
 import { FaArrowDown } from "react-icons/fa";
 import { useState } from "react";
-import Link from "next/link";
 import ImageSlider from "./ImageSlider";
 
 export default function HeroSection() {
@@ -45,11 +44,6 @@ export default function HeroSection() {
             responsif, dan konstruktif melalui berbagai aksi, pengabdian, dan
             layanan.
           </p>
-          <Link href="#about">
-            <button className="mt-4 mb-8 max-md:px-5 max-md:py-2 max-md:text-sm px-7 py-4 border border-white hover:bg-white hover:text-black hover:shadow-md hover:shadow-white rounded-xl text-white font-bold transition-all duration-300">
-              Temukan Lebih Banyak
-            </button>
-          </Link>
         </div>
 
         {/* Logo */}
