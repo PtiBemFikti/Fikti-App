@@ -9,8 +9,8 @@ import UtamaPage from "@/components/utama";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BEM FIKTI UG 2024",
-  description: "BEM FIKTI UG 2024",
+  title: "BEM FIKTI UG 2025",
+  description: "BEM FIKTI UG 2025",
   icons: {
     icon: "/logo-fikti.png",
   },
