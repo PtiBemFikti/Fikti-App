@@ -18,7 +18,7 @@ export default function ImageSlider() {
 
   return (
     <>
-      <div className="z-10 absolute bottom-[5rem]  overflow-hidden w-full py-6 bg-white/40 max-md:py-4">
+      <div className="z-10 absolute bottom-[5rem]  overflow-hidden w-full py-6 bg-white/40 max-md:py-3">
         {/* Wrapper for scrolling images */}
         <div className="flex animate-infinite-scroll whitespace-nowrap">
           {Array(100)
@@ -27,14 +27,14 @@ export default function ImageSlider() {
             .map((url, index) => (
               <div
                 key={index}
-                className="flex-none w-10 h-10 mx-4 bg-white rounded-full shadow-lg flex items-center justify-center"
+                className="flex-none w-10 h-10 mx-4 max-md:w-8 max-md:h-8 bg-white rounded-full shadow-lg flex items-center justify-center"
               >
                 <Image
                   src={url}
                   alt={`Logo ${index + 1}`}
                   width={80}
                   height={80}
-                  className="object-contain max-md:w-[80%] max-md:h-[80%]"
+                  className="object-contain max-md:w-[75%] max-md:h-[75%]"
                 />
               </div>
             ))}

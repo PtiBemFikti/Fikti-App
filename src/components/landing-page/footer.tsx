@@ -10,6 +10,8 @@ import { CiMail } from "react-icons/ci";
 import { MonumentExtendedRegular } from "@/styles/font";
 
 const Footer: React.FC = () => {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="relative border-t-2 border-slate-700 rounded-md bg-transparent p-4 bottom-0 overflow-x-hidden">
       <div className="wrapper">
@@ -109,23 +111,23 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex flex-col justify-center items-center self-end gap-4 max-md:order-1 max-md:self-center">
           <div className="flex justify-center items-center gap-4 border-b-1 pb-4">
-            <div className="w-24 h-24 max-md:w-24 max-md:h-24 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
+            <div className="w-24 h-24 max-md:w-16 max-md:h-16 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
               <Image
                 src="/logo-universitas-gunadarma.png"
                 alt="Logo Universitas Gunadarma"
                 width={300}
                 height={300}
-                className="bg-cover h-16 w-16
+                className="bg-cover h-16 w-16 max-md:w-10 max-md:h-10
                 "
               />
             </div>
-            <div className="w-24 h-24 max-md:w-24 max-md:h-24 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
+            <div className="w-24 h-24 max-md:w-16 max-md:h-16 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
               <Image
                 src="/logo-fikti.png"
                 alt="Logo FIKTI"
                 width={300}
                 height={300}
-                className="bg-cover h-fit w-14
+                className="bg-cover h-fit w-14 max-md:w-9
                 "
               />
             </div>
@@ -134,7 +136,7 @@ const Footer: React.FC = () => {
               alt="Logo Kabinet Adiraka"
               width={300}
               height={300}
-              className="bg-cover h-24 w-24 cursor-pointer hover:scale-110 transition-all duration-300"
+              className="bg-cover h-24 w-24 max-md:w-16 max-md:h-16 cursor-pointer hover:scale-110 transition-all duration-300"
             />
           </div>
 
@@ -177,7 +179,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="container mt-10  mx-auto relative z-20">
         <p className="text-center border-t-2 pt-3 border-gray-500 text-gray-400 text-xs md:text-base font-normal">
-          Copyright © 2024 BEM FIKTI UG - All rights reserved.
+          Copyright © 2024 - {`${year}`} BEM FIKTI UG - All rights reserved.
         </p>
       </div>
     </footer>

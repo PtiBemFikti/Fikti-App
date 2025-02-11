@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 
 export default function AboutPage() {
+  const year = new Date().getFullYear();
   return (
     <section
       id="about"
@@ -41,7 +42,7 @@ export default function AboutPage() {
             {/* Tulisan 2025 Oval */}
             <div className="absolute -top-8 -left-8 bg-white text-black rounded-full w-24 h-24 md:w-40 md:h-40 flex flex-col items-center justify-center transform shadow-lg">
               <span className="text-lg md:text-3xl font-bold text-purple-500">
-                2025
+                {`${year}`}
               </span>
               <span className="text-xs md:text-lg font-bold">BEM FIKTI UG</span>
             </div>
