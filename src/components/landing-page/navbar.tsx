@@ -10,6 +10,7 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
   const [isScrolled, setIsScrolled] = useState(false);
+  const year = new Date().getFullYear();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,7 +72,7 @@ const Navbar: React.FC = () => {
             className="mr-2"
           />
           <div>
-            <h1 className="text-lg">BEM FIKTI 2024</h1>
+            <h1 className="text-lg">BEM FIKTI {year}</h1>
             <p className="text-xs font-light">Universitas Gunadarma</p>
           </div>
         </Link>
