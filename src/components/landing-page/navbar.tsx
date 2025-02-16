@@ -6,11 +6,13 @@ import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import DropdownMenuNav from "./DropdownMenu";
+import { usePathname, useRouter } from "next/navigation";
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
   const [isScrolled, setIsScrolled] = useState(false);
   const year = new Date().getFullYear();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,6 +51,9 @@ const Navbar: React.FC = () => {
     // Update status menu
     setIsMenuOpen(!isMenuOpen);
   };
+  const getAboutHref = () => {
+    return pathname === "/" ? "#about" : "/#about";
+  };
 
   return (
     <nav
@@ -86,7 +91,7 @@ const Navbar: React.FC = () => {
           </Link>
           <Link
             className="relative block group hover:text-purpleText duration-300 py-2"
-            href="#about"
+            href={getAboutHref()}
           >
             Tentang
             <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
@@ -162,7 +167,10 @@ const Navbar: React.FC = () => {
           <Link className="hover:text-purpleText text-center" href="/">
             Beranda
           </Link>
-          <Link className="hover:text-purpleText text-center" href="#about">
+          <Link
+            className="hover:text-purpleText text-center"
+            href={getAboutHref()}
+          >
             Tentang
           </Link>
           <Link
