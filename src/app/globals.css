@@ -74,7 +74,7 @@ body {
   bottom: 0;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(135deg, #0a0a0f, #15092c, #11032c, #000000);
+  background: linear-gradient(135deg, #0d0a0f, #150027, #180125, #000000);
   background-size: 400% 400%;
   animation: wrapperGradient 15s ease infinite;
 }
@@ -88,7 +88,7 @@ body {
   border-radius: 15rem;
   background: radial-gradient(
       circle at 50% 50%,
-      rgba(95, 33, 139, 0.8),
+      rgba(53, 10, 83, 0.8),
       transparent
     ),
     linear-gradient(45deg, rgba(128, 0, 128, 0.8), rgba(75, 0, 130, 0.8)),
