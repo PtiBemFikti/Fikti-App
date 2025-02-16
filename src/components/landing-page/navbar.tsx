@@ -6,12 +6,11 @@ import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import DropdownMenuNav from "./DropdownMenu";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
   const [isScrolled, setIsScrolled] = useState(false);
-  const year = new Date().getFullYear();
   const pathname = usePathname();
 
   useEffect(() => {
@@ -77,7 +76,7 @@ const Navbar: React.FC = () => {
             className="mr-2"
           />
           <div>
-            <h1 className="text-lg">BEM FIKTI {year}</h1>
+            <h1 className="text-lg">BEM FIKTI</h1>
             <p className="text-xs font-light">Universitas Gunadarma</p>
           </div>
         </Link>
