@@ -11,7 +11,7 @@ const Card: React.FC<CardProps> = ({ foto, nama, jabatan }) => {
   return (
     <div className="relative flex flex-col items-center text-center">
       {/* Efek lingkaran hijau di belakang */}
-      <div className="absolute top-1/2 -translate-y-1/2 w-40 h-40 bg-green-500 rounded-full blur-xl opacity-60"></div>
+      <div className="absolute top-1/2 -translate-y-1/2 w-40 h-40 bg-purple-500 rounded-full blur-xl opacity-60"></div>
 
       {/* Foto Profil */}
       <div className="relative z-10 rounded-full overflow-hidden border-4 border-white shadow-xl">

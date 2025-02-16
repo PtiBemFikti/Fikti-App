@@ -13,7 +13,6 @@ export default function PengurusIntiSection() {
   const [kontrolInternalIndex, setKontrolInternalIndex] = useState(0);
   const [slideWidth, setSlideWidth] = useState(100); // Default mobile: 100%
 
-  // Atur slide width berdasarkan ukuran layar
   useEffect(() => {
     const updateSlideWidth = () => {
       setSlideWidth(window.innerWidth >= 768 ? 33 : 100);
@@ -52,13 +51,31 @@ export default function PengurusIntiSection() {
 
   return (
     <div className="py-4 w-full h-fit pt-32 flex flex-col items-center justify-center section-about">
+      <h1 className="text-3xl md:text-[3rem] font-bold text-center">
+        Ketua dan Wakil Ketua BEM FIKTI
+        <span className="block w-[80%] h-1 bg-purple-500 mx-auto mt-5"></span>
+      </h1>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-32 w-full py-10 md:py-20">
+        <Card
+          foto="/yudan_1.png"
+          nama="Muhammad Naufal Kamil"
+          jabatan="Ketua BEM FIKTI"
+        />
+        <Card
+          foto="/yudan_1.png"
+          nama="Aryo Dwi Prasetyo"
+          jabatan="Wakil Ketua BEM FIKTI"
+        />
+      </div>
       <h1 className="text-3xl md:text-[3rem] font-bold  text-center">
         Our Team
         <span className="block w-[80%] h-1 bg-purple-500 mx-auto my-5"></span>
       </h1>
 
       {/* Pengurus Inti */}
-      <h2 className="text-center text-2xl font-semibold mb-4">Pengurus Inti</h2>
+      <h2 className="text-center text-2xl font-semibold mb-4">
+        Badan Pengurus Harian
+      </h2>
       <div className="relative overflow-hidden w-full md:w-[70%]">
         <div
           className="flex transition-transform duration-500 ease-in-out"
