@@ -95,13 +95,13 @@ const Navbar: React.FC = () => {
             Tentang
             <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
           </Link>
-          <Link
+          {/* <Link
             className="relative block group hover:text-purpleText duration-300 py-2"
             href="/struktur-organisasi"
           >
             Struktur
             <span className="absolute left-0 bottom-0 h-0.5 bg-purpleText w-0 group-hover:w-full duration-300"></span>
-          </Link>
+          </Link> */}
           <div>
             <DropdownMenuNav />
           </div>
@@ -172,12 +172,12 @@ const Navbar: React.FC = () => {
           >
             Tentang
           </Link>
-          <Link
+          {/* <Link
             className="hover:text-purpleText text-center"
             href="/struktur-organisasi"
           >
             Struktur Organisasi
-          </Link>
+          </Link> */}
           <div className="flex justify-center items-center">
             <DropdownMenuNav />
           </div>
