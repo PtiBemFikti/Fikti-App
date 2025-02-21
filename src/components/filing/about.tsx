@@ -5,167 +5,135 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <div className="">
-      {/*Mobile*/}
-      <div className="mt-2 md:hidden">
-        <div className="flex items-center justify-center">
-          <div className="my-8 px-8">
-            <h1
-              className={`${circleAmolens.className} text-center text-black  text-3xl font-bold`}
-            >
-              WHAT IS FILING?
-            </h1>
-            <p className="text-[#6C6A67] font-semibold mt-6">
-              FIKTI Learning
-              <span className="text-[#6C6A67] text-base font-medium">
+      {/* Desktop */}
+      <div className="md:block hidden py-20">
+        <div className="flex items-center justify-center px-28">
+          <div className="w-full ml-10">
+
+            <div className="justify-center items-center">
+              <h1
+                className={`${circleAmolens.className} text-black font-bold text-3xl`}
+              >
                 {" "}
-                adalah program workshop online yang dirancang khusus untuk
-                mahasiswa FIKTI UG. Dalam 4 kali pertemuan selama satu bulan,
-                kamu akan dibimbing oleh mentor berpengalaman untuk
-                mengembangkan minat dan bakat di bidang teknologi informasi.
-              </span>
-            </p>
-          </div>
-        </div>
-
-        <div className="flex justify-center items-center p-8">
-          <div className="my-8">
-            <div
-              className={`${circleAmolens.className} text-center text-black text-3xl font-bold`}
-            >
-              WHY YOU SHOULD JOIN FILING?
+                WHAT IS FILING?{" "}
+              </h1>
+              <p className="text-xl text-left mt-10 text-black">
+                  <span className="font-extrabold">FIKTI Learning</span> adalah program <span className="font-extrabold">bootcamp</span> online yang dirancang khusus untuk mahasiswa FIKTI UG. <br></br>Dalam <span className="font-extrabold">4 kali</span> pertemuan selama satu bulan, kamu akan dibimbing oleh mentor berpengalaman untuk mengembangkan minat dan bakat di bidang teknologi informasi.
+              </p>
             </div>
-            <div className="justify-center items-start gap-5 inline-flex">
-              <div className="flex-col justify-center items-center inline-flex mt-8">
-                <Image
-                  src={"/filing/simplicity.png"}
-                  alt="simplicity"
-                  width={80}
-                  height={80}
-                />
-                <h1 className="font-bold text-black text-2xl">Simplicity</h1>
-                <p className="w-40 text-center text-[#6C6A67] text-base font-medium">
-                  Learn using quick and simple task requiring only a few minutes
-                </p>
-              </div>
 
-              <div className="flex-col justify-center items-center inline-flex mt-8">
-                <Image
-                  src={"/filing/motivation.png"}
-                  alt="motivation"
-                  width={80}
-                  height={80}
-                />
-                <h1 className="font-bold text-black text-2xl">Motivation</h1>
-                <p className="w-40 text-center text-[#6C6A67] text-base font-medium ">
-                  Achieve regular next steps of a course by supporting the
-                  motivation system.
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="flex-col justify-center items-center inline-flex mt-8">
-                <Image
-                  src={"/filing/support.png"}
-                  alt="support"
-                  width={80}
-                  height={80}
-                />
-                <h1 className="font-bold text-black text-2xl">Supporting</h1>
-                <p className="w-40 text-center text-[#6C6A67] text-base font-medium">
-                  We give our students best support always & all time per day
-                </p>
+            <div className="mt-10 justify-center items-center">
+              <h1
+                className={`${circleAmolens.className} text-3xl text-black font-bold`}
+              >
+                {" "}
+                WHY YOU SHOULD JOIN FILING?{" "}
+              </h1>
+              <div className="flex items-center justify-around mt-10">
+                <div className="mt-4 flex-col items-center inline-flex">
+                  <Image
+                    src={"/filing/simplicity.png"}
+                    alt="simplicity"
+                    width={175}
+                    height={175}
+                  />
+                  <h1 className="font-bold text-black text-center text-2xl mt-2">
+                    Simplicity
+                  </h1>
+                  <p className="w-52 text-center text-black font-medium">
+                    Learn using quick and simple task requiring only a few minutes
+                  </p>
+                </div>
+                <div className="mt-4 flex-col items-center inline-flex">
+                  <Image
+                    src={"/filing/motivation.png"}
+                    alt="motivation"
+                    width={175}
+                    height={175}
+                  />
+                  <h1 className="font-bold text-black text-center text-2xl mt-2">
+                    Motivation
+                  </h1>
+                  <p className="w-52 text-center text-black font-medium">
+                    Achieve regular next steps of a course by supporting the motivation system.
+                  </p>
+                </div>
+                <div className="mt-4 flex-col items-center inline-flex">
+                  <Image
+                    src={"/filing/support.png"}
+                    alt="support"
+                    width={175}
+                    height={175}
+                  />
+                  <h1 className="font-bold text-black text-center text-2xl mt-2">
+                    Supporting
+                  </h1>
+                  <p className="w-52 text-center text-black font-medium">
+                    We give our students best support always & all time per day
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Dekstop*/}
-      <div className="md:block hidden mt-2">
-        <div className="flex items-center justify-center p-28">
-          <div className="flex ">
-            <div className="w-1/3 justify-center items-center ">
-              <h1
-                className={`${circleAmolens.className} text-black font-bold text-3xl ml-10`}
-              >
-                {" "}
-                WHAT IS FILING?{" "}
-              </h1>
-              <p className="text-xl w-96 text-left mx-10 mt-10 text-[#6C6A67]">
-                <span className="font-semibold text-[#6C6A67]">
-                  FIKTI Learning
-                </span>
-                <span className="font-medium text-[#6C6A67]">
-                  {" "}
-                  adalah program workshop online yang dirancang khusus untuk
-                  mahasiswa FIKTI UG. Dalam 4 kali pertemuan selama satu bulan,
-                  kamu akan dibimbing oleh mentor berpengalaman untuk
-                  mengembangkan minat dan bakat di bidang teknologi informasi.
-                </span>
+      {/*Mobile*/}
+      <div className="mt-2 md:hidden">
+        <div className="flex items-center justify-center">
+          <div className="my-8 px-8">
+            <h1
+              className={`${circleAmolens.className} text-center text-black text-3xl font-bold`}
+            >
+              WHAT IS FILING?
+            </h1>
+            <p className="text-black font-normal mt-6">
+              <span className="font-extrabold">FIKTI Learning</span> adalah program <span className="font-extrabold">bootcamp</span> online yang dirancang khusus untuk mahasiswa FIKTI UG. Dalam <span className="font-extrabold">4 kali</span> pertemuan selama satu bulan, kamu akan dibimbing  oleh mentor berpengalaman untuk mengembangkan minat dan bakat di bidang  teknologi informasi.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center p-8">
+          <h1
+            className={`${circleAmolens.className} text-center text-black text-3xl font-bold mb-4`}
+          >
+            WHY YOU SHOULD JOIN FILING?
+          </h1>
+          <div className="grid grid-cols-1 gap-4">
+            <div className="flex flex-col items-center">
+              <Image
+                src={"/filing/simplicity.png"}
+                alt="simplicity"
+                width={80}
+                height={80}
+              />
+              <h1 className="font-bold text-black text-2xl mt-2">Simplicity</h1>
+              <p className="w-40 text-center text-black text-base font-medium">
+                Learn using quick and simple task requiring only a few minutes
               </p>
             </div>
-            <div className="px-12">
-              <div
-                className={`${circleAmolens.className} text-3xl text-black font-bold`}
-              >
-                {" "}
-                &{" "}
-              </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src={"/filing/motivation.png"}
+                alt="motivation"
+                width={80}
+                height={80}
+              />
+              <h1 className="font-bold text-black text-2xl mt-2">Motivation</h1>
+              <p className="w-40 text-center text-black text-base font-medium">
+                Achieve regular next steps of a course by supporting the motivation system.
+              </p>
             </div>
-            <div className="px-2">
-              <h1
-                className={`${circleAmolens.className} text-3xl ml-20 text-black font-bold`}
-              >
-                {" "}
-                WHY YOU SHOULD JOIN FILING?{" "}
-              </h1>
-              <div className="flex w-2/3 justify-start items-center gap-8 ml-4">
-                <div className="mt-4 ml-4 flex-col items-end inline-flex">
-                  <Image
-                    src={"/filing/simplicity.png"}
-                    alt="simplicity"
-                    width={100}
-                    height={100}
-                  />
-                  <h1 className="font-bold text-black text-right text-2xl">
-                    Simplicity
-                  </h1>
-                  <p className="w-40 text-right text-[#6C6A67] text-base font-medium">
-                    Learn using quick and simple task requiring only a few
-                    minutes
-                  </p>
-                </div>
-
-                <div className="mt-4 flex-col items-end inline-flex">
-                  <Image
-                    src={"/filing/motivation.png"}
-                    alt="motivation"
-                    width={100}
-                    height={100}
-                  />
-                  <h1 className="font-bold text-black text-right text-2xl">
-                    Motivation
-                  </h1>
-                  <p className="w-48 text-right text-[#6C6A67] text-base font-medium">
-                    Achieve regular next steps of a course by supporting the
-                    motivation system.
-                  </p>
-                </div>
-                <div className="mt-4 flex-col items-end inline-flex">
-                  <Image
-                    src={"/filing/support.png"}
-                    alt="support"
-                    width={100}
-                    height={100}
-                  />
-                  <h1 className="font-bold text-black text-right text-2xl">
-                    Supporting
-                  </h1>
-                  <p className="w-40 text-right text-[#6C6A67] text-base font-medium">
-                    We give our students best support always & all time per day
-                  </p>
-                </div>
-              </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src={"/filing/support.png"}
+                alt="support"
+                width={80}
+                height={80}
+              />
+              <h1 className="font-bold text-black text-2xl mt-2">Supporting</h1>
+              <p className="w-40 text-center text-black text-base font-medium">
+                We give our students best support always & all time per day
+              </p>
             </div>
           </div>
         </div>

@@ -6,28 +6,16 @@ export default function BootcampPage() {
     <div className="">
       {/*Dekstop*/}
       <div className="md:block hidden mt-2">
-        <div className="py-24">
-          <div className="flex justify-between py-4">
-            <div className="flex h-full mt-2">
-              <Image
-                src="/filing/Vector1.png"
-                alt="vector1"
-                width={500}
-                height={500}
-              />
-            </div>
-            <div className="px-10 w-full">
-              <div
-                className={`${circleAmolens.className} mt-4 tracking-tight text-center text-black text-3xl font-bold`}
-              >
-                {" "}
-                JOIN OUR BOOTCAMPS{" "}
+        <div className="py-20 ">
+            <div className="px-48 w-full">
+              <div className="mt-4 mb-10 text-center text-black text-3xl font-bold">
+                JOIN OUR BOOTCAMPS
               </div>
 
               <div className=" flex items-center justify-center">
-                <div className="flex">
-                  <div className="w-1/2 mt-2 rounded-3xl border-2 border-stone-400">
-                    <Link href="/filing/DataAnalyst">
+                <div className="flex lg:gap-44 justify-center">
+                  <div className="w-1/3 mt-2 rounded-xl border-2 border-stone-400">
+                    <Link href="/filing/DataScience">
                       <div className="p-2">
                         <div className="flex mt-4 items-center justify-center">
                           <Image
@@ -65,7 +53,7 @@ export default function BootcampPage() {
                     </Link>
                   </div>
 
-                  <div className="w-1/2 mt-2 ml-4 rounded-3xl border-2 border-stone-400">
+                  <div className="w-1/3 mt-2 rounded-xl border-2 border-stone-400">
                     <Link href="/filing/CyberSecurity">
                       <div className="p-2">
                         <div className="flex mt-4 items-center justify-center">
@@ -107,15 +95,6 @@ export default function BootcampPage() {
                 </div>
               </div>
             </div>
-            <div className="flex h-full mt-2">
-              <Image
-                src="/filing/Vector2.png"
-                alt="vector2"
-                width={500}
-                height={500}
-              />
-            </div>
-          </div>
         </div>
       </div>
 
