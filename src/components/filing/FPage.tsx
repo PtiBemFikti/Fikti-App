@@ -5,6 +5,7 @@ import Dashboard from "@/components/filing/dashboard";
 import BootcampPage from "@/components/filing/bootcamp";
 import DocumentationPage from "@/components/filing/documentation";
 import FaqPage from "@/components/filing/faq";
+import Footer from "@/components/filing/footer";
 
 export default function FPage() {
   return (
@@ -26,6 +27,7 @@ export default function FPage() {
       <section id="faq">
         <FaqPage />
       </section>
+      <Footer />
     </main>
   );
 }

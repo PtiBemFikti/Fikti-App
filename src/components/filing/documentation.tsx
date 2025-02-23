@@ -1,13 +1,19 @@
 import { circleAmolens } from "@/styles/font";
 import Image from "next/image";
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
 
 export default function DocumentationPage() {
   return (
     <div className="">
       {/*Dekstop*/}
-      <div className="md:block hidden mt-2">
-        <div className="pb-20">
-          <div className="p-20">
+      <div className="md:block hidden">
+        <div className="">
+          <div className="pt-20">
             <div className="flex justify-center items-center">
               <div
                 className={`${circleAmolens.className} text-center font-bold text-3xl tracking-tight text-black`}
@@ -16,20 +22,60 @@ export default function DocumentationPage() {
                 DOCUMENTATION{" "}
               </div>
             </div>
-            <div className="flex mt-4 overflow-x-auto gap-4">
+            <div >
+              <Swiper
+                slidesPerView={1}
+                loop={true}
+                pagination={{
+                  clickable: true,
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper md:w-5/6 lg:w-4/5 h-[35rem] mt-8 border-[#91D2F4] border-4 rounded-[1.75rem] "
+              >
+                <SwiperSlide>
+                  <Image
+                    src="/filing/filingdoc2.png"
+                    alt=""
+                    width={1000}
+                    height={1600}
+                    className="w-full h-full rounded-3xl"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/filing/filingdoc3.png"
+                    alt=""
+                    width={1000}
+                    height={1600}
+                    className="w-full h-full rounded-3xl"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/filing/filingdoc4.png"
+                    alt=""
+                    width={1000}
+                    height={1600}
+                    className="w-full h-full rounded-3xl"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+            {/* <div className="flex mt-4 overflow-x-auto gap-4">
               <Image
                 src="/filing/filingdoc1.png"
                 alt=""
                 width={1000}
                 height={1000}
-                className="w-full h-96 rounded-3xl pb-8"
+                className="w-full h-full rounded-3xl pb-8"
               />
               <Image
                 src="/filing/filingdoc2.png"
                 alt=""
                 width={1000}
                 height={1000}
-                className="w-full h-96 rounded-3xl pb-8"
+                className="w-full h-full rounded-3xl pb-8"
               />
               <Image
                 src="/filing/filingdoc3.png"
@@ -73,7 +119,7 @@ export default function DocumentationPage() {
                 height={1000}
                 className="w-full h-96 rounded-3xl pb-8"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -89,7 +135,7 @@ export default function DocumentationPage() {
               DOCUMENTATIONS
             </div>
           </div>
-          <div className="justify-center items-center gap-4 flex px-2 pb-4">
+          <div className="justify-center items-center gap-4 flex px-2 pb-4 mt-5">
             <div className="flex w-full ">
               <Image
                 src="/filing/filingdoc2.png"
@@ -102,7 +148,7 @@ export default function DocumentationPage() {
           <div className="justify-center items-center gap-4 flex px-2 pb-4">
             <div className="flex w-full ">
               <Image
-                src="/filing/filingdoc1.png"
+                src="/filing/filingdoc3.png"
                 alt=""
                 width={1000}
                 height={1000}
@@ -112,18 +158,7 @@ export default function DocumentationPage() {
           <div className="justify-center items-center gap-4 flex px-2 pb-4">
             <div className="flex w-full ">
               <Image
-                src="/filing/filingdoc5.png"
-                alt=""
-                width={1000}
-                height={1000}
-              />
-            </div>
-          </div>
-
-          <div className="justify-center items-center gap-4 flex">
-            <div className="flex w-full">
-              <Image
-                src="/filing/filingdoc7.png"
+                src="/filing/filingdoc4.png"
                 alt=""
                 width={1000}
                 height={1000}

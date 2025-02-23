@@ -4,7 +4,6 @@ import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { circleAmolens } from "@/styles/font";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +33,7 @@ const Navbar: React.FC = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-white p-4 md:px-10 sticky top-0 z-50"
+      className="bg-white p-4 md:px-20 sticky top-0 z-50"
     >
       <div className="flex items-center w-full justify-between lg:justify-around">
 

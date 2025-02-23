@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div className="">
       {/* Desktop */}
-      <div className="md:block hidden py-20">
+      <div className="md:block hidden pt-20">
         <div className="flex items-center justify-center px-28">
           <div className="w-full ml-10">
 
@@ -29,7 +29,7 @@ export default function AboutPage() {
                 {" "}
                 WHY YOU SHOULD JOIN FILING?{" "}
               </h1>
-              <div className="flex items-center justify-around mt-10">
+              <div className="md:flex-wrap lg:flex items-center justify-around mt-10">
                 <div className="mt-4 flex-col items-center inline-flex">
                   <Image
                     src={"/filing/simplicity.png"}
@@ -98,13 +98,13 @@ export default function AboutPage() {
           >
             WHY YOU SHOULD JOIN FILING?
           </h1>
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-10 mt-3">
             <div className="flex flex-col items-center">
               <Image
                 src={"/filing/simplicity.png"}
                 alt="simplicity"
-                width={80}
-                height={80}
+                width={150}
+                height={150}
               />
               <h1 className="font-bold text-black text-2xl mt-2">Simplicity</h1>
               <p className="w-40 text-center text-black text-base font-medium">
@@ -115,8 +115,8 @@ export default function AboutPage() {
               <Image
                 src={"/filing/motivation.png"}
                 alt="motivation"
-                width={80}
-                height={80}
+                width={150}
+                height={150}
               />
               <h1 className="font-bold text-black text-2xl mt-2">Motivation</h1>
               <p className="w-40 text-center text-black text-base font-medium">
@@ -127,8 +127,8 @@ export default function AboutPage() {
               <Image
                 src={"/filing/support.png"}
                 alt="support"
-                width={80}
-                height={80}
+                width={150}
+                height={150}
               />
               <h1 className="font-bold text-black text-2xl mt-2">Supporting</h1>
               <p className="w-40 text-center text-black text-base font-medium">
