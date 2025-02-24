@@ -26,9 +26,9 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
   };
 
   return (
-    <div className="mb-4 text-[#B4B1AC] font-[Poppins] text-sm font-light">
+    <div className="mb-4 text-white font-[Poppins] text-sm font-medium">
       <button
-        className="w-full py-2 text-left text-sm font-[Poppins] text-[#FEFDFC] rounded-lg"
+        className="w-full text-left text-lg font-[Poppins] text-white font-bold rounded-lg"
         onClick={handleToggle}
       >
         <div className="flex items-end justify-between">

@@ -5,101 +5,65 @@ export default function BootcampPage() {
   return (
     <div className="">
       {/*Dekstop*/}
-      <div className="md:block hidden mt-2">
-        <div className="py-24">
-          <div className="flex justify-between py-4">
-            <div className="flex h-full mt-2">
-              <Image
-                src="/filing/Vector1.png"
-                alt="vector1"
-                width={500}
-                height={500}
-              />
-            </div>
-            <div className="px-10 w-full">
-              <div
-                className={`${circleAmolens.className} mt-4 tracking-tight text-center text-black text-3xl font-bold`}
-              >
-                {" "}
-                JOIN OUR BOOTCAMPS{" "}
+      <div className="md:block hidden">
+        <div className="pt-20">
+            <div className="lg:px-48 md:px-12 w-full">
+              <div className={`${circleAmolens.className} mt-4 mb-9 text-center text-black text-3xl font-semibold`}>
+                JOIN OUR BOOTCAMPS
               </div>
 
               <div className=" flex items-center justify-center">
-                <div className="flex">
-                  <div className="w-1/2 mt-2 rounded-3xl border-2 border-stone-400">
-                    <Link href="/filing/DataAnalyst">
-                      <div className="p-2">
-                        <div className="flex mt-4 items-center justify-center">
+                <div className="flex md:gap-12 lg:gap-44 justify-center">
+                  <div className="md:w-1/2 lg:w-2/5 rounded-2xl border-2 border-[#91D2F4]">
+                    <Link href="/filing/DataScience">
+                      <div className="">
+                        <div className="items-center mb-4">
                           <Image
-                            src="/filing/dataanalyst.png"
-                            alt="data analyst"
-                            width={350}
+                            src="/filing/bootcamp1.png"
+                            alt="Data Science"
+                            width={400}
                             height={350}
                           />
-                        </div>
-                        <div className="w-28 h-7 mt-4 ml-1 bg-emerald-500 rounded-2xl justify-center items-center flex">
-                          <div className="text-center text-white text-sm font-bold">
-                            BOOTCAMP
+                          <div className="ml-6 md:-mt-14 lg:-mt-16 text-white text-2xl lg:text-4xl font-bold">
+                            Data Science
                           </div>
                         </div>
-                        <div
-                          className={`${circleAmolens.className} mx-1 mt-1 tracking-tight text-start text-gray-800 text-2xl font-bold`}
-                        >
-                          DATA ANALYST
+                        <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3">
+                          <i>“Exploring the Data Universe : <br></br>Hands-On Learning for Beginners”</i>
                         </div>
-                        <div className="mx-1 text-stone-500 text-sm font-light font-['Poppins']">
-                          “Started The Journey as a Data Analyst with MySQL,
-                          Python & Tableau”
+                        <div className="px-10 text-black text-center font-semibold font-['Poppins'] mb-5">
+                        26 April 2025 - 17 Mei 2025
                         </div>
-                        <div className="w-full ml-1 mt-4 text-neutral-600 text-base font-normal font-['Poppins']">
-                          Data Analyst berperan sebagai jembatan antara
-                          informasi dan keputusan masa depan, dengan mengolah
-                          data dan mencari solusi dari berbagai permasalahan.
-                        </div>
-                        <button
-                          className={`${circleAmolens.className} w-full mt-4 mx-1 tracking-tight text-stone-400 text-base font-normal`}
-                        >
-                          CLICK TO LEARN MORE
+                        <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
+                          click to learn more
                         </button>
                       </div>
                     </Link>
                   </div>
 
-                  <div className="w-1/2 mt-2 ml-4 rounded-3xl border-2 border-stone-400">
-                    <Link href="/filing/WebDevelopment">
-                      <div className="p-2">
-                        <div className="flex mt-4 items-center justify-center">
+                  <div className="md:w-1/2 lg:w-2/5 rounded-2xl border-2 border-[#91D2F4]">
+                    <Link href="/filing/CyberSecurity">
+                      <div>
+                        <div className="items-center mb-4">
                           <Image
-                            src={"/filing/webdev.png"}
-                            alt="webdev"
-                            width={350}
+                            src="/filing/bootcamp2.png"
+                            alt="Cyber Security"
+                            width={400}
                             height={350}
                           />
-                        </div>
-                        <div className="w-28 h-7 mt-4 ml-1 bg-emerald-500 rounded-2xl justify-center items-center flex">
-                          <div className="text-center text-white text-sm font-bold">
-                            BOOTCAMP
+                          <div className="ml-6 md:-mt-14 lg:-mt-16 text-white text-[1.4rem] lg:text-2xl font-bold">
+                            Cyber Security
                           </div>
                         </div>
-                        <div
-                          className={`${circleAmolens.className} mx-1 mt-1 tracking-tight text-start text-gray-800 text-2xl font-bold`}
-                        >
-                          WEB DEVELOPMENT
+                        <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3">
+                        <i>&quot;Empowering Cyber Defenders : <br></br>Training for Real-World Challenges&quot;</i>
                         </div>
-                        <div className="mx-1 text-stone-500 text-sm font-light font-['Poppins']">
-                          “Create Interactive Websites to Become a Web Developer
-                          With HTML, CSS & JS”
-                        </div>
-                        <div className="w-full ml-1 mt-4 text-neutral-600 text-base font-normal font-['Poppins']">
-                          Web Developer, profesi yang sangat dibutuhkan dalam
-                          era digitalisasi ini untuk memperkenalkan dan
-                          mempromosikan produk/layanan perusahaan.
+                        <div className="px-10 text-black text-center font-semibold font-['Poppins'] mb-5">
+                        27 April 2025 - 18 Mei 2025
                         </div>
 
-                        <button
-                          className={`${circleAmolens.className} w-full mt-4 mx-1 tracking-tight text-stone-400 text-base font-normal`}
-                        >
-                          CLICK TO LEARN MORE
+                        <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
+                          click to learn more
                         </button>
                       </div>
                     </Link>
@@ -107,20 +71,11 @@ export default function BootcampPage() {
                 </div>
               </div>
             </div>
-            <div className="flex h-full mt-2">
-              <Image
-                src="/filing/Vector2.png"
-                alt="vector2"
-                width={500}
-                height={500}
-              />
-            </div>
-          </div>
         </div>
       </div>
 
       {/*Mobile*/}
-      <div className="md:hidden mt-2">
+      <div className="md:hidden mt-8">
         <div className="flex justify-center items-center p-8">
           <div
             className={`${circleAmolens.className} w-80 text-center tracking-tight text-neutral-800 text-3xl font-bold`}
@@ -130,40 +85,28 @@ export default function BootcampPage() {
         </div>
 
         <div className="flex justify-center items-center pb-2">
-          <div className="w-80 h-auto rounded-3xl border-2 border-stone-400">
-            <Link href="/filing/DataAnalyst">
+          <div className="w-80 rounded-2xl border-2 border-[#91D2F4]">
+            <Link href="/filing/DataScience">
               <div className="">
-                <div className="flex mt-2 items-center justify-center">
+                <div className="items-center mb-4">
                   <Image
-                    src={"/filing/dataanalyst.png"}
-                    alt="data analyst"
-                    width={280}
-                    height={280}
+                    src="/filing/bootcamp1.png"
+                    alt="Data Science"
+                    width={400}
+                    height={350}
                   />
-                </div>
-                <div className="w-24 h-6 ml-4 mt-2 bg-emerald-500 rounded-2xl justify-center items-center flex">
-                  <div className="text-center text-white text-xs font-bold font-['Poppins']">
-                    BOOTCAMP
+                  <div className="ml-6 -mt-16 text-white text-3xl font-bold">
+                    Data Science
                   </div>
                 </div>
-                <div
-                  className={`${circleAmolens.className} ml-4 mt-2 text-gray-800 text-2xl tracking-tight font-bold`}
-                >
-                  DATA ANALYST
+                <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3">
+                  <i>“Exploring the Data Universe : <br></br>Hands-On Learning for Beginners”</i>
                 </div>
-                <div className="w-80 px-4 text-stone-500 text-sm font-light font-['Poppins']">
-                  “Started The Journey as a Data Analyst with MySQL, Python &
-                  Tableau”
+                <div className="px-10 text-black text-center font-semibold font-['Poppins'] mb-5">
+                26 April 2025 - 17 Mei 2025
                 </div>
-                <div className="mt-1 w-80 px-4 text-neutral-600 text-sm font-normal font-['Poppins']">
-                  Data Analyst berperan sebagai jembatan antara informasi dan
-                  keputusan masa depan, dengan mengolah data dan mencari solusi
-                  dari berbagai permasalahan.
-                </div>
-                <button
-                  className={`${circleAmolens.className} w-full mt-8 mb-4 text-center text-stone-400 text-sm font-bold`}
-                >
-                  CLICK TO LEARN MORE
+                <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
+                  click to learn more
                 </button>
               </div>
             </Link>
@@ -171,40 +114,28 @@ export default function BootcampPage() {
         </div>
 
         <div className="flex justify-center items-center py-4">
-          <div className="w-80 h-auto rounded-3xl border-2 border-stone-400">
-            <Link href="/filing/WebDevelopment">
-              <div className="">
-                <div className="flex mt-2 items-center justify-center">
+          <div className="w-80 rounded-2xl border-2 border-[#91D2F4]">
+            <Link href="/filing/CyberSecurity">
+              <div>
+                <div className="items-center mb-4">
                   <Image
-                    src={"/filing/webdev.png"}
-                    alt="webdev"
-                    width={280}
-                    height={280}
+                    src="/filing/bootcamp2.png"
+                    alt="Cyber Security"
+                    width={400}
+                    height={350}
                   />
-                </div>
-                <div className="w-24 h-6 ml-4 mt-2 bg-emerald-500 rounded-2xl justify-center items-center flex">
-                  <div className="text-center text-white text-xs font-bold font-['Poppins']">
-                    BOOTCAMP
+                  <div className="ml-6 -mt-16 text-white text-2xl font-bold">
+                    Cyber Security
                   </div>
                 </div>
-                <div
-                  className={`${circleAmolens.className} ml-4 mt-2 text-gray-800 text-2xl tracking-tight font-bold`}
-                >
-                  WEB DEVELOPMENT
+                <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3">
+                  <i>&quot;Empowering Cyber Defenders : <br></br>Training for Real-World Challenges&quot;</i>
                 </div>
-                <div className="w-80 px-4 text-stone-500 text-sm font-light font-['Poppins']">
-                  “Create Interactive Websites to Become a Web Developer With
-                  HTML, CSS & JS”
+                <div className="px-10 text-black text-center font-semibold font-['Poppins'] mb-5">
+                  27 April 2025 - 18 Mei 2025
                 </div>
-                <div className="mt-1 w-80 px-4 text-neutral-600 text-sm font-normal font-['Poppins']">
-                  Web Developer, profesi yang sangat dibutuhkan dalam era
-                  digitalisasi ini untuk memperkenalkan dan mempromosikan
-                  produk/layanan perusahaan.
-                </div>
-                <button
-                  className={`${circleAmolens.className} w-full mt-8 mb-4 text-center text-stone-400 text-sm font-bold`}
-                >
-                  CLICK TO LEARN MORE
+                <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
+                  click to learn more
                 </button>
               </div>
             </Link>

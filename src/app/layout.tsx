@@ -38,6 +38,9 @@ const disableNavbar = [
 const disableFooter = [
   "/oprec-volunteer",
   "/technofair",
+  "/filing",
+  "/filing/WebDevelopment",
+  "/filing/DataAnalyst",
   "/technofair/details/seminar/data-analyst",
   "/technofair/details/seminar/artificial-intelligence",
   "/technofair/details/workshop/uiux",
