@@ -18,7 +18,7 @@ const footer: React.FC = () => {
             />
             <img
               src="/filing/Ellipse-footer2.png"
-              className="img-fluid absolute top-0 right-0 max-md:hidden md:w-28 lg:w-36 translate-x-0 md:-translate-y-[55%] lg:-translate-y-2/3 z-30"
+              className="img-fluid absolute top-0 right-0 md:w-28 lg:w-36 translate-x-0 -translate-y-[55%] lg:-translate-y-2/3 z-30"
               alt=""
             />
           <div className='absolute top-0 right-0 w-24 h-24 -translate-x-1/2 -translate-y-1/2'></div>  
