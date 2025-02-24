@@ -15,7 +15,7 @@ export default function FaqPage() {
               <p className={`${circleAmolens.className} text-black text-4xl font-medium text-center`}>
                 FREQUENTLY ASKED QUESTIONS
               </p>
-              <p className="text-black text-md font-[Poppins] py-2 text-center">
+              <p className="text-black text-md py-2 text-center font-serif">
                 Everything you need to know about FIKTI Learning.
               </p>
             </div>
@@ -60,19 +60,19 @@ export default function FaqPage() {
 
           {/* FAQ */}
           <div className="text-center mt-20">
-              <p className={`${circleAmolens.className} text-black text-4xl font-medium`}>
-                CONTACT US
-              </p>
-              <p className="text-black text-xl font-[Poppins] py-3">
-                Can’t find what you are looking for? feel free to{" "}
-                <span>
-                  <a href="https://www.evernote.com/shard/s684/sh/6bba8628-a7cf-c26f-84b8-1996b92a3f4e/npUZo0Vd4Dp0pPWO4yUYoBVraTAj-dTPsxKUT6WEnZLH3_DS4NKOaGWuZg" className="text-black text-xl font-normal font-['Poppins'] underline">
-                    {" "}
-                    ask us.
-                  </a>
-                </span>
-              </p>
-            </div>
+            <p className={`${circleAmolens.className} text-black text-4xl font-medium`}>
+              CONTACT US
+            </p>
+            <p className="text-black text-xl py-3 font-serif font-medium">
+              Can’t find what you are looking for? feel free to{" "}
+              <span>
+                <a href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+                  {" "}
+                  ask us.
+                </a>
+              </span>
+            </p>
+          </div>
         </div>
       </div>
       {/* Dekstop */}

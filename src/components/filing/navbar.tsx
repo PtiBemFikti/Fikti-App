@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
       <div className="flex items-center w-full justify-between lg:justify-around">
 
         {/* Navigation Links */}
-        <div className="w-2/5 md:w-1/6 lg:w-2/5 hidden lg:flex gap-3 md:gap-5 font-medium">
+        <div className="w-2/5 md:w-1/6 lg:w-2/5 hidden lg:flex gap-3 md:gap-5 font-medium font-serif">
           <Link className="block text-lg text-black hover:text-purpleText duration-300 py-2" href="#about">About</Link>
           <Link className={`block ${pathname === "/filing#bootcamp" ? "text-purpleText" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#bootcamp">Bootcamp List</Link>
           <Link className={`block ${pathname === "/filing#documentation" ? "text-purpleText" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#documentation">Documentation</Link>
@@ -68,15 +68,15 @@ const Navbar: React.FC = () => {
 
         {/* Hamburger Menu */}
         <div className="lg:hidden">
-          <button onClick={toggleMenu} className={`text-[#11111B] mr-4 p-1 ${isMenuOpen ? "bg-[#25243A] backdrop-blur-sm shadow-md rounded-md" : "bg-[#25243A]"}`}>
-            <Image src={"/filing/hamburger-btn.png"} alt="Hamburger menu Btn" width={20} height={20} />
+          <button onClick={toggleMenu} className={`text-[#11111B] mr-4 p-1 ${isMenuOpen ? " backdrop-blur-sm shadow-md rounded-md" : ""}`}>
+            <Image src={"/filing/Ham Btn.png"} alt="Hamburger menu Btn" width={30} height={30} />
           </button>
         </div>
       </div>
 
       {isMenuOpen && (
         <motion.div
-          className="flex flex-col gap-3 lg:hidden mt-4"
+          className="flex flex-col gap-3 lg:hidden mt-4 font-serif"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
