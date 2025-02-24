@@ -11,15 +11,15 @@ const footer: React.FC = () => {
   return (
     <div className='text-black'>
         <footer className="relative bg-[linear-gradient(89.94deg,#3F3381_-6.02%,#CBA2EA_57.77%,#91D2F4_121.56%)] rounded-t-md bottom-0">
-            <img
+            <Image
               src="/filing/Ellipse-footer.png"
-              className="img-fluid absolute bottom-0 left-0 max-md:hidden md:w-32 lg:w-40 translate-x-0 translate-y-0 z-30"
               alt=""
+              className='img-fluid absolute bottom-0 left-0 max-md:hidden md:w-32 lg:w-40 translate-x-0 translate-y-0 z-30'
             />
-            <img
+            <Image
               src="/filing/Ellipse-footer2.png"
-              className="img-fluid absolute top-0 right-0 md:w-28 lg:w-36 translate-x-0 -translate-y-[55%] lg:-translate-y-2/3 z-30"
               alt=""
+              className='img-fluid absolute top-0 right-0 md:w-28 lg:w-36 translate-x-0 -translate-y-[55%] lg:-translate-y-2/3 z-30'
             />
           <div className='absolute top-0 right-0 w-24 h-24 -translate-x-1/2 -translate-y-1/2'></div>  
           <div className="flex flex-wrap lg:flex lg:flex-row items-center justify-evenly relative gap-10 pt-10 mb-5 px-5 md:px-20">

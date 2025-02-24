@@ -1,6 +1,7 @@
 import { circleAmolens } from "@/styles/font";
 import AccordionCard from "./AccordionCard";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function FaqPage() {
   return (
@@ -149,10 +150,10 @@ export default function FaqPage() {
 
       <div className="">
         <Link href="#" className="duration-300">
-          <img
+          <Image
             src="/filing/scroll up.png"
             alt=""
-            className="ml-5 mb-2"
+            className='ml-5 mb-2'
           />
         </Link>
         
