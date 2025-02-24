@@ -40,9 +40,9 @@ const Navbar: React.FC = () => {
         {/* Navigation Links */}
         <div className="w-2/5 md:w-1/6 lg:w-2/5 hidden lg:flex gap-3 md:gap-5 font-medium font-serif">
           <Link className="block text-lg text-black hover:text-purpleText duration-300 py-2" href="#about">About</Link>
-          <Link className={`block ${pathname === "/filing#bootcamp" ? "text-purpleText" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#bootcamp">Bootcamp List</Link>
-          <Link className={`block ${pathname === "/filing#documentation" ? "text-purpleText" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#documentation">Documentation</Link>
-          <Link className={`block ${pathname === "/filing#faq" ? "text-purpleText" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#faq">FAQ</Link>
+          <Link className={`block ${pathname === "/filing#bootcamp" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#bootcamp">Bootcamp List</Link>
+          <Link className={`block ${pathname === "/filing#documentation" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#documentation">Documentation</Link>
+          <Link className={`block ${pathname === "/filing#faq" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#faq">FAQ</Link>
         </div>
 
         {/* Logo */}
@@ -57,11 +57,15 @@ const Navbar: React.FC = () => {
 
           {/* <button className="px-7 py-2 text-[17px] rounded-3xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-transparent bg-gradient-to-r from-[#3F3381] via-[#CBA2EA] to-[#91D2F4] bg-clip-border"> */}
           <button className="px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
-            Contact Us
+            <Link href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              Contact Us
+            </Link>
           </button>
 
           <button className="px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide bg-[#3F3381] hover:bg-[#2c2563] transition-all">
-            Daftar
+            <Link href="" target="_blank" rel="noopener noreferrer"> {/* kalau sudah ada gform nya */}
+              Daftar
+            </Link>
           </button>
 
         </div>
@@ -87,6 +91,18 @@ const Navbar: React.FC = () => {
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#bootcamp">Bootcamp List</Link>
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#documentation">Documentation</Link>
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#faq">FAQ</Link>
+          
+          <button className="px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
+            <Link href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              Contact Us
+            </Link>
+          </button>
+
+          <button className="px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide bg-[#3F3381] hover:bg-[#2c2563] transition-all">
+            <Link href="" target="_blank" rel="noopener noreferrer"> {/* kalau sudah ada gform nya */}
+              Daftar
+            </Link>
+          </button>
         </motion.div>
       )}
     </motion.nav>

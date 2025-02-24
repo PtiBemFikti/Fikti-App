@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div className="">
       {/* Desktop */}
       <div className="md:block hidden pt-20">
-        <div className="flex items-center justify-center px-28">
+        <div className="flex items-center justify-center px-12 lg:px-28">
           <div className="w-full ml-10">
 
             <div className="justify-center items-center">
@@ -29,7 +29,7 @@ export default function AboutPage() {
                 {" "}
                 WHY YOU SHOULD JOIN FILING?{" "}
               </h1>
-              <div className="md:flex-wrap lg:flex items-center justify-around mt-10 font-serif">
+              <div className="flex-auto lg:flex items-center gap-10 lg:gap-3 lg:justify-between mt-10 font-serif justify-items-stretch">
                 <div className="mt-4 flex-col items-center inline-flex">
                   <Image
                     src={"/filing/simplicity.png"}
@@ -58,7 +58,7 @@ export default function AboutPage() {
                     Achieve regular next steps of a course by supporting the motivation system.
                   </p>
                 </div>
-                <div className="mt-4 flex-col items-center inline-flex">
+                <div className="mt-4 flex-col items-center inline-flex ">
                   <Image
                     src={"/filing/support.png"}
                     alt="support"

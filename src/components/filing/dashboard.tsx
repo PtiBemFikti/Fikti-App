@@ -20,7 +20,7 @@ const Dashboard: React.FC = () => {
       <div>
         {/*desktop*/}
         <div className="sm:block hidden">
-          <div className="bg-[url(/filing/Unsplash-BG.png)] px-36 pb-10">
+          <div className="bg-[url(/filing/Unsplash-BG.png)] px-20 lg:px-36 pb-10">
             <div className="text-black w-[497px]">
               <Link href="/">
                 <Image
@@ -46,12 +46,12 @@ const Dashboard: React.FC = () => {
                   POWER UP YOUR SKILLS TO FACE INDUSTRY 5.0 WITH DATA ANALYTICS AND WEB DEVELOMENT
                 </h1>
 
-                <h2 className="font-serif leading-[30px] text-[22px] text-white">
+                <h2 className="font-serif leading-[30px] text-[22px] text-white mt-3">
                 Get  the knowledge and skills you need to thrive in today’s rapidly changing  world with our flexible and affordable bootcamp online courses
                 </h2>
                 <div className="flex gap-5 scroll-smooth mt-4">
                   <Link href={"/filing#bootcamp"}>
-                    <button className="bg-gradient-to-r from-[#3F3381] from-10% to-[#B07FD6] to-75% text-white px-7 text-[17px] font-serif rounded-xl font-semibold py-3">
+                    <button className="bg-gradient-to-r from-[#3F3381] from-10% to-[#B07FD6] to-75% text-white px-7 text-[17px] font-serif rounded-xl font-semibold py-3 duration-300">
                       See Program
                     </button>
                   </Link>
