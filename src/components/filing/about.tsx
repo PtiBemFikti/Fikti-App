@@ -82,9 +82,7 @@ export default function AboutPage() {
       <div className="mt-2 md:hidden">
         <div className="flex items-center justify-center">
           <div className="my-8 px-8">
-            <h1
-              className={`${circleAmolens.className} text-center text-black text-3xl font-bold`}
-            >
+            <h1 className={`${circleAmolens.className} text-center text-black text-3xl font-bold`}>
               WHAT IS FILING?
             </h1>
             <p className="text-black font-normal mt-6 font-serif text-lg">
@@ -98,7 +96,7 @@ export default function AboutPage() {
           >
             WHY YOU SHOULD JOIN FILING?
           </h1>
-          <div className="grid grid-cols-1 gap-10 mt-3 font-serif">
+          <div className="grid grid-cols-1 gap-10 mt-3 font-serif justify-items-center space-y-6">
             <div className="flex flex-col items-center">
               <Image
                 src={"/filing/simplicity.png"}
@@ -107,7 +105,7 @@ export default function AboutPage() {
                 height={150}
               />
               <h1 className="font-bold text-black text-2xl mt-2">Simplicity</h1>
-              <p className="w-40 text-center text-black text-base font-medium font-serif">
+              <p className="max-w-xs text-center text-black text-base font-medium font-serif">
                 Learn using quick and simple task requiring only a few minutes
               </p>
             </div>
@@ -119,7 +117,7 @@ export default function AboutPage() {
                 height={150}
               />
               <h1 className="font-bold text-black text-2xl mt-2">Motivation</h1>
-              <p className="w-40 text-center text-black text-base font-medium font-serif">
+              <p className="max-w-xs text-center text-black text-base font-medium font-serif">
                 Achieve regular next steps of a course by supporting the motivation system.
               </p>
             </div>
@@ -131,7 +129,7 @@ export default function AboutPage() {
                 height={150}
               />
               <h1 className="font-bold text-black text-2xl mt-2">Supporting</h1>
-              <p className="w-40 text-center text-black text-base font-medium font-serif">
+              <p className="max-w-xs text-center text-black text-base font-medium font-serif">
                 We give our students best support always & all time per day
               </p>
             </div>

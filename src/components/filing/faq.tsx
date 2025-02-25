@@ -154,6 +154,8 @@ export default function FaqPage() {
             src="/filing/scroll up.png"
             alt=""
             className='ml-5 mb-2'
+            width={50}
+            height={50}
           />
         </Link>
         

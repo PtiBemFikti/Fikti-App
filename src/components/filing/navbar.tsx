@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Logo */}
-        <div className="fixed left-1/2 transform -translate-x-1/2">
+        <div className="absolute left-1/2 transform -translate-x-1/2">
           <Link href="#" className="duration-300">
             <Image src="/filing/LOGO FILING.png" alt="Logo" width={125} height={125} className="mr-2" />
           </Link>

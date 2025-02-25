@@ -78,7 +78,7 @@ export default function BootcampPage() {
       <div className="md:hidden mt-8">
         <div className="flex justify-center items-center p-8">
           <div
-            className={`${circleAmolens.className} w-80 text-center tracking-tight text-neutral-800 text-3xl font-bold`}
+            className={`${circleAmolens.className} w-80 text-center tracking-tight text-neutral-800 text-2xl sm:text-3xl font-bold`}
           >
             JOIN OUR BOOTCAMPS
           </div>
@@ -92,6 +92,7 @@ export default function BootcampPage() {
                   <Image
                     src="/filing/bootcamp1.png"
                     alt="Data Science"
+                    className="w-full h-auto"
                     width={400}
                     height={350}
                   />
@@ -99,7 +100,7 @@ export default function BootcampPage() {
                     Data Science
                   </div>
                 </div>
-                <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3">
+                <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3 leading-relaxed">
                   <i>“Exploring the Data Universe : <br></br>Hands-On Learning for Beginners”</i>
                 </div>
                 <div className="px-10 text-black text-center font-semibold font-['Poppins'] mb-5">
@@ -113,7 +114,7 @@ export default function BootcampPage() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center py-4">
+        <div className="flex flex-col justify-center items-center space-y-6 py-4">
           <div className="w-80 rounded-2xl border-2 border-[#91D2F4]">
             <Link href="/filing/CyberSecurity">
               <div>
@@ -121,6 +122,7 @@ export default function BootcampPage() {
                   <Image
                     src="/filing/bootcamp2.png"
                     alt="Cyber Security"
+                    className="w-full h-auto"
                     width={400}
                     height={350}
                   />
@@ -128,7 +130,7 @@ export default function BootcampPage() {
                     Cyber Security
                   </div>
                 </div>
-                <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3">
+                <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3 leading-relaxed">
                   <i>&quot;Empowering Cyber Defenders : <br></br>Training for Real-World Challenges&quot;</i>
                 </div>
                 <div className="px-10 text-black text-center font-semibold font-['Poppins'] mb-5">
