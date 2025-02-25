@@ -1,6 +1,6 @@
 import ProductManagement from '@/components/technofair/details/ProductManagement';
-import Navbar from '@/components/technofair/navbar';
-import Footer from '@/components/technofair/footer';
+import Navbar from '@/components/technofair/Navbar';
+import Footer from '@/components/technofair/Footer';
 import { Metadata } from 'next';
 import NavbarNoComponents from '@/components/technofair/NavbarNoComponents';
 
