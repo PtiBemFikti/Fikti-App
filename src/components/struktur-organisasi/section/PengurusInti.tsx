@@ -4,70 +4,76 @@ import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Card from "@/components/struktur-organisasi/Card";
 import {
-  kontrolInternalData,
-  pengurusIntiData,
-} from "@/components/struktur-organisasi/Card/data";
+  satuanPengendaliInternal,
+  badanPengurusHarian,
+} from "@/app/struktur-organisasi/data/SpiBph";
 
 export default function PengurusIntiSection() {
   const [pengurusIntiIndex, setPengurusIntiIndex] = useState(0);
   const [kontrolInternalIndex, setKontrolInternalIndex] = useState(0);
-  const [slideWidth, setSlideWidth] = useState(100); // Default mobile: 100%
+  const [slidesToShow, setSlidesToShow] = useState(1); // Jumlah slide yang ditampilkan
 
   useEffect(() => {
-    const updateSlideWidth = () => {
-      setSlideWidth(window.innerWidth >= 768 ? 33 : 100);
+    const updateSlidesToShow = () => {
+      setSlidesToShow(window.innerWidth >= 768 ? 3 : 1);
     };
 
-    updateSlideWidth();
-    window.addEventListener("resize", updateSlideWidth);
-    return () => window.removeEventListener("resize", updateSlideWidth);
+    updateSlidesToShow();
+    window.addEventListener("resize", updateSlidesToShow);
+    return () => window.removeEventListener("resize", updateSlidesToShow);
   }, []);
 
   // Navigasi Pengurus Inti
   const pengurusIntiPrev = () => {
     setPengurusIntiIndex((prevIndex) =>
-      prevIndex === 0 ? pengurusIntiData.length - 1 : prevIndex - 1
+      prevIndex === 0
+        ? badanPengurusHarian.length - slidesToShow
+        : prevIndex - 1
     );
   };
 
   const pengurusIntiNext = () => {
     setPengurusIntiIndex((prevIndex) =>
-      prevIndex === pengurusIntiData.length - 1 ? 0 : prevIndex + 1
+      prevIndex >= badanPengurusHarian.length - slidesToShow ? 0 : prevIndex + 1
     );
   };
 
   // Navigasi Kontrol Internal
   const kontrolInternalPrev = () => {
     setKontrolInternalIndex((prevIndex) =>
-      prevIndex === 0 ? kontrolInternalData.length - 1 : prevIndex - 1
+      prevIndex === 0
+        ? satuanPengendaliInternal.length - slidesToShow
+        : prevIndex - 1
     );
   };
 
   const kontrolInternalNext = () => {
     setKontrolInternalIndex((prevIndex) =>
-      prevIndex === kontrolInternalData.length - 1 ? 0 : prevIndex + 1
+      prevIndex >= satuanPengendaliInternal.length - slidesToShow
+        ? 0
+        : prevIndex + 1
     );
   };
 
   return (
-    <div className="py-4 w-full h-fit pt-32 flex flex-col items-center justify-center section-about">
+    <div className="py-4 w-full h-fit flex flex-col items-center justify-center section-about">
       <h1 className="text-3xl md:text-[3rem] font-bold text-center">
         Ketua dan Wakil Ketua BEM FIKTI
         <span className="block w-[80%] h-1 bg-purple-500 mx-auto mt-5"></span>
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-32 w-full py-10 md:py-20">
         <Card
-          foto="/yudan_1.png"
+          foto="/user.png"
           nama="Muhammad Naufal Kamil"
           jabatan="Ketua BEM FIKTI"
         />
         <Card
-          foto="/yudan_1.png"
+          foto="/user.png"
           nama="Aryo Dwi Prasetyo"
           jabatan="Wakil Ketua BEM FIKTI"
         />
       </div>
-      <h1 className="text-3xl md:text-[3rem] font-bold  text-center">
+      <h1 className="text-3xl md:text-[3rem] font-bold text-center">
         Our Team
         <span className="block w-[80%] h-1 bg-purple-500 mx-auto my-5"></span>
       </h1>
@@ -76,20 +82,22 @@ export default function PengurusIntiSection() {
       <h2 className="text-center text-2xl font-semibold mb-4">
         Badan Pengurus Harian
       </h2>
-      <div className="relative overflow-hidden w-full md:w-[70%]">
+      <div className="relative overflow-hidden w-full md:w-[100%] lg:w-[70%] ">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
-            transform: `translateX(-${pengurusIntiIndex * slideWidth}%)`,
+            transform: `translateX(-${
+              pengurusIntiIndex * (100 / slidesToShow)
+            }%)`,
           }}
         >
-          {pengurusIntiData.map((karyawan, index) => (
-            <div key={index} className="w-full md:w-1/3 flex-shrink-0 p-4">
-              <Card
-                foto={karyawan.foto}
-                nama={karyawan.nama}
-                jabatan={karyawan.jabatan}
-              />
+          {badanPengurusHarian.map((bph, index) => (
+            <div
+              key={index}
+              className="w-full flex-shrink-0 p-4"
+              style={{ width: `${100 / slidesToShow}%` }}
+            >
+              <Card foto={bph.foto} nama={bph.nama} jabatan={bph.jabatan} />
             </div>
           ))}
         </div>
@@ -113,20 +121,22 @@ export default function PengurusIntiSection() {
       <h2 className="text-center text-2xl font-semibold mb-4 mt-6">
         Satuan Pengendali Internal
       </h2>
-      <div className="relative overflow-hidden w-full md:w-[70%]">
+      <div className="relative overflow-hidden w-full md:w-[100%] lg:w-[70%] ">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
-            transform: `translateX(-${kontrolInternalIndex * slideWidth}%)`,
+            transform: `translateX(-${
+              kontrolInternalIndex * (100 / slidesToShow)
+            }%)`,
           }}
         >
-          {kontrolInternalData.map((karyawan, index) => (
-            <div key={index} className="w-full md:w-1/3 flex-shrink-0 p-4">
-              <Card
-                foto={karyawan.foto}
-                nama={karyawan.nama}
-                jabatan={karyawan.jabatan}
-              />
+          {satuanPengendaliInternal.map((spi, index) => (
+            <div
+              key={index}
+              className="w-full flex-shrink-0 p-4"
+              style={{ width: `${100 / slidesToShow}%` }}
+            >
+              <Card foto={spi.foto} nama={spi.nama} jabatan={spi.jabatan} />
             </div>
           ))}
         </div>
