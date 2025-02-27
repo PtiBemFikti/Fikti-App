@@ -661,7 +661,7 @@ export const dataBiroDepartemen = [
            {
             nama: "Naufal Fahmi F",
             foto: "/user.png",
-            jabatan: "Ketua Biro PTI",
+            jabatan: "Kepala Biro PTI",
           },
            {
             nama: "Ryan Kalansi",
@@ -706,6 +706,127 @@ export const dataBiroDepartemen = [
             nama: "Mohammad Fattan Hibrizi",
             foto: "/user.png",
             jabatan: "Staff PTI",
+          },
+        ],
+    },
+    {
+        id: 12,
+        foto: "/bph/SPI1.png",
+        judul: "Biro Bisnis Kreatif",
+        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        slug: "/struktur-organisasi/bisnis-kreatif",
+        kepemimpinan: [
+           {
+            nama: "Yuliano Christoper Situmorang",
+            foto: "/user.png",
+            jabatan: "Kepala Biro Bisnis kreatif",
+          },
+           {
+            nama: "Sherrynita Marysa Putri S",
+            foto: "/user.png",
+            jabatan: "Deputi Biro Bisnis kreatif",
+          },
+    
+    
+        ],
+        staff: [
+            {
+              nama: "Nabila Fitriyyah",
+              foto: "/user.png",
+              jabatan: "Staff Bisnis kreatif",
+          },
+          {
+            nama: "Ruben Tristan Mangimbulur",
+            foto: "/user.png",
+            jabatan: "Staff Bisnis kreatif",
+          },
+          {
+            nama: "Auzan Herning Senopati",
+            foto: "/user.png",
+            jabatan: "Staff Bisnis kreatif",
+          },
+          {
+            nama: "Tania Suci Prabaningrum",
+            foto: "/user.png",
+            jabatan: "Staff Bisnis kreatif",
+          },
+          {
+            nama: "Mohammad Putra Nur Hidayat",
+            foto: "/user.png",
+            jabatan: "Staff Bisnis kreatif",
+          },
+          {
+            nama: "Elricha Nafisa Joemardi",
+            foto: "/user.png",
+            jabatan: "Staff Bisnis kreatif",
+          },
+          {
+            nama: "Enjy Putri Zoelma",
+            foto: "/user.png",
+            jabatan: "Staff Bisnis kreatif",
+          },
+          {
+            nama: "Sutan Filars Haq",
+            foto: "/user.png",
+            jabatan: "Staff Bisnis kreatif",
+          },
+        ],
+    },
+    {
+        id: 13,
+        foto: "/bph/SPI1.png",
+        judul: "Biro Kemitraan",
+        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        slug: "/struktur-organisasi/kemitraan",
+        kepemimpinan: [
+           {
+            nama: "Rahmalia El Vanya",
+            foto: "/user.png",
+            jabatan: "Kepala Biro Kemitraan",
+          },
+           {
+            nama: "Novia Risma Nur Aini",
+            foto: "/user.png",
+            jabatan: "Deputi Biro Kemitraan",
+          },
+    
+    
+        ],
+        staff: [
+            {
+              nama: "Melvin Diandra Setiani Anjustian",
+              foto: "/user.png",
+              jabatan: "Staff Kemitraan",
+          },
+          {
+            nama: "Usi Ramadhanti",
+            foto: "/user.png",
+            jabatan: "Staff Kemitraan",
+          },
+          {
+            nama: "Rania Mahira Insani",
+            foto: "/user.png",
+            jabatan: "Staff Kemitraan",
+          },
+          {
+            nama: "Putra Daud Friendly",
+            foto: "/user.png",
+            jabatan: "Staff Kemitraan",
+          },
+          {
+            nama: "Rindang Gita Hapsari",
+            foto: "/user.png",
+            jabatan: "Staff Kemitraan",
+          },
+          {
+            nama: "Grace Bellandina Lado Djami",
+            foto: "/user.png",
+            jabatan: "Staff Kemitraan",
+          },
+          {
+            nama: "Restika Mahaliany Putri",
+            foto: "/user.png",
+            jabatan: "Staff Kemitraan",
           },
         ],
     },
