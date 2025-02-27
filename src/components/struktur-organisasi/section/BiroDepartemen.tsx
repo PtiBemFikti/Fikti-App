@@ -13,12 +13,12 @@ const Card = ({
   slug: string;
 }) => {
   return (
-    <div className="relative flex flex-col items-center group text-center">
+    <div className="relative flex flex-col items-center group text-center shadow-lg">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-tr from-[#3a0d63] to-transparent rounded-2xl z-10"></div>
 
       {/* Gambar dan Konten */}
-      <div className="relative z-10 rounded-2xl shadow-lg p-4">
+      <div className="relative z-10 rounded-2xl  p-4">
         <Image
           src={foto}
           width={1000}
