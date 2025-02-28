@@ -1,17 +1,19 @@
 "use client";
 
-import { Navbar } from '@/components/technofair/Navbar';
-import { Dashboard } from '@/components/technofair/Dashboard';
-import { About } from '@/components/technofair/About';
-import { Schedule } from '@/components/technofair/Schedule';
-import { slowScroll } from '@/components/technofair/slowScroll';
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { Navbar } from './Navbar';
+import { Dashboard } from './Dashboard';
+import { About } from './About';
+import { Schedule } from './Schedule';
+import { slowScroll } from '@/components/technofair/slowScroll';
 import  { Dokumentasi }  from './Dokumentasi';
-import { Footer } from '@/components/technofair/Footer';
-import { Sponsor } from '@/components/technofair/Sponsor';
+import { Footer } from './Footer';
+import { Sponsor } from './Sponsor';
 import { Events } from './Events';
 import { Faq } from './Faq';
+
+
 
 export default function TfPage() {
 
