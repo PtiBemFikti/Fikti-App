@@ -1,5 +1,8 @@
+
 import { Montserrat } from "@/styles/font";
 import Image from 'next/image';
+import DokumSlider from "./DokumSlider";
+
 
 export function Dokumentasi() {
     return (
@@ -10,8 +13,8 @@ export function Dokumentasi() {
                 <span className="font-bold">a Story!</span></h1>
             </div>
 
-            <div className="m-10">
-                <Image src="/technofair/dokumentasitf.png" alt="Logo" width={1647.19} height={2623} className="mx-auto"/>
+            <div className="">
+                <DokumSlider />
             </div>
         </div>
     )

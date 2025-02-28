@@ -7,7 +7,7 @@ import { Schedule } from '@/components/technofair/Schedule';
 import { slowScroll } from '@/components/technofair/slowScroll';
 import { useEffect } from "react";
 import Lenis from "lenis";
-import { Dokumentasi } from './Dokumentasi';
+import  { Dokumentasi }  from './Dokumentasi';
 import { Footer } from '@/components/technofair/Footer';
 import { Sponsor } from '@/components/technofair/Sponsor';
 import { Events } from './Events';
