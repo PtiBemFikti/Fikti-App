@@ -62,7 +62,7 @@ export default function BiroDepartemenPage() {
             <div className="absolute inset-0 bg-black/70" />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
-            <div className="flex flex-col justify-center items-center relative z-10 mx-6">
+            <div className="flex flex-col justify-center items-center relative z-10 mx-6 mt-16 md:mt-0">
               <h1 className="relative text-2xl md:text-5xl font-bold text-center drop-shadow-lg mb-5">
                 {biroDepartemen.judul}
               </h1>
