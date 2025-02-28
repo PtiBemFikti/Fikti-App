@@ -53,7 +53,7 @@ export function Faq() {
         </div>
         <div className="mt-56">
           <h1 className="font-semibold text-[45px] tracking-tight">Contact Us</h1>
-          <p className="font-medium">Can't find what you are looking for? Feel free to ask us.</p>
+          <p className="font-medium">Can&apos;t find what you are looking for? Feel free to ask us.</p>
         </div>
         <div className="flex items-center gap-4 mt-6 max-md:mt-6 max-md:gap-4 max-md:px-5">
           <Link
