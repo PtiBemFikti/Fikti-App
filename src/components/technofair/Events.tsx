@@ -191,7 +191,7 @@ export function Events() {
                         <div className="grid grid-cols-[40%_60%]">
                             <div className="relative ml-[112px] pt-[100px] py-[200px]">
                                 <h1 className={`${Montserrat.className} text-[60px] font-bold text-black`}>Seminar</h1>
-                                <p className={`${Montserrat.className} tracking-tight text-black`}>"Seminar ini menghadirkan para ahli dan profesional di bidangnya untuk berbagi wawasan, pengalaman, serta tren terbaru. Dapatkan pemahaman mendalam melalui diskusi interaktif dan materi yang relevan dengan perkembangan industri. Jangan lewatkan kesempatan untuk belajar dan memperluas jaringan bersama peserta lainnya!"</p>
+                                <p className={`${Montserrat.className} tracking-tight text-black`}>&quot;Seminar ini menghadirkan para ahli dan profesional di bidangnya untuk berbagi wawasan, pengalaman, serta tren terbaru. Dapatkan pemahaman mendalam melalui diskusi interaktif dan materi yang relevan dengan perkembangan industri. Jangan lewatkan kesempatan untuk belajar dan memperluas jaringan bersama peserta lainnya!&quot;</p>
                             </div>
 
                             <div className="relative flex gap-5 overflow-x-auto items-center mt-8">

@@ -6,7 +6,7 @@ import { Navbar } from '@/components/technofair/Navbar';
 import { Dashboard } from '@/components/technofair/Dashboard';
 import { About } from '@/components/technofair/About';
 import { Schedule } from '@/components/technofair/Schedule';
-import { slowScroll } from '@/components/technofair/slowScroll';
+import { useSlowScroll } from '@/components/technofair/slowScroll';
 import  { Dokumentasi }  from '@/components/technofair/Dokumentasi';
 import { Footer } from '@/components/technofair/Footer';
 import { Sponsor } from '@/components/technofair/Sponsor';
@@ -17,7 +17,7 @@ import { Faq } from '@/components/technofair/Faq';
 
 export default function TfPage() {
 
-  slowScroll();
+  useSlowScroll();
 
   return (
     <main className="bg-[#100F21] bg-cover bg-no-repeat overflow-x-hidden scroll-smooth">

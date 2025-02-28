@@ -31,8 +31,8 @@ export function Faq() {
       answer: `1. Masuk atau membuka website dari TechnoFair 12.0. <br />
                 2. Pergi atau scroll ke page events atau schedule. <br />
                 3. Pilih event apa yang ingin Anda ikuti. <br />
-                4. Lalu klik bagian yang bertuliskan "Learn More" jika melalui page events atau arrow yang ada pada page schedule. Maka Anda akan diarahkan ke dalam page detail dari event yang Anda pilih. <br />
-                5. Jika sudah berada pada page detail dari event yang Anda pilih, Anda bisa langsung mendaftar pada button "Daftar Sekarang", tetapi jika Anda masih belum yakin atau ada yang ingin ditanyakan, Anda dapat klik button "Hubungi Kami".`,
+                4. Lalu klik bagian yang bertuliskan &quot;Learn More&quot; jika melalui page events atau arrow yang ada pada page schedule. Maka Anda akan diarahkan ke dalam page detail dari event yang Anda pilih. <br />
+                5. Jika sudah berada pada page detail dari event yang Anda pilih, Anda bisa langsung mendaftar pada button &quot;Daftar Sekarang&quot;, tetapi jika Anda masih belum yakin atau ada yang ingin ditanyakan, Anda dapat klik button &quot;Hubungi Kami&quot;.`,
     },
   ];
 

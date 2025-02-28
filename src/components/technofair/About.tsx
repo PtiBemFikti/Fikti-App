@@ -8,7 +8,7 @@ export function About() {
                     <h1 className={`${poppins.className} text-black text-[54px] tracking-tight font-semibold`}>What is TechnoFair?</h1> 
                     <div className="w-[650px]">
                         <p className={`${Montserrat.className} text-black text-[22px] tracking-tight mt-[36px]`}>Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.</p>
-                        <p className={`${Montserrat.className} text-black text-[22px] tracking-tight mt-[50px]`}>Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema "Realizing the dynamic technological transformation through collaborative innovation in FutureTech."</p>
+                        <p className={`${Montserrat.className} text-black text-[22px] tracking-tight mt-[50px]`}>Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quot;</p>
                     </div>
                 </div>
 

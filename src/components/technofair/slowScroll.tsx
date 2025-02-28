@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 
-export function slowScroll() {
+export function useSlowScroll() {  // Rename the function to useSlowScroll
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 0.07, // Lower values produce slower, smoother scrolling.
@@ -20,4 +20,3 @@ export function slowScroll() {
     };
   }, []);
 }
-
