@@ -155,7 +155,7 @@ export default function WorkshopSection() {
                 <div className="relative pr-[112px] pt-[100px] py-[200px] text-right">
                     <h1 className={`${Montserrat.className} text-[60px] font-bold text-black`}>Kompetisi</h1>
                     <p className={`${Montserrat.className} tracking-tight text-black pl-10`}>
-                    "Kompetisi ini menjadi ajang bagi para peserta untuk mengasah kemampuan, berinovasi, dan menunjukkan potensi terbaik mereka. Dengan berbagai kategori dan tantangan menarik, kompetisi ini memberikan pengalaman berharga serta kesempatan untuk meraih prestasi. Bersiaplah untuk bersaing dan tunjukkan kemampuan terbaikmu!"
+                    &quot;Kompetisi ini menjadi ajang bagi para peserta untuk mengasah kemampuan, berinovasi, dan menunjukkan potensi terbaik mereka. Dengan berbagai kategori dan tantangan menarik, kompetisi ini memberikan pengalaman berharga serta kesempatan untuk meraih prestasi. Bersiaplah untuk bersaing dan tunjukkan kemampuan terbaikmu!&quot;
                     </p>
                 </div>
                 
