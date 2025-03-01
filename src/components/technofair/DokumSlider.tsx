@@ -13,6 +13,7 @@ const images = [
 export default function DokumSlider() { // <== Nama fungsi harus kapital
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  //timer
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
