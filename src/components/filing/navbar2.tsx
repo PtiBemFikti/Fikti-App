@@ -87,19 +87,19 @@ const Navbar: React.FC = () => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
           onClick={toggleMenu}
         >
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#about">Tentang</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#Tentang">Tentang</Link>
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#bootcamp">Benefit</Link>
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#documentation">Jadwal</Link>
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#faq">Silabus</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#Jadwal">Jadwal</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#Silabus">Silabus</Link>
           
           <Link href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-            <button className="px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
+            <button className="w-full px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
               Contact Us
             </button>
           </Link>
 
           <Link href="" target="_blank" rel="noopener noreferrer"> {/* kalau sudah ada gform nya */}
-            <button className="px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide bg-[#3F3381] hover:bg-[#2c2563] transition-all">
+            <button className="w-full px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide bg-[#3F3381] hover:bg-[#2c2563] transition-all">
               Daftar
             </button>
           </Link>

@@ -31,7 +31,7 @@ export default function DocumentationPage() {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="mySwiper md:w-5/6 lg:w-4/5 h-[35rem] mt-8 border-[#91D2F4] border-4 rounded-[1.75rem] "
+                className="mySwiper md:w-5/6 lg:w-4/5 max-h-[35rem] mt-8 border-[#91D2F4] border-4 rounded-[1.75rem] "
               >
                 <SwiperSlide>
                   <Image

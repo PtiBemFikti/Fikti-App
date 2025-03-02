@@ -15,15 +15,15 @@ const footer: React.FC = () => {
               src="/filing/Ellipse-footer.png"
               alt=""
               className='img-fluid absolute bottom-0 left-0 max-md:hidden md:w-32 lg:w-40 translate-x-0 translate-y-0 z-30'
-              width={100}
-              height={100}
+              width={50}
+              height={50}
             />
             <Image
               src="/filing/Ellipse-footer2.png"
               alt=""
               className='img-fluid absolute top-0 right-0 md:w-28 lg:w-36 translate-x-0 -translate-y-[55%] lg:-translate-y-2/3 z-30'
-              width={100}
-              height={100}
+              width={50}
+              height={50}
             />
           <div className='absolute top-0 right-0 w-24 h-24 -translate-x-1/2 -translate-y-1/2'></div>  
           <div className="flex flex-wrap lg:flex lg:flex-row items-center justify-evenly relative gap-10 pt-10 mb-5 px-5 md:px-20">
@@ -145,7 +145,7 @@ const footer: React.FC = () => {
               </div>
           </div>
           <hr className='w-5/6 mx-auto'></hr>
-          <div className='text-white text-center py-5 text-[2px] font-serif'>
+          <div className='text-white text-center py-5 text-[9px] md:text-sm font-serif'>
               Copyright © 2025 BEM FIKTI UG - All rights reserved.
           </div>
         </footer>

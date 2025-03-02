@@ -38,7 +38,7 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
           />
         </div>
         <div
-          className={`w-80 mt-2 h-px border border-white border-opacity-10 ${
+          className={`w-full mt-2 h-px border border-white border-opacity-10 ${
             isOpen ? "border-opacity-100" : ""
           }`}
         ></div>
