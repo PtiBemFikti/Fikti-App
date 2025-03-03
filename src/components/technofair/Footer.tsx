@@ -1,28 +1,74 @@
 import { Montserrat } from "@/styles/font";
 import Image from "next/image";
+import Link from "next/link";
+
+
+const sosmed = [
+    { href: "", src: "/technofair/logoTF12/youtube.png", alt: "YouTube" },
+    { href: "", src: "/technofair/logoTF12/instagram.png", alt: "Instagram" },
+    { href: "", src: "/technofair/logoTF12/tiktok.png", alt: "TikTok" },
+    { href: "", src: "/technofair/logoTF12/linkedin.png", alt: "LinkedIn" },
+    { href: "", src: "/technofair/logoTF12/twitter.png", alt: "Twitter" },
+  ];
+  
 
 export function Footer() {
     const year = new Date().getFullYear();
 
     return (
-        <footer className="bg-[#FE8A16]">
-            <div className="w-[1500px] h-[3px] bg-black mx-auto"></div>
+        <footer className="bg-[#FE8A16] ">
+            <div className="w-full h-[3px] bg-black mx-auto"></div>
             <div className="mt-14 ml-20">
                 <h1 className={`${Montserrat.className} text-[20px] font-extrabold text-black`}>Contact Info</h1>
             </div>
 
-            <div className="ml-20 mt-11">
-                <div className="flex">
-                    <Image src="/technofair/gmailsvg.svg" alt="Logo" width={30} height={30}/>
-                    <h1 className=" ml-4 font-medium text-black text-[22px]">bemfiktiug@gmail.com</h1>
+            <div className="grid grid-cols-3 gap-9 mx-20 ">
+                <div className=" mt-11">
+                    <div className="flex">
+                        <Image src="/technofair/gmailsvg.svg" alt="Logo" width={30} height={30}/>
+                        <h1 className=" ml-4 font-medium text-black text-[22px]">bemfiktiug@gmail.com</h1>
+                    </div>
+                    <div className="flex mt-[20px]">
+                        <Image src="/technofair/callsvg.svg" alt="Logo" width={30} height={30}/>
+                        <h1 className="ml-4 font-medium text-black text-[22px]">+62 858 8084 8140</h1>
+                    </div>
+                    
+                    <div className="flex">
+                        <div className="w-[45px] h-[50px] bg-[#FE8A16]"></div>
+                        <div className="flex mt-6">
+                            {sosmed.map((items, index) => (
+                                <Link key={index} href={items.href} className="text-gray-400 hover:text-purpleText">
+                                <Image
+                                    src={items.src}
+                                    alt={items.alt}
+                                    width={50}
+                                    height={50}
+                                    className="object-contain hover:scale-110 transition-transform"
+                                />
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-                <div className="flex mt-[20px]">
-                    <Image src="/technofair/callsvg.svg" alt="Logo" width={30} height={30}/>
-                    <h1 className="ml-4 font-medium text-black text-[22px]">+62 858 8084 8140</h1>
+                
+                <div className="grid grid-rows-2 items-end">
+                    <div className="flex justify-center items-end">
+                        <Image src="/technofair/logoTF12/Logo Gundar Putih.png" alt="Logo" width={80} height={80} className="object-contain hover:scale-110 transition-transform" />
+                        <Image src="/technofair/logoTF12/Logo BEM FIKTI Putih.png" alt="Logo" width={100} height={100} className="object-contain hover:scale-110 transition-transform" />
+                        <Image src="/technofair/logoTF12/Logo Adiraka Putih.png" alt="Logo" width={80} height={80} className="object-contain hover:scale-110 transition-transform" />
+                    </div>
+                    <h1 className={`${Montserrat.className} text-[20px] text-center font-semibold text-black items-end`}>BEM FIKTI UG 2024/{`${year}`} <br />TECHNOFAIR 12</h1>
                 </div>
-                <div className="flex mt-[20px]">
-                    <Image src="/technofair/locsvg.svg" alt="Logo" width={30} height={30}/>
-                    <h1 className="ml-4 font-medium text-black text-[22px]">Alamat Sekretariat BEM FIKTI : Pusat Kegiatan Mahasiswa (PUSGIWA) Gedung 4 Lantai 3 Kampus E Universitas Gunadarma Jl. Komjen Pol. M. Jasin Kelapa Dua Depok</h1>
+
+                <div className="mt-[20px]">
+                    <div className=" flex justify-between">
+                        <div className="w-2 h2 bg-[#FE8A16]"></div>
+                        <Image src="/technofair/locsvg.svg" alt="Logo" width={30} height={30} className=""/>
+                    </div>
+                    <Link href="https://www.google.com/maps/place/Universitas+Gunadarma/@-6.363234,106.831725,17z">
+                    <h1 className="ml-4 font-medium text-black text-[20px] text-right hover:text-[#174082] transition-colors duration-300">Alamat Sekretariat BEM FIKTI : <br /> Pusat Kegiatan Mahasiswa (PUSGIWA) Gedung 4 Lantai 3 Kampus E Universitas Gunadarma Jl. Komjen Pol. M. Jasin Kelapa Dua Depok</h1>
+                    </Link>
+
                 </div>
             </div>
 

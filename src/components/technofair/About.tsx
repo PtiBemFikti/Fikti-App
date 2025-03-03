@@ -1,28 +1,41 @@
 import { Montserrat, poppins } from "@/styles/font";
+import Image from "next/image";
+import Maskot from '..\public\technofair\NeowBit 7.png'
 
 export function About() {
     return (
         <div>
             <div className="flex justify-center items-start mx-10 mt-[250px]">
-                <div className="justify-center items-center w-[650px]">
+                <div className="justify-center items-center w-[600px]">
                     <h1 className={`${poppins.className} text-black text-[54px] tracking-tight font-semibold`}>What is TechnoFair?</h1> 
-                    <div className="w-[650px]">
-                        <p className={`${Montserrat.className} text-black text-[22px] tracking-tight mt-[36px]`}>Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.</p>
-                        <p className={`${Montserrat.className} text-black text-[22px] tracking-tight mt-[50px]`}>Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quot;</p>
+                    <div className="w-[600px]">
+                        <p className={`${Montserrat.className} text-black text-[20px] tracking-tight mt-[36px]`}>Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.</p>
+                        <p className={`${Montserrat.className} text-black text-[20px] tracking-tight mt-[30px]`}>Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quot;</p>
                     </div>
                 </div>
 
-                <div className="h-[450px] w-[1px] bg-black mx-14"></div>
+                <div className="h-[450px] w-[1px] bg-black mx-7"></div>
 
                 <div>
                     <div>
                         <h1 className={`${poppins.className} text-black text-[15px] tracking-tight font-medium`}>Maskot</h1>
-                        <h1 className={`${poppins.className} text-black text-[54px] tracking-tight font-semibold mt-[-12px]`}>Zenith</h1>
-                        <p className={`${Montserrat.className} text-black text-[22px] tracking-tight mt-[24px] w-[350px]`}>Nama Zenith dipilih karena melambangkan puncak, titik tertinggi dalam suatu pencapaian. Hal ini merepresentasikan tujuan TechnoFair untuk mencapai puncak pengetahuan dan wawasan dalam bidang teknologi.</p>
+                        <h1 className={`${poppins.className} text-black text-[54px] tracking-tight font-semibold mt-[-12px]`}>NeowBit</h1>
+                        <div>
+                            <p className={`${Montserrat.className} text-black text-[18px] tracking-tight mt-[24px] w-[350px]`}>NeowBit berasal dari kata &quot;Neo&quot; yang berarti baru atau modern, melambangkan inovasi dan pembaruan. &quot;Bit&quot; Mengacu pada unit dasar data dalam komputasi, melambangkan teknologi dan dunia digital.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div className="w-[450px] h-[450px] bg-slate-400"></div>
+                <div>
+                    <div className="w-80 aspect-[7/9] relative">
+                        <Image
+                            src="/technofair/Maskot NeowBit 7.png"
+                            alt="maskot"
+                            layout="fill"
+                            objectFit="cover"
+                            quality={10}
+                        />
+                    </div>
+                </div>
                 
             </div>
             
