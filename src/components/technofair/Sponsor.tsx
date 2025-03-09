@@ -1,51 +1,103 @@
 import { poppins } from "@/styles/font";
 import Image from "next/image";
 
-const sponsors = [
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
-    { src: "/technofair/dicoding.png", alt: "dicoding" },
+const sponsorUtama = {
+  title: "OFFICIAL EXCLUSIVE CLOUD HOSTING PARTNER",
+  image: "/technofair/dewaweb.png"
+};
+
+const otherSponsorsData = [
+  {
+    title: "SPONSORSHIP & PARTNERSHIP",
+    images: [
+      "/technofair/dapoerdjoeang.png",
+      "/technofair/frisianflag.png",
+      "/technofair/jh-square.png"
+    ]
+  },
+  {
+    title: "COMMUNITY PARTNER",
+    images: [
+      "/technofair/ccug.png",
+      "/technofair/gundario.png"
+    ]
+  },
+  {
+    title: "MEDIA PARTNERS",
+    images: [
+      "/technofair/ugtv.png",
+      "/technofair/seputar-seminar.png",
+      "/technofair/anakgundardotco.png"
+    ]
+  }
 ];
 
 export function Sponsor() {
-    return (
-        <div className="mt-80 mb-60">
-            <div>
-                <h1 className={`${poppins.className} text-[65px] font-extrabold text-center`}>Sponsorship</h1>
-            </div>
+  return (
+    <div className="mt-56 mb-60">
+      <h1 className={`${poppins.className} text-3xl lg:text-[65px] font-extrabold text-center`}>
+        Sponsorship
+      </h1>
 
-            <div className="container m-auto grid grid-cols-5 w-full mt-40">
-                {sponsors.map((sponsor, index) => (
-                    <div
-                        key={index}
-                        className={`border border-gray-400 p-12 
-                            ${index < 5 ? "border-t-0" : ""} 
-                            ${index % 5 === 0 ? "border-l-0" : ""} 
-                            ${(index + 1) % 5 === 0 ? "border-r-0" : ""} 
-                            ${index >= sponsors.length - 5 ? "border-b-0" : ""}`
-                        }
-                    >
-                        <Image src={sponsor.src} alt={sponsor.alt} width={230} height={75} className="hover:scale-125 transition-transform duration-200"/>
-                    </div>
-                ))}
+      {/* Dewaweb Sponsor */}
+      <div className="mt-10">
+        <div className="lg:container lg:mx-auto">
+          {/* Title with horizontal lines */}
+          <div className="grid grid-cols-[auto_auto_auto] lg:flex items-center gap-1 lg:gap-5 justify-center whitespace-nowrap overflow-hidden">
+            <div className="bg-white h-[1px] w-20 lg:w-full"></div>
+            <h1 className="text-xs lg:text-base tracking-tight">
+              {sponsorUtama.title}
+            </h1>
+            <div className="bg-white h-[1px] w-20 lg:w-full"></div>
+          </div>
+          {/* Sponsor Image */}
+          <div className="flex justify-center gap-5 mt-5">
+            <div className="mx-auto scale-75 lg:scale-100" style={{ maxWidth: "500px" }}>
+              <Image 
+                src={sponsorUtama.image}
+                alt="Dewaweb Sponsor"
+                height={250} // Fixed height for dewaweb
+                width={500}  // Manually set a width (or adjust based on your design)
+                layout="intrinsic" // Automatically maintains aspect ratio
+                objectFit="contain"
+                priority
+              />
             </div>
+          </div>
         </div>
-    );
+      </div>
+
+      {/* Other Sponsors */}
+      {otherSponsorsData.map((sponsor, index) => (
+        <div key={index} className="mt-10">
+          <div className="lg:container lg:mx-auto">
+            {/* Title with horizontal lines */}
+            <div className="grid grid-cols-[auto_auto_auto] lg:flex items-center gap-1 lg:gap-5 justify-center whitespace-nowrap overflow-hidden">
+              <div className="bg-white h-[1px] w-36 lg:w-full"></div>
+              <h1 className="text-xs lg:text-base tracking-tight">
+                {sponsor.title}
+              </h1>
+              <div className="bg-white h-[1px] w-36 lg:w-full"></div>
+            </div>
+            {/* Sponsor Images */}
+            <div className="flex justify-center gap-5 mt-5 flex-wrap">
+              {sponsor.images.map((image, imgIndex) => (
+                <div key={imgIndex} className="scale-75 lg:scale-100">
+                  <Image 
+                    src={image}
+                    alt="Sponsor Image"
+                    height={100}  // Fixed height
+                    width={100}   // Set width dynamically to maintain aspect ratio
+                    layout="intrinsic" // Ensures the image keeps its aspect ratio
+                    objectFit="contain"
+                    priority
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }

@@ -1,56 +1,61 @@
 "use client";
-import { useEffect, useState } from "react";
 import Image from "next/image";
+import React, { useState,useEffect } from "react";
+import { motion } from "framer-motion";
 
-const images = [
-  "/technofair/IMGdokum.png",
-  "/technofair/IMGdokum.png",
-  "/technofair/IMGdokum.png",
-  "/technofair/IMGdokum.png",
-  "/technofair/IMGdokum.png",
-];
+interface ImgProps {
+  image: string;
+  isHovered: boolean;
+}
 
-export default function DokumSlider() { // <== Nama fungsi harus kapital
-  const [currentIndex, setCurrentIndex] = useState(0);
+const useDeviceDetect = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
 
-  //timer
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(interval);
+    const checkDevice = () => {
+      const hasMouse = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+      setIsDesktop(hasMouse);
+    };
+
+    checkDevice();
+    window.addEventListener('resize', checkDevice);
+    return () => window.removeEventListener('resize', checkDevice);
   }, []);
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  };
+  return isDesktop;
+};
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
-  const getSlideStyle = (index: number) => {
-    const offset = index - currentIndex;
-    const normalizedOffset = ((offset % images.length) + images.length) % images.length;
-
-    if (normalizedOffset === 0) return { transform: "translateX(0%) scale(1)", opacity: 1, zIndex: 30 };
-    if (normalizedOffset === 1) return { transform: "translateX(50%) scale(0.8)", opacity: 0.5, zIndex: 20 };
-    if (normalizedOffset === images.length - 1) return { transform: "translateX(-50%) scale(0.8)", opacity: 0.5, zIndex: 20 };
-    return { transform: "translateX(200%) scale(0.5)", opacity: 0, zIndex: 10 };
-  };
+const DokumSlider: React.FC<ImgProps> = ({ image, isHovered }) => {
+  const [imgWidth, setImgWidth] = useState<number>(250);
+  const isDesktop = useDeviceDetect();
 
   return (
-    <div className="relative w-full h-[700px] mx-auto overflow-hidden">
-      <button onClick={prevSlide} className="absolute left-5 top-1/2 -translate-y-1/2 z-40 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">&larr;</button>
-      <button onClick={nextSlide} className="absolute right-5 top-1/2 -translate-y-1/2 z-40 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">&rarr;</button>
-
-      {images.map((src, index) => (
-        <div key={index} className="absolute top-0 left-0 w-full h-full transition-all duration-700 ease-in-out flex items-center justify-center" style={getSlideStyle(index)}>
-          <div className="relative w-[80%] h-[80%]">
-            <Image src={src} alt={`Slide ${index}`} fill className="object-cover rounded-xl" />
-          </div>
-        </div>
-      ))}
-    </div>
+    <motion.div
+      className="relative overflow-hidden rounded-xl bg-slate-400"
+      style={{ height: "250px", width: `${imgWidth}px` }}
+      animate={{ opacity: isHovered ? 1 : 0.2 }}
+      transition={{ duration: 0.3 }}
+      whileHover={isDesktop ? { 
+        scale: 1.2, 
+        boxShadow: "0px 5px 15px rgba(255, 255, 255, 0.2)" 
+      } : undefined}
+      initial={false}
+    >
+      <Image
+        src={image}
+        alt={image}
+        quality={75}
+        loading="lazy"
+        onLoadingComplete={({ naturalWidth, naturalHeight }) => {
+          const calculatedWidth = (naturalWidth / naturalHeight) * 250;
+          setImgWidth(calculatedWidth);
+        }}
+        width={imgWidth}
+        height={250}
+        style={{ objectFit: "cover" }}
+      />
+    </motion.div>
   );
-}
+};
+
+export default DokumSlider;

@@ -37,7 +37,7 @@ export function Faq() {
   ];
 
   const toggleAccordion = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index); // Close if clicked again
+    setOpenIndex(openIndex === index ? null : index);
   };
 
 
@@ -45,39 +45,41 @@ export function Faq() {
 
 
   return (
-    <div className="container mx-auto grid grid-cols-2 content-start h-[700px] ">
+    <div className="container mx-auto lg:grid grid-cols-2 content-start lg:h-[700px] ">
       <div className="h-auto">
-        <div>
-          <h1 className="font-semibold text-[45px] tracking-tight">Frequently Asked Questions</h1>
-          <p className="font-medium">Everything you need to know about TechnoFair.</p>
+        <div className="text-center lg:text-left">
+          <h1 className="font-semibold  text-4xl lg:text-[45px] tracking-tight leading-tight lg:leading-normal">Frequently Asked Questions</h1>
+          <p className="font-medium pt-3 text-sm lg:text-base lg:pt-0">Everything you need to know about TechnoFair.</p>
         </div>
-        <div className="mt-56">
-          <h1 className="font-semibold text-[45px] tracking-tight">Contact Us</h1>
-          <p className="font-medium">Can&apos;t find what you are looking for? Feel free to ask us.</p>
-        </div>
-        <div className="flex items-center gap-4 mt-6 max-md:mt-6 max-md:gap-4 max-md:px-5">
-          <Link
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-base w-[200px] max-md:w-[170px] max-md:text-base font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
-          >
-            <FaWhatsapp size={24} />
-            Abiyyu
-          </Link>
-          <Link
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-base w-[200px] max-md:w-[170px] max-md:text-base font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
-          >
-            <FaWhatsapp size={24} />
-            Putri
-          </Link>
+        <div className="hidden lg:block mt-56">
+          <div>
+            <h1 className="font-semibold text-[45px] tracking-tight">Contact Us</h1>
+            <p className="font-medium">Can&apos;t find what you are looking for? Feel free to ask us.</p>
+          </div>
+          <div className="flex items-center gap-4 mt-6 max-md:mt-6 max-md:gap-4 max-md:px-5">
+            <Link
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-base w-[200px] max-md:w-[170px] max-md:text-base font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
+            >
+              <FaWhatsapp size={24} />
+              Abiyyu
+            </Link>
+            <Link
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-base w-[200px] max-md:w-[170px] max-md:text-base font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
+            >
+              <FaWhatsapp size={24} />
+              Putri
+            </Link>
+          </div>
         </div>
       </div>
 
-      <div className="">
+      <div className="mt-8 border-t-1 lg:mt-0 lg:border-t-0">
         {faqContent.map((item, index) => (
           <div key={index}>
             <h2>
@@ -111,6 +113,34 @@ export function Faq() {
           </div>
         ))}
       </div>
+
+      <div className="lg:hidden mt-10 pb-4">
+          <div className="text-center mx-12">
+            <h1 className="font-semibold text-4xl tracking-tight">Contact Us</h1>
+            <p className="font-medium text-sm">Can&apos;t find what you are looking for? Feel free to ask us.</p>
+          </div>
+          <div className="flex items-center justify-center gap-4 mt-6 max-md:mt-6 max-md:gap-4 max-md:px-5">
+            <Link
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-base w-[200px] max-md:w-[170px] max-md:text-base font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
+            >
+              <FaWhatsapp size={24} />
+              Abiyyu
+            </Link>
+            <Link
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-base w-[200px] max-md:w-[170px] max-md:text-base font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
+            >
+              <FaWhatsapp size={24} />
+              Putri
+            </Link>
+          </div>
+        </div>
+
     </div>
   );
 }

@@ -29,9 +29,9 @@ export default function Textmarquee() {
 
     return (
         <div className="relative">
-          <div className="absolute w-[400px] h-[400px] left-[-200px] top-[-120px] bg-[#100F21] blur-[100px] z-10"></div>
-          <div className="absolute w-[400px] h-[400px] right-[-200px] top-[-120px] bg-[#100F21] blur-[100px] z-10"></div>
-          <div className="relative flex overflow-x-hidden mt-28">
+          <div className="absolute w-[200px] h-[100px] left-[-100px] lg:w-[400px] lg:h-[400px] lg:left-[-200px] lg:top-[-120px] bg-[#100F21] blur-[50px] lg:blur-[100px] z-10"></div>
+          <div className="absolute w-[200px] h-[100px] right-[-100px] lg:w-[400px] lg:h-[400px] lg:right-[-200px] lg:top-[-120px] bg-[#100F21] blur-[50px] lg:blur-[100px] z-10"></div>
+          <div className="hidden relative lg:flex overflow-x-hidden mt-28">
             <div className="py-3 animate-marquee whitespace-nowrap">
               {item.map((data, index) => (
                 <span
@@ -53,7 +53,7 @@ export default function Textmarquee() {
               ))}
             </div>
           </div>
-          <div className="relative flex overflow-x-hidden">
+          <div className="relative flex overflow-x-hidden mt-10 mb-10 lg:mb-0 lg:mt-0">
             <div className="py-3 animate-marqueereverse whitespace-nowrap">
               {item.map((data, index) => (
                 <span
