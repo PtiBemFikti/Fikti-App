@@ -6,7 +6,7 @@ export default function BootcampPage() {
     <div className="">
       {/*Dekstop*/}
       <div className="md:block hidden">
-        <div className="pt-20">
+        <div className="pt-16">
             <div className="lg:px-48 md:px-12 w-full">
               <div className={`${circleAmolens.className} mt-4 mb-9 text-center text-black text-3xl font-semibold`}>
               BOOTCAMP KAMI
@@ -14,7 +14,7 @@ export default function BootcampPage() {
 
               <div className=" flex items-center justify-center">
                 <div className="flex md:gap-12 lg:gap-44 justify-center">
-                  <div className="md:w-1/2 lg:w-2/5 rounded-2xl border-2 border-[#91D2F4]">
+                  <div className="md:w-1/2 lg:w-2/5 rounded-2xl border-2 border-[#91D2F4] group transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-100 hover:-translate-y-0.5">
                     <Link href="/filing/DataScience">
                       <div className="">
                         <div className="items-center mb-4">
@@ -41,7 +41,7 @@ export default function BootcampPage() {
                     </Link>
                   </div>
 
-                  <div className="md:w-1/2 lg:w-2/5 rounded-2xl border-2 border-[#91D2F4]">
+                  <div className="md:w-1/2 lg:w-2/5 rounded-2xl border-2 border-[#91D2F4] group transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-100 hover:-translate-y-0.5">
                     <Link href="/filing/CyberSecurity">
                       <div>
                         <div className="items-center mb-4">
@@ -85,7 +85,7 @@ export default function BootcampPage() {
         </div>
 
         <div className="flex justify-center items-center pb-2">
-          <div className="w-80 rounded-2xl border-2 border-[#91D2F4]">
+          <div className="w-80 rounded-2xl border-2 border-[#91D2F4] group transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-100 hover:-translate-y-0.5">
             <Link href="/filing/DataScience">
               <div className="">
                 <div className="items-center mb-4">
@@ -114,7 +114,7 @@ export default function BootcampPage() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center pb-2">
+        <div className="flex justify-center items-center pb-2 group transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-100 hover:-translate-y-0.5">
           <div className="w-80 rounded-2xl border-2 border-[#91D2F4]">
             <Link href="/filing/CyberSecurity">
               <div>
