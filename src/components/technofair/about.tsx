@@ -84,16 +84,16 @@ export function About() {
                 <h1 className={`${poppins.className} text-[#FFFAF0] font-semibold text-5xl text-center lg:text-[60px] lg:text-left`}>TechnoFair, in 4 <span className={`${poppins.className} text-[#FE8A16] font-bold text-5xl lg:text-[60px]`}>Points</span></h1>
 
                 <div className="hidden lg:grid lg:grid-cols-2 content-start gap-6 mt-10">
-                    {poin.map((item) => (
-                        <div className="bg-[#043255] py-9 px-11 rounded-3xl transform transition-transform duration-300 hover:scale-[102%] border-[#FE8A16] hover:border">
+                    {poin.map((item, index) => (
+                        <div key={index} className="bg-[#043255] py-9 px-11 rounded-3xl transform transition-transform duration-300 hover:scale-[102%] border-[#FE8A16] hover:border">
                             <h1 className={`${poppins.className} text-[#FFFAF0] font-medium text-[35px]`}>{item.judul}</h1>
                             <p className={`${Montserrat.className} text-[#FFFAF0] font-medium mt-4`}>{item.penjelasan}</p>
                         </div>
                     ))}
                 </div>
                 <div className="grid grid-rows-4 gap-4 mt-10  mx-5 lg:hidden">
-                    {poin.map((item) => (
-                        <div className="bg-[#053B64] py-4 px-4 rounded-3xl transform transition-transform duration-300 hover:scale-[102%] border-[#FE8A16] hover:border">
+                    {poin.map((item, index) => (
+                        <div key={index} className="bg-[#053B64] py-4 px-4 rounded-3xl transform transition-transform duration-300 hover:scale-[102%] border-[#FE8A16] hover:border">
                             <h1 className={`${poppins.className} text-[#FFFAF0] font-bold text-[20px] sm:text-3xl text-center`}>{item.judul}</h1>
                             <p className={`${Montserrat.className} text-[#FFFAF0] font-medium text-[12px] sm:text-lg mt-4 bg-[#043255] px-9 py-3 rounded-2xl`}>{item.penjelasan}</p>
                         </div>

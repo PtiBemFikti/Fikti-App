@@ -30,8 +30,8 @@ export function Schedule() {
     const konten = {
         tab1: (
             <div>
-                {kontenSeminar.map((item) => (
-                <div className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
+                {kontenSeminar.map((item, index) => (
+                <div key={index} className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
                     <div className="flex">
                         <div className="items-center my-auto ml-3 sm:ml-10  ">
                             <h1 className={`${Montserrat.className} font-extrabold text-xs lg:text-[14px]`}>{item.tanggal}</h1>
@@ -66,8 +66,8 @@ export function Schedule() {
         ),
         tab2: (
             <div>
-                {kontenWorkshop.map((item) => (
-                <div className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
+                {kontenWorkshop.map((item, index) => (
+                <div key={index} className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
                     <div className="flex">
                         <div className="items-center my-auto ml-3 sm:ml-10  ">
                             <h1 className={`${Montserrat.className} font-extrabold text-xs lg:text-[14px]`}>{item.tanggal}</h1>
@@ -102,8 +102,8 @@ export function Schedule() {
         ),
         tab3: (
             <div>
-                {kontenKompetisi.map((item) => (
-                <div className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
+                {kontenKompetisi.map((item, index) => (
+                <div key={index} className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
                     <div className="justify-between flex">
                         <div className="items-center my-auto ml-3 sm:ml-10  ">
                             <h1 className={`${Montserrat.className} font-extrabold text-xs lg:text-[14px]`}>{item.tanggal}</h1>
