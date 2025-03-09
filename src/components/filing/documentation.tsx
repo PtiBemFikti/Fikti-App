@@ -19,7 +19,7 @@ export default function DocumentationPage() {
                 className={`${circleAmolens.className} text-center font-bold text-3xl tracking-tight text-black`}
               >
                 {" "}
-                DOCUMENTATION{" "}
+                DOKUMENTASI{" "}
               </div>
             </div>
             <div >
@@ -126,40 +126,43 @@ export default function DocumentationPage() {
       {/*Dekstop*/}
 
       {/*Mobile*/}
-      <div className="md:hidden mt-2 ">
-        <div className="py-10 px-2">
-          <div className="flex justify-center items-center mt-8">
+      <div className="md:hidden mt-2">
+        <div className="px-2">
+          <div className="flex justify-center items-center mt-16">
             <div
-              className={`${circleAmolens.className} w-72 text-center tracking-tight text-black text-3xl font-bold`}
+              className={`${circleAmolens.className} text-center tracking-tight text-black text-2xl sm:text-3xl font-bold p-8`}
             >
-              DOCUMENTATIONS
+              DOKUMENTASI
             </div>
           </div>
-          <div className="justify-center items-center gap-4 flex px-2 pb-4 mt-5">
+          <div className="flex flex-col justify-center items-center space-y-6 px-2 pb-4">
             <div className="flex w-full ">
               <Image
                 src="/filing/filingdoc2.png"
                 alt=""
+                className="w-auto h-auto rounded-xl"
                 width={1000}
                 height={1000}
               />
             </div>
           </div>
-          <div className="justify-center items-center gap-4 flex px-2 pb-4">
+          <div className="flex flex-col justify-center items-center space-y-6 px-2 pb-4">
             <div className="flex w-full ">
               <Image
                 src="/filing/filingdoc3.png"
                 alt=""
+                className="w-auto h-auto rounded-xl"
                 width={1000}
                 height={1000}
               />
             </div>
           </div>
-          <div className="justify-center items-center gap-4 flex px-2 pb-4">
+          <div className="flex flex-col justify-center items-center space-y-6 px-2 pb-4">
             <div className="flex w-full ">
               <Image
                 src="/filing/filingdoc4.png"
                 alt=""
+                className="w-auto h-auto rounded-xl"
                 width={1000}
                 height={1000}
               />

@@ -4,33 +4,27 @@ import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { circleAmolens } from "@/styles/font";
 
-const Navbar2: React.FC = () => {
+const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
   const pathname = usePathname();
 
   const toggleMenu = async () => {
-    // Set animasi saat menu dibuka
     await controls.start({
       opacity: isMenuOpen ? 0 : 1,
       y: isMenuOpen ? -10 : 0,
-      animation: "infinite",
-      transition: { duration: 2, delay: 1 },
+      transition: { duration: 0.5, delay: 1 },
     });
 
-    // Set animasi saat menu ditutup
     if (!isMenuOpen) {
       await controls.start({
         opacity: 0,
         y: -10,
-        transition: { duration: 0.5, delay: 2 },
-        animation: "backwards",
+        transition: { duration: 0.5, delay: 0 },
       });
     }
 
-    // Update status menu
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -46,14 +40,14 @@ const Navbar2: React.FC = () => {
         {/* Navigation Links */}
         <div className="w-2/5 md:w-1/6 lg:w-2/5 hidden lg:flex gap-3 md:gap-5 font-medium font-serif">
           <Link className="block text-lg text-black hover:text-purpleText duration-300 py-2" href="#about">Tentang</Link>
-          <Link className={`block ${pathname === "/filing#bootcamp" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#bootcamp">Benefit</Link>
-          <Link className={`block ${pathname === "/filing#documentation" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#documentation">Jadwal</Link>
-          <Link className={`block ${pathname === "/filing#faq" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#faq">Silabus</Link>
+          <Link className={`block ${pathname === "#benefit" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#benefit">Benefit</Link>
+          <Link className={`block ${pathname === "#detail" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#detail">Jadwal</Link>
+          <Link className={`block ${pathname === "#silabus" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#silabus">Silabus</Link>
         </div>
 
         {/* Logo */}
         <div className="fixed left-1/2 transform -translate-x-1/2">
-          <Link href="#" className="duration-300">
+          <Link href="" className="duration-300 scroll-smooth">
             <Image src="/filing/LOGO FILING.png" alt="Logo" width={125} height={125} className="mr-2" />
           </Link>
         </div>
@@ -64,7 +58,7 @@ const Navbar2: React.FC = () => {
           {/* <button className="px-7 py-2 text-[17px] rounded-3xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-transparent bg-gradient-to-r from-[#3F3381] via-[#CBA2EA] to-[#91D2F4] bg-clip-border"> */}
           <Link href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
             <button className="px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
-              Contact Us
+              Hubungi
             </button>
           </Link>
 
@@ -93,14 +87,14 @@ const Navbar2: React.FC = () => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
           onClick={toggleMenu}
         >
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#Tentang">Tentang</Link>
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#bootcamp">Benefit</Link>
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#Jadwal">Jadwal</Link>
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#Silabus">Silabus</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#about">Tentang</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#benefit">Benefit</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#jadwal">Jadwal</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#silabus">Silabus</Link>
           
           <Link href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
             <button className="w-full px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
-              Contact Us
+              Hubungi
             </button>
           </Link>
 
@@ -115,4 +109,4 @@ const Navbar2: React.FC = () => {
   );
 };
 
-export default Navbar2;
+export default Navbar;
