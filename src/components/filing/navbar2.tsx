@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
         >
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#about">Tentang</Link>
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#benefit">Benefit</Link>
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#jadwal">Jadwal</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#detail">Jadwal</Link>
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#silabus">Silabus</Link>
           
           <Link href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
