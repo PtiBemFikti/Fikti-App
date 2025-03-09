@@ -30,7 +30,7 @@ const Section1: React.FC = () => {
           </div>
         </Link>
       </div>
-      <div className="w-full flex flex-wrap md:flex-nowrap gap-2 space-y-1">
+      <div className="w-full flex flex-wrap md:flex-nowrap gap-10 space-y-1">
         <div className="w-full md:w-1/3">
           <Image
             src={dataScience}
