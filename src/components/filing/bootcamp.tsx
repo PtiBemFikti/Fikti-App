@@ -9,7 +9,7 @@ export default function BootcampPage() {
         <div className="pt-20">
             <div className="lg:px-48 md:px-12 w-full">
               <div className={`${circleAmolens.className} mt-4 mb-9 text-center text-black text-3xl font-semibold`}>
-                JOIN OUR BOOTCAMPS
+              BOOTCAMP KAMI
               </div>
 
               <div className=" flex items-center justify-center">
@@ -35,7 +35,7 @@ export default function BootcampPage() {
                         26 April 2025 - 17 Mei 2025
                         </div>
                         <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
-                          click to learn more
+                          Lihat Detail Program
                         </button>
                       </div>
                     </Link>
@@ -63,7 +63,7 @@ export default function BootcampPage() {
                         </div>
 
                         <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
-                          click to learn more
+                          Lihat Detail Program
                         </button>
                       </div>
                     </Link>
@@ -75,12 +75,12 @@ export default function BootcampPage() {
       </div>
 
       {/*Mobile*/}
-      <div className="md:hidden mt-8">
+      <div className="md:hidden mt-8 px-2">
         <div className="flex justify-center items-center p-8">
           <div
             className={`${circleAmolens.className} w-80 text-center tracking-tight text-neutral-800 text-2xl sm:text-3xl font-bold`}
           >
-            JOIN OUR BOOTCAMPS
+            BOOTCAMP KAMI
           </div>
         </div>
 
@@ -96,7 +96,7 @@ export default function BootcampPage() {
                     width={400}
                     height={350}
                   />
-                  <div className="ml-6 -mt-16 text-white text-3xl font-bold">
+                  <div className="ml-6 -mt-16 text-white text-[1.7rem] sm:text-3xl font-bold">
                     Data Science
                   </div>
                 </div>
@@ -107,14 +107,14 @@ export default function BootcampPage() {
                 26 April 2025 - 17 Mei 2025
                 </div>
                 <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
-                  click to learn more
+                  Lihat Detail Program
                 </button>
               </div>
             </Link>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center space-y-6 py-4">
+        <div className="flex justify-center items-center pb-2">
           <div className="w-80 rounded-2xl border-2 border-[#91D2F4]">
             <Link href="/filing/CyberSecurity">
               <div>
@@ -137,7 +137,7 @@ export default function BootcampPage() {
                   27 April 2025 - 18 Mei 2025
                 </div>
                 <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
-                  click to learn more
+                  Lihat Detail Program
                 </button>
               </div>
             </Link>

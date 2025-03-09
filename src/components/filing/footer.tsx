@@ -28,7 +28,7 @@ const footer: React.FC = () => {
           <div className='absolute top-0 right-0 w-24 h-24 -translate-x-1/2 -translate-y-1/2'></div>  
           <div className="flex flex-wrap lg:flex lg:flex-row items-center justify-evenly relative gap-10 pt-10 mb-5 px-5 md:px-20">
               <div className="flex flex-col gap-8 lg:w-1/5 w-full font-serif">
-                  <h1 className="text-xl font-serif text-white">Sosial Media Kami</h1>
+                  <h1 className="text-xl font-serif text-white">Sosial Media</h1>
                   <div className="space-y-7">
                     <Link
                       href="https://www.instagram.com/academicc_insight/"
@@ -104,21 +104,21 @@ const footer: React.FC = () => {
                       alt="Logo Universitas Gunadarma"
                       width={300}
                       height={300}
-                      className="bg-cover h-16 w-16 hover:scale-110 transition-all duration-300"
+                      className="bg-cover h-16 w-16 cursor-pointer hover:scale-110 transition-all duration-300"
                     />
                   <Image
                       src="/logo-fikti.png"
                       alt="Logo FIKTI"
                       width={300}
                       height={300}
-                      className="bg-cover h-24 w-20 hover:scale-110 transition-all duration-300"
+                      className="bg-cover h-24 w-20 cursor-pointer hover:scale-110 transition-all duration-300"
                     />
                   <Image
                     src="/LOGO ADIRAKA TRANSPARAN.png"
                     alt="Logo Adiraka"
                     width={300}
                     height={300}
-                    className="bg-cover h-[3.5rem] w-[5rem] cursor-pointer hover:scale-110 transition-all duration-300"
+                    className="bg-cover h-[3.5rem] w-[4.5rem] cursor-pointer hover:scale-110 transition-all duration-300"
                   />
                 </div>
 
@@ -130,13 +130,13 @@ const footer: React.FC = () => {
               <div className="flex flex-col gap-4 lg:w-1/5 w-full font-serif">
                 <div className='flex gap-2 text-white'>
                   <FaLocationDot size={25} className="flex-shrink-0" />
-                  <h1 className="text-xl font-serif">Sosial Media Kami</h1>
+                  <h1 className="text-xl font-serif">Lokasi</h1>
                 </div>
                 <Link
                   href="https://maps.app.goo.gl/etmNsRtGszuWaD1cA" // Ganti dengan link lokasi spesifik
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=" text-white hover:text-violet-600"
+                  className=" text-white hover:text-purpleText md:hover:text-violet-600"
                 >
                   <p className="ml-2 font-serif font-medium">
                       Sekretariat BEM FIKTI: <br />Pusat Kegiatan Mahasiswa (PUSGIWA) Gedung 4 Lantai 3 Kampus E Universitas Gunadarma Jl. Komjen Pol. M. Jasin Kelapa Dua Depok

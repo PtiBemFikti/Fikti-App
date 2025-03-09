@@ -62,14 +62,14 @@ export default function FaqPage() {
           {/* FAQ */}
           <div className="text-center mt-20">
             <p className={`${circleAmolens.className} text-black text-4xl font-medium`}>
-              CONTACT US
+              KONTAK KAMI
             </p>
             <p className="text-black text-xl py-3 font-serif font-medium">
-              Can’t find what you are looking for? feel free to{" "}
+              Punya pertanyaan lain? jangan ragu untuk {" "}
               <span>
                 <a href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
                   {" "}
-                  ask us.
+                  bertanya kepada kami.
                 </a>
               </span>
             </p>
@@ -87,7 +87,7 @@ export default function FaqPage() {
                 FREQUENTLY ASKED QUESTIONS
               </p>
               <p className="text-black text-sm py-2 text-center font-serif">
-                Everything you need to know about FIKTI Learning.
+              Semua yang perlu Anda ketahui tentang FIKTI Learning.
               </p>
             </div>
           </div>
@@ -132,14 +132,14 @@ export default function FaqPage() {
           {/* FAQ */}
           <div className="text-center mt-20">
             <p className={`${circleAmolens.className} text-black text-4xl font-medium`}>
-              CONTACT US
+              KONTAK KAMI
             </p>
             <p className="text-black text-xl py-3 font-serif font-medium">
-              Can’t find what you are looking for? feel free to{" "}
+              Punya pertanyaan lain? jangan ragu untuk {" "}
               <span>
                 <a href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
                   {" "}
-                  ask us.
+                  bertanya kepada kami.
                 </a>
               </span>
             </p>
