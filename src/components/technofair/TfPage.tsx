@@ -2,14 +2,14 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
-import { Navbar } from '@/components/technofair/Navbar';
-import { Dashboard } from '@/components/technofair/Dashboard';
-import { About } from '@/components/technofair/About';
-import { Schedule } from '@/components/technofair/Schedule';
+import { Navbar } from '@/components/technofair/navbar';
+import { Dashboard } from '@/components/technofair/dashboard';
+import { About } from '@/components/technofair/about';
+import { Schedule } from '@/components/technofair/schedule';
 import { useSlowScroll } from '@/components/technofair/slowScroll';
 import  { Dokumentasi }  from '@/components/technofair/Dokumentasi';
-import { Footer } from '@/components/technofair/Footer';
-import { Sponsor } from '@/components/technofair/Sponsor';
+import { Footer } from '@/components/technofair/footer';
+import { Sponsor } from '@/components/technofair/sponsor';
 import { Events } from '@/components/technofair/Events';
 import { Faq } from '@/components/technofair/Faq';
 
