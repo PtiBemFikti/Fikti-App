@@ -1,5 +1,5 @@
 import DigitalInfo from '@/components/technofair/details/DigitalInfo';
-import { Footer } from '@/components/technofair/Footer';
+import { Footer } from '@/components/technofair/footer';
 import { Metadata } from 'next';
 import NavbarNoComponents from '@/components/technofair/NavbarNoComponents';
 

@@ -1,4 +1,4 @@
-import { Navbar } from '@/components/technofair/Navbar';
+import { Navbar } from '@/components/technofair/navbar';
 import Dashboard from '@/components/technofair/dashboard(old)';
 import AboutPage from '@/components/technofair/about(old)';
 import EventPage from '@/components/technofair/event';

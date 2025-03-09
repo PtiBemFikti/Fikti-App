@@ -1,5 +1,5 @@
 import CompProg from '@/components/technofair/details/CompProg';
-import { Footer } from '@/components/technofair/Footer';
+import { Footer } from '@/components/technofair/footer';
 import { Metadata } from 'next';
 import NavbarNoComponents from '@/components/technofair/NavbarNoComponents';
 
