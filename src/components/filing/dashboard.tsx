@@ -89,7 +89,7 @@ const Dashboard: React.FC = () => {
         {/* logo */}
 
         {/* bergerak */}
-        <div className="overflow-hidden bg-[linear-gradient(89.96deg,#3F3381_18.51%,#CBA2EA_70.22%,#91D2F4_111.48%)] py-4 mt-10 justify-between">
+        {/* <div className="overflow-hidden bg-[linear-gradient(89.96deg,#3F3381_18.51%,#CBA2EA_70.22%,#91D2F4_111.48%)] py-4 mt-10 justify-between">
           <div className="flex animate-infinite-scroll whitespace-nowrap">
             {Array(100)
               .fill(imageUrls)
@@ -108,10 +108,10 @@ const Dashboard: React.FC = () => {
                 </div>
               ))}
           </div>
-        </div>
+        </div> */}
 
         {/* tidak gerak */}
-        {/* <div className="w-full bg-[linear-gradient(89.96deg,#3F3381_18.51%,#CBA2EA_70.22%,#91D2F4_111.48%)] py-4 mt-10">
+        <div className="w-full bg-[linear-gradient(89.96deg,#3F3381_18.51%,#CBA2EA_70.22%,#91D2F4_111.48%)] py-4 mt-10">
           <div className="flex justify-evenly items-center">
             <Image
               src="/filing/Kalilinux 1.png"
@@ -149,7 +149,7 @@ const Dashboard: React.FC = () => {
               className="w-12 sm:w-20 h-auto"
             />
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ import { MonumentExtendedRegular } from "@/styles/font";
 const footer: React.FC = () => {
   return (
     <div className='text-black'>
-        <footer className="relative bg-[linear-gradient(89.94deg,#3F3381_-6.02%,#CBA2EA_57.77%,#91D2F4_121.56%)] rounded-t-md bottom-0">
+        <footer className="relative overflow-hidden bg-[linear-gradient(89.94deg,#3F3381_-6.02%,#CBA2EA_57.77%,#91D2F4_121.56%)] rounded-t-md bottom-0">
             <Image
               src="/filing/Ellipse-footer.png"
               alt=""
