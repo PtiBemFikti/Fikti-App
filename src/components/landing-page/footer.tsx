@@ -111,13 +111,13 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex flex-col justify-center items-center self- gap-4 max-md:order-1 max-md:self-center">
           <div className="flex justify-center items-center gap-4 border-b-1 pb-4">
-            <div className="w-[7rem] h-[7rem] max-md:w-[5rem] max-md:h-[5rem] bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
+            <div className="w-[7rem] h-[7rem] max-md:w-16 max-md:h-16 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
               <Image
                 src="/logo-universitas-gunadarma.png"
                 alt="Logo Universitas Gunadarma"
                 width={300}
                 height={300}
-                className="bg-cover h-[5rem] w-[5rem] max-md:w-[5rem] max-md:h-[5rem]
+                className="bg-cover h-[5rem] w-[5rem] max-md:w-12 max-md:h-fit
                 "
               />
             </div>

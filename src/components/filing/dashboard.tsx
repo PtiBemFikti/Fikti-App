@@ -16,12 +16,12 @@ const imageUrls = [
 
 const Dashboard: React.FC = () => {
   return (
-    <div>
+    <div >
       <div>
         {/* Desktop */}
         <div className="sm:block hidden">
           <div className="bg-[url(/filing/Unsplash-BG.png)] bg-cover bg-center px-5 md:px-20 lg:px-36 pb-10">
-            <div className="text-black max-w-full md:w-[497px]">
+            <div className="text-black max-w-full md:w-3/5">
               <Link href="/">
               <Image src={"/filing/back.png"} alt="back" width={40} height={40} className="pb-6 pt-5" />
               </Link>
@@ -34,16 +34,16 @@ const Dashboard: React.FC = () => {
                 </h1>
               </div>
               <div className="flex flex-col">
-                <h1 className="text-2xl md:text-4xl font-bold text-white pt-10 font-serif">
-                  POWER UP YOUR SKILLS TO FACE INDUSTRY 5.0 WITH DATA ANALYTICS AND WEB DEVELOPMENT
+                <h1 className="text-2xl md:text-3xl font-bold text-white pt-10 font-serif">
+                  TINGKATKAN KEMAMPUAN ANDA UNTUK MENGHADAPI INDUSTRI 5.0 DENGAN ANALISIS DATA DAN PENGEMBANGAN WEB
                 </h1>
-                <h2 className="text-base md:text-lg text-white mt-3 leading-6 md:leading-[30px] font-serif">
-                  Get the knowledge and skills you need to thrive in today’s rapidly changing world with our flexible and affordable bootcamp online courses.
-                </h2>
-                <div className="flex gap-5 mt-4">
+                <p className="font-extralight text-base md:text-lg text-white mt-5 leading-6 md:leading-[30px] font-serif w-4/6">
+                Dapatkan pengetahuan dan keterampilan yang Anda butuhkan untuk berkembang di dunia yang berubah dengan cepat saat ini dengan kursus online bootcamp kami yang fleksibel dan terjangkau.
+                </p>
+                <div className="flex gap-5 mt-8">
                   <Link href={"/filing#bootcamp"}>
-                  <button className="bg-gradient-to-r from-[#3F3381] to-[#B07FD6] text-white px-6 md:px-7 text-sm md:text-[17px] rounded-xl font-semibold py-3 duration-300 font-serif">
-                    See Program
+                  <button className="bg-gradient-to-r from-[#3F3381] to-[#B07FD6] text-white px-4 text-sm md:text-[17px] rounded-lg font-semibold py-2 duration-300 font-serif">
+                    Lihat program
                   </button>
                   </Link>
                 </div>
@@ -54,7 +54,7 @@ const Dashboard: React.FC = () => {
 
         {/* Mobile View */}
         <div className="sm:hidden">
-          <div className="bg-[url(/filing/Unsplash-BG.png)] bg-cover bg-center px-5 pb-10">
+          <div className="bg-[url(/filing/Unsplash-BG.png)] bg-cover bg-center px-3 sm:px-5 pb-10">
             <div className="text-black max-w-full">
               <Link href="/">
               <Image src={"/filing/back.png"} alt="back" width={40} height={40} className="pb-6 pt-5" />
@@ -68,18 +68,17 @@ const Dashboard: React.FC = () => {
                 </h1>
               </div>
               <div className="flex flex-col">
-                <h1 className="text-xl font-bold text-white pt-10 leading-tight font-serif">
-                  POWER UP YOUR SKILLS<br/> TO FACE INDUSTRY 5.0<br/> WITH DATA ANALYTICS<br/> AND WEB DEVELOPMENT
+                <h1 className="text-2xl md:text-4xl font-bold text-white pt-10 leading-tight font-serif break-words mx-auto">
+                  TINGKATKAN KEMAMPUAN ANDA UNTUK MENGHADAPI INDUSTRI 5.0 DENGAN ANALISIS DATA DAN PENGEMBANGAN WEB
                 </h1>
-                <h2 className="text-sm text-white mt-3 leading-5 md:leading-[30px] font-serif">
-                  Get the knowledge and skills you need to thrive in today’s rapidly changing world with our flexible and affordable bootcamp online courses.
-                </h2>
+                <p className="text-sm font-extralight text-white mt-3 leading-5 md:leading-[30px] font-serif">
+                Dapatkan pengetahuan dan keterampilan yang Anda butuhkan untuk berkembang di dunia yang berubah dengan cepat saat ini dengan kursus online bootcamp kami yang fleksibel dan terjangkau.
+                </p>
                 <div className="flex gap-5 mt-4">
                   <Link href={"/filing#bootcamp"}>
-                  <button
-                    className="bg-gradient-to-r from-[#3F3381] to-[#B07FD6] text-white px-6 text-sm md:text-[17px] rounded-xl font-semibold py-3 duration-300 font-serif">
-                    See Program
-                  </button>
+                    <button className="bg-gradient-to-r from-[#3F3381] to-[#B07FD6] text-white px-4 sm:px-6 text-xs sm:text-sm md:text-[17px] rounded-xl font-semibold py-3 duration-300 font-serif">
+                    Lihat program
+                    </button>
                   </Link>
                 </div>
               </div>
@@ -119,30 +118,35 @@ const Dashboard: React.FC = () => {
               alt="logo"
               width={90}
               height={90}
+              className="w-12 sm:w-20 h-auto"
             />
             <Image
               src="/filing/Cyber Security.png"
               alt="logo"
               width={90}
               height={90}
+              className="w-12 sm:w-20 h-auto"
             />
             <Image
               src="/filing/Artificial Intelligence.png"
               alt="logo"
               width={90}
               height={90}
+              className="w-12 sm:w-20 h-auto"
             />
             <Image
               src="/filing/Python.png"
               alt="logo"
               width={90}
               height={90}
+              className="w-12 sm:w-20 h-auto"
             />
             <Image
               src="/filing/SQL.png"
               alt="logo"
               width={90}
               height={90}
+              className="w-12 sm:w-20 h-auto"
             />
           </div>
         </div>

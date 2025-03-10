@@ -39,14 +39,14 @@ const Navbar: React.FC = () => {
 
         {/* Navigation Links */}
         <div className="w-2/5 md:w-1/6 lg:w-2/5 hidden lg:flex gap-3 md:gap-5 font-medium font-serif">
-          <Link className="block text-lg text-black hover:text-purpleText duration-300 py-2" href="#about">About</Link>
-          <Link className={`block ${pathname === "/filing#bootcamp" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#bootcamp">Bootcamp List</Link>
-          <Link className={`block ${pathname === "/filing#documentation" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#documentation">Documentation</Link>
+          <Link className="block text-lg text-black hover:text-purpleText duration-300 py-2" href="#about">Tentang</Link>
+          <Link className={`block ${pathname === "/filing#bootcamp" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#bootcamp">Bootcamp</Link>
+          <Link className={`block ${pathname === "/filing#documentation" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#documentation">Dokumentasi</Link>
           <Link className={`block ${pathname === "/filing#faq" ? "text-purpleText underline" : "text-black"} text-lg hover:text-purpleText duration-300 py-2`} href="#faq">FAQ</Link>
         </div>
 
         {/* Logo */}
-        <div className="fixed left-1/2 transform -translate-x-1/2">
+        <div className="absolute left-1/2 transform -translate-x-1/2">
           <Link href="#" className="duration-300">
             <Image src="/filing/LOGO FILING.png" alt="Logo" width={125} height={125} className="mr-2" />
           </Link>
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
           {/* <button className="px-7 py-2 text-[17px] rounded-3xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-transparent bg-gradient-to-r from-[#3F3381] via-[#CBA2EA] to-[#91D2F4] bg-clip-border"> */}
           <Link href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
             <button className="px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
-              Contact Us
+              Hubungi
             </button>
           </Link>
 
@@ -87,14 +87,14 @@ const Navbar: React.FC = () => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
           onClick={toggleMenu}
         >
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#about">About</Link>
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#bootcamp">Bootcamp List</Link>
-          <Link className="text-black text-lg hover:text-purpleText text-center" href="#documentation">Documentation</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#about">Tentang</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#bootcamp">Bootcamp</Link>
+          <Link className="text-black text-lg hover:text-purpleText text-center" href="#documentation">Dokumentasi</Link>
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#faq">FAQ</Link>
           
           <Link href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
             <button className="w-full px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
-              Contact Us
+              Hubungi
             </button>
           </Link>
 

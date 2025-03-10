@@ -15,7 +15,7 @@ export default function AboutPage() {
                 className={`${circleAmolens.className} text-black font-bold text-3xl`}
               >
                 {" "}
-                WHAT IS FILING?{" "}
+                APA ITU FILING?{" "}
               </h1>
               <p className="text-xl text-left mt-10 text-black font-serif">
                   <span className="font-extrabold">FIKTI Learning</span> adalah program <span className="font-extrabold">bootcamp</span> online yang dirancang khusus untuk mahasiswa FIKTI UG. <br></br>Dalam <span className="font-extrabold">4 kali</span> pertemuan selama satu bulan, kamu akan dibimbing oleh mentor berpengalaman untuk mengembangkan minat dan bakat di bidang teknologi informasi.
@@ -27,9 +27,9 @@ export default function AboutPage() {
                 className={`${circleAmolens.className} text-3xl text-black font-bold`}
               >
                 {" "}
-                WHY YOU SHOULD JOIN FILING?{" "}
+                KENAPA HARUS FILING?{" "}
               </h1>
-              <div className="flex-auto lg:flex items-center gap-10 lg:gap-3 lg:justify-between mt-10 font-serif justify-items-stretch">
+              <div className="flex-auto lg:flex items-center lg:justify-between mt-10 font-serif justify-items-stretch">
                 <div className="mt-4 flex-col items-center inline-flex">
                   <Image
                     src={"/filing/simplicity.png"}
@@ -38,10 +38,10 @@ export default function AboutPage() {
                     height={175}
                   />
                   <h1 className="font-bold text-black text-center text-2xl mt-2">
-                    Simplicity
+                    Simple
                   </h1>
-                  <p className="w-52 text-center text-black font-medium font-serif">
-                    Learn using quick and simple task requiring only a few minutes
+                  <p className="w-64 text-center text-black font-medium font-serif">
+                  Belajar menggunakan tugas cepat dan sederhana yang hanya membutuhkan beberapa menit.
                   </p>
                 </div>
                 <div className="mt-4 flex-col items-center inline-flex">
@@ -52,10 +52,10 @@ export default function AboutPage() {
                     height={175}
                   />
                   <h1 className="font-bold text-black text-center text-2xl mt-2">
-                    Motivation
+                    Motivasi
                   </h1>
-                  <p className="w-52 text-center text-black font-medium font-serif">
-                    Achieve regular next steps of a course by supporting the motivation system.
+                  <p className="w-64 text-center text-black font-medium font-serif">
+                  Mencapai langkah selanjutnya secara teratur dari suatu kursus dengan mendukung sistem motivasi.
                   </p>
                 </div>
                 <div className="mt-4 flex-col items-center inline-flex ">
@@ -66,10 +66,10 @@ export default function AboutPage() {
                     height={175}
                   />
                   <h1 className="font-bold text-black text-center text-2xl mt-2">
-                    Supporting
+                    Supportif
                   </h1>
-                  <p className="w-52 text-center text-black font-medium font-serif">
-                    We give our students best support always & all time per day
+                  <p className="w-64 text-center text-black font-medium font-serif">
+                    Kami memberikan dukungan terbaik kepada siswa kami setiap saat & setiap hari.
                   </p>
                 </div>
               </div>
@@ -79,13 +79,11 @@ export default function AboutPage() {
       </div>
 
       {/*Mobile*/}
-      <div className="mt-2 md:hidden">
+      <div className="mt-16 md:hidden">
         <div className="flex items-center justify-center">
-          <div className="my-8 px-8">
-            <h1
-              className={`${circleAmolens.className} text-center text-black text-3xl font-bold`}
-            >
-              WHAT IS FILING?
+          <div className="mt-8 px-8">
+            <h1 className={`${circleAmolens.className} text-center text-black text-3xl font-bold`}>
+              APA ITU FILING?
             </h1>
             <p className="text-black font-normal mt-6 font-serif text-lg">
               <span className="font-extrabold">FIKTI Learning</span> adalah program <span className="font-extrabold">bootcamp</span> online yang dirancang khusus untuk mahasiswa FIKTI UG.<br /> <br /> Dalam <span className="font-extrabold">4 kali</span> pertemuan selama satu bulan, kamu akan dibimbing  oleh mentor berpengalaman untuk mengembangkan minat dan bakat di bidang  teknologi informasi.
@@ -96,9 +94,9 @@ export default function AboutPage() {
           <h1
             className={`${circleAmolens.className} text-center text-black text-3xl font-bold mb-4`}
           >
-            WHY YOU SHOULD JOIN FILING?
+            KENAPA HARUS FILING?
           </h1>
-          <div className="grid grid-cols-1 gap-10 mt-3 font-serif">
+          <div className="grid grid-cols-1 gap-10 mt-3 font-serif justify-items-center space-y-6">
             <div className="flex flex-col items-center">
               <Image
                 src={"/filing/simplicity.png"}
@@ -106,9 +104,9 @@ export default function AboutPage() {
                 width={150}
                 height={150}
               />
-              <h1 className="font-bold text-black text-2xl mt-2">Simplicity</h1>
-              <p className="w-40 text-center text-black text-base font-medium font-serif">
-                Learn using quick and simple task requiring only a few minutes
+              <h1 className="font-bold text-black text-2xl mt-2">Simple</h1>
+              <p className="max-w-sm text-center text-black text-base font-medium font-serif">
+                Belajar menggunakan tugas cepat dan sederhana yang hanya membutuhkan beberapa menit.
               </p>
             </div>
             <div className="flex flex-col items-center">
@@ -118,9 +116,9 @@ export default function AboutPage() {
                 width={150}
                 height={150}
               />
-              <h1 className="font-bold text-black text-2xl mt-2">Motivation</h1>
-              <p className="w-40 text-center text-black text-base font-medium font-serif">
-                Achieve regular next steps of a course by supporting the motivation system.
+              <h1 className="font-bold text-black text-2xl mt-2">Motivasi</h1>
+              <p className="max-w-sm text-center text-black text-base font-medium font-serif">
+              Mencapai langkah selanjutnya secara teratur dari suatu kursus dengan mendukung sistem motivasi.
               </p>
             </div>
             <div className="flex flex-col items-center">
@@ -130,9 +128,9 @@ export default function AboutPage() {
                 width={150}
                 height={150}
               />
-              <h1 className="font-bold text-black text-2xl mt-2">Supporting</h1>
-              <p className="w-40 text-center text-black text-base font-medium font-serif">
-                We give our students best support always & all time per day
+              <h1 className="font-bold text-black text-2xl mt-2">Supportif</h1>
+              <p className="max-w-sm text-center text-black text-base font-medium font-serif">
+                Kami memberikan dukungan terbaik kepada siswa kami setiap saat & setiap hari.
               </p>
             </div>
           </div>
