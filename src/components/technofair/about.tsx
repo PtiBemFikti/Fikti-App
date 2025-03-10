@@ -88,7 +88,7 @@ export function About() {
 
                 <div className="hidden lg:grid lg:grid-cols-2 content-start gap-6 mt-10">
                     {poin.map((item, index) => (
-                            <div  className=" bg-[#043255] py-9 px-11 rounded-3xl transform transition-color hover:shadow-xl duration-300 hover:bg-[#052741] ">
+                            <div key={index} className=" bg-[#043255] py-9 px-11 rounded-3xl transform transition-color hover:shadow-xl duration-300 hover:bg-[#052741] ">
                                 <h1 className={`${poppins.className} text-[#FFFAF0] font-medium text-[35px]`}>{item.judul}</h1>
                                 <p className={`${Montserrat.className} text-[#FFFAF0] font-medium mt-4`}>{item.penjelasan}</p>
                         </div>
