@@ -36,6 +36,31 @@ const config: Config = {
       boxShadow: {
         'custom-right-bottom': '5px 5px 10px rgba(0, 0, 0, 0.1)',
       },
+      animation: {
+        marquee: 'marquee 45s linear infinite',
+        marquee2: 'marquee2 45s linear infinite',
+        marqueereverse: 'marqueereverse 45s linear infinite',
+        marqueereverse2: 'marqueereverse2 45s linear infinite',
+        'text-slide-2': 'text-slide-2 5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+        marqueereverse: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+        marqueereverse2: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
     },
   },
 

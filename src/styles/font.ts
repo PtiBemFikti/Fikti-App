@@ -15,5 +15,6 @@ const epilogue = localFont({src: '../../public/font/Epilogue.ttf'});
 const MonumentExtendedRegular = localFont({src: '../../public/font/MonumentExtended-Regular.otf'})
 const MonumentExtendedBold = localFont({src: '../../public/font/MonumentExtended-Ultrabold.otf'})
 const OpenSauceSans = localFont({src: '../../public/font/OpenSauceSans-Regular.ttf'})
+const Montserrat = localFont({ src: '../../public/font/Montserrat-VariableFont_wght.ttf'})
 
-export { circleAmolens, Guardians, Urbanist, bricolageGrotesque, poppins, terminaTest, terminaTestBold, epilogue, MonumentExtendedRegular, MonumentExtendedBold, OpenSauceSans };
+export { circleAmolens, Guardians, Urbanist, bricolageGrotesque, poppins, terminaTest, terminaTestBold, epilogue, MonumentExtendedRegular, MonumentExtendedBold, OpenSauceSans, Montserrat };

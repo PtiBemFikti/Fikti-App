@@ -1,7 +1,6 @@
 import CtfPage from '@/components/technofair/details/CTF';
-import Navbar from '@/components/technofair/navbar';
 import NavbarNoComponents from '@/components/technofair/NavbarNoComponents';
-import Footer from '@/components/technofair/footer';
+import { Footer } from '@/components/technofair/footer';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

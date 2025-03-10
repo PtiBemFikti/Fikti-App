@@ -1,36 +1,53 @@
-import Navbar from '@/components/technofair/navbar';
-import Dashboard from '@/components/technofair/dashboard';
-import AboutPage from '@/components/technofair/about';
-import EventPage from '@/components/technofair/event';
-import SponsorPage from '@/components/technofair/sponsor';
-import SchedulePage from '@/components/technofair/schedule';
-import StoryPage from '@/components/technofair/story';
-import FaqPage from '@/components/technofair/faq/faq';
-import Footer from '@/components/technofair/footer';
-import { Metadata } from 'next';
-import Head from 'next/head';
-import { useEffect } from 'react';
-// eslint-disable-next-line @next/next/no-async-client-component
+"use client";
+
+import { useEffect } from "react";
+import Lenis from "lenis";
+import { Navbar } from '@/components/technofair/navbar';
+import { Dashboard } from '@/components/technofair/dashboard';
+import { About } from '@/components/technofair/about';
+import { Schedule } from '@/components/technofair/schedule';
+import { useSlowScroll } from '@/components/technofair/slowScroll';
+import  { Dokumentasi }  from '@/components/technofair/Dokumentasi';
+import { Footer } from '@/components/technofair/footer';
+import { Sponsor } from '@/components/technofair/sponsor';
+import { Events } from '@/components/technofair/Events';
+import { Faq } from '@/components/technofair/Faq';
+
+
+
 export default function TfPage() {
+
+  useSlowScroll();
+
   return (
-    <main className="bg-white bg-cover bg-no-repeat overflow-x-hidden" style={{ backgroundImage: 'url(/technofair/bg-utama.png)' }}>
-      <Navbar />
-      <Dashboard />
-      <section id="about">
-        <AboutPage />
+    <main className="bg-[#100F21] bg-cover bg-no-repeat overflow-x-hidden scroll-smooth">
+
+      <div className='bg-gradient-to-b from-[#FFFAF0] from-40% via-[#FFA360] via-65% to-[#411D14] pb-[150px]  rounded-b-3xl lg:rounded-b-[90px]'>
+        <Navbar />
+        <section id="top">
+          <Dashboard />
+        </section>
+        <section id='about' className='scroll-mt-32'>
+            <About />
+        </section>
+      </div>
+
+      <section id='events'>
+        <Events />
       </section>
-      <section id="event">
-        <EventPage />
+
+      <section id='schedule' className='scroll-mt-8'>
+      <Schedule />
       </section>
-      <section id='schedule' className='bg-gradient-to-t from-[#0B0E1A] to-[#211525]'>
-        <SchedulePage />
-      </section>
-      <StoryPage />
-      <SponsorPage />
-      <section id="faq">
-        <FaqPage />
-      </section>
-      <Footer />
+      
+      <Dokumentasi />
+      {/* <Sponsor /> */}
+      <div className='{!bg-gradient-to-b from-[#100F21] from-10% via-[#3c3975] via-40% to-[#FE8A16]-->'>
+        <section id='faq' >
+          <Faq />
+        </section>
+        <Footer />
+      </div>
     </main>
   );
 }
