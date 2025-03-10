@@ -3,18 +3,18 @@ import { Montserrat, poppins } from "@/styles/font";
 import { useState } from "react";
 
 const kontenSeminar = [
-    { tanggal: "TBA", waktu: "TBA", judul: "Data Science", metode: "TBA" },
-    { tanggal: "TBA", waktu: "TBA", judul: "Cyber Security", metode: "TBA" },
+    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Data Science", metode: "TBA" },
+    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Cyber Security", metode: "TBA" },
 ];
 const kontenWorkshop = [
-    { tanggal: "TBA", waktu: "TBA", judul: "Data Analyst", metode: "TBA" },
-    { tanggal: "TBA", waktu: "TBA", judul: "Artificial Intelligence", metode: "TBA" },
+    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Data Analyst", metode: "TBA" },
+    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Artificial Intelligence", metode: "TBA" },
 ];
 const kontenKompetisi = [
-    { tanggal: "TBA", waktu: "TBA", judul: "Mobile App UI/UX Design", metode: "TBA" },
-    { tanggal: "TBA", waktu: "TBA", judul: "Data Analyst", metode: "TBA" },
-    { tanggal: "TBA", waktu: "TBA", judul: "Competitive Programming", metode: "TBA" },
-    { tanggal: "TBA", waktu: "TBA", judul: "Capture The Flag", metode: "TBA" },
+    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Mobile App UI/UX Design", metode: "TBA" },
+    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Data Analyst", metode: "TBA" },
+    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Competitive Programming", metode: "TBA" },
+    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Capture The Flag", metode: "TBA" },
 ];
 
 export function Schedule() {
@@ -33,7 +33,7 @@ export function Schedule() {
                 {kontenSeminar.map((item, index) => (
                 <div key={index} className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
                     <div className="flex">
-                        <div className="items-center my-auto ml-3 sm:ml-10  ">
+                        <div className="items-center my-auto ml-3 sm:ml-10 whitespace-nowrap ">
                             <h1 className={`${Montserrat.className} font-extrabold text-xs lg:text-[14px]`}>{item.tanggal}</h1>
                             <h1 className={`${poppins.className} font-light text-sm lg:text-[16px]`}>{item.waktu}</h1>
                         </div>
@@ -69,7 +69,7 @@ export function Schedule() {
                 {kontenWorkshop.map((item, index) => (
                 <div key={index} className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
                     <div className="flex">
-                        <div className="items-center my-auto ml-3 sm:ml-10  ">
+                        <div className="items-center my-auto ml-3 sm:ml-10 whitespace-nowrap ">
                             <h1 className={`${Montserrat.className} font-extrabold text-xs lg:text-[14px]`}>{item.tanggal}</h1>
                             <h1 className={`${poppins.className} font-light text-sm lg:text-[16px]`}>{item.waktu}</h1>
                         </div>
@@ -105,7 +105,7 @@ export function Schedule() {
                 {kontenKompetisi.map((item, index) => (
                 <div key={index} className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
                     <div className="justify-between flex">
-                        <div className="items-center my-auto ml-3 sm:ml-10  ">
+                        <div className="items-center my-auto ml-3 sm:ml-10 whitespace-nowrap ">
                             <h1 className={`${Montserrat.className} font-extrabold text-xs lg:text-[14px]`}>{item.tanggal}</h1>
                             <h1 className={`${poppins.className} font-light text-sm lg:text-[16px]`}>{item.waktu}</h1>
                         </div>

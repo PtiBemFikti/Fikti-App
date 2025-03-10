@@ -1,6 +1,7 @@
 import { Montserrat, poppins } from "@/styles/font";
 import Image from "next/image";
-import Maskot from '..\public\technofair\NeowBit 7.png'
+import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useRef } from "react";
 
 export function About() {
 
@@ -10,6 +11,8 @@ export function About() {
         { judul: "Education", penjelasan: "Sebagai sarana media pembelajaran dan pembekalan ilmu mahasiswa Universitas Gunadarma dan masyarakat umum di bidang teknologi informasi dalam menghadapi pesatnya perkembangan teknologi digital saat ini." },
         { judul: "Reputation", penjelasan: "Mempertegas identitas Universitas Gunadarma di masyarakat umum sebagai kampus yang berbasis di bidang IT." },
     ];
+
+    
 
     return (
         <div>
@@ -81,19 +84,19 @@ export function About() {
             </div>
             
             <div className="lg:bg-[#053B64] mt-28 lg:mt-60 lg:container lg:mx-auto lg:p-14 rounded-[42px]">
-                <h1 className={`${poppins.className} text-[#FFFAF0] font-semibold text-5xl text-center lg:text-[60px] lg:text-left`}>TechnoFair, in 4 <span className={`${poppins.className} text-[#FE8A16] font-bold text-5xl lg:text-[60px]`}>Points</span></h1>
+                <h1 className={`${poppins.className} text-[#FFFAF0] font-semibold text-5xl text-center lg:text-[60px] lg:text-left`}>TechnoFair, in 4 <span className={`${poppins.className} text-[#053B64] lg:text-[#FE8A16] font-bold text-5xl lg:text-[60px]`}>Points</span></h1>
 
                 <div className="hidden lg:grid lg:grid-cols-2 content-start gap-6 mt-10">
                     {poin.map((item, index) => (
-                        <div key={index} className="bg-[#043255] py-9 px-11 rounded-3xl transform transition-transform duration-300 hover:scale-[102%] border-[#FE8A16] hover:border">
-                            <h1 className={`${poppins.className} text-[#FFFAF0] font-medium text-[35px]`}>{item.judul}</h1>
-                            <p className={`${Montserrat.className} text-[#FFFAF0] font-medium mt-4`}>{item.penjelasan}</p>
+                            <div  className=" bg-[#043255] py-9 px-11 rounded-3xl transform transition-color hover:shadow-xl duration-300 hover:bg-[#052741] ">
+                                <h1 className={`${poppins.className} text-[#FFFAF0] font-medium text-[35px]`}>{item.judul}</h1>
+                                <p className={`${Montserrat.className} text-[#FFFAF0] font-medium mt-4`}>{item.penjelasan}</p>
                         </div>
                     ))}
                 </div>
-                <div className="grid grid-rows-4 gap-4 mt-10  mx-5 lg:hidden">
+                <div className="mt-10  mx-5 lg:hidden">
                     {poin.map((item, index) => (
-                        <div key={index} className="bg-[#053B64] py-4 px-4 rounded-3xl transform transition-transform duration-300 hover:scale-[102%] border-[#FE8A16] hover:border">
+                        <div key={index} className="mt-4 bg-[#053B64] py-4 px-4 h-fit rounded-3xl transform transition-transform duration-300  border-[#FE8A16] hover:border">
                             <h1 className={`${poppins.className} text-[#FFFAF0] font-bold text-[20px] sm:text-3xl text-center`}>{item.judul}</h1>
                             <p className={`${Montserrat.className} text-[#FFFAF0] font-medium text-[12px] sm:text-lg mt-4 bg-[#043255] px-9 py-3 rounded-2xl`}>{item.penjelasan}</p>
                         </div>

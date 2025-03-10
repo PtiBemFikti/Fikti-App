@@ -2,6 +2,9 @@
 interface EventItem {
     nama: string;
   }
+interface EventItem2 {
+    nama: string;
+  }
 
 export default function Textmarquee() {
 
@@ -14,6 +17,16 @@ export default function Textmarquee() {
         { nama: "3D" },
         { nama: "Webinars" },
         { nama: "Machine Learning" },
+      ];
+    const item2: EventItem2[] = [
+        { nama: "Data Science" },
+        { nama: "Content Wiriting" },
+        { nama: "Teamwork" },
+        { nama: "2D" },
+        { nama: "Algorithm" },
+        { nama: "Cyber Security" },
+        { nama: "AI" },
+        { nama: "Graphics Design" },
       ];
     
       const colors = [
@@ -55,7 +68,7 @@ export default function Textmarquee() {
           </div>
           <div className="relative flex overflow-x-hidden mt-10 mb-10 lg:mb-0 lg:mt-0">
             <div className="py-3 animate-marqueereverse whitespace-nowrap">
-              {item.map((data, index) => (
+              {item2.map((data, index) => (
                 <span
                   key={index}
                   className={`text-2xl mx-4 px-10 py-2 rounded-full text-black ${colors[index % colors.length]}`}
@@ -65,7 +78,7 @@ export default function Textmarquee() {
               ))}
             </div>
             <div className="absolute top-0 py-3 animate-marqueereverse2 whitespace-nowrap">
-              {item.map((data, index) => (
+              {item2.map((data, index) => (
                 <span
                   key={index}
                   className={`text-2xl mx-4 px-10 py-2 rounded-full text-black ${colors[index % colors.length]}`}
