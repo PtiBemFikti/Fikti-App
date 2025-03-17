@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { circleAmolens } from "@/styles/font";
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaWhatsapp, FaWhatsappSquare } from 'react-icons/fa';
 
 // photo
 import check from "@/../public/filing/mdi_check-bold.png";
@@ -10,6 +11,7 @@ import Date from "@/../public/filing/date.png";
 import OS from "@/../public/filing/Sistem Operasi.png";
 import Processor from "@/../public/filing/Processor.png";
 import RAM from "@/../public/filing/RAM.png";
+
 
 // text silabus
 type SyllabusModule = {
@@ -374,12 +376,12 @@ const Section2: React.FC = () => {
 
           {/* FAQ */}
           <div className="text-center mt-20">
-            <p className={`${circleAmolens.className} text-black text-2xl md:text-4xl font-medium`}>
+            <p className={`${circleAmolens.className} text-black text-4xl font-medium`}>
               KONTAK KAMI
             </p>
             <p className="text-black text-xl py-3 font-serif font-medium">
-              Punya pertanyaan lain? jangan ragu untuk bertanya kepada {" "}
-              <span>
+              Punya pertanyaan lain? jangan ragu untuk bertanya kepada kami.
+              {/* <span>
                 <a href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
                   {" "}
                   Kak Rafa
@@ -391,8 +393,23 @@ const Section2: React.FC = () => {
                   {" "}
                   Kak Rizky.
                 </a>
-              </span>
+              </span> */}
             </p>
+            <div className="flex flex-row flex-wrap justify-center gap-3 md:gap-5 mt-2 mb-5">
+              <Link href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+                <button className="w-full px-6 py-3 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-white bg-gradient-to-r from-[#3F3381] to-[#B07FD6] cursor-pointer group-hover:scale-110 transition-all duration-300 flex flex-row gap-2">
+                  <FaWhatsapp size={25}/>
+                  CP Rafa
+                </button>
+              </Link>
+
+              <Link href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+                <button className="w-full px-6 py-3 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-ehite bg-gradient-to-r from-[#3F3381] to-[#B07FD6] cursor-pointer group-hover:scale-110 transition-all duration-300 flex flex-row gap-2">
+                  <FaWhatsapp size={25}/>
+                  CP Rizky
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
