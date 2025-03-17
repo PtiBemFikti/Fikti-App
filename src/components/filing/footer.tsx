@@ -5,8 +5,6 @@ import { FaInstagram, FaTiktok, FaYoutube, FaLinkedin,FaWhatsapp, FaWhatsappSqua
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 
-import { MonumentExtendedRegular } from "@/styles/font";
-
 const footer: React.FC = () => {
   return (
     <div className='text-black'>
@@ -14,7 +12,7 @@ const footer: React.FC = () => {
             <Image
               src="/filing/Ellipse-footer.png"
               alt=""
-              className='img-fluid absolute bottom-0 left-0 max-md:hidden md:w-32 lg:w-40 translate-x-0 translate-y-0 z-30'
+              className='img-fluid absolute bottom-0 left-0 max-md:hidden md:w-28 lg:w-40 translate-x-0 translate-y-1 z-30'
               width={50}
               height={50}
             />
@@ -27,8 +25,8 @@ const footer: React.FC = () => {
             />
           <div className='absolute top-0 right-0 w-24 h-24 -translate-x-1/2 -translate-y-1/2'></div>  
           <div className="flex flex-wrap lg:flex lg:flex-row items-center justify-evenly relative gap-10 pt-10 mb-5 px-5 md:px-20">
-              <div className="flex flex-col gap-8 lg:w-1/5 w-full font-serif">
-                  <h1 className="text-xl font-serif text-white">Sosial Media</h1>
+              <div className="flex flex-col gap-8 lg:w-1/5 w-full font-medium">
+                  <h1 className="text-xl text-white">Sosial Media</h1>
                   <div className="space-y-7">
                     <Link
                       href="https://www.instagram.com/academicc_insight/"
@@ -127,10 +125,10 @@ const footer: React.FC = () => {
                 </h1>
               </div>
 
-              <div className="flex flex-col gap-4 lg:w-1/5 w-full font-serif">
+              <div className="flex flex-col gap-4 lg:w-1/5 w-full font-medium">
                 <div className='flex gap-2 text-white'>
                   <FaLocationDot size={25} className="flex-shrink-0" />
-                  <h1 className="text-xl font-serif">Lokasi</h1>
+                  <h1 className="text-xl">Lokasi</h1>
                 </div>
                 <Link
                   href="https://maps.app.goo.gl/etmNsRtGszuWaD1cA" // Ganti dengan link lokasi spesifik
@@ -138,14 +136,14 @@ const footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className=" text-white hover:text-purpleText md:hover:text-violet-600"
                 >
-                  <p className="ml-2 font-serif font-medium">
+                  <p className="ml-2 font-medium">
                       Sekretariat BEM FIKTI: <br />Pusat Kegiatan Mahasiswa (PUSGIWA) Gedung 4 Lantai 3 Kampus E Universitas Gunadarma Jl. Komjen Pol. M. Jasin Kelapa Dua Depok
                   </p>
                 </Link>
               </div>
           </div>
           <hr className='w-5/6 mx-auto'></hr>
-          <div className='text-white text-center py-5 text-[9px] md:text-lg font-normal'>
+          <div className='text-white text-center py-5 text-[9px] md:text-lg font-medium mx-3 lg:mx-0'>
               Copyright © 2025 BEM FIKTI UG & Made with 💜 by BIRO PTI
           </div>
         </footer>
