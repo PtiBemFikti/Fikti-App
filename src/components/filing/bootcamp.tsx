@@ -19,14 +19,11 @@ export default function BootcampPage() {
                       <div className="">
                         <div className="items-center mb-4">
                           <Image
-                            src="/filing/bootcamp1.png"
+                            src="/filing/bootcamp1.webp"
                             alt="Data Science"
                             width={400}
                             height={350}
                           />
-                          <div className="ml-6 md:-mt-14 lg:-mt-16 text-white text-2xl lg:text-4xl font-bold">
-                            Data Science
-                          </div>
                         </div>
                         <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3">
                           <i>“Exploring the Data Universe : <br></br>Hands-On Learning for Beginners”</i>
@@ -46,14 +43,11 @@ export default function BootcampPage() {
                       <div>
                         <div className="items-center mb-4">
                           <Image
-                            src="/filing/bootcamp2.png"
+                            src="/filing/bootcamp2.webp"
                             alt="Cyber Security"
                             width={400}
                             height={350}
                           />
-                          <div className="ml-6 md:-mt-14 lg:-mt-16 text-white text-[1.4rem] lg:text-2xl font-bold">
-                            Cyber Security
-                          </div>
                         </div>
                         <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3">
                         <i>&quot;Empowering Cyber Defenders : <br></br>Training for Real-World Challenges&quot;</i>
@@ -90,15 +84,12 @@ export default function BootcampPage() {
               <div className="">
                 <div className="items-center mb-4">
                   <Image
-                    src="/filing/bootcamp1.png"
+                    src="/filing/bootcamp1.webp"
                     alt="Data Science"
                     className="w-full h-auto"
                     width={400}
                     height={350}
                   />
-                  <div className="ml-6 -mt-16 text-white text-[1.7rem] sm:text-3xl font-bold">
-                    Data Science
-                  </div>
                 </div>
                 <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3 leading-relaxed">
                   <i>“Exploring the Data Universe : <br></br>Hands-On Learning for Beginners”</i>
@@ -120,15 +111,12 @@ export default function BootcampPage() {
               <div>
                 <div className="items-center mb-4">
                   <Image
-                    src="/filing/bootcamp2.png"
+                    src="/filing/bootcamp2.webp"
                     alt="Cyber Security"
                     className="w-full h-auto"
                     width={400}
                     height={350}
                   />
-                  <div className="ml-6 -mt-16 text-white text-2xl font-bold">
-                    Cyber Security
-                  </div>
                 </div>
                 <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3 leading-relaxed">
                   <i>&quot;Empowering Cyber Defenders : <br></br>Training for Real-World Challenges&quot;</i>

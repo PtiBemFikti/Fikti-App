@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import dataScience from "@/../public/filing/Data Scince Cover.svg";
+import dataScience from "@/../public/filing/Data Scince Cover.webp";
 import { circleAmolens } from "@/styles/font";
 
 const Section1: React.FC = () => {
@@ -59,7 +59,7 @@ const Section1: React.FC = () => {
           </div>
           <div className="flex flex-wrap gap-4 md:mt-auto mt-8 pb-3">
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLScO7P7O8HyY2jnlX1NjDY8Qxz_ZqYMIO-Tj5WnowEiRe9Aj1w/viewform?usp=sharing" target="_blank" rel="noopener noreferrer"> {/* kalau sudah ada gform nya */}
-              <button className="w-auto h-10 py-6 px-4 bg-[#3F3381] rounded-lg shadow-xl justify-center items-center flex text-white text-[16px] font-['Poppins']">
+              <button className="w-auto h-10 py-6 px-4 bg-gradient-to-r from-[#3F3381] to-[#B07FD6] rounded-lg shadow-xl justify-center items-center flex text-white text-[16px] font-['Poppins']">
                   Daftar Sekarang
               </button>
             </Link>

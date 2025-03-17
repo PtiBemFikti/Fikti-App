@@ -6,8 +6,12 @@ import BootcampPage from "@/components/filing/bootcamp";
 import DocumentationPage from "@/components/filing/documentation";
 import FaqPage from "@/components/filing/faq";
 import Footer from "@/components/filing/footer";
+import { useSlowScroll } from "./slowScroll";
 
 export default function FPage() {
+
+  useSlowScroll();
+
   return (
     <main className="bg-white bg-cover bg-no-repeat scroll-smooth">
       <Navbar />

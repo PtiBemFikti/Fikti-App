@@ -3,13 +3,16 @@ import Section1 from "@/components/filing/CyberSecurity/Section1";
 import Section2 from "@/components/filing/CyberSecurity/Section2";
 import Navbar2 from "@/components/filing/navbar2";
 import Footer from "@/components/filing/footer";
+import "@/../src/styles/fade-in.css"
 
 export default function Page() {
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
       <Navbar2 />
-      <Section1 />
-      <Section2 />
+      <div className="fade-in">
+        <Section1 />
+        <Section2 />
+      </div>
       <Footer />
     </div>
   );
