@@ -58,14 +58,19 @@ const Section1: React.FC = () => {
             <p className="text-[18px]"></p>
           </div>
           <div className="flex flex-wrap gap-4 md:mt-auto mt-8 pb-3">
-            <Link href="https://wa.me/6285156854807" target="_blank">
-              <button className="w-auto h-10 py-6 px-4 bg-white rounded-lg shadow-xl border border-black justify-center items-center flex text-black text-[16px] font-semibold font-['Poppins']">
-                  Hubungi Kami
-              </button>
-            </Link>
-            <Link href="" target="_blank" rel="noopener noreferrer"> {/* kalau sudah ada gform nya */}
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScO7P7O8HyY2jnlX1NjDY8Qxz_ZqYMIO-Tj5WnowEiRe9Aj1w/viewform?usp=sharing" target="_blank" rel="noopener noreferrer"> {/* kalau sudah ada gform nya */}
               <button className="w-auto h-10 py-6 px-4 bg-[#3F3381] rounded-lg shadow-xl justify-center items-center flex text-white text-[16px] font-['Poppins']">
                   Daftar Sekarang
+              </button>
+            </Link>
+            <Link href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank">
+              <button className="w-auto h-10 py-6 px-4 bg-white rounded-lg shadow-xl border border-black justify-center items-center flex text-black text-[16px] font-semibold font-['Poppins']">
+                  Hubungi Kak Rafa
+              </button>
+            </Link>
+            <Link href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank">
+              <button className="w-auto h-10 py-6 px-4 bg-white rounded-lg shadow-xl border border-black justify-center items-center flex text-black text-[16px] font-semibold font-['Poppins']">
+                  Hubungi Kak Rizky
               </button>
             </Link>
           </div>

@@ -378,11 +378,18 @@ const Section2: React.FC = () => {
               KONTAK KAMI
             </p>
             <p className="text-black text-xl py-3 font-serif font-medium">
-              Punya pertanyaan lain? jangan ragu untuk {" "}
+              Punya pertanyaan lain? jangan ragu untuk bertanya kepada {" "}
               <span>
-                <a href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+                <a href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
                   {" "}
-                  bertanya kepada kami.
+                  Kak Rafa
+                </a>
+              </span>
+              {" "}Atau{" "}
+              <span>
+                <a href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+                  {" "}
+                  Kak Rizky.
                 </a>
               </span>
             </p>
