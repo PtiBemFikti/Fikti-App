@@ -8,6 +8,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import { Example } from "@/components/landing-page/slider";
 import HeroSection from "./landing-page/dashboard";
 import AboutPage from "./landing-page/about";
+import ProjekKamiSection from "./landing-page/project";
 
 export default function UtamaPage() {
   const { scrollYProgress } = useScroll();
@@ -21,6 +22,7 @@ export default function UtamaPage() {
       <HeroSection />
       <AboutPage />
       <CoreValue />
+      <ProjekKamiSection />
       {/* <VisiMisi /> */}
       {/* <section className="flex justify-center items-center overflow-hidden w-full">
         <div className="w-96 h-96 relative flex justify-center items-center my-20">
