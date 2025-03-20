@@ -109,7 +109,7 @@ const Section2: React.FC = () => {
                   Biaya Pendaftaran:
                 </h1>
                 <h1 className="font-normal text-black">
-                  <b>Rp 30.000/peserta</b> atau <b>Rp 75.000/3 peserta</b>
+                  <b>Rp30.000/peserta</b> atau <b>Rp75.000/3 peserta</b>
                 </h1>
               </div>
             </div>
