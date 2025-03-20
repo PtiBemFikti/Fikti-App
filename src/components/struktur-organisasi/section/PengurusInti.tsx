@@ -63,12 +63,12 @@ export default function PengurusIntiSection() {
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-32 w-full py-10 md:py-20">
         <Card
-          foto="/user.png"
+          foto="/adiraka/BPH/aming.webp"
           nama="Muhammad Naufal Kamil"
           jabatan="Ketua BEM FIKTI"
         />
         <Card
-          foto="/user.png"
+          foto="/adiraka/BPH/aryo.webp"
           nama="Aryo Dwi Prasetyo"
           jabatan="Wakil Ketua BEM FIKTI"
         />
