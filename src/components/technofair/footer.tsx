@@ -17,7 +17,7 @@ export function Footer() {
 
     return (
         <footer className="bg-[#FE8A16] ">
-            <div className="w-full h-[3px] bg-black mx-auto"></div>
+            <div className="w-96 h-px lg:w-[1500px] bg-black mx-auto"></div>
             <div className="mt-10 lg:mt-14 ml-3 lg:ml-20">
                 <h1 className={`${Montserrat.className} text-[25px] lg:text-[20px] font-extrabold text-black`}>Contact Info</h1>
             </div>
@@ -99,7 +99,7 @@ export function Footer() {
             </div>
 
             <div className="pb-4">
-                <div className="w-[1500px] h-[1px] bg-black mt-[34px] mx-auto"></div>
+                <div className="w-full lg:w-[1500px] h-[1px] bg-black mt-[34px] mx-auto"></div>
                 <p className=" mt-4 text-center text-gray-200 text-xs md:text-base font-normal">
                 Copyright © {`${year}`} BEM FIKTI UG & Made with 💛 by BIRO PTI
                 </p>

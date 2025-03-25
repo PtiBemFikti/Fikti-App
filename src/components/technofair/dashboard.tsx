@@ -6,14 +6,13 @@ import RotatingWords2 from "./RotatingWords2";
 
 export function Dashboard() {
     const rotatingWords1 = <RotatingWords />;
-    const rotatingWords2 = <RotatingWords2 />;
 
     return (
         <div className="pt-28 lg:pt-20 bg-[#100F21] lg:bg-transparent">
 
-            <div className="lg:container lg:mx-auto bg-[#FFFAF0] lg:bg-transparent rounded-t-3xl">
+            <div className="lg:container lg:mx-auto bg-[#FFFAF0] pt-6 lg:pt-0 lg:bg-transparent rounded-t-3xl">
 
-                <div className="hidden md:block justify-center items-center text-center pt-20 ">
+                <div className="hidden md:block justify-center items-center text-center pt-12 ">
                     <div className="hidden lg:container mx-auto md:flex items-center justify-center relative">
                         <Link href={'/'}>
                             <div className="absolute left-0 p-2 hidden lg:block">
@@ -32,46 +31,26 @@ export function Dashboard() {
                             The Biggest IT Event Held by BEM FIKTI
                         </h1>
                     </div>
-                    <h1 className={`${Montserrat.className} hidden sm:block text-black text-5xl lg:text-[100px] font-bold tracking-[3%]`}>TECHNOFAIR 12.0</h1>  
+                    <h1 className={`${Montserrat.className} hidden sm:block text-black text-5xl lg:text-7xl font-bold tracking-[3%]`}>TECHNOFAIR 12.0</h1>  
                 </div>
 
-                <div className="flex justify-center items-center w-full pt-20 lg:pt-0 lg:mt-10 px-5 lg:px-0">
-                    <div className="w-full lg:w-[1161px] h-[410px] lg:h-[500px] bg-[#FE8A16]  rounded-[35px] justify-center items-center">
-                        <div>
-                            <div className="flex items-end lg:hidden">
-                                <h1 className={`${poppins.className} text-white text-[35px] sm:text-5xl tracking-tight font-semibold pt-5 pl-4 leading-[45px] lg:text-[70px] lg:leading-[85px] lg:pl-[45px] lg:pt-[61px]`}>
-                                Tech Enthusiasts, <br /> 
-                                Assemble! <br className="sm:hidden"/>
-                                Your Next Big<br /> 
-                                Break<span className={`${poppins.className} text-[#053B64] text-[35px] sm:text-5xl tracking-tight font-semibold pt-5 pl-4 leading-[45px] lg:text-[70px] lg:leading-[85px] lg:pl-[45px] lg:pt-[61px]`}>{rotatingWords1}</span>
+                <div className="bg-[#FE8A16] mx-4 mt-8 px-4 lg:px-8 py-5 lg:py-8 rounded-3xl lg:w-[1160px] lg:mx-auto">
+                    <h1 className={`${Montserrat.className} text-4xl lg:text-[68px] lg:leading-none font-semibold tracking-tight leading-[45px] whitespace-nowrap`}>
+                        Tech Enthusiasts,<br /> Assemble!<br />
+                        Your Next Big <br className="lg:hidden"/>
+                        Break <span className="text-[#053B64]">{rotatingWords1}</span>
+                    </h1>
 
-                                </h1>
+                    <div className="w-80 lg:w-[1100px] lg:mx-auto h-px bg-white my-5"></div>
 
-                            </div>
-                            <div className="hidden lg:flex items-end">
-                                <h1 className={`${poppins.className} text-white text-[70px] font-semibold tracking-tight leading-[85px] pl-[45px] pt-[61px]`}>
-                                Tech Enthusiasts,<br /> 
-                                Assemble!<br />
-                                Your Next Big Break
-                                </h1>
-                                <span className={`${poppins.className}  text-[#053B64] text-[70px] font-semibold tracking-tight leading-[85px] pl-[45px] pt-[61px]`}>{rotatingWords2}</span>
-                            </div>
+                    <div className="lg:grid grid-cols-2  lg:items-center">
+                        <p className={`${Montserrat.className} text-xs lg:text-lg text-center lg:text-left lg:whitespace-nowrap`}>“Building Tomorrow&apos;s World with Innovation and Collaboration.”</p>
+                        <Link href="#events" className="mx-auto">
+                            <h1 className={`${Montserrat.className} bg-[#FFFAF0] text-[#100F21] text-2xl font-semibold tracking-tight px-10 py-3 rounded-full w-fit mt-5 lg:mt-0 mx-auto shadow-[4px_6px_7.2px_1px_rgba(0,0,0,0.25)] lg:shadow-[12px_13px_2.1px_1px_rgba(0,0,0,0.25)] hover:bg-[#053B64] hover:text-white duration-500`}>JOIN NOW</h1>
+                        </Link>
 
-                            <div className="w-[300px] sm:w-[680px] lg:w-[1071px] h-[1px] bg-white mx-auto mt-7 lg:ml-[45px] lg:mt-[63px]"></div>
-                        </div>
-
-                        <div className="grid lg:flex">
-                            <div className="px-1 pt-4 lg:pl-[45px] lg:pt-[30px]">
-                                <h1 className={`${Montserrat.className} hidden lg:block text-[#FFFAF0] lg:text-[18px] font-medium`}>“Building Tomorrow&apos;s World with Innovation and Collaboration.”</h1>
-                                <p className={`${Montserrat.className} text-[#FFFAF0] text-[12px] sm:text-base text-center lg:hidden font-medium`}>“Building Tomorrow&apos;s World with Innovation and Collaboration.”</p>
-                            </div>
-
-                            <Link href="#events" className={`${Montserrat.className} w-[220px] mx-auto text-black mt-5 tracking-tight font-semibold text-[25px] px-[43px] py-[15px] bg-[#FFFAF0] rounded-full shadow-[4px_6px_7.2px_1px_rgba(0,0,0,0.25)] lg:shadow-[12px_13px_2.1px_1px_rgba(0,0,0,0.25)] hover:bg-[#053B64] hover:text-white duration-500`}>
-                                JOIN NOW
-                            </Link>
-                        </div>
-                        
                     </div>
+
                 </div>
 
             </div>
