@@ -41,7 +41,7 @@ const footer: React.FC = () => {
                     </Link>
 
                     <Link
-                      href="https://wa.me/6285156854807"
+                      href="https://wa.me/628174932917"
                       target="_blank"
                       className="flex items-center gap-2 group text-white hover:text-purpleText"
                     >
@@ -49,7 +49,19 @@ const footer: React.FC = () => {
                         size={25}
                         className="cursor-pointer group-hover:scale-110 transition-all duration-300"
                       />
-                      +6285156854807
+                      +62 817-4932-917
+                    </Link>
+
+                    <Link
+                      href="https://wa.me/6285727635590"
+                      target="_blank"
+                      className="flex items-center gap-2 group text-white hover:text-purpleText"
+                    >
+                      <FaWhatsapp
+                        size={25}
+                        className="cursor-pointer group-hover:scale-110 transition-all duration-300"
+                      />
+                      +62 857-2763-5590
                     </Link>
                     <Link
                       href="mailto:bemfikti.ug@gmail.com"
