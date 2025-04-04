@@ -29,7 +29,7 @@ const syllabus: Record<string, SyllabusModule> = {
       "Menangani Missing Values",
       "Menangani Outliers",
       "Data Transformation & Standardization",
-      "Sesi Coding Menggunakan Dataset",
+      "Sesi coding menggunakan dataset",
     ],
   },
   "Feature Engineering & Selection": {
@@ -48,9 +48,10 @@ const syllabus: Record<string, SyllabusModule> = {
     description:
       "Modul ini akan memperkenalkan kamu pada konsep dasar machine learning dan berbagai algoritma yang digunakan dalam analisis data. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
-      "Konsep Dasar Machine Learning",
+      "Konsep dasar Machine Learning",
       "Algoritma Supervised dan Unsupervised Learning",
-      "Membangun Model Sederhana",
+      "Membangun model sederhana",
+      "Sesi QNA dan studi kasus",
     ],
   },
   "Automation": {
@@ -59,9 +60,9 @@ const syllabus: Record<string, SyllabusModule> = {
       "Pada modul ini, kamu akan belajar tentang pentingnya automasi dalam proses data science, termasuk automasi data wrangling dan model training. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
       "Automasi dalam Data Science",
-      "Automasi Proses Data Wrangling & Cleaning",
+      "Automasi proses Data Wrangling & Cleaning",
       "Automasi Model Training & Deployment (MLOps)",
-      "Studi Kasus",
+      "Sesi QNA dan studi kasus",
     ],
   },
 };
@@ -206,12 +207,11 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 08.30 - 12.30 WIB</td>
+                              <td>: 08.30 - 11.55 WIB</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>: <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -235,9 +235,7 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -265,9 +263,7 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -291,9 +287,7 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>

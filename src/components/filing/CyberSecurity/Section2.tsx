@@ -15,47 +15,51 @@ import RAM from "@/../public/filing/RAM.png";
 // text silabus
 type SyllabusModule = {
   title: string;
+  description: string;
   points: string[];
 };
 
 const syllabus: Record<string, SyllabusModule> = {
-  "Ethical Hacking Introduction": {
-    title: "Modul 01 : Ethical Hacking Introduction",
+  "Pengenalan Cybersecurity": {
+    title: "Modul 01 : Pengenalan Cybersecurity",
+    description:
+      "Pada modul ini, kamu akan belajar dan mengenal Cybersecurity. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
-      "Pengenalan Ethical Hacking dan Keamanan Informasi",
-      "Terminology Hacking",
-      "The Elements of Information Security",
-      "Type of Attack",
-      "Sesi Diskusi dan Studi Kasus",
+      "Pengenalan Informations Security Theories and Concepts",
+      "Pengenalan CIA",
+      "Terminology hacking",
+      "Sesi QNA dan studi kasus",
     ],
   },
-  "Security Fundamentals": {
-    title: "Modul 02 : Fundamental Security System",
+  "VAPT": {
+    title: "Modul 02 : VAPT",
+    description:
+      "Pada modul ini, kamu akan belajar tentang VAPT. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
-      "Pengenalan Linux sebagai alat utama dalam keamanan siber.",
-      "Mengelola pengguna, grup, dan izin akses untuk keamanan.",
-      "CC",
-      "Network & System Security",
-      "Interactive Hands-on",
+      "Pengenalan VAPT",
+      "Fase VAPT & penggunaan Tools",
+      "Pengenalan OWASP TOP 10 dan praktek",
+      "Sesi QNA dan studi kasus",
     ],
   },
-  "Kali Linux Introduction": {
-    title: "Modul 03 : Kali Linux Introduction",
+  "VAPT Lanjutan": {
+    title: "Modul 03 : VAPT Lanjutan",
+    description:
+      "Pada modul ini, kamu akan lanjut belajar tentang VAPT. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
-      "Pengenalan Kali Linux & Tools",
-      "Basic Kali Linux Commands & Configuration",
-      "Pentesting Dasar dengan Kali Linux",
-      "Interactive Hands-on",
+      "Praktikal OWASP TOP 10 Web lanjutan",
+      "Sesi QNA dan studi kasus",
     ],
   },
-  "Management and Security": {
-    title: "Modul 04 : Management and Security",
+  "Hand on praktek VAPT": {
+    title: "Modul 04 : Hand on praktek VAPT",
+    description:
+      "Pada modul ini, kamu akan Praktek langsung VAPT. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
-      "Pengelolaan Layanan dan Server di Kali Linux",
-      "Pemantauan dan Analisis Sistem di Kali Linux",
-      "Pengelolaan Storage dan Backup untuk Keamanan",
-      "Manajemen Pengguna dan Keamanan Server",
-      "Simulasi Serangan dan Penanggulangan di Kali Linux",
+      "Reporting",
+      "Praktek reporting",
+      "Penjelasan project",
+      "Sesi QNA dan studi kasus",
     ],
   },
 };
@@ -64,7 +68,7 @@ type TabKeys = keyof typeof syllabus;
 
 const Section2: React.FC = () => {
   const tabs = Object.keys(syllabus);
-  const [activeTab, setActiveTab] = useState("Ethical Hacking Introduction"); 
+  const [activeTab, setActiveTab] = useState("Pengenalan Cybersecurity"); 
   const syllabusKeys = Object.keys(syllabus);
   const [activeIndex, setActiveIndex] = useState(0);
   const activeModule = syllabus[activeTab];
@@ -116,7 +120,7 @@ const Section2: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Image src={check} alt="" className="w-8 h-8" />
                 <p>
-                  Konsep Fundamental Keamanan Informasi.
+                  Konsep Fundamental Keamanan Informasi
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -140,7 +144,7 @@ const Section2: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Image src={check} alt="" className="w-8 h-8" />
                 <p>
-                  Virtualization Software dengan VMWare Workstation, Oracle VirtualBox, atau Hyper-V
+                  Virtualization Software dengan VMWare Workstation, Oracle VirtualBox atau Hyper-V
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -182,7 +186,7 @@ const Section2: React.FC = () => {
                   <div className="text-lg font-semibold font-serif text-white mt-4">RAM</div>
                   <div className="text-white font-serif text-base mt-2 text-center">
                   8GB (Minimum)<br/>
-                  16GB (Rekomendasi
+                  16GB (Direkomendasikan untuk multitasking dan simulasi serangan).
                   </div>
                 </div>
               </div>
@@ -213,12 +217,11 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 13.00 - 16.30 WIB</td>
+                              <td>: 12.30 - 16.30 WIB</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>: <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -238,13 +241,11 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 13.00 - 16.30 WIB</td>
+                              <td>: 12.30 - 16.00 WIB</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -268,13 +269,11 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 13.00 - 16.30 WIB</td>
+                              <td>: 12.30 - 16.00 WIB</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -294,13 +293,11 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 13.00 - 16.30 WIB</td>
+                              <td>: 12.00 - 16.00 WIB</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -339,6 +336,7 @@ const Section2: React.FC = () => {
             {/* Content */}
             <div className="bg-gray-100 p-6 rounded-lg shadow">
               <h2 className="text-xl font-bold mb-2">{activeModule?.title}</h2>
+              <p className="text-gray-700 mb-2">{activeModule.description}</p>
               <ul className="list-disc pl-5 text-gray-700">
                 {activeModule.points.map((point, index) => (
                   <li key={index}>{point}</li>
@@ -370,6 +368,7 @@ const Section2: React.FC = () => {
               {/* content */}
               <div className="bg-gray-100 p-6 rounded-lg shadow">
                 <h2 className="text-lg font-bold mb-2">{activeModule.title}</h2>
+                <p className="text-gray-700 mb-2">{activeModule.description}</p>
                 <ul className="list-disc pl-5 text-gray-700">
                   {activeModule.points.map((point, index) => (
                     <li key={index}>{point}</li>
