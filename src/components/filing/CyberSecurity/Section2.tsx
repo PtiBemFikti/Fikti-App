@@ -293,7 +293,7 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 12.00 - 16.00 WIB</td>
+                              <td>: 12.30 - 16.00 WIB</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
