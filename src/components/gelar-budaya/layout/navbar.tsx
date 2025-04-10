@@ -34,10 +34,8 @@ export default function GelbudNavbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 mx-auto py-4 z-50 transition-all duration-300  ${
-        isScrolled
-          ? "backdrop-blur-md shadow-lg bg-[#071D2B] md:backdrop-blur-none md:bg-transparent md:shadow-none"
-          : "bg-inherit md:bg-transparent"
+      className={`fixed top-0 left-0 right-0 mx-auto py-4 z-50 transition-all duration-300 bg-[#071D2B] ${
+        isScrolled ? "backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -102,17 +100,13 @@ export default function GelbudNavbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-center">
           <div
-            className={`px-8 rounded-2xl flex items-center py-2 justify-center gap-8 font-semibold text-lg text-[#ECDCC1] transition-all duration-300 ${
-              isScrolled
-                ? "backdrop-blur-md bg-[#071D2B] shadow-lg"
-                : "bg-transparent"
-            }`}
+            className={`px-8 rounded-2xl flex items-center py-2 justify-center gap-8 font-semibold text-lg text-[#ECDCC1] transition-all duration-300 `}
           >
             {navItems.slice(0, 2).map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-4 py-2 hover:text-white"
+                className="px-4 py-2 hover:text-white text-xl"
               >
                 {item.label}
               </Link>
@@ -132,7 +126,7 @@ export default function GelbudNavbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="px-4 py-2 hover:text-white"
+                className="px-4 py-2 hover:text-white text-xl"
               >
                 {item.label}
               </Link>
