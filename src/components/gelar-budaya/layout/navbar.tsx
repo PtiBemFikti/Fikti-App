@@ -10,7 +10,7 @@ export default function GelbudNavbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 400) {
+      if (window.scrollY > 100) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -36,7 +36,7 @@ export default function GelbudNavbar() {
     <nav
       className={`fixed top-0 left-0 right-0 mx-auto py-4 z-50 transition-all duration-300  ${
         isScrolled
-          ? "backdrop-blur-md shadow-lg bg-[#664069] md:backdrop-blur-none md:bg-transparent md:shadow-none"
+          ? "backdrop-blur-md shadow-lg bg-[#071D2B] md:backdrop-blur-none md:bg-transparent md:shadow-none"
           : "bg-inherit md:bg-transparent"
       }`}
     >
@@ -104,7 +104,7 @@ export default function GelbudNavbar() {
           <div
             className={`px-8 rounded-2xl flex items-center py-2 justify-center gap-8 font-semibold text-lg text-[#ECDCC1] transition-all duration-300 ${
               isScrolled
-                ? "backdrop-blur-md bg-[#664069] shadow-lg"
+                ? "backdrop-blur-md bg-[#071D2B] shadow-lg"
                 : "bg-transparent"
             }`}
           >
