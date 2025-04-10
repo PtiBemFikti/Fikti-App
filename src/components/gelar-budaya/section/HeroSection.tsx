@@ -43,7 +43,7 @@ export default function GelbudHeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-white overflow-hidden bg-[#071D2B]">
       {/* Background pattern or image */}
-      <div className="absolute inset-0 bg-[url('/path-to-pattern.png')] bg-cover bg-center opacity-10 rounded-xl mx-4 my-8"></div>
+      <div className="absolute inset-0 bg-[url('/gelar-budaya/bg-dummy.jpg')] bg-cover bg-center opacity-70 rounded-xl"></div>
 
       <div className="relative z-10 w-full max-w-6xl px-6 py-16 text-center">
         {/* Main Title */}
