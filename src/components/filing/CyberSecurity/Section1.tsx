@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import cyberSecurity from "@/../public/filing/Cyber Security Cover.webp";
+import cyberSecurity from "@/../public/filing/Cyber-Security-poster.webp";
 import { circleAmolens } from "@/styles/font";
 
 const Section1: React.FC = () => {

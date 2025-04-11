@@ -213,7 +213,7 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Sabtu, 27 April 2025</td>
+                              <td>: Sabtu, 26 April 2025</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
@@ -237,7 +237,7 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Sabtu, 04 Mei 2025</td>
+                              <td>: Sabtu, 03 Mei 2025</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
@@ -265,7 +265,7 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Sabtu, 11 Mei 2025</td>
+                              <td>: Sabtu, 10 Mei 2025</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
@@ -289,7 +289,7 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Sabtu, 18 Mei 2025</td>
+                              <td>: Sabtu, 17 Mei 2025</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
