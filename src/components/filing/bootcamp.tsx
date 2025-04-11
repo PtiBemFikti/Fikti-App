@@ -53,7 +53,7 @@ export default function BootcampPage() {
                         <i>&quot;Empowering Cyber Defenders : <br></br>Training for Real-World Challenges&quot;</i>
                         </div>
                         <div className="px-10 text-black text-center font-semibold font-['Poppins'] mb-5">
-                        27 April 2025 - 18 Mei 2025
+                        26 April 2025 - 17 Mei 2025
                         </div>
 
                         <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
