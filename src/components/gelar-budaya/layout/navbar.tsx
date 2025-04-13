@@ -35,7 +35,7 @@ export default function GelbudNavbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 mx-auto py-4 z-50 transition-all duration-300 bg-[#071D2B] ${
-        isScrolled ? "backdrop-blur-md shadow-lg" : "bg-transparent"
+        isScrolled ? "backdrop-blur-md shadow-lg" : ""
       }`}
     >
       <div className="container mx-auto px-4">
@@ -100,7 +100,7 @@ export default function GelbudNavbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-center">
           <div
-            className={`px-8 rounded-2xl flex items-center py-2 justify-center gap-8 font-semibold text-lg text-[#ECDCC1] transition-all duration-300 `}
+            className={`px-8 rounded-2xl flex items-center justify-center gap-8 font-semibold text-lg text-[#ECDCC1] transition-all duration-300 `}
           >
             {navItems.slice(0, 2).map((item) => (
               <Link
