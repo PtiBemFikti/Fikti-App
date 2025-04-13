@@ -40,7 +40,7 @@ export default function GelbudSlidingText() {
   );
 
   return (
-    <div className="w-screen bg-[#071D2B] py-6 lg:mb-5 overflow-hidden">
+    <div className="w-screen bg-[#071D2B] py-6 overflow-hidden">
       <div
         ref={containerRef}
         className="flex overflow-x-hidden scroll-smooth"
