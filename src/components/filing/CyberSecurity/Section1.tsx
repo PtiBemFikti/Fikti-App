@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import cyberSecurity from "@/../public/filing/Cyber Security Cover.webp";
+import cyberSecurity from "@/../public/filing/Cyber-Security-poster.webp";
 import { circleAmolens } from "@/styles/font";
 
 const Section1: React.FC = () => {
@@ -47,7 +47,7 @@ const Section1: React.FC = () => {
             Training for Real-World Challenges&quot;
           </h2>
           <h2 className="text-[24px] text-black font-semibold mb-8">
-            27 April 2025 - 18 Mei 2025
+            26 April 2025 - 17 Mei 2025
           </h2>
           <div className="space-y-1">
             <p className="text-[#545350] text-[18px]">

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import dataScience from "@/../public/filing/Data Scince Cover.webp";
+import dataScience from "@/../public/filing/Data-Science-poster.webp";
 import { circleAmolens } from "@/styles/font";
 
 const Section1: React.FC = () => {
