@@ -41,7 +41,7 @@ const dataBiroDepartemen = [
       {
         id: 8,
         foto: "/adiraka/LOGO/MEDIA.png",
-        judul: "Biro Media",
+        judul: "Biro Media Kreatif",
         slug: "/struktur-organisasi/media",
       },
       {
