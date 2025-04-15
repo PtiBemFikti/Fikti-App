@@ -213,15 +213,15 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Sabtu, 26 April 2025</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 12.30 - 16.30 WIB</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>: <i>Zoom Cloud Meeting</i></td>
+                              <td>: <i>To Be Announced</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -237,15 +237,15 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Sabtu, 03 Mei 2025</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 12.30 - 16.00 WIB</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>: <i>Zoom Cloud Meeting</i></td>
+                              <td>: <i>To Be Announced</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -265,15 +265,15 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Sabtu, 10 Mei 2025</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 12.30 - 16.00 WIB</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>: <i>Zoom Cloud Meeting</i></td>
+                              <td>: <i>To Be Announced</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -289,15 +289,15 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Sabtu, 17 Mei 2025</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 12.30 - 16.00 WIB</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>: <i>Zoom Cloud Meeting</i></td>
+                              <td>: <i>To Be Announced</i></td>
                             </tr>
                           </tbody>
                         </table>
