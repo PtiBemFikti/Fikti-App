@@ -4,7 +4,7 @@ export const dataBiroDepartemen = [
       foto: "/adiraka/LOGO/AKADEMIK.png",
       judul: "Departemen Akademik",
       bidang: "Bidang Minat & Bakat",
-      deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+      deskripsi: "Departemen Akademik merupakan departemen yang berperan sebagai fasilitator untuk pengembangan kompetensi akademik Mahasiswa FIKTI UG khususnya dalam bidang teknologi informasi. ",
       slug: "/struktur-organisasi/akademik",
       kepemimpinan: [
          {
@@ -73,7 +73,7 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/ORSB.png",
         judul: "Departemen Olahraga & Seni Budaya	",
         bidang: "Bidang Minat & Bakat",
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        deskripsi: "Departemen Olahraga dan Seni Budaya merupakan departemen yang berperan sebagai fasilitator untuk minat dan bakat mahasiswa FIKTI UG pada bidang Non akademik Olahraga dan Seni Budaya.",
         slug: "/struktur-organisasi/orsb",
         kepemimpinan: [
            {
@@ -284,7 +284,7 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/LITBANG.png",
         judul: "Biro Penelitian & Pengembangan",
         bidang: "Bidang Manajemen Kontrol",
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        deskripsi: "Biro Litbang (Penelitian dan Pengembangan) merupakan biro yang berperan sebagai wadah pengawasan, penilaian dan mengontrol penyelenggaraan program kerja dalam meningkatkan efektifitas organisasi BEM FIKTI UG.",
         slug: "/struktur-organisasi/litbang",
         kepemimpinan: [
            {
@@ -351,7 +351,7 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/PSDM.png",
         judul: "Biro Pengembangan Sumber Daya Manusia	",
         bidang: "Bidang Manajemen Kontrol",
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        deskripsi: "Biro PSDM (Pengembangan Sumber Daya Manusia) merupakan biro yang berperan sebagai wadah kegiatan yang bersifat pengawasan, penilaian dan pengembangan kinerja sumber daya manusia, serta memformulasikan strategi terbaik untuk mengasah skill, agar meningkatkan kualitas keorganisasian BEM FIKTI UG.",
         slug: "/struktur-organisasi/psdm",
         kepemimpinan: [
            {
@@ -418,7 +418,7 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/KESTARI.png",
         judul: "Biro Kesekretariatan",
         bidang: "Bidang Administrasi Umum",
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        deskripsi: "Biro Kesekretariatan merupakan biro yang bertanggung jawab sebagai fasilitator administratif kebutuhan program kerja kegiatan BEM FIKTI UG.",
         slug: "/struktur-organisasi/kesekretariatan",
         kepemimpinan: [
            {
@@ -480,7 +480,7 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/KEUANGAN.png",
         judul: "Biro Keuangan",
         bidang: "Bidang Administrasi Umum",
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        deskripsi: "Biro Keuangan merupakan biro yang bertanggung jawab dalam pengelolaan dan laporan keuangan program kerja BEM FIKTI UG secara transparan.",
         slug: "/struktur-organisasi/keuangan",
         kepemimpinan: [
            {
@@ -540,9 +540,9 @@ export const dataBiroDepartemen = [
     {
         id: 9,
         foto: "/adiraka/LOGO/MEDIA.png",
-        judul: "Biro Media",
+        judul: "Biro Media Kreatif",
         bidang: "Bidang Komunikasi & Informatika",
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        deskripsi: "Biro MedKraf (Media Kreatif) merupakan biro yang berperan dalam merancang desain kreatif pada publikasi dan meningkatkan BEM FIKTI UG melalui pendekatan kreatif dalam mengemas informasi yang lebih menarik dan massive.",
         slug: "/struktur-organisasi/media",
         kepemimpinan: [
            {
@@ -605,7 +605,7 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/HUMAS.png",
         judul: "Biro Hubungan Masyarakat",
         bidang: "Bidang Komunikasi & Informatika",
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        deskripsi: "Biro Humas (Hubungan Masyarakat) merupakan biro yang berperan sebagai ekspansi informasi dan penghubung antara internal dengan pihak eksternal serta mengelola dan melakukan pengembangan hubungan relasi antar pihak dengan BEM FIKTI UG.",
         slug: "/struktur-organisasi/humas",
         kepemimpinan: [
            {
@@ -667,7 +667,7 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/PTI.png",
         judul: "Biro Pengembangan Teknologi Informasi",
         bidang: "Bidang Komunikasi & Informatika",
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        deskripsi: "Biro PTI (Pengembangan Teknologi Informasi) merupakan biro yang bertanggung jawab atas pengembangan serta pengimplementasian teknologi media informasi berbasis website untuk mendukung program kerja BEM FIKTI UG.",
         slug: "/struktur-organisasi/pti",
         kepemimpinan: [
            {
@@ -726,7 +726,7 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/BISKRE.png",
         judul: "Biro Bisnis Kreatif",
         bidang: "Bidang Bisnis & Kemitraan", 
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        deskripsi: "Biro Bisnis Kreatif merupakan biro yang bertanggung jawab dalam menciptakan, mengelola dan mengembangkan produk kreatif untuk membantu pemasukan keuangan BEM FIKTI UG.",
         slug: "/struktur-organisasi/bisnis-kreatif",
         kepemimpinan: [
            {
@@ -790,7 +790,7 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/KEMITRAAN.png",
         judul: "Biro Kemitraan",
         bidang: "Bidang Bisnis & Kemitraan", 
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
+        deskripsi: "Biro Kemitraan merupakan biro yang bertanggung jawab membangun kerjasama dalam partnership dan sponsorship untuk membantu pelaksanaan kegiatan BEM FIKTI UG. ",
         slug: "/struktur-organisasi/kemitraan",
         kepemimpinan: [
            {
