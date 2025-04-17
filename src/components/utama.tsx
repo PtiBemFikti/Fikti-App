@@ -6,7 +6,7 @@ import CoreValue from "@/components/landing-page/coreValue";
 import ParallaxText from "@/components/landing-page/parallaxText";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { Example } from "@/components/landing-page/slider";
-import HeroSection from "./landing-page/dashboard";
+import HeroSection from "./home/HeroSection";
 import AboutPage from "./landing-page/about";
 import ProjekKamiSection from "./landing-page/project";
 import Hotline from "./landing-page/Hotline";
