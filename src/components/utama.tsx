@@ -9,6 +9,7 @@ import { Example } from "@/components/landing-page/slider";
 import HeroSection from "./landing-page/dashboard";
 import AboutPage from "./landing-page/about";
 import ProjekKamiSection from "./landing-page/project";
+import Hotline from "./landing-page/Hotline";
 
 export default function UtamaPage() {
   const { scrollYProgress } = useScroll();
@@ -23,6 +24,7 @@ export default function UtamaPage() {
       <AboutPage />
       <CoreValue />
       <ProjekKamiSection />
+      <Hotline />
       {/* <VisiMisi /> */}
       {/* <section className="flex justify-center items-center overflow-hidden w-full">
         <div className="w-96 h-96 relative flex justify-center items-center my-20">
