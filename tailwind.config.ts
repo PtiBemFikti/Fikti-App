@@ -26,6 +26,9 @@ const config: Config = {
         'purple-normal': '#340660',
         'red-normal-1': '#833344',
         'green-fikti': '#36B276',
+        'dark-green-fikti': '#012F24',
+        'cream-fikti': '#F1F1BC',
+        'cyan-fikti': '#2CD0B0',
         'dark-purple': '#25274D',
         'light-purple': '#6C2A87'
       },
