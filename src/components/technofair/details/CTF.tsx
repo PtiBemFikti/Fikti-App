@@ -1,9 +1,70 @@
+"use client";
 import { Montserrat } from "@/styles/font";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
+
+const eventData = [
+  {
+    judul: "Ketentuan Umum",
+    details: (
+      <ol className="">
+        <li  className="text-black text-sm">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
+        <li  className="text-black text-sm mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
+        <li  className="text-black text-sm mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
+        <li  className="text-black text-sm mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+      </ol>
+    ),
+  },
+  {
+    judul: "Ketentuan Kompetisi",
+    details: (
+      <ol className="">
+        <li  className="text-black text-sm">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
+        <li  className="text-black text-sm mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
+        <li  className="text-black text-sm mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
+        <li  className="text-black text-sm mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+        <li  className="text-black text-sm">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
+        <li  className="text-black text-sm mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
+        <li  className="text-black text-sm mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
+        <li  className="text-black text-sm mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+      </ol>
+    ),
+  },
+  {
+    judul: "Tahapan Kompetisi",
+    details: (
+      <ol className="">
+        <li  className="text-black text-sm">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
+        <li  className="text-black text-sm mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
+        <li  className="text-black text-sm mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
+        <li  className="text-black text-sm mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+        <li  className="text-black text-sm mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
+        <li  className="text-black text-sm mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+      </ol>
+    ),
+  },
+  {
+    judul: "Kriteria Penilaian",
+    details: (
+      <ol className="">
+        <li  className="text-black text-sm">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
+        <li  className="text-black text-sm mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
+        <li  className="text-black text-sm mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
+        <li  className="text-black text-sm mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+        <li  className="text-black text-sm mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+      </ol>
+    ),
+  },
+]
 
 export default function CaptureTheFlag() {
+  const [index, setIndex] = useState(0);
+  
+  const nextItem = () => setIndex((prev) => (prev + 1) % eventData.length);
+  const prevItem = () => setIndex((prev) => (prev - 1 + eventData.length) % eventData.length);
+  
   return(
     <div className="bg-[#FFE9CF]">
 
@@ -14,13 +75,13 @@ export default function CaptureTheFlag() {
             TECHNOFAIR 12.0
           </h1>
           
-          {/* Gradient Text */}
+          
           <h1 className={`${Montserrat.className} text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
             Capture The Flag
           </h1>
         </div>
       </div>
-
+ 
 
       <div className="mt-10 pb-5">
         <h1 className="text-black text-lg italic leading-[150%] text-center">Capture The Flag Competition of<br />TechnoFair 12.0</h1>
@@ -35,6 +96,7 @@ export default function CaptureTheFlag() {
       </div>
 
 
+        {/* SECTION TIMELINE */} 
       <div className="mt-20">
         <h1 className={`${Montserrat.className} text-center text-xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           COMPETITION TIMELINE
@@ -42,6 +104,7 @@ export default function CaptureTheFlag() {
         <Image src="/technofair/logoTF12/timelinetest.png" width={400} height={800} alt="timeline"  className="mx-auto mt-10"/>
       </div>
 
+        {/* SECTION ABOUT */} 
       <div className="mt-20 pb-5">
         <h1 className={`${Montserrat.className} text-center text-xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE COMPETITION
@@ -50,7 +113,42 @@ export default function CaptureTheFlag() {
       </div>
 
 
-      <div></div>
+        {/* SECTION DETAILS */} 
+      <div className="mt-20 pb-10">
+        <h1 className={`${Montserrat.className} text-center text-xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
+          DETAILS
+        </h1>
+        
+        <div className="flex gap-5 justify-center items-center mt-5">
+        <button 
+          onClick={prevItem} 
+          className="hover:scale-110 transition-transform duration-300"
+        >
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24"
+            className="fill-black hover:fill-[#FE8A16] transition-colors duration-300"
+          >
+            <path d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/>
+          </svg>
+        </button>
+          
+          <h1 className={`${Montserrat.className} text-sm font-bold italic tracking-tight text-black`}>{eventData[index].judul}</h1>
+          
+          <button onClick={nextItem} className="hover:scale-110 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-black hover:fill-[#FE8A16] transition-colors duration-300"><path d="M5.536 21.886a1 1 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886"/></svg>
+          </button>
+        </div>
+
+        {/* penjelasan tiap event */} 
+        <div className="bg-white py-3 px-4 mx-5 mt-4 rounded-xl">
+          {eventData[index].details}
+        </div>
+      </div>
+
+
     </div>
   )
 }

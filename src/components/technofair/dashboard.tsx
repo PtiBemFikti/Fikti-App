@@ -34,8 +34,8 @@ export function Dashboard() {
                     <h1 className={`${Montserrat.className} hidden sm:block text-black text-5xl lg:text-7xl font-bold tracking-[3%]`}>TECHNOFAIR 12.0</h1>  
                 </div>
 
-                <div className="bg-[#FE8A16] mx-4 mt-8 px-4 lg:px-8 py-5 lg:py-8 rounded-3xl lg:w-[1160px] lg:mx-auto">
-                    <h1 className={`${Montserrat.className} text-4xl lg:text-[68px] lg:leading-none font-semibold tracking-tight leading-[45px] whitespace-nowrap`}>
+                <div className="bg-[#FE8A16] mx-4 mt-8 px-4 lg:px-8 py-5 lg:py-14 rounded-3xl lg:w-[1000px] lg:mx-auto">
+                    <h1 className={`${Montserrat.className} text-4xl lg:text-[58px] lg:leading-none font-semibold tracking-tight leading-[45px] whitespace-nowrap`}>
                         Tech Enthusiasts,<br /> Assemble!<br />
                         Your Next Big <br className="lg:hidden"/>
                         Break <span className="text-[#053B64]">{rotatingWords1}</span>
@@ -43,7 +43,7 @@ export function Dashboard() {
 
                     <div className="w-80 lg:w-[1100px] lg:mx-auto h-px bg-white my-5"></div>
 
-                    <div className="lg:grid grid-cols-2  lg:items-center">
+                    <div className="lg:grid grid-cols-[60%_40%]  lg:items-center">
                         <p className={`${Montserrat.className} text-xs lg:text-lg text-center lg:text-left lg:whitespace-nowrap`}>“Building Tomorrow&apos;s World with Innovation and Collaboration.”</p>
                         <Link href="#events" className="mx-auto">
                             <h1 className={`${Montserrat.className} bg-[#FFFAF0] text-[#100F21] text-2xl font-semibold tracking-tight px-10 py-3 rounded-full w-fit mt-5 lg:mt-0 mx-auto shadow-[4px_6px_7.2px_1px_rgba(0,0,0,0.25)] lg:shadow-[12px_13px_2.1px_1px_rgba(0,0,0,0.25)] hover:bg-[#053B64] hover:text-white duration-500`}>JOIN NOW</h1>

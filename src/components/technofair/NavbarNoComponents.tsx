@@ -34,8 +34,8 @@ const NavbarNoComponents: React.FC = () => {
   };
 
   return (
-      <div className="md:mx-10 flex justify-between items-center  bg-[#FFE9CF] w-full h-10 lg:h-auto">
-        <Link href="/technofair" className="hidden lg:flex justify-center items-center py-5 ">
+      <div className="flex justify-between items-center  bg-[#FFE9CF] w-full h-10 lg:h-auto">
+        <Link href="/technofair" className="hidden lg:flex justify-center items-center py-5 ml-10">
           <Image src="/technofair/logoTF12/Logo TF 12.0 Tanpa BG.png" alt="Logo" width={50} height={50} className="" />
         </Link>
         
