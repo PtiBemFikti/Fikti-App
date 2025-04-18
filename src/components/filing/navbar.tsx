@@ -56,15 +56,21 @@ const Navbar: React.FC = () => {
         <div className="w-2/5  justify-end text-white hidden lg:flex gap-4">
 
           {/* <button className="px-7 py-2 text-[17px] rounded-3xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-transparent bg-gradient-to-r from-[#3F3381] via-[#CBA2EA] to-[#91D2F4] bg-clip-border"> */}
-          <Link href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-            <button className="px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
-              Hubungi
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLScO7P7O8HyY2jnlX1NjDY8Qxz_ZqYMIO-Tj5WnowEiRe9Aj1w/viewform?usp=sharing" target="_blank" rel="noopener noreferrer"> {/* kalau sudah ada gform nya */}
+            <button className="px-4 py-1 text-[20px] rounded-xl font-serif font-thin tracking-wide bg-gradient-to-r from-[#3F3381] to-[#B07FD6] hover:bg-[#2c2563] transition-all">
+              Daftar
             </button>
           </Link>
 
-          <Link href="" target="_blank" rel="noopener noreferrer"> {/* kalau sudah ada gform nya */}
-            <button className="px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide bg-[#3F3381] hover:bg-[#2c2563] transition-all">
-              Daftar
+          <Link href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+            <button className="px-4 py-1 text-[18px] rounded-xl font-serif font-thin tracking-wide text-black bg-transparent border-[2px] border-black">
+              CP Rafa
+            </button>
+          </Link>
+
+          <Link href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+            <button className="px-4 py-1 text-[18px] rounded-xl font-serif font-thin tracking-wide text-black bg-transparent border-[2px] border-black">
+              CP Rizky
             </button>
           </Link>
 
@@ -91,16 +97,22 @@ const Navbar: React.FC = () => {
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#bootcamp">Bootcamp</Link>
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#documentation">Dokumentasi</Link>
           <Link className="text-black text-lg hover:text-purpleText text-center" href="#faq">FAQ</Link>
+
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLScO7P7O8HyY2jnlX1NjDY8Qxz_ZqYMIO-Tj5WnowEiRe9Aj1w/viewform?usp=sharing" target="_blank" rel="noopener noreferrer"> {/* kalau sudah ada gform nya */}
+            <button className="w-full px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide bg-gradient-to-r from-[#3F3381] to-[#B07FD6] hover:bg-[#2c2563] transition-all">
+              Daftar
+            </button>
+          </Link>
           
-          <Link href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-            <button className="w-full px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
-              Hubungi
+          <Link href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+            <button className="w-full px-4 py-1 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
+              CP Rafa
             </button>
           </Link>
 
-          <Link href="" target="_blank" rel="noopener noreferrer"> {/* kalau sudah ada gform nya */}
-            <button className="w-full px-4 py-1 text-[20px] rounded-2xl font-serif font-thin tracking-wide bg-[#3F3381] hover:bg-[#2c2563] transition-all">
-              Daftar
+          <Link href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+            <button className="w-full px-4 py-1 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-black bg-transparent border-[3px] border-black">
+              CP Rizky
             </button>
           </Link>
         </motion.div>

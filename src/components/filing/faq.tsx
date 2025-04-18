@@ -2,6 +2,7 @@ import { circleAmolens } from "@/styles/font";
 import AccordionCard from "./AccordionCard";
 import Link from "next/link";
 import Image from "next/image";
+import {FaWhatsapp, FaWhatsappSquare} from "react-icons/fa";
 
 export default function FaqPage() {
   return (
@@ -65,14 +66,36 @@ export default function FaqPage() {
               KONTAK KAMI
             </p>
             <p className="text-black text-xl py-3 font-serif font-medium">
-              Punya pertanyaan lain? jangan ragu untuk {" "}
-              <span>
-                <a href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+              Punya pertanyaan lain? jangan ragu untuk bertanya kepada kami.
+              {/* <span>
+                <a href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
                   {" "}
-                  bertanya kepada kami.
+                  Kak Rafa
                 </a>
               </span>
+              {" "}Atau{" "}
+              <span>
+                <a href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+                  {" "}
+                  Kak Rizky.
+                </a>
+              </span> */}
             </p>
+            <div className="flex flex-row flex-wrap justify-center gap-5">
+              <Link href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+                <button className="w-full px-6 py-3 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-white bg-gradient-to-r from-[#3F3381] to-[#B07FD6] cursor-pointer group-hover:scale-110 transition-all duration-300 flex flex-row gap-2">
+                  <FaWhatsapp size={25}/>
+                  CP Rafa
+                </button>
+              </Link>
+
+              <Link href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+                <button className="w-full px-6 py-3 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-ehite bg-gradient-to-r from-[#3F3381] to-[#B07FD6] cursor-pointer group-hover:scale-110 transition-all duration-300 flex flex-row gap-2">
+                  <FaWhatsapp size={25}/>
+                  CP Rizky
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +103,7 @@ export default function FaqPage() {
 
       {/* Mobile */}
       <div className="md:hidden">
-      <div className="justify-center px-10 pt-20 gap-20">
+      <div className="justify-center px-5 pt-20 gap-20">
           <div className="">
             <div className="">
               <p className={`${circleAmolens.className} text-black text-2xl font-medium text-center`}>
@@ -92,7 +115,7 @@ export default function FaqPage() {
             </div>
           </div>
 
-          <div className="mx-auto lg:w-4/5 mt-5">
+          <div className="mx-auto mt-5">
             <div className=" bg-[linear-gradient(113.76deg,#3F3381_31.41%,#B07FD6_65.27%,#91D2F4_96.84%)] rounded-3xl p-6">
               <AccordionCard
                 title="Apa itu FILING?"
@@ -135,14 +158,36 @@ export default function FaqPage() {
               KONTAK KAMI
             </p>
             <p className="text-black text-xl py-3 font-serif font-medium">
-              Punya pertanyaan lain? jangan ragu untuk {" "}
-              <span>
-                <a href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+              Punya pertanyaan lain? jangan ragu untuk bertanya kepada kami.
+              {/* <span>
+                <a href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
                   {" "}
-                  bertanya kepada kami.
+                  Kak Rafa
                 </a>
               </span>
+              {" "}Atau{" "}
+              <span>
+                <a href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+                  {" "}
+                  Kak Rizky.
+                </a>
+              </span> */}
             </p>
+            <div className="flex flex-row flex-wrap justify-center gap-3 mt-2 mb-5">
+              <Link href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+                <button className="w-full px-6 py-3 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-white bg-gradient-to-r from-[#3F3381] to-[#B07FD6] cursor-pointer group-hover:scale-110 transition-all duration-300 flex flex-row gap-2">
+                  <FaWhatsapp size={25}/>
+                  CP Rafa
+                </button>
+              </Link>
+
+              <Link href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+                <button className="w-full px-6 py-3 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-ehite bg-gradient-to-r from-[#3F3381] to-[#B07FD6] cursor-pointer group-hover:scale-110 transition-all duration-300 flex flex-row gap-2">
+                  <FaWhatsapp size={25}/>
+                  CP Rizky
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ type Project = {
     title: string;
     subtitle: string;
     description: string;
+    shortDescription: string
     divisions: Division[];
     logo: string;
   };
@@ -32,6 +33,7 @@ const projects: Project[] = [
       logo: "/oprec-volunteer/logo-heroes-xi.png",
       description:
         "HEROES XI (Hero of Education and Social) adalah sebuah kegiatan bakti sosial yang diselenggarakan oleh mahasiswa/i Fakultas Ilmu Komputer dan Teknologi Informasi (FIKTI) Universitas Gunadarma (UG). Kegiatan ini bertujuan untuk memberikan kontribusi positif kepada masyarakat di wilayah yang menghadapi berbagai permasalahan sosial atau tantangan dalam kehidupan sehari-hari.",
+      shortDescription: "Bakti sosial mahasiswa FIKTI UG yang berkontribusi membantu masyarakat menghadapi tantangan sosial.",
       divisions: [
         { name: "Divisi Acara", description: "Divisi yang bertugas mengurus rangkaian acara. Divisi ini harus memastikan acara berjalan sesuai dengan konsep yang ditentukan." },
         { name: "Divisi Dana Usaha", description: "Divisi yang bertanggung jawab dalam mencari dana dan mengelola dana yang akan digunakan untuk acara." },
@@ -47,7 +49,8 @@ const projects: Project[] = [
       logo: "/oprec-volunteer/tf-11.png",
       description:
         "TechnoFair adalah program kerja unggulan dari Departemen Akademik BEM FIKTI yang merupakan event IT yang dilaksanakan setiap tahun. Acara ini bertujuan untuk mewadahi mahasiswa FIKTI Universitas Gunadarma dalam menyalurkan minat dan bakat mereka di bidang akademik, khususnya di dunia teknologi dan informatika. TechnoFair juga berfungsi sebagai ajang untuk mengembangkan pengetahuan, keterampilan, serta kreativitas di bidang teknologi melalui berbagai kegiatan yang bermanfaat.",
-      divisions: [
+      shortDescription: "Event IT tahunan dari BEM FIKTI UG yang mendukung pengembangan skill dan kreativitas di bidang teknologi.",
+        divisions: [
         { name: "Divisi Acara", description: "Merencanakan, mengelola, dan melaksanakan kegiatan kompetisi, workshop, dan seminar." },
         { name: "Divisi Dana Usaha", description: "Merancang dan menjalankan kegiatan penggalangan dana yang kreatif untuk mendukung kebutuhan finansial acara." },
         { name: "Divisi Humas", description: "Penghubung komunikasi antara panitia, peserta, sponsor, dan media dengan memastikan publikasi acara tersampaikan dengan baik." },
@@ -62,7 +65,8 @@ const projects: Project[] = [
       logo: "/oprec-volunteer/FINAL LOGO FS-03.png",
       description:
         "FIKTI SPACE (FIKTI Sport & Art Championship) adalah sebuah rangkaian acara yang menggabungkan dua program kerja sebelumnya dari BEM FIKTI Universitas Gunadarma, yaitu FAF (FIKTI Art Festival) dan FOSC (FIKTI Open Sport Championship). Acara ini bertujuan untuk menyatukan kompetisi olahraga dan seni budaya dalam satu event dan dirancang untuk memberikan kesempatan kepada mahasiswa FIKTI menyalurkan bakat dan minat mereka dalam bidang olahraga dan seni, serta untuk memperkuat rasa sportivitas dan kreativitas di kalangan mahasiswa.",
-      divisions: [
+      shortDescription: "Ajang kompetisi olahraga dan seni bagi mahasiswa FIKTI UG untuk menyalurkan bakat dan sportivitas.",
+        divisions: [
         { name: "Divisi Acara", description: "Mengatur seluruh jalannya pertandingan dari awal hingga akhir." },
         { name: "Divisi Perlengkapan", description: "Menyediakan dan mengelola seluruh kebutuhan alat & fasilitas acara." },
         { name: "Divisi Danus", description: "Membantu dalam pencarian dana acara untuk kelancaran kegiatan." },
@@ -80,7 +84,8 @@ const projects: Project[] = [
       logo: "/logo/gelar_budaya.png",
       description:
         "Gelar Budaya adalah program kerja unggulan dari Departemen Olahraga dan Seni Budaya yang diselenggarakan dengan tujuan untuk memberikan ruang bagi mahasiswa Universitas Gunadarma, khususnya di FIKTI, untuk berekspresi dalam bidang seni. Acara ini tidak hanya bertujuan untuk menampilkan berbagai karya seni mahasiswa, tetapi juga menjadi sarana untuk mempererat hubungan antar mahasiswa dengan saling mengenal satu sama lain.",
-      divisions: [
+      shortDescription: "Event seni BEM FIKTI UG yang memberi ruang bagi mahasiswa untuk berekspresi dan menampilkan karya.",
+        divisions: [
         { name: "Divisi Acara", description: "Mengatur tema, ticketing, rundown, dan barang yang dibutuhkan untuk acara." },
         { name: "Divisi Perlengkapan", description: "Menyediakan perlengkapan dan mendekorasi tempat acara." },
         { name: "Divisi Keamanan", description: "Melakukan pengamanan dan menjaga agar tetap kondusif selama acara." },

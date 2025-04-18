@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { circleAmolens } from "@/styles/font";
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaWhatsapp, FaWhatsappSquare } from 'react-icons/fa';
 
 // photo
 import check from "@/../public/filing/mdi_check-bold.png";
@@ -10,6 +11,7 @@ import Date from "@/../public/filing/date.png";
 import OS from "@/../public/filing/Sistem Operasi.png";
 import Processor from "@/../public/filing/Processor.png";
 import RAM from "@/../public/filing/RAM.png";
+
 
 // text silabus
 type SyllabusModule = {
@@ -27,7 +29,7 @@ const syllabus: Record<string, SyllabusModule> = {
       "Menangani Missing Values",
       "Menangani Outliers",
       "Data Transformation & Standardization",
-      "Sesi Coding Menggunakan Dataset",
+      "Sesi coding menggunakan dataset",
     ],
   },
   "Feature Engineering & Selection": {
@@ -46,9 +48,10 @@ const syllabus: Record<string, SyllabusModule> = {
     description:
       "Modul ini akan memperkenalkan kamu pada konsep dasar machine learning dan berbagai algoritma yang digunakan dalam analisis data. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
-      "Konsep Dasar Machine Learning",
+      "Konsep dasar Machine Learning",
       "Algoritma Supervised dan Unsupervised Learning",
-      "Membangun Model Sederhana",
+      "Membangun model sederhana",
+      "Sesi QNA dan studi kasus",
     ],
   },
   "Automation": {
@@ -57,9 +60,9 @@ const syllabus: Record<string, SyllabusModule> = {
       "Pada modul ini, kamu akan belajar tentang pentingnya automasi dalam proses data science, termasuk automasi data wrangling dan model training. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
       "Automasi dalam Data Science",
-      "Automasi Proses Data Wrangling & Cleaning",
+      "Automasi proses Data Wrangling & Cleaning",
       "Automasi Model Training & Deployment (MLOps)",
-      "Studi Kasus",
+      "Sesi QNA dan studi kasus",
     ],
   },
 };
@@ -107,7 +110,7 @@ const Section2: React.FC = () => {
                   Biaya Pendaftaran:
                 </h1>
                 <h1 className="font-normal text-black">
-                  <b>Rp 30.000/peserta</b> atau <b>Rp 75.000/3 peserta</b>
+                  <b>Rp30.000/peserta</b> atau <b>Rp75.000/3 peserta</b>
                 </h1>
               </div>
             </div>
@@ -204,12 +207,11 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 08.30 - 12.30 WIB</td>
+                              <td>: 08.00 - 11.55 WIB</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>: <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -233,9 +235,7 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -263,9 +263,7 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -289,9 +287,7 @@ const Section2: React.FC = () => {
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>Zoom Cloud Meeting</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -374,18 +370,40 @@ const Section2: React.FC = () => {
 
           {/* FAQ */}
           <div className="text-center mt-20">
-            <p className={`${circleAmolens.className} text-black text-2xl md:text-4xl font-medium`}>
+            <p className={`${circleAmolens.className} text-black text-4xl font-medium`}>
               KONTAK KAMI
             </p>
             <p className="text-black text-xl py-3 font-serif font-medium">
-              Punya pertanyaan lain? jangan ragu untuk {" "}
-              <span>
-                <a href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+              Punya pertanyaan lain? jangan ragu untuk bertanya kepada kami.
+              {/* <span>
+                <a href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
                   {" "}
-                  bertanya kepada kami.
+                  Kak Rafa
                 </a>
               </span>
+              {" "}Atau{" "}
+              <span>
+                <a href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+                  {" "}
+                  Kak Rizky.
+                </a>
+              </span> */}
             </p>
+            <div className="flex flex-row flex-wrap justify-center gap-3 md:gap-5 mt-2 mb-5">
+              <Link href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+                <button className="w-full px-6 py-3 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-white bg-gradient-to-r from-[#3F3381] to-[#B07FD6] cursor-pointer group-hover:scale-110 transition-all duration-300 flex flex-row gap-2">
+                  <FaWhatsapp size={25}/>
+                  CP Rafa
+                </button>
+              </Link>
+
+              <Link href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+                <button className="w-full px-6 py-3 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-ehite bg-gradient-to-r from-[#3F3381] to-[#B07FD6] cursor-pointer group-hover:scale-110 transition-all duration-300 flex flex-row gap-2">
+                  <FaWhatsapp size={25}/>
+                  CP Rizky
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

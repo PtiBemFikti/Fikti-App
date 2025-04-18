@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { circleAmolens } from "@/styles/font";
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaWhatsapp, FaWhatsappSquare } from 'react-icons/fa';
 
 // photo
 import check from "@/../public/filing/mdi_check-bold.png";
@@ -14,47 +15,51 @@ import RAM from "@/../public/filing/RAM.png";
 // text silabus
 type SyllabusModule = {
   title: string;
+  description: string;
   points: string[];
 };
 
 const syllabus: Record<string, SyllabusModule> = {
-  "Ethical Hacking Introduction": {
-    title: "Modul 01 : Ethical Hacking Introduction",
+  "Pengenalan Cybersecurity": {
+    title: "Modul 01 : Pengenalan Cybersecurity",
+    description:
+      "Pada modul ini, kamu akan belajar dan mengenal Cybersecurity. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
-      "Pengenalan Ethical Hacking dan Keamanan Informasi",
-      "Terminology Hacking",
-      "The Elements of Information Security",
-      "Type of Attack",
-      "Sesi Diskusi dan Studi Kasus",
+      "Pengenalan Informations Security Theories and Concepts",
+      "Pengenalan CIA",
+      "Terminology hacking",
+      "Sesi QNA dan studi kasus",
     ],
   },
-  "Security Fundamentals": {
-    title: "Modul 02 : Fundamental Security System",
+  "VAPT": {
+    title: "Modul 02 : VAPT",
+    description:
+      "Pada modul ini, kamu akan belajar tentang VAPT. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
-      "Pengenalan Linux sebagai alat utama dalam keamanan siber.",
-      "Mengelola pengguna, grup, dan izin akses untuk keamanan.",
-      "CC",
-      "Network & System Security",
-      "Interactive Hands-on",
+      "Pengenalan VAPT",
+      "Fase VAPT & penggunaan Tools",
+      "Pengenalan OWASP TOP 10 dan praktek",
+      "Sesi QNA dan studi kasus",
     ],
   },
-  "Kali Linux Introduction": {
-    title: "Modul 03 : Kali Linux Introduction",
+  "VAPT Lanjutan": {
+    title: "Modul 03 : VAPT Lanjutan",
+    description:
+      "Pada modul ini, kamu akan lanjut belajar tentang VAPT. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
-      "Pengenalan Kali Linux & Tools",
-      "Basic Kali Linux Commands & Configuration",
-      "Pentesting Dasar dengan Kali Linux",
-      "Interactive Hands-on",
+      "Praktikal OWASP TOP 10 Web lanjutan",
+      "Sesi QNA dan studi kasus",
     ],
   },
-  "Management and Security": {
-    title: "Modul 04 : Management and Security",
+  "Hand on praktek VAPT": {
+    title: "Modul 04 : Hand on praktek VAPT",
+    description:
+      "Pada modul ini, kamu akan Praktek langsung VAPT. Materi yang akan dipelajari di modul ini mencakup:",
     points: [
-      "Pengelolaan Layanan dan Server di Kali Linux",
-      "Pemantauan dan Analisis Sistem di Kali Linux",
-      "Pengelolaan Storage dan Backup untuk Keamanan",
-      "Manajemen Pengguna dan Keamanan Server",
-      "Simulasi Serangan dan Penanggulangan di Kali Linux",
+      "Reporting",
+      "Praktek reporting",
+      "Penjelasan project",
+      "Sesi QNA dan studi kasus",
     ],
   },
 };
@@ -63,7 +68,7 @@ type TabKeys = keyof typeof syllabus;
 
 const Section2: React.FC = () => {
   const tabs = Object.keys(syllabus);
-  const [activeTab, setActiveTab] = useState("Ethical Hacking Introduction"); 
+  const [activeTab, setActiveTab] = useState("Pengenalan Cybersecurity"); 
   const syllabusKeys = Object.keys(syllabus);
   const [activeIndex, setActiveIndex] = useState(0);
   const activeModule = syllabus[activeTab];
@@ -102,7 +107,7 @@ const Section2: React.FC = () => {
                   Biaya Pendaftaran:
                 </h1>
                 <h1 className="font-normal text-black">
-                  <b>Rp 30.000/peserta</b> atau <b>Rp 75.000/3 peserta</b>
+                  <b>Rp30.000/peserta</b> atau <b>Rp75.000/3 peserta</b>
                 </h1>
               </div>
             </div>
@@ -115,7 +120,7 @@ const Section2: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Image src={check} alt="" className="w-8 h-8" />
                 <p>
-                  Konsep Fundamental Keamanan Informasi.
+                  Konsep Fundamental Keamanan Informasi
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -139,7 +144,7 @@ const Section2: React.FC = () => {
               <div className="flex items-center gap-2">
                 <Image src={check} alt="" className="w-8 h-8" />
                 <p>
-                  Virtualization Software dengan VMWare Workstation, Oracle VirtualBox, atau Hyper-V
+                  Virtualization Software dengan VMWare Workstation, Oracle VirtualBox atau Hyper-V
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -181,7 +186,7 @@ const Section2: React.FC = () => {
                   <div className="text-lg font-semibold font-serif text-white mt-4">RAM</div>
                   <div className="text-white font-serif text-base mt-2 text-center">
                   8GB (Minimum)<br/>
-                  16GB (Rekomendasi
+                  16GB (Direkomendasikan untuk multitasking dan simulasi serangan).
                   </div>
                 </div>
               </div>
@@ -208,16 +213,15 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Minggu, 27 April 2025</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 13.00 - 16.30 WIB</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>: <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>To Be Announced</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -233,17 +237,15 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Minggu, 04 Mei 2025</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 13.00 - 16.30 WIB</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>To Be Announced</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -263,17 +265,15 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Minggu, 11 Mei 2025</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 13.00 - 16.30 WIB</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>To Be Announced</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -289,17 +289,15 @@ const Section2: React.FC = () => {
                           <tbody>
                             <tr>
                               <td className="font-semibold">Hari, Tanggal</td>
-                              <td>: Minggu, 18 Mei 2025</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Waktu</td>
-                              <td>: 13.00 - 16.30 WIB</td>
+                              <td>: To Be Announced</td>
                             </tr>
                             <tr>
                               <td className="font-semibold">Tempat</td>
-                              <td>
-                                : <i>Zoom Cloud Meeting</i>
-                              </td>
+                              <td>: <i>To Be Announced</i></td>
                             </tr>
                           </tbody>
                         </table>
@@ -338,6 +336,7 @@ const Section2: React.FC = () => {
             {/* Content */}
             <div className="bg-gray-100 p-6 rounded-lg shadow">
               <h2 className="text-xl font-bold mb-2">{activeModule?.title}</h2>
+              <p className="text-gray-700 mb-2">{activeModule.description}</p>
               <ul className="list-disc pl-5 text-gray-700">
                 {activeModule.points.map((point, index) => (
                   <li key={index}>{point}</li>
@@ -369,6 +368,7 @@ const Section2: React.FC = () => {
               {/* content */}
               <div className="bg-gray-100 p-6 rounded-lg shadow">
                 <h2 className="text-lg font-bold mb-2">{activeModule.title}</h2>
+                <p className="text-gray-700 mb-2">{activeModule.description}</p>
                 <ul className="list-disc pl-5 text-gray-700">
                   {activeModule.points.map((point, index) => (
                     <li key={index}>{point}</li>
@@ -380,18 +380,40 @@ const Section2: React.FC = () => {
 
           {/* FAQ */}
           <div className="text-center mt-20">
-            <p className={`${circleAmolens.className} text-black text-2xl md:text-4xl font-medium`}>
+            <p className={`${circleAmolens.className} text-black text-4xl font-medium`}>
               KONTAK KAMI
             </p>
             <p className="text-black text-xl py-3 font-serif font-medium">
-              Punya pertanyaan lain? jangan ragu untuk {" "}
-              <span>
-                <a href="https://api.whatsapp.com/send/?phone=6285156854807&text=Halo+kak+Rasyid%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+              Punya pertanyaan lain? jangan ragu untuk bertanya kepada kami.
+              {/* <span>
+                <a href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
                   {" "}
-                  bertanya kepada kami.
+                  Kak Rafa
                 </a>
               </span>
+              {" "}Atau{" "}
+              <span>
+                <a href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer" className="text-black text-xl underline hover:text-purpleText">
+                  {" "}
+                  Kak Rizky.
+                </a>
+              </span> */}
             </p>
+            <div className="flex flex-row flex-wrap justify-center gap-3 md:gap-5 mt-2 mb-5">
+              <Link href="https://wa.me/628174932917?text=Halo+kak+Rafa%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+                <button className="w-full px-6 py-3 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-white bg-gradient-to-r from-[#3F3381] to-[#B07FD6] cursor-pointer group-hover:scale-110 transition-all duration-300 flex flex-row gap-2">
+                  <FaWhatsapp size={25}/>
+                  CP Rafa
+                </button>
+              </Link>
+
+              <Link href="https://wa.me/6285727635590?text=Halo+kak+Rizky%2C+saya+ingin+bertanya+mengenai+bootcamp+FIKTI+Learning" target="_blank" rel="noopener noreferrer">
+                <button className="w-full px-6 py-3 text-[18px] rounded-2xl font-serif font-thin tracking-wide text-ehite bg-gradient-to-r from-[#3F3381] to-[#B07FD6] cursor-pointer group-hover:scale-110 transition-all duration-300 flex flex-row gap-2">
+                  <FaWhatsapp size={25}/>
+                  CP Rizky
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
