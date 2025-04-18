@@ -87,7 +87,7 @@ export default function UpcomingEventSection() {
 
         {/* Slider */}
         <div className="overflow-x-auto scrollbar-hide" ref={containerRef}>
-          <div className="flex gap-6 snap-x snap-mandatory px-1 md:px-0">
+          <div className="flex gap-6 snap-x snap-mandatory px-1 md:px-0 h-fit w-fit">
             {dummyEvents.map((event, i) => (
               <motion.div
                 key={event.id}
