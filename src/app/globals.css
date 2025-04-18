@@ -281,8 +281,14 @@ body {
     transform: translateX(-100%);
   }
 }
+
 .animate-infinite-scroll {
   animation: infinite-scroll 30s linear infinite;
+}
+@media (max-width: 640px) {
+  .animate-infinite-scroll {
+    animation-duration: 10s;
+  }
 }
 
 ::-webkit-scrollbar {
