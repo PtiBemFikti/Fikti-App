@@ -26,7 +26,7 @@ export function About() {
                             Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.
                         </p>
                         <p className={`${Montserrat.className} text-black text-lg lg:text-[20px] tracking-tight mt-[30px]`}>
-                            Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quot;
+                            Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Building Tomorrow&apos;s World with Innovation and Collaboration.&quot;
                         </p>
                     </div>
                 </div>
