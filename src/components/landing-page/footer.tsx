@@ -17,13 +17,12 @@ const Footer: React.FC = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative h-fit rounded-md bg-transparent p-4 bottom-0 overflow-x-hidden overflow-y-hidden">
-      <div className="wrapper">
-        {/* Blop Elemen Tambahan */}
+    <footer className="relative h-fit rounded-md bg-dark-green-fikti p-4 bottom-0 overflow-x-hidden overflow-y-hidden">
+      {/* <div className="wrapper">
         <div className="blop1"></div>
         <div className="blop2"></div>
         <div className="blop3"></div>
-      </div>
+      </div> */}
 
       <div
         className="flex flex-col lg:flex-row items-center justify-around relative z-20 gap-10 py-10 lg:pt-20
