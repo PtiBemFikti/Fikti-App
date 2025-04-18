@@ -1,12 +1,24 @@
 "use client";
 
-// components/Navbar.tsx
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import DropdownMenuNav from "./DropdownMenu";
 import { usePathname } from "next/navigation";
+
+// Variants buat animasi item menu
+const menuItemVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
+
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
@@ -29,29 +41,21 @@ const Navbar: React.FC = () => {
   }, []);
 
   const toggleMenu = async () => {
-    // Set animasi saat menu dibuka
     await controls.start({
       opacity: isMenuOpen ? 0 : 1,
       y: isMenuOpen ? -10 : 0,
-      animation: "infinite",
       transition: { duration: 2, delay: 1 },
     });
 
-    // Set animasi saat menu ditutup
     if (!isMenuOpen) {
       await controls.start({
         opacity: 0,
         y: -10,
         transition: { duration: 0.5, delay: 2 },
-        animation: "backwards",
       });
     }
 
-    // Update status menu
     setIsMenuOpen(!isMenuOpen);
-  };
-  const getAboutHref = () => {
-    return pathname === "/" ? "#about" : "/#about";
   };
 
   return (
@@ -63,57 +67,83 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div
-        className={` ${
-          isScrolled ? "space-x-5" : "space-x-0 "
+        className={`${
+          isScrolled ? "space-x-5" : "space-x-0"
         } container mx-auto space-x-8 flex justify-between items-center`}
       >
-        <Link href="/" className="flex items-center ml-5">
-          <Image
-            src="/logo-fikti.png"
-            alt="Logo"
-            width={35}
-            height={35}
-            className="mr-2"
-          />
-          <div>
-            <h1 className="text-lg">BEM FIKTI</h1>
-            <p className="text-xs font-light">Universitas Gunadarma</p>
-          </div>
-        </Link>
-        <div className="hidden md:flex md:gap-10 space-x-4 mr-8">
-          <Link
-            className="relative block group hover:text-cream-fikti duration-300 py-2"
-            href="/"
-          >
-            Beranda
-            <span className="absolute left-0 bottom-0 h-0.5 bg-cream-fikti w-0 group-hover:w-full duration-300"></span>
-          </Link>
-          <Link
-            className="relative block group hover:text-cream-fikti duration-300 py-2"
-            href={getAboutHref()}
-          >
-            Tentang
-            <span className="absolute left-0 bottom-0 h-0.5 bg-cream-fikti w-0 group-hover:w-full duration-300"></span>
-          </Link>
-          {/* <Link
-            className="relative block group hover:text-cream-fikti duration-300 py-2"
-            href="/struktur-organisasi"
-          >
-            Struktur
-            <span className="absolute left-0 bottom-0 h-0.5 bg-cream-fikti w-0 group-hover:w-full duration-300"></span>
-          </Link> */}
-          <div>
-            <DropdownMenuNav />
-          </div>
-        </div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
+          <motion.div variants={menuItemVariants}>
+            <Link href="/" className="flex items-center ml-5">
+              <Image
+                src="/logo-fikti.png"
+                alt="Logo"
+                width={35}
+                height={35}
+                className="mr-2"
+              />
+              <div>
+                <h1 className="text-lg">BEM FIKTI</h1>
+                <p className="text-xs font-light">Universitas Gunadarma</p>
+              </div>
+            </Link>
+          </motion.div>
+        </motion.div>
 
+        {/* Menu Desktop dengan animasi satu-satu */}
+        <motion.div
+          className="hidden md:flex md:gap-10 space-x-4 mr-8"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
+          <motion.div variants={menuItemVariants}>
+            <Link
+              className="relative block group hover:text-cream-fikti duration-300 py-2"
+              href="/"
+            >
+              Beranda
+              <span className="absolute left-0 bottom-0 h-0.5 bg-cream-fikti w-0 group-hover:w-full duration-300"></span>
+            </Link>
+          </motion.div>
+
+          <motion.div variants={menuItemVariants}>
+            <Link
+              className="relative block group hover:text-cream-fikti duration-300 py-2"
+              href="/tentang"
+            >
+              Tentang
+              <span className="absolute left-0 bottom-0 h-0.5 bg-cream-fikti w-0 group-hover:w-full duration-300"></span>
+            </Link>
+          </motion.div>
+
+          <motion.div variants={menuItemVariants}>
+            <DropdownMenuNav />
+          </motion.div>
+        </motion.div>
+
+        {/* Hamburger button */}
         <div className="md:hidden">
-          {/* Hamburger menu icon */}
           <button
             onClick={toggleMenu}
-            className={` mr-4 p-1 ${
+            className={`mr-4 p-1 ${
               isMenuOpen
-                ? "bg-[#100819] backdrop-blur-sm shadow-md rounded-md "
+                ? "bg-[#100819] backdrop-blur-sm shadow-md rounded-md"
                 : ""
             }`}
           >
@@ -121,19 +151,21 @@ const Navbar: React.FC = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className="w-6 h-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
           </button>
         </div>
       </div>
+
+      {/* Mobile menu */}
       {isMenuOpen && (
         <motion.div
           className={`flex flex-col gap-3 md:hidden mt-4 px-4 py-6 w-full transition-none duration-0 ${
@@ -148,25 +180,12 @@ const Navbar: React.FC = () => {
           <Link className="hover:text-cream-fikti text-center" href="/">
             Beranda
           </Link>
-          <Link
-            className="hover:text-cream-fikti text-center"
-            href={getAboutHref()}
-          >
+          <Link className="hover:text-cream-fikti text-center" href="/tentang">
             Tentang
           </Link>
-          {/* <Link
-            className="hover:text-cream-fikti text-center"
-            href="/struktur-organisasi"
-          >
-            Struktur Organisasi
-          </Link> */}
           <div className="flex justify-center items-center">
             <DropdownMenuNav />
           </div>
-          {/* <Link className="hover:text-cream-fikti" href="/dept&biro">
-            Departemen
-          </Link> */}
-          {/* Add more navigation links as needed */}
         </motion.div>
       )}
     </nav>
