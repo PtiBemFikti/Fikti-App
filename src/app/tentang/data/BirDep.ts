@@ -5,7 +5,7 @@ export const dataBiroDepartemen = [
       judul: "Departemen Akademik",
       bidang: "Bidang Minat & Bakat",
       deskripsi: "Departemen Akademik merupakan departemen yang berperan sebagai fasilitator untuk pengembangan kompetensi akademik Mahasiswa FIKTI UG khususnya dalam bidang teknologi informasi. ",
-      slug: "/struktur-organisasi/akademik",
+      slug: "/tentang/akademik",
       kepemimpinan: [
          {
           nama: "Ahmad Maula Yusuf",
@@ -74,7 +74,7 @@ export const dataBiroDepartemen = [
         judul: "Departemen Olahraga & Seni Budaya	",
         bidang: "Bidang Minat & Bakat",
         deskripsi: "Departemen Olahraga dan Seni Budaya merupakan departemen yang berperan sebagai fasilitator untuk minat dan bakat mahasiswa FIKTI UG pada bidang Non akademik Olahraga dan Seni Budaya.",
-        slug: "/struktur-organisasi/orsb",
+        slug: "/tentang/orsb",
         kepemimpinan: [
            {
             nama: "Zaidan Juwantoro",
@@ -155,8 +155,8 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/SOSMAS.png",
         judul: "Departemen Sosial Masyarakat",
         bidang : "Bidang Sosial Politik",
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
-        slug: "/struktur-organisasi/sosmas",
+        deskripsi: "Departemen Sosial Masyarakat merupakan departemen yang terdapat di BEM FIKTI Universitas Gunadarma yang bergerak di pengabdian kepada masyarakat dan juga mewadahi segala bentuk kegiatan sosial kepada masyarakat luas sebagai perwujudan salah satu Tri Dharma Perguruan Tinggi yaitu pengabdian kepada masyarakat.",
+        slug: "/tentang/sosmas",
         kepemimpinan: [
            {
             nama: "Devan Novyan Effendi Putra",
@@ -217,8 +217,8 @@ export const dataBiroDepartemen = [
         foto: "/adiraka/LOGO/POLKESMA.png",
         judul: "Departemen Politik & Kesejahteraan Mahasiswa",
         bidang : "Bidang Sosial Politik",
-        deskripsi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic consectetur rerum magnam autem earum praesentium modi impedit sequi placeat, maiores inventore fugiat perspiciatis quibusdam harum eveniet expedita architecto voluptas.",
-        slug: "/struktur-organisasi/polkesma",
+        deskripsi: "Bertugas sebagai penghubung dan pelayanan kebutuhan terhadap Mahasiswa/i FIKTI UG dengan pemangku kebijakan, pengadvokasian kebijakan internal kampus terhadap isu-isu yang berkembang, serta roda penggerak dalam pergerakan Mahasiswa/i FIKTI UG.",
+        slug: "/tentang/polkesma",
         kepemimpinan: [
            {
             nama: "Jessica Feodora Baeha",
@@ -285,7 +285,7 @@ export const dataBiroDepartemen = [
         judul: "Biro Penelitian & Pengembangan",
         bidang: "Bidang Manajemen Kontrol",
         deskripsi: "Biro Litbang (Penelitian dan Pengembangan) merupakan biro yang berperan sebagai wadah pengawasan, penilaian dan mengontrol penyelenggaraan program kerja dalam meningkatkan efektifitas organisasi BEM FIKTI UG.",
-        slug: "/struktur-organisasi/litbang",
+        slug: "/tentang/litbang",
         kepemimpinan: [
            {
             nama: "Hasan Nasrullah Almuhdar",
@@ -352,7 +352,7 @@ export const dataBiroDepartemen = [
         judul: "Biro Pengembangan Sumber Daya Manusia	",
         bidang: "Bidang Manajemen Kontrol",
         deskripsi: "Biro PSDM (Pengembangan Sumber Daya Manusia) merupakan biro yang berperan sebagai wadah kegiatan yang bersifat pengawasan, penilaian dan pengembangan kinerja sumber daya manusia, serta memformulasikan strategi terbaik untuk mengasah skill, agar meningkatkan kualitas keorganisasian BEM FIKTI UG.",
-        slug: "/struktur-organisasi/psdm",
+        slug: "/tentang/psdm",
         kepemimpinan: [
            {
             nama: "Desta Aldi Fachri Wibowo",
@@ -419,7 +419,7 @@ export const dataBiroDepartemen = [
         judul: "Biro Kesekretariatan",
         bidang: "Bidang Administrasi Umum",
         deskripsi: "Biro Kesekretariatan merupakan biro yang bertanggung jawab sebagai fasilitator administratif kebutuhan program kerja kegiatan BEM FIKTI UG.",
-        slug: "/struktur-organisasi/kesekretariatan",
+        slug: "/tentang/kesekretariatan",
         kepemimpinan: [
            {
             nama: "Lisa Yizlia Yesarela",
@@ -481,7 +481,7 @@ export const dataBiroDepartemen = [
         judul: "Biro Keuangan",
         bidang: "Bidang Administrasi Umum",
         deskripsi: "Biro Keuangan merupakan biro yang bertanggung jawab dalam pengelolaan dan laporan keuangan program kerja BEM FIKTI UG secara transparan.",
-        slug: "/struktur-organisasi/keuangan",
+        slug: "/tentang/keuangan",
         kepemimpinan: [
            {
             nama: "Hasyifah Safitri",
@@ -543,7 +543,7 @@ export const dataBiroDepartemen = [
         judul: "Biro Media Kreatif",
         bidang: "Bidang Komunikasi & Informatika",
         deskripsi: "Biro MedKraf (Media Kreatif) merupakan biro yang berperan dalam merancang desain kreatif pada publikasi dan meningkatkan BEM FIKTI UG melalui pendekatan kreatif dalam mengemas informasi yang lebih menarik dan massive.",
-        slug: "/struktur-organisasi/media",
+        slug: "/tentang/media",
         kepemimpinan: [
            {
             nama: "Maulidina Rahmawati",
@@ -606,7 +606,7 @@ export const dataBiroDepartemen = [
         judul: "Biro Hubungan Masyarakat",
         bidang: "Bidang Komunikasi & Informatika",
         deskripsi: "Biro Humas (Hubungan Masyarakat) merupakan biro yang berperan sebagai ekspansi informasi dan penghubung antara internal dengan pihak eksternal serta mengelola dan melakukan pengembangan hubungan relasi antar pihak dengan BEM FIKTI UG.",
-        slug: "/struktur-organisasi/humas",
+        slug: "/tentang/humas",
         kepemimpinan: [
            {
             nama: "Sakhila Nathania",
@@ -668,7 +668,7 @@ export const dataBiroDepartemen = [
         judul: "Biro Pengembangan Teknologi Informasi",
         bidang: "Bidang Komunikasi & Informatika",
         deskripsi: "Biro PTI (Pengembangan Teknologi Informasi) merupakan biro yang bertanggung jawab atas pengembangan serta pengimplementasian teknologi media informasi berbasis website untuk mendukung program kerja BEM FIKTI UG.",
-        slug: "/struktur-organisasi/pti",
+        slug: "/tentang/pti",
         kepemimpinan: [
            {
             nama: "Naufal Fahmi F",
@@ -727,7 +727,7 @@ export const dataBiroDepartemen = [
         judul: "Biro Bisnis Kreatif",
         bidang: "Bidang Bisnis & Kemitraan", 
         deskripsi: "Biro Bisnis Kreatif merupakan biro yang bertanggung jawab dalam menciptakan, mengelola dan mengembangkan produk kreatif untuk membantu pemasukan keuangan BEM FIKTI UG.",
-        slug: "/struktur-organisasi/bisnis-kreatif",
+        slug: "/tentang/bisnis-kreatif",
         kepemimpinan: [
            {
             nama: "Yuliano Christoper Situmorang",
@@ -791,7 +791,7 @@ export const dataBiroDepartemen = [
         judul: "Biro Kemitraan",
         bidang: "Bidang Bisnis & Kemitraan", 
         deskripsi: "Biro Kemitraan merupakan biro yang bertanggung jawab membangun kerjasama dalam partnership dan sponsorship untuk membantu pelaksanaan kegiatan BEM FIKTI UG. ",
-        slug: "/struktur-organisasi/kemitraan",
+        slug: "/tentang/kemitraan",
         kepemimpinan: [
            {
             nama: "Rahmalia El Vanya",
