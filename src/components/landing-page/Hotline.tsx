@@ -9,6 +9,9 @@ export default function Hotline() {
 
   return (
     <motion.a
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
