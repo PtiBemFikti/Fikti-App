@@ -64,7 +64,7 @@ export function Navbar() {
 
         <div className="md:hidden">
           <button onClick={toggleMenu} className="px-5">
-            <Image src="/technofair/logoTF12/burger-menu.svg" alt="btn" width={50} height={50} />
+            <Image src="/technofair/logoTF12/burger-menu.svg" alt="btn" width={40} height={40} />
           </button>
         </div>
 

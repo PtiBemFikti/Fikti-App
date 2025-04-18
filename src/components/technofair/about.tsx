@@ -16,7 +16,7 @@ export function About() {
 
     return (
         <div>
-            <div className="lg:grid grid-cols-[auto_auto_auto] items-start  px-5 lg:px-0 lg:container lg:mx-auto mt-[65px] lg:mt-[250px]">
+            <div className="lg:grid grid-cols-[auto_auto_auto] items-start  px-5 lg:px-0 lg:container lg:mx-auto mt-[65px] lg:mt-48">
                 <div className="justify-center items-center lg:w-[600px]">
                     <h1 className={`${poppins.className} text-black  text-[35px] lg:text-[54px] tracking-tight font-semibold`}>
                         What is TechnoFair?
@@ -26,7 +26,7 @@ export function About() {
                             Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.
                         </p>
                         <p className={`${Montserrat.className} text-black text-lg lg:text-[20px] tracking-tight mt-[30px]`}>
-                            Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Realizing the dynamic technological transformation through collaborative innovation in FutureTech.&quot;
+                            Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Building Tomorrow&apos;s World with Innovation and Collaboration.&quot;
                         </p>
                     </div>
                 </div>

@@ -43,7 +43,7 @@ export default function BootcampPage() {
                       <div>
                         <div className="items-center mb-4">
                           <Image
-                            src="/filing/bootcampCS.webp"
+                            src="/filing/bootcamp2.webp"
                             alt="Cyber Security"
                             width={400}
                             height={350}
@@ -53,7 +53,7 @@ export default function BootcampPage() {
                         <i>&quot;Empowering Cyber Defenders : <br></br>Training for Real-World Challenges&quot;</i>
                         </div>
                         <div className="px-10 text-black text-center font-semibold font-['Poppins'] mb-5">
-                        26 April 2025 - 17 Mei 2025
+                        To Be Announced
                         </div>
 
                         <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
@@ -111,7 +111,7 @@ export default function BootcampPage() {
               <div>
                 <div className="items-center mb-4">
                   <Image
-                    src="/filing/bootcampCS.webp"
+                    src="/filing/bootcamp2.webp"
                     alt="Cyber Security"
                     className="w-full h-auto"
                     width={400}
@@ -122,7 +122,7 @@ export default function BootcampPage() {
                   <i>&quot;Empowering Cyber Defenders : <br></br>Training for Real-World Challenges&quot;</i>
                 </div>
                 <div className="px-10 text-black text-center font-semibold font-['Poppins'] mb-5">
-                  26 April 2025 - 17 Mei 2025
+                  To Be Announced
                 </div>
                 <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
                   Lihat Detail Program
