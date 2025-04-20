@@ -34,7 +34,7 @@ export default function CompanyProfileSection() {
           className="relative"
         >
           <Image
-            src="/main/hero-bg.jpg"
+            src="/about.jpeg"
             alt="Company Profile"
             width={800}
             height={800}
