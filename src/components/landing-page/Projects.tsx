@@ -16,7 +16,7 @@ export default function ProjekKamiSection() {
         transition={{ duration: 0.6 }}
         className={`${MonumentExtendedBold.className} text-left text-3xl md:text-6xl mb-6 lg:text-[3rem] text-dark-green-fikti`}
       >
-        Projek Unggulan
+        Proyek Unggulan
       </motion.h2>
 
       {/* Projects Grid */}
