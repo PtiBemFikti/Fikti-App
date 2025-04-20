@@ -5,7 +5,7 @@ import Image from "next/image";
 import LogoSlider from "./LogoSlider";
 import { motion } from "framer-motion";
 
-export default function AboutSection() {
+export default function CompanyProfileSection() {
   return (
     <section
       className="py-16 bg-cream-fikti w-screen relative -top-8 rounded-t-[20px] lg:rounded-t-[50px]"
@@ -21,7 +21,7 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: true }}
-          className={`${MonumentExtendedBold.className} text-3xl lg:text-[5rem] text-dark-green-fikti`}
+          className={`${MonumentExtendedBold.className} text-3xl md:text-4xl lg:text-[5rem] text-dark-green-fikti`}
         >
           Company
         </motion.h2>
@@ -38,7 +38,7 @@ export default function AboutSection() {
             alt="Company Profile"
             width={800}
             height={800}
-            className="rounded-xl shadow-md lg:h-[550px] w-auto object-cover aspect-video mx-auto"
+            className="rounded-xl shadow-md md:h-[350px] lg:h-[550px] w-auto object-cover aspect-video mx-auto lg:my-8"
           />
         </motion.div>
 
@@ -47,7 +47,7 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
           viewport={{ once: true }}
-          className={`${MonumentExtendedBold.className} text-3xl lg:text-[5rem] text-transparent text-right`}
+          className={`${MonumentExtendedBold.className} text-3xl md:text-4xl lg:text-[5rem] text-transparent text-right`}
           style={{
             WebkitTextStroke: "2px #012f24",
           }}
