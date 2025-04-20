@@ -15,7 +15,7 @@ export default function OprecVolunteerLayout({
   children: ReactNode;
 }) {
   return (
-    <section className="w-full h-fit overflow-x-hidden bg-[#071D2B]">
+    <section className="w-full h-fit overflow-x-hidden bg-black">
       {children}
     </section>
   );
