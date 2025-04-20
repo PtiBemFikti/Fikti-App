@@ -4,7 +4,7 @@ import { useScroll, useSpring } from "framer-motion";
 import HeroSection from "./landing-page/HeroSection";
 import ProjekKamiSection from "./landing-page/Projects";
 import Hotline from "./landing-page/Hotline";
-import AboutSection from "./landing-page/CompanyProfile";
+import CompanyProfileSection from "./landing-page/CompanyProfile";
 import UpcomingEventSection from "./landing-page/UpcomingEvent";
 
 export default function UtamaPage() {
@@ -17,9 +17,9 @@ export default function UtamaPage() {
   return (
     <div className="flex max-w-full min-h-screen flex-col items-center justify-between bg-cream-fikti">
       <HeroSection />
-      <AboutSection />
+      <CompanyProfileSection />
       <ProjekKamiSection />
-      <UpcomingEventSection />
+      {/* <UpcomingEventSection /> */}
       <Hotline />
     </div>
   );
