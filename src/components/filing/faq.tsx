@@ -31,7 +31,7 @@ export default function FaqPage() {
               />
               <AccordionCard
                 title="Materi apa saja yang ditawarkan dalam Bootcamp FILING?"
-                content="Di tahun ini, FILING menghadirkan bootcamp Data Science dan Cyber Security yang sangat cocok dengan perkembangan industri saat ini."
+                content="Di tahun ini, FILING menghadirkan bootcamp Data Science yang sangat cocok dengan perkembangan industri saat ini."
               />
               <AccordionCard
                 title="Siapa saja yang dapat mengikuti Bootcamp FILING?"
@@ -123,7 +123,7 @@ export default function FaqPage() {
               />
               <AccordionCard
                 title="Materi apa saja yang ditawarkan dalam Bootcamp FILING?"
-                content="Di tahun ini, FILING menghadirkan bootcamp Data Science dan Cyber Security yang sangat cocok dengan perkembangan industri saat ini."
+                content="Di tahun ini, FILING menghadirkan bootcamp Data Science yang sangat cocok dengan perkembangan industri saat ini."
               />
               <AccordionCard
                 title="Siapa saja yang dapat mengikuti Bootcamp FILING?"

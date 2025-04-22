@@ -35,7 +35,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <h1 className="text-2xl md:text-3xl font-bold text-white pt-10 font-serif">
-                  TINGKATKAN KEMAMPUAN ANDA UNTUK MENGHADAPI INDUSTRI 5.0 DENGAN ANALISIS DATA DAN PENGEMBANGAN WEB
+                  TINGKATKAN KEMAMPUAN ANDA UNTUK MENGHADAPI INDUSTRI 5.0 DENGAN MENGOLAH DATA
                 </h1>
                 <p className="font-extralight text-base md:text-lg text-white mt-5 leading-6 md:leading-[30px] font-serif w-4/6">
                 Dapatkan pengetahuan dan keterampilan yang Anda butuhkan untuk berkembang di dunia yang berubah dengan cepat saat ini dengan kursus online bootcamp kami yang fleksibel dan terjangkau.
@@ -69,7 +69,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <h1 className="text-2xl md:text-4xl font-bold text-white pt-10 leading-tight font-serif break-words mx-auto">
-                  TINGKATKAN KEMAMPUAN ANDA UNTUK MENGHADAPI INDUSTRI 5.0 DENGAN ANALISIS DATA DAN PENGEMBANGAN WEB
+                  TINGKATKAN KEMAMPUAN ANDA UNTUK MENGHADAPI INDUSTRI 5.0 DENGAN MENGOLAH DATA
                 </h1>
                 <p className="text-sm font-extralight text-white mt-3 leading-5 md:leading-[30px] font-serif">
                 Dapatkan pengetahuan dan keterampilan yang Anda butuhkan untuk berkembang di dunia yang berubah dengan cepat saat ini dengan kursus online bootcamp kami yang fleksibel dan terjangkau.
