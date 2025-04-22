@@ -1,5 +1,6 @@
 "use client";
 
+import { MonumentExtendedBold } from "@/styles/font";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -70,7 +71,7 @@ export default function GelbudFAQSection() {
           {/* Title */}
           <motion.h2
             variants={item}
-            className="text-3xl md:text-4xl font-bold text-dark-green-fikti mb-8 text-center"
+            className={`${MonumentExtendedBold.className} text-3xl md:text-4xl font-bold mb-4 text-center text-black`}
           >
             Frequently Asked Questions
           </motion.h2>
