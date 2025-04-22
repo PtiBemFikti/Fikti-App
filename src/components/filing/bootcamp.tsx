@@ -14,7 +14,7 @@ export default function BootcampPage() {
 
               <div className=" flex items-center justify-center">
                 <div className="flex md:gap-12 lg:gap-44 justify-center">
-                  <div className="md:w-1/2 lg:w-2/5 rounded-2xl border-2 border-[#91D2F4] group transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1">
+                  <div className="w-full rounded-2xl border-2 border-[#91D2F4] group transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1">
                     <Link href="/filing/DataScience">
                       <div className="">
                         <div className="items-center mb-4">
@@ -38,7 +38,31 @@ export default function BootcampPage() {
                     </Link>
                   </div>
 
-                  <div className="md:w-1/2 lg:w-2/5 rounded-2xl border-2 border-[#91D2F4] group transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1">
+                  {/* versi 2 */}
+                  {/* <div className="md:w-1/2 lg:w-2/5 rounded-2xl border-2 border-[#91D2F4] group transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1">
+                    <Link href="/filing/DataScience">
+                      <div className="">
+                        <div className="items-center mb-4">
+                          <Image
+                            src="/filing/bootcampDS.webp"
+                            alt="Data Science"
+                            width={400}
+                            height={350}
+                          />
+                        </div>
+                        <div className="px-5 text-black text-center text-sm font-light font-['Poppins'] mt-10 mb-3">
+                          <i>“Exploring the Data Universe : <br></br>Hands-On Learning for Beginners”</i>
+                        </div>
+                        <div className="px-10 text-black text-center font-semibold font-['Poppins'] mb-5">
+                        26 April 2025 - 17 Mei 2025
+                        </div>
+                        <button className="w-full mt-4 mb-2 px-1 tracking-tight text-[#3F3381] font-bold font-serif" >
+                          Lihat Detail Program
+                        </button>
+                      </div>
+                    </Link>
+                  </div> */}
+                  {/* <div className="md:w-1/2 lg:w-2/5 rounded-2xl border-2 border-[#91D2F4] group transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1">
                     <Link href="/filing/CyberSecurity">
                       <div>
                         <div className="items-center mb-4">
@@ -61,7 +85,7 @@ export default function BootcampPage() {
                         </button>
                       </div>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -105,7 +129,7 @@ export default function BootcampPage() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center pb-2">
+        {/* <div className="flex justify-center items-center pb-2">
           <div className="w-80 rounded-2xl border-2 border-[#91D2F4] group transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1">
             <Link href="/filing/CyberSecurity">
               <div>
@@ -130,7 +154,7 @@ export default function BootcampPage() {
               </div>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
