@@ -2,7 +2,7 @@
 
 import { FaMapMarkerAlt, FaTicketAlt, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
-import { Montserrat } from "@/styles/font";
+import { Montserrat, MonumentExtendedBold } from "@/styles/font";
 import { motion } from "framer-motion";
 
 export default function GelbudHeroSection() {
@@ -75,7 +75,7 @@ export default function GelbudHeroSection() {
         {/* Main Title */}
         <motion.h1
           variants={itemVariants}
-          className={`${Montserrat.className} text-4xl md:text-6xl font-extrabold tracking-tight mb-4 drop-shadow-lg`}
+          className={`${MonumentExtendedBold.className} text-4xl md:text-6xl font-extrabold tracking-wider mb-4 drop-shadow-lg`}
         >
           GELAR BUDAYA
         </motion.h1>
