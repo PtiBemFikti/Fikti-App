@@ -7,22 +7,30 @@ import { useEffect, useRef } from "react";
 export default function GelbudSlidingText() {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
+  const speed = 50; // pixel per second
 
   useEffect(() => {
-    if (!containerRef.current || !contentRef.current) return;
-
     const container = containerRef.current;
     const content = contentRef.current;
+    if (!container || !content) return;
 
-    // Duplikasi konten untuk efek infinite yang mulus
     content.innerHTML += content.innerHTML;
 
-    const animate = () => {
-      if (content.offsetWidth > container.scrollLeft + container.offsetWidth) {
-        container.scrollLeft += 1;
-      } else {
+    let startTimestamp: number | null = null;
+
+    const animate = (timestamp: number) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const elapsed = timestamp - startTimestamp;
+
+      const distance = (elapsed / 1000) * speed; 
+
+      if (distance >= content.scrollWidth / 2) {
+        startTimestamp = timestamp;
         container.scrollLeft = 0;
+      } else {
+        container.scrollLeft = distance;
       }
+
       requestAnimationFrame(animate);
     };
 
@@ -53,12 +61,10 @@ export default function GelbudSlidingText() {
     <div className="w-screen bg-black py-6 overflow-hidden">
       <div
         ref={containerRef}
-        className="flex overflow-x-hidden scroll-smooth"
-        style={{ scrollBehavior: "smooth" }}
+        className="flex overflow-x-hidden"
+        style={{ scrollBehavior: "auto" }}
       >
         <div ref={contentRef} className="flex whitespace-nowrap">
-          {renderText()}
-          {renderText()}
           {renderText()}
           {renderText()}
         </div>
