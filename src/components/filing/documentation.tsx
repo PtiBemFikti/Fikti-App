@@ -35,15 +35,6 @@ export default function DocumentationPage() {
               >
                 <SwiperSlide>
                   <Image
-                    src="/filing/filingdoc2.png"
-                    alt=""
-                    width={1000}
-                    height={1600}
-                    className="w-full h-full rounded-3xl"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
                     src="/filing/filingdoc3.png"
                     alt=""
                     width={1000}
@@ -54,6 +45,24 @@ export default function DocumentationPage() {
                 <SwiperSlide>
                   <Image
                     src="/filing/filingdoc4.png"
+                    alt=""
+                    width={1000}
+                    height={1600}
+                    className="w-full h-full rounded-3xl"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/filing/filingdoc6.png"
+                    alt=""
+                    width={1000}
+                    height={1600}
+                    className="w-full h-full rounded-3xl"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/filing/filingdoc8.png"
                     alt=""
                     width={1000}
                     height={1600}
