@@ -147,17 +147,6 @@ export default function DocumentationPage() {
           <div className="flex flex-col justify-center items-center space-y-6 px-2 pb-4">
             <div className="flex w-full ">
               <Image
-                src="/filing/filingdoc2.png"
-                alt=""
-                className="w-auto h-auto rounded-xl"
-                width={1000}
-                height={1000}
-              />
-            </div>
-          </div>
-          <div className="flex flex-col justify-center items-center space-y-6 px-2 pb-4">
-            <div className="flex w-full ">
-              <Image
                 src="/filing/filingdoc3.png"
                 alt=""
                 className="w-auto h-auto rounded-xl"
@@ -170,6 +159,28 @@ export default function DocumentationPage() {
             <div className="flex w-full ">
               <Image
                 src="/filing/filingdoc4.png"
+                alt=""
+                className="w-auto h-auto rounded-xl"
+                width={1000}
+                height={1000}
+              />
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center space-y-6 px-2 pb-4">
+            <div className="flex w-full ">
+              <Image
+                src="/filing/filingdoc6.png"
+                alt=""
+                className="w-auto h-auto rounded-xl"
+                width={1000}
+                height={1000}
+              />
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center space-y-6 px-2 pb-4">
+            <div className="flex w-full ">
+              <Image
+                src="/filing/filingdoc8.png"
                 alt=""
                 className="w-auto h-auto rounded-xl"
                 width={1000}
