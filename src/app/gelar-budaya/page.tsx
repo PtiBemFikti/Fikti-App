@@ -6,15 +6,20 @@ import GelbudCountdown from "@/components/gelar-budaya/section/Countdown";
 import GelbudFAQSection from "@/components/gelar-budaya/section/Faq";
 import GelbudHeroSection from "@/components/gelar-budaya/section/HeroSection";
 import GelbudSlidingText from "@/components/gelar-budaya/section/SlidingText";
+import GelbudTicketSection from "@/components/gelar-budaya/section/Ticket";
 
 export default function GelarBudayaPage() {
   return (
     <>
       <GelbudNavbar />
       <GelbudHeroSection />
-      <GelbudSlidingText />
+      <GelbudSlidingText direction="right" />
       <GelbudCountdown />
+      <GelbudSlidingText direction="left" />
       <GelbudAboutSection />
+      <GelbudSlidingText bgColor="white" textColor="black" direction="right" />
+      <GelbudTicketSection />
+      <GelbudSlidingText bgColor="white" textColor="black" />
       <GelbudFAQSection />
       <GelbudContactUsSection />
       <GelbudFooter />
