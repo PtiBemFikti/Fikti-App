@@ -244,7 +244,7 @@ export const dataBiroDepartemen = [
           },
           {
             nama: "Bagus Arkhan Kencana Wisnu ",
-            foto: "/user.png",
+            foto: "/adiraka/SOSPOL/POLKESMA/bagus.webp",
             jabatan: "Staff Polkesma",
           },
           {
@@ -440,7 +440,7 @@ export const dataBiroDepartemen = [
           },
           {
             nama: "Aurelia Wulandari ",
-            foto: "/user.png",
+            foto: "/adiraka/AU/KESTARI/aurel.webp",
             jabatan: "Staff Kesekretariatan",
           },
           {
@@ -470,7 +470,7 @@ export const dataBiroDepartemen = [
           },
           {
             nama: "Satria Ananda Haryosaputra",
-            foto: "/user.png",
+            foto: "/adiraka/AU/KESTARI/satria.webp",
             jabatan: "Staff Kesekretariatan",
           },
         ],
@@ -760,7 +760,7 @@ export const dataBiroDepartemen = [
           },
           {
             nama: "Tania Suci Prabaningrum",
-            foto: "/user.png",
+            foto: "/adiraka/BISMIT/BISKRE/tania.webp",
             jabatan: "Staff Bisnis kreatif",
           },
           {
