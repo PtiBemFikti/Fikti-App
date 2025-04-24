@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function BootcampPage() {
   
-  const targetDate = new Date("2025-04-25T23:00:00").getTime();
+  const targetDate = new Date("2025-04-25T18:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     hours: "00",
     minutes: "00",
