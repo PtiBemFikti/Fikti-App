@@ -15,11 +15,8 @@ export default function GelarBudayaPage() {
       <GelbudHeroSection />
       <GelbudSlidingText />
       <GelbudCountdown />
-      <GelbudSlidingText />
       <GelbudAboutSection />
-      <GelbudSlidingText />
       <GelbudTicketSection />
-      <GelbudSlidingText />
       <GelbudFAQSection />
       <GelbudContactUsSection />
       <GelbudFooter />
