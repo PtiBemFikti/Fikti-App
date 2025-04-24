@@ -28,15 +28,15 @@ export default function VisiMisiSection() {
       id="about"
       className="relative z-10 w-screen h-fit py-12 md:py-24 text-white bg-cream-fikti"
     >
-      <div className="flex flex-col items-center justify-center px-8 md:px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 w-full px-4 md:px-24">
+      <div className="flex flex-col items-center justify-center px-0  lg:px-10">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 md:gap-12 w-full px-10 md:px-14 lg:px-20">
           {/* Left Image */}
           <motion.div
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="relative top-0 lg:sticky lg:top-60 rounded-xl shadow-lg aspect-[16/9]"
+            className="relative top-0 xl:sticky xl:top-60 rounded-xl shadow-lg aspect-[16/9]"
           >
             <Image
               src="/about.jpeg"
@@ -50,7 +50,7 @@ export default function VisiMisiSection() {
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               viewport={{ once: true }}
-              className="absolute -top-8 -left-8 bg-dark-green-fikti text-cream-fikti rounded-full w-24 h-24 md:w-40 md:h-40 flex flex-col items-center justify-center transform shadow-lg"
+              className="absolute -top-8 -left-3 md:-left-7 bg-dark-green-fikti text-cream-fikti rounded-full w-24 h-24 md:w-40 md:h-40 flex flex-col items-center justify-center transform shadow-lg"
             >
               <span className="text-xs md:text-xl font-bold text-cream-fikti ">
                 2024/{`${year}`}
