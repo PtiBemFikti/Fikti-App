@@ -4,7 +4,19 @@ import { MonumentExtendedRegular } from "@/styles/font";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-export default function GelbudSlidingText() {
+interface GelbudSlidingTextProps {
+  bgColor?: string;
+  textColor?: string;
+  theme?: "light" | "dark";
+  direction?: "left" | "right"; 
+}
+
+export default function GelbudSlidingText({
+  bgColor,
+  textColor,
+  theme,
+  direction = "left",
+}: GelbudSlidingTextProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const speed = 50; // pixel per second
@@ -14,7 +26,7 @@ export default function GelbudSlidingText() {
     const content = contentRef.current;
     if (!container || !content) return;
 
-    content.innerHTML += content.innerHTML;
+    content.innerHTML += content.innerHTML; 
 
     let startTimestamp: number | null = null;
 
@@ -22,14 +34,13 @@ export default function GelbudSlidingText() {
       if (!startTimestamp) startTimestamp = timestamp;
       const elapsed = timestamp - startTimestamp;
 
-      const distance = (elapsed / 1000) * speed; 
+      const distance = (elapsed / 1000) * speed;
+      const scrollDistance = direction === "right" ? distance : -distance;
 
-      if (distance >= content.scrollWidth / 2) {
-        startTimestamp = timestamp;
-        container.scrollLeft = 0;
-      } else {
-        container.scrollLeft = distance;
-      }
+      const contentWidth = content.scrollWidth / 2;
+
+      container.scrollLeft =
+        ((scrollDistance % contentWidth) + contentWidth) % contentWidth;
 
       requestAnimationFrame(animate);
     };
@@ -39,11 +50,19 @@ export default function GelbudSlidingText() {
     return () => {
       cancelAnimationFrame(animationId);
     };
-  }, []);
+  }, [direction]);
+
+  const finalBgColor =
+    bgColor ||
+    (theme === "light" ? "white" : theme === "dark" ? "black" : "black");
+  const finalTextColor =
+    textColor ||
+    (theme === "light" ? "black" : theme === "dark" ? "white" : "white");
 
   const renderText = () => (
     <span
-      className={`${MonumentExtendedRegular.className} flex items-center justify-center whitespace-nowrap px-5 font-bold text-xl tracking-wider md:text-2xl lg:text-3xl text-white`}
+      className={`${MonumentExtendedRegular.className} flex items-center justify-center whitespace-nowrap px-5 font-bold text-xl tracking-wider md:text-2xl lg:text-3xl`}
+      style={{ color: finalTextColor }}
     >
       RISE THE RYTHMS
       <Image
@@ -58,7 +77,10 @@ export default function GelbudSlidingText() {
   );
 
   return (
-    <div className="w-screen bg-black py-6 overflow-hidden">
+    <div
+      className="w-screen py-6 overflow-hidden"
+      style={{ backgroundColor: finalBgColor }}
+    >
       <div
         ref={containerRef}
         className="flex overflow-x-hidden"
