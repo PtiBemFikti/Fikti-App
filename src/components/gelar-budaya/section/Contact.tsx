@@ -32,14 +32,12 @@ export default function GelbudContactUsSection() {
   const contacts = [
     {
       name: "Auvia",
-      role: "Head of Public Relations",
-      whatsapp: "+6281234567890",
+      whatsapp: "#",
       icon: <FaWhatsapp className="text-3xl text-green-500" />,
     },
     {
       name: "Hanny",
-      role: "Public Relations Staff",
-      whatsapp: "+6289876543210",
+      whatsapp: "#",
       icon: <FaWhatsapp className="text-3xl text-green-500" />,
     },
   ];
@@ -54,7 +52,6 @@ export default function GelbudContactUsSection() {
           variants={container}
           className="flex flex-col items-center"
         >
-          {/* Title */}
           <motion.h2
             variants={item}
             className={`${MonumentExtendedBold.className} text-3xl md:text-4xl font-bold mb-4 text-center`}
@@ -69,7 +66,6 @@ export default function GelbudContactUsSection() {
             Can`t find what you are looking for? Feel free to ask us.
           </motion.p>
 
-          {/* Contact Cards */}
           <motion.div
             variants={container}
             className="flex items-center justify-center gap-8"
@@ -88,12 +84,11 @@ export default function GelbudContactUsSection() {
             ))}
           </motion.div>
 
-          {/* Additional Contact Info */}
           <motion.div variants={item} className="mt-12 text-center">
             <h3 className="text-xl font-semibold mb-4">Our Social Media</h3>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/gelar.budayafikti/?utm_source=ig_web_button_share_sheet"
                 className="p-3 bg-cream-fikti/10 hover:bg-cream-fikti/20 rounded-full transition"
                 aria-label="Instagram"
               >
