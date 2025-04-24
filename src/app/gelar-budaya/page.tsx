@@ -13,10 +13,13 @@ export default function GelarBudayaPage() {
     <>
       <GelbudNavbar />
       <GelbudHeroSection />
-      <GelbudSlidingText />
+      <GelbudSlidingText direction="right" />
       <GelbudCountdown />
+      <GelbudSlidingText direction="left" />
       <GelbudAboutSection />
+      <GelbudSlidingText bgColor="white" textColor="black" direction="right" />
       <GelbudTicketSection />
+      <GelbudSlidingText bgColor="white" textColor="black" />
       <GelbudFAQSection />
       <GelbudContactUsSection />
       <GelbudFooter />

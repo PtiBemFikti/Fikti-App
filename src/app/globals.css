@@ -388,3 +388,27 @@ body {
 .gelbud-spin-slow {
   animation: spin-slow 12s linear infinite;
 }
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  animation: infinite-scroll 40s linear infinite;
+  width: max-content;
+  animation-play-state: running;
+}
+
+.reverse-animation {
+  animation-direction: reverse;
+}
+
+.group:hover .animate-infinite-scroll {
+  animation-play-state: paused;
+}

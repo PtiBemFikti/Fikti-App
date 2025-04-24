@@ -2,48 +2,32 @@
 
 import { MonumentExtendedRegular } from "@/styles/font";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { Fragment } from "react";
 
-export default function GelbudSlidingText() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-  const speed = 50; // pixel per second
+interface GelbudSlidingTextProps {
+  bgColor?: string;
+  textColor?: string;
+  theme?: "light" | "dark";
+  direction?: "left" | "right";
+}
 
-  useEffect(() => {
-    const container = containerRef.current;
-    const content = contentRef.current;
-    if (!container || !content) return;
-
-    content.innerHTML += content.innerHTML;
-
-    let startTimestamp: number | null = null;
-
-    const animate = (timestamp: number) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const elapsed = timestamp - startTimestamp;
-
-      const distance = (elapsed / 1000) * speed;
-
-      if (distance >= content.scrollWidth / 2) {
-        startTimestamp = timestamp;
-        container.scrollLeft = 0;
-      } else {
-        container.scrollLeft = distance;
-      }
-
-      requestAnimationFrame(animate);
-    };
-
-    const animationId = requestAnimationFrame(animate);
-
-    return () => {
-      cancelAnimationFrame(animationId);
-    };
-  }, []);
+export default function GelbudSlidingText({
+  bgColor,
+  textColor,
+  theme,
+  direction = "left",
+}: GelbudSlidingTextProps) {
+  const finalBgColor =
+    bgColor ||
+    (theme === "light" ? "white" : theme === "dark" ? "black" : "black");
+  const finalTextColor =
+    textColor ||
+    (theme === "light" ? "black" : theme === "dark" ? "white" : "white");
 
   const renderText = () => (
     <span
-      className={`${MonumentExtendedRegular.className} flex items-center justify-center whitespace-nowrap px-5 font-bold text-xl tracking-wider md:text-2xl lg:text-3xl text-white`}
+      className={`${MonumentExtendedRegular.className} flex items-center justify-center whitespace-nowrap px-5 font-bold text-xl tracking-wider md:text-2xl lg:text-3xl`}
+      style={{ color: finalTextColor }}
     >
       RISE THE RYTHMS
       <Image
@@ -58,15 +42,21 @@ export default function GelbudSlidingText() {
   );
 
   return (
-    <div className="w-screen bg-black py-6 overflow-hidden">
-      <div
-        ref={containerRef}
-        className="flex overflow-x-hidden"
-        style={{ scrollBehavior: "auto" }}
-      >
-        <div ref={contentRef} className="flex whitespace-nowrap">
-          {renderText()}
-          {renderText()}
+    <div
+      className="w-screen py-6 overflow-hidden group"
+      style={{ backgroundColor: finalBgColor }}
+    >
+      <div className="flex">
+        <div
+          className={`flex animate-infinite-scroll whitespace-nowrap ${
+            direction === "right" ? "reverse-animation" : ""
+          }`}
+        >
+          {Array(10)
+            .fill(0)
+            .map((_, i) => (
+              <Fragment key={i}>{renderText()}</Fragment>
+            ))}
         </div>
       </div>
     </div>
