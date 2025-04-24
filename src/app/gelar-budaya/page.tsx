@@ -17,9 +17,9 @@ export default function GelarBudayaPage() {
       <GelbudCountdown />
       <GelbudSlidingText />
       <GelbudAboutSection />
-      <GelbudSlidingText bgColor="white" textColor="black" />
+      <GelbudSlidingText />
       <GelbudTicketSection />
-      <GelbudSlidingText bgColor="white" textColor="black" />
+      <GelbudSlidingText />
       <GelbudFAQSection />
       <GelbudContactUsSection />
       <GelbudFooter />

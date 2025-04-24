@@ -4,17 +4,7 @@ import { MonumentExtendedRegular } from "@/styles/font";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-interface GelbudSlidingTextProps {
-  bgColor?: string;
-  textColor?: string;
-  theme?: "light" | "dark";
-}
-
-export default function GelbudSlidingText({
-  bgColor,
-  textColor,
-  theme,
-}: GelbudSlidingTextProps) {
+export default function GelbudSlidingText() {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const speed = 50; // pixel per second
@@ -51,18 +41,9 @@ export default function GelbudSlidingText({
     };
   }, []);
 
-  // Fallback kalau bgColor / textColor nggak dikasih
-  const finalBgColor =
-    bgColor ||
-    (theme === "light" ? "white" : theme === "dark" ? "black" : "black");
-  const finalTextColor =
-    textColor ||
-    (theme === "light" ? "black" : theme === "dark" ? "white" : "white");
-
   const renderText = () => (
     <span
-      className={`${MonumentExtendedRegular.className} flex items-center justify-center whitespace-nowrap px-5 font-bold text-xl tracking-wider md:text-2xl lg:text-3xl`}
-      style={{ color: finalTextColor }}
+      className={`${MonumentExtendedRegular.className} flex items-center justify-center whitespace-nowrap px-5 font-bold text-xl tracking-wider md:text-2xl lg:text-3xl text-white`}
     >
       RISE THE RYTHMS
       <Image
@@ -77,10 +58,7 @@ export default function GelbudSlidingText({
   );
 
   return (
-    <div
-      className="w-screen py-6 overflow-hidden"
-      style={{ backgroundColor: finalBgColor }}
-    >
+    <div className="w-screen bg-black py-6 overflow-hidden">
       <div
         ref={containerRef}
         className="flex overflow-x-hidden"
