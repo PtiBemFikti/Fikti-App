@@ -15,8 +15,8 @@ export const badanPengurusHarian = [
     jabatan: "Kepala Bidang Manajemen Kontrol",
   },
   {
-    foto: "/adiraka/BPH/daffa.webp",
-    nama: "Daffa Aldion",
+    foto: "/adiraka/BPH/SPI/brazera.webp",
+    nama: "Brazera Firdaus",
     jabatan: "Kepala Bidang Minat & Bakat",
   },
   {
@@ -54,11 +54,6 @@ export const satuanPengendaliInternal = [
   {
     foto: "/adiraka/BPH/SPI/maulana.webp",
     nama: "Maulana Yusuf Hidayat",
-    jabatan: "Satuan Pengendali Internal",
-  },
-  {
-    foto: "/adiraka/BPH/SPI/brazera.webp",
-    nama: "Brazera Firdaus",
     jabatan: "Satuan Pengendali Internal",
   },
   {

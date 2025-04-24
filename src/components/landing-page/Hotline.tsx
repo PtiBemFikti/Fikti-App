@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MonumentExtendedBold } from "@/styles/font";
 
 export default function Hotline() {
-  const phoneNumber = "";
+  const phoneNumber = "085150935519";
   const message = "Halo, saya ingin bertanya...";
 
   return (
