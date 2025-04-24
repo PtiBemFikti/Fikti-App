@@ -8,14 +8,12 @@ interface GelbudSlidingTextProps {
   bgColor?: string;
   textColor?: string;
   theme?: "light" | "dark";
-  direction?: "left" | "right"; 
 }
 
 export default function GelbudSlidingText({
   bgColor,
   textColor,
   theme,
-  direction = "left",
 }: GelbudSlidingTextProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -26,7 +24,7 @@ export default function GelbudSlidingText({
     const content = contentRef.current;
     if (!container || !content) return;
 
-    content.innerHTML += content.innerHTML; 
+    content.innerHTML += content.innerHTML;
 
     let startTimestamp: number | null = null;
 
@@ -35,12 +33,13 @@ export default function GelbudSlidingText({
       const elapsed = timestamp - startTimestamp;
 
       const distance = (elapsed / 1000) * speed;
-      const scrollDistance = direction === "right" ? distance : -distance;
 
-      const contentWidth = content.scrollWidth / 2;
-
-      container.scrollLeft =
-        ((scrollDistance % contentWidth) + contentWidth) % contentWidth;
+      if (distance >= content.scrollWidth / 2) {
+        startTimestamp = timestamp;
+        container.scrollLeft = 0;
+      } else {
+        container.scrollLeft = distance;
+      }
 
       requestAnimationFrame(animate);
     };
@@ -50,8 +49,9 @@ export default function GelbudSlidingText({
     return () => {
       cancelAnimationFrame(animationId);
     };
-  }, [direction]);
+  }, []);
 
+  // Fallback kalau bgColor / textColor nggak dikasih
   const finalBgColor =
     bgColor ||
     (theme === "light" ? "white" : theme === "dark" ? "black" : "black");
