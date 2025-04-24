@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function BootcampPage() {
   
-  const targetDate = new Date("2025-04-24T23:00:00").getTime();
+  const targetDate = new Date("2025-04-25T23:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     hours: "00",
     minutes: "00",
@@ -74,7 +74,8 @@ export default function BootcampPage() {
                   </div>
 
                   <div className="md:w-1/2 lg:w-[40%] rounded-2xl border-2 border-[#91D2F4] h-fit p-7 self-center">
-                    <div className="text-2xl font-bold text-black mb-5 text-center">Segera Daftar!</div>
+                    <div className="-mt-24 -ml-14"><Image src="/filing/extended.png" alt="Data Science" width={140} height={140}/></div>
+                    <div className="text-2xl font-bold text-black mb-5 text-center -mt-4">Segera Daftar!</div>
                     <div className="flex justify-center gap-4 text-white">
                       <div className="bg-gradient-to-b from-[#3F3381] to-[#B07FD6] px-3 py-2 rounded w-1/3 text-center">
                         <div className="text-xl font-bold">{timeLeft.hours}</div>
@@ -136,7 +137,8 @@ export default function BootcampPage() {
 
         <div className="flex justify-center items-center pb-2">
           <div className="w-80 rounded-2xl border-2 border-[#91D2F4] p-7">
-          <div className="text-2xl font-bold text-black mb-5 text-center">Segera Daftar!</div>
+          <div className="-mt-14 -ml-12"><Image src="/filing/extended.png" alt="Data Science" width={125} height={100}/></div>
+          <div className="text-2xl font-bold text-black mb-5 text-center -mt-7">Segera Daftar!</div>
             <div className="flex justify-center gap-4 text-white">
               <div className="bg-gradient-to-b from-[#3F3381] to-[#B07FD6] px-3 py-2 rounded w-1/3 text-center">
                 <div className="text-xl font-bold">{timeLeft.hours}</div>
