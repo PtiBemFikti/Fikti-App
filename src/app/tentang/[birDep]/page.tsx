@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaArrowLeft } from "react-icons/fa";
 import Card from "@/components/tentang/Card";
 import { dataBiroDepartemen } from "@/app/tentang/data/BirDep";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import aboutImg from "../../../../public/about.jpeg";
 import { Montserrat, MonumentExtendedBold } from "@/styles/font";
 import { motion } from "framer-motion";
@@ -29,6 +29,7 @@ const fadeIn = {
 
 export default function BiroDepartemenPage() {
   const { birDep } = useParams() as { birDep: string };
+  const router = useRouter(); // Add router for navigation
 
   const [staffIndex, setStaffIndex] = useState(0);
   const [slidesToShow, setSlidesToShow] = useState(1);
@@ -94,8 +95,13 @@ export default function BiroDepartemenPage() {
               <motion.h1
                 variants={fadeUp}
                 custom={0.2}
-                className={`${MonumentExtendedBold.className} relative text-2xl md:text-4xl tracking-wide font-bold text-center drop-shadow-lg mb-5`}
+                className={`${MonumentExtendedBold.className} flex items-center gap-5 relative text-lg md:text-4xl tracking-wide font-bold text-center drop-shadow-lg mb-5`}
               >
+                <FaArrowLeft
+                  className="cursor-pointer "
+                  size={30}
+                  onClick={() => router.push("/tentang")}
+                />
                 {biroDepartemen.judul}
               </motion.h1>
               <motion.h2
@@ -110,6 +116,7 @@ export default function BiroDepartemenPage() {
         </div>
       </div>
 
+      {/* Rest of your existing code remains the same */}
       {/* KONTEN YANG BAWAH */}
       <div className="py-4 w-full h-fit flex flex-col items-center justify-center bg-cream-fikti pb-36 px-5">
         {/* Kepemimpinan */}
