@@ -405,6 +405,14 @@ body {
   animation-play-state: running;
 }
 
+/* for filing */
+.animate-infinite-scroll-slow {
+  display: flex;
+  animation: infinite-scroll 480s linear infinite;
+  width: max-content;
+  animation-play-state: running;
+}
+
 .reverse-animation {
   animation-direction: reverse;
 }

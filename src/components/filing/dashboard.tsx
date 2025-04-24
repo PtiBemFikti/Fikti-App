@@ -90,7 +90,7 @@ const Dashboard: React.FC = () => {
 
         {/* bergerak */}
         <div className="overflow-hidden bg-[linear-gradient(89.96deg,#3F3381_18.51%,#CBA2EA_70.22%,#91D2F4_111.48%)] py-4 mt-10 justify-between">
-          <div className="flex animate-infinite-scroll whitespace-nowrap">
+          <div className="flex animate-infinite-scroll-slow whitespace-nowrap">
             {Array(100)
               .fill(imageUrls)
               .flat()
