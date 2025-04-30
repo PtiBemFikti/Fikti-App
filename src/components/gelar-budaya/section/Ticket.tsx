@@ -62,7 +62,7 @@ export default function GelbudTicketSection() {
   };
 
   return (
-    <section className="bg-gradient-to-b from-[#0a0a1f] to-[#0f0f25] text-white py-20 px-6 min-h-screen flex items-center justify-center">
+    <section className="bg-black text-white  px-6 h-fit py-20 md:py-0 md:h-[85vh]  flex items-center justify-center">
       <div className="max-w-6xl mx-auto text-center">
         <motion.div
           initial="hidden"
