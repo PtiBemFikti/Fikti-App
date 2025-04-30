@@ -31,11 +31,6 @@ export const dataBiroDepartemen = [
           foto: "/adiraka/MIKAT/AKADEMIK/febiana.webp",
           jabatan: "Staff Akademik",
         },
-        // {
-        //   nama: "Najwa Layla",
-        //   foto: "/adiraka/MIKAT/AKADEMIK/.webp",
-        //   jabatan: "Staff Akademik",
-        // },
         {
           nama: "Indri Sekar Sari",
           foto: "/adiraka/MIKAT/AKADEMIK/indri.webp",
@@ -238,11 +233,6 @@ export const dataBiroDepartemen = [
               jabatan: "Staff Polkesma",
           },
           {
-            nama: "Renata Pasya",
-            foto: "/adiraka/SOSPOL/POLKESMA/renata.webp",
-            jabatan: "Staff Polkesma",
-          },
-          {
             nama: "Bagus Arkhan Kencana Wisnu ",
             foto: "/adiraka/SOSPOL/POLKESMA/bagus.webp",
             jabatan: "Staff Polkesma",
@@ -255,11 +245,6 @@ export const dataBiroDepartemen = [
           {
             nama: "Regina Alya",
             foto: "/adiraka/SOSPOL/POLKESMA/regina.webp",
-            jabatan: "Staff Polkesma",
-          },
-          {
-            nama: "M. Thariq Azim",
-            foto: "/user.png",
             jabatan: "Staff Polkesma",
           },
           {
@@ -312,11 +297,6 @@ export const dataBiroDepartemen = [
           {
             nama: "Michael Stephanus ",
             foto: "/adiraka/MK/LITBANG/mike.webp",
-            jabatan: "Staff Litbang",
-          },
-          {
-            nama: "Zakya Desi Maharani",
-            foto: "/adiraka/MK/LITBANG/zakya.webp",
             jabatan: "Staff Litbang",
           },
           {
@@ -441,11 +421,6 @@ export const dataBiroDepartemen = [
           {
             nama: "Aurelia Wulandari ",
             foto: "/adiraka/AU/KESTARI/aurel.webp",
-            jabatan: "Staff Kesekretariatan",
-          },
-          {
-            nama: "Egi Teguh Nugraha",
-            foto: "/user.png",
             jabatan: "Staff Kesekretariatan",
           },
           {
@@ -577,12 +552,6 @@ export const dataBiroDepartemen = [
             foto: "/adiraka/kominfo/MEDIA/livia.webp",
             jabatan: "Staff Media",
           },
-          {
-            nama: "Nathania Belva Putri Chyntia",
-            foto: "/adiraka/kominfo/MEDIA/nathania.webp",
-            jabatan: "Staff Media",
-          },
-
           {
             nama: "Ibtisan Zahirah Domba",
             foto: "/adiraka/kominfo/MEDIA/ibtisan_zahirah.webp",
