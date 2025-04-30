@@ -9,6 +9,7 @@ import GelbudHeroSection from "@/components/gelar-budaya/section/HeroSection";
 import GelbudSlidingText from "@/components/gelar-budaya/section/SlidingText";
 import GelbudTicketSection from "@/components/gelar-budaya/section/Ticket";
 import GelbudGs from "@/components/gelar-budaya/section/GuestStar";
+import GelbudDenahGedung from "@/components/gelar-budaya/section/Denah";
 
 export default function GelarBudayaPage() {
   return (
@@ -22,6 +23,9 @@ export default function GelarBudayaPage() {
       <GelbudAboutSection />
       <GelbudSlidingText bgColor="white" textColor="black" direction="right" />
       <GelbudLokasi />
+      <GelbudSlidingText bgColor="white" textColor="black" direction="left" />
+      <GelbudDenahGedung />
+      <GelbudSlidingText bgColor="black" textColor="white" direction="right" />
       <GelbudTicketSection />
       <GelbudSlidingText bgColor="white" textColor="black" />
       <GelbudFAQSection />
