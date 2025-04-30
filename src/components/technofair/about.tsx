@@ -1,7 +1,5 @@
 import { Montserrat, poppins } from "@/styles/font";
 import Image from "next/image";
-import { motion, useMotionValue, useSpring } from "framer-motion";
-import { useRef } from "react";
 
 export function About() {
 

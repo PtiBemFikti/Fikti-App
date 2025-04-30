@@ -1,8 +1,6 @@
 import { Montserrat, poppins } from "@/styles/font";
 import Link from "next/link";
-import Image from "next/image";
 import RotatingWords from "./RotatingWords";
-import RotatingWords2 from "./RotatingWords2";
 
 export function Dashboard() {
     const rotatingWords1 = <RotatingWords />;
