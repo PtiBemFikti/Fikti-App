@@ -10,6 +10,7 @@ import GelbudSlidingText from "@/components/gelar-budaya/section/SlidingText";
 import GelbudTicketSection from "@/components/gelar-budaya/section/Ticket";
 import GelbudGs from "@/components/gelar-budaya/section/GuestStar";
 import GelbudDenahGedung from "@/components/gelar-budaya/section/Denah";
+import GelbudPendaftaran from "@/components/gelar-budaya/section/PendaftarnPenampil";
 
 export default function GelarBudayaPage() {
   return (
@@ -27,6 +28,7 @@ export default function GelarBudayaPage() {
       <GelbudDenahGedung />
       <GelbudSlidingText bgColor="black" textColor="white" direction="right" />
       <GelbudTicketSection />
+      <GelbudPendaftaran />
       <GelbudSlidingText bgColor="white" textColor="black" />
       <GelbudFAQSection />
       <GelbudContactUsSection />
