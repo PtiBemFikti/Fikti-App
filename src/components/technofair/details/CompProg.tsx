@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image';
-import AccordionCard from './Accordion';
 import Link from 'next/link';
 import { bricolageGrotesque, poppins } from '@/styles/font';
 import { useRouter } from 'next/router';
