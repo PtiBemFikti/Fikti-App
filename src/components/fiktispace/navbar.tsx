@@ -1,16 +1,11 @@
 "use client";
 
-// components/Navbar.tsx
 import { useState } from "react";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import DropdownMenuNav from "./DropdownMenu";
 import { Guardians } from "@/styles/font";
-import OlahragaDropdown from "./OlahragaDropdown";
-import SeniDropdown from "./SeniDropdown";
-import EsportDropdown from "./EsportDropdown";
-import DaftarDropdown from "./DaftarDropdown";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,124 +39,89 @@ const Navbar: React.FC = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-[#0A0723] p-4 sticky top-0 z-50"
+      className="bg-[#112C70] px-4 lg:px-16 py-4 fixed w-full"
     >
-      <div className="container mx-auto flex justify-between items-center md:-mb-32">
-        <Link href="#" className="flex items-center ml-5 md:mb-32">
-          <Image
-            src="/fiktispace/logofs.png"
-            alt="Logo"
-            width={50}
-            height={50}
-            className="mr-2"
-          />
-        </Link>
-        <div className="text-[#F1EAF6] font-['Poppins'] md:hidden block md:mb-32">
-          <h1 className={`${Guardians.className} font-bold text-lg`}>
-            FIKTI SPACE
-          </h1>
-        </div>
-        <div className="hidden md:flex md:gap-10 space-x-4 -ml-80 md:mb-32">
-          <a
-            className="block text-[#F1EAF6] text-lg hover:text-purpleText duration-300 mt-4"
-            href="#about"
-          >
-            About
-          </a>
-          <div className="block text-lg hover:text-purpleText duration-300 py-2">
-            <DropdownMenuNav />
-          </div>
-          <Link
-            className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300 mt-4"
-            href="#schedule"
-          >
-            Schedule
-          </Link>
-          <Link
-            className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300 mt-4"
-            href="#contact"
-          >
-            Contacts
-          </Link>
-          {/* <Link
-            className="block text-black hover:text-purpleText duration-300 py-2"
-            href="/dept&biro"
-          >
-            Departemen
-          </Link> */}
-
-          {/* Add more navigation links as needed */}
-        </div>
-        <div className="md:block hidden">
-          <div className="flex justify-between items-center w-64 h-14 bg-[#0A0723] rounded-[24px] mb-32">
-            {/* <div className="px-5 rounded-[21px] text-lg h-11 w-48 mx-3 flex justify-center items-center ml-3"> */}
-            <DaftarDropdown />
-            {/* </div> */}
-          </div>
-        </div>
-        <div className="md:hidden">
-          {/* Hamburger menu icon */}
-          <button
-            onClick={toggleMenu}
-            className={`text-white mr-4 p-1 md:mb-32 ${
-              isMenuOpen
-                ? "bg-[#0A0723] backdrop-blur-sm shadow-md rounded-md "
-                : ""
-            }`}
-          >
+      <div className="">
+        <div className="bg-[#2A2364] items-center flex justify-between px-5 py-3 rounded-2xl">
+          <Link href="#" className="items-center">
             <Image
-              src={"/fiktispace/hamburgerbtn.png"}
-              alt="Hamburger menu Btn"
-              width={20}
-              height={20}
+              src="/fiktispace/LOGO FS 4.png"
+              alt="Logo"
+              width={75}
+              height={75}
+              className="mr-2"
             />
-          </button>
+          </Link>
+          <div className="hidden lg:flex md:gap-20">
+            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#about">
+              Competition List
+            </Link>
+            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#schedule">
+              Schedule
+            </Link>
+            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#schedule">
+              Documentation
+            </Link>
+            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#contact">
+              FAQ
+            </Link>
+          </div>
+          <div className="hidden lg:flex justify-evenly gap-10">
+            <Link className="" href="">
+              <button className="bg-[#FF8797] rounded-full px-3 py-2">Contact Us</button>
+            </Link>
+            <Link className="" href="">
+              <button className="bg-[#FF8797] rounded-full px-5 py-2">Daftar</button>
+            </Link>
+          </div>
+          <div className="lg:hidden items-center">
+            {/* Hamburger menu icon */}
+            <button
+              onClick={toggleMenu}
+              className={`text-white mr-4 p-1 lg:mb-32 ${
+                isMenuOpen
+                  ? "bg-[#0A0723] backdrop-blur-sm shadow-md rounded-md "
+                  : ""
+              }`}
+            >
+              <Image
+                src={"/fiktispace/hamburgerbtn.png"}
+                alt="Hamburger menu Btn"
+                width={30}
+                height={30}
+              />
+            </button>
+          </div>
         </div>
       </div>
       {isMenuOpen && (
         <motion.div
-          className="flex flex-col gap-3 md:hidden mt-4"
+          className="flex flex-col gap-3 lg:hidden py-5 bg-[#2A2364] -mt-3"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
           onClick={toggleMenu}
         >
-          <Link
-            className="text-[#F1EAF6] hover:text-purpleText text-lg text-center"
-            href="#about"
-          >
+          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#about">
             About
           </Link>
-          <div className="text-[#F1EAF6] hover:text-purpleText text-lg text-center">
-            <OlahragaDropdown />
-          </div>
-          <div className="text-[#F1EAF6] hover:text-purpleText text-lg text-center">
-            <EsportDropdown />
-          </div>
-          <div className="text-[#F1EAF6] hover:text-purpleText text-lg text-center">
-            <SeniDropdown />
-          </div>
-          <Link
-            className="text-[#F1EAF6] hover:text-purpleText text-lg text-center"
-            href="#schedule"
-          >
-            Schedule
+          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#schedule">
+            Schedule  
           </Link>
-          <Link
-            className="text-[#F1EAF6] hover:text-purpleText text-lg text-center"
-            href="#contact"
-          >
-            Contact
+          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#schedule">
+            Documentation
           </Link>
-          <div className="md:hidden block">
-            <div className="flex justify-center items-center">
-              <div className="flex justify-center items-center w-80 h-14 bg-[#0A0723] rounded-[24px]">
-                {/* <div className="px-5 rounded-[21px] text-lg h-11 bg-[#1D1564] w-48 flex justify-center items-center hover:bg-[#1A135A] text-[#F1EAF6]"> */}
-                <DaftarDropdown />
-                {/* </div> */}
-              </div>
-            </div>
+          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#contact">
+            FAQ
+          </Link>
+          <div className="lg:hidden flex flex-col gap-3 px-10">
+            <Link className="" href="">
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">Contact Us</button>
+            </Link>
+            <Link className="justify-center" href="">
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">Daftar</button>
+            </Link>
           </div>
         </motion.div>
       )}
