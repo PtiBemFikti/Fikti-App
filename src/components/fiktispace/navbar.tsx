@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-[#112C70] px-4 lg:px-16 py-4 fixed w-full"
+      className="bg-[#112C70] px-4 lg:px-16 py-4 fixed w-full z-30"
     >
       <div className="">
         <div className="bg-[#2A2364] items-center flex justify-between px-5 py-3 rounded-2xl">
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
               onClick={toggleMenu}
               className={`text-white mr-4 p-1 lg:mb-32 ${
                 isMenuOpen
-                  ? "bg-[#0A0723] backdrop-blur-sm shadow-md rounded-md "
+                  ? "bg-[#0A0723] shadow-md rounded-md "
                   : ""
               }`}
             >
@@ -96,11 +96,11 @@ const Navbar: React.FC = () => {
       </div>
       {isMenuOpen && (
         <motion.div
-          className="flex flex-col gap-3 lg:hidden py-5 bg-[#2A2364] -mt-3"
-          initial={{ opacity: 0, y: -10 }}
+          className="flex flex-col gap-3 lg:hidden py-5 bg-[#2A2364] -mt-3 rounded-br-2xl rounded-bl-2xl"
+          initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.8, ease: "easeIn" }}
+          exit={{ opacity: 0, y: 0 }}
+          transition={{ duration: 0.2, ease: "easeIn" }}
           onClick={toggleMenu}
         >
           <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#about">
