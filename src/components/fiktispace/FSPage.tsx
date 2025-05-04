@@ -11,21 +11,25 @@ import FooterPage from "@/components/fiktispace/footer";
 export default function FSPage() {
   return (
     <div>
-      <main className="bg-[#010417] bg-cover bg-no-repeat scroll-smooth overflow-x-hidden">
+      <main className="bg-[#112C70] bg-cover bg-no-repeat scroll-smooth overflow-x-hidden">
         <Navbar />
         <DashboardPage />
-        <section id="about">
+        <section>
           <AboutPage />
         </section>
         <div>
-          <section id="schedule">
-            <div className="md:flex md:bg-[url('/fiktispace/bgdesktop.svg')] bg-[url('/fiktispace/bgmobile.png')] bg-cover bg-no-repeat">
+          <section id="compe-list">
+            <div className="md:bg-[url('/fiktispace/bg-desktop.png')] bg-cover bg-no-repeat">
               <CompetitionPage />
-              <TimelinePage />
+            </div>
+          </section>
+          <section id="schedule">
+            <div>
+            <TimelinePage />
             </div>
           </section>
           <section id="documentation">
-            <div className="md:bg-[url('/fiktispace/bgdesktop.svg')] bg-[url('/fiktispace/bgmobile.png')] bg-cover bg-no-repeat">
+            <div>
               <DocumentationPage />
             </div>
           </section>

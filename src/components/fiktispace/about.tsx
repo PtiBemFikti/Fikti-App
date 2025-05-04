@@ -17,12 +17,12 @@ export default function AboutPage() {
 
   if (!isClient) return null;
   return (
-    <div className="pt-4 bg-[#0A2352]">
+    <div className="pt-4 ">
       <div className="flex items-center justify-center">
-        <div className="py-8 px-4 md:px-10">
+        <div className="py-5 md:py-12 px-6 md:px-14">
           <div>
             <p className={`${Lato.className} text-center text-white text-base font-bold md:text-2xl`}>
-            “FIKTI SPACE is back and inviting you to join in for an array of exciting tournaments! This year, we have competitions in Futsal, Mobile Legends, and much more! Come and compete with us!”
+            FIKTI SPACE is back and inviting you to join in for an array of exciting tournaments! This year, we have competitions in Futsal, Mobile Legends, and much more! Come and compete with us!
             </p>
           </div>
           {/* <div className='mt-3'>

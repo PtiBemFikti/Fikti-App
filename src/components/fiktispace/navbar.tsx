@@ -4,8 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
-import DropdownMenuNav from "./DropdownMenu";
-import { Guardians } from "@/styles/font";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
