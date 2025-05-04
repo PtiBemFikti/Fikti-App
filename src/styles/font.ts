@@ -16,5 +16,8 @@ const MonumentExtendedRegular = localFont({src: '../../public/font/MonumentExten
 const MonumentExtendedBold = localFont({src: '../../public/font/MonumentExtended-Ultrabold.otf'})
 const OpenSauceSans = localFont({src: '../../public/font/OpenSauceSans-Regular.ttf'})
 const Montserrat = localFont({ src: '../../public/font/Montserrat-VariableFont_wght.ttf'})
+const AkiraExpanded = localFont({ src: '../../public/font/Akira Expanded Demo.otf'})
+const Designer = localFont({ src: '../../public/font/Designer.otf'})
+const Lato = localFont({ src: '../../public/font/Lato-Regular.ttf'})
 
-export { circleAmolens, Guardians, Urbanist, bricolageGrotesque, poppins, terminaTest, terminaTestBold, epilogue, MonumentExtendedRegular, MonumentExtendedBold, OpenSauceSans, Montserrat };
+export { circleAmolens, Guardians, Urbanist, bricolageGrotesque, poppins, terminaTest, terminaTestBold, epilogue, MonumentExtendedRegular, MonumentExtendedBold, OpenSauceSans, Montserrat, AkiraExpanded, Designer, Lato };
