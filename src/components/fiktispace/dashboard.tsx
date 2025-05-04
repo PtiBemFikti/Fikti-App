@@ -42,12 +42,20 @@ export default function DashboardPage() {
             </div> */}
             <div className="-mb-2 pt-6">
               <Image
-                src={"/fiktispace/Hero image.png"}
+                src={"/fiktispace/Hero image animate.png"}
                 alt={"dashboard"}
                 width={700}
                 height={1000}
               ></Image>
             </div>
+            {/* <div className="-mb-2 pt-6">
+              <Image
+                src={"/fiktispace/Hero image.png"}
+                alt={"dashboard"}
+                width={700}
+                height={1000}
+              ></Image>
+            </div> */}
             </div>
           </div>
         </div>
@@ -84,11 +92,19 @@ export default function DashboardPage() {
               </div>
             </div>
 
-            <div className="-mb-16 lg:pt-6">
+            {/* <div className="-mb-16 lg:pt-6">
               <Image
                 src={"/fiktispace/Maskot for hero.png"}
                 alt={"dashboard"}
                 width={600}
+                height={1000}
+              ></Image>
+            </div> */}
+            <div className="lg:-mb-2 lg:pt-4">
+              <Image
+                src={"/fiktispace/Hero image animate.png"}
+                alt={"dashboard"}
+                width={700}
                 height={1000}
               ></Image>
             </div>
