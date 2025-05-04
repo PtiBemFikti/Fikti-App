@@ -40,7 +40,7 @@ export default function DashboardPage() {
                 height={1000}
               ></Image>
             </div> */}
-            <div className="-mb-2 pt-6">
+            <div className="pt-2">
               <Image
                 src={"/fiktispace/Hero image animate.png"}
                 alt={"dashboard"}
@@ -104,7 +104,7 @@ export default function DashboardPage() {
               <Image
                 src={"/fiktispace/Hero image animate.png"}
                 alt={"dashboard"}
-                width={700}
+                width={680}
                 height={1000}
               ></Image>
             </div>
