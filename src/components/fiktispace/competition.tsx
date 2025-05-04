@@ -6,10 +6,10 @@ export default function CompetitionPage() {
   return (
     <div className="pt-6 lg:pt-12">
       <div className="text-center">
-        <h1 className={`text-2xl md:text-[2.5em] lg:text-[3.5rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className}`}>
+        <h1 className={`text-2xl md:text-[2.5em] lg:text-[3rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className}`}>
           COMPETITION LIST
         </h1>
-        <p className={`text-md italic -mt-1 text-gray-200 ${Lato.className}`}>
+        <p className={`text-md italic lg:mt-2 text-gray-200 ${Lato.className}`}>
           Unleash Your Potential Skills
         </p>
       </div>
