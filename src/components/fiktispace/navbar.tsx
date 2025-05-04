@@ -51,13 +51,13 @@ const Navbar: React.FC = () => {
             />
           </Link>
           <div className="hidden lg:flex md:gap-20">
-            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#about">
+            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#compe-list">
               Competition List
             </Link>
             <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#schedule">
               Schedule
             </Link>
-            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#schedule">
+            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#documentation">
               Documentation
             </Link>
             <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#contact">
@@ -101,13 +101,13 @@ const Navbar: React.FC = () => {
           transition={{ duration: 0.2, ease: "easeIn" }}
           onClick={toggleMenu}
         >
-          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#about">
+          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#compe-list">
             About
           </Link>
           <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#schedule">
             Schedule  
           </Link>
-          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#schedule">
+          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#documentation">
             Documentation
           </Link>
           <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#contact">
