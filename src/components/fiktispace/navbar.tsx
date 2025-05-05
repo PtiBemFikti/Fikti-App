@@ -13,17 +13,17 @@ const Navbar: React.FC = () => {
     // Set animasi saat menu dibuka
     await controls.start({
       opacity: isMenuOpen ? 0 : 1,
-      y: isMenuOpen ? -10 : 0,
+      y: isMenuOpen ? -5 : 0,
       animation: "infinite",
-      transition: { duration: 2, delay: 1 },
+      transition: { duration: 0.5, delay: 0.5 },
     });
 
     // Set animasi saat menu ditutup
     if (!isMenuOpen) {
       await controls.start({
         opacity: 0,
-        y: -10,
-        transition: { duration: 0.5, delay: 2 },
+        y: -5,
+        transition: { duration: 0.5, delay: 0.5 },
         animation: "backwards",
       });
     }
@@ -51,16 +51,16 @@ const Navbar: React.FC = () => {
             />
           </Link>
           <div className="hidden lg:flex md:gap-20">
-            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#compe-list">
+            <Link className="block text-lg text-white hover:text-[#FF8797] duration-300" href="#compe-list">
               Competition List
             </Link>
-            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#schedule">
+            <Link className="block text-lg text-white hover:text-[#FF8797] duration-300" href="#schedule">
               Schedule
             </Link>
-            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#documentation">
+            <Link className="block text-lg text-white hover:text-[#FF8797] duration-300" href="#documentation">
               Documentation
             </Link>
-            <Link className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300" href="#contact">
+            <Link className="block text-lg text-white hover:text-[#FF8797] duration-300" href="#contact">
               FAQ
             </Link>
           </div>
@@ -101,16 +101,16 @@ const Navbar: React.FC = () => {
           transition={{ duration: 0.2, ease: "easeIn" }}
           onClick={toggleMenu}
         >
-          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#compe-list">
+          <Link className="text-white hover:text-[#FF8797] text-lg text-center" href="#compe-list">
             Competition List
           </Link>
-          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#schedule">
+          <Link className="text-white hover:text-[#FF8797] text-lg text-center" href="#schedule">
             Schedule  
           </Link>
-          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#documentation">
+          <Link className="text-white hover:text-[#FF8797] text-lg text-center" href="#documentation">
             Documentation
           </Link>
-          <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#contact">
+          <Link className="text-white hover:text-[#FF8797] text-lg text-center" href="#contact">
             FAQ
           </Link>
           <div className="lg:hidden flex flex-col gap-3 px-10">
