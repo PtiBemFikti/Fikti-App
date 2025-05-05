@@ -3,6 +3,15 @@ import About from "@/components/fiktispace/competition/Futsal/about";
 import Peraturan from "@/components/fiktispace/competition/Futsal/peraturan";
 import Navbar from "@/components/fiktispace/navbar2";
 import Footer from "@/components/fiktispace/footer2";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Futsal | FIKTI SPACE 4.0",
+  description: "Cabang Olahraga Futsal FIKTI SPACE 4.0 by Departemen ORSB BEM FIKTI Universitas Gunadarma",
+  icons: {
+    icon: "/fiktispace/LOGO FS 4.png",
+  },
+};
 
 export default function Page() {
   return (
