@@ -56,13 +56,13 @@ export default function FaqPage() {
               width={50}
               height={30}
             ></Image>
-            <div className="flex flex-col gap-y-">
-              <Link href="https://wa.me/62085819191776">
+            <div className="flex flex-col gap-y-2">
+              <Link href="https://wa.me/62085819191776" target="_blank">
                 <p className={`text-lg ${Lato.className} hover:underline hover:font-semibold`}>
                   0858-1919-1776 (Siti Nazua)
                 </p>
               </Link>
-              <Link href="https://wa.me/6285883321315">
+              <Link href="https://wa.me/6285883321315" target="_blank">
                 <p className={`text-lg ${Lato.className} hover:underline hover:font-semibold`}>
                   0858-8332-1315 (Nayla)
                 </p>
