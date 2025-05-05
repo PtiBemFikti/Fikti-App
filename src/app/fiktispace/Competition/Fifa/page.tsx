@@ -1,6 +1,6 @@
 import React from "react";
-import About from "@/components/fiktispace/competition/Futsal/about";
-import Peraturan from "@/components/fiktispace/competition/Futsal/peraturan";
+import About from "@/components/fiktispace/competition/Fifa/about";
+import Peraturan from "@/components/fiktispace/competition/Fifa/peraturan";
 import Navbar from "@/components/fiktispace/navbar2";
 import Footer from "@/components/fiktispace/footer2";
 import { Metadata } from "next";

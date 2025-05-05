@@ -1,13 +1,13 @@
 import React from "react";
-import About from "@/components/fiktispace/competition/Futsal/about";
-import Peraturan from "@/components/fiktispace/competition/Futsal/peraturan";
+import About from "@/components/fiktispace/competition/FGT/about";
+import Peraturan from "@/components/fiktispace/competition/FGT/peraturan";
 import Navbar from "@/components/fiktispace/navbar2";
 import Footer from "@/components/fiktispace/footer2";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Fikti Got Talent | FIKTI SPACE 4.0",
-  description: "Cabang Olahraga Fikti Got talent FIKTI SPACE 4.0 by Departemen ORSB BEM FIKTI Universitas Gunadarma",
+  description: "Cabang Seni Fikti Got talent FIKTI SPACE 4.0 by Departemen ORSB BEM FIKTI Universitas Gunadarma",
   icons: {
     icon: "/fiktispace/LOGO FS 4.png",
   },

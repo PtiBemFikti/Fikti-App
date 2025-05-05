@@ -1,13 +1,13 @@
 import React from "react";
-import About from "@/components/fiktispace/competition/Futsal/about";
-import Peraturan from "@/components/fiktispace/competition/Futsal/peraturan";
+import About from "@/components/fiktispace/competition/Fiktography/about";
+import Peraturan from "@/components/fiktispace/competition/Fiktography/peraturan";
 import Navbar from "@/components/fiktispace/navbar2";
 import Footer from "@/components/fiktispace/footer2";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Badminton Womens Double | FIKTI SPACE 4.0",
-  description: "Cabang Olahraga Badminton Womens Double FIKTI SPACE 4.0 by Departemen ORSB BEM FIKTI Universitas Gunadarma",
+  title: "Fiktogrpahy | FIKTI SPACE 4.0",
+  description: "Cabang Seni Fiktogrpahy FIKTI SPACE 4.0 by Departemen ORSB BEM FIKTI Universitas Gunadarma",
   icons: {
     icon: "/fiktispace/LOGO FS 4.png",
   },
