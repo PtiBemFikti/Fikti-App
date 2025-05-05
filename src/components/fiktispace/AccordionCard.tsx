@@ -47,7 +47,7 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
           isOpen ? "h-auto" : "h-0"
         }`}
       >
-        <div className="py-4 text-[#112C70] font-medium text-md">{content}</div>
+        <div className="py-2 text-[#112C70] font-medium text-md">{content}</div>
       </div>
       <div
         className={`w-full mt-2 h-px bg-gradient-to-r from-[#2A2364] to-[#0A2354]`}
