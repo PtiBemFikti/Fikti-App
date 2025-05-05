@@ -102,7 +102,7 @@ const Navbar: React.FC = () => {
           onClick={toggleMenu}
         >
           <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#compe-list">
-            About
+            Competition List
           </Link>
           <Link className="text-[#F1EAF6] hover:text-purpleText text-lg text-center" href="#schedule">
             Schedule  
