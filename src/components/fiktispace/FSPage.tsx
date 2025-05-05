@@ -33,11 +33,11 @@ export default function FSPage() {
               <DocumentationPage />
             </div>
           </section>
-        </div>
-        <div className="bg-gradient-to-b from-[#010417] to-[#261441]">
           <section id="contact">
             <FaqPage />
           </section>
+        </div>
+        <div className="bg-[#FECB62]">
           <FooterPage />
         </div>
       </main>

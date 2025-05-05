@@ -3,7 +3,7 @@
 import React, { useState, useRef } from "react";
 import { ChevronRightIcon } from "@heroicons/react/solid";
 import { gsap } from "gsap";
-import { Urbanist } from "@/styles/font";
+import { Lato } from "@/styles/font";
 
 interface AccordionCardProps {
   title: string;
@@ -28,13 +28,13 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
 
   return (
     <div
-      className={`mb-4 text-[#B4B1AC] ${Urbanist.className} text-sm font-light`}
+      className={`mb-4 text-[#B4B1AC] ${Lato.className} text-sm font-light`}
     >
       <button
-        className={`w-full py-2 text-left text-sm ${Urbanist.className} text-[#FEFDFC] rounded-lg`}
+        className={`w-full py-2 text-left text-sm ${Lato.className} text-[#112C70] rounded-lg`}
         onClick={handleToggle}
       >
-        <div className="flex items-start justify-between">
+        <div className="flex items-start justify-between font-semibold text-lg">
           <span>{title}</span>
           <ChevronRightIcon
             className={`h-6 w-12 transform ${isOpen ? "rotate-90" : ""}`}
@@ -47,10 +47,10 @@ const AccordionCard: React.FC<AccordionCardProps> = ({ title, content }) => {
           isOpen ? "h-auto" : "h-0"
         }`}
       >
-        <div className="py-4">{content}</div>
+        <div className="py-4 text-[#112C70] font-medium text-md">{content}</div>
       </div>
       <div
-        className={`w-[275px] mt-2 h-px md:w-[515px] bg-gradient-to-r from-[#2B8D8F] to-[#1D1564]`}
+        className={`w-full mt-2 h-px bg-gradient-to-r from-[#2A2364] to-[#0A2354]`}
       ></div>
     </div>
   );
