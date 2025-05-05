@@ -1,167 +1,146 @@
 "use client";
-import { Urbanist } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-// components/Footer.tsx
+import { FaInstagram, FaTiktok, FaYoutube, FaLinkedin,FaWhatsapp, FaWhatsappSquare, FaMailBulk } from "react-icons/fa";
+import { FaPhone, FaLocationDot } from "react-icons/fa6";
+import { CiMail } from "react-icons/ci";
+import { Lato } from "@/styles/font";
 import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="p-4 bottom-0">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:px-16 mt-16">
-        <div className="md:hidden flex-col">
-          <div className="flex md:flex-col justify-center items-center mt-4 gap-3">
-            <Image
-              src="/logo-universitas-gunadarma.png"
-              alt="Logo"
-              width={50}
-              height={50}
-              className="bg-cover"
-            />
-            <Image
-              src="/logo-fikti.png"
-              alt="Logo"
-              width={50}
-              height={50}
-              className="bg-cover"
-            />
-            <Image
-              src="/logo-kabinet.png"
-              alt="Logo"
-              width={50}
-              height={50}
-              className="bg-cover"
-            />
-          </div>
-          <div className="text-xs mt-1 text-[#E8E8F0] text-center">
-            <p>BEM FIKTI UG 2023/2024</p>
-            <p>FIKTI SPACE</p>
-          </div>
-        </div>
-        <div className="md:block hidden">
-          <div className="flex flex-col justify-center items-center">
-            <div className="flex justify-center items-center gap-2.5 ">
-              <Image
-                src="/logo-universitas-gunadarma.png"
-                alt="Logo"
-                width={70}
-                height={50}
-                className="bg-cover"
-              />
-              <Image
-                src="/logo-fikti.png"
-                alt="Logo"
-                width={70}
-                height={50}
-                className="bg-cover"
-              />
-
-              <Image
-                src="/logo-kabinet.png"
-                alt="Logo"
-                width={70}
-                height={50}
-                className="bg-cover"
-              />
+    <div className='text-black'>
+      <footer className="relative overflow-hidden bg-[#FECB62] bottom-0">
+        <div className="flex flex-wrap lg:flex lg:flex-row items-center justify-evenly relative gap-10 pt-10 mb-5 px-5 md:px-20">
+            <div className="flex flex-col gap-4 lg:w-1/5 w-full font-medium">
+                <h1 className="text-xl text-[#0A2352] font-bold">Sosial Media</h1>
+                <div className="space-y-4">
+                  <Link
+                    href="https://www.instagram.com/fiktispace.ug/"
+                    target="_blank"
+                    className="flex items-center gap-2 group text-[#0A2352] hover:text-[#FF8797]"
+                  >
+                    <FaInstagram
+                      size={25}
+                      className="cursor-pointer group-hover:scale-110 transition-all duration-300"
+                    />
+                    @fiktispace.ug
+                  </Link>
+                  <Link
+                    href="https://wa.me/62085819191776"
+                    target="_blank"
+                    className="flex items-center gap-2 group text-[#0A2352] hover:text-[#FF8797]"
+                  >
+                    <FaWhatsapp
+                      size={25}
+                      className="cursor-pointer group-hover:scale-110 transition-all duration-300"
+                    />
+                    0858-1919-1776 (Siti Nazua)
+                  </Link>
+                  <Link
+                    href="https://wa.me/6285883321315"
+                    target="_blank"
+                    className="flex items-center gap-2 group text-[#0A2352] hover:text-[#FF8797]"
+                  >
+                    <FaWhatsapp
+                      size={25}
+                      className="cursor-pointer group-hover:scale-110 transition-all duration-300"
+                    />
+                    0858-8332-1315 (Nayla)
+                  </Link>
+                  <Link
+                    href="mailto:bemfikti.ug@gmail.com"
+                    target="_blank"
+                    className="flex items-center gap-2 group text-[#0A2352] hover:text-[#FF8797]"
+                  >
+                    <CiMail
+                      size={25}
+                      className="cursor-pointer group-hover:scale-110 transition-all duration-300 font-bold"
+                    />
+                    bemfikti.ug@gmail.com
+                  </Link>
+                </div>
             </div>
-            <div className="text-base w-48 text-[#E8E8F0] mt-1 text-center md:block hidden">
-              <p>BEM FIKTI UG 2023/2024</p>
-              <p>FIKTI SPACE</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex md:mx-8">
-          <div className="flex flex-col text-center mt-4 gap-1">
-            <h1 className="text-xl">Social Media</h1>
-            <Link
-              href="https://www.instagram.com/fiktispace.ug"
-              className="text-gray-400 hover:text-purpleText"
-              target="_blank"
-            >
-              Instagram
-            </Link>
-            <Link
-              href="https://tiktok.com/@fiktispace"
-              className="text-gray-400 hover:text-purpleText"
-              target="_blank"
-            >
-              Tiktok
-            </Link>
-          </div>
-
-          <div className="flex-initial mt-4 px-6 md:w-96 md:mx-8">
-            <h1 className="text-xl text-center mb-2">Contact Us</h1>
-            <div className="flex justify-center items-center">
-              <div className="w-36 flex items-center justify-center text-center text-xs">
-                <Link href="/" className="text-gray-400 hover:text-purpleText">
-                  <p>
-                    Pusat Kegiatan Mahasiswa (PUSGIWA) Gedung 4 Lantai 3 Kampus
-                    E Universitas Gunadarma Jl. Komjen Pol. M. Jasin Kelapa Dua
-                    Depok
-                  </p>
-                </Link>
+            <div className="flex flex-col lg:justify-center lg:items-center lg:w-2/5 w-full self-end gap-4 max-lg:order-1 max-md:self-center">
+              <div className="flex justify-center items-center gap-4 pb-4">
+                {/* pake round */}
+                {/* <div className="w-24 h-24 max-md:w-24 max-md:h-24 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
+                  <Image
+                    src="/logo-universitas-gunadarma.png"
+                    alt="Logo Universitas Gunadarma"
+                    width={300}
+                    height={300}
+                    className="bg-cover h-16 w-16
+                    "
+                  />
+                </div>
+                <div className="w-24 h-24 max-md:w-24 max-md:h-24 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
+                  <Image
+                    src="/logo-fikti.png"
+                    alt="Logo FIKTI"
+                    width={300}
+                    height={300}
+                    className="bg-cover h-fit w-14
+                    "
+                  />
+                </div>
+                <Image
+                  src="/LOGO ADIRAKA ROUND.png"
+                  alt="Logo Kabinet Adiraka"
+                  width={300}
+                  height={300}
+                  className="bg-cover h-24 w-24 cursor-pointer hover:scale-110 transition-all duration-300"
+                /> */}
+                {/* tidak pake round */}
+                <Image
+                    src="/logo-universitas-gunadarma.png"
+                    alt="Logo Universitas Gunadarma"
+                    width={300}
+                    height={300}
+                    className="bg-cover h-16 w-16 cursor-pointer hover:scale-110 transition-all duration-300"
+                  />
+                <Image
+                    src="/logo-fikti.png"
+                    alt="Logo FIKTI"
+                    width={300}
+                    height={300}
+                    className="bg-cover h-24 w-20 cursor-pointer hover:scale-110 transition-all duration-300"
+                  />
+                <Image
+                  src="/LOGO ADIRAKA TRANSPARAN.png"
+                  alt="Logo Adiraka"
+                  width={300}
+                  height={300}
+                  className="bg-cover h-[3.5rem] w-[4.5rem] cursor-pointer hover:scale-110 transition-all duration-300"
+                />
               </div>
+              <h1 className={`text-xl text-center text-[#0A2352] ${Lato.className} font-extrabold `}>
+                BEM FIKTI UG 2024/2025<br />FIKTI SPACE
+              </h1>
             </div>
-            <div className="mt-2">
+            <div className="flex flex-col gap-4 lg:w-1/5 w-full font-medium">
+              <div className='flex gap-2 text-[#0A2352]'>
+                <FaLocationDot size={25} className="flex-shrink-0" />
+                <h1 className="text-xl font-bold">Lokasi</h1>
+              </div>
               <Link
-                href="/"
-                className="text-gray-400 text-center text-base hover:text-purpleText"
+                href="https://maps.app.goo.gl/etmNsRtGszuWaD1cA" // Ganti dengan link lokasi spesifik
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-[#0A2352] hover:text-[#FF8797] hover:underline"
               >
-                <p>bemfikti.ug@gmail.com</p>
+                <p className="ml-2 font-medium">
+                    Sekretariat BEM FIKTI: <br />Pusat Kegiatan Mahasiswa (PUSGIWA) Gedung 4 Lantai 3 Kampus E Universitas Gunadarma Jl. Komjen Pol. M. Jasin Kelapa Dua Depok
+                </p>
               </Link>
             </div>
-            <div className="items-center mb-5">
-              <Link
-                href="/"
-                className="text-gray-400 text-center text-base hover:text-purpleText"
-              >
-                <p>+62 877-8524-7632</p>
-              </Link>
-            </div>
-          </div>
-          <div className="md:block hidden">
-            <div className="flex mx-8 w-32">
-              <div className="flex flex-col text-center mt-4 gap-1">
-                <h1 className="text-xl">Useful Links</h1>
-                <Link href="#" className="text-gray-400 hover:text-purpleText">
-                  Home
-                </Link>
-                <Link
-                  href="#schedule"
-                  className="text-gray-400 hover:text-purpleText"
-                >
-                  Competition List
-                </Link>
-                <Link
-                  href="#schedule"
-                  className="text-gray-400 hover:text-purpleText"
-                >
-                  Timeline
-                </Link>
-                <Link
-                  href="#documentation"
-                  className="text-gray-400 hover:text-purpleText"
-                >
-                  Documentation
-                </Link>
-                <Link
-                  href="#contact"
-                  className="text-gray-400 hover:text-purpleText"
-                >
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div className="container mt-10 mx-auto">
-        <p className="text-center border-t-2 border-gray-500 text-gray-400 text-xs md:text-base font-normal">
-          Copyright © 2024 BEM FIKTI UG & Made with 💛 by BIRO PTI
-        </p>
-      </div>
-    </footer>
+        <hr className='w-5/6 mx-auto'></hr>
+        <div className='text-[#0A2352] text-center py-5 text-[9px] md:text-lg font-medium mx-3 lg:mx-0'>
+            Copyright © 2025 BEM FIKTI UG & Made with 💛 by BIRO PTI
+        </div>
+      </footer>
+    </div>
   );
 };
 

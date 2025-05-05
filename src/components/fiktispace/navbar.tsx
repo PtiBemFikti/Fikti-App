@@ -51,16 +51,16 @@ const Navbar: React.FC = () => {
             />
           </Link>
           <div className="hidden lg:flex md:gap-20">
-            <Link className="block text-lg text-white hover:text-[#FF8797] duration-300" href="#compe-list">
+            <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="#compe-list">
               Competition List
             </Link>
-            <Link className="block text-lg text-white hover:text-[#FF8797] duration-300" href="#schedule">
+            <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="#schedule">
               Schedule
             </Link>
-            <Link className="block text-lg text-white hover:text-[#FF8797] duration-300" href="#documentation">
+            <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="#documentation">
               Documentation
             </Link>
-            <Link className="block text-lg text-white hover:text-[#FF8797] duration-300" href="#contact">
+            <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="#contact">
               FAQ
             </Link>
           </div>
