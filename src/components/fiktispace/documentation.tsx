@@ -1,13 +1,13 @@
 import Image from "next/image";
-import { Guardians } from "@/styles/font";
+import { AkiraExpanded, Lato } from "@/styles/font";
 export default function DocumentationPage() {
   return (
     <div>
-      <div className="mt-8">
+      <div className="pt-6 md:pt-16 lg:pt-20 ">
         <div className="my-8 px-8 justify-center items-center md:hidden">
           <div className="flex justify-center items-center">
             <div>
-              <h1 className={`text-[#E8E8F0] text-lg ${Guardians.className}`}>
+              <h1 className={`text-2xl md:text-[2.5rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className}`}>
                 Documentation
               </h1>
             </div>
@@ -92,13 +92,16 @@ export default function DocumentationPage() {
       </div>
 
       {/*Desktop*/}
-      <div className="md:block hidden mt-8">
+      <div className="md:block hidden py-10 bg-[#FECB62]">
         <div className="my-8 px-6">
           <div className="flex justify-center">
             <div>
-              <h1 className={`text-[#E8E8F0] text-2xl ${Guardians.className}`}>
+              <h1 className={`text-2xl md:text-[2.5rem] text-[#0A2352] from-[# ${AkiraExpanded.className}`}>
                 Documentation
               </h1>
+              <div className={`text-md text-center text-[#0A2352] ${Lato.className} `}>
+                Celebrating Moments Together.
+            </div>
             </div>
           </div>
           <div className="justify-center items-center flex">
