@@ -14,15 +14,14 @@ export default function TimelinePage() {
           </p>
         </div>
         <div className="relative px-4 md:px-16 lg:px-40 mt-10">
-          {/* Garis vertikal di pinggir kiri */}
-          <div className="absolute top-0 bottom-0 w-[0.25rem] bg-white"></div>
+          <div className="absolute top-0 bottom-0 w-[0.25rem] bg-white"></div>{/* Garis vertikal di pinggir kiri */}
           <div className="space-y-5 pl-[1.6rem]">
             {[
-              { date: "19-28 Mei", title: "Pendaftaran", location: "Online" },
-              { date: "13 Juni", title: "Technical Meeting", location: "Online" },
-              { date: "15 Juni", title: "Opening Ceremony", location: "Online" },
-              { date: "15 Juni", title: "Day 1 Competition", location: "Venue" },
-              { date: "21 Juni", title: "Grand Closing", location: "Venue" },
+              { date: "19-28 May", title: "Pendaftaran", location: "Online" },
+              { date: "13 June", title: "Technical Meeting", location: "Online" },
+              { date: "15 June", title: "Opening Ceremony", location: "Online" },
+              { date: "15 June", title: "Day 1 Competition", location: "Venue" },
+              { date: "21 June", title: "Grand Closing", location: "Venue" },
             ].map((item, idx) => (
               <div key={idx} className="relative flex items-center gap-4">
                 {/* Lingkaran dan garis */}
@@ -32,14 +31,14 @@ export default function TimelinePage() {
 
                 {/* Konten */}
                 <div className="flex w-full gap-4 py-3 px-5 items-center bg-[#FECB62]">
-                  <div className="text-left w-4/12 lg:w-2/12 bg-gradient-to-r from-[#FF8797] to-[#FAACB3]">
-                    <p className={`${Lato.className} text-xl text-center font-seminold text-[#0A2352] py-2`}>{item.date}</p>
+                  <div className="text-center w-5/12 lg:w-2/12 bg-gradient-to-r from-[#FF8797] to-[#FAACB3] px-1">
+                    <p className={`${Lato.className} text-base md:text-xl text-center font-seminold text-[#0A2352] py-2`}>{item.date}</p>
                   </div>
-                  <div className="w-5/12 lg:w-8/12">
-                    <p className={`${Lato.className} text-xl text-left text-[#0A2352] font-semibold`}>{item.title}</p>
+                  <div className="w-4/12 lg:w-8/12">
+                    <p className={`${Lato.className} text-base md:text-xl text-left text-[#0A2352] font-semibold`}>{item.title}</p>
                   </div>
                   <div className="w-3/12 lg:w-3/8">
-                    <p className="py-2 text-[#0A2352] text-xl font-semibold text-right">
+                    <p className="py-2 text-[#0A2352] text-sm md:text-xl font-semibold text-right">
                       {item.location}
                     </p>
                   </div>
