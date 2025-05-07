@@ -119,7 +119,7 @@ export default function Section1() {
             <div>
               <p className={`${Lato.className} text-2xl text-[#0A2352] font-semibold`}>Daftar Sekarang Juga</p>
               <Link className="" href="">
-                <button className="bg-[#0A2352] rounded-2xl py-3 w-[25%] mt-3">Daftar</button>
+                <button className="bg-[#0A2352] rounded-2xl py-3 w-full md:w-[50%] lg:w-[30%] mt-3">Daftar</button>
               </Link>
             </div>
           </div>
