@@ -19,7 +19,7 @@ export default function FSPage() {
         </section>
         <div>
           <section id="compe-list">
-            <div className="md:bg-[url('/fiktispace/bg-desktop.png')] bg-cover bg-repeat">
+            <div className="bg-[url('/fiktispace/bg-desktop.png')] bg-cover bg-repeat">
               <CompetitionPage />
             </div>
           </section>
