@@ -125,19 +125,19 @@ export default function Section1() {
           </div>
           <div className="flex justify-around">
             <Image
-              src={"/fiktispace/Stella_polos.png"}
+              src={"/fiktispace/Stella_polos.webp"}
               alt="banner"
               width={90}
               height={120}
             ></Image>
             <Image
-              src={"/fiktispace/LOGO FS 4.png"}
+              src={"/fiktispace/LOGO FS 4.webp"}
               alt="banner"
               width={120}
               height={120}
             ></Image>
             <Image
-              src={"/fiktispace/Nebula_polos.png"}
+              src={"/fiktispace/Nebula_polos.webp"}
               alt="banner"
               width={90}
               height={120}
