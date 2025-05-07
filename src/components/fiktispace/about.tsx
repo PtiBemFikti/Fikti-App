@@ -17,7 +17,7 @@ export default function AboutPage() {
 
   if (!isClient) return null;
   return (
-    <div className="pt-4 ">
+    <div className="pt-4 -mb-20 md:mb-0">
       <div className="flex items-center justify-center">
         <div className="py-5 md:py-12 px-6 md:px-14">
           <div>

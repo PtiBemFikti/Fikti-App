@@ -5,10 +5,10 @@ import Link from "next/link";
 export default function FaqPage() {
   return (
     <div className="pb-8 pt-28">
-      <div className="flex flex-wrap items-center md:justify-start px-20">
-        <div className="px-8 mt-2 w-[60%]">
+      <div className="flex flex-col lg:flex-row items-center md:justify-start px-4 lg:px-20 gap-y-10">
+        <div className="px-8 mt-2 w-[100%] lg:w-[60%]">
           <div className="text-center">
-            <div className={`text-2xl md:text-[2.5rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className} `}>           
+            <div className={`text-[2.5rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className} `}>           
               FAQ
             </div>
             <div className={`text-sm text-[#E8E8F0] ${Lato.className} `}>
@@ -42,7 +42,7 @@ export default function FaqPage() {
             />
           </div>
         </div>
-        <div className="px-8 w-[40%]">
+        <div className="px-8 w-[100%] lg:w-[40%]">
           <div className={`text-2xl text-center mb-2 text-[#E8E8F0] ${Lato.className} `}>
             or.. if you have any other <br />questions you can
           </div>
@@ -58,12 +58,12 @@ export default function FaqPage() {
             ></Image>
             <div className="flex flex-col gap-y-2">
               <Link href="https://wa.me/62085819191776" target="_blank">
-                <p className={`text-lg ${Lato.className} hover:underline hover:font-semibold`}>
+                <p className={`text-medium lg:text-lg ${Lato.className} hover:underline hover:font-semibold`}>
                   0858-1919-1776 (Siti Nazua)
                 </p>
               </Link>
               <Link href="https://wa.me/6285883321315" target="_blank">
-                <p className={`text-lg ${Lato.className} hover:underline hover:font-semibold`}>
+                <p className={`text-medium lg:text-lg ${Lato.className} hover:underline hover:font-semibold`}>
                   0858-8332-1315 (Nayla)
                 </p>
               </Link>
