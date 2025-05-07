@@ -137,7 +137,7 @@ const Footer: React.FC = () => {
         </div>
         <hr className='w-5/6 mx-auto'></hr>
         <div className='text-[#0A2352] text-center py-5 text-[9px] md:text-lg font-medium mx-3 lg:mx-0'>
-            Copyright © 2025 BEM FIKTI UG & Made with 💛 by BIRO PTI
+            Copyright © 2025 BEM FIKTI UG & Made with 💙 by BIRO PTI
         </div>
       </footer>
     </div>
