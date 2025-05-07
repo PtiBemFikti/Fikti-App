@@ -2,10 +2,10 @@ import { Metadata } from "next";
 import FSPage from "@/components/fiktispace/FSPage";
 
 export const metadata: Metadata = {
-  title: "FIKTI SPACE 3.0",
-  description: "FIKTI SPACE 3.0",
+  title: "FIKTI SPACE 4.0",
+  description: "FIKTI SPACE 4.0 by Departemen ORSB BEM FIKTI Universitas Gunadarma",
   icons: {
-    icon: "/fiktispace/logofs.png",
+    icon: "/fiktispace/LOGO FS 4.png",
   },
 };
 

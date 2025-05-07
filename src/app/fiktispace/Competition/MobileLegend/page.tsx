@@ -1,12 +1,38 @@
 import React from "react";
-import Section1 from "@/components/fiktispace/competition/MobileLegend/section1";
-import Navbar from "@/components/fiktispace/navbar";
-import Footer from "@/components/fiktispace/footer";
+import About from "@/components/fiktispace/competition/MobileLegend/about";
+import Peraturan from "@/components/fiktispace/competition/MobileLegend/peraturan";
+import Navbar from "@/components/fiktispace/navbar2";
+import Footer from "@/components/fiktispace/footer2";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mobile Legend | FIKTI SPACE 4.0",
+  description: "Cabang E-sport Mobile Legend FIKTI SPACE 4.0 by Departemen ORSB BEM FIKTI Universitas Gunadarma",
+  icons: {
+    icon: "/fiktispace/LOGO FS 4.png",
+  },
+};
+
 export default function Page() {
   return (
-    <div>
+    <div className="bg-gradient-to-b"
+      style={{
+        backgroundImage: 'linear-gradient(to bottom, #0A2352 50%, #FF8797 60%)',
+      }}
+    >
       <Navbar />
-      <Section1 />
+        <div>
+          <section>
+            <div>
+              <About />
+            </div>
+          </section>
+          <section>
+            <div>
+              <Peraturan />
+            </div>
+          </section>
+        </div>
       <Footer />
     </div>
   );
