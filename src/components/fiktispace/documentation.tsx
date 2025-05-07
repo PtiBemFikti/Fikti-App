@@ -3,17 +3,20 @@ import { AkiraExpanded, Lato } from "@/styles/font";
 export default function DocumentationPage() {
   return (
     <div>
-      <div className="pt-6 md:pt-16 lg:pt-20 ">
-        <div className="my-8 px-8 justify-center items-center md:hidden">
+      <div className="pt-44 lg:pt-24 ">
+        <div className="py-10 px-1 md:px-8 justify-center items-center md:hidden bg-[#FECB62]">
           <div className="flex justify-center items-center">
             <div>
-              <h1 className={`text-2xl md:text-[2.5rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className}`}>
+              <h1 className={`text-2xl md:text-[2.5rem] text-[#0A2352] ${AkiraExpanded.className}`}>
                 Documentation
               </h1>
+              <div className={`text-md text-center text-[#0A2352] ${Lato.className} `}>
+                Celebrating Moments Together.
+            </div>
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="mt-4 bg-gray-200 rounded-lg border-4 w-[310px] border-gray-200">
+            <div className="mt-4 bg-gray-200 p-2 rounded-lg border-4 w-[80%] border-gray-200">
               <div className="flex gap-1">
                 <Image
                   src={"/fiktispace/doc1.png"}
@@ -105,8 +108,8 @@ export default function DocumentationPage() {
             </div>
           </div>
           <div className="justify-center items-center flex">
-            <div className="mt-4 bg-gray-200 rounded-lg border-4 w-[1072px] border-gray-200 ">
-              <div className="flex mt-1">
+            <div className="mt-4 p-3 bg-gray-200 rounded-lg border-4 w-[70%] border-gray-200 ">
+              <div className="flex mt-1 gap-2.5">
                 <div className="flex flex-col gap-2.5 ml-1">
                   <div>
                     <Image
@@ -133,7 +136,7 @@ export default function DocumentationPage() {
                     ></Image>
                   </div>
                 </div>
-                <div className="flex-colgap-2.5 ml-1">
+                <div className="flex-col gap-2.5 ml-1">
                   <div>
                     <Image
                       src={"/fiktispace/doc2.png"}
@@ -151,7 +154,7 @@ export default function DocumentationPage() {
                     ></Image>
                   </div>
                 </div>
-                <div className="flex-col  gap-2.5 ml-1">
+                <div className="flex-col gap-2.5 ml-1">
                   <div>
                     <Image
                       src={"/fiktispace/doc4.png"}

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function TimelinePage() {
   return (
     <div>
-      <div className="pt-[7.5rem]">
+      <div className="pt-[7.5rem] pb-20 -mb-10">
         <div className="text-center">
           <h1 className={`text-3xl md:text-[2.8rem] lg:text-[3rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className}`}>
             SCHEDULE
