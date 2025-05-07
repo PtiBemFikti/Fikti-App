@@ -62,7 +62,7 @@ export default function GelbudTicketSection() {
   };
 
   return (
-    <section className="bg-black text-white  px-6 h-fit py-20 md:py-0 md:h-[85vh]  flex items-center justify-center">
+    <section className="bg-black text-white  px-6 h-fit py-20 md:py-10 md:h-fit flex items-center justify-center">
       <div className="max-w-6xl mx-auto text-center">
         <motion.div
           initial="hidden"

@@ -43,7 +43,7 @@ export default function PerformersList() {
       {/* Performers List */}
       <motion.div
         variants={container}
-        className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20"
+        className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-20"
       >
         {performers.map((performer, index) => (
           <motion.div
