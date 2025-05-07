@@ -10,7 +10,7 @@ export default function Section1() {
       {/* banner */}
       <div className="px-6 md:px-10 lg:px-16 -mb-32">
         <Image
-          src={"/fiktispace/Banner/Futsal.webp"}
+          src={"/fiktispace/Banner/Fikpost.webp"}
           alt="banner"
           width={100000}
           height={200}
