@@ -7,6 +7,7 @@ import Image from "next/image";
 
 const Navbar2: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
   const controls = useAnimation();
 
   const toggleMenu = async () => {
@@ -60,14 +61,31 @@ const Navbar2: React.FC = () => {
             Peraturan
           </Link>
         </div>
-        <div className="hidden lg:flex justify-end gap-10 w-3/12">
-          <Link className="" href="">
-            <button className="bg-[#FF8797] rounded-full px-3 py-2">Contact Us</button>
-          </Link>
-          <Link className="" href="">
-            <button className="bg-[#FF8797] rounded-full px-5 py-2">Daftar</button>
-          </Link>
-        </div>
+        <div className="hidden lg:flex justify-evenly gap-10">
+            {/* Dropdown Button */}
+            <div
+              className="relative"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <button className="bg-[#FF8797] rounded-full px-5 py-2">Contact Us</button>
+            
+              {/* Dropdown Menu */}
+              {isDropdownOpen && (
+                <div className="absolute top-11 right-0 bg-[#FF8797] rounded-xl p-2 shadow-lg w-44 z-10">
+                  <Link href="https://wa.me/62085819191776">
+                    <p className="rounded-xl block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP1 (Siti Nazua)</p>
+                  </Link>
+                  <Link href="https://wa.me/6285883321315">
+                    <p className="rounded-xl block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP2 (Nayla)</p>
+                  </Link>
+                </div>
+              )}
+            </div>
+            <Link className="" href="">
+              <button className="bg-[#FF8797] rounded-full px-5 py-2">Daftar</button>
+            </Link>
+          </div>
         <div className="flex justify-end w-3/12 lg:hidden items-center">
           {/* Hamburger menu icon */}
           <button
@@ -106,8 +124,11 @@ const Navbar2: React.FC = () => {
             Peraturan 
           </Link>
           <div className="lg:hidden flex flex-col gap-3 px-10">
-            <Link className="" href="">
-              <button className="bg-[#FF8797] rounded-full py-2 w-full">Contact Us</button>
+            <Link className="" href="https://wa.me/62085819191776">
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">CP1 (Siti Nazua)</button>
+            </Link>
+            <Link className="" href="https://wa.me/6285883321315">
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">CP2 (Nayla)</button>
             </Link>
             <Link className="justify-center" href="">
               <button className="bg-[#FF8797] rounded-full py-2 w-full">Daftar</button>
