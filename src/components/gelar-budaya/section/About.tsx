@@ -25,17 +25,21 @@ export default function AboutSection() {
 
         {/* Text section */}
         <div className="w-full md:w-1/2 text-center self-start md:text-left">
-          <h2
+          <h1
             className={`${Montserrat.className} text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight`}
           >
             About Gelar Budaya
+          </h1>
+          <h2
+            className={`${Montserrat.className} text-base md:text-xl font-semibold text-gray-900 mb-6 leading-tight`}
+          >
+            Satu Panggung, Ribuan Ekspresi
           </h2>
           <p className="text-gray-700 text-lg mb-6">
-            Gelar Budaya adalah event seni tahunan yang diselenggarakan oleh BEM
-            FIKTI UG sebagai wadah ekspresi mahasiswa dalam menampilkan
-            kreativitas dan karya seni. Acara ini menghadirkan pertunjukan
-            budaya, lomba seni, dan pameran karya untuk memperkaya pengalaman
-            budaya mahasiswa.
+            Gelar Budaya 2025 kembali sebagai ajang seni tahunan persembahan BEM
+            FIKTI Departemen Olahraga dan Seni Budaya, menghadirkan ruang bagi
+            mahasiswa untuk menyalurkan kreativitas, bakat, dan memperkenalkan
+            berbagai ekspresi seni.
           </p>
         </div>
       </div>
@@ -43,11 +47,13 @@ export default function AboutSection() {
         {/* Text section */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <p className="text-gray-700 text-lg mb-6">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
-            autem quasi dicta at consequuntur eaque perferendis ad architecto
-            saepe! Modi aperiam repudiandae expedita maxime voluptatibus
-            repellat, error obcaecati officia maiores velit quo esse culpa
-            voluptatem ullam illum voluptates iure exercitationem.
+            Dengan tema “Rise The Rhythms”, kami mengajak seluruh civitas
+            akademika membangkitkan semangat seni dan budaya dalam harmoni
+            bersama. Nikmati pertunjukan seni, budaya, dan jelajahi karya
+            mahasiswa yang penuh inspirasi. Gelar Budaya bukan sekadar perayaan,
+            ini adalah upaya untuk memperkaya wawasan seni dan budaya mahasiswa
+            serta menciptakan momen kebersamaan yang berkesan dari generasi muda
+            yang berani berekspresi dan peduli akan warisan budaya.
           </p>
           <a
             href="#"
