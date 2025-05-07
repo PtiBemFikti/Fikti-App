@@ -94,7 +94,7 @@ export default function GelbudHeroSection() {
           className="flex flex-col md:flex-row items-center justify-center gap-2 text-white/70 mb-8"
         >
           <FaMapMarkerAlt className="text-[#ECDCC1] text-base" />
-          Auditorium Kampus D, Ged. 4, Lt. 6 Universitas Gunadarma
+          Hype Cafe, Depok.
         </motion.p>
 
         {/* CTA Buttons */}
