@@ -97,13 +97,13 @@ export default function Section1() {
 
                       {/* Konten */}
                       <div className="flex w-full gap-4 py-3 px-5 items-center bg-[#FECB62]">
-                        <div className="text-center w-4/12 lg:w-2/12 bg-gradient-to-r from-[#FF8797] to-[#FAACB3] px-1">
+                        <div className="text-center w-4/12 lg:w-4/12 bg-gradient-to-r from-[#FF8797] to-[#FAACB3] px-1">
                           <p className={`${Lato.className} text-base md:text-xl text-center font-seminold text-[#0A2352] py-2`}>{item.date}</p>
                         </div>
-                        <div className="w-5/12 lg:w-8/12">
+                        <div className="w-5/12 lg:w-6/12">
                           <p className={`${Lato.className} text-base md:text-xl text-left text-[#0A2352] font-semibold`}>{item.title}</p>
                         </div>
-                        <div className="w-3/12 lg:w-3/8">
+                        <div className="w-3/12 lg:w-2/8">
                           <p className="py-2 text-[#0A2352] text-sm md:text-xl font-semibold text-right">
                             {item.location}
                           </p>
