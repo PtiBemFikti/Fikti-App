@@ -9,24 +9,29 @@ export default function GelbudFAQSection() {
 
   const faqs = [
     {
-      question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+      question: "Apakah terbuka untuk umum?",
       answer:
-        "Sed eget risus auctor, aliquet nisl sit amet, ultrices nisl. Nullam euismod, nisl eget aliquam ultricies, nisl nisl aliquet nisl, eget aliquam nisl nisl sit amet nisl.",
+        "Hanya terbuka untuk mahasiswa Fakultas Ilmu Komputer & Teknologi Informasi Universitas Gunadarma.",
     },
     {
-      question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+      question: "Apakah perlu mendaftar sebelum datang? ",
       answer:
-        "Sed eget risus auctor, aliquet nisl sit amet, ultrices nisl. Nullam euismod, nisl eget aliquam ultricies, nisl nisl aliquet nisl, eget aliquam nisl nisl sit amet nisl.",
+        "Peserta atau penonton dapat melakukan pendaftaran di tempat (on the spot)",
     },
     {
-      question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+      question: "Apakah saya bisa ikut berpartisipasi sebagai pengisi acara?",
       answer:
-        "Sed eget risus auctor, aliquet nisl sit amet, ultrices nisl. Nullam euismod, nisl eget aliquam ultricies, nisl nisl aliquet nisl, eget aliquam nisl nisl sit amet nisl.",
+        "Pastinya, bagi teman-teman yang ingin berpartisipasi mengisi acara dengan penampilan dapat mendaftarkan diri melalui section Pendaftaran Peserta.",
     },
     {
-      question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+      question: "Di mana saya bisa mendapatkan informasi lebih lanjut?",
       answer:
-        "Sed eget risus auctor, aliquet nisl sit amet, ultrices nisl. Nullam euismod, nisl eget aliquam ultricies, nisl nisl aliquet nisl, eget aliquam nisl nisl sit amet nisl.",
+        "Informasi lengkap dan terbaru dapat diakses melalui instagram @gelar.budayafikti atau melalui kontak yang tersedia.",
+    },
+    {
+      question: "Apakah tersedia merchandise atau suvenir acara?",
+      answer:
+        "Ya, tersedia merchandise yang bisa di dapatkan pada saat pembelian ticket.",
     },
   ];
 
