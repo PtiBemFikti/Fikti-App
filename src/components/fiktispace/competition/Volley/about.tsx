@@ -70,7 +70,7 @@ export default function Section1() {
                 <div className={`${Lato.className} text-lg md:text-4xl font-semibold`}>Location</div>
               </div>
               <div className={`${Lato.className} mt-4 text-sm md:text-xl`}>
-                Golden Sports Arena
+              Sport Centre Kampus H
               </div>
             </div>
           </div>
