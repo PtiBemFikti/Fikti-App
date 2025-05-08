@@ -53,7 +53,7 @@ export default function Section1() {
                 <div className={`${Lato.className} text-lg md:text-4xl font-semibold`}>Price</div>
               </div>
               <div className={`${Lato.className} mt-4 text-sm md:text-xl`}>
-                Rp 200.000/Team
+                Rp 120.000/Team
               </div>
             </div>
             {/* location */}
