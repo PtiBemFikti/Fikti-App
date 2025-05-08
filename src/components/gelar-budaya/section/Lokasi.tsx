@@ -110,7 +110,7 @@ export default function GelbudLokasi() {
               <div>
                 <h3 className="font-semibold">KRL Commuter Line</h3>
                 <p className="text-sm text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Bagi yang menggunakan transportasi umum
                 </p>
               </div>
             </div>
@@ -119,9 +119,9 @@ export default function GelbudLokasi() {
             <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
               <FaBus className="text-xl mt-1 text-yellow-600" />
               <div>
-                <h3 className="font-semibold">Transjakarta</h3>
+                <h3 className="font-semibold">Angkutan Umum</h3>
                 <p className="text-sm text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Dapat menggunakan angkot bernomor D05
                 </p>
               </div>
             </div>

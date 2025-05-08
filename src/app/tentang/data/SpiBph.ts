@@ -48,7 +48,7 @@ export const badanPengurusHarian = [
 export const satuanPengendaliInternal = [
   {
     foto: "/adiraka/BPH/SPI/afnan.webp",
-    nama: "Afnan Wahib",
+    nama: "Afnan Wahbi",
     jabatan: "Satuan Pengendali Internal",
   },
   {
