@@ -38,17 +38,17 @@ const syllabus : Record < string,
         },
         "SYARAT DAN KETENTUAN PESERTA": {
             points: [
-              "1. Setiap tim maksimal terdiri dari 10 pemain.", 
-              "2. Untuk tim, dijadikan aturan bebas tim namun seangkatan yang sama dengan ketentuan maksimal 3 kelas campuran", 
-              "3. Pemain yang sudah terdaftar dalam satu tim tidak diperbolehkan bermain di tim lain.", 
-              "4. Setiap pemain harus menggunakan pakaian yang sama dan warna pakaian kiper harus berbeda dengan pemain lainnya.",
-              "5. Memakai pengaman kaki (deker) yang terbuat dari bahan layak (karet, plastik, atau bahan sejenisnya).",
-              "6. Semua pemain tidak diperbolehkan menggunakan aksesoris seperti gelang, cincin, jam, dan sebagainya.",
-              "7. Jika suatu tim tidak hadir pada jadwal yang telah ditetapkan, pertandingan ditunda selama 5 menit.",
-              "8. Jika setelah penundaan tim masih tidak hadir, tim tersebut dinyatakan kalah Walk Out (WO).",
-              "9. Sistem pertandingan menggunakan sistem gugur.",
-              "10. Jika terjadi extra time, berlaku golden goal (tim pertama yang mencetak gol menang).",
-              "11. Setiap tim diperbolehkan meminta 1 time out per babak dengan durasi 60 detik.",
+              "1. Setiap tim terdiri dari 6 pemain inti dan maksimal 6 pemain cadangan.", 
+              "2. Tim hanya diperbolehkan melakukan 6 pergantian pemain per set.", 
+              "3. Untuk tim, dibuat aturan bebas dalam pembentukan tim, dengan ketentuan maksimal 3 kelas campuran dan seangkatan yang sama.", 
+              "4. Jersey harus memiliki nomor punggung dan nomor di dada, serta nomor pada celana di bagian paha kanan.",
+              "5. Pemain wajib memakai kaos kaki dan sepatu karet selama bertanding.",
+              "6. Libero harus memakai seragam dengan warna berbeda dari tim utama.",
+              "7. Tim yang pertama mencapai 3 set kemenangan dinyatakan sebagai pemenang pertandingan.",
+              "8. Menggunakan sistem rally point, setiap reli menghasilkan poin untuk salah satu tim.",
+              "9. Pemain harus melakukan rotasi searah jarum jam setiap kali mendapatkan hak servis setelah memenangkan reli.",
+              "10. Setiap tim mendapatkan 2 kali timeout per set, masing-masing berdurasi 30 detik.",
+              "11. Timeout hanya boleh diminta oleh pelatih atau kapten saat bola mati.",
             ]
         }
     };
