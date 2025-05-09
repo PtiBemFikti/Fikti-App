@@ -35,8 +35,8 @@ export default function Section1() {
                 </div>
                 <div className={`${Lato.className} text-lg md:text-4xl font-semibold`}>Contact</div>
               </div>
-              <div className={`${Lato.className} mt-4 text-sm md:text-xl`}>
-              Indah Cahyani   : +62 819-4341-7132 <br/>Salwa Putri Nadya &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : +62 821-3051-5241
+              <div className={`${Lato.className} mt-4 text-xs md:text-xl`}>
+              Auvia Indah &nbsp; : +62 819-4341-7132 <br/>Salwa Putri &nbsp;&nbsp;&nbsp;: +62 821-3051-5241
               </div>
             </div>
             {/* HTM */}
@@ -87,7 +87,7 @@ export default function Section1() {
                 {[
                   { date: "19-28 May", title: "Pendaftaran", location: "Online" },
                   { date: "13 June", title: "Technical Meeting", location: "Online" },
-                  { date: "16, 18, 21 June", title: "Pelaksanaan", location: "Venue" },
+                  { date: "[tentative]", title: "Pelaksanaan", location: "Online" },
                     ].map((item, idx) => (
                       <div key={idx} className="relative flex items-center gap-4">
                       {/* Lingkaran dan garis */}
