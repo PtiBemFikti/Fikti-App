@@ -72,22 +72,22 @@ const Navbar: React.FC = () => {
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
             >
-              <button className="bg-[#FF8797] rounded-full px-5 py-2">Contact Us</button>
+              <button className="bg-[#FF8797] rounded-lg px-5 py-2">Contact Us</button>
             
               {/* Dropdown Menu */}
               {isDropdownOpen && (
-                <div className="absolute top-11 right-0 bg-[#FF8797] rounded-xl p-2 shadow-lg w-44 z-10">
+                <div className="absolute top-9 right-0 bg-[#FF8797] rounded-lg p-2 shadow-lg w-44 z-10">
                   <Link href="https://wa.me/62085819191776">
-                    <p className="rounded-xl block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP1 (Siti Nazua)</p>
+                    <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP1 (Siti Nazua)</p>
                   </Link>
                   <Link href="https://wa.me/6285883321315">
-                    <p className="rounded-xl block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP2 (Nayla)</p>
+                    <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP2 (Nayla)</p>
                   </Link>
                 </div>
               )}
             </div>
             <Link className="" href="">
-              <button className="bg-[#FF8797] rounded-full px-5 py-2">Daftar</button>
+              <button className="bg-[#FF8797] rounded-lg px-5 py-2">Daftar</button>
             </Link>
           </div>
           <div className="lg:hidden items-center">
