@@ -420,3 +420,12 @@ body {
 .group:hover .animate-infinite-scroll {
   animation-play-state: paused;
 }
+
+@keyframes blink {
+  0%, 100% { box-shadow: 0 0 0 2px #FECB62; }
+  50% { box-shadow: 0 0 0 2px transparent; }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}

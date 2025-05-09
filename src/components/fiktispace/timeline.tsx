@@ -15,22 +15,24 @@ export default function TimelinePage() {
         </div>
         <div className="relative px-4 md:px-16 lg:px-40 mt-10">
           <div className="absolute top-0 bottom-0 w-[0.25rem] bg-white"></div>{/* Garis vertikal di pinggir kiri */}
-          <div className="space-y-5 pl-[1.6rem]">
+          <div className="space-y-5 pl-[1.1rem]">
             {[
               { date: "19-28 May", title: "Pendaftaran", location: "Online" },
               { date: "13 June", title: "Technical Meeting", location: "Online" },
-              { date: "15 June", title: "Opening Ceremony", location: "Online" },
-              { date: "15 June", title: "Day 1 Competition", location: "Venue" },
+              { date: "16 June", title: "Opening Ceremony", location: "Offline" },
+              { date: "16 June", title: "Day 1 Competition", location: "Venue" },
               { date: "21 June", title: "Grand Closing", location: "Venue" },
             ].map((item, idx) => (
               <div key={idx} className="relative flex items-center gap-4">
                 {/* Lingkaran dan garis */}
-                <div className="absolute -left-8 items-center">
-                  <div className="w-4 h-4 rounded-full bg-white"></div>
+                <div className="absolute -left-[1.6rem] items-center">
+                  <div className={`w-5 h-5 rounded-full bg-white ${
+                    idx === 0 ? "ring-8 ring-[#FECB62]/100 animate-blink" : ""
+                  }`}></div>
                 </div>
 
                 {/* Konten */}
-                <div className="flex w-full gap-4 py-3 px-5 items-center bg-[#FECB62]">
+                <div className="flex w-full gap-4 py-2 px-2 md:px-5 items-center bg-[#FECB62]">
                   <div className="text-center w-5/12 lg:w-2/12 bg-gradient-to-r from-[#FF8797] to-[#FAACB3] px-1">
                     <p className={`${Lato.className} text-base md:text-xl text-center font-seminold text-[#0A2352] py-2`}>{item.date}</p>
                   </div>

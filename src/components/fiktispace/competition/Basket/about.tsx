@@ -53,7 +53,7 @@ export default function Section1() {
                 <div className={`${Lato.className} text-lg md:text-4xl font-semibold`}>Price</div>
               </div>
               <div className={`${Lato.className} mt-4 text-sm md:text-xl`}>
-                Rp 200.000/Team
+                Rp 100.000/Team
               </div>
             </div>
             {/* location */}
@@ -70,7 +70,7 @@ export default function Section1() {
                 <div className={`${Lato.className} text-lg md:text-4xl font-semibold`}>Location</div>
               </div>
               <div className={`${Lato.className} mt-4 text-sm md:text-xl`}>
-                Golden Sports Arena
+              Sport Centre Kampus H
               </div>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function Section1() {
                 {[
                   { date: "19-28 May", title: "Pendaftaran", location: "Online" },
                   { date: "13 June", title: "Technical Meeting", location: "Online" },
-                  { date: "16, 18, 21 June", title: "Pelaksanaan", location: "Venue" },
+                  { date: "18, 21 June", title: "Pelaksanaan", location: "Venue" },
                     ].map((item, idx) => (
                       <div key={idx} className="relative flex items-center gap-4">
                       {/* Lingkaran dan garis */}
