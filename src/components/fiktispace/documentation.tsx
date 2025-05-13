@@ -1,202 +1,112 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import Image from "next/image";
-import { Guardians } from "@/styles/font";
-export default function DocumentationPage() {
+import { AkiraExpanded, Lato } from "@/styles/font";
+
+const images = [
+  "/fiktispace/documentation/1.JPG",
+  "/fiktispace/documentation/2.JPG",
+  "/fiktispace/documentation/3.JPG",
+  "/fiktispace/documentation/4.JPG",
+  "/fiktispace/documentation/5.JPG",
+  "/fiktispace/documentation/6.JPG",
+  "/fiktispace/documentation/7.JPG",
+  "/fiktispace/documentation/doc5.png",
+  "/fiktispace/documentation/9.JPG",
+  "/fiktispace/documentation/10.JPG",
+  "/fiktispace/documentation/11.JPG",
+  "/fiktispace/documentation/12.JPG",
+  "/fiktispace/documentation/13.JPG",
+  "/fiktispace/documentation/14.JPG",
+  "/fiktispace/documentation/15.JPG",
+  "/fiktispace/documentation/16.JPG",
+  "/fiktispace/documentation/17.JPG",
+  "/fiktispace/documentation/18.JPG",
+  "/fiktispace/documentation/19.JPG",
+  "/fiktispace/documentation/20.JPG",
+];
+
+const positions = [
+  { top: "5%", left: "0%" },
+  { top: "5%", left: "20%" },
+  { top: "5%", left: "40%" },
+  { top: "5%", left: "60%" },
+  { top: "5%", left: "80%" },
+
+  { top: "25%", left: "5%" },
+  { top: "25%", left: "25%" },
+  { top: "25%", left: "45%" },
+  { top: "25%", left: "65%" },
+  { top: "25%", left: "85%" },
+
+  { top: "58%", left: "0%" },
+  { top: "58%", left: "20%" },
+  { top: "58%", left: "40%" },
+  { top: "58%", left: "60%" },
+  { top: "58%", left: "80%" },
+
+  { top: "80%", left: "5%" },
+  { top: "80%", left: "25%" },
+  { top: "80%", left: "45%" },
+  { top: "80%", left: "65%" },
+  { top: "80%", left: "85%" },
+];
+
+export default function FloatingGallery() {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.utils.toArray<HTMLElement>(".floating-image").forEach((image) => {
+        gsap.to(image, {
+          y: "random(-20, 20)",
+          duration: gsap.utils.random(3, 6),
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut",
+          delay: gsap.utils.random(0, 1.5),
+        });
+      });
+    }, containerRef);
+  
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div>
-      <div className="mt-8">
-        <div className="my-8 px-8 justify-center items-center md:hidden">
-          <div className="flex justify-center items-center">
-            <div>
-              <h1 className={`text-[#E8E8F0] text-lg ${Guardians.className}`}>
-                Documentation
-              </h1>
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <div className="mt-4 bg-gray-200 rounded-lg border-4 w-[310px] border-gray-200">
-              <div className="flex gap-1">
-                <Image
-                  src={"/fiktispace/doc1.png"}
-                  alt="doc1"
-                  width={205}
-                  height={200}
-                ></Image>
-                <Image
-                  src={"/fiktispace/doc2.png"}
-                  alt="doc2"
-                  width={91}
-                  height={128}
-                ></Image>
-              </div>
-              <div className="flex mt-1 gap-1 justify-center">
-                <Image
-                  src={"/fiktispace/doc3.png"}
-                  alt="doc3"
-                  width={305}
-                  height={300}
-                ></Image>
-              </div>
-              <div className="flex mt-1 gap-2 justify-center">
-                <Image
-                  src={"/fiktispace/doc4.png"}
-                  alt="doc4"
-                  width={115}
-                  height={130}
-                ></Image>
-                <Image
-                  src={"/fiktispace/doc5.png"}
-                  alt="doc5"
-                  width={180}
-                  height={128}
-                ></Image>
-              </div>
-              <div className="flex mt-1 gap-1 justify-center">
-                <Image
-                  src={"/fiktispace/doc6.png"}
-                  alt="doc6"
-                  width={160}
-                  height={128}
-                ></Image>
-                <Image
-                  src={"/fiktispace/doc7.png"}
-                  alt="doc7"
-                  width={140}
-                  height={128}
-                ></Image>
-              </div>
-              <div className="flex mt-1 gap-1 justify-center">
-                <Image
-                  src={"/fiktispace/doc8.png"}
-                  alt="doc8"
-                  width={305}
-                  height={128}
-                ></Image>
-              </div>
-              <div className="flex mt-1 gap-1 justify-center">
-                <Image
-                  src={"/fiktispace/doc9.png"}
-                  alt="doc9"
-                  width={150}
-                  height={128}
-                ></Image>
-                <Image
-                  src={"/fiktispace/doc10.png"}
-                  alt="doc10"
-                  width={150}
-                  height={128}
-                ></Image>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section
+      ref={containerRef}
+      className="relative w-full md:min-h-[120vh] lg:min-h-[150vh] bg-[#FAACB3] overflow-hidden flex items-center justify-center"
+      style={{
+        background: "linear-gradient(to bottom, #112C70 0%, #3D4F9E 5%, #FDB7C4 10%, #FDB7C4 90%, #3D4F9E 95%, #112C70 100%)"
+      }}
+    >
+      {/* Centered Title */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center z-10 text-center">
+        <h1 className={`text-lg md:text-4xl text-[#0A2352] ${AkiraExpanded.className}`}>
+          Documentation
+        </h1>
+        <span className={`text-sm md:text-lg text-[#0A2352] mt-1 ${Lato.className}`}>
+          Celebrating Moments Together
+        </span>
       </div>
 
-      {/*Desktop*/}
-      <div className="md:block hidden mt-8">
-        <div className="my-8 px-6">
-          <div className="flex justify-center">
-            <div>
-              <h1 className={`text-[#E8E8F0] text-2xl ${Guardians.className}`}>
-                Documentation
-              </h1>
-            </div>
+      {/* Floating Images */}
+      <div className="absolute w-[90%] h-[85%] z-0">
+        {images.map((src, i) => (
+          <div
+            key={i}
+            className="floating-image absolute w-[18%] h-[18%]"
+            style={positions[i]}
+          >
+            <Image
+              src={src}
+              alt={`doc${i + 1}`}
+              fill
+              className="object-contain rounded-2xl"
+            />
           </div>
-          <div className="justify-center items-center flex">
-            <div className="mt-4 bg-gray-200 rounded-lg border-4 w-[1072px] border-gray-200 ">
-              <div className="flex mt-1">
-                <div className="flex flex-col gap-2.5 ml-1">
-                  <div>
-                    <Image
-                      src={"/fiktispace/doc1.png"}
-                      alt="doc1"
-                      width={463}
-                      height={200}
-                    ></Image>
-                  </div>
-                  <div className="">
-                    <Image
-                      src={"/fiktispace/doc5.png"}
-                      alt="doc5"
-                      width={463}
-                      height={287}
-                    ></Image>
-                  </div>
-                  <div>
-                    <Image
-                      src={"/fiktispace/doc3desktop.png"}
-                      alt="doc3"
-                      width={440}
-                      height={287}
-                    ></Image>
-                  </div>
-                </div>
-                <div className="flex-colgap-2.5 ml-1">
-                  <div>
-                    <Image
-                      src={"/fiktispace/doc2.png"}
-                      alt="doc2"
-                      width={299}
-                      height={400}
-                    ></Image>
-                  </div>
-                  <div className="mt-1">
-                    <Image
-                      src={"/fiktispace/doc6.png"}
-                      alt="doc6"
-                      width={355}
-                      height={230}
-                    ></Image>
-                  </div>
-                </div>
-                <div className="flex-col  gap-2.5 ml-1">
-                  <div>
-                    <Image
-                      src={"/fiktispace/doc4.png"}
-                      alt="doc4"
-                      width={390}
-                      height={386}
-                    ></Image>
-                  </div>
-                  <div className="mt-1">
-                    <Image
-                      src={"/fiktispace/doc7.png"}
-                      alt="doc7"
-                      width={393}
-                      height={386}
-                    ></Image>
-                  </div>
-                </div>
-              </div>
-              <div className="flex gap-2.5 mt-1">
-                <div className="justify-center flex items-center">
-                  <Image
-                    src={"/fiktispace/doc8desktop.png"}
-                    alt="doc8"
-                    width={385}
-                    height={341}
-                  ></Image>
-                </div>
-                <div>
-                  <Image
-                    src={"/fiktispace/doc9.png"}
-                    alt="doc9"
-                    width={329}
-                    height={341}
-                  ></Image>
-                </div>
-                <div>
-                  <Image
-                    src={"/fiktispace/doc10.png"}
-                    alt="doc10"
-                    width={329}
-                    height={341}
-                  ></Image>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 }

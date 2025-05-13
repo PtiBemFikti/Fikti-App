@@ -1,36 +1,30 @@
 "use client";
 
-// components/Navbar.tsx
 import { useState } from "react";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
-import DropdownMenuNav from "./DropdownMenu";
-import { Guardians } from "@/styles/font";
-import OlahragaDropdown from "./OlahragaDropdown";
-import SeniDropdown from "./SeniDropdown";
-import EsportDropdown from "./EsportDropdown";
-import DaftarDropdown from "./DaftarDropdown";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
   const controls = useAnimation();
 
   const toggleMenu = async () => {
     // Set animasi saat menu dibuka
     await controls.start({
       opacity: isMenuOpen ? 0 : 1,
-      y: isMenuOpen ? -10 : 0,
+      y: isMenuOpen ? -5 : 0,
       animation: "infinite",
-      transition: { duration: 2, delay: 1 },
+      transition: { duration: 0.5, delay: 0.5 },
     });
 
     // Set animasi saat menu ditutup
     if (!isMenuOpen) {
       await controls.start({
         opacity: 0,
-        y: -10,
-        transition: { duration: 0.5, delay: 2 },
+        y: -5,
+        transition: { duration: 0.5, delay: 0.5 },
         animation: "backwards",
       });
     }
@@ -44,124 +38,109 @@ const Navbar: React.FC = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-[#0A0723] p-4 sticky top-0 z-50"
+      className="bg-[#112C70] px-4 lg:px-16 py-4 fixed w-full z-30"
     >
-      <div className="container mx-auto flex justify-between items-center md:-mb-32">
-        <Link href="#" className="flex items-center ml-5 md:mb-32">
-          <Image
-            src="/fiktispace/logofs.png"
-            alt="Logo"
-            width={50}
-            height={50}
-            className="mr-2"
-          />
-        </Link>
-        <div className="text-[#F1EAF6] font-['Poppins'] md:hidden block md:mb-32">
-          <h1 className={`${Guardians.className} font-bold text-lg`}>
-            FIKTI SPACE
-          </h1>
-        </div>
-        <div className="hidden md:flex md:gap-10 space-x-4 -ml-80 md:mb-32">
-          <a
-            className="block text-[#F1EAF6] text-lg hover:text-purpleText duration-300 mt-4"
-            href="#about"
-          >
-            About
-          </a>
-          <div className="block text-lg hover:text-purpleText duration-300 py-2">
-            <DropdownMenuNav />
-          </div>
-          <Link
-            className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300 mt-4"
-            href="#schedule"
-          >
-            Schedule
-          </Link>
-          <Link
-            className="block text-lg text-[#F1EAF6] hover:text-purpleText duration-300 mt-4"
-            href="#contact"
-          >
-            Contacts
-          </Link>
-          {/* <Link
-            className="block text-black hover:text-purpleText duration-300 py-2"
-            href="/dept&biro"
-          >
-            Departemen
-          </Link> */}
-
-          {/* Add more navigation links as needed */}
-        </div>
-        <div className="md:block hidden">
-          <div className="flex justify-between items-center w-64 h-14 bg-[#0A0723] rounded-[24px] mb-32">
-            {/* <div className="px-5 rounded-[21px] text-lg h-11 w-48 mx-3 flex justify-center items-center ml-3"> */}
-            <DaftarDropdown />
-            {/* </div> */}
-          </div>
-        </div>
-        <div className="md:hidden">
-          {/* Hamburger menu icon */}
-          <button
-            onClick={toggleMenu}
-            className={`text-white mr-4 p-1 md:mb-32 ${
-              isMenuOpen
-                ? "bg-[#0A0723] backdrop-blur-sm shadow-md rounded-md "
-                : ""
-            }`}
-          >
+      <div className="">
+        <div className="bg-[#2A2364] items-center flex justify-between px-5 py-3 rounded-2xl">
+          <Link href="#" className="items-center">
             <Image
-              src={"/fiktispace/hamburgerbtn.png"}
-              alt="Hamburger menu Btn"
-              width={20}
-              height={20}
+              src="/fiktispace/LOGO FS 4.png"
+              alt="Logo"
+              width={75}
+              height={75}
+              className="mr-2"
             />
-          </button>
+          </Link>
+          <div className="hidden lg:flex md:gap-20">
+            <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="#compe-list">
+              Competition List
+            </Link>
+            <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="#schedule">
+              Schedule
+            </Link>
+            <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="#documentation">
+              Documentation
+            </Link>
+            <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="#contact">
+              FAQ
+            </Link>
+          </div>
+          <div className="hidden lg:flex justify-evenly gap-10">
+            {/* Dropdown Button */}
+            <div
+              className="relative"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <button className="bg-[#FF8797] rounded-lg px-5 py-2">Contact Us</button>
+            
+              {/* Dropdown Menu */}
+              {isDropdownOpen && (
+                <div className="absolute top-9 right-0 bg-[#FF8797] rounded-lg p-2 shadow-lg w-44 z-10">
+                  <Link href="https://wa.me/62085819191776">
+                    <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP1 (Siti Nazua)</p>
+                  </Link>
+                  <Link href="https://wa.me/6285883321315">
+                    <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP2 (Nayla)</p>
+                  </Link>
+                </div>
+              )}
+            </div>
+            <Link className="" href="">
+              <button className="bg-[#FF8797] rounded-lg px-5 py-2">Daftar</button>
+            </Link>
+          </div>
+          <div className="lg:hidden items-center">
+            {/* Hamburger menu icon */}
+            <button
+              onClick={toggleMenu}
+              className={`text-white mr-4 p-1 lg:mb-32 ${
+                isMenuOpen
+                  ? "bg-[#0A0723] shadow-md rounded-md "
+                  : ""
+              }`}
+            >
+              <Image
+                src={"/fiktispace/hamburgerbtn.png"}
+                alt="Hamburger menu Btn"
+                width={30}
+                height={30}
+              />
+            </button>
+          </div>
         </div>
       </div>
       {isMenuOpen && (
         <motion.div
-          className="flex flex-col gap-3 md:hidden mt-4"
-          initial={{ opacity: 0, y: -10 }}
+          className="flex flex-col gap-3 lg:hidden py-5 bg-[#2A2364] -mt-3 rounded-br-2xl rounded-bl-2xl"
+          initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          exit={{ opacity: 0, y: 0 }}
+          transition={{ duration: 0.2, ease: "easeIn" }}
           onClick={toggleMenu}
         >
-          <Link
-            className="text-[#F1EAF6] hover:text-purpleText text-lg text-center"
-            href="#about"
-          >
-            About
+          <Link className="text-white hover:text-[#FF8797] text-lg text-center" href="#compe-list">
+            Competition List
           </Link>
-          <div className="text-[#F1EAF6] hover:text-purpleText text-lg text-center">
-            <OlahragaDropdown />
-          </div>
-          <div className="text-[#F1EAF6] hover:text-purpleText text-lg text-center">
-            <EsportDropdown />
-          </div>
-          <div className="text-[#F1EAF6] hover:text-purpleText text-lg text-center">
-            <SeniDropdown />
-          </div>
-          <Link
-            className="text-[#F1EAF6] hover:text-purpleText text-lg text-center"
-            href="#schedule"
-          >
-            Schedule
+          <Link className="text-white hover:text-[#FF8797] text-lg text-center" href="#schedule">
+            Schedule  
           </Link>
-          <Link
-            className="text-[#F1EAF6] hover:text-purpleText text-lg text-center"
-            href="#contact"
-          >
-            Contact
+          <Link className="text-white hover:text-[#FF8797] text-lg text-center" href="#documentation">
+            Documentation
           </Link>
-          <div className="md:hidden block">
-            <div className="flex justify-center items-center">
-              <div className="flex justify-center items-center w-80 h-14 bg-[#0A0723] rounded-[24px]">
-                {/* <div className="px-5 rounded-[21px] text-lg h-11 bg-[#1D1564] w-48 flex justify-center items-center hover:bg-[#1A135A] text-[#F1EAF6]"> */}
-                <DaftarDropdown />
-                {/* </div> */}
-              </div>
-            </div>
+          <Link className="text-white hover:text-[#FF8797] text-lg text-center" href="#contact">
+            FAQ
+          </Link>
+          <div className="lg:hidden flex flex-col gap-3 px-10">
+            <Link className="" href="https://wa.me/62085819191776">
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">CP1 (Siti Nazua)</button>
+            </Link>
+            <Link className="" href="https://wa.me/6285883321315">
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">CP2 (Nayla)</button>
+            </Link>
+            <Link className="justify-center" href="">
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">Daftar</button>
+            </Link>
           </div>
         </motion.div>
       )}

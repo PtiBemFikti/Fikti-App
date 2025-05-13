@@ -26,6 +26,9 @@ const config: Config = {
         'purple-normal': '#340660',
         'red-normal-1': '#833344',
         'green-fikti': '#36B276',
+        'dark-green-fikti': '#012F24',
+        'cream-fikti': '#F1F1BC',
+        'cyan-fikti': '#2CD0B0',
         'dark-purple': '#25274D',
         'light-purple': '#6C2A87'
       },
@@ -42,6 +45,7 @@ const config: Config = {
         marqueereverse: 'marqueereverse 45s linear infinite',
         marqueereverse2: 'marqueereverse2 45s linear infinite',
         'text-slide-2': 'text-slide-2 5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        float: 'float 4s ease-in-out infinite',
       },
       keyframes: {
         marquee: {
@@ -60,10 +64,16 @@ const config: Config = {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(100%)' },
         },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
       },
     },
   },
 
   plugins: [require('daisyui'), nextui()],
+
+  
 };
 export default config;

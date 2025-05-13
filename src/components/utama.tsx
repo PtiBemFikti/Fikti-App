@@ -1,14 +1,11 @@
 "use client";
 
-import Dept from "@/components/landing-page/dept";
-import VisiMisi from "@/components/landing-page/visimisi";
-import CoreValue from "@/components/landing-page/coreValue";
-import ParallaxText from "@/components/landing-page/parallaxText";
-import { motion, useScroll, useSpring } from "framer-motion";
-import { Example } from "@/components/landing-page/slider";
-import HeroSection from "./landing-page/dashboard";
-import AboutPage from "./landing-page/about";
-import ProjekKamiSection from "./landing-page/project";
+import { useScroll, useSpring } from "framer-motion";
+import HeroSection from "./landing-page/HeroSection";
+import ProjekKamiSection from "./landing-page/Projects";
+import Hotline from "./landing-page/Hotline";
+import CompanyProfileSection from "./landing-page/CompanyProfile";
+import UpcomingEventSection from "./landing-page/UpcomingEvent";
 
 export default function UtamaPage() {
   const { scrollYProgress } = useScroll();
@@ -18,21 +15,12 @@ export default function UtamaPage() {
     restDelta: 0.001,
   });
   return (
-    <div className="flex max-w-full min-h-screen flex-col items-center justify-between">
+    <div className="flex max-w-full min-h-screen flex-col items-center justify-between bg-cream-fikti">
       <HeroSection />
-      <AboutPage />
-      <CoreValue />
+      <CompanyProfileSection />
       <ProjekKamiSection />
-      {/* <VisiMisi /> */}
-      {/* <section className="flex justify-center items-center overflow-hidden w-full">
-        <div className="w-96 h-96 relative flex justify-center items-center my-20">
-          <Example />
-        </div>
-      </section> */}
-      {/* <motion.div
-        className="progress fixed left-0 right-0 h-[5px] bg-orangeText top-[67px] md:top-[76px] z-10"
-        style={{ scaleX }}
-      /> */}
+      {/* <UpcomingEventSection /> */}
+      <Hotline />
     </div>
   );
 }

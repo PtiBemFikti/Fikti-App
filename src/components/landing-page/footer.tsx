@@ -7,52 +7,51 @@ import { FaInstagram, FaTiktok, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 
-import { MonumentExtendedRegular } from "@/styles/font";
+import {
+  MonumentExtendedBold,
+  MonumentExtendedRegular,
+  Montserrat,
+} from "@/styles/font";
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative border-t-2 border-slate-700 rounded-md bg-transparent p-4 bottom-0 overflow-x-hidden">
-      <div className="wrapper">
-        {/* Blop Elemen Tambahan */}
+    <footer className="relative h-fit rounded-md bg-dark-green-fikti p-4 bottom-0 overflow-x-hidden overflow-y-hidden">
+      {/* <div className="wrapper">
         <div className="blop1"></div>
         <div className="blop2"></div>
         <div className="blop3"></div>
-      </div>
-      <h1
-        className={`${MonumentExtendedRegular.className} max-md:text-[1.3rem] max-md:mx-5 max-md:my-7 relative z-20 text-center text-[5rem] px-5 py-7 mx-40 my-14 border-2 border-white italic font-Bricolage_Grotesque hover:shadow-lg hover:shadow-white hover:bg-white hover:text-black transition-all duration-500 rounded-2xl cursor-pointer`}
-      >
-        KABINET ADIRAKA
-      </h1>
+      </div> */}
+
       <div
-        className="flex flex-col md:flex-row items-center justify-around relative z-20 gap-10 py-10
+        className="flex flex-col lg:flex-row items-center justify-around relative z-20 gap-10 py-10 lg:pt-20
       "
       >
-        <div className="flex flex-col gap-5 w-[13%] max-md:w-full">
+        <div className="flex flex-col gap-5 lg:w-[13%] w-full">
           <div className="flex flex-col gap-3">
             <h1 className="text-xl font-bold">Tautan Cepat</h1>
             <Link
               href="#about"
-              className="group relative text-gray-400 hover:text-purpleText"
+              className="group relative text-gray-400 hover:text-cream-fikti"
             >
               Tentang Kami
             </Link>
             {/* <Link
               href="#"
-              className="group relative text-gray-400 hover:text-purpleText"
+              className="group relative text-gray-400 hover:text-cream-fikti"
             >
               Organizational Structure
             </Link> */}
             <Link
               href="#"
-              className="group relative text-gray-400 hover:text-purpleText"
+              className="group relative text-gray-400 hover:text-cream-fikti"
             >
               Proyek Kami
             </Link>
             <Link
               href="https://www.instagram.com/fikti.careercenter/"
-              className="group relative text-gray-400 hover:text-purpleText"
+              className="group relative text-gray-400 hover:text-cream-fikti"
             >
               FIKTI Career Center
             </Link>
@@ -64,7 +63,7 @@ const Footer: React.FC = () => {
               <Link
                 href="https://www.instagram.com/ug_bemfikti/"
                 target="_blank"
-                className="flex items-center gap-2 group text-gray-400 hover:text-purpleText"
+                className="flex items-center gap-2 group text-gray-400 hover:text-cream-fikti"
               >
                 <FaInstagram
                   size={25}
@@ -76,7 +75,7 @@ const Footer: React.FC = () => {
               <Link
                 href="http://tiktok.com/@ug.bemfikti"
                 target="_blank"
-                className="flex items-center gap-2 group text-gray-400 hover:text-purpleText"
+                className="flex items-center gap-2 group text-gray-400 hover:text-cream-fikti"
               >
                 <FaTiktok
                   size={25}
@@ -87,7 +86,7 @@ const Footer: React.FC = () => {
               <Link
                 href="https://youtube.com/@BEMFIKTI"
                 target="_blank"
-                className="flex items-center gap-2 group text-gray-400 hover:text-purpleText"
+                className="flex items-center gap-2 group text-gray-400 hover:text-cream-fikti"
               >
                 <FaYoutube
                   size={25}
@@ -98,7 +97,7 @@ const Footer: React.FC = () => {
               <Link
                 href="https://www.linkedin.com/company/bemfikti/"
                 target="_blank"
-                className="flex items-center gap-2 group text-gray-400 hover:text-purpleText"
+                className="flex items-center gap-2 group text-gray-400 hover:text-cream-fikti"
               >
                 <FaLinkedin
                   size={25}
@@ -109,7 +108,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center self- gap-4 max-md:order-1 max-md:self-center">
+        <div className="flex flex-col justify-center items-center self- gap-4 order-1 lg:order-none  max-md:self-center">
           <div className="flex justify-center items-center gap-4 border-b-1 pb-4">
             <div className="w-[7rem] h-[7rem] max-md:w-16 max-md:h-16 bg-white rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-all duration-300">
               <Image
@@ -140,16 +139,22 @@ const Footer: React.FC = () => {
             />
           </div>
 
-          <h1 className="text-lg text-center">
-            Badan Eksekutif Mahasiswa <br />
-            Fakultas Ilmu Komputer dan Teknologi Informasi
-          </h1>
+          <div className="text-center">
+            <h1
+              className={`${MonumentExtendedBold.className} text-2xl tracking-wider`}
+            >
+              BEM FIKTI UG
+            </h1>
+            <h2 className={`${Montserrat.className} text-lg`}>
+              Kabinet Adiraka
+            </h2>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 w-[13%] max-md:w-full">
+        <div className="flex flex-col gap-4 w-full lg:w-[13%] ">
           <h1 className="text-xl">Info Kontak</h1>
           <Link
             href="mailto:bemfikti.ug@gmail.com"
-            className="flex items-center gap-2 text-gray-400 hover:text-purpleText"
+            className="flex items-center gap-2 text-gray-400 hover:text-cream-fikti"
           >
             <CiMail size={25} />
             <p className="ml-2">bemfikti.ug@gmail.com</p>
@@ -157,7 +162,7 @@ const Footer: React.FC = () => {
 
           <Link
             href="https://wa.me/6285150935519"
-            className="flex items-center gap-2 text-gray-400 hover:text-purpleText"
+            className="flex items-center gap-2 text-gray-400 hover:text-cream-fikti"
           >
             <FaPhone size={25} />
             <p className="ml-2">+62 851-5093-5519</p>
@@ -166,10 +171,10 @@ const Footer: React.FC = () => {
             href="https://www.google.com/maps/place/Universitas+Gunadarma/@-6.363234,106.831725,17z" // Ganti dengan link lokasi spesifik
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-start gap-2 text-gray-400 hover:text-purpleText"
+            className="flex items-start gap-2 text-gray-400 hover:text-cream-fikti"
           >
             <FaLocationDot size={25} className="flex-shrink-0" />
-            <p className="ml-2">
+            <p className="ml-2 w-1/2 lg:w-full">
               Alamat Sekretariat BEM FIKTI: Pusat Kegiatan Mahasiswa (PUSGIWA)
               Gedung 4 Lantai 3 Kampus E Universitas Gunadarma Jl. Komjen Pol.
               M. Jasin Kelapa Dua Depok
