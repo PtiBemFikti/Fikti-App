@@ -84,7 +84,7 @@ export default function DataAnalyst() {
  
 
       <div className="mt-10 pb-5">
-        <h1 className="text-black text-lg md:text-3xl italic leading-[150%] text-center">Data Analyst Competition of <br className="md:hidden" />TechnoFair 12.0</h1>
+        <h1 className="text-black text-lg md:text-3xl italic leading-[150%] text-center">Data Analyst Workshop of <br className="md:hidden" />TechnoFair 12.0</h1>
         <div className="pt-6 text-center justify-center flex gap-6">
           <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full">
           Registration
@@ -99,13 +99,13 @@ export default function DataAnalyst() {
         {/* SECTION TIMELINE */} 
       <div className="mt-20 md:hidden">
         <h1 className={`${Montserrat.className} text-center text-xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
-          COMPETITION TIMELINE
+          WORKSHOP TIMELINE
         </h1>
         <Image src="/technofair/logoTF12/timelinetest.png" width={400} height={800} alt="timeline"  className="mx-auto mt-10"/>
       </div>
       <div className="hidden md:block mt-20">
         <h1 className={`${Montserrat.className} text-center text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
-          COMPETITION TIMELINE
+          WORKSHOP TIMELINE
         </h1>
         <Image src="/technofair/logoTF12/timelinetest2.png" width={1450} height={340} alt="timeline"  className="mx-2 mt-10"/>
       </div>
@@ -113,7 +113,7 @@ export default function DataAnalyst() {
         {/* SECTION ABOUT */} 
       <div className="mt-20 pb-5">
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
-          ABOUT THE COMPETITION
+          ABOUT THE WORKSHOP
         </h1>
         <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Kompetisi ini memiliki mekanisme dimana sebuah tim diminta untuk mengambil sebuah file atau string yang sudah disembunyikan sistem, serta mendeteksi lalu mengeksploitasi kelemahan untuk mendapatkan dan mengumpulkan flag sebanyak-banyaknya.</p>
       </div>
