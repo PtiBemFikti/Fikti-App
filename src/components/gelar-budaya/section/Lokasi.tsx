@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { MonumentExtendedBold } from "@/styles/font";
 import { FaParking, FaWalking, FaTrain, FaBus } from "react-icons/fa";
+import Link from "next/link";
 export default function GelbudLokasi() {
   const container = {
     hidden: { opacity: 0 },
@@ -61,7 +62,7 @@ export default function GelbudLokasi() {
           className="w-full max-w-4xl overflow-hidden rounded-[30px] shadow-lg"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126917.24591120477!2d106.68943191649035!3d-6.229728070672834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3d160204a25%3A0x3027a76e352be20!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1714404000000!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4274.675826034588!2d106.81664147499198!3d-6.404731693585994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb26a97b04fb%3A0x23b9b69723b42885!2sKafe%20Hype%20Depok!5e1!3m2!1sid!2sid!4v1747242312110!5m2!1sid!2sid"
             width="100%"
             height="400"
             style={{ border: 0 }}
@@ -127,9 +128,13 @@ export default function GelbudLokasi() {
             </div>
           </div>
 
-          <button className=" mt-6 px-6 py-3 bg-black text-white rounded-2xl">
+          <Link
+            target="_blank"
+            href="https://www.google.com/maps/place/Kafe+Hype+Depok/@-6.4047317,106.8166361,982m/data=!3m1!1e3!4m6!3m5!1s0x2e69eb26a97b04fb:0x23b9b69723b42885!8m2!3d-6.4047317!4d106.8192164!16s%2Fg%2F11kj8fpbd8?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D"
+            className=" mt-6 px-6 py-3 bg-black text-white rounded-2xl"
+          >
             Petunjuk Arah
-          </button>
+          </Link>
         </motion.div>
       </motion.div>
     </section>
