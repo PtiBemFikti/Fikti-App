@@ -3,26 +3,33 @@
 import { motion } from "framer-motion";
 import { MonumentExtendedBold } from "@/styles/font";
 import { FaTicketAlt } from "react-icons/fa";
+import Link from "next/link";
 
 export default function GelbudTicketSection() {
   const tickets = [
     {
       title: "Daily Pass",
-      type: "General Admission (GA)",
-      note: "Presale 1",
-      price: "IDR 1.000K",
+      benefits: "Kipas Kerang + Pin Button",
+      note: "Presale",
+      price: "IDR 35k",
     },
     {
-      title: "VIP Access",
-      type: "Exclusive Area + Merchandise",
-      note: "Presale 1",
-      price: "IDR 2.500K",
+      title: "Daily Pass",
+      benefits: "Kipas Kerang + Keychain + Stiker",
+      note: "Presale",
+      price: "IDR 50K",
     },
     {
-      title: "Group Bundle",
-      type: "4 Tickets + Priority Entry",
-      note: "Limited Slots",
-      price: "IDR 3.800K",
+      title: "Daily Pass",
+      benefits: "Tote Bag + Kipas Kerang + Stiker",
+      note: "Presale",
+      price: "IDR 60K",
+    },
+    {
+      title: "Daily Pass",
+      benefits: "Tumblr + Kipas Kerang + Stiker",
+      note: "Presale",
+      price: "IDR 75K",
     },
   ];
 
@@ -63,7 +70,7 @@ export default function GelbudTicketSection() {
 
   return (
     <section className="bg-black text-white  px-6 h-fit py-20 md:py-10 md:h-fit flex items-center justify-center">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -81,13 +88,13 @@ export default function GelbudTicketSection() {
             variants={item}
             className="text-lg text-gray-300 mb-12 md:mb-16 max-w-2xl mx-auto"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            HTM yang dibayar akan menyesuaikan benefit yang akan didapat.
           </motion.p>
 
           {/* Ticket Cards */}
           <motion.div
             variants={container}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
           >
             {tickets.map((ticket, index) => (
               <motion.div
@@ -98,34 +105,33 @@ export default function GelbudTicketSection() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 custom={index}
-                className="bg-[#14142f] rounded-3xl px-6 py-10 md:py-12 shadow-lg flex flex-col justify-between hover:shadow-white transition-all duration-200"
+                className="bg-[#14142f] rounded-3xl px-6 py-10 md:py-12  shadow-lg flex flex-col justify-between hover:shadow-white transition-all duration-200"
               >
                 <div className="flex flex-col items-center gap-3">
                   <span className="uppercase text-sm text-gray-400 tracking-wider">
                     {ticket.title}
                   </span>
-                  <h3 className="text-xl font-bold text-white text-center">
-                    {ticket.type}
+                  <h3 className="text-2xl font-bold text-white text-center">
+                    {ticket.benefits}
                   </h3>
                   <p className="text-sm text-gray-400">{ticket.note}</p>
 
                   <div className="border-t border-gray-600 my-6 w-full" />
 
                   <div className="text-center">
-                    <p className="text-gray-400 text-sm mb-1">Starts from</p>
-                    <p className="text-3xl font-bold text-white">
+                    <p className="text-gray-400 text-sm mb-3">Starts from</p>
+                    <h1 className="text-4xl font-extrabold text-white">
                       {ticket.price}
-                    </p>
+                    </h1>
                   </div>
                 </div>
 
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="mt-8 bg-yellow-400 text-black font-semibold px-5 py-3 rounded-full hover:bg-yellow-300 transition w-full"
+                <Link
+                  href="https://bit.ly/RegistrasiPesertaGelarBudaya2025"
+                  className="mt-8 bg-yellow-400 text-black font-semibold px-5 py-3 rounded-full hover:bg-yellow-300 hover:scale-105 transition w-full"
                 >
                   <FaTicketAlt className="inline mr-2" /> Beli Tiket
-                </motion.button>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
