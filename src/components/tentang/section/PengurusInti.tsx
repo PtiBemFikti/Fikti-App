@@ -120,69 +120,6 @@ export default function PengurusIntiSection() {
         </h1>
       </motion.div>
 
-      {/* Badan Pengurus Harian */}
-      <motion.div
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        custom={2}
-        className="w-full"
-      >
-        <h2 className="text-center text-2xl font-semibold mb-4">
-          Badan Pengurus Harian
-        </h2>
-        <div className="relative overflow-hidden w-full md:w-[100%] lg:w-[70%] mx-auto">
-          <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{
-              transform: `translateX(-${
-                pengurusIntiIndex * (100 / slidesToShow)
-              }%)`,
-            }}
-          >
-            {badanPengurusHarian.map((bph, index) => (
-              <motion.div
-                key={index}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                custom={index * 0.2 + 2.2}
-                className="w-full flex-shrink-0 p-4"
-                style={{ width: `${100 / slidesToShow}%` }}
-              >
-                <Card foto={bph.foto} nama={bph.nama} jabatan={bph.jabatan} />
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Navigasi */}
-          <motion.button
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={2.5}
-            onClick={pengurusIntiPrev}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-dark-green-fikti text-cream-fikti p-2 rounded-full shadow-lg hover:bg-gray-700"
-          >
-            <FaChevronLeft size={24} />
-          </motion.button>
-          <motion.button
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={2.5}
-            onClick={pengurusIntiNext}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-dark-green-fikti text-cream-fikti p-2 rounded-full shadow-lg hover:bg-gray-700"
-          >
-            <FaChevronRight size={24} />
-          </motion.button>
-        </div>
-      </motion.div>
-
       {/* Satuan Pengendali Internal */}
       <motion.div
         variants={fadeUp}
@@ -239,6 +176,69 @@ export default function PengurusIntiSection() {
             viewport={{ once: true }}
             custom={3.5}
             onClick={kontrolInternalNext}
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-dark-green-fikti text-cream-fikti p-2 rounded-full shadow-lg hover:bg-gray-700"
+          >
+            <FaChevronRight size={24} />
+          </motion.button>
+        </div>
+      </motion.div>
+
+      {/* Badan Pengurus Harian */}
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        custom={2}
+        className="w-full"
+      >
+        <h2 className="text-center text-2xl font-semibold mb-4">
+          Badan Pengurus Harian
+        </h2>
+        <div className="relative overflow-hidden w-full md:w-[100%] lg:w-[70%] mx-auto">
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{
+              transform: `translateX(-${
+                pengurusIntiIndex * (100 / slidesToShow)
+              }%)`,
+            }}
+          >
+            {badanPengurusHarian.map((bph, index) => (
+              <motion.div
+                key={index}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                custom={index * 0.2 + 2.2}
+                className="w-full flex-shrink-0 p-4"
+                style={{ width: `${100 / slidesToShow}%` }}
+              >
+                <Card foto={bph.foto} nama={bph.nama} jabatan={bph.jabatan} />
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Navigasi */}
+          <motion.button
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            custom={2.5}
+            onClick={pengurusIntiPrev}
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-dark-green-fikti text-cream-fikti p-2 rounded-full shadow-lg hover:bg-gray-700"
+          >
+            <FaChevronLeft size={24} />
+          </motion.button>
+          <motion.button
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            custom={2.5}
+            onClick={pengurusIntiNext}
             className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-dark-green-fikti text-cream-fikti p-2 rounded-full shadow-lg hover:bg-gray-700"
           >
             <FaChevronRight size={24} />
