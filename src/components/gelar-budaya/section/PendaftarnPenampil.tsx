@@ -59,7 +59,7 @@ export default function GelbudPendaftaran() {
         >
           <div className="bg-white/5 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/gelar-budaya/musik.jpeg"
+              src="/gelar-budaya/performance1.png"
               alt="Tampil Musik"
               width={800}
               height={800}
@@ -74,7 +74,7 @@ export default function GelbudPendaftaran() {
           </div>
           <div className="bg-white/5 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/gelar-budaya/cas.jpg"
+              src="/gelar-budaya/performance2.png"
               alt="Tampil Nyanyi"
               width={800}
               height={800}
@@ -91,7 +91,7 @@ export default function GelbudPendaftaran() {
 
         <motion.div variants={item}>
           <Link
-            href="https://forms.gle/xxx-link-form-pendaftaran"
+            href="https://bit.ly/RegistrasiPenampilGelarBudaya2025"
             target="_blank"
             className="inline-block bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition"
           >
