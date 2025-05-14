@@ -47,14 +47,14 @@ export default function GelbudLokasi() {
           Lokasi Acara
         </motion.h2>
         {/* KETERANGAN */}
-        <motion.div variants={item} className="mb-6 text-center max-w-2xl">
+        {/* <motion.div variants={item} className="mb-6 text-center max-w-2xl">
           <p className="text-gray-600">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
             voluptatibus amet perspiciatis ab, temporibus dignissimos itaque a
             nam alias dolore, reiciendis voluptatum explicabo cupiditate enim
             sint at similique facere illum?
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* MAP */}
         <motion.div
