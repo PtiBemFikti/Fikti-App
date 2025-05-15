@@ -8,20 +8,23 @@ import DocumentationPage from "@/components/fiktispace/documentation";
 import TimelinePage from "@/components/fiktispace/timeline";
 import FaqPage from "@/components/fiktispace/faq";
 import FooterPage from "@/components/fiktispace/footer";
+import TextSlider from "@/components/fiktispace/TextSlider";
 export default function FSPage() {
   return (
     <div>
-      <main className="bg-[#112C70] bg-cover bg-no-repeat scroll-smooth overflow-x-hidden scroll-m-48">
+      <main className="bg-[#0A2352] bg-cover bg-no-repeat scroll-smooth overflow-x-hidden scroll-m-48">
         <Navbar />
         <DashboardPage />
         <section>
           <AboutPage />
         </section>
         <div>
-          <section id="compe-list">
+          <section id="compe-list" className="mt-28 md:mt-0">
+          <TextSlider direction="left" />
             <div className="bg-[url('/fiktispace/bg-desktop.png')] bg-cover bg-repeat">
               <CompetitionPage />
             </div>
+          <TextSlider direction="right" />
           </section>
           <section id="schedule">
             <div>
