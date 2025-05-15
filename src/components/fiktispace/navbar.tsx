@@ -38,10 +38,10 @@ const Navbar: React.FC = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-[#112C70] px-4 lg:px-16 py-4 fixed w-full z-30"
+      className="bg-[#0A2352] px-4 lg:px-16 py-3.5 fixed w-full z-30"
     >
       <div className="">
-        <div className="bg-[#2A2364] items-center flex justify-between px-5 py-3 rounded-2xl">
+        <div className="bg-[#2A2364] items-center flex justify-between px-5 py-4 rounded-2xl">
           <Link href="#" className="items-center">
             <Image
               src="/fiktispace/LOGO FS 4.png"
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
               FAQ
             </Link>
           </div>
-          <div className="hidden lg:flex justify-evenly gap-10">
+          <div className="hidden lg:flex lg:w-3/12 justify-end gap-6">
             {/* Dropdown Button */}
             <div
               className="relative"
