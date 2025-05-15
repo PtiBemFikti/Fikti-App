@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function TimelinePage() {
   return (
     <div>
-      <div className="pt-[7.5rem] pb-20 -mb-10">
+      <div className="-mt-[2rem] pt-[7.75rem] pb-10">
         <div className="text-center">
           <h1 className={`text-3xl md:text-[2.8rem] lg:text-[3rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className}`}>
             SCHEDULE
@@ -19,8 +19,8 @@ export default function TimelinePage() {
             {[
               { date: "19-28 May", title: "Pendaftaran", location: "Online" },
               { date: "13 June", title: "Technical Meeting", location: "Online" },
-              { date: "16 June", title: "Opening Ceremony", location: "Offline" },
-              { date: "16 June", title: "Day 1 Competition", location: "Venue" },
+              { date: "16 June", title: "Opening Ceremony", location: "Venue" },
+              { date: "16-21 June", title: "Competition Day", location: "Venue and Online" },
               { date: "21 June", title: "Grand Closing", location: "Venue" },
             ].map((item, idx) => (
               <div key={idx} className="relative flex items-center gap-4">
