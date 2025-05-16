@@ -85,7 +85,7 @@ export default function Section1() {
               <div className="absolute top-0 bottom-0 w-[0.25rem] bg-white"></div>{/* Garis vertikal di pinggir kiri */}
               <div className="space-y-5 pl-[1.6rem]">
                 {[
-                  { date: "19-28 May", title: "Pendaftaran", location: "Online" },
+                  { date: "19-28 May", title: "Registration", location: "Online" },
                   { date: "13 June", title: "Technical Meeting", location: "Online" },
                   { date: "17 June", title: "Pelaksanaan", location: "Venue" },
                     ].map((item, idx) => (

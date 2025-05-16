@@ -36,7 +36,7 @@ export default function Section1() {
                 <div className={`${Lato.className} text-lg md:text-4xl font-semibold`}>Contact</div>
               </div>
               <div className={`${Lato.className} mt-4 text-sm md:text-xl`}>
-                Nazua  : +62 858-1919-1776 <br/>Nayla &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : +62 858-8332-1315
+                Nazua&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : +62 858-1919-1776 <br/>Nayla &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : +62 858-8332-1315
               </div>
             </div>
             {/* HTM */}
@@ -85,7 +85,7 @@ export default function Section1() {
               <div className="absolute top-0 bottom-0 w-[0.25rem] bg-white"></div>{/* Garis vertikal di pinggir kiri */}
               <div className="space-y-5 pl-[1.6rem]">
                 {[
-                  { date: "19-28 May", title: "Pendaftaran", location: "Online" },
+                  { date: "19-28 May", title: "Registration", location: "Online" },
                   { date: "13 June", title: "Technical Meeting", location: "Online" },
                   { date: "19, 20 June", title: "Pelaksanaan", location: "Venue" },
                     ].map((item, idx) => (
