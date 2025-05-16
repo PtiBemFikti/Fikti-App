@@ -18,7 +18,7 @@ export default function AboutPage() {
             Fuel the passion, embrace the challenge! */}
             </p>
           </div>
-          <div className=" flex border-t lg:border-t-0 lg:border-l border-white items-center">
+          <div className=" flex border-t lg:border-t-0 lg:border-l border-white items-center pt-6 lg:pt-0">
             <div className="-mr-5 lg:-mr-10">
               <Image
                 src={"/fiktispace/Nebula_polos.png"}
