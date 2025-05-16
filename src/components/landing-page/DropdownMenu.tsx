@@ -43,6 +43,9 @@ export default function DropdownMenuNav() {
         <DropdownItem href="/fiktispace" className="text-[#241525]">
           FIKTI Space
         </DropdownItem>
+        <DropdownItem href="/gelar-budaya" className="text-[#241525]">
+          Gelar Budaya
+        </DropdownItem>
         <DropdownItem href="/pemira" className="text-[#241525]">
           PEMIRA
         </DropdownItem>
