@@ -39,7 +39,7 @@ const syllabus : Record < string,
         "SYARAT DAN KETENTUAN PESERTA": {
             points: [
               "1. Setiap tim maksimal terdiri dari 10 pemain.", 
-              "2. Untuk tim, dijadikan aturan bebas tim namun seangkatan yang sama dengan ketentuan maksimal 3 kelas campuran", 
+              // "2. Untuk tim, dijadikan aturan bebas tim namun seangkatan yang sama dengan ketentuan maksimal 3 kelas campuran", 
               "3. Pemain yang sudah terdaftar dalam satu tim tidak diperbolehkan bermain di tim lain.", 
               "4. Setiap pemain harus menggunakan pakaian yang sama dan warna pakaian kiper harus berbeda dengan pemain lainnya.",
               "5. Memakai pengaman kaki (deker) yang terbuat dari bahan layak (karet, plastik, atau bahan sejenisnya).",

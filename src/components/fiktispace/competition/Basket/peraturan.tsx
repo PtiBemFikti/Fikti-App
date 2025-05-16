@@ -39,7 +39,7 @@ const syllabus : Record < string,
         "SYARAT DAN KETENTUAN PESERTA": {
             points: [
               "1. Jumlah pemain utama di lapangan sebanyak 5 orang, dan 5 pemain cadangan per tim.", 
-              "2. Untuk tim, dibuat aturan bebas dalam pembentukan tim, namun seangkatan yang sama maksimal 3 kelas campuran dalam satu tim.", 
+              // "2. Untuk tim, dibuat aturan bebas dalam pembentukan tim, namun seangkatan yang sama maksimal 3 kelas campuran dalam satu tim.", 
               "3. Pemain yang terdaftar di satu tim tidak diperbolehkan bermain di tim lain.", 
               "4. Pertandingan berlangsung selama 4 kuarter, masing-masing berdurasi 10 menit.",
               "5. Sistem pertandingan menggunakan format sistem gugur.",

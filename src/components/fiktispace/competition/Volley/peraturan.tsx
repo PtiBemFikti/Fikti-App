@@ -40,7 +40,7 @@ const syllabus : Record < string,
             points: [
               "1. Setiap tim terdiri dari 6 pemain inti dan maksimal 6 pemain cadangan.", 
               "2. Tim hanya diperbolehkan melakukan 6 pergantian pemain per set.", 
-              "3. Untuk tim, dibuat aturan bebas dalam pembentukan tim, dengan ketentuan maksimal 3 kelas campuran dan seangkatan yang sama.", 
+              // "3. Untuk tim, dibuat aturan bebas dalam pembentukan tim, dengan ketentuan maksimal 3 kelas campuran dan seangkatan yang sama.", 
               "4. Jersey harus memiliki nomor punggung dan nomor di dada, serta nomor pada celana di bagian paha kanan.",
               "5. Pemain wajib memakai kaos kaki dan sepatu karet selama bertanding.",
               "6. Libero harus memakai seragam dengan warna berbeda dari tim utama.",

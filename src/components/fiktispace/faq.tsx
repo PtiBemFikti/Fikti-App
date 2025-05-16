@@ -20,16 +20,16 @@ export default function FaqPage() {
               title="Apakah FIKTI SPACE 4.0 bisa untuk semua Region?"
               content="Fikti Space 4.0 bisa untuk seluruh region Universitas Gunadarma ya!"
             />
-            <AccordionCard
+            {/* <AccordionCard
               title="Untuk Per-Team nya, boleh dari kelas masing-masing atau gabungan dari beberapa kelas?"
               content="Untuk team futsal, basket,  volley, dan Mobile Legends boleh banget nih buat gabungan kelas asalkan dengan syarat harus per-Angkatan dan maksimal 3 kelas gabungan ya. Untuk Badminton,boleh juga untuk digabung dengan kelas lain."
+            /> */}
+            <AccordionCard
+              title="Apakah boleh mengikuti lomba lebih dari satu?"
+              content="Diperbolehkan asalkan sesuaikan jadwal mainnya ya!"
             />
             <AccordionCard
-              title="Apakah boleh ikut lomba lebih dari satu?"
-              content="Diperbolehkan asalkan sesuaikan jadwal mainnya ya!!"
-            />
-            <AccordionCard
-              title="Misal dari team, satu orang ada yang berhalangan hadir karena sakit, apakah boleh digantikan?"
+              title="Apakah boleh mengganti pemain dalam team yang berhalangan hadir karena sakit?"
               content="Boleh digantikan dengan pemain cadangan yang dari awal sudah disiapkan & diregistrasikan para team ya!"
             />
             <AccordionCard

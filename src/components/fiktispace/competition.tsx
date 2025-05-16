@@ -138,7 +138,7 @@ export default function CompetitionCards() {
                         {comp.category}
                       </button>
                     </div>
-                    <div className={`${Lato.className} hover:underline text-center mt-2`}>learn more</div>
+                    <div className={`${Lato.className} text-center mt-2`}>Click for learn more</div>
                   </motion.div>
                 </Link>
               ))}
@@ -189,7 +189,7 @@ export default function CompetitionCards() {
                         {comp.category}
                       </button>
                     </div>
-                    <div className={`${Lato.className} hover:underline text-center mt-2`}>learn more</div>
+                    <div className={`${Lato.className} text-center mt-2`}>Click for learn more</div>
                   </motion.div>
                 </Link>
               ))}
@@ -225,7 +225,7 @@ export default function CompetitionCards() {
                         {comp.category}
                       </button>
                     </div>
-                    <div className={`${Lato.className} hover:underline text-center mt-2`}>learn more</div>
+                    <div className={`${Lato.className} text-center mt-2`}>Click for learn more</div>
                   </motion.div>
                 </Link>
               ))}

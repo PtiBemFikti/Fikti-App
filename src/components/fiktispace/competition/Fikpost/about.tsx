@@ -8,20 +8,20 @@ export default function Section1() {
   return (
     <div className="pt-28">
       {/* banner */}
-      <div className="px-6 md:px-10 lg:px-16 -mb-32">
+      <div className="px-6 md:px-10 lg:px-16 -mb-28">
         <Image
           src={"/fiktispace/Banner/Fikpost.webp"}
           alt="banner"
           width={1000}
           height={200}
-          className="rounded-3xl w-full"
+          className="rounded-lg md:rounded-2xl w-full"
         ></Image>
       </div>
       {/* about */}
-      <div className="flex flex-col lg:flex-row mt-12 pt-32 px-6 md:px-10 lg:px-16 gap-10 -mb-32 md:-mb-10" id="about">
+      <div className="flex flex-col lg:flex-row mt-3 md:mt-8 pt-32 px-6 md:px-10 lg:px-16 gap-10 -mb-32 md:-mb-10" id="about">
         <div className="lg:w-1/2">
-          <div className="bg-[#FECB62] rounded-2xl p-5 flex flex-col gap-y-3">
-            <div className={`${Lato.className} text-[#0A2352] text-lg`}>Hello SpaceNation! Mohon untuk membaca ketentuan dan persyaratan yang tersedia pada halaman ini sebelum mendaftar ya!</div>
+          <div className="bg-[#FECB62] rounded-xl p-5 flex flex-col gap-y-3">
+            <div className={`${Lato.className} text-[#0A2352] text-lg font-semibold`}>Hello SpaceNation! Mohon untuk membaca ketentuan dan persyaratan yang tersedia pada halaman ini sebelum mendaftar ya!</div>
             {/* CP */}
             <div className="bg-[#0A2352] px-6 lg:px-12 py-6 rounded-3xl">
               <div className="flex items-center gap-2">
@@ -120,7 +120,7 @@ export default function Section1() {
             <div>
               <p className={`${Lato.className} text-2xl text-[#0A2352] font-semibold`}>Register now to be a champion!</p>
               <Link className="" href="">
-                <button className="bg-[#0A2352] rounded-lg py-3 w-full md:w-[50%] lg:w-[30%] mt-3">Registration</button>
+                <button className="bg-[#0A2352] rounded-lg py-3 w-full md:w-[50%] lg:w-[30%] mt-3">Regist</button>
               </Link>
             </div>
           </div>

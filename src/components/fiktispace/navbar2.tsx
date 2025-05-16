@@ -58,7 +58,7 @@ const Navbar2: React.FC = () => {
             About
           </Link>
           <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="#peraturan">
-            Peraturan
+            Rules
           </Link>
         </div>
         <div className="hidden lg:flex lg:w-4/12 justify-end gap-6">
@@ -83,7 +83,7 @@ const Navbar2: React.FC = () => {
             )}
           </div>
           <Link className="" href="">
-            <button className="bg-[#FF8797] rounded-lg px-5 py-2">Registration</button>
+            <button className="bg-[#FF8797] rounded-lg px-5 py-2">Regist</button>
           </Link>
         </div>
         <div className="flex justify-end w-3/12 lg:hidden items-center">
@@ -121,7 +121,7 @@ const Navbar2: React.FC = () => {
             About
           </Link>
           <Link className="text-white hover:text-[#FF8797] text-lg text-center" href="#peraturan">
-            Terms and Conditions
+            Rules
           </Link>
           <div className="lg:hidden flex flex-col gap-3 px-10">
             <Link className="" href="https://wa.me/62085819191776">
@@ -131,7 +131,7 @@ const Navbar2: React.FC = () => {
               <button className="bg-[#FF8797] rounded-full py-2 w-full">CP2 (Nayla)</button>
             </Link>
             <Link className="justify-center" href="">
-              <button className="bg-[#FF8797] rounded-full py-2 w-full">Registration</button>
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">Regist</button>
             </Link>
           </div>
         </motion.div>
