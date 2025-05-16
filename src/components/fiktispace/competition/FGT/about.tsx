@@ -91,8 +91,10 @@ export default function Section1() {
                     ].map((item, idx) => (
                       <div key={idx} className="relative flex items-center gap-4">
                       {/* Lingkaran dan garis */}
-                        <div className="absolute -left-8 items-center">
-                        <div className="w-4 h-4 rounded-full bg-white"></div>
+                        <div className="absolute -left-[2.1rem] items-center">
+                        <div className={`w-5 h-5 rounded-full bg-white ${
+                          idx === 0 ? "ring-8 ring-[#FECB62]/100 animate-blink" : ""
+                        }`}></div>
                       </div>
 
                       {/* Konten */}
