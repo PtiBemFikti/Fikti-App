@@ -12,7 +12,7 @@ export default function Section1() {
         <Image
           src={"/fiktispace/Banner/Volley.webp"}
           alt="banner"
-          width={700}
+          width={1000}
           height={200}
           className="rounded-3xl w-full"
         ></Image>
@@ -133,10 +133,10 @@ export default function Section1() {
               height={160}
             ></Image>
             <Image
-              src={"/fiktispace/LOGO FS 4.webp"}
+              src={"/fiktispace/LOGO FS 4.png"}
               alt="banner"
-              width={150}
-              height={150}
+              width={170}
+              height={110}
             ></Image>
             <Image
               src={"/fiktispace/Nebula_polos.webp"}

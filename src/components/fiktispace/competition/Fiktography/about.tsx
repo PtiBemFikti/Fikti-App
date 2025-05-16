@@ -12,7 +12,7 @@ export default function Section1() {
         <Image
           src={"/fiktispace/Banner/Fiktography.webp"}
           alt="banner"
-          width={700}
+          width={1000}
           height={200}
           className="rounded-3xl w-full"
         ></Image>
@@ -87,7 +87,8 @@ export default function Section1() {
                 {[
                   { date: "19-28 May", title: "Registration", location: "Online" },
                   { date: "13 June", title: "Technical Meeting", location: "Online" },
-                  { date: "[tentative]", title: "Competition Day", location: "Online" },
+                  { date: "16-20 June", title: "Competition Day", location: "Online" },
+                  { date: "21 June", title: "Assessment Day", location: "Online" },
                     ].map((item, idx) => (
                       <div key={idx} className="relative flex items-center gap-4">
                       {/* Lingkaran dan garis */}
@@ -131,10 +132,10 @@ export default function Section1() {
               height={160}
             ></Image>
             <Image
-              src={"/fiktispace/LOGO FS 4.webp"}
+              src={"/fiktispace/LOGO FS 4.png"}
               alt="banner"
-              width={150}
-              height={150}
+              width={170}
+              height={110}
             ></Image>
             <Image
               src={"/fiktispace/Nebula_polos.webp"}
