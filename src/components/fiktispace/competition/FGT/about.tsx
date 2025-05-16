@@ -36,7 +36,7 @@ export default function Section1() {
                 <div className={`${Lato.className} text-lg md:text-4xl font-semibold`}>Contact</div>
               </div>
               <div className={`${Lato.className} mt-4 text-xs md:text-xl`}>
-              Auvia Indah &nbsp; : +62 819-4341-7132 <br/>Salwa Putri &nbsp;&nbsp;&nbsp;: +62 821-3051-5241
+              Auvia Indah &nbsp; : 0819-4341-7132 <br/>Salwa Putri &nbsp;&nbsp;&nbsp;: 0821-3051-5241
               </div>
             </div>
             {/* HTM */}
