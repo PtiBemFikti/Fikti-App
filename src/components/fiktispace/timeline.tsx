@@ -13,7 +13,7 @@ export default function TimelinePage() {
             Stay Updated with Our Upcoming Events
           </p>
         </div>
-        <div className="relative px-4 md:px-16 lg:px-40 mt-10">
+        <div className="relative px-4 md:px-14 mt-10">
           <div className="absolute top-0 bottom-0 w-[0.25rem] bg-white"></div>{/* Garis vertikal di pinggir kiri */}
           <div className="space-y-5 pl-[1.1rem]">
             {[
@@ -32,9 +32,9 @@ export default function TimelinePage() {
                 </div>
 
                 {/* Konten */}
-                <div className="flex w-full gap-4 py-2 px-2 md:px-5 items-center bg-[#FECB62]">
-                  <div className="text-center w-5/12 lg:w-2/12 bg-gradient-to-r from-[#FF8797] to-[#FAACB3] px-1">
-                    <p className={`${Lato.className} text-base md:text-xl text-center font-seminold text-[#0A2352] py-2`}>{item.date}</p>
+                <div className="flex w-full gap-2 lg:gap-6 py-2 px-2 md:px-4 items-center bg-[#FECB62]">
+                  <div className="text-center w-5/12 lg:w-2/12 bg-gradient-to-r from-[#FF8797] to-[#FAACB3]">
+                    <p className={`${Lato.className} text-base md:text-xl text-center font-seminold text-[#0A2352] py-1`}>{item.date}</p>
                   </div>
                   <div className="w-4/12 lg:w-8/12">
                     <p className={`${Lato.className} text-base md:text-xl text-left text-[#0A2352] font-semibold`}>{item.title}</p>

@@ -38,19 +38,19 @@ const Navbar2: React.FC = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-[#2A2364] mt-3 fixed w-[91%] z-30 rounded-3xl left-1/2 -translate-x-1/2"
+      className="bg-[#2A2364] mt-3 fixed w-[91%] z-30 rounded-lg left-1/2 -translate-x-1/2"
     >
-      <div className=" items-center flex px-5 py-4 rounded-lg">
-        <Link href="#" className="items-center w-10/12 lg:w-2/12">
+      <div className=" items-center flex px-10 py-4 rounded-lg">
+        <Link href="#" className="items-center w-10/12 lg:w-1/12">
           <Image
             src="/fiktispace/LOGO FS 4.png"
             alt="Logo"
-            width={75}
-            height={75}
+            width={55}
+            height={55}
             className="mr-2"
           />
         </Link>
-        <div className="hidden lg:flex md:gap-20 w-7/12">
+        <div className="hidden lg:flex lg:w-7/12 md:gap-20">
           <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="/fiktispace">
             Back to Home
           </Link>
@@ -61,7 +61,7 @@ const Navbar2: React.FC = () => {
             Peraturan
           </Link>
         </div>
-        <div className="hidden lg:flex lg:w-3/12 justify-end gap-6">
+        <div className="hidden lg:flex lg:w-4/12 justify-end gap-6">
           {/* Dropdown Button */}
           <div
             className="relative"
