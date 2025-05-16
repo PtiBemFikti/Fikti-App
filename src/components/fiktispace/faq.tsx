@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 export default function FaqPage() {
   return (
-    <div className="pb-8 pt-28">
+    <div className="-mt-20 pb-14 pt-28">
       <div className="flex flex-col lg:flex-row items-center md:justify-start px-4 lg:px-20 gap-y-10">
         <div className="px-2 md:px-8 mt-2 w-[100%] lg:w-[60%]">
           <div className="text-center">
-            <div className={`text-[2.5rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className} `}>           
-              FAQ
+            <div className={`text-[1.5rem] md:text-[2rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className} `}>           
+              Frequently Asked Questions
             </div>
-            <div className={`text-sm text-[#E8E8F0] ${Lato.className} `}>
+            <div className={`text-sm md:text-md italic text-[#E8E8F0] ${Lato.className} `}>
               Everything you need to know about FIKTI SPACE.
             </div>
           </div>

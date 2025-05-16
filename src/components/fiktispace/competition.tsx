@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 
 export default function CompetitionPage() {
   return (
-    <div className="mt-28 md:mt-0">
+    <div className="mt-0">
       <div className="pt-[4rem]">
         <div className="text-center">
-          <h1 className={`text-2xl md:text-[2.5rem] lg:text-[3rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className}`}>
-            COMPETITION LIST
+          <h1 className={`py-1 text-2xl md:text-[2.5rem] lg:text-[3rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className}`}>
+            OUR COMPETITION
           </h1>
           <p className={`text-md italic lg:mt-2 text-gray-200 ${Lato.className}`}>
             Unleash Your Potential Skills
           </p>
         </div>
         <div className="flex flex-col px-4 md:px-10 lg:px-40 py-4">
-          <div className="flex flex-wrap bg-[#0A2352] bg-opacity-50 p-6 gap-y-6 rounded-xl justify-center md:justify-between mb-5">
+          <div className="flex flex-wrap bg-[#0A2352] bg-opacity-50 p-6 gap-y-6 rounded-xl justify-center md:gap-4 mb-5">
 
             <Link href={'/fiktispace/Competition/Futsal'} className="w-[100%] md:w-[48%] lg:w-[32%]">
               <motion.div
@@ -102,7 +102,7 @@ export default function CompetitionPage() {
               </motion.div>
             </Link>
 
-            <Link href={'/fiktispace/Competition/Billiard'} className="w-[100%] md:w-[48%] lg:w-[32%]">
+            {/* <Link href={'/fiktispace/Competition/Billiard'} className="w-[100%] md:w-[48%] lg:w-[32%]">
               <motion.div
                   className="flex flex-col bg-gradient-to-b from-[#FECB62] to-[#98783B] py-6 px-4 md:px-8 lg:px-14 rounded-2xl gap-4 w-full"
                   whileHover={{
@@ -128,7 +128,7 @@ export default function CompetitionPage() {
                   learn more
                 </div>
               </motion.div>
-            </Link>
+            </Link> */}
 
             <Link href={'/fiktispace/Competition/Badmintonmen'} className="w-[100%] md:w-[48%] lg:w-[32%]">
               <motion.div

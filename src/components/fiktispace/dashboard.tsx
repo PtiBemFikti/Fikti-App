@@ -18,7 +18,7 @@ export default function DashboardPage() {
               </Link>
               <div className="flex-col justify-center items-center md:justify-start md:items-start gap-3 flex">
                 <div className="flex-col flex">
-                  <div className={`${Lato.className} text-[#0A2352] text-[1rem] font-medium mb-2`}>
+                  <div className={`${Lato.className} text-[#0A2352] text-[1rem] font-semibold mb-2`}>
                     Welcome to FIKTI Sport and Art Championship
                   </div>
                   <div className={`${AkiraExpanded.className} font-semibold text-[#0A2352] text-[2rem] leading-none`}>
@@ -27,7 +27,7 @@ export default function DashboardPage() {
                   <div className={`${AkiraExpanded.className} font-bold text-[#0A2352] text-[6rem] leading-none`}>
                     4.0
                   </div>
-                  <div className={`${Lato.className} text-[#0A2352] text-[1rem] font-medium`}>
+                  <div className={`${Lato.className} text-[#0A2352] text-[1.15rem] font-semibold`}>
                     Fuel the Passion, Embrace the Challenge!
                   </div>
                 </div>
@@ -74,7 +74,7 @@ export default function DashboardPage() {
                   height={40}
                 ></Image>
               </Link>
-              <div className={`${Lato.className} text-[#0A2352] text-[1.35rem] font-medium`}>
+              <div className={`${Lato.className} text-[#0A2352] text-[1.35rem] font-semibold`}>
                 Welcome to FIKTI Sport and Art Championship
               </div>
               <div className="flex-col flex">
@@ -86,7 +86,7 @@ export default function DashboardPage() {
                     4.0
                   </div>
                 </div>
-                <div className={`${Lato.className} text-[#0A2352] text-[1.35rem] font-medium`}>
+                <div className={`${Lato.className} text-[#0A2352] text-[1.35rem] font-semibold`}>
                     Fuel the Passion, Embrace the Challenge!
                 </div>
               </div>
@@ -100,11 +100,11 @@ export default function DashboardPage() {
                 height={1000}
               ></Image>
             </div> */}
-            <div className="lg:-mb-2 lg:pt-4">
+            <div className="lg:-mb-2 lg:pt-3">
               <Image
                 src={"/fiktispace/Hero image animate.png"}
                 alt={"dashboard"}
-                width={680}
+                width={700}
                 height={1000}
               ></Image>
             </div>

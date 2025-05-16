@@ -40,7 +40,7 @@ const Navbar2: React.FC = () => {
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
       className="bg-[#2A2364] mt-3 fixed w-[91%] z-30 rounded-3xl left-1/2 -translate-x-1/2"
     >
-      <div className=" items-center flex px-5 py-3 rounded-2xl">
+      <div className=" items-center flex px-5 py-4 rounded-lg">
         <Link href="#" className="items-center w-10/12 lg:w-2/12">
           <Image
             src="/fiktispace/LOGO FS 4.png"
@@ -61,31 +61,31 @@ const Navbar2: React.FC = () => {
             Peraturan
           </Link>
         </div>
-        <div className="hidden lg:flex justify-evenly gap-10">
-            {/* Dropdown Button */}
-            <div
-              className="relative"
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
-            >
-              <button className="bg-[#FF8797] rounded-full px-5 py-2">Contact Us</button>
-            
-              {/* Dropdown Menu */}
-              {isDropdownOpen && (
-                <div className="absolute top-11 right-0 bg-[#FF8797] rounded-xl p-2 shadow-lg w-44 z-10">
-                  <Link href="https://wa.me/62085819191776">
-                    <p className="rounded-xl block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP1 (Siti Nazua)</p>
-                  </Link>
-                  <Link href="https://wa.me/6285883321315">
-                    <p className="rounded-xl block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP2 (Nayla)</p>
-                  </Link>
-                </div>
-              )}
-            </div>
-            <Link className="" href="">
-              <button className="bg-[#FF8797] rounded-full px-5 py-2">Daftar</button>
-            </Link>
+        <div className="hidden lg:flex lg:w-3/12 justify-end gap-6">
+          {/* Dropdown Button */}
+          <div
+            className="relative"
+            onMouseEnter={() => setDropdownOpen(true)}
+            onMouseLeave={() => setDropdownOpen(false)}
+          >
+            <button className="bg-[#FF8797] rounded-lg px-5 py-2">Contact Us</button>
+          
+            {/* Dropdown Menu */}
+            {isDropdownOpen && (
+              <div className="absolute top-9 right-0 bg-[#FF8797] rounded-lg p-2 shadow-lg w-44 z-10">
+                <Link href="https://wa.me/62085819191776">
+                  <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP1 (Siti Nazua)</p>
+                </Link>
+                <Link href="https://wa.me/6285883321315">
+                  <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP2 (Nayla)</p>
+                </Link>
+              </div>
+            )}
           </div>
+          <Link className="" href="">
+            <button className="bg-[#FF8797] rounded-lg px-5 py-2">Daftar</button>
+          </Link>
+        </div>
         <div className="flex justify-end w-3/12 lg:hidden items-center">
           {/* Hamburger menu icon */}
           <button
