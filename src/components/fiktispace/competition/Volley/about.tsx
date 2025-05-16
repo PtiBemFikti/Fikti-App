@@ -12,9 +12,9 @@ export default function Section1() {
         <Image
           src={"/fiktispace/Banner/Volley.webp"}
           alt="banner"
-          width={100000}
+          width={700}
           height={200}
-          className="rounded-3xl"
+          className="rounded-3xl w-full"
         ></Image>
       </div>
       {/* about */}
