@@ -103,19 +103,17 @@ const Footer: React.FC = () => {
               </h1>
             </div>
             <div className="flex flex-col gap-2 lg:w-1/5 w-full font-medium">
-              <div className='flex text-white'>
-                <FaLocationDot size={25} className="flex-shrink-0" />
-                <Link
-                  href="https://maps.app.goo.gl/etmNsRtGszuWaD1cA" // Ganti dengan link lokasi spesifik
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" text-white hover:text-[#0A2352]"
-                >
-                  <p className="ml-2 font-medium">
-                      Sekretariat BEM FIKTI : <br />Pusat Kegiatan Mahasiswa (PUSGIWA) Gedung 4 Lantai 3 Kampus E Universitas Gunadarma Jl. Komjen Pol. M. Jasin Kelapa Dua Depok
-                  </p>
-                </Link>
-              </div>
+              <Link
+                href="https://maps.app.goo.gl/etmNsRtGszuWaD1cA" // Ganti dengan link lokasi spesifik
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-[#0A2352] hover:text-[#FF8797] flex transition-all duration-300 cursor-pointer"
+              >
+                <FaLocationDot size={25} className="flex-shrink-0 group-hover:scale-110 transition-all duration-300" />
+                <p className="ml-2 font-medium">
+                    Sekretariat BEM FIKTI : <br />Pusat Kegiatan Mahasiswa (PUSGIWA) Gedung 4 Lantai 3 Kampus E Universitas Gunadarma Jl. Komjen Pol. M. Jasin Kelapa Dua Depok
+                </p>
+              </Link>
             </div>
         </div>
         <hr className='w-5/6 mx-auto'></hr>
