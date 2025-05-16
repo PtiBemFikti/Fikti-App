@@ -11,7 +11,6 @@ const Footer: React.FC = () => {
       <footer className="relative overflow-hidden bg-[#FECB62] bottom-0">
         <div className="flex flex-wrap lg:flex lg:flex-row items-start justify-evenly relative gap-10 pt-10 mb-5 px-8 md:px-20">
             <div className="flex flex-col gap-4 lg:w-1/5 w-full font-medium">
-                <h1 className="text-xl text-[#0A2352] font-bold">Sosial Media</h1>
                 <div className="space-y-4">
                   <Link
                     href="https://www.instagram.com/fiktispace.ug/"
@@ -44,7 +43,7 @@ const Footer: React.FC = () => {
                       size={25}
                       className="cursor-pointer group-hover:scale-110 transition-all duration-300"
                     />
-                    0858-1919-1776 (Siti Nazua)
+                    0858-1919-1776 (Nazua)
                   </Link>
                   <Link
                     href="https://wa.me/6285883321315"
