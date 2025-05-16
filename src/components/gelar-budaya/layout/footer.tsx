@@ -30,12 +30,12 @@ export default function GelbudFooter() {
             <FaPhone size={25} className="group" />
             <p className="ml-2">
               <a
-                href="https://wa.me/6285150935519"
+                href="https://wa.me/081211449779"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline hover:text-[#ECDDC1]"
               >
-                +62 8xx-xxxx-xxxx
+                +62 81211449779
               </a>
             </p>
           </div>
