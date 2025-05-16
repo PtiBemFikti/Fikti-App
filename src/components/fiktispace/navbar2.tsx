@@ -121,7 +121,7 @@ const Navbar2: React.FC = () => {
             About
           </Link>
           <Link className="text-white hover:text-[#FF8797] text-lg text-center" href="#peraturan">
-            Peraturan 
+            Terms and Conditions
           </Link>
           <div className="lg:hidden flex flex-col gap-3 px-10">
             <Link className="" href="https://wa.me/62085819191776">
