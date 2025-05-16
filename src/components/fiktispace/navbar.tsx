@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
               {isDropdownOpen && (
                 <div className="absolute top-9 right-0 bg-[#FF8797] rounded-lg p-2 shadow-lg w-44 z-10">
                   <Link href="https://wa.me/62085819191776">
-                    <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP1 (Siti Nazua)</p>
+                    <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP1 (Nazua)</p>
                   </Link>
                   <Link href="https://wa.me/6285883321315">
                     <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP2 (Nayla)</p>
@@ -133,7 +133,7 @@ const Navbar: React.FC = () => {
           </Link>
           <div className="lg:hidden flex flex-col gap-3 px-10">
             <Link className="" href="https://wa.me/62085819191776">
-              <button className="bg-[#FF8797] rounded-full py-2 w-full">CP1 (Siti Nazua)</button>
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">CP1 (Nazua)</button>
             </Link>
             <Link className="" href="https://wa.me/6285883321315">
               <button className="bg-[#FF8797] rounded-full py-2 w-full">CP2 (Nayla)</button>

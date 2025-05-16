@@ -36,7 +36,7 @@ export default function Section1() {
                 <div className={`${Lato.className} text-lg md:text-4xl font-semibold`}>Contact</div>
               </div>
               <div className={`${Lato.className} mt-4 text-sm md:text-xl`}>
-                Siti Nazua  : +62 858-1919-1776 <br/>Nayla &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : +62 858-8332-1315
+                Nazua  : +62 858-1919-1776 <br/>Nayla &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : +62 858-8332-1315
               </div>
             </div>
             {/* HTM */}
