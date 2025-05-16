@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
               )}
             </div>
             <Link className="" href="">
-              <button className="bg-[#FF8797] rounded-lg px-5 py-2">Daftar</button>
+              <button className="bg-[#FF8797] rounded-lg px-5 py-2">Registration</button>
             </Link>
           </div>
           <div className="lg:hidden items-center">
@@ -139,7 +139,7 @@ const Navbar: React.FC = () => {
               <button className="bg-[#FF8797] rounded-full py-2 w-full">CP2 (Nayla)</button>
             </Link>
             <Link className="justify-center" href="">
-              <button className="bg-[#FF8797] rounded-full py-2 w-full">Daftar</button>
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">Registration</button>
             </Link>
           </div>
         </motion.div>
