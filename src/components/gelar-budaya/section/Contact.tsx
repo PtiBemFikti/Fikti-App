@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { MonumentExtendedBold } from "@/styles/font";
 import { FaWhatsapp, FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import Link from "next/link";
 
 export default function GelbudContactUsSection() {
   // Animation variants
@@ -31,13 +32,13 @@ export default function GelbudContactUsSection() {
 
   const contacts = [
     {
-      name: "Auvia",
-      whatsapp: "#",
+      name: "Aulia",
+      whatsapp: "081211449779",
       icon: <FaWhatsapp className="text-3xl text-green-500" />,
     },
     {
-      name: "Hanny",
-      whatsapp: "#",
+      name: "Agni",
+      whatsapp: "085770871470",
       icon: <FaWhatsapp className="text-3xl text-green-500" />,
     },
   ];
@@ -87,27 +88,14 @@ export default function GelbudContactUsSection() {
           <motion.div variants={item} className="mt-12 text-center">
             <h3 className="text-xl font-semibold mb-4">Our Social Media</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <a
+              <Link
+                target="_blank"
                 href="https://www.instagram.com/gelar.budayafikti/?utm_source=ig_web_button_share_sheet"
                 className="p-3 bg-cream-fikti/10 hover:bg-cream-fikti/20 rounded-full transition"
                 aria-label="Instagram"
               >
                 <FaInstagram className="text-2xl" />
-              </a>
-              <a
-                href="#"
-                className="p-3 bg-cream-fikti/10 hover:bg-cream-fikti/20 rounded-full transition"
-                aria-label="Twitter"
-              >
-                <FaTwitter className="text-2xl" />
-              </a>
-              <a
-                href="#"
-                className="p-3 bg-cream-fikti/10 hover:bg-cream-fikti/20 rounded-full transition"
-                aria-label="Facebook"
-              >
-                <FaFacebook className="text-2xl" />
-              </a>
+              </Link>
             </div>
           </motion.div>
         </motion.div>
