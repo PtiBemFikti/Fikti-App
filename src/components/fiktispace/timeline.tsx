@@ -19,9 +19,9 @@ export default function TimelinePage() {
             {[
               { date: "19-28 May", title: "Registration", location: "Online" },
               { date: "13 June", title: "Technical Meeting", location: "Online" },
-              { date: "16 June", title: "Opening Ceremony", location: "Venue" },
-              { date: "16-21 June", title: "Competition Day", location: "Venue and Online" },
-              { date: "21 June", title: "Grand Closing", location: "Venue" },
+              { date: "16 June", title: "Opening Ceremony", location: "On-site" },
+              { date: "16-21 June", title: "Competition Day", location: "On-site and Online" },
+              { date: "21 June", title: "Grand Closing", location: "On-site" },
             ].map((item, idx) => (
               <div key={idx} className="relative flex items-center gap-4">
                 {/* Lingkaran dan garis */}

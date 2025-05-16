@@ -87,7 +87,7 @@ export default function Section1() {
                 {[
                   { date: "19-28 May", title: "Registration", location: "Online" },
                   { date: "13 June", title: "Technical Meeting", location: "Online" },
-                  { date: "[tentative]", title: "Pelaksanaan", location: "Online" },
+                  { date: "[tentative]", title: "Competition Day", location: "Online" },
                     ].map((item, idx) => (
                       <div key={idx} className="relative flex items-center gap-4">
                       {/* Lingkaran dan garis */}
@@ -96,9 +96,9 @@ export default function Section1() {
                       </div>
 
                       {/* Konten */}
-                      <div className="flex w-full gap-4 py-3 px-5 items-center bg-[#FECB62]">
-                        <div className="text-center w-4/12 lg:w-4/12 bg-gradient-to-r from-[#FF8797] to-[#FAACB3] px-1">
-                          <p className={`${Lato.className} text-base md:text-xl text-center font-seminold text-[#0A2352] py-2`}>{item.date}</p>
+                      <div className="flex w-full gap-2 lg:gap-6 py-2 px-2 md:px-4 items-center bg-[#FECB62]">
+                        <div className="text-center w-4/12 lg:w-4/12 bg-gradient-to-r from-[#FF8797] to-[#FAACB3]">
+                          <p className={`${Lato.className} text-base md:text-xl text-center font-seminold text-[#0A2352] py-1`}>{item.date}</p>
                         </div>
                         <div className="w-5/12 lg:w-6/12">
                           <p className={`${Lato.className} text-base md:text-xl text-left text-[#0A2352] font-semibold`}>{item.title}</p>
@@ -117,9 +117,9 @@ export default function Section1() {
           {/* daftar sekarang */}
           <div className="bg-[#FECB62] text-center items-center w-full rounded-2xl mt-4 mb-5 p-4">
             <div>
-              <p className={`${Lato.className} text-2xl text-[#0A2352] font-semibold`}>Daftar Sekarang Juga</p>
+              <p className={`${Lato.className} text-2xl text-[#0A2352] font-semibold`}>Register now to be a champion!</p>
               <Link className="" href="">
-                <button className="bg-[#0A2352] rounded-2xl py-3 w-full md:w-[50%] lg:w-[30%] mt-3">Daftar</button>
+                <button className="bg-[#0A2352] rounded-lg py-3 w-full md:w-[50%] lg:w-[30%] mt-3">Registration</button>
               </Link>
             </div>
           </div>
@@ -127,20 +127,20 @@ export default function Section1() {
             <Image
               src={"/fiktispace/Stella_polos.webp"}
               alt="banner"
-              width={90}
-              height={120}
+              width={150}
+              height={160}
             ></Image>
             <Image
               src={"/fiktispace/LOGO FS 4.webp"}
               alt="banner"
-              width={120}
-              height={120}
+              width={150}
+              height={150}
             ></Image>
             <Image
               src={"/fiktispace/Nebula_polos.webp"}
               alt="banner"
-              width={90}
-              height={120}
+              width={150}
+              height={140}
             ></Image>
           </div>
         </div>
