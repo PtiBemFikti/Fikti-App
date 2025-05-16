@@ -8,28 +8,28 @@ import Link from "next/link";
 export default function GelbudTicketSection() {
   const tickets = [
     {
-      title: "Daily Pass",
-      benefits: "Kipas Kerang + Pin Button",
-      note: "Presale",
-      price: "IDR 35k",
+      title: "Single",
+      benefits: "Kipas + Pin Button + Stiker + Welcome Drink",
+      note: "1 orang",
+      price: "Rp35.000",
     },
     {
-      title: "Daily Pass",
-      benefits: "Kipas Kerang + Keychain + Stiker",
-      note: "Presale",
-      price: "IDR 50K",
+      title: "Duo",
+      benefits: "Kipas + Pin Button + Stiker + Welcome Drink (2 pax)",
+      note: "2 orang",
+      price: "Rp65.000",
     },
     {
-      title: "Daily Pass",
-      benefits: "Tote Bag + Kipas Kerang + Stiker",
-      note: "Presale",
-      price: "IDR 60K",
+      title: "Grup Kecil",
+      benefits: "Kipas + Pin Button + Stiker + Welcome Drink (4 pax)",
+      note: "4 orang",
+      price: "Rp120.000",
     },
     {
-      title: "Daily Pass",
-      benefits: "Tumblr + Kipas Kerang + Stiker",
-      note: "Presale",
-      price: "IDR 75K",
+      title: "Grup Besar",
+      benefits: "Kipas + Pin Button + Stiker + Welcome Drink (6 pax)",
+      note: "6 orang",
+      price: "Rp175.000",
     },
   ];
 
@@ -88,7 +88,8 @@ export default function GelbudTicketSection() {
             variants={item}
             className="text-lg text-gray-300 mb-12 md:mb-16 max-w-2xl mx-auto"
           >
-            HTM yang dibayar akan menyesuaikan benefit yang akan didapat.
+            Pilih paket yang sesuai kebutuhan kamu, makin rame makin hemat!
+            Semua tiket sudah termasuk berbagai benefit menarik
           </motion.p>
 
           {/* Ticket Cards */}
