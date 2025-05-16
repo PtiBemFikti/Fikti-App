@@ -9,7 +9,9 @@ import TimelinePage from "@/components/fiktispace/timeline";
 import FaqPage from "@/components/fiktispace/faq";
 import FooterPage from "@/components/fiktispace/footer";
 import TextSlider from "@/components/fiktispace/TextSlider";
+import { useSmoothScroll } from "@/components/fiktispace/SmoothScroll";
 export default function FSPage() {
+  useSmoothScroll();
   return (
     <div>
       <main className="bg-[#0A2352] bg-cover bg-no-repeat scroll-smooth overflow-x-hidden scroll-m-48">
