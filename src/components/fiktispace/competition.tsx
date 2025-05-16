@@ -76,7 +76,7 @@ const competitions = [
     href: "/fiktispace/Competition/MobileLegend",
     title: "Mobile\nLegend",
     fontSizeClass: "text-[1.75rem] md:text-[1.75rem]",
-    category: "E-Sport",
+    category: "E-sport",
     categoryClass: "bg-[#0A2353]",
     leadingNone: true,
   },
@@ -84,7 +84,7 @@ const competitions = [
     href: "/fiktispace/Competition/Fifa",
     title: "FC 25\nConsole",
     fontSizeClass: "text-[1.55rem] md:text-[1.75rem]",
-    category: "E-Sport",
+    category: "E-sport",
     categoryClass: "bg-[#0A2353]",
     leadingNone: true,
   },
@@ -198,7 +198,7 @@ export default function CompetitionCards() {
           {/* E-Sport */}
           <div className="flex flex-wrap bg-[#0A2352] bg-opacity-50 p-6 gap-y-6 rounded-xl justify-center md:justify-evenly mb-5">
             {competitions
-              .filter((c) => c.category === "E-Sport")
+              .filter((c) => c.category === "E-sport")
               .map((comp, i) => (
                 <Link key={i} href={comp.href} className="w-[100%] md:w-[48%] lg:w-[32%]">
                   <motion.div

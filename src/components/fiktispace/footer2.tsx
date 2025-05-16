@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
                 href="https://maps.app.goo.gl/etmNsRtGszuWaD1cA" // Ganti dengan link lokasi spesifik
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-[#0A2352] hover:text-[#FF8797] flex transition-all duration-300 cursor-pointer"
+                className=" text-white hover:text-[#0A2352] flex transition-all duration-300 cursor-pointer"
               >
                 <FaLocationDot size={25} className="flex-shrink-0 group-hover:scale-110 transition-all duration-300" />
                 <p className="ml-2 font-medium">
