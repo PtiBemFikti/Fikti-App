@@ -8,7 +8,7 @@ type Project = {
     subtitle: string;
     description: string;
     shortDescription: string
-    divisions: Division[];
+    divisions: Division[];ro
     logo: string;
   };
   

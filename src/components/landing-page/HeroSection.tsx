@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section className="relative w-full h-screen max-h-[850px] overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/main/hero-bg.jpg"
+          src="/main/IMG_1487.JPG"
           alt="BENA FIKTI UG Background"
           layout="fill"
           objectFit="cover"
