@@ -127,22 +127,25 @@ export default function Section1() {
           </div>
           <div className="flex justify-around items-center">
             <Image
-              src={"/fiktispace/Stella_polos.webp"}
-              alt="banner"
-              width={150}
-              height={160}
-            ></Image>
-            <Image
-              src={"/fiktispace/LOGO FS 4.png"}
-              alt="banner"
-              width={170}
-              height={110}
-            ></Image>
-            <Image
               src={"/fiktispace/Nebula_polos.webp"}
               alt="banner"
               width={150}
               height={140}
+              className="w-20 md:w-32 h-20 md:h-32"
+            ></Image>
+            <Image
+              src={"/fiktispace/LOGO FS 4.webp"}
+              alt="banner"
+              width={200}
+              height={200}
+              className="w-20 md:w-32 h-20 md:h-32"
+            ></Image>
+            <Image
+              src={"/fiktispace/Stella_polos.webp"}
+              alt="banner"
+              width={150}
+              height={160}
+              className="w-20 md:w-32 h-20 md:h-32"
             ></Image>
           </div>
         </div>

@@ -70,7 +70,7 @@ export default function Section1() {
                 <div className={`${Lato.className} text-lg md:text-4xl font-semibold`}>Location</div>
               </div>
               <div className={`${Lato.className} mt-4 text-sm md:text-xl`}>
-                Golden Sports Arena
+                Mile 32 Cafe
               </div>
             </div>
           </div>
@@ -125,24 +125,27 @@ export default function Section1() {
               </Link>
             </div>
           </div>
-          <div className="flex justify-around">
-            <Image
-              src={"/fiktispace/Stella_polos.webp"}
-              alt="banner"
-              width={150}
-              height={160}
-            ></Image>
-            <Image
-              src={"/fiktispace/LOGO FS 4.png"}
-              alt="banner"
-              width={170}
-              height={110}
-            ></Image>
+          <div className="flex justify-around items-center">
             <Image
               src={"/fiktispace/Nebula_polos.webp"}
               alt="banner"
               width={150}
               height={140}
+              className="w-20 md:w-32 h-20 md:h-32"
+            ></Image>
+            <Image
+              src={"/fiktispace/LOGO FS 4.webp"}
+              alt="banner"
+              width={200}
+              height={200}
+              className="w-20 md:w-32 h-20 md:h-32"
+            ></Image>
+            <Image
+              src={"/fiktispace/Stella_polos.webp"}
+              alt="banner"
+              width={150}
+              height={160}
+              className="w-20 md:w-32 h-20 md:h-32"
             ></Image>
           </div>
         </div>
