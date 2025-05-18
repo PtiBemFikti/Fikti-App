@@ -120,7 +120,7 @@ export default function Section1() {
           <div className="bg-[#FECB62] text-center items-center w-full rounded-2xl mt-4 mb-5 p-4">
             <div>
               <p className={`${Lato.className} text-2xl text-[#0A2352] font-semibold`}>Register now to be a champion!</p>
-              <Link className="" href="">
+              <Link className="" href="https://docs.google.com/forms/d/e/1FAIpQLSdoIa6UBKKkd7UxAyC3bCIAsclj5D278jzEe_GpMVjSKcBBiw/viewform" target="_blank" rel="noopener noreferrer">
                 <button className="bg-[#0A2352] rounded-lg py-3 w-full md:w-[50%] lg:w-[30%] mt-3">Regist</button>
               </Link>
             </div>
