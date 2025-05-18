@@ -93,7 +93,7 @@ const competitions = [
 export default function CompetitionCards() {
   return (
     <div className="mt-0">
-      <div className="pt-[4rem]">
+      <div className="pt-[2rem]">
         <div className="text-center">
           <h1
             className={`py-1 text-2xl md:text-[2.5rem] lg:text-[3rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className}`}
