@@ -9,6 +9,7 @@ import TimelinePage from "@/components/fiktispace/timeline";
 import FaqPage from "@/components/fiktispace/faq";
 import FooterPage from "@/components/fiktispace/footer";
 import TextSlider from "@/components/fiktispace/TextSlider";
+import SponsorPage from "@/components/fiktispace/sponsor";
 import { useSmoothScroll } from "@/components/fiktispace/SmoothScroll";
 export default function FSPage() {
   useSmoothScroll();
@@ -30,7 +31,10 @@ export default function FSPage() {
           </section>
           <section id="schedule">
             <div>
-            <TimelinePage />
+              <TimelinePage />
+            </div>
+            <div className="hidden">
+              <SponsorPage />
             </div>
           </section>
           <section id="documentation">
