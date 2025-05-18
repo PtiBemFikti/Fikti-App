@@ -33,7 +33,8 @@ export default function FSPage() {
             <div>
               <TimelinePage />
             </div>
-            <div className="hidden">
+            {/* <div className="hidden"> */}
+            <div>
               <SponsorPage />
             </div>
           </section>
