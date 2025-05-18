@@ -65,7 +65,7 @@ export default function DashboardPage() {
       {/*Desktop*/}
       <div className="mt-10 md:block hidden">
         <div className="flex-wrap bg-[#FECB62]">
-          <div className="flex flex-col lg:flex-row lg:justify-between gap-5 items-center mt-28 relative overflow-hidden z-0 px-6 md:px-14">
+          <div className="flex flex-col lg:flex-row lg:justify-between items-center mt-24 relative overflow-hidden z-0 px-20">
             <div className="flex-col gap-3 flex py-10">
               <Link href="/" className="">
                 <Image
@@ -102,12 +102,12 @@ export default function DashboardPage() {
                 height={1000}
               ></Image>
             </div> */}
-            <div className="lg:-mb-2 lg:pt-3">
+            <div className="lg:-mb-5 lg:pt-3">
               <Image
                 src={"/fiktispace/Hero image animate.png"}
                 alt={"dashboard"}
-                width={700}
-                height={1000}
+                width={680}
+                height={650}
               ></Image>
             </div>
             {/* <div className="lg:-mb-2 lg:pt-4">
