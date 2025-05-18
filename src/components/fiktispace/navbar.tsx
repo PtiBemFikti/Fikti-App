@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
                 </div>
               )}
             </div>
-            <Link className="" href="linktr.ee/DaftarFIKTISpace4.0" target="_blank" rel="noopener noreferrer">
+            <Link className="" href="https://linktr.ee/DaftarFIKTISpace4.0" target="_blank" rel="noopener noreferrer">
               <button className="bg-[#FF8797] rounded-lg px-5 py-2">Regist</button>
             </Link>
           </div>
@@ -138,7 +138,7 @@ const Navbar: React.FC = () => {
             <Link className="" href="https://wa.me/6285883321315">
               <button className="bg-[#FF8797] rounded-full py-2 w-full">CP2 (Nayla)</button>
             </Link>
-            <Link className="justify-center" href="linktr.ee/DaftarFIKTISpace4.0" target="_blank" rel="noopener noreferrer">
+            <Link className="justify-center" href="https://linktr.ee/DaftarFIKTISpace4.0" target="_blank" rel="noopener noreferrer">
               <button className="bg-[#FF8797] rounded-full py-2 w-full">Regist</button>
             </Link>
           </div>
