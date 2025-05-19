@@ -38,7 +38,7 @@ const syllabus : Record < string,
         },
         "SYARAT DAN KETENTUAN PESERTA": {
             points: [
-              "1. Setiap team terdiri dari 6 Pemain utama dan maksimal 6 pemain cadangan per team.", 
+              "1. Setiap team terdiri dari 6 Pemain utama dan maksimal 4 pemain cadangan per team.", 
               "2. Team hanya diperbolehkan melakukan 6 pergantian pemain per set.", 
               "3. Untuk peserta dari kampus region Salemba, Kalimalang, Karawaci dan Cengkareng diperbolehkan untuk membuat team dari angkatan 2021 - 2024.", 
               "4. Untuk peserta dari kampus region Depok, hanya diperbolehkan membuat team dari 1 angkatan yang sama dengan ketentuan maksimal dari 5 kelas yang berbeda.", 

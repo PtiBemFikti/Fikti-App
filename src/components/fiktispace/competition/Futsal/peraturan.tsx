@@ -47,7 +47,7 @@ const syllabus : Record < string,
               "7. Semua pemain tidak diperbolehkan menggunakan aksesoris seperti gelang, cincin, jam, dan sebagainya.",
               "8. Jika suatu tim tidak hadir pada jadwal yang telah ditetapkan, pertandingan ditunda selama 5 menit.",
               "9. Jika setelah penundaan tim masih tidak hadir, tim tersebut dinyatakan kalah Walk Out (WO).",
-              "10. Sistem pertandingan menggunakan sistem gugur.",
+              "10. Sistem pertandingan menggunakan sistem babak grup.",
               "11. Jika terjadi extra time, berlaku golden goal (tim pertama yang mencetak gol menang).",
               "12. Setiap tim diperbolehkan meminta 1 time out per babak dengan durasi 60 detik.",
             ]
