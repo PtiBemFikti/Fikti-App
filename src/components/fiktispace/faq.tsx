@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 export default function FaqPage() {
   return (
-    <div className="pb-8 pt-28">
+    <div className="-mt-20 pb-14 pt-28">
       <div className="flex flex-col lg:flex-row items-center md:justify-start px-4 lg:px-20 gap-y-10">
         <div className="px-2 md:px-8 mt-2 w-[100%] lg:w-[60%]">
           <div className="text-center">
-            <div className={`text-[2.5rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className} `}>           
-              FAQ
+            <div className={`text-[1.5rem] md:text-[2rem] bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className} `}>           
+              Frequently Asked Questions
             </div>
-            <div className={`text-sm text-[#E8E8F0] ${Lato.className} `}>
+            <div className={`text-sm md:text-md italic text-[#E8E8F0] ${Lato.className} `}>
               Everything you need to know about FIKTI SPACE.
             </div>
           </div>
@@ -20,16 +20,16 @@ export default function FaqPage() {
               title="Apakah FIKTI SPACE 4.0 bisa untuk semua Region?"
               content="Fikti Space 4.0 bisa untuk seluruh region Universitas Gunadarma ya!"
             />
-            <AccordionCard
+            {/* <AccordionCard
               title="Untuk Per-Team nya, boleh dari kelas masing-masing atau gabungan dari beberapa kelas?"
               content="Untuk team futsal, basket,  volley, dan Mobile Legends boleh banget nih buat gabungan kelas asalkan dengan syarat harus per-Angkatan dan maksimal 3 kelas gabungan ya. Untuk Badminton,boleh juga untuk digabung dengan kelas lain."
+            /> */}
+            <AccordionCard
+              title="Apakah boleh mengikuti lomba lebih dari satu?"
+              content="Diperbolehkan asalkan sesuaikan jadwal mainnya ya!"
             />
             <AccordionCard
-              title="Apakah boleh ikut lomba lebih dari satu?"
-              content="Diperbolehkan asalkan sesuaikan jadwal mainnya ya!!"
-            />
-            <AccordionCard
-              title="Misal dari team, satu orang ada yang berhalangan hadir karena sakit, apakah boleh digantikan?"
+              title="Apakah boleh mengganti pemain dalam team yang berhalangan hadir karena sakit?"
               content="Boleh digantikan dengan pemain cadangan yang dari awal sudah disiapkan & diregistrasikan para team ya!"
             />
             <AccordionCard
@@ -59,7 +59,7 @@ export default function FaqPage() {
             <div className="flex flex-col gap-y-2">
               <Link href="https://wa.me/62085819191776" target="_blank">
                 <p className={`text-medium lg:text-lg ${Lato.className} hover:underline hover:font-semibold`}>
-                  0858-1919-1776 (Siti Nazua)
+                  0858-1919-1776 (Nazua)
                 </p>
               </Link>
               <Link href="https://wa.me/6285883321315" target="_blank">

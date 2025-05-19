@@ -122,9 +122,9 @@ export default function Section1() {
               height={30}
             ></Image>
             <div className="flex flex-col gap-y-">
-              <Link href="https://wa.me/62085819191776" target="_blank">
+              <Link href="https://wa.me/6285819191776" target="_blank">
                 <p className={`text-sm sm:text-base lg:text-lg ${Lato.className} hover:underline hover:font-semibold`}>
-                  0858-1919-1776 (Siti Nazua)
+                  0858-1919-1776 (Nazua)
                 </p>
               </Link>
               <Link href="https://wa.me/6285883321315" target="_blank">

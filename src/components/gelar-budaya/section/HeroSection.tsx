@@ -4,6 +4,7 @@ import { FaMapMarkerAlt, FaTicketAlt, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import { Montserrat, MonumentExtendedBold } from "@/styles/font";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function GelbudHeroSection() {
   // Animation variants
@@ -102,12 +103,19 @@ export default function GelbudHeroSection() {
           variants={itemVariants}
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
-          <button className="bg-[#ECDCC1] text-black hover:bg-white font-bold py-3 px-8 rounded-full transition-all duration-150 flex items-center justify-center gap-2">
+          <Link
+            href="https://bit.ly/RegistrasiPesertaGelarBudaya2025"
+            target="_blank"
+            className="bg-[#ECDCC1] text-black hover:bg-[#cfbb97] font-bold py-3 px-8 rounded-full transition-all duration-150 flex items-center justify-center gap-2"
+          >
             <FaTicketAlt />
             Beli Tiket
-          </button>
+          </Link>
 
-          <button className="border-2 border-white text-white hover:bg-white/10 font-bold py-3 px-8 rounded-full transition-all duration-300 flex items-center justify-center gap-2">
+          <Link
+            href="#tentang"
+            className="border-2 border-white text-white hover:bg-white/10 font-bold py-3 px-8 rounded-full transition-all duration-300 flex items-center justify-center gap-2"
+          >
             Pelajari Lebih
             <motion.span
               animate={{ x: [0, 4, 0] }}
@@ -115,7 +123,7 @@ export default function GelbudHeroSection() {
             >
               <FaArrowRight />
             </motion.span>
-          </button>
+          </Link>
         </motion.div>
       </motion.div>
     </section>

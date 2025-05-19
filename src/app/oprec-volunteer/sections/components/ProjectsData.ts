@@ -12,20 +12,7 @@ type Project = {
     logo: string;
   };
   
-const imageUrls = [
-    "/logo/AKADEMIK.png",
-    "/logo/AU.png",
-    "/logo/BISMIT.png",
-    "/logo/HUMAS.png",
-    "/logo/LITBANG.png",
-    "/logo/MEDIA.png",
-    "/logo/PTI.png",
-    "/logo/OR.png",
-    "/logo/POLKESMA.png",
-    "/logo/PSDM.png",
-    "/logo/SB.png",
-    "/logo/SOSMAS.png",
-  ];
+
 const projects: Project[] = [
     {
       title: "HEROES XI",
@@ -62,10 +49,10 @@ const projects: Project[] = [
     {
       title: " FIKTI Space 4.0",
       subtitle: "",
-      logo: "/oprec-volunteer/FINAL LOGO FS-03.png",
+      logo: "/oprec-volunteer/FINAL LOGO FS-04.png",
       description:
         "FIKTI SPACE (FIKTI Sport & Art Championship) adalah sebuah rangkaian acara yang menggabungkan dua program kerja sebelumnya dari BEM FIKTI Universitas Gunadarma, yaitu FAF (FIKTI Art Festival) dan FOSC (FIKTI Open Sport Championship). Acara ini bertujuan untuk menyatukan kompetisi olahraga dan seni budaya dalam satu event dan dirancang untuk memberikan kesempatan kepada mahasiswa FIKTI menyalurkan bakat dan minat mereka dalam bidang olahraga dan seni, serta untuk memperkuat rasa sportivitas dan kreativitas di kalangan mahasiswa.",
-      shortDescription: "Ajang kompetisi olahraga dan seni bagi mahasiswa FIKTI UG untuk menyalurkan bakat dan sportivitas.",
+      shortDescription: "Ajang kompetisi olahraga dan seni bagi mahasiswa FIKTI UG untuk menyalurkan minat, bakat dan sportivitas.",
         divisions: [
         { name: "Divisi Acara", description: "Mengatur seluruh jalannya pertandingan dari awal hingga akhir." },
         { name: "Divisi Perlengkapan", description: "Menyediakan dan mengelola seluruh kebutuhan alat & fasilitas acara." },
@@ -81,7 +68,7 @@ const projects: Project[] = [
     {
       title: "Gelar Budaya",
       subtitle: "",
-      logo: "/logo/gelar_budaya.png",
+      logo: "/gelar-budaya/logo-gelar-budaya.jpg",
       description:
         "Gelar Budaya adalah program kerja unggulan dari Departemen Olahraga dan Seni Budaya yang diselenggarakan dengan tujuan untuk memberikan ruang bagi mahasiswa Universitas Gunadarma, khususnya di FIKTI, untuk berekspresi dalam bidang seni. Acara ini tidak hanya bertujuan untuk menampilkan berbagai karya seni mahasiswa, tetapi juga menjadi sarana untuk mempererat hubungan antar mahasiswa dengan saling mengenal satu sama lain.",
       shortDescription: "Event seni BEM FIKTI UG yang memberi ruang bagi mahasiswa untuk berekspresi dan menampilkan karya.",

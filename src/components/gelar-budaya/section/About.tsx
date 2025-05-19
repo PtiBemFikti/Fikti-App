@@ -14,7 +14,7 @@ export default function AboutSection() {
         <div className="relative w-full md:w-1/2">
           <div className="rounded-[120px_20px_0px_80px] overflow-hidden">
             <Image
-              src="/gelar-budaya/bg-dummy.jpg"
+              src="/gelar-budaya/about2.png"
               alt="About Gelar Budaya"
               width={600}
               height={600}
@@ -66,7 +66,7 @@ export default function AboutSection() {
         <div className="relative w-full md:w-1/3">
           <div className="rounded-[20px_120px_0px_80px] overflow-hidden">
             <Image
-              src="/gelar-budaya/bg-dummy.jpg"
+              src="/gelar-budaya/about1.png"
               alt="About Gelar Budaya"
               width={600}
               height={600}

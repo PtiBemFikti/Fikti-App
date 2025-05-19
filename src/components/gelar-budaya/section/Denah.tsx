@@ -29,26 +29,34 @@ const item = {
 
 const areas = [
   {
-    title: "Panggung Budaya",
-    desc: "Pembukaan, penutupan, dan pertunjukan utama",
+    title: "Panggung",
+    desc: "Tempat berlangsungnya acara utama seperti pembukaan, penutupan, dan berbagai pertunjukan yang ada.",
   },
   {
-    title: "Panggung Budaya",
-    desc: "Pembukaan, penutupan, dan pertunjukan utama",
+    title: "Bar",
+    desc: "Area santai untuk menikmati minuman dan rehat sejenak sambil tetap merasakan atmosfer acara.",
   },
   {
-    title: "Panggung Budaya",
-    desc: "Pembukaan, penutupan, dan pertunjukan utama",
+    title: "Toilet",
+    desc: "Fasilitas umum yang tersedia untuk pengunjung, terletak di area belakang dekat bar dan mushola.",
   },
   {
-    title: "Panggung Budaya",
-    desc: "Pembukaan, penutupan, dan pertunjukan utama",
+    title: "Mushola",
+    desc: "Tempat ibadah bagi pengunjung yang ingin beribadah dengan nyaman selama acara berlangsung.",
+  },
+  {
+    title: "Tangga",
+    desc: "Penghubung antar lantai, memudahkan akses ke area lain di dalam gedung.",
+  },
+  {
+    title: "Pintu Masuk",
+    desc: "Akses utama menuju area acara, pastikan tiket dan identitas sudah siap sebelum masuk.",
   },
 ];
 
 export default function GelbudDenahGedung() {
   return (
-    <section className="bg-black py-16 h-fit md:h-[75vh] px-4 flex flex-col justify-center items-center">
+    <section className="bg-black py-16 h-fit  px-4 flex flex-col justify-center items-center">
       <h2
         className={`${MonumentExtendedBold.className} text-center text-4xl md:text-5xl font-extrabold mb-16`}
       >
@@ -58,12 +66,12 @@ export default function GelbudDenahGedung() {
         initial="hidden"
         whileInView="visible"
         variants={container}
-        className="max-w-7xl w-full grid md:grid-cols-2 gap-10 items-start justify-between p-8 border rounded-xl"
+        className="max-w-7xl w-full grid lg:grid-cols-2 gap-10 items-start justify-between p-8 border rounded-xl"
       >
         {/* Gambar Denah */}
         <motion.div variants={item}>
           <Image
-            src="/gelar-budaya/denah-gedung.jpg"
+            src="/gelar-budaya/denah-lokasi.png"
             alt="Denah Gedung"
             width={800}
             height={800}

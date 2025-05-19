@@ -38,17 +38,18 @@ const syllabus : Record < string,
         },
         "SYARAT DAN KETENTUAN PESERTA": {
             points: [
-              "1. Setiap tim maksimal terdiri dari 10 pemain.", 
-              "2. Untuk tim, dijadikan aturan bebas tim namun seangkatan yang sama dengan ketentuan maksimal 3 kelas campuran", 
-              "3. Pemain yang sudah terdaftar dalam satu tim tidak diperbolehkan bermain di tim lain.", 
-              "4. Setiap pemain harus menggunakan pakaian yang sama dan warna pakaian kiper harus berbeda dengan pemain lainnya.",
-              "5. Memakai pengaman kaki (deker) yang terbuat dari bahan layak (karet, plastik, atau bahan sejenisnya).",
-              "6. Semua pemain tidak diperbolehkan menggunakan aksesoris seperti gelang, cincin, jam, dan sebagainya.",
-              "7. Jika suatu tim tidak hadir pada jadwal yang telah ditetapkan, pertandingan ditunda selama 5 menit.",
-              "8. Jika setelah penundaan tim masih tidak hadir, tim tersebut dinyatakan kalah Walk Out (WO).",
-              "9. Sistem pertandingan menggunakan sistem gugur.",
-              "10. Jika terjadi extra time, berlaku golden goal (tim pertama yang mencetak gol menang).",
-              "11. Setiap tim diperbolehkan meminta 1 time out per babak dengan durasi 60 detik.",
+              "1. Setiap team terdiri dari 5 Pemain utama di lapangan dan maksimal 5 pemain cadangan per team.", 
+              "2. Untuk peserta dari kampus region Salemba, Kalimalang, Karawaci dan Cengkareng diperbolehkan untuk membuat team dari angkatan 2021 - 2024.", 
+              "3. Untuk peserta dari kampus region Depok, hanya diperbolehkan membuat team dari 1 angkatan yang sama dengan ketentuan maksimal dari 5 kelas yang berbeda.", 
+              "4. Pemain yang sudah terdaftar dalam satu tim tidak diperbolehkan bermain di tim lain.", 
+              "5. Setiap pemain harus menggunakan pakaian yang sama dan warna pakaian kiper harus berbeda dengan pemain lainnya.",
+              "6. Memakai pengaman kaki (deker) yang terbuat dari bahan layak (karet, plastik, atau bahan sejenisnya).",
+              "7. Semua pemain tidak diperbolehkan menggunakan aksesoris seperti gelang, cincin, jam, dan sebagainya.",
+              "8. Jika suatu tim tidak hadir pada jadwal yang telah ditetapkan, pertandingan ditunda selama 5 menit.",
+              "9. Jika setelah penundaan tim masih tidak hadir, tim tersebut dinyatakan kalah Walk Out (WO).",
+              "10. Sistem pertandingan menggunakan sistem babak grup.",
+              "11. Jika terjadi extra time, berlaku golden goal (tim pertama yang mencetak gol menang).",
+              "12. Setiap tim diperbolehkan meminta 1 time out per babak dengan durasi 60 detik.",
             ]
         }
     };
@@ -137,9 +138,9 @@ export default function Section1() {
               height={30}
             ></Image>
             <div className="flex flex-col gap-y-">
-              <Link href="https://wa.me/62085819191776" target="_blank">
+              <Link href="https://wa.me/6285819191776" target="_blank">
                 <p className={`text-sm sm:text-base lg:text-lg ${Lato.className} hover:underline hover:font-semibold`}>
-                  0858-1919-1776 (Siti Nazua)
+                  0858-1919-1776 (Nazua)
                 </p>
               </Link>
               <Link href="https://wa.me/6285883321315" target="_blank">

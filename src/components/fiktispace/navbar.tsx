@@ -38,20 +38,20 @@ const Navbar: React.FC = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-[#112C70] px-4 lg:px-16 py-4 fixed w-full z-30"
+      className="bg-[#0A2352] px-4 lg:px-[3.75rem] py-3.5 fixed w-full z-30"
     >
       <div className="">
-        <div className="bg-[#2A2364] items-center flex justify-between px-5 py-3 rounded-2xl">
-          <Link href="#" className="items-center">
+        <div className="bg-[#2A2364] items-center flex justify-between px-10 py-4 rounded-lg">
+          <Link href="#" className="items-center w-10/12 lg:w-1/12">
             <Image
               src="/fiktispace/LOGO FS 4.png"
               alt="Logo"
-              width={75}
-              height={75}
+              width={55}
+              height={55}
               className="mr-2"
             />
           </Link>
-          <div className="hidden lg:flex md:gap-20">
+          <div className="hidden lg:flex lg:w-7/12 md:gap-20">
             <Link className="block text-lg text-white hover:text-[#FF8797] group transition-all duration-300 ease-in-out hover:scale-[1.09] hover:font-bold" href="#compe-list">
               Competition List
             </Link>
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
               FAQ
             </Link>
           </div>
-          <div className="hidden lg:flex justify-evenly gap-10">
+          <div className="hidden lg:flex lg:w-4/12 justify-end gap-6">
             {/* Dropdown Button */}
             <div
               className="relative"
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
               {isDropdownOpen && (
                 <div className="absolute top-9 right-0 bg-[#FF8797] rounded-lg p-2 shadow-lg w-44 z-10">
                   <Link href="https://wa.me/62085819191776">
-                    <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP1 (Siti Nazua)</p>
+                    <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP1 (Nazua)</p>
                   </Link>
                   <Link href="https://wa.me/6285883321315">
                     <p className="rounded-md block px-2 py-2 text-white hover:bg-[#FAACB3] cursor-pointer">CP2 (Nayla)</p>
@@ -86,8 +86,8 @@ const Navbar: React.FC = () => {
                 </div>
               )}
             </div>
-            <Link className="" href="">
-              <button className="bg-[#FF8797] rounded-lg px-5 py-2">Daftar</button>
+            <Link className="" href="https://linktr.ee/DaftarFIKTISpace4.0" target="_blank" rel="noopener noreferrer">
+              <button className="bg-[#FF8797] rounded-lg px-5 py-2">Regist</button>
             </Link>
           </div>
           <div className="lg:hidden items-center">
@@ -133,13 +133,13 @@ const Navbar: React.FC = () => {
           </Link>
           <div className="lg:hidden flex flex-col gap-3 px-10">
             <Link className="" href="https://wa.me/62085819191776">
-              <button className="bg-[#FF8797] rounded-full py-2 w-full">CP1 (Siti Nazua)</button>
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">CP1 (Nazua)</button>
             </Link>
             <Link className="" href="https://wa.me/6285883321315">
               <button className="bg-[#FF8797] rounded-full py-2 w-full">CP2 (Nayla)</button>
             </Link>
-            <Link className="justify-center" href="">
-              <button className="bg-[#FF8797] rounded-full py-2 w-full">Daftar</button>
+            <Link className="justify-center" href="https://linktr.ee/DaftarFIKTISpace4.0" target="_blank" rel="noopener noreferrer">
+              <button className="bg-[#FF8797] rounded-full py-2 w-full">Regist</button>
             </Link>
           </div>
         </motion.div>

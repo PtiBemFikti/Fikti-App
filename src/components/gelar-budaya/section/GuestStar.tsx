@@ -2,6 +2,7 @@
 
 import { MonumentExtendedBold } from "@/styles/font";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function PerformersList() {
   const container = {
@@ -27,31 +28,51 @@ export default function PerformersList() {
     },
   };
 
-  const performers = ["BLACKPINK", "ONE DIRECTION", "COLDPLAY"];
+  const guestStars = [
+    {
+      image: "/gelar-budaya/Youth Things _ Pict 1.JPG", // pastiin file ini ada di public/gueststars/
+    },
+    {
+      image: "/gelar-budaya/Youth Things LOGO.png", // pastiin file ini ada di public/gueststars/
+    },
+    {
+      image: "/gelar-budaya/Youth Things _ Pict 2.JPG", // pastiin file ini ada di public/gueststars/
+    },
+  ];
 
   return (
-    <section className="w-full flex flex-col items-center my-16">
+    <section className="w-full flex flex-col items-center my-16 px-6">
       {/* Header */}
       <motion.div variants={item}>
         <h2
-          className={`${MonumentExtendedBold.className} text-4xl md:text-5xl font-extrabold text-white m-6 mb-10 leading-tight`}
+          className={`${MonumentExtendedBold.className} text-4xl md:text-5xl font-extrabold text-white mb-10 lg:mb-20 leading-tight`}
         >
-          Line Up
+          Guest Star
         </h2>
       </motion.div>
 
-      {/* Performers List */}
       <motion.div
         variants={container}
-        className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-20"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="grid grid-cols-1 lg:grid-cols-3 gap-10"
       >
-        {performers.map((performer, index) => (
+        {guestStars.map((guest, index) => (
           <motion.div
             key={index}
             variants={item}
-            className="flex items-center justify-center text-center w-[300px] h-[300px] rounded-full border-[20px] border-yellow-400"
+            className="flex flex-col items-center gap-4"
           >
-            <h3 className="text-xl font-medium">{performer}</h3>
+            <div className="w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-lg md:hover:-translate-y-5 hover:shadow-lg hover:shadow-[#ECDCC1] transition-all duration-300">
+              <Image
+                src={guest.image}
+                alt="Youth Things"
+                width={400}
+                height={400}
+                className="object-cover w-full h-full"
+              />
+            </div>
           </motion.div>
         ))}
       </motion.div>

@@ -38,14 +38,14 @@ const syllabus : Record < string,
         },
         "SYARAT DAN KETENTUAN PESERTA": {
             points: [
-              "1. Satu tim terdiri dari 2 orang pemain.", 
-              "2. Satu tim diperbolehkan terdiri dari dua kelas berbeda.", 
+              "1. Setiap Team terdiri dari 2 orang pemain.", 
+              "2. Setiap Team diperbolehkan berasal dari 2 kelas berbeda dan 1 angkatan.", 
               "3. Pemain wajib memakai pakaian dan sepatu olahraga selama bertanding.", 
               "4. Pemain wajib membawa raket utama dan raket cadangan saat bertanding.",
               "5. Sistem pertandingan menggunakan format gugur.",
-              "6. Tim yang bertanding harus sudah hadir di tempat pertandingan 30 menit sebelum pertandingan dimulai.",
-              "7. Jika tim tidak hadir setelah dipanggil 3 kali dalam waktu 10 menit, tim tersebut akan didiskualifikasi.",
-              "8. Pemain diperbolehkan melewati garis samping pertama saat melakukan servis.",              
+              "6. Team yang bertanding harus sudah hadir di tempat pertandingan 30 menit sebelum pertandingan dimulai.",
+              "7. Jika team tidak hadir setelah dipanggil 3 kali dalam waktu 10 menit, team tersebut akan didiskualifikasi.",
+              "8. Pemain diperbolehkan melewati garis samping pertama saat melakukan servis.",          
             ]
         }
     };
@@ -134,9 +134,9 @@ export default function Section1() {
               height={30}
             ></Image>
             <div className="flex flex-col gap-y-">
-              <Link href="https://wa.me/62085819191776" target="_blank">
+              <Link href="https://wa.me/6285819191776" target="_blank">
                 <p className={`text-sm sm:text-base lg:text-lg ${Lato.className} hover:underline hover:font-semibold`}>
-                  0858-1919-1776 (Siti Nazua)
+                  0858-1919-1776 (Nazua)
                 </p>
               </Link>
               <Link href="https://wa.me/6285883321315" target="_blank">

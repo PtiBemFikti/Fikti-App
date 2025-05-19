@@ -24,7 +24,7 @@ const syllabus : Record < string,
               "8. Format file: JPG atau PNG dengan resolusi minimal 1080x1350 px dan kapasitas maksimal 2 MB.",
               "9. Poster berukuran A4 (portrait).",
               "10. Desain dapat dibuat menggunakan software seperti Photoshop, Illustrator, Canva, dll.",
-              "11. Tidak diperbolehkan menggunakan template yang sudah jadi; karya harus merupakan hasil karya sendiri. ",
+              "11. Tidak diperbolehkan menggunakan template yang sudah jadi. Karya harus merupakan hasil karya sendiri. ",
               "12. Keputusan dewan juri bersifat final dan tidak dapat diganggu gugat. ",
               "13. Karya akan didiskualifikasi jika terbukti melanggar larangan di atas, bukan hasil karya sendiri, atau dikirim melewati batas waktu tanpa pemberitahuan resmi.",
               "14. Hak cipta tetap milik peserta, namun panitia berhak menggunakan karya untuk keperluan publikasi lomba dengan mencantumkan kredit nama pembuat. ",              
@@ -126,9 +126,9 @@ export default function Section1() {
               height={30}
             ></Image>
             <div className="flex flex-col gap-y-">
-              <Link href="https://wa.me/62085819191776" target="_blank">
+              <Link href="https://wa.me/6285819191776" target="_blank">
                 <p className={`text-sm sm:text-base lg:text-lg ${Lato.className} hover:underline hover:font-semibold`}>
-                  0858-1919-1776 (Siti Nazua)
+                  0858-1919-1776 (Nazua)
                 </p>
               </Link>
               <Link href="https://wa.me/6285883321315" target="_blank">

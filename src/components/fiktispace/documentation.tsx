@@ -75,9 +75,9 @@ export default function FloatingGallery() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full md:min-h-[120vh] lg:min-h-[150vh] bg-[#FAACB3] overflow-hidden flex items-center justify-center"
+      className="hidden md:flex relative w-full md:min-h-[120vh] lg:min-h-[150vh] overflow-hidden items-center justify-center pb-6"
       style={{
-        background: "linear-gradient(to bottom, #112C70 0%, #3D4F9E 5%, #FDB7C4 10%, #FDB7C4 90%, #3D4F9E 95%, #112C70 100%)"
+        background: "linear-gradient(to bottom, #0A2352 3%, #3D4F9E 6%, #FF8797 9%, #FF8797 91%, #3D4F9E 94%, #0A2352 97%)"
       }}
     >
       {/* Centered Title */}
@@ -85,7 +85,7 @@ export default function FloatingGallery() {
         <h1 className={`text-lg md:text-4xl text-[#0A2352] ${AkiraExpanded.className}`}>
           Documentation
         </h1>
-        <span className={`text-sm md:text-lg text-[#0A2352] mt-1 ${Lato.className}`}>
+        <span className={`text-sm italic md:text-lg text-[#0A2352] ${Lato.className}`}>
           Celebrating Moments Together
         </span>
       </div>

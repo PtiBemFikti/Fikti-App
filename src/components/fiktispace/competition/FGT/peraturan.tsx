@@ -26,17 +26,18 @@ const syllabus : Record < string,
               "10. Peserta dilarang melakukan duplikasi atau plagiarisme karya orang lain tanpa izin atau modifikasi yang sah. ",
               "11. Tidak boleh menggunakan properti berbahaya atau yang dapat merusak panggung, fasilitas, atau peralatan milik panitia maupun pihak lain.",
               "12. Peserta tidak diperbolehkan membawa alkohol, narkoba, rokok, atau zat terlarang lainnya ke dalam area acara.",
-              "13. Panitia berhak mendiskualifikasi tim atau individu yang melanggar peraturan yang ditetapkan. ",
+              "13. Panitia berhak mendiskualifikasi temm atau individu yang melanggar peraturan yang ditetapkan. ",
               "14. Keputusan juri bersifat mutlak; protes secara tidak sopan atau mengganggu jalannya acara akan dikenai sanksi.",              
             ]
         },
         "SYARAT DAN KETENTUAN PESERTA": {
             points: [
-              "1. Peserta adalah mahasiswa aktif dari seluruh fakultas.", 
+              "1. Peserta adalah mahasiswa aktif dari SELURUH FAKULTAS.", 
               "2. Pendaftaran dilakukan dengan mengisi formulir yang telah disediakan.", 
-              "3. Penampilan FIKTI Got Talent dapat berupa individu atau grup dengan maksimal 5 orang; khusus Tari Tradisional maksimal 10 orang.", 
+              "3. Penampilan FIKTI Got Talent dapat berupa individu atau grup dengan maksimal 5 orang", 
+              "3. Penampilan FIKTI Got Talent khusus untuk Tari Tradisional diperbolehkan maksimal 10 orang.", 
               "4. Mengirimkan video audisi adalah opsi, khususnya jika ada tahapan seleksi awal.",
-              "5. Peserta wajib membawa alat atau perlengkapan sendiri jika diperlukan untuk penampilan.",              
+              "5. Peserta wajib membawa alat atau perlengkapan sendiri jika diperlukan saat penampilan.",              
             ]
         }
     };
@@ -125,9 +126,9 @@ export default function Section1() {
               height={30}
             ></Image>
             <div className="flex flex-col gap-y-">
-              <Link href="https://wa.me/62085819191776" target="_blank">
+              <Link href="https://wa.me/6285819191776" target="_blank">
                 <p className={`text-sm sm:text-base lg:text-lg ${Lato.className} hover:underline hover:font-semibold`}>
-                  0858-1919-1776 (Siti Nazua)
+                  0858-1919-1776 (Nazua)
                 </p>
               </Link>
               <Link href="https://wa.me/6285883321315" target="_blank">
