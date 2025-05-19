@@ -20,8 +20,8 @@ interface CardData {
       id: 1,
       category: "Seminar",
       mode: "TBA",
-      title: "Data Science",
-      subtitle: "To be Announced",
+      title: "Internet of Things",
+      subtitle: "“Innovating IoT with AI: A New Era of Customer-Centric Business Growth”",
       date: "To be Announced",
       details1: "To be Announced",
       details2: "To be Announced",
@@ -32,7 +32,7 @@ interface CardData {
       category: "Seminar",
       mode: "TBA",
       title: "Cyber Security",
-      subtitle: "To be Announced",
+      subtitle: "“The Future Of Cybersecurity: Trends, Threats, and Technologies”",
       date: "To be Announced",
       details1: "To be Announced",
       details2: "To be Announced",
@@ -102,7 +102,7 @@ export default function SeminarSection() {
 
                 <div className="relative ml-6 pt-5 lg:ml-[112px] lg:pt-[100px] lg:py-[200px]">
                     <h1 className={`${Montserrat.className} text-4xl lg:text-[60px] font-bold text-black`}>Seminar</h1>
-                    <p className={`${Montserrat.className} hidden lg:block pt-5 tracking-tight text-black`}>&quot;Seminar ini menghadirkan para ahli dan profesional di bidangnya untuk berbagi wawasan, pengalaman, serta tren terbaru. Dapatkan pemahaman mendalam melalui diskusi interaktif dan materi yang relevan dengan perkembangan industri. Jangan lewatkan kesempatan untuk belajar dan memperluas jaringan bersama peserta lainnya!&quot;</p>
+                    <p className={`${Montserrat.className} hidden lg:block pt-5 tracking-tight mr-8 text-black`}>Seminar TechnoFair 12.0 menghadirkan dua sesi mendalam bersama para ahli dan praktisi industri: “Innovating IoT with AI” yang mengupas integrasi IoT dan AI untuk menciptakan solusi bisnis yang cerdas dan berfokus pada pelanggan, serta “The Future of Cybersecurity” yang mengulas tren, ancaman, dan teknologi mutakhir dalam melindungi data dan sistem digital. Dapatkan pemahaman praktis melalui studi kasus nyata, strategi inovatif, dan keterampilan dasar penerapan teknologi, sambil memperluas jaringan dengan peserta lain yang antusias menghadapi era transformasi digital.</p>
                 </div>
 
                 <div className="relative flex flex-col mt-[-30px] lg:mt-10 scale-80 lg:scale-100"> 

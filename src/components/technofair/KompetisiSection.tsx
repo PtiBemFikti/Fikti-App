@@ -30,7 +30,7 @@ interface CardData {
       id: 2,
       category: "Competition",
       mode: "TBA",
-      title: "Data Analyst             ",
+      title: "Competitive Programming",
       subtitle: "To be Announced",
       date: "To be Announced",
       details1: "To be Announced",
@@ -41,18 +41,7 @@ interface CardData {
       id: 3,
       category: "Competition",
       mode: "TBA",
-      title: "Competitive Programming",
-      subtitle: "To be Announced",
-      date: "To be Announced",
-      details1: "To be Announced",
-      details2: "To be Announced",
-      href: "",
-    },
-    {
-      id: 4,
-      category: "Competition",
-      mode: "TBA",
-      title: "Capture the Flag               ",
+      title: "Capture the Flag",
       subtitle: "To be Announced",
       date: "To be Announced",
       details1: "To be Announced",
@@ -136,7 +125,7 @@ export default function KompetisiSection() {
 
                 <div className="relative ml-6 pt-5 lg:ml-[112px] lg:pt-[100px] lg:py-[200px]">
                     <h1 className={`${Montserrat.className} text-4xl lg:text-[60px] font-bold text-black`}>Kompetisi</h1>
-                    <p className={`${Montserrat.className} hidden lg:block pt-5 tracking-tight text-black pr-10`}>&quot;Kompetisi ini menjadi ajang bagi para peserta untuk mengasah kemampuan, berinovasi, dan menunjukkan potensi terbaik mereka. Dengan berbagai kategori dan tantangan menarik, kompetisi ini memberikan pengalaman berharga serta kesempatan untuk meraih prestasi. Bersiaplah untuk bersaing dan tunjukkan kemampuan terbaikmu!&quot;</p>
+                    <p className={`${Montserrat.className} hidden lg:block pt-5 tracking-tight text-black pr-8`}>&quot;Kompetisi ini menjadi ajang bagi para peserta untuk mengasah kemampuan, berinovasi, dan menunjukkan potensi terbaik mereka. Dengan berbagai kategori dan tantangan menarik, kompetisi ini memberikan pengalaman berharga serta kesempatan untuk meraih prestasi. Bersiaplah untuk bersaing dan tunjukkan kemampuan terbaikmu!&quot;</p>
                 </div>
 
                 <div className="relative flex flex-col gap-5 mt-[-30px] items-center scale-80 lg:mt-0 lg:scale-100"> 

@@ -20,7 +20,7 @@ interface CardData {
       category: "Workshop",
       mode: "TBA",
       title: "Data Analyst",
-      subtitle: "To be Announced",
+      subtitle: "“Mastering Data Analytics : From Raw Data to Business Impact”",
       date: "To be Announced",
       details1: "To be Announced",
       details2: "To be Announced",
@@ -31,7 +31,7 @@ interface CardData {
       category: "Workshop",
       mode: "TBA",
       title: "Artificial Intelligence",
-      subtitle: "To be Announced",
+      subtitle: "“AI in Action: Transforming Industries with Deep Learning and NLP”",
       date: "To be Announced",
       details1: "To be Announced",
       details2: "To be Announced",
@@ -101,7 +101,7 @@ export default function WorkshopSection() {
             <h1 className={`${Montserrat.className} relative mr-6 pt-5 text-right text-4xl lg:text-[60px] font-bold text-black lg:hidden`}>Workshop</h1>
       
                 <div className="relative flex flex-col gap-5 items-center mt-[-30px] lg:mt-10 scale-80 lg:scale-100 ">
-                    <div className="relative flex gap-5 overflow-x-auto items-center w-full md:ml-[500px] h-full">
+                    <div className="relative flex gap-5 overflow-x-auto items-center w-full md:ml-[500px] h-full ">
                     {cardData.map((data) => (
                         <div key={data.id} className="flex-shrink-0">
                         <Card data={data} />
@@ -114,7 +114,8 @@ export default function WorkshopSection() {
                 <div className=" hidden lg:block relative mr-6 lg:mr-0 pt-5 lg:pr-[112px] lg:pt-[100px] lg:py-[200px] text-right">
                     <h1 className={`${Montserrat.className} text-4xl lg:text-[60px] font-bold text-black`}>Workshop</h1>
                     <p className={`${Montserrat.className} tracking-tight text-black pt-5 pl-10`}>
-                    &quot;Workshop ini dirancang untuk memberikan pengalaman belajar yang interaktif dan aplikatif. Dipandu oleh para ahli, peserta akan mendapatkan pengetahuan serta keterampilan praktis yang dapat langsung diterapkan. Jangan lewatkan kesempatan untuk belajar, berlatih, dan mengembangkan kemampuanmu di sini!&quot;
+                    Workshop TechnoFair 12.0 menghadirkan dua sesi praktis bersama para ahli dan praktisi industri: “Mastering Data Analytics: From Raw Data to Business Impact” yang mengajarkan konsep, tools, dan studi kasus nyata dalam mengolah data untuk menghasilkan insight strategis, serta “AI in Action: Transforming Industries with Deep Learning and NLP” yang mengeksplorasi dasar-dasar AI, penerapan deep learning dan NLP, serta praktik membangun solusi sederhana berbasis AI. Dapatkan pengalaman hands-on dalam menganalisis data dan mengembangkan model AI, sambil memperluas jaringan dengan sesama peserta yang antusias dalam memimpin transformasi digital berbasis data dan kecerdasan buatan.
+
                     </p>
                 </div>
                 
