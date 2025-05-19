@@ -122,22 +122,22 @@ export function Faq() {
             </div>
             <div className="flex items-center justify-center gap-4 mt-6 max-md:mt-6 max-md:gap-4 max-md:px-5">
               <Link
-                href=""
+                href="https://wa.me/628568372700?text=Halo%20kak,%20saya%20ingin%20bertanya%20...%20"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-base w-[200px] max-md:w-[170px] max-md:text-base font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
               >
                 <FaWhatsapp size={24} />
-                Abiyyu
+                Haekal
               </Link>
               <Link
-                href=""
+                href="https://wa.me/6281215092180?text=Halo%20kak,%20saya%20ingin%20bertanya%20...%20"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-base w-[200px] max-md:w-[170px] max-md:text-base font-semibold px-8 max-md:px-6 py-4 max-md:py-3 rounded-full transition-all duration-300 hover:shadow-[0px_0px_10px_2px] hover:shadow-[#10B981]"
               >
                 <FaWhatsapp size={24} />
-                Putri
+                Zahra
               </Link>
             </div>
           </div>
