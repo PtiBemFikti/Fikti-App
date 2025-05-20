@@ -38,14 +38,14 @@ const syllabus : Record < string,
         },
         "SYARAT DAN KETENTUAN PESERTA": {
             points: [
-              "1. Satu tim terdiri dari 2 orang pemain.", 
-              "2. Satu tim diperbolehkan terdiri dari dua kelas berbeda.", 
+              "1. Setiap Team terdiri dari 2 orang pemain.", 
+              "2. Setiap Team diperbolehkan berasal dari 2 kelas berbeda dan 1 angkatan.", 
               "3. Pemain wajib memakai pakaian dan sepatu olahraga selama bertanding.", 
               "4. Pemain wajib membawa raket utama dan raket cadangan saat bertanding.",
               "5. Sistem pertandingan menggunakan format gugur.",
-              "6. Tim yang bertanding harus sudah hadir di tempat pertandingan 30 menit sebelum pertandingan dimulai.",
-              "7. Jika tim tidak hadir setelah dipanggil 3 kali dalam waktu 10 menit, tim tersebut akan didiskualifikasi.",
-              "8. Pemain diperbolehkan melewati garis samping pertama saat melakukan servis.",              
+              "6. Team yang bertanding harus sudah hadir di tempat pertandingan 30 menit sebelum pertandingan dimulai.",
+              "7. Jika team tidak hadir setelah dipanggil 3 kali dalam waktu 10 menit, team tersebut akan didiskualifikasi.",
+              "8. Pemain diperbolehkan melewati garis samping pertama saat melakukan servis.",          
             ]
         }
     };

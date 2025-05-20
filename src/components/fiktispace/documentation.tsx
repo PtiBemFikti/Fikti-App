@@ -75,7 +75,7 @@ export default function FloatingGallery() {
   return (
     <section
       ref={containerRef}
-      className="hidden md:flex relative w-full md:min-h-[120vh] lg:min-h-[150vh] bg-[#FAACB3] overflow-hidden items-center justify-center pb-6"
+      className="hidden md:flex relative w-full md:min-h-[120vh] lg:min-h-[150vh] overflow-hidden items-center justify-center pb-6"
       style={{
         background: "linear-gradient(to bottom, #0A2352 3%, #3D4F9E 6%, #FF8797 9%, #FF8797 91%, #3D4F9E 94%, #0A2352 97%)"
       }}

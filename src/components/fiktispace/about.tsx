@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <div className="pt-4 -mb-20 md:mb-0">
       <div className="flex items-center justify-center">
-        <div className="py-5 md:py-12 px-6 md:px-14 flex flex-col lg:flex-row gap-y-10 ">
+        <div className="py-5 md:py-12 px-6 md:px-20 flex flex-col lg:flex-row gap-y-10 ">
           <div className="lg:pr-16">
             <p className={`${Lato.className} text-justify text-white text-lg font-medium md:text-xl`}>
             <span className='font-bold font-size[1.3rem]'>FIKTI SPACE 4.0</span> adalah program kerja unggulan BEM FIKTI Universitas Gunadarma yang diselenggarakan oleh Departemen Olahraga dan Seni Budaya (ORSB),  sebagai wahana eksplorasi kreativitas <span className='font-bold font-size[1.3rem]'>khususnya di bidang Seni dan Olahraga</span> bagi mahasiswa Fakultas Ilmu Komputer dan Teknologi Informasi, Universitas Gunadarma.

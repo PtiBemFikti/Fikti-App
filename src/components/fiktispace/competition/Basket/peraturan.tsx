@@ -38,16 +38,17 @@ const syllabus : Record < string,
         },
         "SYARAT DAN KETENTUAN PESERTA": {
             points: [
-              "1. Jumlah pemain utama di lapangan sebanyak 5 orang, dan 5 pemain cadangan per tim.", 
-              // "2. Untuk tim, dibuat aturan bebas dalam pembentukan tim, namun seangkatan yang sama maksimal 3 kelas campuran dalam satu tim.", 
-              "3. Pemain yang terdaftar di satu tim tidak diperbolehkan bermain di tim lain.", 
-              "4. Pertandingan berlangsung selama 4 kuarter, masing-masing berdurasi 10 menit.",
-              "5. Sistem pertandingan menggunakan format sistem gugur.",
-              "6. Bola dianggap keluar jika menyentuh garis lapangan atau melewati batas lapangan.",
-              "7. Pemain harus menunggu di meja pencatat skor dan mendapatkan izin wasit sebelum memasuki lapangan.",
-              "8. Setiap tim harus memakai jersey seragam dengan warna yang kontras dengan lawan.",
-              "9. Hanya diperbolehkan memakai aksesoris tertentu seperti headband tanpa ikatan, knee sleeves, elbow sleeves, dan mouthguard.",
-              "10. Dilarang memakai perhiasan, topi, kuku panjang, atau aksesori dengan bagian keras/tajam.",             
+              "1. Setiap team terdiri dari 5 Pemain utama dan maksimal 5 pemain cadangan per team.",
+              "2. Untuk peserta dari kampus region Salemba, Kalimalang, Karawaci dan Cengkareng diperbolehkan untuk membuat team dari angkatan 2021 - 2024.", 
+              "3. Untuk peserta dari kampus region Depok, hanya diperbolehkan membuat team dari 1 angkatan yang sama dengan ketentuan maksimal dari 5 kelas yang berbeda.", 
+              "4. Pemain yang terdaftar di satu tim tidak diperbolehkan bermain di tim lain.", 
+              "5. Pertandingan berlangsung selama 4 kuarter, masing-masing berdurasi 10 menit.",
+              "6. Sistem pertandingan menggunakan format sistem gugur.",
+              "7. Bola dianggap keluar jika menyentuh garis lapangan atau melewati batas lapangan.",
+              "8. Pemain harus menunggu di meja pencatat skor dan mendapatkan izin wasit sebelum memasuki lapangan.",
+              "9. Setiap tim harus memakai jersey seragam dengan warna yang kontras dengan lawan.",
+              "10. Hanya diperbolehkan memakai aksesoris tertentu seperti headband tanpa ikatan, knee sleeves, elbow sleeves, dan mouthguard.",
+              "11. Dilarang memakai perhiasan, topi, kuku panjang, atau aksesori dengan bagian keras/tajam.",             
             ]
         }
     };

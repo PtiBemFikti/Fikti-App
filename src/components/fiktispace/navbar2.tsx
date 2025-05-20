@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar2: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,6 +33,21 @@ const Navbar2: React.FC = () => {
     // Update status menu
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const registLinks: { [key: string]: string } = {
+    "/fiktispace/Competition/Futsal": "https://docs.google.com/forms/d/1AcJxyEQ3tVr_-YQw8GqPteF4YEYS7EsureAW-svZYlU/edit?ts=68268bcb",
+    "/fiktispace/Competition/Basket": "https://docs.google.com/forms/d/e/1FAIpQLSeDWpc86i2JvmipbyuAJzg5ITxt3KeFuajx0ytI8jDeCAS8nw/viewform?usp=preview",
+    "/fiktispace/Competition/Volley": "https://docs.google.com/forms/d/e/1FAIpQLSfocdhKxGnOmlyXhvqPqHgimGPst6l_lZOqqcb3enCwx0eF9A/viewform?usp=dialog",
+    "/fiktispace/Competition/Badmintonmen": "https://forms.gle/AhH8i5RJYWobvGZeA",
+    "/fiktispace/Competition/Badmintonwomen": "https://forms.gle/AhH8i5RJYWobvGZeA",
+    "/fiktispace/Competition/MobileLegend": "https://docs.google.com/forms/d/e/1FAIpQLSdoIa6UBKKkd7UxAyC3bCIAsclj5D278jzEe_GpMVjSKcBBiw/viewform",
+    "/fiktispace/Competition/Fifa": "https://forms.gle/anvSLxDVjrKEbixd7",
+    "/fiktispace/Competition/Fikpost": "https://forms.gle/V75DDBk1W8ZSAYwX8",
+    "/fiktispace/Competition/Fiktography": "https://forms.gle/UXBYou1ByoXGFwRb9",
+    "/fiktispace/Competition/FGT": "https://docs.google.com/forms/d/e/1FAIpQLSds69LnQ2fm5_SVIhGU4wI6FnjLedQiop_zSRSCH75JxiyFKg/viewform?usp=header",
+  };
+
+  const registLink = registLinks[usePathname() ?? ""] || "#";
 
   return (
     <motion.nav
@@ -82,7 +98,7 @@ const Navbar2: React.FC = () => {
               </div>
             )}
           </div>
-          <Link className="" href="">
+          <Link className="" href={registLink} target="_blank" rel="noopener noreferrer">
             <button className="bg-[#FF8797] rounded-lg px-5 py-2">Regist</button>
           </Link>
         </div>
@@ -130,7 +146,7 @@ const Navbar2: React.FC = () => {
             <Link className="" href="https://wa.me/6285883321315">
               <button className="bg-[#FF8797] rounded-full py-2 w-full">CP2 (Nayla)</button>
             </Link>
-            <Link className="justify-center" href="">
+            <Link className="justify-center" href={registLink} target="_blank" rel="noopener noreferrer">
               <button className="bg-[#FF8797] rounded-full py-2 w-full">Regist</button>
             </Link>
           </div>

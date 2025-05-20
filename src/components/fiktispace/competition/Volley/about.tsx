@@ -120,29 +120,32 @@ export default function Section1() {
           <div className="bg-[#FECB62] text-center items-center w-full rounded-2xl mt-4 mb-5 p-4">
             <div>
               <p className={`${Lato.className} text-2xl text-[#0A2352] font-semibold`}>Register now to be a champion!</p>
-              <Link className="" href="">
+              <Link className="" href="https://docs.google.com/forms/d/e/1FAIpQLSfocdhKxGnOmlyXhvqPqHgimGPst6l_lZOqqcb3enCwx0eF9A/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
                 <button className="bg-[#0A2352] rounded-lg py-3 w-full md:w-[50%] lg:w-[30%] mt-3">Regist</button>
               </Link>
             </div>
           </div>
           <div className="flex justify-around items-center">
             <Image
-              src={"/fiktispace/Stella_polos.webp"}
-              alt="banner"
-              width={150}
-              height={160}
-            ></Image>
-            <Image
-              src={"/fiktispace/LOGO FS 4.png"}
-              alt="banner"
-              width={170}
-              height={110}
-            ></Image>
-            <Image
               src={"/fiktispace/Nebula_polos.webp"}
               alt="banner"
               width={150}
               height={140}
+              className="w-20 md:w-32 h-20 md:h-32"
+            ></Image>
+            <Image
+              src={"/fiktispace/LOGO FS 4.webp"}
+              alt="banner"
+              width={200}
+              height={200}
+              className="w-20 md:w-32 h-20 md:h-32"
+            ></Image>
+            <Image
+              src={"/fiktispace/Stella_polos.webp"}
+              alt="banner"
+              width={150}
+              height={160}
+              className="w-20 md:w-32 h-20 md:h-32"
             ></Image>
           </div>
         </div>

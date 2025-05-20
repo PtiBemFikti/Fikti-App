@@ -14,10 +14,10 @@ const syllabus : Record < string,
     SyllabusModule > = {
         "PERATURAN DAN KETENTUAN UMUM": {
             points: [
-              "1. Seluruh tim wajib hadir 30 menit sebelum pertandingan dimulai.", 
-              "2. Semua tim dan pemain harus sudah berada di lobi game paling lambat 5 menit sebelum jadwal pertandingan.", 
+              "1. Seluruh team wajib hadir 30 menit sebelum pertandingan dimulai.", 
+              "2. Semua team dan pemain harus sudah berada di lobi game paling lambat 5 menit sebelum jadwal pertandingan.", 
               "3. Waktu keterlambatan maksimal hanya 5 menit dari jadwal yang telah ditentukan.", 
-              "4. Apabila tim belum lengkap atau belum hadir lebih dari waktu keterlambatan yang ditetapkan, tim tersebut akan didiskualifikasi.",
+              "4. Apabila team belum lengkap atau belum hadir lebih dari waktu keterlambatan yang ditetapkan, team tersebut akan didiskualifikasi.",
               "5. Pembuktian absence (WO) dapat dilakukan melalui screenshot lobby dengan jam yang tertera sebagai bukti kehadiran.",
               "6. Babak 32 besar sampai semifinal menggunakan mode custom, draft pick 5v5, dengan spectator / panitia turnamen.",
               "7. Babak final menggunakan room turnamen dengan banned item sebanyak 10.",
@@ -27,15 +27,15 @@ const syllabus : Record < string,
         },
         "SYARAT DAN KETENTUAN PESERTA": {
             points: [
-              "1. Setiap tim terdiri dari 5 pemain utama dan 1 pemain cadangan (opsional), semua dari kelas yang sama (Fakultas Ilmu Komputer dan Teknologi Informasi).", 
-              "2. Pemain dalam satu tim harus berasal dari Fakultas Ilmu Komputer dan Teknologi Informasi.", 
+              "1. Setiap team terdiri dari 5 pemain utama dan 1 pemain cadangan (opsional), semua pemain harus dari kelas yang sama.", 
+              "2. Pemain dalam satu team harus berasal dari Fakultas Ilmu Komputer dan Teknologi Informasi.", 
               "3. Daftar pemain harus mencantumkan nama lengkap, username, dan ID akun yang akan digunakan saat bertanding.", 
               "4. Wajib menunjukkan KRS asli atau blanko pembayaran saat bertanding sebagai bukti keabsahan.",
               "5. Username akun dan ID harus sama dengan yang terdaftar saat registrasi dan tidak dapat diganti di kondisi apapun.",
               "6. Nickname peserta tidak boleh mengandung unsur negatif, SARA, atau hal-hal tidak pantas lainnya.",
               "7. Seluruh informasi yang diberikan oleh peserta menjadi tanggung jawab pribadi peserta.",
               "8. Peserta wajib menjunjung sikap sportif dan adil selama pertandingan.",
-              "9. Satu pemain hanya boleh membela satu tim saja.",
+              "9. Satu pemain hanya boleh membela satu team saja.",
               "10. Koneksi internet dan device sepenuhnya menjadi tanggung jawab peserta.",
               "11. Apabila terjadi masalah server pada hari pertandingan, maka jadwal ulang akan dijadwalkan kembali oleh panitia.",
             ]
