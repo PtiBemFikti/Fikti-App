@@ -2,7 +2,8 @@
 
 import { MonumentExtendedBold } from "@/styles/font";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { FiHelpCircle } from "react-icons/fi"; // Import icon
+import { IconContext } from "react-icons";
 
 export default function PerformersList() {
   const container = {
@@ -28,17 +29,8 @@ export default function PerformersList() {
     },
   };
 
-  const guestStars = [
-    {
-      image: "/gelar-budaya/Youth Things _ Pict 1.JPG", // pastiin file ini ada di public/gueststars/
-    },
-    {
-      image: "/gelar-budaya/Youth Things LOGO.png", // pastiin file ini ada di public/gueststars/
-    },
-    {
-      image: "/gelar-budaya/Youth Things _ Pict 2.JPG", // pastiin file ini ada di public/gueststars/
-    },
-  ];
+  // Placeholder data
+  const guestStars = [1, 2, 3];
 
   return (
     <section className="w-full flex flex-col items-center my-16 px-6">
@@ -58,20 +50,17 @@ export default function PerformersList() {
         viewport={{ once: true }}
         className="grid grid-cols-1 lg:grid-cols-3 gap-10"
       >
-        {guestStars.map((guest, index) => (
+        {guestStars.map((_, index) => (
           <motion.div
             key={index}
             variants={item}
             className="flex flex-col items-center gap-4"
           >
-            <div className="w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-lg md:hover:-translate-y-5 hover:shadow-lg hover:shadow-[#ECDCC1] transition-all duration-300">
-              <Image
-                src={guest.image}
-                alt="Youth Things"
-                width={400}
-                height={400}
-                className="object-cover w-full h-full"
-              />
+            <div className="w-[300px] h-[300px] flex-col lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-lg flex items-center justify-center bg-[#222] md:hover:-translate-y-5 hover:shadow-lg hover:shadow-[#ECDCC1] transition-all duration-300">
+              <IconContext.Provider value={{ size: "6rem", color: "#ECDCC1" }}>
+                <FiHelpCircle />
+                <h1>Guestt...</h1>
+              </IconContext.Provider>
             </div>
           </motion.div>
         ))}
