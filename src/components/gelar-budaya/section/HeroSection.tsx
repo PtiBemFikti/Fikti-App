@@ -104,7 +104,8 @@ export default function GelbudHeroSection() {
           className="flex flex-col sm:flex-row justify-center gap-4"
         >
           <Link
-            href="https://bit.ly/RegistrasiPesertaGelarBudaya2025"
+            href="#"
+            // href="https://bit.ly/RegistrasiPesertaGelarBudaya2025"
             target="_blank"
             className="bg-[#ECDCC1] text-black hover:bg-[#cfbb97] font-bold py-3 px-8 rounded-full transition-all duration-150 flex items-center justify-center gap-2"
           >
