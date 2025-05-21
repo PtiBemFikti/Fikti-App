@@ -10,20 +10,23 @@ export default function SponsorPage() {
             Our Sponsor
           </h1>
           <div className="flex flex-wrap justify-center px-4 pt-5 gap-12">
-            <Image
-              src={"/fiktispace/sponsor/Mile 32 Cafe.png"}
-              alt="Mile 32 Cafe"
-              width={500}
-              height={500}
-              className="w-24 h-20 md:w-28 md:h-24 cursor-pointer hover:scale-110 transition-all duration-300"
-            ></Image>
+            <div>
+              <Image
+                src={"/fiktispace/sponsor/Mile 32 Cafe.png"}
+                alt="Mile 32 Cafe"
+                width={500}
+                height={500} 
+                className="w-24 h-20 md:w-28 md:h-24 cursor-pointer hover:scale-110 transition-all duration-300 mb-2"
+              ></Image>
+              <p className={`${Lato.className} text-center`}>Mile 32 Café</p>
+            </div>
           </div>
         </div>
         <div className="text-center lg:w-2/3">
           <h1 className={`text-sm md:text-xl bg-gradient-to-r from-[#FECB62] to-white bg-clip-text text-transparent ${AkiraExpanded.className}`}>
             Our Media Partner
           </h1>
-          <div className="flex flex-wrap justify-center px-4 pt-6 gap-12">
+          <div className="flex flex-wrap justify-center px-4 lg:px-10 pt-6 gap-10">
             <Image
               src={"/fiktispace/sponsor/Ikut_event.png"}
               alt="Ikut Event"
@@ -57,7 +60,7 @@ export default function SponsorPage() {
               alt="UKM Vollyball"
               width={500}
               height={500}
-              className="w-20 h-16 lg:w-24 lg:h-[5.5rem] cursor-pointer hover:scale-110 transition-all duration-300"
+              className="w-[4.5rem] h-16 lg:w-24 lg:h-[5.5rem] cursor-pointer hover:scale-110 transition-all duration-300"
             ></Image>
             <Image
               src={"/fiktispace/sponsor/futsalclub.png"}

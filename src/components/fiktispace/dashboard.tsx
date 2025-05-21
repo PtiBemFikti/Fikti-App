@@ -65,8 +65,8 @@ export default function DashboardPage() {
       </div>
 
       {/* mobile */}
-      <div className="mt-28 md:hidden">
-        <div className="flex-wrap bg-[#FECB62] pt-8">
+      <div className="mt-24 md:hidden">
+        <div className="flex-wrap bg-[#FECB62] pt-6">
           <div className="flex px-6 items-center relative overflow-hidden z-0">
             <div className="flex-col justify-start items-start flex">
               <Link href="/" className="mb-4">

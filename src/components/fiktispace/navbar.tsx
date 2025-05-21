@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 15) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -57,11 +57,11 @@ const Navbar: React.FC = () => {
       className={`px-4 lg:px-[3.75rem] fixed w-full z-30 transition-all duration-300 ${
         isScrolled
           ? "bg-[#0A2352] py-2 backdrop-blur-lg"
-          : "bg-[#FECB62] py-4"
+          : "bg-[#FECB62] py-2 md:py-4"
         }`}
     >
       <div className="">
-        <div className="bg-[#2A2364] items-center flex justify-between px-10 py-4 rounded-lg">
+        <div className="bg-[#2A2364] items-center flex justify-between px-5 md:px-10 py-4 rounded-lg">
           <Link href="/fiktispace/" className="items-center w-10/12 lg:w-1/12">
             <Image
               src="/fiktispace/LOGO FS 4.png"
