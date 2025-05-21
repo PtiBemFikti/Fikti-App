@@ -73,40 +73,43 @@ export default function FloatingGallery() {
   }, []);
 
   return (
-    <section
-      ref={containerRef}
-      className="hidden md:flex relative w-full md:min-h-[120vh] lg:min-h-[150vh] overflow-hidden items-center justify-center pb-6"
-      style={{
-        background: "linear-gradient(to bottom, #0A2352 3%, #3D4F9E 6%, #FF8797 9%, #FF8797 91%, #3D4F9E 94%, #0A2352 97%)"
-      }}
-    >
-      {/* Centered Title */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center z-10 text-center">
-        <h1 className={`text-lg md:text-4xl text-[#0A2352] ${AkiraExpanded.className}`}>
-          Documentation
-        </h1>
-        <span className={`text-sm italic md:text-lg text-[#0A2352] ${Lato.className}`}>
-          Celebrating Moments Together
-        </span>
-      </div>
+    <div>
+      {/* desktop */}
+      <section
+        ref={containerRef}
+        className="hidden md:flex relative w-full md:min-h-[120vh] lg:min-h-[150vh] overflow-hidden items-center justify-center pb-6"
+        style={{
+          background: "linear-gradient(to bottom, #0A2352 3%, #3D4F9E 6%, #FF8797 9%, #FF8797 91%, #3D4F9E 94%, #0A2352 97%)"
+        }}
+      >
+        {/* Centered Title */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center z-10 text-center">
+          <h1 className={`text-lg md:text-4xl text-[#0A2352] ${AkiraExpanded.className}`}>
+            Documentation
+          </h1>
+          <span className={`text-sm italic md:text-lg text-[#0A2352] ${Lato.className}`}>
+            Celebrating Moments Together
+          </span>
+        </div>
 
-      {/* Floating Images */}
-      <div className="absolute w-[90%] h-[85%] z-0">
-        {images.map((src, i) => (
-          <div
-            key={i}
-            className="floating-image absolute w-[18%] h-[18%]"
-            style={positions[i]}
-          >
-            <Image
-              src={src}
-              alt={`doc${i + 1}`}
-              fill
-              className="object-contain rounded-2xl"
-            />
-          </div>
-        ))}
-      </div>
-    </section>
+        {/* Floating Images */}
+        <div className="absolute w-[90%] h-[85%] z-0">
+          {images.map((src, i) => (
+            <div
+              key={i}
+              className="floating-image absolute w-[18%] h-[18%]"
+              style={positions[i]}
+            >
+              <Image
+                src={src}
+                alt={`doc${i + 1}`}
+                fill
+                className="object-contain rounded-2xl"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
