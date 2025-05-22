@@ -11,12 +11,12 @@ const images = [
     "/technofair/Dokumentasi/dokum5.webp",
     "/technofair/Dokumentasi/dokum6.webp",
     "/technofair/Dokumentasi/dokum7.webp",
-    "/technofair/Dokumentasi/dokum16.webp",
+    "/technofair/Dokumentasi/dokum12.webp",
   ];
 const images2 = [
     "/technofair/Dokumentasi/dokum8.webp",
     "/technofair/Dokumentasi/dokum9.webp",
-    "/technofair/Dokumentasi/dokum15.webp",
+    "/technofair/Dokumentasi/dokum5.webp",
     "/technofair/Dokumentasi/dokum10.webp",
     "/technofair/Dokumentasi/dokum11.webp",
     "/technofair/Dokumentasi/dokum12.webp",
