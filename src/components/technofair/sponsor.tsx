@@ -11,7 +11,7 @@ const otherSponsorsData = [
   {
     title: "SPONSORSHIP",
     images: [
-      "/technofair/logoTF12/sponsorship/Dicoding Logoy.png"
+      "/technofair/logoTF12/sponsorship/Dicoding Logo.png"
     ]
   },
   {

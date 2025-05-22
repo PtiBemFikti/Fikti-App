@@ -129,7 +129,7 @@ export default function KompetisiSection() {
                 </div>
 
                 <div className="relative flex flex-col gap-5 mt-[-30px] items-center scale-80 lg:mt-0 lg:scale-100"> 
-                    <div ref={sliderRef} className="relative flex gap-5 overflow-x-auto items-center w-full h-full"> 
+                    <div ref={sliderRef} className="relative flex gap-5 overflow-x-auto items-center w-full h-full pl-5"> 
                     {cardData.map((data) => (
                         <div key={data.id} className="flex-shrink-0">
                         <Card data={data} />
