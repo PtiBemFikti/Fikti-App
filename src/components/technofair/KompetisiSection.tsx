@@ -35,7 +35,7 @@ interface CardData {
       date: "To be Announced",
       details1: "To be Announced",
       details2: "To be Announced",
-      href: "",
+      href: "/technofair/details/competitions/competitive-programming",
     },
     {
       id: 3,
