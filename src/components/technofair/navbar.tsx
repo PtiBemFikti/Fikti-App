@@ -58,7 +58,7 @@ export function Navbar() {
             <Image src="/technofair/logoTF12/Logo TF 12.0 Tanpa BG.png" alt="Logo" width={50} height={50}/>
           </Link>
 
-          <h1 className={`${poppins.className} text-white text-2xl font-semibold lg:hidden`}>Technofair 12</h1>
+          <h1 className={`${poppins.className} text-white text-2xl font-semibold lg:hidden`}>Technofair 12.0</h1>
 
         </div>
 

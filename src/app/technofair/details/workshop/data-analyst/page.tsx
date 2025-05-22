@@ -4,8 +4,8 @@ import { Metadata } from 'next';
 import DataAnalyst from '@/components/technofair/details/DataAnalyst';
 
 export const metadata: Metadata = {
-  title: 'Data Science - TechnoFair 12.0',
-  description: 'Data Science || TechnoFair 12.0',
+  title: 'Data Analyst - TechnoFair 12.0',
+  description: 'Data Analyst || TechnoFair 12.0',
   icons: {
     icon: '/technofair/logoTF12/Logo TF 12 Putih.png',
   }

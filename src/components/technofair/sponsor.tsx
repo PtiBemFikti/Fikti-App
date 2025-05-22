@@ -1,5 +1,6 @@
 import { poppins } from "@/styles/font";
 import Image from "next/image";
+import { useState } from "react";
 
 const sponsorUtama = {
   title: "OFFICIAL EXCLUSIVE CLOUD HOSTING PARTNER",
@@ -8,31 +9,32 @@ const sponsorUtama = {
 
 const otherSponsorsData = [
   {
-    title: "SPONSORSHIP & PARTNERSHIP",
+    title: "SPONSORSHIP",
     images: [
-      "/technofair/dapoerdjoeang.png",
-      "/technofair/frisianflag.png",
-      "/technofair/jh-square.png"
+      "/technofair/logoTF12/sponsorship/Dicoding Logoy.png"
     ]
   },
   {
-    title: "COMMUNITY PARTNER",
+    title: "PARTNERSHIP",
     images: [
-      "/technofair/ccug.png",
-      "/technofair/gundario.png"
+      "/technofair/logoTF12/partnership/CCUG_Logo_with_Text.png",
+      "/technofair/logoTF12/partnership/LOGO Gunadarma IO.png"
     ]
   },
   {
     title: "MEDIA PARTNERS",
     images: [
-      "/technofair/ugtv.png",
-      "/technofair/seputar-seminar.png",
-      "/technofair/anakgundardotco.png"
+      "/technofair/logoTF12/medpart/Logo BEMP STI.png",
+      "/technofair/logoTF12/medpart/Logo CSC.png",
+      "/technofair/logoTF12/medpart/Logo Himti.png",
+      "/technofair/logoTF12/medpart/Logo Job on yours.jpg",
+      "/technofair/logoTF12/medpart/logo-gdgocug.png"
     ]
   }
 ];
 
 export function Sponsor() {
+  const [imgWidth, setImgWidth] = useState<number>(100);
   return (
     <div className="mt-56 mb-60">
       <h1 className={`${poppins.className} text-3xl lg:text-[65px] font-extrabold text-center`}>
@@ -56,9 +58,9 @@ export function Sponsor() {
               <Image 
                 src={sponsorUtama.image}
                 alt="Dewaweb Sponsor"
-                height={250} // Fixed height for dewaweb
-                width={500}  // Manually set a width (or adjust based on your design)
-                layout="intrinsic" // Automatically maintains aspect ratio
+                height={250} 
+                width={500}  
+                layout="intrinsic" 
                 objectFit="contain"
                 priority
               />
@@ -85,12 +87,15 @@ export function Sponsor() {
                 <div key={imgIndex} className="scale-75 lg:scale-100">
                   <Image 
                     src={image}
-                    alt="Sponsor Image"
-                    height={100}  // Fixed height
-                    width={100}   // Set width dynamically to maintain aspect ratio
-                    layout="intrinsic" // Ensures the image keeps its aspect ratio
-                    objectFit="contain"
-                    priority
+                    alt={image}
+                    quality={100}
+                    loading="lazy"
+                    onLoadingComplete={({ naturalWidth, naturalHeight }) => {
+                      const calculatedWidth = (naturalWidth / naturalHeight) * 100;
+                      setImgWidth(calculatedWidth);
+                    }}
+                    width={imgWidth}
+                    height={100}
                   />
                 </div>
               ))}

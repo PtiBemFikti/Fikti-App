@@ -1,22 +1,22 @@
-import DataSciencePage from '@/components/technofair/details/DataScience';
+import IotPageContent from '@/components/technofair/details/InternetOfThings';
 import NavbarNoComponents from '@/components/technofair/NavbarNoComponents';
 import { Footer } from '@/components/technofair/footer';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Data Science - TechnoFair 12.0',
-  description: 'Data Science || TechnoFair 12.0',
+  title: 'Internet of Things - TechnoFair 12.0',
+  description: 'Internet of Things || TechnoFair 12.0',
   icons: {
     icon: '/technofair/logoTF12/Logo TF 12 Putih.png',
   }
 };
 
-export default function dataSciencePage() {
+export default function IotPage() {
   return (
     <div>
       <NavbarNoComponents />
-      <div className=''>
-        <DataSciencePage />
+      <div>
+        <IotPageContent />
       </div>
       <Footer />
     </div>

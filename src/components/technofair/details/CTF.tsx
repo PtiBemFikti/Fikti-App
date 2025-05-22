@@ -10,10 +10,22 @@ const eventData = [
     judul: "Ketentuan Umum",
     details: (
       <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+        <li className="text-black mt-4">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TechnoFair 12.0.</li>
+        <li className="text-black mt-4">2. Peserta merupakan mahasiswa/i aktif Universitas Gunadarma, dibuktikan dengan Kartu Tanda Mahasiswa yang diunggah pada form registrasi di website TechnoFair 12.0.</li>
+        <li className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
+        <li className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang dimana setiap anggota tim harus berasal dari perguruan tinggi yang sama dan diperbolehkan dari jurusan/program studi yang  berbeda.</li>
+        <li className="text-black mt-4">5. Peserta yang tidak memenuhi persyaratan pendaftaran sampai waktu yang ditentukan akan dinyatakan gugur.</li>
+        <li className="text-black mt-4">6. Peserta bukan merupakan panitia TechnoFair 12.0 dan tidak memiliki keterkaitan dalam proses pembuatan soal Capture The Flag.</li>
+        <li className="text-black mt-4">7. Setiap peserta hanya boleh terdaftar pada 1 tim pada cabang kompetisi yang sama.</li>
+        <li className="text-black mt-4">8. Setiap peserta hanya dapat menjadi ketua tim pada maksimal 1 kompetisi.</li>
+        <li className="text-black mt-4">9. Peserta tidak boleh diwakilkan ataupun mewakilkan orang lain yang bukan dirinya sendiri.</li>
+        <li className="text-black mt-4">10. Para peserta wajib mengupload twibbon di akun instagram masing-masing sesuai dengan ketentuan yang tertera di akun Instagram TechnoFair 12.0 (@technofair).</li>
+        <li className="text-black mt-4">11. Peserta yang merupakan pemenang kompetisi TechnoFair 12.0 wajib menghadiri acara Closing Ceremony yang diselenggarakan secara offline di , Kampus , Universitas Gunadarma.</li>
+        <li className="text-black mt-4">12. Panitia TechnoFair 12.0 berhak untuk mencabut gelar juara dari pemenang jika ditemukan kecurangan atau pelanggaran hukum dalam proses pelaksanaan kompetisi.</li>
+        <li className="text-black mt-4">13. Panitia berhak mendiskualifikasi tim yang melakukan tindak kecurangan maupun pelanggaran terhadap aturan kompetisi TechnoFair 12.0.</li>
+        <li className="text-black mt-4">14. Keputusan juri dan panitia TechnoFair 12.0 bersifat mutlak dan tidak dapat diganggu gugat.</li>
+        <li className="text-black mt-4">15. Dilarang menahan bendera selama kompetisi berlangsung (flag hoarding).</li>
+        <li className="text-black mt-4">16. Panitia berhak bertanya ke peserta jika diperlukan.</li>
       </ol>
     ),
   },

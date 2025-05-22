@@ -4,8 +4,8 @@ import { Metadata } from 'next';
 import AI from '@/components/technofair/details/ArtificialIntelligence';
 
 export const metadata: Metadata = {
-  title: 'Data Science - TechnoFair 12.0',
-  description: 'Data Science || TechnoFair 12.0',
+  title: 'Artificial Intelligence - TechnoFair 12.0',
+  description: 'Artificial Intelligence || TechnoFair 12.0',
   icons: {
     icon: '/technofair/logoTF12/Logo TF 12 Putih.png',
   }
