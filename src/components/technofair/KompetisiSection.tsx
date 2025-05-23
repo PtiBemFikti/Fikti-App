@@ -53,7 +53,7 @@ interface CardData {
 
   function Card({ data }: { data: CardData }) {
     return (
-      <div className="bg-[#FFEFD7] w-[320px] h-[496px] rounded-[30px] shadow-[10px_9px_5px_0px_rgba(94,77,73,0.50)] ">
+      <div className="bg-[#FFEFD7] w-[320px] h-[496px] rounded-[30px] shadow-[10px_9px_5px_0px_rgba(94,77,73,0.50)] flex flex-col justify-between">
         <div className="p-5 flex-grow h-[496px]">
           <div className="rounded-3xl  mb-6">
             <Image src={data.image} alt="image" width={280} height={150} className="rounded-3xl"/>
@@ -89,12 +89,14 @@ interface CardData {
                 </p>
               </div>
           </div>
-          <div className="p-5 pt-0 text-right bottom-0">
+        </div>
+
+          <div className="p-5 pt-0 text-right">
             <Link href={data.href} className="text-black text-xl font-semibold hover:tex">
               Learn More
             </Link>
           </div>
-        </div>
+
       </div>
     );
   }
@@ -118,7 +120,7 @@ export default function KompetisiSection() {
     return(
         <div className="relative">
 
-            <div className="absolute left-0 top-0 bg-[#FE8A16] rounded-r-[50px] w-[80%] lg:w-[70%] h-full lg:h-[600px]"></div>
+            <div className="absolute left-0 top-0 bg-[#FE8A16] rounded-r-[50px] w-[80%] lg:w-[70%] h-full lg:h-[650px]"></div>
 
                 <div className="lg:grid lg:grid-cols-[40%_60%] pb-10 lg:pb-0 lg:h-[550px]">
 
@@ -135,7 +137,7 @@ export default function KompetisiSection() {
                         </div>
                     ))} 
                     </div> 
-                    <div className=" absolute left-0  bottom-[-70px] lg:bottom-0 mt-8"> 
+                    <div className=" absolute left-0  bottom-[-70px] lg:bottom- mt-8"> 
                     <button onClick={scrollPrev}
                     className=" mr-4 px-4 py-2 bg-[#100F21] text-[#FE8A16] text-2xl rounded-l-md hover:bg-[#FFFAF0] hover:text-[#100F21] transition-colors duration-500">◀</button>
                     <button onClick={scrollNext}
