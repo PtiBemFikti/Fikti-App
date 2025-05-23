@@ -3,7 +3,7 @@ import { Montserrat, poppins } from "@/styles/font";
 import { useState } from "react";
 
 const kontenSeminar = [
-    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Data Science", metode: "TBA" },
+    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Internet of Things", metode: "TBA" },
     { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Cyber Security", metode: "TBA" },
 ];
 const kontenWorkshop = [
@@ -11,10 +11,9 @@ const kontenWorkshop = [
     { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Artificial Intelligence", metode: "TBA" },
 ];
 const kontenKompetisi = [
-    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Mobile App UI/UX Design", metode: "TBA" },
-    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Data Analyst", metode: "TBA" },
-    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Competitive Programming", metode: "TBA" },
-    { tanggal: "Tanggal: TBA", waktu: "Waktu: TBA", judul: "Capture The Flag", metode: "TBA" },
+    { tanggal: "Tanggal: 21 Mei 2025", waktu: "Waktu: TBA", judul: "Mobile App UI/UX Design", metode: "Online" },
+    { tanggal: "Tanggal: 20 Mei 2025", waktu: "Waktu: TBA", judul: "Competitive Programming", metode: "Hybrid" },
+    { tanggal: "Tanggal: 20 Mei 2025", waktu: "Waktu: TBA", judul: "Capture The Flag", metode: "Hybrid" },
 ];
 
 export function Schedule() {
