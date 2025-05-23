@@ -24,7 +24,7 @@ const cardData: CardData[] = [
     date: "To be Announced",
     details1: "To be Announced",
     details2: "To be Announced",
-    href: "/technofair/details/workshop/data-analyst",
+    href: "",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const cardData: CardData[] = [
     date: "To be Announced",
     details1: "To be Announced",
     details2: "To be Announced",
-    href: "/technofair/details/workshop/artificial-intelligence",
+    href: "",
   },
 ];
 
@@ -105,7 +105,7 @@ export default function WorkshopSection() {
             ))}
           </div>
         </div>
-        <div className="hidden lg:block relative mr-6 lg:mr-0 pt-5 lg:pr-[112px] lg:pt-[100px] lg:py-[200px] text-right">
+        <div className="hidden lg:block relative mr-6 lg:mr-0 pt-5 lg:pr-[112px] lg:pt-[100px] lg:py-[200px] text-right overflow-auto">
           <h1 className={`${Montserrat.className} text-4xl lg:text-[60px] font-bold text-black`}>
             Workshop
           </h1>
