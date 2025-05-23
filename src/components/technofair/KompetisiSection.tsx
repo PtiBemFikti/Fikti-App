@@ -19,33 +19,33 @@ interface CardData {
     {
       id: 1,
       category: "Competition",
-      mode: "TBA",
+      mode: "Online",
       title: "Mobile App UI/UX Design",
       subtitle: "“Pixel Perfect: Transforming Concepts into Seamless Mobile Experiences”",
       date: "21 Mei - 19 Juli, 2025",
-      details: "To be Announced",
+      details: "Creativity & Usability",
       href: "/technofair/details/competitions/mobile-design",
       image: "/technofair/logoTF12/UX.png",
     },
     {
       id: 2,
       category: "Competition",
-      mode: "TBA",
+      mode: "Hybrid",
       title: "Competitive Programming",
       subtitle: "“Algorithmic Mastery: Solving Challenges Under the Clock”",
       date: "20 Mei - 19 Juli, 2025",
-      details: "To be Announced",
+      details: "Problem Solving & Optimization",
       href: "/technofair/details/competitions/competitive-programming",
       image: "/technofair/logoTF12/CP.png",
     },
     {
       id: 3,
       category: "Competition",
-      mode: "TBA",
+      mode: "Hybrid",
       title: "Capture the Flag",
       subtitle: "“Capture the Flag: Exploiting Vulnerabilities to Fortify Defenses”",
       date: "20 Mei - 19 Juli, 2025",
-      details: "To be Announced",
+      details: "Information & Cyber Security",
       href: "/technofair/details/competitions/capture-the-flag",
       image: "/technofair/logoTF12/CTF.png",
     },
@@ -54,7 +54,7 @@ interface CardData {
   function Card({ data }: { data: CardData }) {
     return (
       <div className="bg-[#FFEFD7] w-[320px] h-[496px] rounded-[30px] shadow-[10px_9px_5px_0px_rgba(94,77,73,0.50)] ">
-        <div className="p-5 flex-grow">
+        <div className="p-5 flex-grow h-[496px]">
           <div className="rounded-3xl  mb-6">
             <Image src={data.image} alt="image" width={280} height={150} className="rounded-3xl"/>
           </div>
@@ -89,7 +89,7 @@ interface CardData {
                 </p>
               </div>
           </div>
-          <div className="p-5 pt-0 text-right ">
+          <div className="p-5 pt-0 text-right bottom-0">
             <Link href={data.href} className="text-black text-xl font-semibold hover:tex">
               Learn More
             </Link>

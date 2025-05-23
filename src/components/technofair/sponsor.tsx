@@ -41,7 +41,6 @@ export function Sponsor() {
         Sponsorship
       </h1>
 
-      {/* Dewaweb Sponsor */}
       <div className="mt-10">
         <div className="lg:container lg:mx-auto">
           {/* Title with horizontal lines */}
@@ -69,7 +68,6 @@ export function Sponsor() {
         </div>
       </div>
 
-      {/* Other Sponsors */}
       {otherSponsorsData.map((sponsor, index) => (
         <div key={index} className="mt-10">
           <div className="lg:container lg:mx-auto">
