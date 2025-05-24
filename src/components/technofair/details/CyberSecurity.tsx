@@ -7,54 +7,62 @@ import { useState } from "react";
 
 const eventData = [
   {
-    judul: "Ketentuan Umum",
+    judul: "Benefit Seminar",
     details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+      <ol className="text-black text-xl">
+        <li className="flex items-start gap-2">
+                <Image src="/technofair/ceklis.png" width={20} height={20} alt="Checklist" className="w-5 h-5 mt-1" />
+                <span>Mengetahui perkembangan terkini dan masa depan cybersecurity di era digital.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Image src="/technofair/ceklis.png" width={20} height={20} alt="Checklist" className="w-5 h-5 mt-1" />
+                <span>Memahami jenis-jenis ancaman siber dan bagaimana teknik mitigasi diterapkan di dunia nyata.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Image src="/technofair/ceklis.png" width={20} height={20} alt="Checklist" className="w-5 h-5 mt-1" />
+                <span>Mendapatkan wawasan tentang kebijakan, regulasi, dan peran berbagai pihak dalam menjaga keamanan siber.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Image src="/technofair/ceklis.png" width={20} height={20} alt="Checklist" className="w-5 h-5 mt-1" />
+                <span>Menyadari pentingnya keamanan digital dalam kehidupan pribadi maupun profesional.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Image src="/technofair/ceklis.png" width={20} height={20} alt="Checklist" className="w-5 h-5 mt-1" />
+                <span>Menambah insight tentang peluang dan tantangan berkarir di bidang cybersecurity.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Image src="/technofair/ceklis.png" width={20} height={20} alt="Checklist" className="w-5 h-5 mt-1" />
+                <span>Mendalami studi kasus nyata yang ditampilkan oleh para narasumber.</span>
+              </li>
       </ol>
     ),
   },
   {
-    judul: "Ketentuan Kompetisi",
+    judul: "Detail Materi Seminar",
     details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-      </ol>
-    ),
-  },
-  {
-    judul: "Tahapan Kompetisi",
-    details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-      </ol>
-    ),
-  },
-  {
-    judul: "Kriteria Penilaian",
-    details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-      </ol>
+      <div className="text-black">
+        <h2 className="text-xl font-bold ">
+        Materi Seminar 1 – Emerging Trends in Cybersecurity
+      </h2>
+      <ul className="list-disc list-inside mt-2 space-y-1">
+        <li>Menjelaskan perkembangan tren dan isu terkini dalam dunia cybersecurity.</li>
+        <li>Mengenal teknologi terbaru yang digunakan dalam sistem keamanan digital.</li>
+        <li>Peran strategis perusahaan dan pemerintah dalam membangun ekosistem keamanan siber.</li>
+        <li>Dampak transformasi digital terhadap model dan pendekatan keamanan.</li>
+        <li>Prediksi masa depan keamanan siber dan arah inovasi ke depan.</li>
+      </ul>
+
+      <h2 className="text-xl font-bold mt-8">
+        Materi Seminar 2 – Understanding Cyber Threats and Mitigation Strategy
+      </h2>
+      <ul className="list-disc list-inside mt-2 space-y-1">
+        <li>Mengupas jenis-jenis ancaman siber yang saat ini sedang berkembang dan mengancam berbagai sektor.</li>
+        <li>Teknik mitigasi dan pencegahan yang efektif dalam menangkal serangan digital.</li>
+        <li>Kebijakan, regulasi, dan standar yang relevan dalam tata kelola keamanan informasi.</li>
+        <li>Studi kasus serangan siber yang menggambarkan dampak nyata dan langkah mitigasi.</li>
+        <li>Membangun budaya keamanan siber dari individu hingga organisasi.</li>
+      </ul>
+      </div>
     ),
   },
 ]
@@ -115,7 +123,7 @@ export default function CyberSecurity() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE SEMINAR
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Kompetisi ini memiliki mekanisme dimana sebuah tim diminta untuk mengambil sebuah file atau string yang sudah disembunyikan sistem, serta mendeteksi lalu mengeksploitasi kelemahan untuk mendapatkan dan mengumpulkan flag sebanyak-banyaknya.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Seminar TechnoFair 12.0 bertema “The Future of Cybersecurity: Trends, Threats, and Technologies” bertujuan memberikan pemahaman mendalam tentang tantangan dan solusi terkini di bidang keamanan siber. Menghadirkan akademisi dan profesional industri, seminar ini membahas tren terbaru, ancaman yang terus berkembang, serta teknologi dan kebijakan untuk mengatasinya. Peserta akan mendapatkan wawasan komprehensif tentang masa depan dunia digital yang aman dan pentingnya kesadaran individu dalam melindungi data serta privasi.</p>
       </div>
 
 

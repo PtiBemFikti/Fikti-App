@@ -7,54 +7,82 @@ import { useState } from "react";
 
 const eventData = [
   {
-    judul: "Ketentuan Umum",
+    judul: "Benefit Seminar",
     details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
+      <ol className="text-black text-xl">
+        <li className="flex items-start gap-2 mt-2">
+                <Image src="/technofair/ceklis.png" alt="checkbox" width={20} height={20} className="mt-1" />
+                <span>Memahami konsep dasar Internet of Things (IoT) dan Artificial Intelligence (AI) dalam konteks bisnis modern.</span>
+              </li>
+              <li className="flex items-start gap-2 mt-2">
+                <Image src="/technofair/ceklis.png" alt="checkbox" width={20} height={20} className="mt-1" />
+                <span>Mendapat wawasan tentang integrasi IoT dan AI untuk analisis perilaku pelanggan dan pengambilan keputusan berbasis data.</span>
+              </li>
+              <li className="flex items-start gap-2 mt-2">
+                <Image src="/technofair/ceklis.png" alt="checkbox" width={20} height={20} className="mt-1" />
+                <span>Belajar dari para ahli mengenai studi kasus nyata dan strategi implementasi IoT dan AI dalam dunia usaha.</span>
+              </li>
+              <li className="flex items-start gap-2 mt-2">
+                <Image src="/technofair/ceklis.png" alt="checkbox" width={20} height={20} className="mt-1" />
+                <span>Mengembangkan pola pikir kritis dan inovatif dalam menghadapi tantangan transformasi digital.</span>
+              </li>
+              <li className="flex items-start gap-2 mt-2">
+                <Image src="/technofair/ceklis.png" alt="checkbox" width={20} height={20} className="mt-1" />
+                <span>Menambah insight dan bekal keterampilan dalam mengaplikasikan teknologi IoT-AI di dunia industri.</span>
+              </li>
+              <li className="flex items-start gap-2 mt-2">
+                <Image src="/technofair/ceklis.png" alt="checkbox" width={20} height={20} className="mt-1" />
+                <span>Memperluas jaringan melalui diskusi dan interaksi langsung dengan praktisi dan profesional teknologi.</span>
+        </li>
       </ol>
     ),
   },
   {
-    judul: "Ketentuan Kompetisi",
+    judul: "Detail Materi Seminar",
     details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-      </ol>
-    ),
-  },
-  {
-    judul: "Tahapan Kompetisi",
-    details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-      </ol>
-    ),
-  },
-  {
-    judul: "Kriteria Penilaian",
-    details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-      </ol>
+      <div className="text-black">
+         <h2 className="text-xl font-bold">
+        Materi Seminar 1 – Enhancing Customer Engagement with AI-Powered IoT Solutions
+      </h2>
+      <ul className="list-disc list-inside mt-2 space-y-1">
+        <li>
+          Menjelaskan konsep dasar integrasi AI dan IoT dalam meningkatkan interaksi dan keterlibatan pelanggan.
+        </li>
+        <li>
+          Menganalisis bagaimana solusi berbasis AI dalam IoT dapat memahami pola perilaku pelanggan secara real-time.
+        </li>
+        <li>
+          Menjelaskan penerapan personalisasi layanan dan pengalaman pelanggan melalui teknologi AI-powered IoT.
+        </li>
+        <li>
+          Mengupas studi kasus bisnis yang sukses menerapkan AI dan IoT untuk menciptakan hubungan pelanggan yang lebih kuat.
+        </li>
+        <li>
+          Mengidentifikasi tantangan umum serta strategi dalam mengoptimalkan AI-IoT untuk meningkatkan customer engagement.
+        </li>
+      </ul>
+
+      <h2 className="text-xl font-bold mt-8">
+        Materi Seminar 2 – Overcoming Challenges in IoT and AI Business Implementation
+      </h2>
+      <ul className="list-disc list-inside mt-2 space-y-1">
+        <li>
+          Mengidentifikasi hambatan utama yang dihadapi bisnis dalam mengimplementasikan teknologi IoT dan AI.
+        </li>
+        <li>
+          Membahas isu-isu keamanan dan privasi yang muncul dalam integrasi sistem AI-IoT.
+        </li>
+        <li>
+          Menjelaskan tantangan infrastruktur, biaya, dan skalabilitas dalam penerapan AI dan IoT di dunia usaha.
+        </li>
+        <li>
+          Menyoroti pengaruh regulasi dan kebijakan terhadap adopsi teknologi IoT dan AI di sektor industri.
+        </li>
+        <li>
+          Menawarkan strategi praktis dan solusi inovatif untuk mengatasi hambatan dalam transformasi digital berbasis AI-IoT.
+        </li>
+      </ul>
+      </div>
     ),
   },
 ]
@@ -77,14 +105,14 @@ export default function DataScience() {
           
           
           <h1 className={`${Montserrat.className} text-3xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
-            Data Science
+            Internet of Things
           </h1>
         </div>
       </div>
  
 
       <div className="mt-10 pb-5">
-        <h1 className="text-black text-lg md:text-3xl italic leading-[150%] text-center">Data Science Seminar of <br className="md:hidden" />TechnoFair 12.0</h1>
+        <h1 className="text-black text-lg md:text-3xl italic leading-[150%] text-center">Internet of Things Seminar of <br className="md:hidden" />TechnoFair 12.0</h1>
         <div className="pt-6 text-center justify-center flex gap-6">
           <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full">
           Registration
@@ -115,7 +143,7 @@ export default function DataScience() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE SEMINAR
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Kompetisi ini memiliki mekanisme dimana sebuah tim diminta untuk mengambil sebuah file atau string yang sudah disembunyikan sistem, serta mendeteksi lalu mengeksploitasi kelemahan untuk mendapatkan dan mengumpulkan flag sebanyak-banyaknya.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Seminar TechnoFair 12.0 dengan tema “Innovating IoT with AI: A New Era of Customer-Centric Business Growth” merupakan wadah edukatif yang membahas integrasi Internet of Things (IoT) dan Artificial Intelligence (AI) dalam mendorong pertumbuhan bisnis berorientasi pelanggan. Menghadirkan pakar industri, akademisi, dan praktisi, seminar ini mengulas studi kasus, strategi, serta tantangan nyata penerapan IoT dan AI di berbagai sektor, sekaligus memberikan wawasan tentang pemanfaatan teknologi untuk meningkatkan efisiensi, pengalaman pelanggan, dan daya saing di era digital.</p>
       </div>
 
 
