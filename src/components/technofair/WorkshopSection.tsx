@@ -24,7 +24,7 @@ const cardData: CardData[] = [
     date: "To be Announced",
     details1: "To be Announced",
     details2: "To be Announced",
-    href: "",
+    href: "/technofair/details/workshop/data-analyst",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const cardData: CardData[] = [
     date: "To be Announced",
     details1: "To be Announced",
     details2: "To be Announced",
-    href: "",
+    href: "/technofair/details/workshop/artificial-intelligence",
   },
 ];
 

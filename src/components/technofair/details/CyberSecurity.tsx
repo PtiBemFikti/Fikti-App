@@ -105,9 +105,9 @@ export default function CyberSecurity() {
  
       <div className=" mt-20">
         <h1 className={`${Montserrat.className} text-center text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
-          SEMINAR TIMELINE
+          WAKTU PELAKSANAAN
         </h1>
- <div className="space-y-6 py-6 px-14  mt-5 bg-[#FFDDBA] w-fit mx-auto shadow-lg">
+          <div className="space-y-6 py-6 px-14  mt-5 bg-[#FFDDBA] w-fit mx-auto shadow-lg">
             <div className="flex items-center space-x-3">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"

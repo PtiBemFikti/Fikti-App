@@ -7,54 +7,41 @@ import { useState } from "react";
 
 const eventData = [
   {
-    judul: "Ketentuan Umum",
+    judul: "Benefit Workshop",
     details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-      </ol>
+       <div className="space-y-2 text-black text-xl">
+      <div className="flex items-start gap-2">
+        <Image src="/technofair/ceklis.png"  alt="Checklist" width={20} height={20} />
+        <p>Memahami konsep dan prinsip dasar Artificial Intelligence dan Deep Learning.</p>
+      </div>
+      <div className="flex items-start gap-2">
+        <Image src="/technofair/ceklis.png"  alt="Checklist" width={20} height={20} />
+        <p>Mengenal peran dan keterampilan inti yang dibutuhkan untuk menjadi seorang AI Specialist.</p>
+      </div>
+      <div className="flex items-start gap-2">
+        <Image src="/technofair/ceklis.png"  alt="Checklist" width={20} height={20} />
+        <p>Mendalami proses pengembangan solusi AI.</p>
+      </div>
+      <div className="flex items-start gap-2">
+        <Image src="/technofair/ceklis.png"  alt="Checklist" width={20} height={20} />
+        <p>Menambah portofolio praktis yang relevan dengan kebutuhan industri saat ini.</p>
+      </div>
+    </div>
     ),
   },
   {
-    judul: "Ketentuan Kompetisi",
+    judul: "Detail Materi Workshop",
     details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-      </ol>
-    ),
-  },
-  {
-    judul: "Tahapan Kompetisi",
-    details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-      </ol>
-    ),
-  },
-  {
-    judul: "Kriteria Penilaian",
-    details: (
-      <ol className="">
-        <li  className="text-black">1. Peserta adalah pihak yang telah mengikuti mekanisme pendaftaran pada website resmi TECHNOFAIR 12.0 (https://bit.ly/technofair-11).</li>
-        <li  className="text-black mt-4">2. Peserta merupakan pelajar SMA/Sederajat atau mahasiswa/i aktif S1/D4/D3/D2/D1, dibuktikan dengan Kartu Tanda Mahasiswa/Kartu Pelajar yang masih aktif atau surat keterangan resmi dari perguruan tinggi/instansi terkait yang diunggah pada Google Form di website TechnoFair 12.0.</li>
-        <li  className="text-black mt-4">3. Peserta harus melengkapi berkas pendaftaran dengan data yang benar dan legal secara hukum.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-        <li  className="text-black mt-4">4. Tim terdiri minimal 1 orang atau maksimal 3 orang.</li>
-      </ol>
+      <div className="space-y-4 text-black">
+        <h2 className="text-xl font-semibold">Materi Workshop – AI in Action: Transforming Industries with Deep Learning</h2>
+        <ul className="list-disc list-inside space-y-2">
+          <li>Pengantar konsep dasar Artificial Intelligence dan penerapannya dalam industri.</li>
+          <li>Pengenalan keterampilan teknis dan non-teknis yang dibutuhkan untuk menjadi AI Specialist.</li>
+          <li>Proses pengembangan sistem AI: data preparation, model training, dan evaluasi.</li>
+          <li>Implementasi Deep Learning dalam studi kasus nyata: dari prediksi hingga otomasi.</li>
+          <li>Tips membangun portofolio dan langkah awal menuju karir profesional di dunia AI.</li>
+        </ul>
+    </div>
     ),
   },
 ]
@@ -69,7 +56,7 @@ export default function ArtificialIntelligence() {
     <div className="bg-[#FFE9CF]">
 
       <div className="relative h-[200px] md:h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-[url(/technofair/Dokumentasi/dokum4.jpg)] bg-cover bg-center brightness-75 opacity-90 blur-[1px]"></div>
+        <div className="absolute inset-0 bg-[url(/technofair/Dokumentasi/bg-workshop2.jpg)] bg-cover bg-center brightness-75 opacity-90 blur-[1px]"></div>
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
           <h1 className="text-base md:text-3xl font-bold leading-[150%] tracking-tight text-white">
             TECHNOFAIR 12.0
@@ -89,25 +76,50 @@ export default function ArtificialIntelligence() {
           <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full">
           Registration
           </Link>
-          <Link href="" className="text-sm md:text-xl text-black font-medium border-[#FE8A16] border-3 py-2 w-32 md:w-44 rounded-full">
-          Rulebook
-          </Link>
         </div>
       </div>
 
 
         {/* SECTION TIMELINE */} 
-      <div className="mt-20 md:hidden">
-        <h1 className={`${Montserrat.className} text-center text-xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
-          WORKSHOP TIMELINE
-        </h1>
-        <Image src="/technofair/logoTF12/timelinetest.png" width={400} height={800} alt="timeline"  className="mx-auto mt-10"/>
-      </div>
-      <div className="hidden md:block mt-20">
+     
+      <div className=" mt-20">
         <h1 className={`${Montserrat.className} text-center text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
-          WORKSHOP TIMELINE
+          WAKTU PELAKSANAAN
         </h1>
-        <Image src="/technofair/logoTF12/timelinetest2.png" width={1450} height={340} alt="timeline"  className="mx-2 mt-10"/>
+        <div className="space-y-6 py-6 px-14  mt-5 bg-[#FFDDBA] w-fit mx-auto shadow-lg">
+            <div className="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+              <span className="text-amber-600 font-medium text-xl">
+                Senin, 21 Juli 2025
+              </span>
+            </div>
+
+            <div className="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span className="text-amber-600 font-medium text-xl">
+                09.00 – 12.40 WIB
+              </span>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 mt-0.5 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                      d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z"/>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                      d="M12 21s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z"/>
+              </svg>
+              <span className="text-amber-600 font-medium text-xl leading-snug">
+                Laboratorium D448,<br />
+                Kampus D, Universitas Gunadarma
+              </span>
+            </div>
+          </div>
       </div>
 
         {/* SECTION ABOUT */} 
@@ -115,7 +127,8 @@ export default function ArtificialIntelligence() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE WORKSHOP
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Kompetisi ini memiliki mekanisme dimana sebuah tim diminta untuk mengambil sebuah file atau string yang sudah disembunyikan sistem, serta mendeteksi lalu mengeksploitasi kelemahan untuk mendapatkan dan mengumpulkan flag sebanyak-banyaknya.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Workshop “AI in Action: Transforming Industries with Deep Learning” merupakan bagian dari TechnoFair 12.0 yang dirancang untuk membekali peserta dengan pemahaman dan keterampilan praktis dalam pengembangan AI, khususnya deep learning. Menggabungkan teori dasar dan praktik langsung melalui studi kasus industri, workshop ini menunjukkan bagaimana AI mampu menyelesaikan masalah kompleks, meningkatkan efisiensi, dan menciptakan nilai bisnis. Kegiatan ini menjadi langkah awal yang kuat bagi peserta yang ingin meniti karier sebagai AI Specialist.
+</p>
       </div>
 
 
