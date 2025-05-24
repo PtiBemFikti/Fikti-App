@@ -60,7 +60,7 @@ const competitions = [
     href: "/fiktispace/Competition/Fiktography",
     titleDesktop: "Fikto-\nGraphy",
     titleMobile: "FiktoGraphy",
-    fontSizeClass: "text-[1.1rem] md:text-[1.75rem]",
+    fontSizeClass: "text-[1.2rem] md:text-[1.75rem]",
     category: "Art",
     categoryClass: "bg-[#0A2353]",
     leadingNone: true,

@@ -1,18 +1,33 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import { motion, useAnimation } from "framer-motion";
-import Image from "next/image";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
 
 const Navbar2: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const controls = useAnimation();
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+    }, []);
 
   const toggleMenu = async () => {
-    // Set animasi saat menu dibuka
     await controls.start({
       opacity: isMenuOpen ? 0 : 1,
       y: isMenuOpen ? -5 : 0,
@@ -20,7 +35,6 @@ const Navbar2: React.FC = () => {
       transition: { duration: 0.5, delay: 0.5 },
     });
 
-    // Set animasi saat menu ditutup
     if (!isMenuOpen) {
       await controls.start({
         opacity: 0,
@@ -29,11 +43,11 @@ const Navbar2: React.FC = () => {
         animation: "backwards",
       });
     }
-
-    // Update status menu
+    
     setIsMenuOpen(!isMenuOpen);
   };
 
+  //link regist sesuai path
   const registLinks: { [key: string]: string } = {
     "/fiktispace/Competition/Futsal": "https://docs.google.com/forms/d/1AcJxyEQ3tVr_-YQw8GqPteF4YEYS7EsureAW-svZYlU/edit?ts=68268bcb",
     "/fiktispace/Competition/Basket": "https://docs.google.com/forms/d/e/1FAIpQLSeDWpc86i2JvmipbyuAJzg5ITxt3KeFuajx0ytI8jDeCAS8nw/viewform?usp=preview",
@@ -54,9 +68,13 @@ const Navbar2: React.FC = () => {
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ type: "keyframes", duration: 0.5, delay: 0.5 }}
-      className="bg-[#2A2364] mt-3 fixed w-[91%] z-30 rounded-lg left-1/2 -translate-x-1/2"
+      className={`px-4 lg:px-[3.75rem] fixed w-full z-30 transition-all duration-500 ${
+        isScrolled
+          ? "bg-[#0A2352] py-1 backdrop-blur-lg"
+          : "py-3.5"
+        }`}
     >
-      <div className=" items-center flex px-10 py-4 rounded-lg">
+        <div className={`bg-[#2A2364] items-center flex justify-between px-10 py-4 rounded-lg`}>
         <Link href="#" className="items-center w-10/12 lg:w-1/12">
           <Image
             src="/fiktispace/LOGO FS 4.png"

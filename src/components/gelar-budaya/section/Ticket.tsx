@@ -128,7 +128,8 @@ export default function GelbudTicketSection() {
                 </div>
 
                 <Link
-                  href="https://bit.ly/RegistrasiPesertaGelarBudaya2025"
+                  href="#"
+                  // href="https://bit.ly/RegistrasiPesertaGelarBudaya2025"
                   className="mt-8 bg-yellow-400 text-black font-semibold px-5 py-3 rounded-full hover:bg-yellow-300 hover:scale-105 transition w-full"
                 >
                   <FaTicketAlt className="inline mr-2" /> Beli Tiket

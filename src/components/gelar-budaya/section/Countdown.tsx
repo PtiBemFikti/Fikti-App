@@ -11,18 +11,32 @@ export default function GelbudCountdown() {
   });
 
   useEffect(() => {
-    const targetDate = new Date(2025, 6, 28, 14, 0); // 15 Juni 2025, 19:00
+    const targetDate = new Date(2025, 5, 15, 19, 0, 0); // 15 Juni 2025, 19:00
 
     const calculateTimeLeft = () => {
       const now = new Date();
       const difference = targetDate.getTime() - now.getTime();
 
       if (difference > 0) {
+        const totalSeconds = Math.floor(difference / 1000);
+
+        const days = Math.floor(totalSeconds / (60 * 60 * 24));
+        const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
+        const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+        const seconds = totalSeconds % 60;
+
         setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
+          days,
+          hours,
+          minutes,
+          seconds,
+        });
+      } else {
+        setTimeLeft({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
         });
       }
     };

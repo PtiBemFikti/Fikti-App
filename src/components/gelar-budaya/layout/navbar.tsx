@@ -175,7 +175,8 @@ export default function GelbudNavbar() {
           >
             <Link
               target="_blank"
-              href="https://bit.ly/RegistrasiPesertaGelarBudaya2025"
+              href="#"
+              // href="https://bit.ly/RegistrasiPesertaGelarBudaya2025"
               className="border-1 border-white text-white px-6 py-2 rounded-md font-semibold hover:bg-[#ECDCC1] hover:text-black hover:border-[#ECDCC1] transition-all duration-300"
             >
               Buy Ticket
