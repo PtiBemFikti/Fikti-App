@@ -4,10 +4,10 @@ import { Footer } from '@/components/technofair/footer';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Capture The Flag - TechnoFair 11.0',
-  description: 'Capture The Flag || TechnoFair 11.0',
+  title: 'Capture The Flag - TechnoFair 12.0',
+  description: 'Capture The Flag || TechnoFair 12.0',
   icons: {
-    icon: '/technofair/logo-tf.png',
+    icon: '/technofair/logoTF12/Logo TF 12 Putih.png',
   }
 };
 

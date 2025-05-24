@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Competitive Programming - TechnoFair 11.0',
   description: 'Competitive Programming - TechnoFair 11.0',
   icons: {
-    icon: '/technofair/logo-tf.png',
+    icon: '/technofair/logoTF12/Logo TF 12 Putih.png',
   }
 };
 

@@ -1,16 +1,14 @@
 import { Montserrat, poppins } from "@/styles/font";
 import Link from "next/link";
-import Image from "next/image";
 import RotatingWords from "./RotatingWords";
-import RotatingWords2 from "./RotatingWords2";
 
 export function Dashboard() {
     const rotatingWords1 = <RotatingWords />;
 
     return (
-        <div className="pt-28 lg:pt-20 bg-[#100F21] lg:bg-transparent">
+        <div className="pt-[90px] lg:pt-20 bg-[#100F21] lg:bg-transparent">
 
-            <div className="lg:container lg:mx-auto bg-[#FFFAF0] pt-6 lg:pt-0 lg:bg-transparent rounded-t-3xl">
+            <div className="lg:container lg:mx-auto bg-[#FFFAF0] pt-1 lg:pt-0 lg:bg-transparent rounded-t-3xl">
 
                 <div className="hidden md:block justify-center items-center text-center pt-12 ">
                     <div className="hidden lg:container mx-auto md:flex items-center justify-center relative">

@@ -53,12 +53,12 @@ export function Navbar() {
 
       <div className="lg:container lg:mx-auto flex justify-between items-center lg:justify-center lg:p-[10px] relative">
         
-        <div className="flex py-7 items-center">
+        <div className="flex py-5 items-center">
           <Link key={"top"} href={"#top"} className="lg:absolute left-0 px-5 lg:p-2 hover:cursor-pointer" >
             <Image src="/technofair/logoTF12/Logo TF 12.0 Tanpa BG.png" alt="Logo" width={50} height={50}/>
           </Link>
 
-          <h1 className={`${poppins.className} text-white text-2xl font-semibold lg:hidden`}>Technofair 12</h1>
+          <h1 className={`${poppins.className} text-white text-2xl font-semibold lg:hidden`}>Technofair 12.0</h1>
 
         </div>
 

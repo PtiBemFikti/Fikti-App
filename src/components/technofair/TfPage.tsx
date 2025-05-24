@@ -41,7 +41,7 @@ export default function TfPage() {
       </section>
       
       <Dokumentasi />
-      {/*<Sponsor />*/}
+      <Sponsor />
       <div className='{!bg-gradient-to-b from-[#100F21] from-10% via-[#3c3975] via-40% to-[#FE8A16]-->'>
         <section id='faq' >
           <Faq />
