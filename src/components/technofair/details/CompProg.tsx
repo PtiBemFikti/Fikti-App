@@ -168,7 +168,7 @@ export default function CompProg() {
     <div className="bg-[#FFE9CF]">
 
       <div className="relative h-[200px] md:h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-[url(/technofair/Dokumentasi/dokum4.jpg)] bg-cover bg-center brightness-75 opacity-90 blur-[1px]"></div>
+        <div className="absolute inset-0 bg-[url(/technofair/Dokumentasi/bg-kompe1.jpg)] bg-cover bg-center brightness-50 opacity-90 blur-[1px]"></div>
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
           <h1 className="text-base md:text-3xl font-bold leading-[150%] tracking-tight text-white">
             TECHNOFAIR 12.0
