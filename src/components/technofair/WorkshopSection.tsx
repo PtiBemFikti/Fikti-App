@@ -97,7 +97,7 @@ export default function WorkshopSection() {
           Workshop
         </h1>
         <div className="flex flex-col items-center mt-[-30px] lg:mt-10 scale-80 lg:scale-100">
-          <div className="flex gap-5 overflow-x-auto w-full py-5 justify-end pr-4">
+          <div className="flex gap-5 overflow-x-auto w-full py-5 md:justify-end pr-4">
             {cardData.map((data) => (
               <div key={data.id} className="flex-shrink-0">
                 <Card data={data} />
