@@ -77,7 +77,7 @@ export default function CyberSecurity() {
     <div className="bg-[#FFE9CF]">
 
       <div className="relative h-[200px] md:h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-[url(/technofair/Dokumentasi/dokum4.jpg)] bg-cover bg-center brightness-75 opacity-90 blur-[1px]"></div>
+        <div className="absolute inset-0 bg-[url(/technofair/Dokumentasi/bg-seminar2.jpg)] bg-cover bg-center brightness-50 opacity-90 blur-[1px]"></div>
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
           <h1 className="text-base md:text-3xl font-bold leading-[150%] tracking-tight text-white">
             TECHNOFAIR 12.0
@@ -97,25 +97,50 @@ export default function CyberSecurity() {
           <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full">
           Registration
           </Link>
-          <Link href="" className="text-sm md:text-xl text-black font-medium border-[#FE8A16] border-3 py-2 w-32 md:w-44 rounded-full">
-          Rulebook
-          </Link>
         </div>
       </div>
 
 
         {/* SECTION TIMELINE */} 
-      <div className="mt-20 md:hidden">
-        <h1 className={`${Montserrat.className} text-center text-xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
-          SEMINAR TIMELINE
-        </h1>
-        <Image src="/technofair/logoTF12/timelinetest.png" width={400} height={800} alt="timeline"  className="mx-auto mt-10"/>
-      </div>
-      <div className="hidden md:block mt-20">
+ 
+      <div className=" mt-20">
         <h1 className={`${Montserrat.className} text-center text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           SEMINAR TIMELINE
         </h1>
-        <Image src="/technofair/logoTF12/timelinetest2.png" width={1450} height={340} alt="timeline"  className="mx-2 mt-10"/>
+ <div className="space-y-6 py-6 px-14  mt-5 bg-[#FFDDBA] w-fit mx-auto shadow-lg">
+            <div className="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+              <span className="text-amber-600 font-medium text-xl">
+                Sabtu, 19 Juli 2025
+              </span>
+            </div>
+
+            <div className="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span className="text-amber-600 font-medium text-xl">
+                09.00 – 13.25 WIB
+              </span>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 mt-0.5 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                      d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z"/>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                      d="M12 21s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z"/>
+              </svg>
+              <span className="text-amber-600 font-medium text-xl leading-snug">
+                Auditorium D462,<br />
+                Kampus D, Universitas Gunadarma
+              </span>
+            </div>
+          </div>
       </div>
 
         {/* SECTION ABOUT */} 
