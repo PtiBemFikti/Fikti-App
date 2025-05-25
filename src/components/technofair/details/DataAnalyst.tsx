@@ -128,8 +128,7 @@ export default function DataAnalyst() {
                       d="M12 21s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z"/>
               </svg>
               <span className="text-amber-600 font-medium text-xl leading-snug">
-                Laboratorium D448,<br />
-                Kampus D, Universitas Gunadarma
+                Kampus E, Universitas Gunadarma
               </span>
             </div>
           </div>
