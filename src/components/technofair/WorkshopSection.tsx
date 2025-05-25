@@ -33,7 +33,7 @@ const cardData: CardData[] = [
     title: "Artificial Intelligence",
     subtitle: "“AI in Action: Transforming Industries with Deep Learning and NLP”",
     date: "To be Announced",
-    details1: "Senin, 21 Juli 2025",
+    details1: "Sabtu, 5 Juli 2025",
     details2: "Learning & Automation",
     href: "/technofair/details/workshop/artificial-intelligence",
   },
