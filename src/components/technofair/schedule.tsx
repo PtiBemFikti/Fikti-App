@@ -8,7 +8,7 @@ const kontenSeminar = [
 ];
 const kontenWorkshop = [
     { tanggal: "Tanggal: 14 Juni 2025", waktu: "Waktu: 09.00 – 12.40 WIB", judul: "Data Analyst", metode: "Offline" },
-    { tanggal: "Tanggal: 21 Juli 2025", waktu: "Waktu: 09.00 – 12.40 WIB", judul: "Artificial Intelligence", metode: "Offline" },
+    { tanggal: "Tanggal: 5 Juli 2025", waktu: "Waktu: 09.00 – 12.40 WIB", judul: "Artificial Intelligence", metode: "Offline" },
 ];
 const kontenKompetisi = [
     { tanggal: "Tanggal: 21 Mei 2025", waktu: "Waktu: 00.00 - 23.59 WIB", judul: "Mobile App UI/UX Design", metode: "Online" },
