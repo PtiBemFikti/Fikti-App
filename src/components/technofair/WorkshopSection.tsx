@@ -23,7 +23,7 @@ const cardData: CardData[] = [
     subtitle: "“Mastering Data Analytics : From Raw Data to Business Impact”",
     date: "To be Announced",
     details1: "Sabtu, 14 Juni 2025",
-    details2: "To be Announced",
+    details2: "Analysis & Decisions",
     href: "/technofair/details/workshop/data-analyst",
   },
   {
@@ -34,7 +34,7 @@ const cardData: CardData[] = [
     subtitle: "“AI in Action: Transforming Industries with Deep Learning and NLP”",
     date: "To be Announced",
     details1: "Senin, 21 Juli 2025",
-    details2: "To be Announced",
+    details2: "Learning & Automation",
     href: "/technofair/details/workshop/artificial-intelligence",
   },
 ];

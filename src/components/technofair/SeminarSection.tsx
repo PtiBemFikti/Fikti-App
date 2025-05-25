@@ -24,7 +24,7 @@ interface CardData {
       subtitle: "“Innovating IoT with AI: A New Era of Customer-Centric Business Growth”",
       date: "To be Announced",
       details1: "Sabtu, 21 Juni 2025",
-      details2: "To be Announced",
+      details2: "Connectivity & Innovation",
       href: "/technofair/details/seminar/iot",
     },
     {
@@ -35,7 +35,7 @@ interface CardData {
       subtitle: "“The Future Of Cybersecurity: Trends, Threats, and Technologies”",
       date: "To be Announced",
       details1: "Sabtu, 19 Juli 2025",
-      details2: "To be Announced",
+      details2: "Cyber Security & Trends",
       href: "/technofair/details/seminar/cyber-security",
     },
   ];
