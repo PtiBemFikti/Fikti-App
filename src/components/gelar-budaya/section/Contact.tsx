@@ -32,8 +32,8 @@ export default function GelbudContactUsSection() {
 
   const contacts = [
     {
-      name: "Aulia",
-      whatsapp: "081211449779",
+      name: "Hanny",
+      whatsapp: "081334162060",
       icon: <FaWhatsapp className="text-3xl text-green-500" />,
     },
     {

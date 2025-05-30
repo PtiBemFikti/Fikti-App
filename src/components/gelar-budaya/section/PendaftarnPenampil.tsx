@@ -45,7 +45,7 @@ export default function GelbudPendaftaran() {
           variants={item}
           className={`${MonumentExtendedBold.className} text-3xl md:text-4xl font-bold mb-4`}
         >
-          Pendaftaran Peserta
+          Pendaftaran Penampil
         </motion.h2>
         <motion.p variants={item} className="text-gray-300 mb-10 max-w-xl">
           Kamu bebas tampil apa aja! Bisa nyanyi, main musik, baca puisi,
