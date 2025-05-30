@@ -107,7 +107,7 @@ export default function GelbudFooter() {
             GELAR BUDAYA
           </h1>
         </div>
-        <div className="flex flex-col gap-5 w-1/2  lg:w-[24%] xl:w-[15%]">
+        <div className="flex flex-col gap-5 w-full mb-4 md:w-1/2 lg:w-[24%] xl:w-[15%]">
           <Link
             href="https://www.google.com/maps?q=Pusat+Kegiatan+Mahasiswa+(PUSGIWA)+Gedung+4+Lantai+3+Kampus+E+Universitas+Gunadarma,+Jl.+Komjen+Pol.+M.+Jasin+Kelapa+Dua+Depok"
             target="_blank"
