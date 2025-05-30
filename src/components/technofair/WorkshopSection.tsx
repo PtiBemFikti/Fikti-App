@@ -22,7 +22,7 @@ const cardData: CardData[] = [
     title: "Data Analyst",
     subtitle: "“Mastering Data Analytics : From Raw Data to Business Impact”",
     date: "To be Announced",
-    details1: "Sabtu, 14 Juni 2025",
+    details1: "Sabtu, 28 Juni 2025",
     details2: "Analysis & Decisions",
     href: "/technofair/details/workshop/data-analyst",
   },

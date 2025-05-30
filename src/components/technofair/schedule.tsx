@@ -3,17 +3,17 @@ import { Montserrat, poppins } from "@/styles/font";
 import { useState } from "react";
 
 const kontenSeminar = [
-    { tanggal: "Tanggal: 21 Juni 2025", waktu: "Waktu: 09.00 – 12.00 WIB", judul: "Internet of Things", metode: "Offline" },
-    { tanggal: "Tanggal: 19 Juli 2025", waktu: "Waktu: 09.00 – 13.25 WIB", judul: "Cyber Security", metode: "Offline" },
+    { tanggal: "21 Juni 2025", waktu: "09.00 – 12.00 WIB", judul: "Internet of Things", metode: "Offline" },
+    { tanggal: "19 Juli 2025", waktu: "09.00 – 13.25 WIB", judul: "Cyber Security", metode: "Offline" },
 ];
 const kontenWorkshop = [
-    { tanggal: "Tanggal: 14 Juni 2025", waktu: "Waktu: 09.00 – 12.40 WIB", judul: "Data Analyst", metode: "Offline" },
-    { tanggal: "Tanggal: 5 Juli 2025", waktu: "Waktu: 09.00 – 12.40 WIB", judul: "Artificial Intelligence", metode: "Offline" },
+    { tanggal: "28 Juni 2025", waktu: "09.00 – 12.40 WIB", judul: "Data Analyst", metode: "Offline" },
+    { tanggal: "5 Juli 2025", waktu: "09.00 – 12.40 WIB", judul: "Artificial Intelligence", metode: "Offline" },
 ];
 const kontenKompetisi = [
-    { tanggal: "Tanggal: 21 Mei 2025", waktu: "Waktu: 00.00 - 23.59 WIB", judul: "Mobile App UI/UX Design", metode: "Online" },
-    { tanggal: "Tanggal: 20 Mei 2025", waktu: "Waktu: 00.00 - 23.59 WIB", judul: "Competitive Programming", metode: "Hybrid" },
-    { tanggal: "Tanggal: 20 Mei 2025", waktu: "Waktu: 00.00 - 23.59 WIB", judul: "Capture The Flag", metode: "Hybrid" },
+    { tanggal: "21 Mei 2025", waktu: "00.00 - 23.59 WIB", judul: "Mobile App UI/UX Design", metode: "Online" },
+    { tanggal: "20 Mei 2025", waktu: "00.00 - 23.59 WIB", judul: "Competitive Programming", metode: "Hybrid" },
+    { tanggal: "20 Mei 2025", waktu: "00.00 - 23.59 WIB", judul: "Capture The Flag", metode: "Hybrid" },
 ];
 
 export function Schedule() {
