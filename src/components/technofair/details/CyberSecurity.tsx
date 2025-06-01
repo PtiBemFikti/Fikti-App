@@ -94,7 +94,7 @@ export default function CyberSecurity() {
       <div className="mt-10 pb-5">
         <h1 className="text-black text-lg md:text-3xl italic leading-[150%] text-center">Cyber Security Seminar of <br className="md:hidden" />TechnoFair 12.0</h1>
         <div className="pt-6 text-center justify-center flex gap-6">
-          <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full">
+          <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full hover:bg-[#100F21] hover:text-white transition-colors duration-300">
           Registration
           </Link>
         </div>
@@ -148,7 +148,7 @@ export default function CyberSecurity() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE SEMINAR
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Seminar TechnoFair 12.0 bertema “The Future of Cybersecurity: Trends, Threats, and Technologies” bertujuan memberikan pemahaman mendalam tentang tantangan dan solusi terkini di bidang keamanan siber. Menghadirkan akademisi dan profesional industri, seminar ini membahas tren terbaru, ancaman yang terus berkembang, serta teknologi dan kebijakan untuk mengatasinya. Peserta akan mendapatkan wawasan komprehensif tentang masa depan dunia digital yang aman dan pentingnya kesadaran individu dalam melindungi data serta privasi.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 text-justify">Seminar TechnoFair 12.0 bertema “The Future of Cybersecurity: Trends, Threats, and Technologies” bertujuan memberikan pemahaman mendalam tentang tantangan dan solusi terkini di bidang keamanan siber. Menghadirkan akademisi dan profesional industri, seminar ini membahas tren terbaru, ancaman yang terus berkembang, serta teknologi dan kebijakan untuk mengatasinya. Peserta akan mendapatkan wawasan komprehensif tentang masa depan dunia digital yang aman dan pentingnya kesadaran individu dalam melindungi data serta privasi.</p>
       </div>
 
 

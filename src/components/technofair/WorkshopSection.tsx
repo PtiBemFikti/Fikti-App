@@ -109,7 +109,7 @@ export default function WorkshopSection() {
           <h1 className={`${Montserrat.className} text-4xl lg:text-[60px] font-bold text-black`}>
             Workshop
           </h1>
-          <p className={`${Montserrat.className} tracking-tight text-black pt-5 pl-10`}>
+          <p className={`${Montserrat.className} tracking-tight text-black pt-5 pl-10 text-justify`}>
             Workshop TechnoFair 12.0 menghadirkan dua sesi praktis bersama para ahli dan praktisi industri: “Mastering Data Analytics: From Raw Data to Business Impact” yang mengajarkan konsep, tools, dan studi kasus nyata dalam mengolah data untuk menghasilkan insight strategis, serta “AI in Action: Transforming Industries with Deep Learning and NLP” yang mengeksplorasi dasar-dasar AI, penerapan deep learning dan NLP, serta praktik membangun solusi sederhana berbasis AI. Dapatkan pengalaman hands-on dalam menganalisis data dan mengembangkan model AI, sambil memperluas jaringan dengan sesama peserta yang antusias dalam memimpin transformasi digital berbasis data dan kecerdasan buatan.
           </p>
         </div>

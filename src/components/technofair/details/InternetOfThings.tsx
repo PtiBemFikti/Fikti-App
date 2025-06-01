@@ -114,7 +114,7 @@ export default function DataScience() {
       <div className="mt-10 pb-5">
         <h1 className="text-black text-lg md:text-3xl italic leading-[150%] text-center">Internet of Things Seminar of <br className="md:hidden" />TechnoFair 12.0</h1>
         <div className="pt-6 text-center justify-center flex gap-6">
-          <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full">
+          <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full hover:bg-[#100F21] hover:text-white transition-colors duration-300">
           Registration
           </Link>
         </div>
@@ -169,7 +169,7 @@ export default function DataScience() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE SEMINAR
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Seminar TechnoFair 12.0 dengan tema “Innovating IoT with AI: A New Era of Customer-Centric Business Growth” merupakan wadah edukatif yang membahas integrasi Internet of Things (IoT) dan Artificial Intelligence (AI) dalam mendorong pertumbuhan bisnis berorientasi pelanggan. Menghadirkan pakar industri, akademisi, dan praktisi, seminar ini mengulas studi kasus, strategi, serta tantangan nyata penerapan IoT dan AI di berbagai sektor, sekaligus memberikan wawasan tentang pemanfaatan teknologi untuk meningkatkan efisiensi, pengalaman pelanggan, dan daya saing di era digital.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 text-justify">Seminar TechnoFair 12.0 dengan tema “Innovating IoT with AI: A New Era of Customer-Centric Business Growth” merupakan wadah edukatif yang membahas integrasi Internet of Things (IoT) dan Artificial Intelligence (AI) dalam mendorong pertumbuhan bisnis berorientasi pelanggan. Menghadirkan pakar industri, akademisi, dan praktisi, seminar ini mengulas studi kasus, strategi, serta tantangan nyata penerapan IoT dan AI di berbagai sektor, sekaligus memberikan wawasan tentang pemanfaatan teknologi untuk meningkatkan efisiensi, pengalaman pelanggan, dan daya saing di era digital.</p>
       </div>
 
 

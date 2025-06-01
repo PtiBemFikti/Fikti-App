@@ -185,7 +185,7 @@ export default function CompProg() {
       <div className="mt-10 pb-5">
         <h1 className="text-black text-lg md:text-3xl italic leading-[150%] text-center">Competitive Programming Competition of <br className="md:hidden" />TechnoFair 12.0</h1>
         <div className="pt-6 text-center justify-center flex gap-6">
-          <Link href="https://bit.ly/RegistCPTF12" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full">
+          <Link href="https://bit.ly/RegistCPTF12" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full hover:bg-[#100F21] hover:text-white transition-colors duration-300">
           Registration
           </Link>
           <Link href="" className="text-sm md:text-xl text-black font-medium border-[#FE8A16] border-3 py-2 w-32 md:w-44 rounded-full">
@@ -214,7 +214,7 @@ export default function CompProg() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE COMPETITION
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Competitive Programming TechnoFair 12.0 adalah kompetisi pemrograman yang diselenggarakan oleh BEM FIKTI Universitas Gunadarma bersama Gunadarma I/O. Kompetisi ini ditujukan untuk mahasiswa S1 Universitas Gunadarma guna menguji kemampuan problem solving dan berpikir komputasional melalui penyelesaian soal-soal pemrograman dengan batasan waktu dan memori tertentu.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 text-justify">Competitive Programming TechnoFair 12.0 adalah kompetisi pemrograman yang diselenggarakan oleh BEM FIKTI Universitas Gunadarma bersama Gunadarma I/O. Kompetisi ini ditujukan untuk mahasiswa S1 Universitas Gunadarma guna menguji kemampuan problem solving dan berpikir komputasional melalui penyelesaian soal-soal pemrograman dengan batasan waktu dan memori tertentu.</p>
       </div>
 
 

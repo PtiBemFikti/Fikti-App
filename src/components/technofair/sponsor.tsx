@@ -28,6 +28,11 @@ const otherSponsorsData = [
       "/technofair/logoTF12/medpart/logo-gdgocug.png",
       "/technofair/logoTF12/medpart/Logo TeknoEvent25.png",
       "/technofair/logoTF12/medpart/UIUX Indo.png",
+      "/technofair/logoTF12/medpart/bem FTI.png",
+      "/technofair/logoTF12/medpart/BEM PSI.png",
+      "/technofair/logoTF12/medpart/Logo Comma Design.png",
+      "/technofair/logoTF12/medpart/logo-himsi.png",
+      "/technofair/logoTF12/medpart/Logo MAHAGUN.png",
     ],
   },
 ];
@@ -41,10 +46,17 @@ export function Sponsor() {
         Sponsorship
       </h1>
 
-      {/* Primary Sponsor 
+      {/* Primary Sponsor */}
       <div className="mt-10 lg:container lg:mx-auto">
+        <div className="flex items-center justify-center gap-5 whitespace-nowrap overflow-hidden">
+            <div className="bg-white h-[1px] flex-1" />
+            <h2 className="text-xs lg:text-base tracking-tight">
+              {sponsorUtama.title}
+            </h2>
+            <div className="bg-white h-[1px] flex-1" />
+          </div>
         <div className="flex justify-center mt-5">
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-md hover:scale-105 transition-all duration-300">
             <Image
               src={sponsorUtama.image}
               alt="Dewaweb Sponsor"
@@ -57,7 +69,7 @@ export function Sponsor() {
           </div>
         </div>
       </div>
-      */}
+      
 
       {/* Other Sponsors */}
       {otherSponsorsData.map((sponsor, index) => (
@@ -74,7 +86,7 @@ export function Sponsor() {
             {sponsor.images.map((image, imgIndex) => (
               <div
                 key={imgIndex}
-                className="relative w-40 h-24 lg:w-48 lg:h-28"
+                className="relative w-40 h-24 lg:w-48 lg:h-28 hover:scale-105 transition-all duration-300"
               >
                 <Image
                   src={image}

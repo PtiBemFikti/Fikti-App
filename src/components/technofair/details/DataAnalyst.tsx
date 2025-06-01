@@ -86,7 +86,7 @@ export default function DataAnalyst() {
       <div className="mt-10 pb-5">
         <h1 className="text-black text-lg md:text-3xl italic leading-[150%] text-center">Data Analyst Workshop of <br className="md:hidden" />TechnoFair 12.0</h1>
         <div className="pt-6 text-center justify-center flex gap-6">
-          <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full">
+          <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full hover:bg-[#100F21] hover:text-white transition-colors duration-300">
           Registration
           </Link>
         </div>
@@ -139,7 +139,7 @@ export default function DataAnalyst() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE WORKSHOP
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Workshop “Mastering Data Analytics: From Raw Data to Business Impact” merupakan bagian dari TechnoFair 12.0 yang dirancang untuk membekali peserta dengan pemahaman dan keterampilan praktis dalam analisis data. Melalui kombinasi teori dan praktik, workshop ini mengajarkan dasar-dasar data analytics, alat yang digunakan, serta simulasi studi kasus nyata, sekaligus memberikan gambaran tentang peran penting Data Analyst dalam mendukung pengambilan keputusan bisnis di era digital.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 text-justify">Workshop “Mastering Data Analytics: From Raw Data to Business Impact” merupakan bagian dari TechnoFair 12.0 yang dirancang untuk membekali peserta dengan pemahaman dan keterampilan praktis dalam analisis data. Melalui kombinasi teori dan praktik, workshop ini mengajarkan dasar-dasar data analytics, alat yang digunakan, serta simulasi studi kasus nyata, sekaligus memberikan gambaran tentang peran penting Data Analyst dalam mendukung pengambilan keputusan bisnis di era digital.</p>
       </div>
 
 
