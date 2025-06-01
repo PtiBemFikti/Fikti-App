@@ -19,11 +19,11 @@ export function About() {
                     <h1 className={`${poppins.className} text-black  text-[35px] lg:text-[54px] tracking-tight font-semibold`}>
                         What is TechnoFair?
                     </h1> 
-                    <div className="mx-auto sm:container sm:mx-auto bg-[#FFE9CF] p-7 rounded-3xl shadow-xl lg:bg-transparent lg:shadow-none">
-                        <p className={`${Montserrat.className} text-black text-lg lg:text-[20px] tracking-tight lg:mt-[36px]`}>
+                    <div className="mx-auto bg-[#FFE9CF] md:mt-4 rounded-3xl shadow-xl p-5 md:p-0 lg:bg-transparent lg:shadow-none">
+                        <p className={`${Montserrat.className} text-black text-lg lg:text-[20px] tracking-tight  text-justify`}>
                             Wadah bagi mahasiswa FIKTI Universitas Gunadarma untuk belajar berinovasi dan menciptakan masa depan melalui teknologi.
                         </p>
-                        <p className={`${Montserrat.className} text-black text-lg lg:text-[20px] tracking-tight mt-[30px]`}>
+                        <p className={`${Montserrat.className} text-black text-lg lg:text-[20px] tracking-tight mt-[30px] text-justify`}>
                             Lewat webinar, kompetisi, dan workshop, TechnoFair mengupas tuntas tema &quot;Building Tomorrow&apos;s World with Innovation and Collaboration.&quot;
                         </p>
                     </div>
@@ -54,7 +54,7 @@ export function About() {
                                     </div>
 
                                     <div className="">
-                                        <p className={`${Montserrat.className} bg-white lg:bg-transparent lg:p-0 lg:shadow-none p-8 rounded-3xl shadow-xl text-black text-lg tracking-tight mt-[24px]  sm:text-center lg:text-left`}>
+                                        <p className={`${Montserrat.className} bg-white  text-justify lg:bg-transparent lg:p-0 lg:shadow-none p-5 rounded-3xl shadow-xl text-black text-lg tracking-tight mt-  sm:text-center lg:text-left`}>
                                             NeowBit berasal dari kata &quot;Neo&quot; yang berarti baru atau modern, melambangkan inovasi dan pembaruan. &quot;Bit&quot; Mengacu pada unit dasar data dalam komputasi, melambangkan teknologi dan dunia digital.
                                         </p>
                                     </div>
@@ -88,7 +88,7 @@ export function About() {
                     {poin.map((item, index) => (
                             <div key={index} className=" bg-[#043255] py-9 px-11 rounded-3xl transform transition-color hover:shadow-xl duration-300 hover:bg-[#052741] ">
                                 <h1 className={`${poppins.className} text-[#FFFAF0] font-medium text-[35px]`}>{item.judul}</h1>
-                                <p className={`${Montserrat.className} text-[#FFFAF0] font-medium mt-4`}>{item.penjelasan}</p>
+                                <p className={`${Montserrat.className} text-[#FFFAF0] font-medium mt-4 text-justify`}>{item.penjelasan}</p>
                         </div>
                     ))}
                 </div>
@@ -96,7 +96,7 @@ export function About() {
                     {poin.map((item, index) => (
                         <div key={index} className="mt-4 bg-[#053B64] py-4 px-4 h-fit rounded-3xl transform transition-transform duration-300  border-[#FE8A16] hover:border">
                             <h1 className={`${poppins.className} text-[#FFFAF0] font-bold text-[20px] sm:text-3xl text-center`}>{item.judul}</h1>
-                            <p className={`${Montserrat.className} text-[#FFFAF0] font-medium text-[12px] sm:text-lg mt-4 bg-[#043255] px-9 py-3 rounded-2xl`}>{item.penjelasan}</p>
+                            <p className={`${Montserrat.className} text-[#FFFAF0] font-medium text-[12px] sm:text-lg mt-4 bg-[#043255] px-9 py-3 rounded-2xl text-justify`}>{item.penjelasan}</p>
                         </div>
                     ))}
                 </div>
