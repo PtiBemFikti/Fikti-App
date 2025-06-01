@@ -85,16 +85,14 @@ export default function Section1() {
               <div className="absolute top-0 bottom-0 w-[0.25rem] bg-white"></div>{/* Garis vertikal di pinggir kiri */}
               <div className="space-y-5 pl-[1.6rem]">
                 {[
-                  { date: "19-28 May", title: "Registration", location: "Online" },
+                  { date: "19 May - 8 June", title: "Registration", location: "Online" },
                   { date: "13 June", title: "Technical Meeting", location: "Online" },
                   { date: "18, 21 June", title: "Competition Day", location: "On-site" },
                     ].map((item, idx) => (
                       <div key={idx} className="relative flex items-center gap-4">
                       {/* Lingkaran dan garis */}
                         <div className="absolute -left-[2.1rem] items-center">
-                        <div className={`w-5 h-5 rounded-full bg-white ${
-                          idx === 0 ? "ring-8 ring-[#FECB62]/100 animate-blink" : ""
-                        }`}></div>
+                        <div className="w-5 h-5 rounded-full bg-white"></div>
                       </div>
 
                       {/* Konten */}
