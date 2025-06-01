@@ -148,7 +148,7 @@ export default function CyberSecurity() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE SEMINAR
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Seminar TechnoFair 12.0 bertema “The Future of Cybersecurity: Trends, Threats, and Technologies” bertujuan memberikan pemahaman mendalam tentang tantangan dan solusi terkini di bidang keamanan siber. Menghadirkan akademisi dan profesional industri, seminar ini membahas tren terbaru, ancaman yang terus berkembang, serta teknologi dan kebijakan untuk mengatasinya. Peserta akan mendapatkan wawasan komprehensif tentang masa depan dunia digital yang aman dan pentingnya kesadaran individu dalam melindungi data serta privasi.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 text-justify">Seminar TechnoFair 12.0 bertema “The Future of Cybersecurity: Trends, Threats, and Technologies” bertujuan memberikan pemahaman mendalam tentang tantangan dan solusi terkini di bidang keamanan siber. Menghadirkan akademisi dan profesional industri, seminar ini membahas tren terbaru, ancaman yang terus berkembang, serta teknologi dan kebijakan untuk mengatasinya. Peserta akan mendapatkan wawasan komprehensif tentang masa depan dunia digital yang aman dan pentingnya kesadaran individu dalam melindungi data serta privasi.</p>
       </div>
 
 

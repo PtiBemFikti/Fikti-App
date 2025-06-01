@@ -126,7 +126,7 @@ export default function ArtificialIntelligence() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE WORKSHOP
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Workshop “AI in Action: Transforming Industries with Deep Learning” merupakan bagian dari TechnoFair 12.0 yang dirancang untuk membekali peserta dengan pemahaman dan keterampilan praktis dalam pengembangan AI, khususnya deep learning. Menggabungkan teori dasar dan praktik langsung melalui studi kasus industri, workshop ini menunjukkan bagaimana AI mampu menyelesaikan masalah kompleks, meningkatkan efisiensi, dan menciptakan nilai bisnis. Kegiatan ini menjadi langkah awal yang kuat bagi peserta yang ingin meniti karier sebagai AI Specialist.
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 text-justify">Workshop “AI in Action: Transforming Industries with Deep Learning” merupakan bagian dari TechnoFair 12.0 yang dirancang untuk membekali peserta dengan pemahaman dan keterampilan praktis dalam pengembangan AI, khususnya deep learning. Menggabungkan teori dasar dan praktik langsung melalui studi kasus industri, workshop ini menunjukkan bagaimana AI mampu menyelesaikan masalah kompleks, meningkatkan efisiensi, dan menciptakan nilai bisnis. Kegiatan ini menjadi langkah awal yang kuat bagi peserta yang ingin meniti karier sebagai AI Specialist.
 </p>
       </div>
 

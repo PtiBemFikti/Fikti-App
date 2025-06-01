@@ -178,7 +178,7 @@ export default function CaptureTheFlag() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE COMPETITION
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Capture the Flag TechnoFair 12.0 adalah kompetisi keamanan jaringan dan informasi yang diselenggarakan oleh BEM FIKTI Universitas Gunadarma bekerja sama dengan CCUG. Ditujukan untuk mahasiswa S1 Universitas Gunadarma, kompetisi ini mengasah kemampuan analisis, deteksi kerentanan, dan eksploitasi sistem melalui tantangan keamanan siber. Peserta, baik individu maupun tim, akan mencari flag tersembunyi dengan memanfaatkan celah keamanan.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 text-justify">Capture the Flag TechnoFair 12.0 adalah kompetisi keamanan jaringan dan informasi yang diselenggarakan oleh BEM FIKTI Universitas Gunadarma bekerja sama dengan CCUG. Ditujukan untuk mahasiswa S1 Universitas Gunadarma, kompetisi ini mengasah kemampuan analisis, deteksi kerentanan, dan eksploitasi sistem melalui tantangan keamanan siber. Peserta, baik individu maupun tim, akan mencari flag tersembunyi dengan memanfaatkan celah keamanan.</p>
       </div>
 
 

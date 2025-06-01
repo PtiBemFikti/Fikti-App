@@ -247,7 +247,7 @@ export default function MobileDesign() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE KOMPETISI
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Mobile App UI/UX Design Competition TechnoFair 12.0 adalah kompetisi desain aplikasi mobile yang diselenggarakan oleh BEM FIKTI Universitas Gunadarma. Fokusnya pada inovasi tampilan dan pengalaman pengguna yang estetis, fungsional, dan kreatif. Mengusung tema “Blending Creativity and Usability in Mobile Design”, kompetisi ini menilai desain berdasarkan estetika, kemudahan penggunaan, dan pemahaman kebutuhan pengguna, serta terbuka bagi mahasiswa yang ingin mengasah keterampilan UI/UX dan menciptakan solusi digital yang bermanfaat.
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 text-justify">Mobile App UI/UX Design Competition TechnoFair 12.0 adalah kompetisi desain aplikasi mobile yang diselenggarakan oleh BEM FIKTI Universitas Gunadarma. Fokusnya pada inovasi tampilan dan pengalaman pengguna yang estetis, fungsional, dan kreatif. Mengusung tema “Blending Creativity and Usability in Mobile Design”, kompetisi ini menilai desain berdasarkan estetika, kemudahan penggunaan, dan pemahaman kebutuhan pengguna, serta terbuka bagi mahasiswa yang ingin mengasah keterampilan UI/UX dan menciptakan solusi digital yang bermanfaat.
 </p>
       </div>
 

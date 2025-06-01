@@ -169,7 +169,7 @@ export default function DataScience() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE SEMINAR
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Seminar TechnoFair 12.0 dengan tema “Innovating IoT with AI: A New Era of Customer-Centric Business Growth” merupakan wadah edukatif yang membahas integrasi Internet of Things (IoT) dan Artificial Intelligence (AI) dalam mendorong pertumbuhan bisnis berorientasi pelanggan. Menghadirkan pakar industri, akademisi, dan praktisi, seminar ini mengulas studi kasus, strategi, serta tantangan nyata penerapan IoT dan AI di berbagai sektor, sekaligus memberikan wawasan tentang pemanfaatan teknologi untuk meningkatkan efisiensi, pengalaman pelanggan, dan daya saing di era digital.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 text-justify">Seminar TechnoFair 12.0 dengan tema “Innovating IoT with AI: A New Era of Customer-Centric Business Growth” merupakan wadah edukatif yang membahas integrasi Internet of Things (IoT) dan Artificial Intelligence (AI) dalam mendorong pertumbuhan bisnis berorientasi pelanggan. Menghadirkan pakar industri, akademisi, dan praktisi, seminar ini mengulas studi kasus, strategi, serta tantangan nyata penerapan IoT dan AI di berbagai sektor, sekaligus memberikan wawasan tentang pemanfaatan teknologi untuk meningkatkan efisiensi, pengalaman pelanggan, dan daya saing di era digital.</p>
       </div>
 
 

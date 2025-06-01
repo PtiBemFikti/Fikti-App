@@ -139,7 +139,7 @@ export default function DataAnalyst() {
         <h1 className={`${Montserrat.className} text-center text-xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#D77512] to-[#FFEACF] bg-clip-text text-transparent`}>
           ABOUT THE WORKSHOP
         </h1>
-        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 md:text-center">Workshop “Mastering Data Analytics: From Raw Data to Business Impact” merupakan bagian dari TechnoFair 12.0 yang dirancang untuk membekali peserta dengan pemahaman dan keterampilan praktis dalam analisis data. Melalui kombinasi teori dan praktik, workshop ini mengajarkan dasar-dasar data analytics, alat yang digunakan, serta simulasi studi kasus nyata, sekaligus memberikan gambaran tentang peran penting Data Analyst dalam mendukung pengambilan keputusan bisnis di era digital.</p>
+        <p className="text-black mx-4 font-medium tract mt-5 md:text-xl md:mx-52 text-justify">Workshop “Mastering Data Analytics: From Raw Data to Business Impact” merupakan bagian dari TechnoFair 12.0 yang dirancang untuk membekali peserta dengan pemahaman dan keterampilan praktis dalam analisis data. Melalui kombinasi teori dan praktik, workshop ini mengajarkan dasar-dasar data analytics, alat yang digunakan, serta simulasi studi kasus nyata, sekaligus memberikan gambaran tentang peran penting Data Analyst dalam mendukung pengambilan keputusan bisnis di era digital.</p>
       </div>
 
 
