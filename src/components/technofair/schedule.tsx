@@ -12,9 +12,9 @@ const kontenWorkshop = [
     { tanggal: "5 Juli 2025", waktu: "09.00 – 12.40 WIB", judul: "Artificial Intelligence", metode: "Offline", href: "/technofair/details/workshop/artificial-intelligence" },
 ];
 const kontenKompetisi = [
-    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Mobile App UI/UX Design", metode: "Hybrid", href: "/technofair/details/competitions/mobile-design" },
-    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Competitive Programming", metode: "Hybrid", href: "/technofair/details/competitions/competitive-programming" },
-    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Capture The Flag", metode: "Hybrid", href: "/technofair/details/competitions/capture-the-flag" },
+    { tanggal: "22 Juni - 12 Juli 2025", waktu: "", judul: "Mobile App UI/UX Design", metode: "Hybrid", href: "/technofair/details/competitions/mobile-design" },
+    { tanggal: "22 Juni - 12 Juli 2025", waktu: "", judul: "Competitive Programming", metode: "Hybrid", href: "/technofair/details/competitions/competitive-programming" },
+    { tanggal: "22 Juni - 12 Juli 2025", waktu: "", judul: "Capture The Flag", metode: "Hybrid", href: "/technofair/details/competitions/capture-the-flag" },
 ];
 
 export function Schedule() {
@@ -110,8 +110,7 @@ export function Schedule() {
                 <div key={index} className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
                     <div className="justify-between flex">
                         <div className="items-center my-auto ml-3 sm:ml-10 whitespace-nowrap ">
-                            <h1 className={`${Montserrat.className} font-extrabold text-xs lg:text-[14px]`}>{item.tanggal}</h1>
-                            <h1 className={`${poppins.className} font-light text-sm lg:text-[16px]`}>{item.waktu}</h1>
+                            <h1 className={`${Montserrat.className} font-extrabold text-xs lg:text-xl`}>{item.tanggal}</h1>
                         </div>
 
                         <div className="bg-white h-20 lg:h-[130px] w-[1px] my-auto mx-5 lg:mx-14"></div>
