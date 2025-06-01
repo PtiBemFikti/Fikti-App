@@ -93,7 +93,6 @@ const useMeasure = () => {
     });
 
     observer.observe(ref.current);
-
     return () => observer.disconnect();
   }, []);
 
@@ -101,9 +100,9 @@ const useMeasure = () => {
 };
 
 export default function Documentation() {
+  // desktop
   const containerRef = useRef(null);
 
-  // GSAP animation for desktop
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.utils.toArray<HTMLElement>(".floating-image").forEach((image) => {
@@ -117,18 +116,15 @@ export default function Documentation() {
         });
       });
     }, containerRef);
-
     return () => ctx.revert();
   }, []);
 
+  // mobile
   const images1 = images.slice(0, 10);
   const images2 = images.slice(10, 20);
-
-  const fast = 5;
-
+  const fast = 30;
   const [ref1, { width: width1 }] = useMeasure();
   const [ref2, { width: width2 }] = useMeasure();
-
   const x1 = useMotionValue(0);
   const x2 = useMotionValue(0);
 
@@ -205,7 +201,7 @@ export default function Documentation() {
         </div>
 
         <div className="overflow-hidden py-4">
-          <motion.div ref={ref1} style={{ x: x1 }} className="flex gap-4">
+          <motion.div ref={ref1} style={{ x: x1 }} className="flex gap-4 w-max">
             {images1.map((img, idx) => (
               <DokumSlider key={idx} image={img} />
             ))}
@@ -213,7 +209,7 @@ export default function Documentation() {
         </div>
 
         <div className="overflow-hidden py-4">
-          <motion.div ref={ref2} style={{ x: x2 }} className="flex gap-4">
+          <motion.div ref={ref2} style={{ x: x2 }} className="flex gap-4 w-max">
             {images2.map((img, idx) => (
               <DokumSlider key={idx} image={img} />
             ))}
