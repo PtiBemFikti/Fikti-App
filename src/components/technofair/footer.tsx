@@ -67,7 +67,7 @@ export function Footer() {
                         <Image src="/technofair/logoTF12/Logo BEM FIKTI Putih.png" alt="Logo" width={100} height={100} className="object-contain hover:scale-110 transition-transform" />
                         <Image src="/technofair/logoTF12/Logo Adiraka Putih.png" alt="Logo" width={80} height={80} className="object-contain hover:scale-110 transition-transform" />
                     </div>
-                    <h1 className={`${Montserrat.className} text-[20px] text-center font-semibold text-black lg:items-end`}>BEM FIKTI UG 2024/{`${year}`} <br />TECHNOFAIR 12</h1>
+                    <h1 className={`${Montserrat.className} text-[20px] text-center font-semibold text-black lg:items-end`}>BEM FIKTI UG 2024/{`${year}`} <br />TECHNOFAIR 12.0</h1>
                 </div>
 
                 <div className="flex lg:hidden justify-center">

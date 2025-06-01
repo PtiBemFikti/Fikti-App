@@ -11,7 +11,7 @@ export function Faq() {
     {
       question: "Kapan dan dimana TechnoFair 12.0 dilaksanakan?",
       answer:
-        "TechnoFair 12.0 diselenggarakan mulai 1 Juni 2025 sampai 27 Juli 2025. Untuk acara Seminar dan Workshop diadakan secara Offline di Kampus Universitas Gunadarma dan Kompetisi secara Hybrid.",
+        "TechnoFair 12.0 diselenggarakan mulai 21 Juni 2025 sampai 19 Juli 2025. Untuk acara Seminar dan Workshop diadakan secara Offline di Kampus Universitas Gunadarma dan Kompetisi secara Hybrid.",
     },
     {
       question: "Apakah ada biaya pendaftaran di TechnoFair 12.0?",
