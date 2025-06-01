@@ -126,7 +126,7 @@ export default function KompetisiSection() {
 
                 <div className="relative ml-6 pt-5 lg:ml-[112px] lg:pt-[100px] lg:py-[200px]">
                     <h1 className={`${Montserrat.className} text-4xl lg:text-[60px] font-bold text-black`}>Kompetisi</h1>
-                    <p className={`${Montserrat.className} hidden lg:block pt-5 tracking-tight text-black pr-8`}>Kompetisi TechnoFair 12.0 adalah ajang untuk mengasah potensi di bidang teknologi melalui empat cabang kompetisi menarik: UI/UX Design, Data Analyst, Competitive Programming, dan Capture The Flag (CTF). Setiap kompetisi menantang peserta untuk menunjukkan inovasi, kemampuan analisis, kecepatan berpikir, dan keahlian di bidang keamanan siber. Lebih dari sekadar menang, kompetisi ini menjadi wadah untuk berkembang, membangun relasi, dan menjadi bagian dari generasi unggul di dunia teknologi.</p>
+                    <p className={`${Montserrat.className} hidden lg:block pt-5 tracking-tight text-black pr-8 text-justify`}>Kompetisi TechnoFair 12.0 adalah ajang untuk mengasah potensi di bidang teknologi melalui empat cabang kompetisi menarik: UI/UX Design, Data Analyst, Competitive Programming, dan Capture The Flag (CTF). Setiap kompetisi menantang peserta untuk menunjukkan inovasi, kemampuan analisis, kecepatan berpikir, dan keahlian di bidang keamanan siber. Lebih dari sekadar menang, kompetisi ini menjadi wadah untuk berkembang, membangun relasi, dan menjadi bagian dari generasi unggul di dunia teknologi.</p>
                 </div>
 
                 <div className="relative flex flex-col gap-5 mt-[-30px] items-center scale-80 lg:mt-0 lg:scale-100"> 
