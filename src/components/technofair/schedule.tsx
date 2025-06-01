@@ -11,9 +11,9 @@ const kontenWorkshop = [
     { tanggal: "5 Juli 2025", waktu: "09.00 – 12.40 WIB", judul: "Artificial Intelligence", metode: "Offline" },
 ];
 const kontenKompetisi = [
-    { tanggal: "21 Mei 2025", waktu: "00.00 - 23.59 WIB", judul: "Mobile App UI/UX Design", metode: "Online" },
-    { tanggal: "20 Mei 2025", waktu: "00.00 - 23.59 WIB", judul: "Competitive Programming", metode: "Hybrid" },
-    { tanggal: "20 Mei 2025", waktu: "00.00 - 23.59 WIB", judul: "Capture The Flag", metode: "Hybrid" },
+    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Mobile App UI/UX Design", metode: "Hybrid" },
+    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Competitive Programming", metode: "Hybrid" },
+    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Capture The Flag", metode: "Hybrid" },
 ];
 
 export function Schedule() {
