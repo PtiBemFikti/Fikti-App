@@ -56,7 +56,7 @@ export function Sponsor() {
             <div className="bg-white h-[1px] flex-1" />
           </div>
         <div className="flex justify-center mt-5">
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-md hover:scale-105 transition-all duration-300">
             <Image
               src={sponsorUtama.image}
               alt="Dewaweb Sponsor"
@@ -86,7 +86,7 @@ export function Sponsor() {
             {sponsor.images.map((image, imgIndex) => (
               <div
                 key={imgIndex}
-                className="relative w-40 h-24 lg:w-48 lg:h-28"
+                className="relative w-40 h-24 lg:w-48 lg:h-28 hover:scale-105 transition-all duration-300"
               >
                 <Image
                   src={image}
