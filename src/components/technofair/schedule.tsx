@@ -1,19 +1,20 @@
 "use client";
 import { Montserrat, poppins } from "@/styles/font";
+import Link from "next/link";
 import { useState } from "react";
 
 const kontenSeminar = [
-    { tanggal: "21 Juni 2025", waktu: "09.00 – 12.00 WIB", judul: "Internet of Things", metode: "Offline" },
-    { tanggal: "19 Juli 2025", waktu: "09.00 – 13.25 WIB", judul: "Cyber Security", metode: "Offline" },
+    { tanggal: "21 Juni 2025", waktu: "09.00 – 12.00 WIB", judul: "Internet of Things", metode: "Offline", href: "/technofair/details/seminar/iot" },
+    { tanggal: "19 Juli 2025", waktu: "09.00 – 13.25 WIB", judul: "Cyber Security", metode: "Offline", href: "/technofair/details/seminar/cyber-security" },
 ];
 const kontenWorkshop = [
-    { tanggal: "28 Juni 2025", waktu: "09.00 – 12.40 WIB", judul: "Data Analyst", metode: "Offline" },
-    { tanggal: "5 Juli 2025", waktu: "09.00 – 12.40 WIB", judul: "Artificial Intelligence", metode: "Offline" },
+    { tanggal: "28 Juni 2025", waktu: "09.00 – 12.40 WIB", judul: "Data Analyst", metode: "Offline", href: "/technofair/details/workshop/data-analyst" },
+    { tanggal: "5 Juli 2025", waktu: "09.00 – 12.40 WIB", judul: "Artificial Intelligence", metode: "Offline", href: "/technofair/details/workshop/artificial-intelligence" },
 ];
 const kontenKompetisi = [
-    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Mobile App UI/UX Design", metode: "Hybrid" },
-    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Competitive Programming", metode: "Hybrid" },
-    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Capture The Flag", metode: "Hybrid" },
+    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Mobile App UI/UX Design", metode: "Hybrid", href: "/technofair/details/competitions/mobile-design" },
+    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Competitive Programming", metode: "Hybrid", href: "/technofair/details/competitions/competitive-programming" },
+    { tanggal: "22 Juni - 12 Juli 2025", waktu: "00.00 - 23.59 WIB", judul: "Capture The Flag", metode: "Hybrid", href: "/technofair/details/competitions/capture-the-flag" },
 ];
 
 export function Schedule() {
@@ -30,6 +31,7 @@ export function Schedule() {
         tab1: (
             <div>
                 {kontenSeminar.map((item, index) => (
+                
                 <div key={index} className="flex justify-between mt-3 border-[2px] border-white sm:w-[600px] lg:w-[800px] lg:h-[150px] mx-1 sm:mx-auto lg:mx-auto rounded-3xl  transform transition-transform duration-300">
                     <div className="flex">
                         <div className="items-center my-auto ml-3 sm:ml-10 whitespace-nowrap ">
@@ -44,20 +46,21 @@ export function Schedule() {
                             <h1 className={`${Montserrat.className} text-[#FF8E00] font-extrabold text-[12px] lg:text-[14x]`}>{item.metode}</h1>  
                         </div>
                     </div>
-
-                    <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 64 64"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="scale-75 lg:scale-100 transition-all duration-500 my-auto lg:mt-[43px] mr-8 fill-white hover:fill-yellow-500 hover:cursor-pointer hover:scale-110"
-                    >
-                    <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M24.0137 10.6667L45.347 32.0001L24.0137 53.3334L18.667 48.0001L34.6803 32.0001L18.667 16.0001L24.0137 10.6667Z"
-                    />
-                    </svg>
+                    <Link href={item.href}>
+                        <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="scale-75 lg:scale-100 transition-all duration-500 my-auto lg:mt-[43px] mr-3 max-w-[38px] md:mr-8 md:max-w-full fill-white hover:fill-yellow-500 hover:cursor-pointer hover:scale-110"
+                        >
+                        <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M24.0137 10.6667L45.347 32.0001L24.0137 53.3334L18.667 48.0001L34.6803 32.0001L18.667 16.0001L24.0137 10.6667Z"
+                        />
+                        </svg>
+                    </Link>
 
                 </div>
                 ))}
@@ -81,19 +84,21 @@ export function Schedule() {
                         </div>
                     </div>
 
-                    <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 64 64"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="scale-75 lg:scale-100 transition-all duration-500 my-auto lg:mt-[43px] mr-8 fill-white hover:fill-yellow-500 hover:cursor-pointer hover:scale-110"
-                    >
-                    <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M24.0137 10.6667L45.347 32.0001L24.0137 53.3334L18.667 48.0001L34.6803 32.0001L18.667 16.0001L24.0137 10.6667Z"
-                    />
-                    </svg>
+                    <Link href={item.href}>
+                        <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="scale-75 lg:scale-100 transition-all duration-500 my-auto lg:mt-[43px] mr-3 max-w-[38px] md:mr-8 md:max-w-full fill-white hover:fill-yellow-500 hover:cursor-pointer hover:scale-110"
+                        >
+                        <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M24.0137 10.6667L45.347 32.0001L24.0137 53.3334L18.667 48.0001L34.6803 32.0001L18.667 16.0001L24.0137 10.6667Z"
+                        />
+                        </svg>
+                    </Link>
 
                 </div>
                 ))}
@@ -117,19 +122,21 @@ export function Schedule() {
                         </div>
                     </div>
 
-                    <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 64 64"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="scale-75 lg:scale-100 transition-all duration-500 my-auto lg:mt-[43px] mr-8 fill-white hover:fill-yellow-500 hover:cursor-pointer hover:scale-110"
-                    >
-                    <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M24.0137 10.6667L45.347 32.0001L24.0137 53.3334L18.667 48.0001L34.6803 32.0001L18.667 16.0001L24.0137 10.6667Z"
-                    />
-                    </svg>
+                    <Link href={item.href}>
+                        <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="scale-75 lg:scale-100 transition-all duration-500 my-auto lg:mt-[43px] mr-3 max-w-[38px] md:mr-8 md:max-w-full fill-white hover:fill-yellow-500 hover:cursor-pointer hover:scale-110"
+                        >
+                        <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M24.0137 10.6667L45.347 32.0001L24.0137 53.3334L18.667 48.0001L34.6803 32.0001L18.667 16.0001L24.0137 10.6667Z"
+                        />
+                        </svg>
+                    </Link>
 
                 </div>
                 ))}
