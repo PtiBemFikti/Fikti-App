@@ -1,5 +1,6 @@
 import { Montserrat, OpenSauceSans, poppins } from "@/styles/font";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef } from "react";
 
 interface CardData {
@@ -12,6 +13,7 @@ interface CardData {
   details1: string;
   details2: string;
   href: string;
+  image: string;
 }
 
 const cardData: CardData[] = [
@@ -25,6 +27,7 @@ const cardData: CardData[] = [
     details1: "Sabtu, 28 Juni 2025",
     details2: "Analysis & Decisions",
     href: "/technofair/details/workshop/data-analyst",
+    image: "/technofair/logoTF12/Cover Web Acara/Cover Workshop/Workshop DA .PNG",
   },
   {
     id: 2,
@@ -36,6 +39,7 @@ const cardData: CardData[] = [
     details1: "Sabtu, 5 Juli 2025",
     details2: "Learning & Automation",
     href: "/technofair/details/workshop/artificial-intelligence",
+    image: "/technofair/logoTF12/Cover Web Acara/Cover Workshop/Workshop AI .PNG",
   },
 ];
 
@@ -43,10 +47,8 @@ function Card({ data }: { data: CardData }) {
   return (
     <div className="bg-[#FFEFD7] w-[320px] h-[450px] rounded-[30px] shadow-[10px_9px_5px_0px_rgba(94,77,73,0.50)]">
       <div className="p-5 flex-grow">
-        <div className="h-[150px] w-[280px] rounded-3xl bg-black mb-6 py-12">
-          <h1 className="text-red-600 border-2 w-fit px-3 py-2 text-xl border-red-600 font-bold mx-auto my-auto">
-            TO BE ANNOUNCED..
-          </h1>
+        <div className="rounded-3xl  mb-6">
+          <Image src={data.image} alt="image" width={280} height={150} className="rounded-3xl"/>
         </div>
         <div className="flex gap-1 mb-2">
           <h5 className="text-[#FFFAF0] text-xs px-3 py-[2px] tracking-tight font-semibold bg-[#053B64] rounded-full">

@@ -13,6 +13,7 @@ interface CardData {
     details1: string;
     details2: string;
     href: string;
+    image: string;
   }
 
   const cardData: CardData[] = [
@@ -26,6 +27,7 @@ interface CardData {
       details1: "Sabtu, 21 Juni 2025",
       details2: "Connectivity & Innovation",
       href: "/technofair/details/seminar/iot",
+      image: "/technofair/logoTF12/Cover Web Acara/Cover Seminar/Seminar IoT .PNG",
     },
     {
       id: 2,
@@ -37,6 +39,7 @@ interface CardData {
       details1: "Sabtu, 19 Juli 2025",
       details2: "Cyber Security & Trends",
       href: "/technofair/details/seminar/cyber-security",
+      image: "/technofair/logoTF12/Cover Web Acara/Cover Seminar/Seminar CS .PNG",
     },
   ];
 
@@ -44,10 +47,8 @@ interface CardData {
     return (
       <div className="bg-[#FFEFD7] w-[320px] rounded-[30px] shadow-[10px_9px_5px_0px_rgba(94,77,73,0.50)]">
         <div className="p-5 flex-grow">
-          <div className="h-[150px] w-[280px] rounded-3xl bg-black mb-6 py-12">
-            <h1 className="text-red-600 border-2 w-fit px-3 py-2 text-xl border-red-600 font-bold mx-auto my-auto">
-              TO BE ANNOUNCED..
-            </h1>
+          <div className="rounded-3xl  mb-6">
+              <Image src={data.image} alt="image" width={280} height={150} className="rounded-3xl"/>
           </div>
           <div className="flex gap-1 mb-2">
             <h5 className="text-[#FFFAF0] text-xs px-3 py-[2px] tracking-tight font-semibold bg-[#053B64] rounded-full">

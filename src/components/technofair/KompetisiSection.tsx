@@ -25,7 +25,7 @@ interface CardData {
       date: "21 Mei - 19 Juli, 2025",
       details: "Creativity & Usability",
       href: "/technofair/details/competitions/mobile-design",
-      image: "/technofair/logoTF12/UX.png",
+      image: "/technofair/logoTF12/Cover Web Acara/Cover Kompetisi/Kompetisi UI_UX .PNG",
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ interface CardData {
       date: "20 Mei - 19 Juli, 2025",
       details: "Information & Cyber Security",
       href: "/technofair/details/competitions/capture-the-flag",
-      image: "/technofair/logoTF12/CTF.png",
+      image: "/technofair/logoTF12/Cover Web Acara/Cover Kompetisi/Kompetisi CTF .PNG",
     },
     {
       id: 3,
@@ -47,7 +47,7 @@ interface CardData {
       date: "20 Mei - 19 Juli, 2025",
       details: "Problem Solving & Optimization",
       href: "/technofair/details/competitions/competitive-programming",
-      image: "/technofair/logoTF12/CP.png",
+      image: "/technofair/logoTF12/Cover Web Acara/Cover Kompetisi/Kompetisi CP .PNG",
     },
   ];
 
