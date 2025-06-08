@@ -29,7 +29,7 @@ export default function GelbudSlidingText({
       className={`${MonumentExtendedRegular.className} flex items-center justify-center whitespace-nowrap px-5 font-bold text-xl tracking-wider md:text-2xl lg:text-3xl`}
       style={{ color: finalTextColor }}
     >
-      RISE THE RYTHMS
+      RISE THE RHYTHM
       <Image
         src="/gelar-budaya/logo-gelar-budaya-nobg.png"
         alt="logo gelar budaya"
