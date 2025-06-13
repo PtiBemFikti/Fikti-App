@@ -33,6 +33,7 @@ const otherSponsorsData = [
       "/technofair/logoTF12/medpart/Logo Comma Design.png",
       "/technofair/logoTF12/medpart/logo-himsi.png",
       "/technofair/logoTF12/medpart/Logo MAHAGUN.png",
+      "/technofair/logoTF12/medpart/logo HMSK fixed.png",
     ],
   },
 ];
