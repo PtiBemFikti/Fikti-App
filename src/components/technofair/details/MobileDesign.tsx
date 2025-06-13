@@ -221,7 +221,7 @@ export default function MobileDesign() {
           <Link href="https://bit.ly/RegistUIUXTF12" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full hover:bg-[#100F21] hover:text-white transition-colors duration-300">
           Registration
           </Link>
-          <Link href="" className="text-sm md:text-xl text-black font-medium border-[#FE8A16] border-3 py-2 w-32 md:w-44 rounded-full hover:border-[#100F21] transition-colors duration-300">
+          <Link href="https://drive.google.com/file/d/1zFouw30dkMAUFrJF4bWIXmbbVQfTTqvI/view?usp=drive_link" className="text-sm md:text-xl text-black font-medium border-[#FE8A16] border-3 py-2 w-32 md:w-44 rounded-full hover:border-[#100F21] transition-colors duration-300">
           Rulebook
           </Link>
         </div>
