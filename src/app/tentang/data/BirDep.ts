@@ -56,11 +56,6 @@ export const dataBiroDepartemen = [
           foto: "/adiraka/MIKAT/AKADEMIK/bintang.webp",
           jabatan: "Staff Akademik",
         },
-        {
-          nama: "Jelita Regina Putri",
-          foto: "/adiraka/MIKAT/AKADEMIK/jelita.webp",
-          jabatan: "Staff Akademik",
-        },
       ],
     },
     {
@@ -106,11 +101,6 @@ export const dataBiroDepartemen = [
           {
             nama: "Moch.Restu Prayoga ",
             foto: "/adiraka/MIKAT/ORSB/restu.webp",
-            jabatan: "Staff ORSB",
-          },
-          {
-            nama: "Sendy Ardiansyah",
-            foto: "/adiraka/MIKAT/ORSB/sendy.webp",
             jabatan: "Staff ORSB",
           },
           {
@@ -376,11 +366,7 @@ export const dataBiroDepartemen = [
             foto: "/adiraka/MK/PSDM/laisyah.webp",
             jabatan: "Staff PSDM",
           },
-          {
-            nama: "Atiqa Maisa Dewi ",
-            foto: "/adiraka/MK/PSDM/atiqa.webp",
-            jabatan: "Staff PSDM",
-          },
+
           {
             nama: "Yasmin Indriani ",
             foto: "/adiraka/MK/PSDM/yasmin.webp",
@@ -683,11 +669,7 @@ export const dataBiroDepartemen = [
             foto: "/adiraka/kominfo/PTI/muhammad_rafly_romeo_nasution.webp",
             jabatan: "Staff PTI",
           },
-          {
-            nama: "Mohammad Fattan Hibrizi",
-            foto: "/adiraka/kominfo/PTI/muhammad_fattan_hibrizi.webp",
-            jabatan: "Staff PTI",
-          },
+
         ],
     },
     {
