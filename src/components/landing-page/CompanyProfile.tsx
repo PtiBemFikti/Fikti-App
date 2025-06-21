@@ -1,7 +1,6 @@
 "use client";
 
 import { MonumentExtendedBold } from "@/styles/font";
-import Image from "next/image";
 import LogoSlider from "./LogoSlider";
 import { motion } from "framer-motion";
 
@@ -31,15 +30,18 @@ export default function CompanyProfileSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative"
+          className="relative my-8"
         >
-          <Image
-            src="/about.jpeg"
-            alt="Company Profile"
-            width={800}
-            height={800}
-            className="rounded-xl shadow-md md:h-[350px] lg:h-[550px] w-auto object-cover aspect-video mx-auto lg:my-8"
-          />
+          <div className="aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-md">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/Xx4QwmCNJDE"
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
         </motion.div>
 
         <motion.h2
