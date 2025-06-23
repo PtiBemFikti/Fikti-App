@@ -94,7 +94,7 @@ export default function CyberSecurity() {
       <div className="mt-10 pb-5">
         <h1 className="text-black text-lg md:text-3xl italic leading-[150%] text-center">Cyber Security Seminar of <br className="md:hidden" />TechnoFair 12.0</h1>
         <div className="pt-6 text-center justify-center flex gap-6">
-          <Link href="" className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full hover:bg-[#100F21] hover:text-white transition-colors duration-300">
+          <Link href="https://bit.ly/SeminarCyberTF12 " className="text-sm md:text-xl text-black font-medium bg-[#FE8A16] py-2 w-32 md:w-44 rounded-full hover:bg-[#100F21] hover:text-white transition-colors duration-300">
           Registration
           </Link>
         </div>
@@ -136,8 +136,8 @@ export default function CyberSecurity() {
                       d="M12 21s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z"/>
               </svg>
               <span className="text-amber-600 font-medium text-xl leading-snug">
-                Auditorium D462,<br />
-                Kampus D, Universitas Gunadarma
+                Auditorium J167,<br />
+                Kampus J1, Universitas Gunadarma
               </span>
             </div>
           </div>

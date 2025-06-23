@@ -87,7 +87,7 @@ const eventData = [
   },
 ]
 
-export default function DataScience() {
+export default function InternetOfThings() {
   const [index, setIndex] = useState(0);
   
   const nextItem = () => setIndex((prev) => (prev + 1) % eventData.length);
@@ -135,7 +135,7 @@ export default function DataScience() {
                       d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
               </svg>
               <span className="text-amber-600 font-medium text-xl">
-                Sabtu, 21 Juni 2025
+                Sabtu, 05 Juli 2025
               </span>
             </div>
 
@@ -157,8 +157,8 @@ export default function DataScience() {
                       d="M12 21s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z"/>
               </svg>
               <span className="text-amber-600 font-medium text-xl leading-snug">
-                Auditorium D462,<br />
-                Kampus D, Universitas Gunadarma
+                Auditorium J167,<br />
+                Kampus J1, Universitas Gunadarma
               </span>
             </div>
           </div>

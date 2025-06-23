@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const kontenSeminar = [
-    { tanggal: "21 Juni 2025", waktu: "09.00 – 12.00 WIB", judul: "Internet of Things", metode: "Offline", href: "/technofair/details/seminar/iot" },
+    { tanggal: "05 Juli 2025", waktu: "09.00 – 12.00 WIB", judul: "Internet of Things", metode: "Offline", href: "/technofair/details/seminar/iot" },
     { tanggal: "19 Juli 2025", waktu: "09.00 – 13.25 WIB", judul: "Cyber Security", metode: "Offline", href: "/technofair/details/seminar/cyber-security" },
 ];
 const kontenWorkshop = [

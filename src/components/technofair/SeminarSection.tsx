@@ -24,7 +24,7 @@ interface CardData {
       title: "Internet of Things",
       subtitle: "“Innovating IoT with AI: A New Era of Customer-Centric Business Growth”",
       date: "To be Announced",
-      details1: "Sabtu, 21 Juni 2025",
+      details1: "Sabtu, 05 Juli 2025",
       details2: "Connectivity & Innovation",
       href: "/technofair/details/seminar/iot",
       image: "/technofair/logoTF12/Cover Web Acara/Cover Seminar/Seminar IoT .PNG",

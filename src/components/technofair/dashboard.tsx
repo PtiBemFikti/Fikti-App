@@ -33,10 +33,10 @@ export function Dashboard() {
                 </div>
 
                 <div className="bg-[#FE8A16] mx-4 mt-8 px-4 lg:px-8 py-5 lg:py-14 rounded-3xl lg:w-[1000px] lg:mx-auto">
-                    <h1 className={`${Montserrat.className} text-4xl lg:text-[58px] lg:leading-none font-semibold tracking-tight leading-[45px] whitespace-nowrap`}>
+                    <h1 className={`${Montserrat.className} text-[32px] lg:text-[58px] lg:leading-none font-semibold tracking-tight leading-[45px] whitespace-nowrap`}>
                         Tech Enthusiasts,<br /> Assemble!<br />
                         Your Next Big <br className="lg:hidden"/>
-                        Break <span className="text-[#053B64]">{rotatingWords1}</span>
+                        Break <span className="text-[#053B64] ">{rotatingWords1}</span>
                     </h1>
 
                     <div className="w-80 lg:w-[1100px] lg:mx-auto h-px bg-white my-5"></div>
