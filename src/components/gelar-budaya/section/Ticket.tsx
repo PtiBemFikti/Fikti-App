@@ -9,25 +9,25 @@ export default function GelbudTicketSection() {
   const tickets = [
     {
       title: "Single",
-      benefits: "Kipas + Pin Button + Stiker",
+      benefits: "Pin Button + Stiker",
       note: "1 orang",
       price: "Rp35.000",
     },
     {
       title: "Duo",
-      benefits: "Kipas + Pin Button + Stiker (2 pax)",
+      benefits: "Pin Button + Stiker (2 pax)",
       note: "2 orang",
       price: "Rp65.000",
     },
     {
       title: "Grup Kecil",
-      benefits: "Kipas + Pin Button + Stiker (4 pax)",
+      benefits: "Pin Button + Stiker (4 pax)",
       note: "4 orang",
       price: "Rp120.000",
     },
     {
       title: "Grup Besar",
-      benefits: "Kipas + Pin Button + Stiker (6 pax)",
+      benefits: "Pin Button + Stiker (6 pax)",
       note: "6 orang",
       price: "Rp175.000",
     },
