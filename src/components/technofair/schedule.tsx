@@ -8,8 +8,8 @@ const kontenSeminar = [
     { tanggal: "19 Juli 2025", waktu: "09.00 – 13.25 WIB", judul: "Cyber Security", metode: "Offline", href: "/technofair/details/seminar/cyber-security" },
 ];
 const kontenWorkshop = [
-    { tanggal: "28 Juni 2025", waktu: "09.00 – 23.00 WIB", judul: "Data Analyst", metode: "Offline", href: "/technofair/details/workshop/data-analyst" },
-    { tanggal: "5 Juli 2025", waktu: "09.00 – 13.00 WIB", judul: "Artificial Intelligence", metode: "Offline", href: "/technofair/details/workshop/artificial-intelligence" },
+    { tanggal: "28 Juni 2025", waktu: "13.00 - 15.45 WIB", judul: "Data Analyst", metode: "Offline", href: "/technofair/details/workshop/data-analyst" },
+    { tanggal: "5 Juli 2025", waktu: "13.00 - 15.45 WIB", judul: "Artificial Intelligence", metode: "Offline", href: "/technofair/details/workshop/artificial-intelligence" },
 ];
 const kontenKompetisi = [
     { tanggal: "22 Juni - 12 Juli 2025", waktu: "", judul: "Mobile App UI/UX Design", metode: "Hybrid", href: "/technofair/details/competitions/mobile-design" },
