@@ -87,7 +87,7 @@ const eventData = [
   },
 ]
 
-export default function DataScience() {
+export default function InternetOfThings() {
   const [index, setIndex] = useState(0);
   
   const nextItem = () => setIndex((prev) => (prev + 1) % eventData.length);
