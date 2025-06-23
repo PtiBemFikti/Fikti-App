@@ -136,8 +136,8 @@ export default function CyberSecurity() {
                       d="M12 21s-6-5.686-6-10a6 6 0 1112 0c0 4.314-6 10-6 10z"/>
               </svg>
               <span className="text-amber-600 font-medium text-xl leading-snug">
-                Auditorium D462,<br />
-                Kampus D, Universitas Gunadarma
+                Auditorium J167,<br />
+                Kampus J1, Universitas Gunadarma
               </span>
             </div>
           </div>
