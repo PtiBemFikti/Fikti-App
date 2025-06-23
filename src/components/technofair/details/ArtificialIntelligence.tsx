@@ -103,7 +103,7 @@ export default function ArtificialIntelligence() {
                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
               <span className="text-amber-600 font-medium text-xl">
-                09.00 – 12.40 WIB
+                09.00 – 13.00 WIB
               </span>
             </div>
 
