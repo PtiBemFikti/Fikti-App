@@ -1,4 +1,4 @@
-import DetailPaslon2 from "@/components/pemira/DetailPaslon/detailPaslon2";
+import DetailPaslon2 from "@/components/pemira-unused/DetailPaslon/detailPaslon2";
 
 export default function Paslon2Page() {
   return (
