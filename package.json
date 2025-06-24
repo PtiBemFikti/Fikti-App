@@ -19,9 +19,12 @@
     "@nextui-org/react": "^2.2.10",
     "@nextui-org/system": "^2.2.5",
     "@nextui-org/theme": "^2.2.9",
+    "@supabase/supabase-js": "^2.50.0",
     "amqplib": "^0.10.4",
     "animate.css": "^4.1.1",
+    "axios": "^1.10.0",
     "bcrypt": "^5.1.1",
+    "cheerio": "^1.1.0",
     "debug": "^4.3.4",
     "framer-motion": "^10.18.0",
     "gsap": "^3.12.5",
@@ -42,7 +45,8 @@
     "slick-carousel": "^1.8.1",
     "sonner": "^1.5.0",
     "swiper": "^11.2.6",
-    "tailwind": "^4.0.0"
+    "tailwind": "^4.0.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
