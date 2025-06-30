@@ -4,6 +4,8 @@ import { cookies } from 'next/headers';
 import { getBaseUrl } from "@/lib/utils";
 import { supabase } from "@/lib/supabase";
 
+export const dynamic = 'force-dynamic';
+
 export async function POST(req: Request) {
   try {
     const cookieStore = await cookies();
