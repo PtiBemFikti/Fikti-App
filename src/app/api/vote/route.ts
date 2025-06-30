@@ -10,38 +10,43 @@ export async function POST(req: Request) {
     const moodle = cookieStore.get('MoodleSession')?.value;
 
     if (!moodle) {
+      console.log("❌ Tidak ada cookie MoodleSession");
       return NextResponse.json(
         { success: false, message: 'Unauthorized: no session cookie' },
         { status: 401 }
       );
     }
 
-
     const profileRes = await fetch(`${getBaseUrl()}/api/auth/profile`, {
-
       headers: {
         Cookie: `MoodleSession=${moodle}`
       }
     });
+
+    console.log("✅ profileRes status:", profileRes.status);
 
     if (!profileRes.ok) {
       throw new Error('Failed to fetch profile');
     }
 
     const profileData = await profileRes.json();
+    console.log("🧠 profileData:", profileData);
 
     if (!profileData.success || !profileData.data) {
       throw new Error('Invalid profile data');
     }
 
     const { npm, name, jurusan: program_studi, kodeKelas: kelas } = profileData.data;
-    const { id } = await req.json();
 
-    // Panggil stored procedure vote_candidate
+    const body = await req.json();
+    console.log("📦 Request body:", body);
+
+    const { id } = body;
+    if (!id) throw new Error("Kandidat ID tidak ditemukan dalam request body");
+
     const { error } = await supabase.rpc("vote_candidate", {
       p_candidate_id: id,
       p_npm: npm,
-    //   p_name: name,
       p_program_studi: program_studi,
       p_kelas: kelas
     });
