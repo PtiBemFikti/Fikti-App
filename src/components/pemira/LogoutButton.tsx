@@ -15,14 +15,8 @@ export default function PemiraLogoutButton({
   const router = useRouter();
   const [showModal, setShowModal] = useState(false);
 
-  const handleLogout = async () => {
-    try {
-      await fetch("/api/logout", { method: "GET" });
-      router.push("/pemira");
-      router.refresh();
-    } catch (error) {
-      console.error("Logout error:", error);
-    }
+  const handleLogout = () => {
+    window.location.href = "/api/logout";
   };
 
   const buttonClass =
