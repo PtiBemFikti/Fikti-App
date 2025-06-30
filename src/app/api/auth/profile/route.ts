@@ -105,18 +105,25 @@ export async function GET() {
       }, { status: 404 });
     }
 
-    return NextResponse.json({
-      success: true,
-      data: {
-        name,
-        npm,
-        kodeKelas: selectedCode,
-        jurusan,
-        isInformationSystem: jurusan.includes('Sistem Informasi'),
-        isComputerSystem: jurusan.includes('Sistem Komputer')
-      }
+  const response = NextResponse.json({
+  success: true,
+  data: {
+    name,
+    npm,
+    kodeKelas: selectedCode,
+    jurusan,
+    isInformationSystem: jurusan.includes('Sistem Informasi'),
+    isComputerSystem: jurusan.includes('Sistem Komputer')
+  }
+});
+    response.cookies.set('user_jurusan', jurusan, {
+      path: '/',
+      maxAge: 60 * 60 * 6,
+      httpOnly: true,
+      sameSite: 'lax'
     });
 
+    return response;
   } catch (err) {
     const error = err as Error & { response?: AxiosResponse };
     console.error('[API AUTH ERROR]', error.response?.status, error.response?.data, error.message);
