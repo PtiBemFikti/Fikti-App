@@ -182,7 +182,7 @@ export default function PemiraLoginForm() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="p-3 bg-green-50 text-green-700 rounded-lg border border-green-200"
+          className="p-3 bg-green-300 text-green-700 rounded-lg border border-green-200"
         >
           Login berhasil! Mengalihkan...
         </motion.div>
