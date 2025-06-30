@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { FiEye, FiEyeOff, FiUser, FiLock } from "react-icons/fi";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function PemiraLoginForm() {
   const [email, setEmail] = useState("");
@@ -37,7 +39,6 @@ export default function PemiraLoginForm() {
       }
 
       setStatus("success");
-      // Use hard redirect to ensure cookies are properly set
       window.location.href = redirect;
     } catch (error) {
       setStatus("error");
@@ -53,32 +54,47 @@ export default function PemiraLoginForm() {
       onSubmit={handleSubmit}
       className="w-full md:w-1/2 p-6 sm:p-8 md:p-12 space-y-6"
     >
-      <div className="text-center md:text-left">
-        <h1 className="text-3xl font-bold text-gray-800">Masuk</h1>
-        <p className="text-gray-600 mt-2">Gunakan akun UG Anda</p>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-center md:text-left"
+      >
+        <h1 className="text-3xl font-bold text-[#19554B]">Masuk</h1>
+        <p className="text-gray-600 mt-2">
+          Gunakan akun V-Class Gunadarma anda
+        </p>
+      </motion.div>
 
       {errorMessage && (
-        <div className="p-3 bg-red-50 text-red-700 rounded-lg border border-red-200 flex items-start">
-          <div className="flex-1">{errorMessage}</div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="p-3 bg-red-50 text-red-700 rounded-lg border border-red-200"
+        >
+          {errorMessage}
+        </motion.div>
       )}
 
       <div className="space-y-4">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.1 }}
+        >
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-[#19554B] mb-1"
           >
             Email UG
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <FiUser className="text-gray-400" />
+              <FiUser className="text-[#AA83C2]" />
             </div>
             <input
               id="email"
-              className="w-full pl-10 border border-gray-300 p-3 rounded-lg mt-1 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+              className="w-full pl-10 border border-[#DEDAD1] p-3 rounded-lg mt-1 text-gray-800 focus:ring-2 focus:ring-[#AA83C2] focus:border-[#AA83C2] transition"
               type="email"
               placeholder="user@student.gunadarma.ac.id"
               value={email}
@@ -86,22 +102,26 @@ export default function PemiraLoginForm() {
               required
             />
           </div>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+        >
           <label
             htmlFor="password"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-[#19554B] mb-1"
           >
             Password
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <FiLock className="text-gray-400" />
+              <FiLock className="text-[#AA83C2]" />
             </div>
             <input
               id="password"
-              className="w-full pl-10 border border-gray-300 p-3 rounded-lg mt-1 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 pr-10 transition"
+              className="w-full pl-10 border border-[#DEDAD1] p-3 rounded-lg mt-1 text-gray-800 focus:ring-2 focus:ring-[#AA83C2] focus:border-[#AA83C2] pr-10 transition"
               type={showPassword ? "text" : "password"}
               placeholder="Password"
               value={password}
@@ -111,17 +131,19 @@ export default function PemiraLoginForm() {
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 p-1"
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-[#AA83C2] hover:text-[#19554B] p-1 transition-colors"
               aria-label={showPassword ? "Hide password" : "Show password"}
             >
               {showPassword ? <FiEyeOff size={18} /> : <FiEye size={18} />}
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      <button
-        className={`w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center ${
+      <motion.button
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        className={`w-full bg-[#19554B] text-white py-3 px-4 rounded-lg hover:bg-[#134239] transition flex items-center justify-center ${
           status === "loading" ? "opacity-80 cursor-not-allowed" : ""
         }`}
         type="submit"
@@ -154,17 +176,26 @@ export default function PemiraLoginForm() {
         ) : (
           "Login"
         )}
-      </button>
+      </motion.button>
 
       {status === "success" && (
-        <div className="p-3 bg-green-50 text-green-700 rounded-lg border border-green-200">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="p-3 bg-green-50 text-green-700 rounded-lg border border-green-200"
+        >
           Login berhasil! Mengalihkan...
-        </div>
+        </motion.div>
       )}
 
-      <div className="text-center text-sm text-gray-500 mt-6">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+        className="text-center text-sm text-gray-500 mt-6"
+      >
         <p>Pemira tidak menyimpan data ataupun password anda</p>
-      </div>
+      </motion.div>
     </form>
   );
 }
