@@ -1,13 +1,12 @@
 // app/api/vote/check/route.ts
-import { supabase } from "@/lib/supabase";
 import { NextResponse } from "next/server";
 import { cookies } from 'next/headers';
-
-export const dynamic = 'force-dynamic';
+import { supabase } from "@/lib/supabase";
+import { getBaseUrl } from "@/lib/utils";
 
 export async function GET() {
   try {
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const moodle = cookieStore.get('MoodleSession')?.value;
 
     if (!moodle) {
@@ -17,42 +16,31 @@ export async function GET() {
       );
     }
 
-    const profileRes = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/auth/profile`, {
+    // Ambil profile user
+    const profileRes = await fetch(`${getBaseUrl()}/api/auth/profile`, {
       headers: {
         Cookie: `MoodleSession=${moodle}`
       }
     });
 
     if (!profileRes.ok) {
-      return NextResponse.json(
-        { success: false, message: 'Failed to fetch profile' },
-        { status: 500 }
-      );
+      throw new Error('Failed to fetch profile');
     }
 
     const profileData = await profileRes.json();
-
+    
     if (!profileData.success || !profileData.data) {
-      return NextResponse.json(
-        { success: false, message: 'Invalid profile data' },
-        { status: 400 }
-      );
+      throw new Error('Invalid profile data');
     }
 
     const { npm } = profileData.data;
 
-    const { data: voter, error } = await supabase
+    // Cek status voting
+    const { data: voter} = await supabase
       .from('pemira_voters')
       .select('has_voted')
       .eq('npm', npm)
       .single();
-
-    if (error) {
-      return NextResponse.json(
-        { success: false, message: error.message },
-        { status: 500 }
-      );
-    }
 
     return NextResponse.json({
       success: true,
@@ -63,8 +51,9 @@ export async function GET() {
 
   } catch (err) {
     const error = err as Error;
+    console.error('[CHECK VOTE ERROR]', error.message);
     return NextResponse.json(
-      { success: false, message: error.message || 'Terjadi kesalahan internal' },
+      { success: false, message: error.message || 'Terjadi kesalahan saat memeriksa status vote' },
       { status: 500 }
     );
   }
