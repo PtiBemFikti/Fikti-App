@@ -33,10 +33,10 @@ export default function VotersTable({ voters }: VotersTableProps) {
           <thead className="bg-gray-50">
             <tr>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                NIM
+                No
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Nama
+                NPM
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Kelas
@@ -47,13 +47,14 @@ export default function VotersTable({ voters }: VotersTableProps) {
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
-            {voters.map((voter) => (
+            {voters.map((voter, index) => (
               <tr key={voter.id}>
+                <td className="px-6 py-4 whitespace-nowrap text-black">
+                  {index + 1}
+                </td>
+
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {voter.npm}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                  {voter.name}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {voter.kelas}
