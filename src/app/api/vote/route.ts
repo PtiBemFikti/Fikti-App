@@ -1,40 +1,11 @@
-// app/api/vote/route.ts
 import { supabase } from "@/lib/supabase";
 import { NextResponse } from "next/server";
-import { cookies } from 'next/headers';
-import { getBaseUrl } from "./check/route";
+import { getUserProfile } from "@/lib/getUserProfile";
 
 export async function POST(req: Request) {
   try {
-    const cookieStore = await cookies();
-    const moodle = cookieStore.get('MoodleSession')?.value;
-
-    if (!moodle) {
-      console.log("❌ Tidak ada cookie MoodleSession");
-      return NextResponse.json(
-        { success: false, message: 'Unauthorized: no session cookie' },
-        { status: 401 }
-      );
-    }
-
-    const profileRes = await fetch(`${getBaseUrl()}/api/auth/profile`, {
-      headers: {
-        Cookie: `MoodleSession=${moodle}`
-      }
-    });
-
-    console.log("✅ profileRes status:", profileRes.status);
-
-    if (!profileRes.ok) {
-      throw new Error('Failed to fetch profile');
-    }
-
-    const profileData = await profileRes.json();
+    const profileData = await getUserProfile();
     console.log("🧠 profileData:", profileData);
-
-    if (!profileData.success || !profileData.data) {
-      throw new Error('Invalid profile data');
-    }
 
     const { npm, name, jurusan: program_studi, kodeKelas: kelas } = profileData.data;
 
@@ -64,8 +35,8 @@ export async function POST(req: Request) {
       message: 'Vote berhasil dicatat'
     });
 
-  } catch (err) {
-    const error = err as Error;
+  } catch (err: unknown) {
+    const error = err instanceof Error ? err : new Error(String(err));
     console.error('[VOTE ERROR]', error.message);
     return NextResponse.json(
       { success: false, message: error.message || 'Terjadi kesalahan saat memproses vote' },
