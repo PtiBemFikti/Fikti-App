@@ -13,6 +13,8 @@ interface UserData {
   npm: string;
   jurusan: string;
   kodeKelas: string;
+  isInformationSystem: boolean;
+  isComputerSystem: boolean;
 }
 
 export default function DashboardPage() {
@@ -41,12 +43,21 @@ export default function DashboardPage() {
         const profileJson = await profileRes.json();
 
         if (profileJson.success && profileJson.data) {
-          const { name, npm, jurusan, kodeKelas } = profileJson.data;
+          const {
+            name,
+            npm,
+            jurusan,
+            kodeKelas,
+            isInformationSystem,
+            isComputerSystem,
+          } = profileJson.data;
           setUserData({
             name: name || "tidak tersedia",
             npm: npm || "Tidak tersedia",
             jurusan: jurusan || "Tidak tersedia",
             kodeKelas: kodeKelas || "Tidak tersedia",
+            isInformationSystem,
+            isComputerSystem,
           });
         } else {
           setError("Gagal memuat data profil");
@@ -63,6 +74,18 @@ export default function DashboardPage() {
     const intervalId = setInterval(fetchData, 10000);
     return () => clearInterval(intervalId);
   }, []);
+
+  const handleProceed = () => {
+    if (
+      userData &&
+      !userData.isInformationSystem &&
+      !userData.isComputerSystem
+    ) {
+      setShowBlockedModal(true);
+    } else {
+      setShowModal(true);
+    }
+  };
 
   if (loading) {
     return (
@@ -186,19 +209,7 @@ export default function DashboardPage() {
             className="pt-4"
           >
             <button
-              onClick={() => {
-                if (
-                  userData?.jurusan &&
-                  !(
-                    userData.jurusan.includes("Sistem Informasi") ||
-                    userData.jurusan.includes("Sistem Komputer")
-                  )
-                ) {
-                  setShowBlockedModal(true);
-                } else {
-                  setShowModal(true);
-                }
-              }}
+              onClick={handleProceed}
               className="w-full py-3 px-6 rounded-lg bg-[#19554B] text-white hover:bg-[#134239] transition-colors font-medium flex items-center justify-center gap-2"
             >
               Ya, ini data saya
@@ -207,6 +218,7 @@ export default function DashboardPage() {
         </div>
       </motion.div>
 
+      {/* Normal Confirmation Modal */}
       <PemiraModal
         isOpen={showModal}
         onClose={() => setShowModal(false)}
@@ -244,28 +256,41 @@ export default function DashboardPage() {
           </Link>
         </div>
       </PemiraModal>
+
+      {/* Blocked Access Modal */}
       <PemiraModal
         isOpen={showBlockedModal}
         onClose={() => setShowBlockedModal(false)}
-        title="Akses Ditolak"
+        title="Akses Dibatasi"
       >
         <div className="mb-6">
           <div className="flex items-start gap-3 mb-4">
             <FiX className="text-red-500 mt-0.5 flex-shrink-0" />
-            <p className="text-sm text-gray-700">
-              Kamu bukan mahasiswa FIKTI. Hanya mahasiswa FIKTI yang bisa
-              mengikuti Pemira ini.
-            </p>
+            <div>
+              <p className="text-sm text-gray-700 mb-2">
+                Maaf, Pemira ini hanya untuk mahasiswa FIKTI (Sistem
+                Informasi/Sistem Komputer).
+              </p>
+              <p className="text-sm text-gray-600">
+                Jurusan Anda:{" "}
+                <span className="font-medium">{userData?.jurusan}</span>
+              </p>
+            </div>
           </div>
           <div className="bg-[#FDEDED] p-3 rounded border border-[#F5C2C7]">
             <p className="text-xs text-red-500">
-              Silakan logout dan hubungi panitia jika ini terjadi karena
-              kesalahan sistem.
+              Jika ini kesalahan sistem, silakan hubungi panitia Pemira.
             </p>
           </div>
         </div>
 
-        <div className="flex justify-end">
+        <div className="flex justify-between">
+          <button
+            onClick={() => setShowBlockedModal(false)}
+            className="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors"
+          >
+            Tutup
+          </button>
           <PemiraLogoutButton />
         </div>
       </PemiraModal>
