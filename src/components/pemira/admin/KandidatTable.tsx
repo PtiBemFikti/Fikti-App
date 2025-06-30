@@ -2,6 +2,7 @@
 "use client";
 
 import { Kandidat } from "@/types/pemira";
+import Image from "next/image";
 import * as XLSX from "xlsx";
 
 type KandidatTableProps = {
@@ -41,6 +42,9 @@ export default function KandidatTable({ kandidat }: KandidatTableProps) {
                 No
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Foto
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Nama
               </th>
 
@@ -56,19 +60,19 @@ export default function KandidatTable({ kandidat }: KandidatTableProps) {
                 <td className="px-6 py-4 whitespace-nowrap">
                   <div className="flex items-center">
                     <div className="flex-shrink-0 h-10 w-10">
-                      {/* <Image
+                      <Image
                         src={kandidat.image}
                         alt={kandidat.name}
                         width={200}
                         height={200}
                         className="object-cover w-full h-full"
-                      /> */}
+                      />
                     </div>
-                    <div className="ml-4">
-                      <div className="text-sm font-medium text-gray-900">
-                        {kandidat.name}
-                      </div>
-                    </div>
+                  </div>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  <div className="text-sm font-medium text-gray-900">
+                    {kandidat.name}
                   </div>
                 </td>
 
