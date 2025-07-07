@@ -1,23 +1,39 @@
-// app/api/logout/route.ts
 import { NextResponse } from 'next/server';
+import { cookies } from 'next/headers';
 
 export async function GET() {
-  const response = NextResponse.redirect(new URL('/pemira', process.env.NEXT_PUBLIC_SITE_URL));
+  try {
+    // Dapatkan URL dasar dari environment variable
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+    const redirectUrl = new URL('/pemira', baseUrl).toString();
 
-  response.cookies.set('vclass_auth', '', {
-    path: '/',
-    expires: new Date(0),
-  });
+    const response = NextResponse.redirect(redirectUrl);
 
-  response.cookies.set('MoodleSession', '', {
-    path: '/',
-    expires: new Date(0),
-  });
+    // Daftar cookie yang perlu dihapus
+    const cookiesToDelete = [
+      'vclass_auth',
+      'MoodleSession',
+      'user_jurusan',
+    ];
 
-  response.cookies.set('user_jurusan', '', {
-    path: '/',
-    expires: new Date(0),
-  });
+    cookiesToDelete.forEach(cookieName => {
+      response.cookies.set(cookieName, '', {
+        path: '/',
+        expires: new Date(0),
+        sameSite: 'lax',
+        secure: process.env.NODE_ENV === 'production',
+        domain: process.env.NODE_ENV === 'production' ? 'https://bemfikti-gunadarma.web.id/' : undefined,
+      });
+    });
 
-  return response;
+    response.headers.set('Cache-Control', 'no-store, max-age=0');
+
+    return response;
+  } catch (error) {
+    console.error('Logout error:', error);
+    return NextResponse.json(
+      { success: false, message: 'Gagal melakukan logout' },
+      { status: 500 }
+    );
+  }
 }

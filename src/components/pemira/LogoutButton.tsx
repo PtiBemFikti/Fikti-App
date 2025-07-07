@@ -14,9 +14,33 @@ export default function PemiraLogoutButton({
 }: PemiraLogoutButtonProps) {
   const router = useRouter();
   const [showModal, setShowModal] = useState(false);
+  const [isLoggingOut, setIsLoggingOut] = useState(false);
 
-  const handleLogout = () => {
-    window.location.href = "/api/logout";
+  const handleLogout = async () => {
+    setIsLoggingOut(true);
+    try {
+      // Tambahkan timestamp untuk menghindari cache
+      const logoutUrl = `/api/logout?t=${Date.now()}`;
+
+      // Lakukan fetch terlebih dahulu untuk memastikan cookie dihapus
+      const response = await fetch(logoutUrl, {
+        method: "GET",
+        credentials: "include",
+      });
+
+      if (response.redirected) {
+        // Force hard refresh untuk memastikan semua state ter-reset
+        window.location.href = response.url;
+      } else {
+        // Fallback jika redirect tidak bekerja
+        window.location.href = "/pemira";
+      }
+    } catch (error) {
+      console.error("Logout failed:", error);
+      setIsLoggingOut(false);
+      // Fallback ke hard refresh
+      window.location.href = "/api/logout";
+    }
   };
 
   const buttonClass =
@@ -26,16 +50,20 @@ export default function PemiraLogoutButton({
 
   return (
     <>
-      <button onClick={() => setShowModal(true)} className={buttonClass}>
+      <button
+        onClick={() => setShowModal(true)}
+        className={buttonClass}
+        disabled={isLoggingOut}
+      >
         <FiLogOut />
-        Logout
+        {isLoggingOut ? "Memproses..." : "Logout"}
       </button>
 
       <PemiraModal
         isOpen={showModal}
-        onClose={() => setShowModal(false)}
+        onClose={() => !isLoggingOut && setShowModal(false)}
         title="Konfirmasi Logout"
-        closeOnOverlayClick={true}
+        closeOnOverlayClick={!isLoggingOut}
       >
         <div className="mb-6">
           <p className="text-gray-700 mb-4">
@@ -51,15 +79,23 @@ export default function PemiraLogoutButton({
         <div className="flex gap-3">
           <button
             onClick={() => setShowModal(false)}
-            className="flex-1 py-2 px-4 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors flex items-center justify-center gap-2"
+            disabled={isLoggingOut}
+            className="flex-1 py-2 px-4 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
           >
             <FiX /> Batal
           </button>
           <button
             onClick={handleLogout}
-            className="flex-1 py-2 px-4 rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors flex items-center justify-center gap-2"
+            disabled={isLoggingOut}
+            className="flex-1 py-2 px-4 rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
           >
-            <FiLogOut /> Ya, Logout
+            {isLoggingOut ? (
+              "Memproses..."
+            ) : (
+              <>
+                <FiLogOut /> Ya, Logout
+              </>
+            )}
           </button>
         </div>
       </PemiraModal>
