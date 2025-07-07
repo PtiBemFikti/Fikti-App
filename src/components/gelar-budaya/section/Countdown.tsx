@@ -11,7 +11,7 @@ export default function GelbudCountdown() {
   });
 
   useEffect(() => {
-    const targetDate = new Date(2025, 5, 28, 19, 0, 0); // 28 Juni 2025, 19:00
+    const targetDate = new Date(2025, 6, 19, 15, 0, 0); // 19 Juli 2025, 19:00
 
     const calculateTimeLeft = () => {
       const now = new Date();
