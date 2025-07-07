@@ -11,25 +11,25 @@ export default function GelbudTicketSection() {
       title: "Single",
       benefits: "Pin Button + Stiker",
       note: "1 orang",
-      price: "Rp35.000",
+      price: "Rp25.000",
     },
     {
       title: "Duo",
       benefits: "Pin Button + Stiker (2 pax)",
       note: "2 orang",
-      price: "Rp65.000",
+      price: "Rp45.000",
     },
     {
       title: "Grup Kecil",
       benefits: "Pin Button + Stiker (4 pax)",
       note: "4 orang",
-      price: "Rp120.000",
+      price: "Rp90.000",
     },
     {
       title: "Grup Besar",
       benefits: "Pin Button + Stiker (6 pax)",
       note: "6 orang",
-      price: "Rp175.000",
+      price: "Rp130.000",
     },
   ];
 
