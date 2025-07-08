@@ -2,6 +2,8 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { FiX } from "react-icons/fi";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 interface PemiraModalProps {
   isOpen: boolean;
@@ -18,14 +20,23 @@ export default function PemiraModal({
   title,
   closeOnOverlayClick = true,
 }: PemiraModalProps) {
-  return (
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    return () => setMounted(false);
+  }, []);
+
+  if (!mounted) return null;
+
+  return createPortal(
     <AnimatePresence>
       {isOpen && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
+          className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50 "
           onClick={closeOnOverlayClick ? onClose : undefined}
         >
           <motion.div
@@ -52,6 +63,7 @@ export default function PemiraModal({
           </motion.div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 }
