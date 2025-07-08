@@ -5,36 +5,26 @@ import { getProfileFromCookie } from "@/lib/getUserProfile";
 
 export const dynamic = 'force-dynamic';
 
-export async function POST(req: Request) {
+export async function POST() {
   try {
-    const profile = await getProfileFromCookie(); // ⬅️ pakai helper baru
-    const { npm, jurusan: p_program_studi, kodeKelas: kelas } = profile;
-    const { id } = await req.json();
+    const profile = await getProfileFromCookie();
+    const { npm } = profile;
 
-    const { error } = await supabase.rpc("vote_candidate", {
-      p_candidate_id: id,
-      p_npm: npm,
-      p_program_studi,
-      p_kelas: kelas
-    });
+    const { error } = await supabase
+      .from("pemira_voters")
+      .update({ has_voted: true })
+      .eq("npm", npm);
 
     if (error) {
-      console.error("[RPC ERROR]", error.message);
-      return NextResponse.json(
-        { success: false, message: error.message },
-        { status: 400 }
-      );
+      console.error("[VOTE UPDATE ERROR]", error.message);
+      return NextResponse.json({ success: false, message: error.message }, { status: 400 });
     }
 
-    return NextResponse.json({
-      success: true,
-      message: "Vote berhasil dicatat"
-    });
+    return NextResponse.json({ success: true, message: "Status voting berhasil diperbarui" });
   } catch (err) {
     const error = err as Error;
-    console.error("[VOTE ERROR]", error.message);
     return NextResponse.json(
-      { success: false, message: error.message || "Terjadi kesalahan saat memproses vote" },
+      { success: false, message: error.message },
       { status: 500 }
     );
   }

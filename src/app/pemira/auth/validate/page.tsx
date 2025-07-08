@@ -75,15 +75,29 @@ export default function DashboardPage() {
     return () => clearInterval(intervalId);
   }, []);
 
-  const handleProceed = () => {
-    if (
-      userData &&
-      !userData.isInformationSystem &&
-      !userData.isComputerSystem
-    ) {
+  const handleProceed = async () => {
+    if (!userData) return;
+
+    if (!userData.isInformationSystem && !userData.isComputerSystem) {
       setShowBlockedModal(true);
-    } else {
-      setShowModal(true);
+      return;
+    }
+
+    try {
+      const res = await fetch("/api/vote/register", {
+        method: "POST",
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setShowModal(true);
+      } else {
+        alert("Gagal menyimpan data: " + data.message);
+      }
+    } catch (err) {
+      console.error("Register error:", err);
+      alert("Terjadi kesalahan saat menyimpan data");
     }
   };
 
