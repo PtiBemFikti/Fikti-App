@@ -249,7 +249,7 @@ export default function DashboardPage() {
             Kembali
           </button>
           <Link
-            href="/pemira/vote"
+            href="/pemira/profile"
             className="flex-1 py-2 px-4 rounded-lg bg-[#19554B] text-white hover:bg-[#134239] transition-colors text-center"
           >
             Oke, Lanjutkan
