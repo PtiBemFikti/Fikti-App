@@ -1,56 +1,50 @@
-import { supabase } from "./supabase";
+"use client";
 
-type AdminSession = {
-  isAuthenticated: boolean;
-  email: string;
-  username: string;
-  id: string;
-  lastLogin: string;
+export const isAdminAuthenticated = (): boolean => {
+  if (typeof window === "undefined") return false;
+
+  const sessionStr = localStorage.getItem("adminSession");
+  if (!sessionStr) return false;
+
+  try {
+    const session = JSON.parse(sessionStr);
+    return session.isAuthenticated === true;
+  } catch (e) {
+    return false;
+  }
 };
 
-export const getAdminSession = (): AdminSession | null => {
-  if (typeof window === 'undefined') return null;
-  
+export const verifyAdminSession = async (): Promise<boolean> => {
+  const sessionStr = localStorage.getItem("adminSession");
+  if (!sessionStr) return false;
+
   try {
-    const session = localStorage.getItem("adminSession");
-    return session ? JSON.parse(session) : null;
-  } catch (error) {
-    console.error("Error reading session:", error);
+    const session = JSON.parse(sessionStr);
+    return session.isAuthenticated === true;
+  } catch (e) {
+    return false;
+  }
+};
+
+export const getAdminSession = () => {
+  if (typeof window === "undefined") return null;
+
+  const sessionStr = localStorage.getItem("adminSession");
+  if (!sessionStr) return null;
+
+  try {
+    return JSON.parse(sessionStr);
+  } catch (e) {
     return null;
   }
 };
 
-export const isAdminAuthenticated = (): boolean => {
-  const session = getAdminSession();
-  return session?.isAuthenticated === true;
-};
+export const logoutAdmin = async () => {
+  if (typeof window !== "undefined") {
+    localStorage.removeItem("adminSession");
 
-export const logoutAdmin = (): void => {
-  localStorage.removeItem("adminSession");
-  window.location.href = "/pemira/admin/login";
-};
-
-export const verifyAdminSession = async (): Promise<boolean> => {
-  const session = getAdminSession();
-  if (!session) return false;
-
-  try {
-    // Verifikasi dengan memeriksa keberadaan admin di database
-    const { data: admin, error } = await supabase
-      .from("pemira_admin")
-      .select("id, email")
-      .eq("id", session.id)
-      .eq("email", session.email)
-      .single();
-
-    if (error || !admin) {
-      console.error("Verification error:", error);
-      return false;
-    }
-
-    return true;
-  } catch (error) {
-    console.error("Verification error:", error);
-    return false;
+    await fetch("/api/admin/logout", {
+      method: "POST",
+    });
   }
 };
