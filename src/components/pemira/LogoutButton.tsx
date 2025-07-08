@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { FiLogOut, FiX } from "react-icons/fi";
 import PemiraModal from "./PemiraModal";
@@ -12,7 +11,6 @@ interface PemiraLogoutButtonProps {
 export default function PemiraLogoutButton({
   variant = "dark",
 }: PemiraLogoutButtonProps) {
-  const router = useRouter();
   const [showModal, setShowModal] = useState(false);
   const [isLoggingOut, setIsLoggingOut] = useState(false);
 
@@ -28,18 +26,12 @@ export default function PemiraLogoutButton({
         credentials: "include",
       });
 
-      if (response.redirected) {
-        // Force hard refresh untuk memastikan semua state ter-reset
-        window.location.href = response.url;
-      } else {
-        // Fallback jika redirect tidak bekerja
-        window.location.href = "/pemira";
-      }
+      // Force hard redirect untuk memastikan semua state ter-reset
+      window.location.href = "/pemira/auth";
     } catch (error) {
       console.error("Logout failed:", error);
-      setIsLoggingOut(false);
-      // Fallback ke hard refresh
-      window.location.href = "/api/logout";
+      // Fallback ke hard redirect
+      window.location.href = "/pemira/auth";
     }
   };
 
