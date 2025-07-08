@@ -85,7 +85,7 @@ export default function VotePage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#F5F5F5] p-6 flex items-center justify-center">
+      <div className="min-h-screen p-6 flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -105,7 +105,7 @@ export default function VotePage() {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-[#F5F5F5] p-6 flex items-center justify-center">
+      <div className="min-h-screen p-6 flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -133,7 +133,7 @@ export default function VotePage() {
 
   if (hasVoted) {
     return (
-      <div className="min-h-screen bg-[#F5F5F5] p-6 flex items-center justify-center">
+      <div className="min-h-screen p-6 flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -155,7 +155,7 @@ export default function VotePage() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              href="/pemira/auth/validate"
+              href="/pemira/profile"
               className="px-6 py-3 rounded-lg bg-[#19554B] text-white hover:bg-[#134239] transition-colors"
             >
               Kembali ke Profile
@@ -168,28 +168,42 @@ export default function VotePage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F5F5] p-6">
+    <div className="p-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden"
       >
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="border-b-2 mb-5 mx-8"
+        >
+          <Image
+            src="/pemira/logo-pemira-adiraka.png"
+            alt="Logo Pemira"
+            width={180}
+            height={180}
+            className="mx-auto w-32  md:w-fit h-32 md:h-fit "
+            priority
+          />
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="text-xl text-black  text-center border-black mx-auto md:text-3xl font-bold mb-4"
+          >
+            Pemira <br />
+            BEM FIKTI UG
+          </motion.h1>
+        </motion.div>
         {/* Header */}
-        <div className="bg-[#19554B] p-6 text-white">
-          <div className="flex justify-between items-center">
-            <div>
-              <h1 className="text-2xl font-bold">Pemilihan Kandidat</h1>
-              <p className="opacity-90">
-                Pilih salah satu kandidat di bawah ini
-              </p>
-            </div>
-            <Link
-              href="/pemira"
-              className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors flex items-center gap-2"
-            >
-              <FiArrowLeft />
-              Kembali
-            </Link>
+        <div className=" px-6 text-black">
+          <div className="flex flex-col text-center">
+            <h1 className="text-xl md:text-2xl font-bold">
+              Pemilihan Kandidat
+            </h1>
+            <p className="opacity-90">Pilih salah satu kandidat di bawah ini</p>
           </div>
         </div>
 
