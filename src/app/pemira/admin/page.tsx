@@ -6,33 +6,20 @@ import { isAdminAuthenticated } from "@/lib/admin-auth";
 
 export default function AdminPage() {
   const router = useRouter();
-  const [isChecking, setIsChecking] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const checkAuth = async () => {
-      const authStatus = isAdminAuthenticated();
+    const run = async () => {
+      const isLoggedIn = isAdminAuthenticated();
+      await new Promise((r) => setTimeout(r, 100));
 
-      // Tambahkan delay kecil untuk menghindari flash putih
-      await new Promise((resolve) => setTimeout(resolve, 100));
-
-      if (authStatus) {
-        router.push("/pemira/admin/dashboard");
-      } else {
-        router.push("/pemira/admin/login");
-      }
-      setIsChecking(false);
+      router.push(
+        isLoggedIn ? "/pemira/admin/dashboard" : "/pemira/admin/login"
+      );
+      setLoading(false);
     };
-
-    checkAuth();
+    run();
   }, [router]);
 
-  if (isChecking) {
-    return (
-      <div>
-        <p>loading..</p>
-      </div>
-    );
-  }
-
-  return null;
+  return loading ? <div>Loading...</div> : null;
 }

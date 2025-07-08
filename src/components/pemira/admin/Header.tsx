@@ -1,10 +1,16 @@
-// components/admin/Header.tsx
 "use client";
 
 import { getAdminSession, logoutAdmin } from "@/lib/admin-auth";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const session = getAdminSession();
+  const router = useRouter();
+
+  const handleLogout = async () => {
+    await logoutAdmin();
+    router.push("/pemira/admin/login");
+  };
 
   return (
     <header className="bg-white shadow">
@@ -15,7 +21,7 @@ export default function Header() {
             Logged in as: {session?.username}
           </span>
           <button
-            onClick={logoutAdmin}
+            onClick={handleLogout}
             className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700"
           >
             Logout

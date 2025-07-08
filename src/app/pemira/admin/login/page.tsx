@@ -17,12 +17,9 @@ export default function AdminLoginPage() {
     setError("");
 
     try {
-      // Validasi input
-      if (!email || !password) {
+      if (!email || !password)
         throw new Error("Email dan password harus diisi");
-      }
 
-      // Cek kredensial admin langsung dari tabel
       const { data: admin, error: dbError } = await supabase
         .from("pemira_admin")
         .select("*")
@@ -30,11 +27,9 @@ export default function AdminLoginPage() {
         .eq("password", password)
         .single();
 
-      if (dbError || !admin) {
-        throw new Error("Email atau password salah");
-      }
+      if (dbError || !admin) throw new Error("Email atau password salah");
 
-      // Simpan session ke localStorage (tanpa menyimpan password)
+      // Simpan session ke localStorage
       const sessionData = {
         isAuthenticated: true,
         email: admin.email,
@@ -42,10 +37,15 @@ export default function AdminLoginPage() {
         id: admin.id,
         lastLogin: new Date().toISOString(),
       };
-
       localStorage.setItem("adminSession", JSON.stringify(sessionData));
 
-      // Redirect ke dashboard
+      // Simpan session juga ke cookie pakai API
+      await fetch("/api/admin/set-cookie", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({}),
+      });
+
       router.push("/pemira/admin/dashboard");
     } catch (err) {
       setError(
