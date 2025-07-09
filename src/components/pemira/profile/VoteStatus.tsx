@@ -100,11 +100,11 @@ export default function VoteStatus({
           </p>
           <div className="flex justify-center">
             <Link
-              href="/pemira"
+              href="/pemira/profile"
               className="px-6 py-3 rounded-lg bg-[#19554B] text-white hover:bg-[#134239] transition-colors flex items-center gap-2"
             >
               <FiArrowLeft />
-              Kembali ke Home
+              Kembali ke Profile
             </Link>
           </div>
         </motion.div>

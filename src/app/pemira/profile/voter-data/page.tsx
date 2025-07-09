@@ -161,7 +161,7 @@ export default function VotersProfilePage() {
         className="w-full max-w-sm mt-8"
       >
         <Link
-          href="/pemira/vote"
+          href="/pemira/profile/vote"
           className="flex items-center justify-between bg-[#19554B] text-white font-bold py-4 px-6 rounded-lg shadow-lg hover:bg-[#12433b] transition-colors"
         >
           <span className="flex items-center gap-2">
