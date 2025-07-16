@@ -131,7 +131,8 @@ export default function GreetingPage() {
           transition={{ delay: 0.5 }}
           className="text-xl mb-8 max-w-md"
         >
-          Selamat datang di Pemilihan Umum Raya Adiraka 2023
+          Selamat datang di Pemilihan Raya BEM FIKTI Universitas Gunadarma
+          2025/2026
         </motion.p>
 
         <motion.div
