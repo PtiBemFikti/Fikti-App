@@ -90,7 +90,7 @@ export default function VotePage() {
   };
 
   const getVotingPeriodStatus = () => {
-    const votingStartDate = new Date("2025-08-25T00:00:00"); //25 agustus
+    const votingStartDate = new Date("2024-08-25T00:00:00"); //25 agustus
     const currentDate = new Date();
 
     if (currentDate < votingStartDate) {
