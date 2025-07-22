@@ -61,24 +61,14 @@ export async function GET() {
         }
       });
 
-    // Deteksi jurusan
-    // const hasKA = classCodes.some(code => code.startsWith('KA'));
-    // const hasKB = classCodes.some(code => code.startsWith('KB'));
-    // let jurusan = '';
-    // const classCodes = courses.map(c => c.code);
-    // const hasKA = classCodes.some(code => code.startsWith('KA'));
-    // const hasKB = classCodes.some(code => code.startsWith('KB'));
-    
     let jurusan = '';
-    const classCodes = npm
-    const hasKA = classCodes.startsWith('101') || classCodes.startsWith('111');
-    const hasKB = classCodes.startsWith('201') || classCodes.startsWith('211');
+    const hasKA = npm.startsWith('101') || npm.startsWith('111');
+    const hasKB = npm.startsWith('201') || npm.startsWith('211');
     if (hasKA && hasKB) jurusan = 'Sistem Informasi & Sistem Komputer';
     else if (hasKA) jurusan = 'Sistem Informasi';
     else if (hasKB) jurusan = 'Sistem Komputer';
     else jurusan = 'Tidak Termasuk FIKTI';
 
-    // Fallback via dashboard jika jurusan belum kebaca (optional)
     if (!jurusan) {
       const dashboardRes = await axios.get('https://v-class.gunadarma.ac.id/my/', {
         headers: {
@@ -95,14 +85,33 @@ export async function GET() {
                 'Tidak diketahui';
     }
 
-    // Ambil salah satu kelas (jika ada)
-    const selectedCode = courses[2]?.code || '';
+    let kodeKelas = '';
+    if (courses.length > 0) {
+      for (const course of courses) {
+        if (course.code && (course.code.startsWith('KA') || course.code.startsWith('KB'))) {
+          kodeKelas = course.code;
+          break;
+        }
+      }
+    }
+
+    // Fallback: Jika tidak ada kode kelas dari course, buat dari NPM (tambahan baru)
+    if (!kodeKelas) {
+      const angkatan = npm.substring(2, 4); // Ambil digit ke-3 dan 4 dari NPM
+      if (hasKA) {
+        kodeKelas = `KA${angkatan}`;
+      } else if (hasKB) {
+        kodeKelas = `KB${angkatan}`;
+      } else {
+        kodeKelas = 'Tidak Diketahui';
+      }
+    }
 
     if (!name || !npm || !jurusan) {
       return NextResponse.json({
         success: false,
         message: 'Data tidak lengkap atau struktur HTML berubah',
-        debug: { name, npm, selectedCode, jurusan }
+        debug: { name, npm, kodeKelas, jurusan }
       }, { status: 404 });
     }
 
@@ -111,7 +120,7 @@ export async function GET() {
       data: {
         name,
         npm,
-        kodeKelas: selectedCode || 'Tidak tersedia',
+        kodeKelas: kodeKelas || 'Tidak tersedia',
         jurusan,
         isInformationSystem: jurusan.includes('Sistem Informasi'),
         isComputerSystem: jurusan.includes('Sistem Komputer')

@@ -181,7 +181,10 @@ export default function DashboardPage() {
                 { label: "Nama", value: userData?.name },
                 { label: "NPM", value: userData?.npm },
                 { label: "Program Studi", value: userData?.jurusan },
-                { label: "Kelas", value: userData?.kodeKelas },
+                {
+                  label: "Kode Kelas atau Kode Jurusan",
+                  value: userData?.kodeKelas,
+                },
               ].map((item, index) => (
                 <motion.div
                   key={index}
