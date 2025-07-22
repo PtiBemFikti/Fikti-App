@@ -6,8 +6,7 @@ export const dynamic = 'force-dynamic';
 
 export async function POST(request: Request) {
   try {
-    // 1. Dapatkan data dari request body
-    const { id: candidate_id } = await request.json(); // Perhatikan perubahan di sini
+    const { id: candidate_id } = await request.json(); 
     const profile = await getProfileFromCookie();
     const { npm, jurusan, kodeKelas } = profile;
 
@@ -18,7 +17,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // 2. Panggil fungsi vote_candidate di Supabase
     const { data, error } = await supabase.rpc('vote_candidate', {
       p_candidate_id: candidate_id,
       p_npm: npm,
@@ -34,7 +32,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // 3. Return hasil dari fungsi vote_candidate
     return NextResponse.json(data);
     
   } catch (err) {
