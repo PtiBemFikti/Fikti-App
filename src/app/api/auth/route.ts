@@ -54,7 +54,7 @@ export async function POST(req: Request): Promise<NextResponse<LoginResponse>> {
     const moodleSessionCookie = setCookies.find(c => c.includes('MoodleSession'));
     if (!moodleSessionCookie) {
       return NextResponse.json(
-        { success: false, message: 'MoodleSession tidak ditemukan' },
+        { success: false, message: 'Username atau password salah' },
         { status: 401 }
       );
     }
