@@ -97,11 +97,10 @@ export async function GET() {
 
     // Fallback: Jika tidak ada kode kelas dari course, buat dari NPM (tambahan baru)
     if (!kodeKelas) {
-      const angkatan = npm.substring(2, 4); // Ambil digit ke-3 dan 4 dari NPM
       if (hasKA) {
-        kodeKelas = `KA${angkatan}`;
+        kodeKelas = "KA";
       } else if (hasKB) {
-        kodeKelas = `KB${angkatan}`;
+        kodeKelas = "KB";
       } else {
         kodeKelas = 'Tidak Diketahui';
       }
