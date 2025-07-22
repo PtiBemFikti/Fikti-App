@@ -62,11 +62,17 @@ export async function GET() {
       });
 
     // Deteksi jurusan
+    // const hasKA = classCodes.some(code => code.startsWith('KA'));
+    // const hasKB = classCodes.some(code => code.startsWith('KB'));
+    // let jurusan = '';
+    // const classCodes = courses.map(c => c.code);
+    // const hasKA = classCodes.some(code => code.startsWith('KA'));
+    // const hasKB = classCodes.some(code => code.startsWith('KB'));
+    
     let jurusan = '';
-    const classCodes = courses.map(c => c.code);
-    const hasKA = classCodes.some(code => code.startsWith('KA'));
-    const hasKB = classCodes.some(code => code.startsWith('KB'));
-
+    const classCodes = npm
+    const hasKA = classCodes.startsWith('101') || classCodes.startsWith('111');
+    const hasKB = classCodes.startsWith('201') || classCodes.startsWith('211');
     if (hasKA && hasKB) jurusan = 'Sistem Informasi & Sistem Komputer';
     else if (hasKA) jurusan = 'Sistem Informasi';
     else if (hasKB) jurusan = 'Sistem Komputer';
