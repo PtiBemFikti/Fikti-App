@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "PEMIRA UG 2025",
-  description: "PEMIRA BEM FIKTI UG 2025/2026",
+  description: "PEMIRA BEM FIKTI UG 2025",
   icons: {
     icon: "/pemira/logo-pemira-adiraka.png",
   },
