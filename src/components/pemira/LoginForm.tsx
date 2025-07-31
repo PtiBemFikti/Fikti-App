@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { FiEye, FiEyeOff, FiUser, FiLock } from "react-icons/fi";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function PemiraLoginForm() {
   const [email, setEmail] = useState("");
@@ -139,54 +139,64 @@ export default function PemiraLoginForm() {
           </div>
         </motion.div>
       </div>
-
-      <motion.button
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        className={`w-full bg-[#19554B] text-white py-3 px-4 rounded-lg hover:bg-[#134239] transition flex items-center justify-center ${
-          status === "loading" ? "opacity-80 cursor-not-allowed" : ""
-        }`}
-        type="submit"
-        disabled={status === "loading"}
-      >
-        {status === "loading" ? (
-          <>
-            <svg
-              className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              ></circle>
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-              ></path>
-            </svg>
-            Memproses...
-          </>
-        ) : (
-          "Login"
-        )}
-      </motion.button>
-
-      {status === "success" && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="p-3 bg-green-300 text-green-700 rounded-lg border border-green-200"
+      <div className="flex flex-col-reverse md:flex-row gap-4">
+        <Link href="/pemira" className="w-full">
+          <motion.button
+            type="button"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="w-full  bg-white text-[#19554B] py-3 px-6 rounded-lg border border-[#19554B] hover:bg-gray-50 transition flex items-center justify-center"
+          >
+            Kembali
+          </motion.button>
+        </Link>
+        <motion.button
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className={`w-full bg-[#19554B] text-white py-3 px-4 rounded-lg hover:bg-[#134239] transition flex items-center justify-center ${
+            status === "loading" ? "opacity-80 cursor-not-allowed" : ""
+          }`}
+          type="submit"
+          disabled={status === "loading"}
         >
-          Login berhasil! Mengalihkan...
-        </motion.div>
-      )}
+          {status === "loading" ? (
+            <>
+              <svg
+                className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+              Memproses...
+            </>
+          ) : (
+            "Login"
+          )}
+        </motion.button>
+        {status === "success" && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="p-3 bg-green-300 text-green-700 rounded-lg border border-green-200"
+          >
+            Login berhasil! Mengalihkan...
+          </motion.div>
+        )}
+      </div>
 
       <motion.div
         initial={{ opacity: 0 }}
