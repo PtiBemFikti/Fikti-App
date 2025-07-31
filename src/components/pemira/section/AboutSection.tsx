@@ -45,16 +45,10 @@ export default function PemiraAboutSection() {
 
             <div className="space-y-6 text-lg md:text-xl text-[#19554B]">
               <p>
-                <span className="font-semibold">PEMIRA</span> atau Pemilihan
-                Raya adalah ajang demokrasi kampus yang menjadi wadah bagi
-                mahasiswa untuk memilih perwakilan mereka di organisasi
-                kemahasiswaan.
-              </p>
-
-              <p>
-                Melalui <span className="font-semibold">PEMIRA</span>, mahasiswa
-                dapat menyalurkan aspirasi serta turut menentukan arah kebijakan
-                kampus.
+                <span className="font-semibold">Pemira FIKTI UG </span>
+                adalah proses pemilihan Ketua Umum dan Wakil Ketua Umum BEM
+                FIKTI Universitas Gunadarma yang diselenggarakan setiap tahun
+                sebagai bentuk demokrasi mahasiswa di lingkungan FIKTI.
               </p>
 
               <p className="text-2xl md:text-3xl font-bold mt-8 bg-clip-text text-transparent bg-[#19554b]">
