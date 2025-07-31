@@ -77,20 +77,22 @@ export default function PemiraFooter() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="#"
+                  target="_blank"
+                  href="https://wa.me/081215092180"
                   className="hover:text-white transition-colors flex items-center gap-2 text-base md:text-lg"
                 >
                   <FaWhatsapp className="text-xl" />
-                  CP1
+                  Talitha - 081215092180
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  target="_blank"
+                  href="https://wa.me/081385912298"
                   className="hover:text-white transition-colors flex items-center gap-2 text-base md:text-lg"
                 >
                   <FaWhatsapp className="text-xl" />
-                  CP2
+                  Luqman - 081385912298
                 </Link>
               </li>
             </ul>
