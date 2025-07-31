@@ -8,7 +8,7 @@ export default function PemiraAboutSection() {
   return (
     <section
       id="tentang"
-      className="relative w-full h-screen min-h-[800px] flex items-center justify-center overflow-hidden bg-[#DADED1]"
+      className="relative w-full h-fit pb-36 lg:pb-0 lg:h-screen py-10 min-h-[800px] flex items-center justify-center overflow-hidden bg-[#DADED1]"
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-10">
