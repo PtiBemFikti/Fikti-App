@@ -99,7 +99,7 @@ export default function PengurusIntiSection() {
         />
         <Card
           foto="/adiraka/BPH/aryo.webp"
-          nama="Aryo Dwi Prasetyo"
+          nama="Arya Dwi Prasetyo"
           jabatan="Wakil Ketua BEM FIKTI"
         />
       </motion.div>
