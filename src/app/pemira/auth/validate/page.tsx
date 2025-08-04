@@ -5,7 +5,6 @@ import Link from "next/link";
 import PemiraLogoutButton from "@/components/pemira/LogoutButton";
 import { motion } from "framer-motion";
 import { FiCheckCircle, FiAlertCircle, FiX, FiInfo } from "react-icons/fi";
-import Image from "next/image";
 import PemiraModal from "@/components/pemira/PemiraModal";
 
 interface UserData {
@@ -24,11 +23,11 @@ export default function DashboardPage() {
   const [showModal, setShowModal] = useState(false);
   const [showBlockedModal, setShowBlockedModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Fetch profile data
         const profileRes = await fetch("/api/auth/profile", {
           credentials: "include",
         });
@@ -52,6 +51,7 @@ export default function DashboardPage() {
             isInformationSystem,
             isComputerSystem,
           } = profileJson.data;
+
           setUserData({
             name: name || "tidak tersedia",
             npm: npm || "Tidak tersedia",
@@ -60,6 +60,7 @@ export default function DashboardPage() {
             isInformationSystem,
             isComputerSystem,
           });
+          setSubmitError("");
         } else {
           setError("Gagal memuat data profil");
         }
@@ -80,8 +81,17 @@ export default function DashboardPage() {
     if (!userData || isSubmitting) return;
 
     setIsSubmitting(true);
+    setSubmitError("");
 
     try {
+      // Validasi tambahan untuk kode kelas
+      if (
+        userData.kodeKelas === "Tidak Diketahui" ||
+        userData.kodeKelas === "Tidak tersedia"
+      ) {
+        throw new Error("Kode kelas tidak valid, silakan hubungi panitia");
+      }
+
       if (!userData.isInformationSystem && !userData.isComputerSystem) {
         setShowBlockedModal(true);
         return;
@@ -93,16 +103,24 @@ export default function DashboardPage() {
 
       const data = await res.json();
 
-      if (res.ok && data.success) {
+      if (!res.ok) {
+        throw new Error(data.message || "Gagal menyimpan data");
+      }
+
+      if (data.success) {
         setShowModal(true);
+      } else if (data.message === "Sudah terdaftar") {
+        // Jika sudah terdaftar, sung arahin ke profile
+        window.location.href = "/pemira/profile";
       } else {
-        alert("Gagal menyimpan data: " + data.message);
+        throw new Error(data.message || "Gagal menyimpan data");
       }
     } catch (err) {
-      console.error("Register error:", err);
-      alert("Terjadi kesalahan saat menyimpan data");
+      const error = err as Error;
+      console.error("Register error:", error);
+      setSubmitError(error.message);
     } finally {
-      setIsSubmitting(false); // Reset loading state
+      setIsSubmitting(false);
     }
   };
 
@@ -168,8 +186,19 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Content */}
         <div className="p-6 space-y-6">
+          {/* ini pesan error */}
+          {submitError && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="flex items-center gap-3 p-4 rounded-lg bg-red-50 text-red-700"
+            >
+              <FiAlertCircle className="text-xl" />
+              <div>{submitError}</div>
+            </motion.div>
+          )}
+
           {/* Data Card */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -232,7 +261,7 @@ export default function DashboardPage() {
           >
             <button
               onClick={handleProceed}
-              disabled={isSubmitting || !userData} // Tambahkan disabled state
+              disabled={isSubmitting || !userData}
               className={`w-full py-3 px-6 rounded-lg ${
                 isSubmitting ? "bg-[#19554B]/70" : "bg-[#19554B]"
               } text-white hover:bg-[#134239] transition-colors font-medium flex items-center justify-center gap-2`}
