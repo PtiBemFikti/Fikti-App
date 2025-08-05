@@ -43,7 +43,7 @@ export default function PemiraHeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-white overflow-hidden bg-[#071D2B]">
       {/* Background Layer */}
-      <div className="absolute inset-0 bg-[url('/pemira/hero-section.png')] bg-cover bg-center "></div>
+      <div className="absolute inset-0 bg-[url(/pemira/pemira-mobile-hero-bg.jpeg)] lg:bg-[url('/pemira/hero-section.png')] bg-cover bg-center "></div>
       <PemiraSlidingText theme="light" />
     </section>
   );
