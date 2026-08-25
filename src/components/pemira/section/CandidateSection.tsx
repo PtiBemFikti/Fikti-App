@@ -21,7 +21,7 @@ export default function CandidateSection() {
 
     const fetchCandidates = async () => {
       try {
-        const response = await fetch("/api/candidates");
+        const response = await fetch("/api/candidates", { cache: "no-store" });
         const result = await response.json();
 
         if (!response.ok) {

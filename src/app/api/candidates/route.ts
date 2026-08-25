@@ -95,5 +95,8 @@ export async function GET() {
         .map(toCandidatePair),
     }));
 
-  return NextResponse.json({ elections: response });
+  return NextResponse.json(
+    { elections: response },
+    { headers: { "Cache-Control": "no-store, max-age=0" } }
+  );
 }
