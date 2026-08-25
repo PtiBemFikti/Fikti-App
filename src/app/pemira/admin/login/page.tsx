@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { supabase } from "@/lib/supabase";
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState("");
@@ -20,31 +19,19 @@ export default function AdminLoginPage() {
       if (!email || !password)
         throw new Error("Email dan password harus diisi");
 
-      const { data: admin, error: dbError } = await supabase
-        .from("pemira_admin")
-        .select("*")
-        .eq("email", email)
-        .eq("password", password)
-        .single();
-
-      if (dbError || !admin) throw new Error("Email atau password salah");
-
-      // Simpan session ke localStorage
-      const sessionData = {
-        isAuthenticated: true,
-        email: admin.email,
-        username: admin.username,
-        id: admin.id,
-        lastLogin: new Date().toISOString(),
-      };
-      localStorage.setItem("adminSession", JSON.stringify(sessionData));
-
-      // Simpan session juga ke cookie pakai API
-      await fetch("/api/admin/set-cookie", {
+      const response = await fetch("/api/admin/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({}),
+        body: JSON.stringify({ email, password }),
       });
+
+      const result = (await response.json()) as {
+        success: boolean;
+        message?: string;
+      };
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || "Email atau password salah");
+      }
 
       router.push("/pemira/admin/dashboard");
     } catch (err) {

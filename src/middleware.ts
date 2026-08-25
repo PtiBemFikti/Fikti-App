@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { verifyAdminSessionToken } from '@/lib/admin-session-core';
 
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
@@ -15,8 +16,10 @@ export async function middleware(request: NextRequest) {
     jurusan?.includes('Sistem Informasi') || jurusan?.includes('Sistem Komputer');
 
   // ADMIN cookies
-  const adminAuth = request.cookies.get('admin_auth')?.value;
-  const isAdminAuthenticated = adminAuth === 'true';
+  const adminSession = request.cookies.get('pemira_admin_session')?.value;
+  const isAdminAuthenticated = Boolean(
+    await verifyAdminSessionToken(adminSession)
+  );
 
   // ROUTES
   const userProtectedRoutes = [
@@ -26,7 +29,7 @@ export async function middleware(request: NextRequest) {
     '/pemira/vote',
   ];
 
-  const adminProtectedRoutes = ['/pemira/admin/dashboard'];
+  const adminProtectedRoutes = ['/pemira/admin/dashboard', '/pemira/admin/candidates'];
 
   const authRoutes = ['/pemira', '/pemira/auth']; // user login
   const adminLoginRoute = '/pemira/admin/login';

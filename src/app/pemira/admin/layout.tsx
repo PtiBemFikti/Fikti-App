@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
-import { isAdminAuthenticated, verifyAdminSession } from "@/lib/admin-auth";
+import { verifyAdminSession } from "@/lib/admin-auth";
 
 export default function AdminLayout({
   children,
@@ -24,11 +24,6 @@ export default function AdminLayout({
         if (pathname === "/pemira/admin/login") {
           setAuthStatus("authenticated");
           return;
-        }
-
-        const sessionExists = isAdminAuthenticated();
-        if (!sessionExists) {
-          throw new Error("No session found");
         }
 
         const isValid = await verifyAdminSession();

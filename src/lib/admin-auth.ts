@@ -1,50 +1,30 @@
 "use client";
 
-export const isAdminAuthenticated = (): boolean => {
-  if (typeof window === "undefined") return false;
-
-  const sessionStr = localStorage.getItem("adminSession");
-  if (!sessionStr) return false;
-
-  try {
-    const session = JSON.parse(sessionStr);
-    return session.isAuthenticated === true;
-  } catch (e) {
-    return false;
-  }
+export type AdminSessionInfo = {
+  id: string;
+  email: string;
+  username: string;
 };
 
-export const verifyAdminSession = async (): Promise<boolean> => {
-  const sessionStr = localStorage.getItem("adminSession");
-  if (!sessionStr) return false;
-
+export const getAdminSession = async (): Promise<AdminSessionInfo | null> => {
   try {
-    const session = JSON.parse(sessionStr);
-    return session.isAuthenticated === true;
-  } catch (e) {
-    return false;
-  }
-};
+    const response = await fetch("/api/admin/session", { cache: "no-store" });
+    if (!response.ok) return null;
 
-export const getAdminSession = () => {
-  if (typeof window === "undefined") return null;
-
-  const sessionStr = localStorage.getItem("adminSession");
-  if (!sessionStr) return null;
-
-  try {
-    return JSON.parse(sessionStr);
-  } catch (e) {
+    const result = (await response.json()) as {
+      success: boolean;
+      data?: AdminSessionInfo;
+    };
+    return result.success && result.data ? result.data : null;
+  } catch {
     return null;
   }
 };
 
-export const logoutAdmin = async () => {
-  if (typeof window !== "undefined") {
-    localStorage.removeItem("adminSession");
+export const verifyAdminSession = async (): Promise<boolean> => {
+  return Boolean(await getAdminSession());
+};
 
-    await fetch("/api/admin/logout", {
-      method: "POST",
-    });
-  }
+export const logoutAdmin = async () => {
+  await fetch("/api/admin/logout", { method: "POST" });
 };

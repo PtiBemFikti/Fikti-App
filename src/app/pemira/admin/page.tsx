@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { isAdminAuthenticated } from "@/lib/admin-auth";
+import { verifyAdminSession } from "@/lib/admin-auth";
 
 export default function AdminPage() {
   const router = useRouter();
@@ -10,7 +10,7 @@ export default function AdminPage() {
 
   useEffect(() => {
     const run = async () => {
-      const isLoggedIn = isAdminAuthenticated();
+      const isLoggedIn = await verifyAdminSession();
       await new Promise((r) => setTimeout(r, 100));
 
       router.push(
