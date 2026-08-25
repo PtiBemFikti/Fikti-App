@@ -26,7 +26,7 @@ export default function VotePage() {
 
         const [checkRes, candidatesRes] = await Promise.all([
           fetch("/api/vote/check"),
-          fetch("/api/candidates"),
+          fetch("/api/candidates", { cache: "no-store" }),
         ]);
         const checkData = await checkRes.json();
         const candidatesData = await candidatesRes.json();

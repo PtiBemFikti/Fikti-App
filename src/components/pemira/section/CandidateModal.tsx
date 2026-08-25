@@ -115,7 +115,8 @@ function PersonDetail({
             src={person.image || fallbackImage}
             alt={person.name || `Foto ${role}`}
             fill
-            className="object-cover"
+            className="object-cover object-center"
+            sizes="96px"
           />
         </div>
         <div>

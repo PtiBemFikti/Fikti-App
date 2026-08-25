@@ -68,7 +68,13 @@ export default function CandidateList({ election, status, handleVote }: Candidat
                 {[candidate.chairman, candidate.viceChairman].map((person) => (
                   <div key={person.npm} className="relative h-32 w-32 rounded-full overflow-hidden border-4 border-white/80">
                     {person.image ? (
-                      <Image src={person.image} alt={person.name} fill className="object-cover" />
+                      <Image
+                        src={person.image}
+                        alt={person.name}
+                        fill
+                        className="object-cover object-center"
+                        sizes="128px"
+                      />
                     ) : (
                       <div className="h-full w-full bg-[#DEDAD1]" />
                     )}

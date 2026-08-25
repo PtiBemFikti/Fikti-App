@@ -38,7 +38,13 @@ export default function VoteConfirmationModal({
               {[candidate.chairman, candidate.viceChairman].map((person) => (
                 <div key={person.npm} className="relative h-24 w-24 rounded-full overflow-hidden border-4 border-[#19554B]">
                   {person.image ? (
-                    <Image src={person.image} alt={person.name} fill className="object-cover" />
+                    <Image
+                      src={person.image}
+                      alt={person.name}
+                      fill
+                      className="object-cover object-center"
+                      sizes="96px"
+                    />
                   ) : (
                     <div className="h-full w-full bg-[#DEDAD1]" />
                   )}

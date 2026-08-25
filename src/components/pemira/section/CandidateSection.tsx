@@ -218,7 +218,8 @@ function CandidateImage({ person }: { person: CandidatePair["chairman"] }) {
         src={person.image || fallbackImage}
         alt={person.name || "Foto kandidat"}
         fill
-        className="object-cover"
+        className="object-cover object-center"
+        sizes="(max-width: 768px) 50vw, 25vw"
       />
       <div className="absolute inset-x-0 bottom-0 bg-black/45 px-3 py-2 text-center">
         <p className="text-xs font-medium text-white truncate">{person.name}</p>
