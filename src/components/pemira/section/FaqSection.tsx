@@ -49,9 +49,9 @@ export default function PemiraFaqSection() {
 const faqs: FaqItem[] = [
   {
     id: 1,
-    question: "Apa itu Pemira BEM?",
+    question: "Apa itu PEMIRA?",
     answer:
-      "Pemira BEM (Pemilihan Raya Badan Eksekutif Mahasiswa) adalah proses demokratis untuk memilih Ketua dan Wakil Ketua BEM di lingkungan kampus.",
+      "PEMIRA adalah Pemilihan Raya mahasiswa untuk memilih pasangan calon organisasi kemahasiswaan sesuai hak pilih mahasiswa, seperti BEM FIKTI dan HIMSI.",
   },
   {
     id: 2,
@@ -67,9 +67,9 @@ const faqs: FaqItem[] = [
   },
   {
     id: 4,
-    question: "Dimana saya bisa melihat profil calon Ketua BEM?",
+    question: "Di mana saya bisa melihat profil paslon PEMIRA?",
     answer:
-      "Profil lengkap masing-masing calon, termasuk visi, misi, dan program kerja, tersedia di menu “Profil Kandidat” pada website ini.",
+      'Profil paslon PEMIRA dapat dilihat pada bagian Kandidat di halaman PEMIRA. Pengguna dapat melihat profil, visi, misi, target, serta program kerja pasangan calon melalui tombol "Lihat Selengkapnya".',
   },
   {
     id: 5,
