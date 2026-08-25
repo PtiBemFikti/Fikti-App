@@ -18,7 +18,7 @@ export default function PemiraFooter() {
             className="space-y-4"
           >
             <h3 className="text-2xl md:text-3xl font-bold">
-              PEMIRA FIKTI UG 2025
+              PEMIRA FIKTI UG
             </h3>
             <p className="italic text-base md:text-lg">
               Suarakan Aspirasi, Perkuat Demokrasi, Majukan FIKTI
@@ -107,7 +107,7 @@ export default function PemiraFooter() {
           viewport={{ once: true }}
           className="mt-8 md:mt-12 pt-6 border-t border-[#DEDAD1]/20 text-center text-sm md:text-base"
         >
-          <p>Copyright © 2025 - By Biro PTI</p>
+          <p>Copyright © 2026 - By Biro PTI</p>
         </motion.div>
       </div>
     </footer>

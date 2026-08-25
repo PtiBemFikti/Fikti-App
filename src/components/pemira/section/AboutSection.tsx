@@ -39,7 +39,7 @@ export default function PemiraAboutSection() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#19554B] mb-8 leading-tight">
               <span className="block mb-3">Apa Itu</span>
               <span className="text-transparent bg-clip-text bg-[#19554b]">
-                PEMIRA 2025?
+                PEMIRA?
               </span>
             </h2>
 
@@ -64,9 +64,9 @@ export default function PemiraAboutSection() {
             className="flex-1 flex justify-center"
           >
             <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px]">
-              <Image
-                src="/pemira/logo-pemira-adiraka.png"
-                alt="Logo PEMIRA 2025"
+                <Image
+                  src="/pemira/logo-pemira-adiraka.png"
+                  alt="Logo PEMIRA"
                 fill
                 className="object-contain drop-shadow-[0_10px_30px_rgba(222,218,209,0.3)] rounded-full"
                 priority

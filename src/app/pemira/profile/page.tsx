@@ -132,7 +132,7 @@ export default function GreetingPage() {
           className="text-xl mb-8 max-w-md"
         >
           Selamat datang di Pemilihan Raya BEM FIKTI Universitas Gunadarma
-          2025/2026
+          periode PEMIRA saat ini
         </motion.p>
 
         <motion.div

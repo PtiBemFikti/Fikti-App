@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FiCalendar, FiClock, FiWatch } from "react-icons/fi";
 import { FaHourglass } from "react-icons/fa";
+import { PEMIRA_START_AT } from "@/lib/pemira-config";
 
 type TimeLeft = {
   days: number;
@@ -12,7 +13,7 @@ type TimeLeft = {
   seconds: number;
 };
 
-type ElectionStatus = "coming" | "ongoing" | "ended";
+type ElectionStatus = "coming" | "ongoing";
 
 type CountdownBoxProps = {
   value: number;
@@ -32,15 +33,11 @@ export default function PemiraCountdownSection() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const electionStart = new Date("August 25, 2025 00:00:00").getTime();
-      const electionEnd = new Date("August 26, 2025 23:59:59").getTime();
+      const electionStart = new Date(PEMIRA_START_AT).getTime();
       const now = new Date().getTime();
 
-      if (now >= electionStart && now <= electionEnd) {
+      if (now >= electionStart) {
         setElectionStatus("ongoing");
-        return;
-      } else if (now > electionEnd) {
-        setElectionStatus("ended");
         return;
       }
 
@@ -73,16 +70,13 @@ export default function PemiraCountdownSection() {
           className="mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6 uppercase tracking-wider">
-            {electionStatus === "coming" && "PEMIRA 2025 Coming Soon"}
-            {electionStatus === "ongoing" && "PEMIRA 2025 Sedang Berlangsung!"}
-            {electionStatus === "ended" && "Pemilihan Telah Berakhir"}
+            {electionStatus === "coming" && "PEMIRA Coming Soon"}
+            {electionStatus === "ongoing" && "PEMIRA Sedang Berlangsung!"}
           </h2>
           <p className="text-xl text-[#19554B]/80 max-w-2xl mx-auto">
             {electionStatus === "coming" &&
               "Hitungan mundur menuju hari pemilihan"}
             {electionStatus === "ongoing" && "Segera gunakan hak pilih Anda!"}
-            {electionStatus === "ended" &&
-              "Terima kasih telah berpartisipasi dalam PEMIRA 2025"}
           </p>
         </motion.div>
 
@@ -126,7 +120,7 @@ export default function PemiraCountdownSection() {
           >
             <div className="inline-flex flex-col items-center gap-8">
               <div className="bg-[#19554B] text-[#DADED1] px-8 py-4 rounded-full text-xl font-medium">
-                Pemilihan berlangsung 25-26 Agustus 2025
+                Pemilihan dibuka mulai 27 Agustus 2026 pukul 10:00 WIB
               </div>
               <a
                 href="/vote"
@@ -138,18 +132,6 @@ export default function PemiraCountdownSection() {
           </motion.div>
         )}
 
-        {electionStatus === "ended" && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            className="mt-12"
-          >
-            <div className="inline-block px-8 py-4 bg-[#19554B] text-[#DADED1] rounded-full text-xl font-medium">
-              Hasil pemilihan akan diumumkan segera
-            </div>
-          </motion.div>
-        )}
       </div>
     </section>
   );
