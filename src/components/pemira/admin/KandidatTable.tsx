@@ -1,88 +1,79 @@
-// components/admin/KandidatTable.tsx
 "use client";
 
-import { Kandidat } from "@/types/pemira";
+import { AdminElectionResult } from "@/types/pemira";
 import Image from "next/image";
 import * as XLSX from "xlsx";
 
-type KandidatTableProps = {
-  kandidat: Kandidat[];
-};
+type KandidatTableProps = { elections: AdminElectionResult[] };
 
-export default function KandidatTable({ kandidat }: KandidatTableProps) {
+export default function KandidatTable({ elections }: KandidatTableProps) {
   const exportToExcel = () => {
-    const worksheet = XLSX.utils.json_to_sheet(kandidat);
+    const rows = elections.flatMap((election) =>
+      election.candidates.map((candidate) => ({
+        Election: election.name,
+        "Nomor Paslon": candidate.ballotNumber,
+        Ketua: candidate.chairmanName,
+        "Wakil Ketua": candidate.viceChairmanName,
+        Suara: candidate.voteCount,
+      }))
+    );
+    const worksheet = XLSX.utils.json_to_sheet(rows);
     const workbook = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(workbook, worksheet, "Kandidat");
-    XLSX.writeFile(workbook, `kandidat_${new Date().toISOString()}.xlsx`);
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Hasil Kandidat");
+    XLSX.writeFile(workbook, `hasil_pemira_${new Date().toISOString()}.xlsx`);
   };
 
   return (
-    <div className="bg-white shadow rounded-lg p-6">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Daftar Kandidat</h2>
-        <div className="flex space-x-2">
-          <span className="text-sm text-gray-500">
-            Urutan berdasarkan jumlah suara
-          </span>
-          <button
-            onClick={exportToExcel}
-            className="px-3 py-1 bg-green-600 text-white rounded-md hover:bg-green-700 text-sm"
-          >
-            Export Excel
-          </button>
+    <div className="rounded-lg bg-white p-6 shadow">
+      <div className="mb-4 flex items-center justify-between">
+        <div>
+          <h2 className="text-xl font-semibold">Hasil Kandidat</h2>
+          <p className="text-sm text-gray-500">Agregat suara dari pemira_votes</p>
         </div>
+        <button onClick={exportToExcel} className="rounded-md bg-green-600 px-3 py-1 text-sm text-white hover:bg-green-700">
+          Export Excel
+        </button>
       </div>
-
       <div className="overflow-x-auto">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
             <tr>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                No
-              </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Foto
-              </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Nama
-              </th>
-
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Suara
-              </th>
+              {['Election', 'Paslon', 'Ketua + Wakil Ketua', 'Suara'].map((heading) => (
+                <th key={heading} className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500">
+                  {heading}
+                </th>
+              ))}
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-gray-200 text-black">
-            {kandidat.map((kandidat, index) => (
-              <tr key={kandidat.id}>
-                <td className="px-6 py-4 whitespace-nowrap">{index + 1}</td>
-                <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0 h-10 w-10">
-                      <Image
-                        src={kandidat.image}
-                        alt={kandidat.name}
-                        width={200}
-                        height={200}
-                        className="object-cover w-full h-full"
-                      />
+          <tbody className="divide-y divide-gray-200 bg-white text-black">
+            {elections.flatMap((election) =>
+              election.candidates.map((candidate) => (
+                <tr key={candidate.id}>
+                  <td className="whitespace-nowrap px-6 py-4 text-sm font-semibold text-gray-900">{election.name}</td>
+                  <td className="whitespace-nowrap px-6 py-4">{candidate.ballotNumber || "-"}</td>
+                  <td className="whitespace-nowrap px-6 py-4">
+                    <div className="flex items-center gap-3">
+                      {candidate.chairmanImage ? (
+                        <Image src={candidate.chairmanImage} alt={candidate.chairmanName} width={40} height={40} className="h-10 w-10 rounded-full object-cover" />
+                      ) : (
+                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 text-sm font-semibold text-gray-600">
+                          {candidate.chairmanName.charAt(0) || "-"}
+                        </div>
+                      )}
+                      <div className="text-sm text-gray-900">
+                        <div className="font-medium">{candidate.chairmanName || "-"}</div>
+                        <div className="text-gray-500">{candidate.viceChairmanName || "-"}</div>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="text-sm font-medium text-gray-900">
-                    {kandidat.name}
-                  </div>
-                </td>
-
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                    {kandidat.votes} suara
-                  </span>
-                </td>
-              </tr>
-            ))}
+                  </td>
+                  <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                    <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                      {candidate.voteCount} suara
+                    </span>
+                  </td>
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
       </div>
