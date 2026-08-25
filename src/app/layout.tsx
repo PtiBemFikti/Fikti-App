@@ -92,6 +92,12 @@ const disableFooter = [
   "/pemira/DetailPaslon3",
 ];
 
+function isPathExcluded(pathname: string, routes: string[]) {
+  return routes.some(
+    (route) => pathname === route || pathname.startsWith(`${route}/`)
+  );
+}
+
 const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -119,10 +125,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${lato.className} overflow-x-hidden`}>
-        {!disableNavbar.includes(pathname ?? "") && <Navbar />}
+        {!isPathExcluded(pathname ?? "", disableNavbar) && <Navbar />}
         {children}
         <Toaster position="top-right" richColors />
-        {!disableFooter.includes(pathname ?? "") && <Footer />}
+        {!isPathExcluded(pathname ?? "", disableFooter) && <Footer />}
       </body>
     </html>
   );
