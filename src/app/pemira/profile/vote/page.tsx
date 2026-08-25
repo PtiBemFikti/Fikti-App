@@ -3,27 +3,18 @@
 import CandidateList from "@/components/pemira/profile/CandidateList";
 import VoteConfirmationModal from "@/components/pemira/profile/VoteConfirmationModal";
 import VoteStatus from "@/components/pemira/profile/VoteStatus";
+import { isPemiraOpen } from "@/lib/pemira-config";
+import { CandidatePair, PemiraElection, VoteCheckResponse } from "@/types/pemira";
 import { useEffect, useState } from "react";
 
-interface Candidate {
-  id: number;
-  name: string;
-  image: string;
-  description: string;
-}
-
 export default function VotePage() {
-  const [candidates, setCandidates] = useState<Candidate[]>([]);
+  const [elections, setElections] = useState<PemiraElection[]>([]);
+  const [voteStatuses, setVoteStatuses] = useState<VoteCheckResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [hasVoted, setHasVoted] = useState(false);
-  const [selectedCandidate, setSelectedCandidate] = useState<number | null>(
-    null
-  );
+  const [selectedCandidate, setSelectedCandidate] = useState<CandidatePair | null>(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
-  const [votingStatus, setVotingStatus] = useState<"not_started" | "ongoing">(
-    "ongoing"
-  );
+  const [votingStatus, setVotingStatus] = useState<"not_started" | "ongoing">("ongoing");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,23 +22,24 @@ export default function VotePage() {
         const status = getVotingPeriodStatus();
         setVotingStatus(status);
 
-        if (status === "not_started") {
-          setLoading(false);
-          return;
-        }
+        if (status === "not_started") return;
 
-        const checkRes = await fetch("/api/vote/check");
+        const [checkRes, candidatesRes] = await Promise.all([
+          fetch("/api/vote/check"),
+          fetch("/api/candidates"),
+        ]);
         const checkData = await checkRes.json();
+        const candidatesData = await candidatesRes.json();
 
-        if (checkData.success) {
-          setHasVoted(checkData.data.has_voted);
+        if (!checkRes.ok || !checkData.success) {
+          throw new Error(checkData.message || "Gagal memeriksa status vote");
+        }
+        if (!candidatesRes.ok) {
+          throw new Error(candidatesData.message || "Gagal mengambil kandidat");
         }
 
-        const res = await fetch("/api/candidates");
-        const data = await res.json();
-
-        if (data.error) throw new Error(data.error);
-        setCandidates(data);
+        setVoteStatuses(checkData.data);
+        setElections(candidatesData.elections ?? []);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Terjadi kesalahan");
       } finally {
@@ -58,30 +50,35 @@ export default function VotePage() {
     fetchData();
   }, []);
 
-  const handleVote = (candidateId: number) => {
-    setSelectedCandidate(candidateId);
+  const handleVote = (candidate: CandidatePair) => {
+    setSelectedCandidate(candidate);
     setShowConfirmation(true);
   };
 
   const confirmVote = async () => {
-    try {
-      if (!selectedCandidate) return;
+    if (!selectedCandidate) return;
 
+    try {
       const res = await fetch("/api/vote", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ id: selectedCandidate }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: selectedCandidate.id }),
       });
-
       const data = await res.json();
 
-      if (!res.ok) {
-        throw new Error(data.message || "Gagal melakukan vote");
-      }
+      if (!res.ok) throw new Error(data.message || "Gagal melakukan vote");
 
-      setHasVoted(true);
+      setVoteStatuses((current) => {
+        if (!current) return current;
+        const election = elections.find(
+          (item) => String(item.id) === String(selectedCandidate.electionId)
+        );
+        if (!election) return current;
+        return {
+          ...current,
+          [election.slug]: { ...current[election.slug], hasVoted: true },
+        };
+      });
       setShowConfirmation(false);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Terjadi kesalahan");
@@ -89,41 +86,40 @@ export default function VotePage() {
     }
   };
 
-  const getVotingPeriodStatus = () => {
-    const votingStartDate = new Date("2025-08-25T00:00:00"); //25 agustus
-    const currentDate = new Date();
-
-    if (currentDate < votingStartDate) {
-      return "not_started";
-    }
-    return "ongoing";
-  };
-
-  if (loading || error || votingStatus === "not_started" || hasVoted) {
+  if (loading || error || votingStatus === "not_started") {
     return (
       <VoteStatus
         loading={loading}
         error={error}
         votingStatus={votingStatus}
-        hasVoted={hasVoted}
+        hasVoted={false}
       />
     );
   }
 
   return (
     <div className="p-6">
-      <CandidateList candidates={candidates} handleVote={handleVote} />
+      <div className="space-y-8 max-w-6xl mx-auto">
+        {elections.map((election) => (
+          <CandidateList
+            key={election.id}
+            election={election}
+            status={voteStatuses?.[election.slug] ?? { eligible: false, hasVoted: false }}
+            handleVote={handleVote}
+          />
+        ))}
+      </div>
 
       <VoteConfirmationModal
         isOpen={showConfirmation}
         onClose={() => setShowConfirmation(false)}
-        candidate={
-          selectedCandidate
-            ? candidates.find((c) => c.id === selectedCandidate)
-            : null
-        }
+        candidate={selectedCandidate}
         onConfirm={confirmVote}
       />
     </div>
   );
+}
+
+function getVotingPeriodStatus(): "not_started" | "ongoing" {
+  return isPemiraOpen() ? "ongoing" : "not_started";
 }

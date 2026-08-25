@@ -1,13 +1,49 @@
+export type ElectionSlug = "bem" | "himsi";
+
+export type CandidatePerson = {
+  name: string;
+  npm: string;
+  className: string;
+  image: string;
+};
+
+export type CandidatePair = {
+  id: number | string;
+  electionId: number | string;
+  ballotNumber: string;
+  chairman: CandidatePerson;
+  viceChairman: CandidatePerson;
+  vision: string;
+  missions: string[];
+  targets: string[];
+  flagshipPrograms: string[];
+  innovationPrograms: string[];
+};
+
+export type PemiraElection = {
+  id: number | string;
+  slug: ElectionSlug;
+  name: string;
+  candidates: CandidatePair[];
+};
+
+export type ElectionVoteStatus = {
+  eligible: boolean;
+  hasVoted: boolean;
+};
+
+export type VoteCheckResponse = Record<ElectionSlug, ElectionVoteStatus>;
+
+/** Legacy admin shape kept until the admin dashboard is migrated. */
 export type Kandidat = {
   id: string;
   name: string;
   image: string;
-//   visi: string;
-//   misi: string;
   votes: number;
   created_at: string;
 };
 
+/** Legacy admin shape kept until the admin dashboard is migrated. */
 export type Voter = {
   id: string;
   name: string;
@@ -15,4 +51,66 @@ export type Voter = {
   kelas: string;
   has_voted: boolean;
   created_at: string;
+};
+
+export type AdminCandidateResult = {
+  id: number | string;
+  ballotNumber: string;
+  chairmanName: string;
+  chairmanImage: string;
+  viceChairmanName: string;
+  voteCount: number;
+};
+
+export type AdminElectionResult = {
+  id: number | string;
+  slug: ElectionSlug;
+  name: string;
+  totalVotes: number;
+  candidates: AdminCandidateResult[];
+};
+
+export type AdminVoterElectionStatus = "voted" | "not-voted" | "not-eligible";
+
+export type AdminVoter = {
+  id: number | string;
+  npm: string;
+  programStudi: string;
+  kelas: string;
+  bem: AdminVoterElectionStatus;
+  himsi: AdminVoterElectionStatus;
+  createdAt: string | null;
+};
+
+export type AdminDashboardData = {
+  elections: AdminElectionResult[];
+  voters: AdminVoter[];
+};
+
+export type AdminManagedCandidate = {
+  id: number | string;
+  electionId: number | string;
+  ballotNumber: string;
+  chairmanName: string;
+  chairmanNpm: string;
+  chairmanClass: string;
+  chairmanImage: string;
+  viceChairmanName: string;
+  viceChairmanNpm: string;
+  viceChairmanClass: string;
+  viceChairmanImage: string;
+  vision: string;
+  missions: string[];
+  targets: string[];
+  flagshipPrograms: string[];
+  innovationPrograms: string[];
+};
+
+export type AdminManagedElection = {
+  id: number | string;
+  slug: ElectionSlug;
+  name: string;
+  description: string;
+  isActive: boolean;
+  candidates: AdminManagedCandidate[];
 };

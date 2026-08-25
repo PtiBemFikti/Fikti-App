@@ -1,17 +1,18 @@
 // app/api/vote/register/route.ts
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { getSupabaseServer } from "@/lib/supabase-server";
 import { getProfileFromCookie } from "@/lib/getUserProfile";
 
 export const dynamic = 'force-dynamic';
 
 export async function POST() {
   try {
+    const supabaseServer = getSupabaseServer();
     const profile = await getProfileFromCookie();
     const {  npm, jurusan, kodeKelas } = profile;
 
     // Cek apakah user sudah terdaftar
-    const { data: existing } = await supabase
+    const { data: existing } = await supabaseServer
       .from("pemira_voters")
       .select("id")
       .eq("npm", npm)
@@ -24,12 +25,11 @@ export async function POST() {
       });
     }
 
-    const { error } = await supabase.from("pemira_voters").insert([
+    const { error } = await supabaseServer.from("pemira_voters").insert([
       {
         npm,
         program_studi: jurusan,
         kelas: kodeKelas,
-        has_voted: false,
       },
     ]);
 

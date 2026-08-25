@@ -14,7 +14,7 @@ const votingStatusMessages = {
   not_started: {
     title: "Pemira Belum Dimulai",
     message:
-      "Pemilihan akan dimulai pada 25 Agustus 2025. Silakan kembali pada tanggal tersebut untuk melakukan voting.",
+      "Pemilihan akan dimulai pada Kamis, 27 Agustus 2026 pukul 10:00 WIB. Silakan kembali setelah waktu tersebut untuk melakukan voting.",
   },
   ongoing: {
     title: "Pemira Sedang Berlangsung",

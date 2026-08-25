@@ -1,18 +1,12 @@
 import Image from "next/image";
 import PemiraModal from "@/components/pemira/PemiraModal";
 import { useState } from "react";
-
-interface Candidate {
-  id: number;
-  name: string;
-  image: string;
-  description: string;
-}
+import { CandidatePair } from "@/types/pemira";
 
 interface VoteConfirmationModalProps {
   isOpen: boolean;
   onClose: () => void;
-  candidate: Candidate | null | undefined;
+  candidate: CandidatePair | null | undefined;
   onConfirm: () => Promise<void>;
 }
 
@@ -40,16 +34,19 @@ export default function VoteConfirmationModal({
       <div className="mb-6">
         {candidate && (
           <div className="flex flex-col items-center mb-4">
-            <div className="relative h-32 w-32 rounded-full overflow-hidden border-4 border-[#19554B] mb-3">
-              <Image
-                src={candidate.image}
-                alt={candidate.name}
-                fill
-                className="object-cover"
-              />
+            <div className="flex gap-3 mb-3">
+              {[candidate.chairman, candidate.viceChairman].map((person) => (
+                <div key={person.npm} className="relative h-24 w-24 rounded-full overflow-hidden border-4 border-[#19554B]">
+                  {person.image ? (
+                    <Image src={person.image} alt={person.name} fill className="object-cover" />
+                  ) : (
+                    <div className="h-full w-full bg-[#DEDAD1]" />
+                  )}
+                </div>
+              ))}
             </div>
             <h3 className="text-xl font-bold text-[#19554B]">
-              {candidate.name}
+              {candidate.chairman.name} + {candidate.viceChairman.name}
             </h3>
           </div>
         )}

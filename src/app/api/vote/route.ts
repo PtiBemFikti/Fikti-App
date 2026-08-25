@@ -1,44 +1,122 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { getSupabaseServer } from "@/lib/supabase-server";
 import { getProfileFromCookie } from "@/lib/getUserProfile";
+import { isPemiraOpen } from "@/lib/pemira-config";
+import { ElectionSlug } from "@/types/pemira";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
   try {
-    const { id: candidate_id } = await request.json(); 
+    if (!isPemiraOpen()) {
+      return NextResponse.json(
+        { success: false, message: "Pemilihan belum dimulai" },
+        { status: 403 }
+      );
+    }
+
+    const { id: candidateId } = await request.json();
     const profile = await getProfileFromCookie();
     const { npm, jurusan, kodeKelas } = profile;
 
-    if (!candidate_id) {
+    if (
+      typeof npm !== "string" ||
+      !npm.trim() ||
+      typeof jurusan !== "string" ||
+      !jurusan.trim() ||
+      typeof kodeKelas !== "string" ||
+      !kodeKelas.trim()
+    ) {
+      return NextResponse.json(
+        { success: false, message: "Data profil mahasiswa tidak lengkap" },
+        { status: 400 }
+      );
+    }
+
+    const supabaseServer = getSupabaseServer();
+
+    if (candidateId === undefined || candidateId === null || candidateId === "") {
       return NextResponse.json(
         { success: false, message: "Candidate ID is required" },
         { status: 400 }
       );
     }
 
-    const { data, error } = await supabase.rpc('vote_candidate', {
-      p_candidate_id: candidate_id,
-      p_npm: npm,
-      p_program_studi: jurusan,
-      p_kelas: kodeKelas
-    });
+    const { data: candidate, error: candidateError } = await supabaseServer
+      .from("pemira_kandidat")
+      .select("id, election_id")
+      .eq("id", candidateId)
+      .single();
 
-    if (error) {
-      console.error("[VOTE ERROR]", error.message);
+    if (candidateError || !candidate) {
       return NextResponse.json(
-        { success: false, message: error.message },
+        { success: false, message: "Kandidat tidak ditemukan" },
+        { status: 404 }
+      );
+    }
+
+    const { data: election, error: electionError } = await supabaseServer
+      .from("pemira_elections")
+      .select("id, slug, name")
+      .eq("id", candidate.election_id)
+      .single();
+
+    if (electionError || !election) {
+      return NextResponse.json(
+        { success: false, message: "Election kandidat tidak ditemukan" },
         { status: 400 }
       );
     }
 
-    return NextResponse.json(data);
-    
+    const electionSlug = election.slug as ElectionSlug;
+    const isInformationSystem = jurusan.includes("Sistem Informasi");
+    const isComputerSystem = jurusan.includes("Sistem Komputer");
+    const eligible = electionSlug === "himsi"
+      ? isInformationSystem
+      : electionSlug === "bem" && (isInformationSystem || isComputerSystem);
+
+    if (!eligible) {
+      return NextResponse.json(
+        { success: false, message: "Anda tidak memenuhi syarat untuk election ini" },
+        { status: 403 }
+      );
+    }
+
+    const { error } = await supabaseServer.from("pemira_votes").insert({
+      npm,
+      program_studi: jurusan,
+      kelas: kodeKelas,
+      election_id: candidate.election_id,
+      candidate_id: candidate.id,
+    });
+
+    if (error) {
+      if (error.code === "23505") {
+        return NextResponse.json(
+          { success: false, message: "Anda sudah melakukan voting untuk election ini" },
+          { status: 409 }
+        );
+      }
+
+      console.error("[VOTE ERROR]", error.message);
+      return NextResponse.json(
+        { success: false, message: "Voting gagal diproses" },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json({
+      success: true,
+      data: {
+        electionId: candidate.election_id,
+        candidateId: candidate.id,
+      },
+    });
   } catch (err) {
     const error = err as Error;
     console.error("[VOTE ERROR]", error.message);
     return NextResponse.json(
-      { success: false, message: "Internal server error" },
+      { success: false, message: "Voting gagal diproses" },
       { status: 500 }
     );
   }
