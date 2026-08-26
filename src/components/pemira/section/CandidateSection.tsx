@@ -2,11 +2,10 @@
 
 import { CandidatePair, PemiraElection } from "@/types/pemira";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useEffect, useState } from "react";
+import { FiUsers } from "react-icons/fi";
 import CandidateModal from "./CandidateModal";
-
-const fallbackImage = "/pemira/background-calon.png";
+import CandidatePortrait from "../CandidatePortrait";
 
 export default function CandidateSection() {
   const [elections, setElections] = useState<PemiraElection[]>([]);
@@ -70,7 +69,7 @@ export default function CandidateSection() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[#19554B] mb-4">
             Kenali{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#19554B] to-[#0d2e28]">
+            <span className="text-[#0d2e28]">
               Kandidat
             </span>
           </h2>
@@ -118,7 +117,7 @@ function ElectionCandidateGroup({
   onOpenCandidate: (candidate: CandidatePair, electionName: string) => void;
 }) {
   const slots: Array<CandidatePair | null> = Array.from(
-    { length: 2 },
+    { length: Math.max(2, election.candidates.length) },
     (_, index) => election.candidates[index] ?? null
   );
 
@@ -131,7 +130,7 @@ function ElectionCandidateGroup({
         <p className="text-[#19554B] mt-2">Pasangan calon {election.name}</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:gap-10">
         {slots.map((candidate, index) =>
           candidate ? (
             <CandidateCard
@@ -169,41 +168,56 @@ function CandidateCard({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+      className="overflow-hidden rounded-2xl border border-[#DEDAD1] bg-white shadow-[0_12px_30px_rgba(25,85,75,0.08)] transition-shadow duration-300 hover:shadow-[0_18px_36px_rgba(25,85,75,0.14)]"
     >
-      <div className="relative h-64 md:h-80 w-full bg-[#19554B]">
-        <div className="grid grid-cols-2 h-full">
-          <CandidateImage person={candidate.chairman} />
-          <CandidateImage person={candidate.viceChairman} />
-        </div>
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 pt-16">
-          <p className="text-sm font-semibold tracking-wider text-[#DEDAD1] mb-1">
-            PASLON {ballotNumber}
-          </p>
-          <h4 className="text-2xl font-bold text-white">
-            {candidate.chairman.name} + {candidate.viceChairman.name}
-          </h4>
-          <p className="text-[#DEDAD1]">Ketua dan Wakil Ketua {electionName}</p>
+      <div className="relative aspect-[16/10] w-full bg-[#19554B]">
+        <div className="grid h-full grid-cols-2 gap-px bg-white/30">
+          <CandidatePortrait
+            person={candidate.chairman}
+            role="Ketua"
+            sizes="(max-width: 768px) 50vw, 25vw"
+          />
+          <CandidatePortrait
+            person={candidate.viceChairman}
+            role="Wakil Ketua"
+            sizes="(max-width: 768px) 50vw, 25vw"
+          />
         </div>
       </div>
 
-      <div className="p-6 md:p-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-[#19554B]">
-          <PersonSummary label="Ketua" name={candidate.chairman.name} />
-          <PersonSummary label="Wakil Ketua" name={candidate.viceChairman.name} />
+      <div className="p-5 sm:p-6 md:p-7">
+        <div className="mb-4">
+          <span className="inline-flex rounded-full bg-[#AA83C2]/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-[#79558E]">
+            Paslon {ballotNumber}
+          </span>
+          <h4 className="mt-3 text-xl font-bold leading-tight text-[#19554B] sm:text-2xl">
+            <span className="block">{candidate.chairman.name}</span>
+            <span className="my-1 block text-base font-medium text-[#AA83C2]">&amp;</span>
+            <span className="block">{candidate.viceChairman.name}</span>
+          </h4>
+          <p className="mt-2 text-sm text-gray-500">
+            Ketua dan Wakil Ketua {electionName}
+          </p>
         </div>
+
+        <div className="grid grid-cols-2 divide-x divide-[#DEDAD1] border-y border-[#DEDAD1] py-4 text-[#19554B]">
+          <PersonSummary label="Ketua" person={candidate.chairman} />
+          <PersonSummary label="Wakil Ketua" person={candidate.viceChairman} />
+        </div>
+
         {candidate.vision && (
-          <>
-            <h5 className="text-lg font-semibold text-[#19554B] mb-2">Visi</h5>
-            <p className="text-gray-700 mb-6 line-clamp-3">{candidate.vision}</p>
-          </>
+          <div className="mt-5">
+            <h5 className="text-xs font-bold uppercase tracking-[0.14em] text-[#79558E]">Visi</h5>
+            <p className="mt-2 line-clamp-3 text-sm leading-6 text-gray-700">{candidate.vision}</p>
+          </div>
         )}
-        <div className="flex justify-center">
+
+        <div className="mt-6">
           <button
             onClick={onOpen}
-            className="px-6 py-3 bg-[#19554B] text-white rounded-lg font-medium hover:bg-[#0d2e28] transition-colors focus:outline-none focus:ring-2 focus:ring-[#AA83C2] focus:ring-offset-2"
+            className="w-full rounded-xl bg-[#19554B] px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#0d2e28] focus:outline-none focus:ring-2 focus:ring-[#AA83C2] focus:ring-offset-2"
           >
-            Lihat Selengkapnya
+            Lihat Profil Lengkap
           </button>
         </div>
       </div>
@@ -211,28 +225,18 @@ function CandidateCard({
   );
 }
 
-function CandidateImage({ person }: { person: CandidatePair["chairman"] }) {
+function PersonSummary({
+  label,
+  person,
+}: {
+  label: string;
+  person: CandidatePair["chairman"];
+}) {
   return (
-    <div className="relative min-w-0 border-r border-white/20 last:border-r-0">
-      <Image
-        src={person.image || fallbackImage}
-        alt={person.name || "Foto kandidat"}
-        fill
-        className="object-cover object-center"
-        sizes="(max-width: 768px) 50vw, 25vw"
-      />
-      <div className="absolute inset-x-0 bottom-0 bg-black/45 px-3 py-2 text-center">
-        <p className="text-xs font-medium text-white truncate">{person.name}</p>
-      </div>
-    </div>
-  );
-}
-
-function PersonSummary({ label, name }: { label: string; name: string }) {
-  return (
-    <div className="rounded-lg bg-[#F5F3EF] p-4">
-      <p className="text-xs uppercase tracking-wide text-[#AA83C2] font-semibold">{label}</p>
-      <p className="font-semibold mt-1">{name || "Informasi belum tersedia"}</p>
+    <div className="min-w-0 px-3 first:pl-0 last:pr-0 sm:px-4">
+      <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#AA83C2]">{label}</p>
+      <p className="mt-1 truncate text-sm font-semibold text-[#19554B]">{person.name || "Belum tersedia"}</p>
+      <p className="mt-1 text-xs text-gray-500">{person.className || "Kelas belum tersedia"}</p>
     </div>
   );
 }
@@ -240,13 +244,10 @@ function PersonSummary({ label, name }: { label: string; name: string }) {
 function EmptyCandidateSlot() {
   return (
     <div
-      aria-label="Slot pasangan calon kosong"
-      className="min-h-[440px] rounded-2xl border-2 border-dashed border-[#19554B]/30 bg-white/40 flex items-center justify-center text-center p-8"
+      aria-label="Slot kandidat kosong"
+      className="flex min-h-[180px] items-center justify-center rounded-2xl border-2 border-dashed border-[#19554B]/20 bg-white/40 text-[#19554B]/45 md:min-h-[280px]"
     >
-      <div>
-        <p className="text-lg font-semibold text-[#19554B]">Slot Paslon 02</p>
-        <p className="text-gray-600 mt-2">Belum ada pasangan calon lain.</p>
-      </div>
+      <FiUsers className="h-12 w-12 stroke-[1.25]" aria-hidden="true" />
     </div>
   );
 }

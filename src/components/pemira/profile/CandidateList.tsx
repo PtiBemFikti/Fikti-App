@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { CandidatePair, ElectionVoteStatus, PemiraElection } from "@/types/pemira";
+import Image from "next/image";
+import { FiUsers } from "react-icons/fi";
+import CandidatePortrait from "../CandidatePortrait";
 
 interface CandidateListProps {
   election: PemiraElection;
@@ -11,7 +13,7 @@ interface CandidateListProps {
 export default function CandidateList({ election, status, handleVote }: CandidateListProps) {
   // Null is a visual placeholder only; it is never sent to the API or database.
   const slots: Array<CandidatePair | null> = Array.from(
-    { length: Math.max(2, Math.min(election.candidates.length, 2)) },
+    { length: Math.max(2, election.candidates.length) },
     (_, index) => election.candidates[index] ?? null
   );
 
@@ -55,46 +57,45 @@ export default function CandidateList({ election, status, handleVote }: Candidat
       </div>
 
       <div className="p-3 sm:p-6">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
           {slots.map((candidate, index) => candidate ? (
             <motion.div
               key={candidate.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="border border-[#DEDAD1] rounded-lg overflow-hidden hover:shadow-md transition-shadow"
+              className="overflow-hidden rounded-2xl border border-[#DEDAD1] bg-white shadow-[0_10px_26px_rgba(25,85,75,0.08)]"
             >
-              <div className="relative flex h-36 w-full items-center justify-center gap-2 bg-[#19554B] p-3 sm:h-48 sm:gap-4 sm:p-4">
-                {[candidate.chairman, candidate.viceChairman].map((person) => (
-                  <div key={person.npm} className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border-2 border-white/80 sm:h-32 sm:w-32 sm:border-4">
-                    {person.image ? (
-                      <Image
-                        src={person.image}
-                        alt={person.name}
-                        fill
-                        className="object-cover object-center"
-                        sizes="128px"
-                      />
-                    ) : (
-                      <div className="h-full w-full bg-[#DEDAD1]" />
-                    )}
-                  </div>
-                ))}
+              <div className="relative aspect-[16/10] w-full bg-[#19554B]">
+                <div className="grid h-full grid-cols-2 gap-px bg-white/30">
+                  <CandidatePortrait
+                    person={candidate.chairman}
+                    role="Ketua"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                  <CandidatePortrait
+                    person={candidate.viceChairman}
+                    role="Wakil Ketua"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                </div>
               </div>
-              <div className="p-3 sm:p-4">
-                <p className="text-sm font-semibold text-[#AA83C2] mb-1">
+              <div className="p-4 sm:p-5">
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#79558E]">
                   PASLON {candidate.ballotNumber || String(index + 1).padStart(2, "0")}
                 </p>
-                <h3 className="mb-1 text-lg font-semibold leading-snug text-[#19554B] sm:text-xl">
-                  {candidate.chairman.name} + {candidate.viceChairman.name}
+                <h3 className="mt-3 text-lg font-bold leading-tight text-[#19554B] sm:text-xl">
+                  <span className="block">{candidate.chairman.name}</span>
+                  <span className="my-1 block text-sm font-medium text-[#AA83C2]">&amp;</span>
+                  <span className="block">{candidate.viceChairman.name}</span>
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="mt-2 text-sm text-gray-500">
                   Ketua dan Wakil Ketua {election.name}
                 </p>
                 <button
                   onClick={() => handleVote(candidate)}
                   disabled={!status.eligible || status.hasVoted}
-                  className="w-full py-3 px-4 rounded-lg bg-[#AA83C2] text-white hover:bg-[#9569B5] transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="mt-5 w-full rounded-xl bg-[#19554B] px-4 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#134239] disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {status.hasVoted ? "Sudah Memilih" : "Pilih Pasangan Ini"}
                 </button>
@@ -104,9 +105,9 @@ export default function CandidateList({ election, status, handleVote }: Candidat
             <div
               key={`empty-${election.slug}`}
               aria-hidden="true"
-              className="flex min-h-[260px] items-center justify-center rounded-lg border border-dashed border-[#19554B]/30 text-center text-gray-500 sm:min-h-[360px]"
+              className="flex min-h-[180px] items-center justify-center rounded-2xl border-2 border-dashed border-[#19554B]/20 bg-[#F5F3EF] text-[#19554B]/45 sm:min-h-[220px] md:min-h-[280px]"
             >
-              Slot pasangan calon berikutnya tersedia
+              <FiUsers className="h-12 w-12 stroke-[1.25]" aria-hidden="true" />
             </div>
           ))}
         </div>

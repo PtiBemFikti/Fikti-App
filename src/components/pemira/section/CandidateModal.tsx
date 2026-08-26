@@ -2,11 +2,9 @@
 
 import { CandidatePair } from "@/types/pemira";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 import { FiX } from "react-icons/fi";
 import { useEffect } from "react";
-
-const fallbackImage = "/pemira/background-calon.png";
+import CandidatePortrait from "../CandidatePortrait";
 
 interface CandidateModalProps {
   candidate: CandidatePair;
@@ -108,25 +106,20 @@ function PersonDetail({
   role: string;
 }) {
   return (
-    <div className="rounded-xl bg-[#F5F3EF] p-5">
-      <div className="flex items-center gap-4">
-        <div className="relative h-24 w-24 shrink-0 rounded-full overflow-hidden border-4 border-[#19554B]">
-          <Image
-            src={person.image || fallbackImage}
-            alt={person.name || `Foto ${role}`}
-            fill
-            className="object-cover object-center"
-            sizes="96px"
-          />
-        </div>
-        <div>
-          <p className="text-sm font-semibold text-[#AA83C2]">{role}</p>
-          <h4 className="text-lg font-bold text-[#19554B]">
-            {person.name || "Nama belum tersedia"}
-          </h4>
-        </div>
+    <div className="overflow-hidden rounded-2xl border border-[#DEDAD1] bg-[#F5F3EF]">
+      <CandidatePortrait
+        person={person}
+        role={role}
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="aspect-[4/3] w-full"
+      />
+      <div className="p-5">
+        <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#AA83C2]">{role}</p>
+        <h4 className="mt-2 text-lg font-bold text-[#19554B]">
+          {person.name || "Nama belum tersedia"}
+        </h4>
       </div>
-      <dl className="mt-5 space-y-2 text-sm">
+      <dl className="space-y-2 px-5 pb-5 text-sm">
         <div className="flex justify-between gap-4">
           <dt className="text-gray-500">NPM</dt>
           <dd className="font-medium text-gray-700 text-right">{person.npm || "Belum tersedia"}</dd>

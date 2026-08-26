@@ -1,7 +1,7 @@
-import Image from "next/image";
 import PemiraModal from "@/components/pemira/PemiraModal";
 import { useState } from "react";
 import { CandidatePair } from "@/types/pemira";
+import CandidatePortrait from "../CandidatePortrait";
 
 interface VoteConfirmationModalProps {
   isOpen: boolean;
@@ -34,25 +34,24 @@ export default function VoteConfirmationModal({
       <div className="mb-6">
         {candidate && (
           <div className="flex flex-col items-center mb-4">
-            <div className="flex gap-3 mb-3">
-              {[candidate.chairman, candidate.viceChairman].map((person) => (
-                <div key={person.npm} className="relative h-24 w-24 rounded-full overflow-hidden border-4 border-[#19554B]">
-                  {person.image ? (
-                    <Image
-                      src={person.image}
-                      alt={person.name}
-                      fill
-                      className="object-cover object-center"
-                      sizes="96px"
-                    />
-                  ) : (
-                    <div className="h-full w-full bg-[#DEDAD1]" />
-                  )}
-                </div>
-              ))}
+            <div className="mb-4 grid w-full max-w-sm grid-cols-2 gap-2 overflow-hidden rounded-xl bg-[#19554B]">
+              <CandidatePortrait
+                person={candidate.chairman}
+                role="Ketua"
+                sizes="(max-width: 640px) 45vw, 180px"
+                className="aspect-[4/3]"
+              />
+              <CandidatePortrait
+                person={candidate.viceChairman}
+                role="Wakil Ketua"
+                sizes="(max-width: 640px) 45vw, 180px"
+                className="aspect-[4/3]"
+              />
             </div>
-            <h3 className="text-xl font-bold text-[#19554B]">
-              {candidate.chairman.name} + {candidate.viceChairman.name}
+            <h3 className="text-center text-lg font-bold leading-tight text-[#19554B]">
+              <span className="block">{candidate.chairman.name}</span>
+              <span className="my-1 block text-sm font-medium text-[#AA83C2]">&amp;</span>
+              <span className="block">{candidate.viceChairman.name}</span>
             </h3>
           </div>
         )}
