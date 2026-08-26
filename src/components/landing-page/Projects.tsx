@@ -40,7 +40,6 @@ export default function ProjekKamiSection() {
                     width={200}
                     height={200}
                     className="rounded-full object-contain w-3/4 h-3/4"
-                    priority={index < 4}
                   />
                 </div>
               </div>
