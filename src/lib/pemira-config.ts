@@ -1,4 +1,4 @@
-export const PEMIRA_START_AT = "2026-08-25T00:00:00+07:00";
+export const PEMIRA_START_AT = "2026-08-27T10:00:00+07:00";
 
 /** Shared schedule helper; the authoritative enforcement is in the API route. */
 export function isPemiraOpen(now: Date = new Date()): boolean {
