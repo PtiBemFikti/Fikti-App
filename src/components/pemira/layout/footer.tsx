@@ -42,22 +42,12 @@ export default function PemiraFooter() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="https://instagram.com/Pemira_fiktiug"
+                  href="https://instagram.com/ug_bemfikti"
                   target="_blank"
                   className="hover:text-white transition-colors flex items-center gap-2 text-base md:text-lg"
                 >
                   <FaInstagram className="text-xl" />
-                  @Pemira_fiktiug
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  target="_blank"
-                  className="hover:text-white transition-colors flex items-center gap-2 text-base md:text-lg"
-                >
-                  <FaInstagram className="text-xl" />
-                  @RefleksiPEMIRA25
+                  @ug_bemfikti
                 </Link>
               </li>
             </ul>
@@ -75,16 +65,6 @@ export default function PemiraFooter() {
               Contact Person
             </h4>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  target="_blank"
-                  href="https://wa.me/081215092180"
-                  className="hover:text-white transition-colors flex items-center gap-2 text-base md:text-lg"
-                >
-                  <FaWhatsapp className="text-xl" />
-                  Talitha - 081215092180
-                </Link>
-              </li>
               <li>
                 <Link
                   target="_blank"

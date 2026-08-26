@@ -247,7 +247,10 @@ function EmptyCandidateSlot() {
       aria-label="Slot kandidat kosong"
       className="flex min-h-[180px] items-center justify-center rounded-2xl border-2 border-dashed border-[#19554B]/20 bg-white/40 text-[#19554B]/45 md:min-h-[280px]"
     >
-      <FiUsers className="h-12 w-12 stroke-[1.25]" aria-hidden="true" />
+      <div className="flex flex-col items-center gap-3">
+        <FiUsers className="h-12 w-12 stroke-[1.25]" aria-hidden="true" />
+        <p className="text-sm font-semibold tracking-wide">Kotak Kosong</p>
+      </div>
     </div>
   );
 }

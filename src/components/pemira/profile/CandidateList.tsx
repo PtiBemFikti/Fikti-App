@@ -107,7 +107,10 @@ export default function CandidateList({ election, status, handleVote }: Candidat
               aria-hidden="true"
               className="flex min-h-[180px] items-center justify-center rounded-2xl border-2 border-dashed border-[#19554B]/20 bg-[#F5F3EF] text-[#19554B]/45 sm:min-h-[220px] md:min-h-[280px]"
             >
-              <FiUsers className="h-12 w-12 stroke-[1.25]" aria-hidden="true" />
+              <div className="flex flex-col items-center gap-3">
+                <FiUsers className="h-12 w-12 stroke-[1.25]" aria-hidden="true" />
+                <p className="text-sm font-semibold tracking-wide">Kotak Kosong</p>
+              </div>
             </div>
           ))}
         </div>
