@@ -173,32 +173,27 @@ function parseCourses($: cheerio.CheerioAPI): ParsedCourse[] {
 
 function detectProgramStudy(
   courses: ParsedCourse[],
-  npm: string | null
+  npm: string | null,
+  explicitProgramStudy: string | null
 ): { value: ProgramStudy; source: string | null } {
-  const majorValues = courses
-    .map((course) => parseProgramStudy(course.major))
-    .filter((value) => value !== "UNKNOWN");
-  const uniqueMajors = Array.from(new Set(majorValues));
-
-  if (uniqueMajors.length === 1) {
-    return { value: uniqueMajors[0], source: "profile-major" };
-  }
-  if (uniqueMajors.length > 1) {
-    return { value: "UNKNOWN", source: "profile-major-conflict" };
+  if (explicitProgramStudy) {
+    const parsed = parseProgramStudy(explicitProgramStudy);
+    return {
+      value: parsed,
+      source: parsed === "UNKNOWN" ? "profile-program-study-unknown" : "profile-program-study",
+    };
   }
 
-  const courseValues = courses
-    .map((course) => {
-      const parsed = parseProgramStudy(course.sourceText);
-      return parsed === "OTHER" ? "UNKNOWN" : parsed;
-    })
-    .filter((value) => value !== "UNKNOWN");
-  const uniqueCourseValues = Array.from(new Set(courseValues));
+  const hasKaClass = courses.some((course) => /KA/i.test(course.classCode ?? ""));
+  const hasKbClass = courses.some((course) => /KB/i.test(course.classCode ?? ""));
 
-  if (uniqueCourseValues.length === 1) {
-    return { value: uniqueCourseValues[0], source: "course-code-fallback" };
+  if (hasKaClass && !hasKbClass) {
+    return { value: "SISTEM_INFORMASI", source: "course-code-fallback" };
   }
-  if (uniqueCourseValues.length > 1) {
+  if (hasKbClass && !hasKaClass) {
+    return { value: "SISTEM_KOMPUTER", source: "course-code-fallback" };
+  }
+  if (hasKaClass && hasKbClass) {
     return { value: "UNKNOWN", source: "course-code-conflict" };
   }
 
@@ -224,9 +219,13 @@ function parseProfileHtml($: cheerio.CheerioAPI): StudentIdentity {
     ? normalizeWhitespace(heading.replace(new RegExp(`\\s*${npm}\\s*$`), ""))
     : null;
   const nameFromLabel = findLabeledValue($, /^(nama|name)$/i);
+  const explicitProgramStudy = findLabeledValue(
+    $,
+    /^(program\s+studi|jurusan|study\s+program)$/i
+  );
   const name = normalizeWhitespace(nameFromLabel ?? nameFromHeading ?? "") || null;
   const courses = parseCourses($);
-  const program = detectProgramStudy(courses, npm);
+  const program = detectProgramStudy(courses, npm, explicitProgramStudy);
   const classCode = courses.find((course) => course.classCode)?.classCode ?? null;
 
   return {
