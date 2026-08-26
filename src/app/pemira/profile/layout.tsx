@@ -12,8 +12,8 @@ export default function ProfileLayout({
 
       <PemiraProfileNavbar />
 
-      <main className="flex-grow p-4 md:p-6 md:ml-64">
-        <div className="max-w-6xl mx-auto">{children}</div>
+      <main className="min-w-0 flex-1 p-3 sm:p-4 md:ml-64 md:p-6">
+        <div className="mx-auto w-full max-w-6xl">{children}</div>
       </main>
     </div>
   );

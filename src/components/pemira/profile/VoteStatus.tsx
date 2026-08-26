@@ -30,7 +30,7 @@ export default function VoteStatus({
 }: VoteStatusProps) {
   if (loading) {
     return (
-      <div className="min-h-screen p-6 flex items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center p-3 sm:p-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -50,13 +50,13 @@ export default function VoteStatus({
 
   if (error) {
     return (
-      <div className="min-h-screen p-6 flex items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center p-3 sm:p-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="max-w-4xl w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden"
         >
-          <div className="p-8">
+          <div className="p-5 sm:p-8">
             <div className="flex items-center gap-3 p-4 rounded-lg bg-red-50 text-red-700">
               <FiAlertCircle className="text-xl" />
               <div>{error}</div>
@@ -78,11 +78,11 @@ export default function VoteStatus({
 
   if (votingStatus === "not_started") {
     return (
-      <div className="min-h-screen p-6 flex items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center p-3 sm:p-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="max-w-4xl w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden text-center p-8"
+        className="mx-auto w-full max-w-4xl overflow-hidden rounded-xl bg-white p-5 text-center shadow-md sm:p-8"
         >
           <motion.div
             initial={{ scale: 0 }}
@@ -92,7 +92,7 @@ export default function VoteStatus({
           >
             <FiAlertCircle className="text-3xl" />
           </motion.div>
-          <h1 className="text-2xl font-bold text-[#19554B] mb-2">
+          <h1 className="mb-2 text-xl font-bold text-[#19554B] sm:text-2xl">
             {votingStatusMessages.not_started.title}
           </h1>
           <p className="text-gray-600 mb-6">
@@ -114,11 +114,11 @@ export default function VoteStatus({
 
   if (hasVoted) {
     return (
-      <div className="min-h-screen p-6 flex items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center p-3 sm:p-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="max-w-4xl w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden text-center p-8"
+        className="mx-auto w-full max-w-4xl overflow-hidden rounded-xl bg-white p-5 text-center shadow-md sm:p-8"
         >
           <motion.div
             initial={{ scale: 0 }}
@@ -128,7 +128,7 @@ export default function VoteStatus({
           >
             <FiCheckCircle className="text-3xl" />
           </motion.div>
-          <h1 className="text-2xl font-bold text-[#19554B] mb-2">
+          <h1 className="mb-2 text-xl font-bold text-[#19554B] sm:text-2xl">
             Terima kasih!
           </h1>
           <p className="text-gray-600 mb-6">

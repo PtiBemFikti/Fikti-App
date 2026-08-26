@@ -98,8 +98,8 @@ export default function VotePage() {
   }
 
   return (
-    <div className="p-6">
-      <div className="space-y-8 max-w-6xl mx-auto">
+    <div className="w-full">
+      <div className="mx-auto w-full max-w-6xl space-y-6 sm:space-y-8">
         {elections.map((election) => (
           <CandidateList
             key={election.id}
