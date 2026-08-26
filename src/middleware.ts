@@ -7,11 +7,9 @@ export async function middleware(request: NextRequest) {
   const isApiRequest = pathname.startsWith('/api');
 
   // USER cookies
-  const vclassAuth = request.cookies.get('vclass_auth')?.value;
   const moodleSession = request.cookies.get('MoodleSession')?.value;
   const jurusan = request.cookies.get('user_jurusan')?.value;
 
-  const isUserAuthenticated = !!moodleSession && vclassAuth === 'true';
   const isAllowedJurusan =
     jurusan?.includes('Sistem Informasi') || jurusan?.includes('Sistem Komputer');
 
@@ -23,6 +21,7 @@ export async function middleware(request: NextRequest) {
 
   // ROUTES
   const userProtectedRoutes = [
+    '/pemira/auth/validate',
     '/pemira/profile',
     '/pemira/profile/vote',
     '/pemira/profile/voter-data',
@@ -31,12 +30,16 @@ export async function middleware(request: NextRequest) {
 
   const adminProtectedRoutes = ['/pemira/admin/dashboard', '/pemira/admin/candidates'];
 
-  const authRoutes = ['/pemira', '/pemira/auth']; // user login
   const adminLoginRoute = '/pemira/admin/login';
 
   // ========= USER ACCESS CHECK ==========
   if (userProtectedRoutes.some((route) => pathname.startsWith(route))) {
-    if (!isUserAuthenticated || !isAllowedJurusan) {
+    const isValidationRoute = pathname.startsWith('/pemira/auth/validate');
+    const hasProfileAccess = isValidationRoute
+      ? Boolean(moodleSession)
+      : Boolean(moodleSession) && Boolean(isAllowedJurusan);
+
+    if (!hasProfileAccess) {
       const redirectUrl = new URL('/pemira/auth', request.url);
       redirectUrl.searchParams.set('redirect', pathname);
       return NextResponse.redirect(redirectUrl);
@@ -50,11 +53,6 @@ export async function middleware(request: NextRequest) {
       redirectUrl.searchParams.set('redirect', pathname);
       return NextResponse.redirect(redirectUrl);
     }
-  }
-
-  // ========= BLOCK USER LOGIN PAGE IF SUDAH LOGIN ==========
-  if (authRoutes.includes(pathname) && isUserAuthenticated) {
-    return NextResponse.redirect(new URL('/pemira/auth/validate', request.url));
   }
 
   // ========= BLOCK ADMIN LOGIN PAGE IF SUDAH LOGIN ==========

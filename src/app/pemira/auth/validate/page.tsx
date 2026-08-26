@@ -36,7 +36,11 @@ export default function DashboardPage() {
 
         if (!profileRes.ok) {
           if (profileRes.status === 401) {
-            window.location.href = `/pemira/auth`;
+            await fetch(`/api/logout?t=${Date.now()}`, {
+              method: "GET",
+              credentials: "include",
+            }).catch(() => undefined);
+            window.location.replace("/pemira/auth");
             return;
           }
           throw new Error(await profileRes.text());
@@ -76,9 +80,7 @@ export default function DashboardPage() {
       }
     };
 
-    fetchData();
-    const intervalId = setInterval(fetchData, 10000);
-    return () => clearInterval(intervalId);
+    void fetchData();
   }, []);
 
   const handleProceed = async () => {

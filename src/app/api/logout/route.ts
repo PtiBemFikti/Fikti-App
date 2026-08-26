@@ -4,7 +4,7 @@ import { cookies } from "next/headers";
 export const dynamic = "force-dynamic";
 
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
     // 1. Hapus cookies di server side
     const cookieStore = cookies();
@@ -13,7 +13,7 @@ export async function GET() {
     cookieStore.delete('user_jurusan');
 
     // 2. Buat response redirect
-    const response = NextResponse.redirect(new URL("/pemira/auth", "http://localhost:3000"));
+    const response = NextResponse.redirect(new URL("/pemira/auth", request.url));
 
     // 3. Set cookies untuk dihapus di client side
     const cookieOptions = {
