@@ -6,6 +6,7 @@ import PemiraLogoutButton from "@/components/pemira/LogoutButton";
 import { motion } from "framer-motion";
 import { FiCheckCircle, FiAlertCircle, FiX, FiInfo } from "react-icons/fi";
 import PemiraModal from "@/components/pemira/PemiraModal";
+import type { ProgramStudy } from "@/lib/scrapeProfile";
 
 interface UserData {
   name: string;
@@ -14,6 +15,7 @@ interface UserData {
   kodeKelas: string;
   isInformationSystem: boolean;
   isComputerSystem: boolean;
+  programStudy: ProgramStudy;
 }
 
 export default function DashboardPage() {
@@ -50,6 +52,7 @@ export default function DashboardPage() {
             kodeKelas,
             isInformationSystem,
             isComputerSystem,
+            programStudy,
           } = profileJson.data;
 
           setUserData({
@@ -59,6 +62,7 @@ export default function DashboardPage() {
             kodeKelas: kodeKelas || "Tidak tersedia",
             isInformationSystem,
             isComputerSystem,
+            programStudy,
           });
           setSubmitError("");
         } else {
@@ -84,16 +88,27 @@ export default function DashboardPage() {
     setSubmitError("");
 
     try {
-      // Validasi tambahan untuk kode kelas
-      if (
-        userData.kodeKelas === "Tidak Diketahui" ||
-        userData.kodeKelas === "Tidak tersedia"
-      ) {
-        throw new Error("Kode kelas tidak valid, silakan hubungi panitia");
+      if (userData.programStudy === "OTHER") {
+        setSubmitError("Program studi Anda tidak termasuk peserta PEMIRA ini.");
+        return;
+      }
+
+      if (userData.programStudy === "UNKNOWN") {
+        setSubmitError(
+          "Program studi Anda tidak dapat diverifikasi. Silakan hubungi panitia."
+        );
+        return;
+      }
+
+      if (!/^\d{1,3}(KA|KB)\d{2,4}$/i.test(userData.kodeKelas.trim())) {
+        setSubmitError(
+          "Kode kelas Anda tidak dapat diverifikasi. Silakan hubungi panitia."
+        );
+        return;
       }
 
       if (!userData.isInformationSystem && !userData.isComputerSystem) {
-        setShowBlockedModal(true);
+        setSubmitError("Program studi Anda tidak termasuk peserta PEMIRA ini.");
         return;
       }
 
@@ -214,7 +229,17 @@ export default function DashboardPage() {
               {[
                 { label: "Nama", value: userData?.name },
                 { label: "NPM", value: userData?.npm },
-                { label: "Program Studi", value: userData?.jurusan },
+                {
+                  label: "Program Studi",
+                  value:
+                    userData?.programStudy === "SISTEM_INFORMASI"
+                      ? "Sistem Informasi"
+                      : userData?.programStudy === "SISTEM_KOMPUTER"
+                        ? "Sistem Komputer"
+                        : userData?.programStudy === "OTHER"
+                          ? "Program studi di luar peserta PEMIRA"
+                          : "Tidak dapat diverifikasi",
+                },
                 {
                   label: "Kode Kelas atau Kode Jurusan",
                   value: userData?.kodeKelas,
@@ -246,9 +271,8 @@ export default function DashboardPage() {
           >
             <FiInfo className="text-[#AA83C2] mt-0.5 flex-shrink-0" />
             <p className="text-sm">
-              Pemira tidak mengambil data anda dari V-Class secara langsung.
-              Sistem menggunakan teknik web scraping untuk memverifikasi data
-              akademik Anda.
+              Sistem menggunakan data profil V-Class Anda untuk memverifikasi
+              identitas dan hak pilih PEMIRA.
             </p>
           </motion.div>
 

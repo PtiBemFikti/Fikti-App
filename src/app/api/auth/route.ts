@@ -97,10 +97,14 @@ export async function POST(req: Request): Promise<NextResponse<LoginResponse>> {
     return response;
   } catch (err) {
     const error = err as Error & { response?: AxiosResponse };
-    console.error('[API AUTH ERROR]', error.response?.status, error.response?.data, error.message);
+    console.error(
+      '[API AUTH ERROR]',
+      error.response?.status ?? 'unknown-status',
+      axios.isAxiosError(err) ? 'vclass-request-failed' : 'unexpected-error'
+    );
 
     return NextResponse.json(
-      { success: false, message: error.message || 'Internal Server Error' },
+      { success: false, message: 'Login V-Class gagal diproses' },
       { status: 500 }
     );
     }

@@ -1,8 +1,16 @@
 // app/api/vote/check/route.ts
 import { NextResponse } from "next/server";
 import { getSupabaseServer } from "@/lib/supabase-server";
-import { getProfileFromCookie } from "@/lib/getUserProfile";
+import {
+  getProfileFromCookie,
+  isProfileSessionError,
+} from "@/lib/getUserProfile";
 import { ElectionSlug, VoteCheckResponse } from "@/types/pemira";
+import {
+  getVoterIdentityIssue,
+  VClassProfileError,
+} from "@/lib/scrapeProfile";
+import { isEligibleForElection } from "@/lib/pemira-eligibility";
 
 export const dynamic = 'force-dynamic';
 
@@ -10,7 +18,14 @@ export async function GET() {
   try {
     const supabaseServer = getSupabaseServer();
     const profile = await getProfileFromCookie();
-    const { npm, jurusan } = profile;
+    if (getVoterIdentityIssue(profile)) {
+      return NextResponse.json(
+        { success: false, message: "Data profil mahasiswa tidak dapat diverifikasi." },
+        { status: 422 }
+      );
+    }
+
+    const { npm } = profile;
 
     const { data: elections, error: electionError } = await supabaseServer
       .from("pemira_elections")
@@ -26,15 +41,19 @@ export async function GET() {
 
     if (voteError) throw voteError;
 
-    const isInformationSystem = jurusan.includes("Sistem Informasi");
-    const isComputerSystem = jurusan.includes("Sistem Komputer");
     const votedElectionIds = new Set(
       (votes ?? []).map((vote) => String(vote.election_id))
     );
 
     const data: VoteCheckResponse = {
-      bem: { eligible: isInformationSystem || isComputerSystem, hasVoted: false },
-      himsi: { eligible: isInformationSystem, hasVoted: false },
+      bem: {
+        eligible: isEligibleForElection(profile.programStudy, "bem"),
+        hasVoted: false,
+      },
+      himsi: {
+        eligible: isEligibleForElection(profile.programStudy, "himsi"),
+        hasVoted: false,
+      },
     };
 
     for (const election of elections ?? []) {
@@ -49,10 +68,25 @@ export async function GET() {
       data,
     });
   } catch (err) {
-    const error = err as Error;
-    console.error("[CHECK VOTE ERROR]", error.message);
+    if (isProfileSessionError(err)) {
+      return NextResponse.json(
+        { success: false, message: "Session V-Class telah berakhir. Silakan login kembali." },
+        { status: 401 }
+      );
+    }
+    if (err instanceof VClassProfileError) {
+      return NextResponse.json(
+        { success: false, message: "Data profil mahasiswa tidak dapat diverifikasi." },
+        { status: 422 }
+      );
+    }
+
+    console.error(
+      "[CHECK VOTE ERROR]",
+      err instanceof Error ? err.name : "UnknownError"
+    );
     return NextResponse.json(
-      { success: false, message: error.message || "Terjadi kesalahan saat memeriksa status vote" },
+      { success: false, message: "Status voting tidak dapat diperiksa saat ini." },
       { status: 500 }
     );
   }
