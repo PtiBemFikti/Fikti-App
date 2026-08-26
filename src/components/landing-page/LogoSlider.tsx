@@ -41,7 +41,7 @@ export default function LogoSlider() {
 
       {/* Slider Content */}
       <div className="flex animate-infinite-scroll whitespace-nowrap">
-        {Array(4)
+        {Array(2)
           .fill(departments)
           .flat()
           .map((dept, index) => (

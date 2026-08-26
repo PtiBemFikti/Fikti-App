@@ -273,24 +273,6 @@ body {
   animation: slide 20s linear infinite;
 }
 
-@keyframes infinite-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.animate-infinite-scroll {
-  animation: infinite-scroll 30s linear infinite;
-}
-@media (max-width: 640px) {
-  .animate-infinite-scroll {
-    animation-duration: 10s;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -400,9 +382,14 @@ body {
 
 .animate-infinite-scroll {
   display: flex;
-  animation: infinite-scroll 40s linear infinite;
   width: max-content;
-  animation-play-state: running;
+}
+
+@media (min-width: 641px) {
+  .animate-infinite-scroll {
+    animation: infinite-scroll 40s linear infinite;
+    animation-play-state: running;
+  }
 }
 
 /* for filing */
