@@ -123,7 +123,7 @@ export default function PemiraCountdownSection() {
                 Pemilihan dibuka mulai 27 Agustus 2026 pukul 10:00 WIB
               </div>
               <a
-                href="/vote"
+                href="/pemira/auth"
                 className="px-8 py-4 bg-[#19554B] text-[#DADED1] rounded-full text-lg font-semibold hover:bg-[#0E2E28] transition-colors shadow-lg hover:shadow-xl flex items-center gap-2"
               >
                 VOTE SEKARANG <span className="text-xl">→</span>
