@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
-import { CandidatePair, ElectionVoteStatus, PemiraElection } from "@/types/pemira";
+import {
+  ElectionVoteStatus,
+  PemiraElection,
+  PendingVote,
+} from "@/types/pemira";
 import Image from "next/image";
 import { FiUsers } from "react-icons/fi";
 import CandidatePortrait from "../CandidatePortrait";
@@ -7,15 +11,17 @@ import CandidatePortrait from "../CandidatePortrait";
 interface CandidateListProps {
   election: PemiraElection;
   status: ElectionVoteStatus;
-  handleVote: (candidate: CandidatePair) => void;
+  handleVote: (selection: PendingVote) => void;
+  selectedVote: PendingVote | null;
 }
 
-export default function CandidateList({ election, status, handleVote }: CandidateListProps) {
-  // Null is a visual placeholder only; it is never sent to the API or database.
-  const slots: Array<CandidatePair | null> = Array.from(
-    { length: Math.max(2, election.candidates.length) },
-    (_, index) => election.candidates[index] ?? null
-  );
+export default function CandidateList({
+  election,
+  status,
+  handleVote,
+  selectedVote,
+}: CandidateListProps) {
+  const showsEmptyChoice = election.candidates.length === 1;
 
   return (
     <motion.div
@@ -51,20 +57,32 @@ export default function CandidateList({ election, status, handleVote }: Candidat
               ? "Anda tidak memenuhi syarat untuk election ini."
               : status.hasVoted
                 ? "Anda sudah memilih untuk election ini."
-                : "Pilih salah satu pasangan calon di bawah ini."}
+                : showsEmptyChoice
+                  ? "Pilih pasangan calon atau Kotak Kosong."
+                  : "Pilih salah satu pasangan calon di bawah ini."}
           </p>
         </div>
       </div>
 
       <div className="p-3 sm:p-6">
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
-          {slots.map((candidate, index) => candidate ? (
+          {election.candidates.map((candidate, index) => {
+            const isSelected =
+              selectedVote?.choice === "candidate" &&
+              String(selectedVote.election.id) === String(election.id) &&
+              String(selectedVote.candidate?.id) === String(candidate.id);
+
+            return (
             <motion.div
               key={candidate.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="overflow-hidden rounded-2xl border border-[#DEDAD1] bg-white shadow-[0_10px_26px_rgba(25,85,75,0.08)]"
+              className={`overflow-hidden rounded-2xl border bg-white shadow-[0_10px_26px_rgba(25,85,75,0.08)] transition-colors ${
+                isSelected
+                  ? "border-[#79558E] ring-2 ring-[#79558E]/30"
+                  : "border-[#DEDAD1]"
+              }`}
             >
               <div className="relative aspect-[16/10] w-full bg-[#19554B]">
                 <div className="grid h-full grid-cols-2 gap-px bg-white/30">
@@ -93,26 +111,54 @@ export default function CandidateList({ election, status, handleVote }: Candidat
                   Ketua dan Wakil Ketua {election.name}
                 </p>
                 <button
-                  onClick={() => handleVote(candidate)}
+                  onClick={() =>
+                    handleVote({
+                      election,
+                      choice: "candidate",
+                      candidate,
+                    })
+                  }
                   disabled={!status.eligible || status.hasVoted}
-                  className="mt-5 w-full rounded-xl bg-[#19554B] px-4 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#134239] disabled:cursor-not-allowed disabled:opacity-50"
+                  aria-pressed={isSelected}
+                  className="mt-5 w-full rounded-xl bg-[#19554B] px-4 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#134239] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#79558E] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {status.hasVoted ? "Sudah Memilih" : "Pilih Pasangan Ini"}
                 </button>
               </div>
             </motion.div>
-          ) : (
-            <div
-              key={`empty-${election.slug}`}
-              aria-hidden="true"
-              className="flex min-h-[180px] items-center justify-center rounded-2xl border-2 border-dashed border-[#19554B]/20 bg-[#F5F3EF] text-[#19554B]/45 sm:min-h-[220px] md:min-h-[280px]"
+            );
+          })}
+
+          {showsEmptyChoice && (
+            <button
+              type="button"
+              aria-label="Pilih Kotak Kosong"
+              aria-pressed={
+                selectedVote?.choice === "empty" &&
+                String(selectedVote.election.id) === String(election.id)
+              }
+              onClick={() =>
+                handleVote({ election, choice: "empty", candidate: null })
+              }
+              disabled={!status.eligible || status.hasVoted}
+              className={`flex min-h-[180px] cursor-pointer items-center justify-center rounded-2xl border-2 border-dashed bg-[#F5F3EF] text-[#19554B]/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#79558E] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sm:min-h-[220px] md:min-h-[280px] ${
+                selectedVote?.choice === "empty" &&
+                String(selectedVote.election.id) === String(election.id)
+                  ? "border-[#79558E] bg-[#F2ECF5] ring-2 ring-[#79558E]/25"
+                  : "border-[#19554B]/25 hover:border-[#19554B]/45 hover:bg-[#EFEBE4]"
+              }`}
             >
-              <div className="flex flex-col items-center gap-3">
+              <span className="flex flex-col items-center gap-3">
                 <FiUsers className="h-12 w-12 stroke-[1.25]" aria-hidden="true" />
-                <p className="text-sm font-semibold tracking-wide">Kotak Kosong</p>
-              </div>
-            </div>
-          ))}
+                <span className="text-sm font-semibold tracking-wide">
+                  Kotak Kosong
+                </span>
+                {status.hasVoted && (
+                  <span className="text-xs font-medium">Sudah Memilih</span>
+                )}
+              </span>
+            </button>
+          )}
         </div>
       </div>
     </motion.div>

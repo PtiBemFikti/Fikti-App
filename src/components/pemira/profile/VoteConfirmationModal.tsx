@@ -1,19 +1,20 @@
 import PemiraModal from "@/components/pemira/PemiraModal";
 import { useState } from "react";
-import { CandidatePair } from "@/types/pemira";
+import { PendingVote } from "@/types/pemira";
 import CandidatePortrait from "../CandidatePortrait";
+import { FiUsers } from "react-icons/fi";
 
 interface VoteConfirmationModalProps {
   isOpen: boolean;
   onClose: () => void;
-  candidate: CandidatePair | null | undefined;
+  selection: PendingVote | null;
   onConfirm: () => Promise<void>;
 }
 
 export default function VoteConfirmationModal({
   isOpen,
   onClose,
-  candidate,
+  selection,
   onConfirm,
 }: VoteConfirmationModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,32 +33,45 @@ export default function VoteConfirmationModal({
   return (
     <PemiraModal isOpen={isOpen} onClose={onClose} title="Konfirmasi Vote">
       <div className="mb-6">
-        {candidate && (
+        {selection?.choice === "candidate" && selection.candidate && (
           <div className="flex flex-col items-center mb-4">
             <div className="mb-4 grid w-full max-w-sm grid-cols-2 gap-2 overflow-hidden rounded-xl bg-[#19554B]">
               <CandidatePortrait
-                person={candidate.chairman}
+                person={selection.candidate.chairman}
                 role="Ketua"
                 sizes="(max-width: 640px) 45vw, 180px"
                 className="aspect-[4/3]"
               />
               <CandidatePortrait
-                person={candidate.viceChairman}
+                person={selection.candidate.viceChairman}
                 role="Wakil Ketua"
                 sizes="(max-width: 640px) 45vw, 180px"
                 className="aspect-[4/3]"
               />
             </div>
             <h3 className="text-center text-lg font-bold leading-tight text-[#19554B]">
-              <span className="block">{candidate.chairman.name}</span>
+              <span className="block">{selection.candidate.chairman.name}</span>
               <span className="my-1 block text-sm font-medium text-[#AA83C2]">&amp;</span>
-              <span className="block">{candidate.viceChairman.name}</span>
+              <span className="block">{selection.candidate.viceChairman.name}</span>
+            </h3>
+          </div>
+        )}
+
+        {selection?.choice === "empty" && (
+          <div className="mb-4 flex flex-col items-center">
+            <div className="flex h-28 w-full max-w-sm items-center justify-center rounded-xl border-2 border-dashed border-[#19554B]/25 bg-[#F5F3EF] text-[#19554B]/60">
+              <FiUsers className="h-12 w-12 stroke-[1.25]" aria-hidden="true" />
+            </div>
+            <h3 className="mt-4 text-center text-lg font-bold text-[#19554B]">
+              Kotak Kosong
             </h3>
           </div>
         )}
 
         <p className="text-gray-700 mb-4 text-center">
-          Anda yakin ingin memilih kandidat ini?
+          {selection?.choice === "empty"
+            ? `Anda yakin ingin memilih Kotak Kosong untuk ${selection.election.name}?`
+            : `Anda yakin ingin memilih Paslon ${selection?.candidate?.ballotNumber ?? "ini"}?`}
         </p>
         <div className="bg-[#F9F9F9] p-3 rounded border border-[#DEDAD1]">
           <p className="text-xs text-gray-500 text-center">

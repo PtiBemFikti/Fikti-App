@@ -34,6 +34,14 @@ export type ElectionVoteStatus = {
 
 export type VoteCheckResponse = Record<ElectionSlug, ElectionVoteStatus>;
 
+export type VoteChoice = "candidate" | "empty";
+
+export type PendingVote = {
+  election: PemiraElection;
+  choice: VoteChoice;
+  candidate: CandidatePair | null;
+};
+
 /** Legacy admin shape kept until the admin dashboard is migrated. */
 export type Kandidat = {
   id: string;
@@ -67,6 +75,7 @@ export type AdminElectionResult = {
   slug: ElectionSlug;
   name: string;
   totalVotes: number;
+  emptyVoteCount: number;
   candidates: AdminCandidateResult[];
 };
 

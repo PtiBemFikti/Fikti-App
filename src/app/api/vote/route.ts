@@ -5,7 +5,7 @@ import {
   isProfileSessionError,
 } from "@/lib/getUserProfile";
 import { isPemiraOpen } from "@/lib/pemira-config";
-import { ElectionSlug } from "@/types/pemira";
+import { ElectionSlug, VoteChoice } from "@/types/pemira";
 import {
   getVoterIdentityIssue,
   VClassProfileError,
@@ -23,7 +23,64 @@ export async function POST(request: Request) {
       );
     }
 
-    const { id: candidateId } = await request.json();
+    let body: unknown;
+    try {
+      body = await request.json();
+    } catch {
+      return NextResponse.json(
+        { success: false, message: "Payload vote tidak valid" },
+        { status: 400 }
+      );
+    }
+
+    if (!body || typeof body !== "object" || Array.isArray(body)) {
+      return NextResponse.json(
+        { success: false, message: "Pilihan vote tidak valid" },
+        { status: 400 }
+      );
+    }
+
+    const requestBody = body as Record<string, unknown>;
+    const electionId = requestBody.electionId;
+    const choice = requestBody.choice;
+    const candidateId = requestBody.candidateId;
+
+    if (
+      !isPositiveDatabaseId(electionId) ||
+      (choice !== "candidate" && choice !== "empty")
+    ) {
+      return NextResponse.json(
+        { success: false, message: "Election dan pilihan vote wajib diisi" },
+        { status: 400 }
+      );
+    }
+
+    const voteChoice: VoteChoice = choice;
+    const hasCandidateId = Object.prototype.hasOwnProperty.call(
+      requestBody,
+      "candidateId"
+    );
+
+    if (voteChoice === "empty" && hasCandidateId) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Kotak Kosong tidak boleh menyertakan candidateId",
+        },
+        { status: 400 }
+      );
+    }
+
+    if (
+      voteChoice === "candidate" &&
+      !isPositiveDatabaseId(candidateId)
+    ) {
+      return NextResponse.json(
+        { success: false, message: "Candidate ID wajib diisi" },
+        { status: 400 }
+      );
+    }
+
     const profile = await getProfileFromCookie();
     const identityIssue = getVoterIdentityIssue(profile);
     if (identityIssue === "other-program") {
@@ -55,30 +112,10 @@ export async function POST(request: Request) {
 
     const supabaseServer = getSupabaseServer();
 
-    if (candidateId === undefined || candidateId === null || candidateId === "") {
-      return NextResponse.json(
-        { success: false, message: "Candidate ID is required" },
-        { status: 400 }
-      );
-    }
-
-    const { data: candidate, error: candidateError } = await supabaseServer
-      .from("pemira_kandidat")
-      .select("id, election_id")
-      .eq("id", candidateId)
-      .single();
-
-    if (candidateError || !candidate) {
-      return NextResponse.json(
-        { success: false, message: "Kandidat tidak ditemukan" },
-        { status: 404 }
-      );
-    }
-
     const { data: election, error: electionError } = await supabaseServer
       .from("pemira_elections")
       .select("id, slug, name")
-      .eq("id", candidate.election_id)
+      .eq("id", electionId)
       .single();
 
     if (electionError || !election) {
@@ -89,6 +126,13 @@ export async function POST(request: Request) {
     }
 
     const electionSlug = election.slug as ElectionSlug;
+    if (electionSlug !== "bem" && electionSlug !== "himsi") {
+      return NextResponse.json(
+        { success: false, message: "Election tidak didukung" },
+        { status: 400 }
+      );
+    }
+
     const eligible = isEligibleForElection(profile.programStudy, electionSlug);
 
     if (!eligible) {
@@ -98,12 +142,54 @@ export async function POST(request: Request) {
       );
     }
 
+    let storedCandidateId: number | string | null = null;
+
+    if (voteChoice === "candidate") {
+      const { data: candidate, error: candidateError } = await supabaseServer
+        .from("pemira_kandidat")
+        .select("id, election_id")
+        .eq("id", candidateId)
+        .eq("election_id", election.id)
+        .single();
+
+      if (candidateError || !candidate) {
+        return NextResponse.json(
+          {
+            success: false,
+            message: "Kandidat tidak ditemukan pada election ini",
+          },
+          { status: 404 }
+        );
+      }
+
+      storedCandidateId = candidate.id;
+    } else {
+      const { count, error: candidateCountError } = await supabaseServer
+        .from("pemira_kandidat")
+        .select("id", { count: "exact", head: true })
+        .eq("election_id", election.id);
+
+      if (candidateCountError) throw candidateCountError;
+
+      if (count !== 1) {
+        return NextResponse.json(
+          {
+            success: false,
+            message:
+              "Kotak Kosong hanya tersedia untuk election dengan satu pasangan calon",
+          },
+          { status: 400 }
+        );
+      }
+    }
+
     const { error } = await supabaseServer.from("pemira_votes").insert({
       npm,
       program_studi: profile.programStudy,
       kelas: classCode,
-      election_id: candidate.election_id,
-      candidate_id: candidate.id,
+      election_id: election.id,
+      candidate_id: storedCandidateId,
+      vote_choice: voteChoice,
     });
 
     if (error) {
@@ -124,8 +210,9 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       data: {
-        electionId: candidate.election_id,
-        candidateId: candidate.id,
+        electionId: election.id,
+        candidateId: storedCandidateId,
+        choice: voteChoice,
       },
     });
   } catch (err) {
@@ -151,4 +238,11 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
+}
+
+function isPositiveDatabaseId(value: unknown): value is number | string {
+  if (typeof value !== "string" && typeof value !== "number") return false;
+
+  const normalized = String(value).trim();
+  return /^\d+$/.test(normalized) && Number(normalized) > 0;
 }

@@ -4,8 +4,11 @@ import { getAdminSession } from "@/lib/admin-session";
 import {
   AdminDashboardData,
   AdminVoter,
+  AdminVoterElectionStatus,
   ElectionSlug,
+  VoteChoice,
 } from "@/types/pemira";
+import { isEligibleForElection } from "@/lib/pemira-eligibility";
 
 export const dynamic = "force-dynamic";
 
@@ -29,6 +32,7 @@ type VoteRow = {
   npm: string | null;
   election_id: number | string | null;
   candidate_id: number | string | null;
+  vote_choice: VoteChoice;
 };
 
 const electionSlugs: ElectionSlug[] = ["bem", "himsi"];
@@ -60,7 +64,7 @@ export async function GET() {
           .order("created_at", { ascending: false }),
         supabaseServer
           .from("pemira_votes")
-          .select("npm, election_id, candidate_id"),
+          .select("npm, election_id, candidate_id, vote_choice"),
       ]);
 
     if (electionResult.error) throw electionResult.error;
@@ -74,10 +78,11 @@ export async function GET() {
     const votes = (voteResult.data ?? []) as VoteRow[];
     const voteCountByCandidate = new Map<string, number>();
     const voteCountByElection = new Map<string, number>();
+    const emptyVoteCountByElection = new Map<string, number>();
     const votedElectionIdsByNpm = new Map<string, Set<string>>();
 
     for (const vote of votes) {
-      if (vote.candidate_id !== null) {
+      if (vote.vote_choice === "candidate" && vote.candidate_id !== null) {
         const candidateKey = String(vote.candidate_id);
         voteCountByCandidate.set(
           candidateKey,
@@ -91,6 +96,13 @@ export async function GET() {
           electionKey,
           (voteCountByElection.get(electionKey) ?? 0) + 1
         );
+
+        if (vote.vote_choice === "empty") {
+          emptyVoteCountByElection.set(
+            electionKey,
+            (emptyVoteCountByElection.get(electionKey) ?? 0) + 1
+          );
+        }
 
         if (vote.npm) {
           const votedElections =
@@ -112,6 +124,8 @@ export async function GET() {
           slug: election.slug as ElectionSlug,
           name: election.name,
           totalVotes: voteCountByElection.get(String(election.id)) ?? 0,
+          emptyVoteCount:
+            emptyVoteCountByElection.get(String(election.id)) ?? 0,
           candidates: candidates
             .filter(
               (candidate) =>
@@ -129,7 +143,6 @@ export async function GET() {
         })),
       voters: voters.map((voter): AdminVoter => {
         const programStudi = voter.program_studi ?? "";
-        const isInformationSystem = programStudi.includes("Sistem Informasi");
         const votedElections = voter.npm
           ? votedElectionIdsByNpm.get(voter.npm) ?? new Set<string>()
           : new Set<string>();
@@ -139,14 +152,18 @@ export async function GET() {
           npm: voter.npm ?? "",
           programStudi,
           kelas: voter.kelas ?? "",
-          bem: votedElections.has(electionIdBySlug.get("bem") ?? "")
-            ? "voted"
-            : "not-voted",
-          himsi: !isInformationSystem
-            ? "not-eligible"
-            : votedElections.has(electionIdBySlug.get("himsi") ?? "")
-              ? "voted"
-              : "not-voted",
+          bem: getVoterElectionStatus(
+            programStudi,
+            "bem",
+            votedElections,
+            electionIdBySlug
+          ),
+          himsi: getVoterElectionStatus(
+            programStudi,
+            "himsi",
+            votedElections,
+            electionIdBySlug
+          ),
           createdAt: voter.created_at,
         };
       }),
@@ -163,4 +180,20 @@ export async function GET() {
       { status: 500 }
     );
   }
+}
+
+function getVoterElectionStatus(
+  programStudy: string,
+  electionSlug: ElectionSlug,
+  votedElectionIds: Set<string>,
+  electionIdBySlug: Map<string, string>
+): AdminVoterElectionStatus {
+  if (!isEligibleForElection(programStudy, electionSlug)) {
+    return "not-eligible";
+  }
+
+  const electionId = electionIdBySlug.get(electionSlug);
+  return electionId && votedElectionIds.has(electionId)
+    ? "voted"
+    : "not-voted";
 }

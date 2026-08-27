@@ -2,6 +2,7 @@
 
 import { AdminElectionResult } from "@/types/pemira";
 import Image from "next/image";
+import { FiUsers } from "react-icons/fi";
 import * as XLSX from "xlsx";
 
 type KandidatTableProps = { elections: AdminElectionResult[] };
@@ -9,13 +10,22 @@ type KandidatTableProps = { elections: AdminElectionResult[] };
 export default function KandidatTable({ elections }: KandidatTableProps) {
   const exportToExcel = () => {
     const rows = elections.flatMap((election) =>
-      election.candidates.map((candidate) => ({
-        Election: election.name,
-        "Nomor Paslon": candidate.ballotNumber,
-        Ketua: candidate.chairmanName,
-        "Wakil Ketua": candidate.viceChairmanName,
-        Suara: candidate.voteCount,
-      }))
+      [
+        ...election.candidates.map((candidate) => ({
+          Election: election.name,
+          Opsi: `Paslon ${candidate.ballotNumber || "-"}`,
+          Ketua: candidate.chairmanName,
+          "Wakil Ketua": candidate.viceChairmanName,
+          Suara: candidate.voteCount,
+        })),
+        {
+          Election: election.name,
+          Opsi: "Kotak Kosong",
+          Ketua: "-",
+          "Wakil Ketua": "-",
+          Suara: election.emptyVoteCount,
+        },
+      ]
     );
     const worksheet = XLSX.utils.json_to_sheet(rows);
     const workbook = XLSX.utils.book_new();
@@ -38,7 +48,7 @@ export default function KandidatTable({ elections }: KandidatTableProps) {
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
             <tr>
-              {['Election', 'Paslon', 'Ketua + Wakil Ketua', 'Suara'].map((heading) => (
+              {['Election', 'Opsi', 'Ketua + Wakil Ketua', 'Suara'].map((heading) => (
                 <th key={heading} className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500">
                   {heading}
                 </th>
@@ -46,8 +56,8 @@ export default function KandidatTable({ elections }: KandidatTableProps) {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white text-black">
-            {elections.flatMap((election) =>
-              election.candidates.map((candidate) => (
+            {elections.flatMap((election) => [
+              ...election.candidates.map((candidate) => (
                 <tr key={candidate.id}>
                   <td className="whitespace-nowrap px-6 py-4 text-sm font-semibold text-gray-900">{election.name}</td>
                   <td className="whitespace-nowrap px-6 py-4">{candidate.ballotNumber || "-"}</td>
@@ -72,8 +82,27 @@ export default function KandidatTable({ elections }: KandidatTableProps) {
                     </span>
                   </td>
                 </tr>
-              ))
-            )}
+              )),
+              <tr key={`${election.id}-empty`}>
+                <td className="whitespace-nowrap px-6 py-4 text-sm font-semibold text-gray-900">
+                  {election.name}
+                </td>
+                <td className="whitespace-nowrap px-6 py-4">Kotak Kosong</td>
+                <td className="whitespace-nowrap px-6 py-4">
+                  <div className="flex items-center gap-3 text-sm font-medium text-gray-700">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-500">
+                      <FiUsers className="h-5 w-5" aria-hidden="true" />
+                    </span>
+                    <span>Kotak Kosong</span>
+                  </div>
+                </td>
+                <td className="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                  <span className="inline-flex rounded-full bg-gray-100 px-2 text-xs font-semibold leading-5 text-gray-700">
+                    {election.emptyVoteCount} suara
+                  </span>
+                </td>
+              </tr>,
+            ])}
           </tbody>
         </table>
       </div>
