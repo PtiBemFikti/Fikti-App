@@ -30,7 +30,7 @@ export async function POST() {
       .from("pemira_voters")
       .select("id")
       .eq("npm", npm)
-      .single();
+      .maybeSingle();
 
     if (existing) {
       return NextResponse.json({
