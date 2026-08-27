@@ -2,6 +2,7 @@
 
 import StatCard from "./StatCard";
 import { AdminElectionResult } from "@/types/pemira";
+import ElectionAnalytics from "./ElectionAnalytics";
 
 type StatsCardsProps = {
   elections: AdminElectionResult[];
@@ -28,6 +29,7 @@ export default function StatsCards({ elections }: StatsCardsProps) {
               color="purple"
             />
           </div>
+          <ElectionAnalytics election={election} />
         </section>
       ))}
     </div>

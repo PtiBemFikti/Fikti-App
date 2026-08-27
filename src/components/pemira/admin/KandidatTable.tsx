@@ -34,17 +34,21 @@ export default function KandidatTable({ elections }: KandidatTableProps) {
   };
 
   return (
-    <div className="rounded-lg bg-white p-6 shadow">
-      <div className="mb-4 flex items-center justify-between">
+    <section className="rounded-xl bg-white p-4 shadow sm:p-6">
+      <div className="mb-4 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h2 className="text-xl font-semibold">Hasil Kandidat</h2>
           <p className="text-sm text-gray-500">Agregat suara dari pemira_votes</p>
         </div>
-        <button onClick={exportToExcel} className="rounded-md bg-green-600 px-3 py-1 text-sm text-white hover:bg-green-700">
+        <button
+          type="button"
+          onClick={exportToExcel}
+          className="w-full rounded-lg bg-green-700 px-4 py-2 text-sm font-semibold text-white hover:bg-green-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-700 focus-visible:ring-offset-2 sm:w-auto"
+        >
           Export Excel
         </button>
       </div>
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto rounded-lg border border-gray-200">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
             <tr>
@@ -106,6 +110,6 @@ export default function KandidatTable({ elections }: KandidatTableProps) {
           </tbody>
         </table>
       </div>
-    </div>
+    </section>
   );
 }

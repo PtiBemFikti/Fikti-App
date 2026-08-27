@@ -116,32 +116,8 @@ export async function GET() {
     const electionIdBySlug = new Map(
       elections.map((election) => [election.slug, String(election.id)])
     );
-    const response: AdminDashboardData = {
-      elections: elections
-        .filter((election) => electionSlugs.includes(election.slug as ElectionSlug))
-        .map((election) => ({
-          id: election.id,
-          slug: election.slug as ElectionSlug,
-          name: election.name,
-          totalVotes: voteCountByElection.get(String(election.id)) ?? 0,
-          emptyVoteCount:
-            emptyVoteCountByElection.get(String(election.id)) ?? 0,
-          candidates: candidates
-            .filter(
-              (candidate) =>
-                String(candidate.election_id) === String(election.id)
-            )
-            .map((candidate) => ({
-              id: candidate.id,
-              ballotNumber: String(candidate.ballot_number ?? ""),
-              chairmanName: candidate.chairman_name ?? "",
-              chairmanImage: candidate.chairman_image ?? "",
-              viceChairmanName: candidate.vice_chairman_name ?? "",
-              voteCount: voteCountByCandidate.get(String(candidate.id)) ?? 0,
-            }))
-            .sort((a, b) => b.voteCount - a.voteCount),
-        })),
-      voters: voters.map((voter): AdminVoter => {
+    const adminVoters = voters
+      .map((voter): AdminVoter => {
         const programStudi = voter.program_studi ?? "";
         const votedElections = voter.npm
           ? votedElectionIdsByNpm.get(voter.npm) ?? new Set<string>()
@@ -166,10 +142,85 @@ export async function GET() {
           ),
           createdAt: voter.created_at,
         };
-      }),
+      })
+      .sort((a, b) =>
+        a.npm.localeCompare(b.npm, "id-ID", { numeric: true })
+      );
+
+    const adminElections = elections
+      .filter((election) =>
+        electionSlugs.includes(election.slug as ElectionSlug)
+      )
+      .map((election) => {
+        const slug = election.slug as ElectionSlug;
+        const electionId = String(election.id);
+        const candidateResults = candidates
+          .filter(
+            (candidate) =>
+              String(candidate.election_id) === electionId
+          )
+          .map((candidate) => ({
+            id: candidate.id,
+            ballotNumber: String(candidate.ballot_number ?? ""),
+            chairmanName: candidate.chairman_name ?? "",
+            chairmanImage: candidate.chairman_image ?? "",
+            viceChairmanName: candidate.vice_chairman_name ?? "",
+            voteCount: voteCountByCandidate.get(String(candidate.id)) ?? 0,
+          }))
+          .sort((a, b) =>
+            a.ballotNumber.localeCompare(b.ballotNumber, "id-ID", {
+              numeric: true,
+            })
+          );
+        const emptyVoteCount = emptyVoteCountByElection.get(electionId) ?? 0;
+        const totalVotes = voteCountByElection.get(electionId) ?? 0;
+        const optionVoteTotal =
+          candidateResults.reduce(
+            (total, candidate) => total + candidate.voteCount,
+            0
+          ) + emptyVoteCount;
+
+        if (optionVoteTotal !== totalVotes) {
+          throw new Error(
+            `Vote aggregate mismatch for election ${electionId}`
+          );
+        }
+
+        const eligibleVoters = adminVoters.filter(
+          (voter) => voter[slug] !== "not-eligible"
+        );
+        const votedVoterCount = eligibleVoters.filter(
+          (voter) => voter[slug] === "voted"
+        ).length;
+        const eligibleVoterCount = eligibleVoters.length;
+
+        return {
+          id: election.id,
+          slug,
+          name: election.name,
+          totalVotes,
+          emptyVoteCount,
+          eligibleVoterCount,
+          votedVoterCount,
+          notVotedVoterCount: eligibleVoterCount - votedVoterCount,
+          turnoutPercentage:
+            eligibleVoterCount > 0
+              ? (votedVoterCount / eligibleVoterCount) * 100
+              : 0,
+          candidates: candidateResults,
+        };
+      });
+
+    const response: AdminDashboardData = {
+      elections: adminElections,
+      voters: adminVoters,
+      trackedVoterCount: adminVoters.length,
     };
 
-    return NextResponse.json({ success: true, data: response });
+    return NextResponse.json(
+      { success: true, data: response },
+      { headers: { "Cache-Control": "no-store, max-age=0" } }
+    );
   } catch (error) {
     console.error(
       "[ADMIN PEMIRA DASHBOARD ERROR]",

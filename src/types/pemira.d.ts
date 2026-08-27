@@ -76,6 +76,10 @@ export type AdminElectionResult = {
   name: string;
   totalVotes: number;
   emptyVoteCount: number;
+  eligibleVoterCount: number;
+  votedVoterCount: number;
+  notVotedVoterCount: number;
+  turnoutPercentage: number;
   candidates: AdminCandidateResult[];
 };
 
@@ -94,6 +98,7 @@ export type AdminVoter = {
 export type AdminDashboardData = {
   elections: AdminElectionResult[];
   voters: AdminVoter[];
+  trackedVoterCount: number;
 };
 
 export type AdminManagedCandidate = {
