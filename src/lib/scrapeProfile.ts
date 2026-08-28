@@ -45,6 +45,17 @@ type ParsedCourse = {
   classCode: string | null;
   major: string;
   sourceText: string;
+  sourceIndex: number;
+};
+
+type RankedClassCode = {
+  classCode: string;
+  academicStartYear: number | null;
+  academicEndYear: number | null;
+  termRank: number;
+  level: number;
+  classNumber: number;
+  sourceIndex: number;
 };
 
 const NPM_PATTERN = /^\d{6,12}$/;
@@ -90,6 +101,84 @@ function normalizeClassCode(value: string): string | null {
 
   const normalized = match[0].replace(/\s+/g, "").toUpperCase();
   return normalized.length > 3 ? normalized : null;
+}
+
+function getAcademicPeriod(sourceText: string): {
+  startYear: number | null;
+  endYear: number | null;
+  termRank: number;
+} {
+  const match = sourceText.match(
+    /\b(ATA|PTA)\s+(\d{4})\s*\/\s*(\d{4})\b/i
+  );
+  if (!match) {
+    return { startYear: null, endYear: null, termRank: 0 };
+  }
+
+  return {
+    startYear: Number(match[2]),
+    endYear: Number(match[3]),
+    // In one academic year, PTA precedes ATA in the V-Class course cycle.
+    termRank: match[1].toUpperCase() === "ATA" ? 2 : 1,
+  };
+}
+
+function toRankedClassCode(course: ParsedCourse): RankedClassCode | null {
+  if (!course.classCode) return null;
+
+  const classParts = course.classCode.match(/^(\d{1,3})(KA|KB)(\d{2,4})$/i);
+  if (!classParts) return null;
+
+  const period = getAcademicPeriod(course.sourceText);
+  return {
+    classCode: course.classCode,
+    academicStartYear: period.startYear,
+    academicEndYear: period.endYear,
+    termRank: period.termRank,
+    level: Number(classParts[1]),
+    classNumber: Number(classParts[3]),
+    sourceIndex: course.sourceIndex,
+  };
+}
+
+function selectBestClassCode(courses: ParsedCourse[]): string | null {
+  const candidates = courses
+    .map(toRankedClassCode)
+    .filter((candidate): candidate is RankedClassCode => Boolean(candidate));
+
+  if (candidates.length === 0) return null;
+
+  const ranked = [...candidates].sort((a, b) => {
+    const aHasPeriod = a.academicEndYear !== null;
+    const bHasPeriod = b.academicEndYear !== null;
+
+    if (aHasPeriod !== bHasPeriod) return aHasPeriod ? -1 : 1;
+    if (a.academicEndYear !== b.academicEndYear) {
+      return (b.academicEndYear ?? 0) - (a.academicEndYear ?? 0);
+    }
+    if (a.academicStartYear !== b.academicStartYear) {
+      return (b.academicStartYear ?? 0) - (a.academicStartYear ?? 0);
+    }
+    if (a.termRank !== b.termRank) return b.termRank - a.termRank;
+    if (a.level !== b.level) return b.level - a.level;
+    if (a.classNumber !== b.classNumber) {
+      return b.classNumber - a.classNumber;
+    }
+
+    return a.sourceIndex - b.sourceIndex;
+  });
+
+  const selected = ranked[0].classCode;
+  if (process.env.NODE_ENV !== "production" && candidates.length > 1) {
+    console.debug("[VCLASS CLASS SELECTION]", {
+      detectedClasses: Array.from(
+        new Set(candidates.map(({ classCode }) => classCode))
+      ),
+      selected,
+    });
+  }
+
+  return selected;
 }
 
 function findLabeledValue(
@@ -156,7 +245,7 @@ function parseCourses($: cheerio.CheerioAPI): ParsedCourse[] {
 
   const courseItems = courseLabel.nextAll("dd").first().find("li");
   return courseItems
-    .map((_, element) => {
+    .map((index, element) => {
       const sourceText = normalizeWhitespace($(element).text());
       const parts = sourceText
         .split("|")
@@ -166,6 +255,7 @@ function parseCourses($: cheerio.CheerioAPI): ParsedCourse[] {
         classCode: normalizeClassCode(parts[1] ?? sourceText),
         major: parts[2] ?? "",
         sourceText,
+        sourceIndex: index,
       };
     })
     .get();
@@ -223,10 +313,16 @@ function parseProfileHtml($: cheerio.CheerioAPI): StudentIdentity {
     $,
     /^(program\s+studi|jurusan|study\s+program)$/i
   );
+  const explicitClassCode = findLabeledValue(
+    $,
+    /^(kelas|class|kode\s+kelas|class\s+code)$/i
+  );
   const name = normalizeWhitespace(nameFromLabel ?? nameFromHeading ?? "") || null;
   const courses = parseCourses($);
   const program = detectProgramStudy(courses, npm, explicitProgramStudy);
-  const classCode = courses.find((course) => course.classCode)?.classCode ?? null;
+  const classCodeFromCourses = selectBestClassCode(courses);
+  const classCode =
+    classCodeFromCourses ?? normalizeClassCode(explicitClassCode ?? "");
 
   return {
     authenticated: true,
@@ -239,7 +335,11 @@ function parseProfileHtml($: cheerio.CheerioAPI): StudentIdentity {
       name: nameFromLabel ? "profile-label" : name ? "profile-heading" : null,
       npm: labeledNpm && npm ? "profile-label" : npm ? "profile-heading" : null,
       programStudy: program.source,
-      classCode: classCode ? "course-profile" : null,
+      classCode: classCodeFromCourses
+        ? "course-profile-ranked"
+        : classCode
+          ? "profile-class-label"
+          : null,
       academicStatus: null,
     },
   };
