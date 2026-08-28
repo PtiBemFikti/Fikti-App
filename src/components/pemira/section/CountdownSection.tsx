@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FiCalendar, FiClock, FiWatch } from "react-icons/fi";
 import { FaHourglass } from "react-icons/fa";
-import { PEMIRA_START_AT } from "@/lib/pemira-config";
+import { getPemiraScheduleStatus, PEMIRA_START_AT } from "@/lib/pemira-config";
 
 type TimeLeft = {
   days: number;
@@ -13,7 +13,7 @@ type TimeLeft = {
   seconds: number;
 };
 
-type ElectionStatus = "coming" | "ongoing";
+type ElectionStatus = "coming" | "ongoing" | "closed";
 
 type CountdownBoxProps = {
   value: number;
@@ -33,11 +33,13 @@ export default function PemiraCountdownSection() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
+      const status = getPemiraScheduleStatus();
+      setElectionStatus(status);
+
       const electionStart = new Date(PEMIRA_START_AT).getTime();
       const now = new Date().getTime();
 
-      if (now >= electionStart) {
-        setElectionStatus("ongoing");
+      if (status !== "coming" || now >= electionStart) {
         return;
       }
 
@@ -72,11 +74,14 @@ export default function PemiraCountdownSection() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6 uppercase tracking-wider">
             {electionStatus === "coming" && "PEMIRA Coming Soon"}
             {electionStatus === "ongoing" && "PEMIRA Sedang Berlangsung!"}
+            {electionStatus === "closed" && "PEMIRA Telah Ditutup"}
           </h2>
           <p className="text-xl text-[#19554B]/80 max-w-2xl mx-auto">
             {electionStatus === "coming" &&
               "Hitungan mundur menuju hari pemilihan"}
             {electionStatus === "ongoing" && "Segera gunakan hak pilih Anda!"}
+            {electionStatus === "closed" &&
+              "Pemilihan telah ditutup pada Jumat, 28 Agustus 2026 pukul 23.00 WIB. Terima kasih telah berpartisipasi."}
           </p>
         </motion.div>
 
@@ -128,6 +133,19 @@ export default function PemiraCountdownSection() {
               >
                 VOTE SEKARANG <span className="text-xl">→</span>
               </a>
+            </div>
+          </motion.div>
+        )}
+
+        {electionStatus === "closed" && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="mt-8"
+          >
+            <div className="inline-flex rounded-full bg-[#19554B] px-8 py-4 text-xl font-medium text-[#DADED1]">
+              Pemilihan ditutup pukul 23.00 WIB
             </div>
           </motion.div>
         )}

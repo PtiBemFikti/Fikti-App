@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FiCheckCircle, FiArrowLeft, FiAlertCircle } from "react-icons/fi";
 import Link from "next/link";
 import PemiraLogoutButton from "@/components/pemira/LogoutButton";
+import { isPemiraClosed } from "@/lib/pemira-config";
 
 interface VoteStatusProps {
   loading: boolean;
@@ -19,6 +20,11 @@ const votingStatusMessages = {
   ongoing: {
     title: "Pemira Sedang Berlangsung",
     message: "Silakan pilih kandidat Anda di bawah ini.",
+  },
+  closed: {
+    title: "Pemira Telah Ditutup",
+    message:
+      "Pemilihan telah ditutup pada Jumat, 28 Agustus 2026 pukul 23.00 WIB. Terima kasih telah berpartisipasi dalam PEMIRA.",
   },
 };
 
@@ -77,6 +83,11 @@ export default function VoteStatus({
   }
 
   if (votingStatus === "not_started") {
+    const isClosed = isPemiraClosed();
+    const message = isClosed
+      ? votingStatusMessages.closed
+      : votingStatusMessages.not_started;
+
     return (
       <div className="flex min-h-screen items-center justify-center p-3 sm:p-6">
         <motion.div
@@ -93,10 +104,10 @@ export default function VoteStatus({
             <FiAlertCircle className="text-3xl" />
           </motion.div>
           <h1 className="mb-2 text-xl font-bold text-[#19554B] sm:text-2xl">
-            {votingStatusMessages.not_started.title}
+            {message.title}
           </h1>
           <p className="text-gray-600 mb-6">
-            {votingStatusMessages.not_started.message}
+            {message.message}
           </p>
           <div className="flex justify-center">
             <Link
