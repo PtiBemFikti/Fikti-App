@@ -92,6 +92,8 @@ export type AdminVoter = {
   kelas: string;
   bem: AdminVoterElectionStatus;
   himsi: AdminVoterElectionStatus;
+  bemVotedAt: string | null;
+  himsiVotedAt: string | null;
   createdAt: string | null;
 };
 

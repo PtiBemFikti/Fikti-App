@@ -33,6 +33,7 @@ type VoteRow = {
   election_id: number | string | null;
   candidate_id: number | string | null;
   vote_choice: VoteChoice;
+  voted_at: string | null;
 };
 
 const electionSlugs: ElectionSlug[] = ["bem", "himsi"];
@@ -64,7 +65,7 @@ export async function GET() {
           .order("created_at", { ascending: false }),
         supabaseServer
           .from("pemira_votes")
-          .select("npm, election_id, candidate_id, vote_choice"),
+          .select("npm, election_id, candidate_id, vote_choice, voted_at"),
       ]);
 
     if (electionResult.error) throw electionResult.error;
@@ -80,6 +81,7 @@ export async function GET() {
     const voteCountByElection = new Map<string, number>();
     const emptyVoteCountByElection = new Map<string, number>();
     const votedElectionIdsByNpm = new Map<string, Set<string>>();
+    const votedAtByNpm = new Map<string, Map<string, string | null>>();
 
     for (const vote of votes) {
       if (vote.vote_choice === "candidate" && vote.candidate_id !== null) {
@@ -109,6 +111,11 @@ export async function GET() {
             votedElectionIdsByNpm.get(vote.npm) ?? new Set<string>();
           votedElections.add(electionKey);
           votedElectionIdsByNpm.set(vote.npm, votedElections);
+
+          const votedAtByElection =
+            votedAtByNpm.get(vote.npm) ?? new Map<string, string | null>();
+          votedAtByElection.set(electionKey, vote.voted_at);
+          votedAtByNpm.set(vote.npm, votedAtByElection);
         }
       }
     }
@@ -122,6 +129,9 @@ export async function GET() {
         const votedElections = voter.npm
           ? votedElectionIdsByNpm.get(voter.npm) ?? new Set<string>()
           : new Set<string>();
+        const votedAtByElection = voter.npm
+          ? votedAtByNpm.get(voter.npm) ?? new Map<string, string | null>()
+          : new Map<string, string | null>();
 
         return {
           id: voter.id,
@@ -140,6 +150,8 @@ export async function GET() {
             votedElections,
             electionIdBySlug
           ),
+          bemVotedAt: getVotedAt(votedAtByElection, "bem", electionIdBySlug),
+          himsiVotedAt: getVotedAt(votedAtByElection, "himsi", electionIdBySlug),
           createdAt: voter.created_at,
         };
       })
@@ -231,6 +243,15 @@ export async function GET() {
       { status: 500 }
     );
   }
+}
+
+function getVotedAt(
+  votedAtByElection: Map<string, string | null>,
+  slug: ElectionSlug,
+  electionIdBySlug: Map<string, string>
+): string | null {
+  const electionId = electionIdBySlug.get(slug);
+  return electionId ? votedAtByElection.get(electionId) ?? null : null;
 }
 
 function getVoterElectionStatus(

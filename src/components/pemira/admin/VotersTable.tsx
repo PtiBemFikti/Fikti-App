@@ -70,7 +70,9 @@ export default function VotersTable({ voters }: VotersTableProps) {
       "Program Studi": formatProgramStudy(voter.programStudi),
       Kelas: voter.kelas,
       "BEM Status": formatStatus(voter.bem),
+      "BEM Waktu Memilih": formatVoteTimestamp(voter.bemVotedAt),
       "HIMSI Status": formatStatus(voter.himsi),
+      "HIMSI Waktu Memilih": formatVoteTimestamp(voter.himsiVotedAt),
     }));
     const worksheet = XLSX.utils.json_to_sheet(rows);
     const workbook = XLSX.utils.book_new();
@@ -336,6 +338,19 @@ function formatStatus(status: AdminVoterElectionStatus): string {
   if (status === "voted") return "Sudah Memilih";
   if (status === "not-eligible") return "Tidak Berhak";
   return "Belum Memilih";
+}
+
+function formatVoteTimestamp(value: string | null): string {
+  if (!value) return "-";
+
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "-";
+
+  return date.toLocaleString("id-ID", {
+    dateStyle: "short",
+    timeStyle: "medium",
+    timeZone: "Asia/Jakarta",
+  });
 }
 
 function StatusBadge({ status }: { status: AdminVoterElectionStatus }) {
