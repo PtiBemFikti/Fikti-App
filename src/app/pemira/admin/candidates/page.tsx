@@ -170,7 +170,7 @@ export default function AdminCandidatesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <main className="mx-auto max-w-7xl space-y-6 px-4 py-6 sm:px-6 lg:px-8">
+      <main className="mx-auto max-w-7xl space-y-6 px-4 pb-24 py-6 sm:px-6 sm:pb-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <h1 className="text-2xl font-bold text-gray-900">Kelola Kandidat</h1>

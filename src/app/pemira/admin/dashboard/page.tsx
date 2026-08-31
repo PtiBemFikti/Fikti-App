@@ -79,7 +79,7 @@ export default function AdminDashboard() {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 space-y-6">
+      <main className="mx-auto max-w-7xl space-y-6 px-4 pb-24 py-6 sm:px-6 sm:pb-6 lg:px-8">
         <section className="rounded-xl bg-white p-4 shadow sm:flex sm:items-center sm:justify-between sm:gap-6 sm:p-5">
           <div>
             <h1 className="text-xl font-semibold text-gray-900">

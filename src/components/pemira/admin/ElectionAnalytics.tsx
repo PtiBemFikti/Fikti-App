@@ -12,13 +12,13 @@ export default function ElectionAnalytics({
       id: `candidate-${candidate.id}`,
       label: `Paslon ${candidate.ballotNumber || "-"}`,
       count: candidate.voteCount,
-      barClassName: "bg-[#19554B]",
+      color: "#19554B",
     })),
     {
       id: "empty",
       label: "Kotak Kosong",
       count: election.emptyVoteCount,
-      barClassName: "bg-[#79558E]",
+      color: "#79558E",
     },
   ];
 
@@ -45,38 +45,104 @@ export default function ElectionAnalytics({
 
       <div className="rounded-xl bg-white p-4 shadow sm:p-5">
         <div className="mb-4">
-          <h3 className="font-semibold text-gray-900">Distribusi Hasil</h3>
+          <h3 className="font-semibold text-gray-900">Distribusi Suara</h3>
           <p className="mt-1 text-sm text-gray-500">
             Persentase dihitung dari {election.totalVotes} suara pada election ini.
           </p>
         </div>
 
-        <div className="space-y-4">
-          {resultOptions.map((option) => {
-            const percentage = getPercentage(option.count, election.totalVotes);
+        <div className="grid items-center gap-5 sm:grid-cols-[minmax(0,210px)_minmax(0,1fr)] sm:gap-6">
+          <VotePieChart options={resultOptions} total={election.totalVotes} />
 
-            return (
-              <div
-                key={option.id}
-                role="img"
-                aria-label={`${option.label}: ${option.count} suara, ${formatPercentage(percentage)} persen`}
-              >
-                <div className="mb-1.5 flex flex-wrap items-baseline justify-between gap-2 text-sm">
-                  <span className="font-medium text-gray-800">{option.label}</span>
-                  <span className="tabular-nums text-gray-600">
+          <div className="space-y-3" aria-label="Rincian distribusi suara">
+            {resultOptions.map((option) => {
+              const percentage = getPercentage(option.count, election.totalVotes);
+
+              return (
+                <div key={option.id} className="flex items-start justify-between gap-3 text-sm">
+                  <div className="flex min-w-0 items-center gap-2">
+                    <span
+                      className="mt-0.5 h-3 w-3 shrink-0 rounded-full"
+                      style={{ backgroundColor: option.color }}
+                      aria-hidden="true"
+                    />
+                    <span className="font-medium text-gray-800">{option.label}</span>
+                  </div>
+                  <span className="shrink-0 text-right tabular-nums text-gray-600">
                     {option.count} suara · {formatPercentage(percentage)}%
                   </span>
                 </div>
-                <div className="h-2.5 overflow-hidden rounded-full bg-gray-100">
-                  <div
-                    className={`h-full rounded-full ${option.barClassName}`}
-                    style={{ width: `${percentage}%` }}
-                  />
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
+      </div>
+    </div>
+  );
+}
+
+type ResultOption = {
+  id: string;
+  label: string;
+  count: number;
+  color: string;
+};
+
+function VotePieChart({
+  options,
+  total,
+}: {
+  options: ResultOption[];
+  total: number;
+}) {
+  let offset = 0;
+
+  return (
+    <div
+      className="relative mx-auto aspect-square w-full max-w-[210px]"
+      role="img"
+      aria-label={`Distribusi suara: ${options
+        .map(
+          (option) =>
+            `${option.label} ${option.count} suara, ${formatPercentage(
+              getPercentage(option.count, total)
+            )} persen`
+        )
+        .join("; ")}`}
+    >
+      <svg viewBox="0 0 42 42" className="h-full w-full -rotate-90" aria-hidden="true">
+        <circle
+          cx="21"
+          cy="21"
+          r="15.9155"
+          fill="none"
+          stroke="#F3F4F6"
+          strokeWidth="8"
+        />
+        {total > 0 &&
+          options.map((option) => {
+            const percentage = getPercentage(option.count, total);
+            const segment = (
+              <circle
+                key={option.id}
+                cx="21"
+                cy="21"
+                r="15.9155"
+                fill="none"
+                stroke={option.color}
+                strokeWidth="8"
+                pathLength="100"
+                strokeDasharray={`${percentage} ${100 - percentage}`}
+                strokeDashoffset={-offset}
+              />
+            );
+            offset += percentage;
+            return segment;
+          })}
+      </svg>
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+        <span className="text-2xl font-bold tabular-nums text-gray-900">{total}</span>
+        <span className="text-xs text-gray-500">Total Suara</span>
       </div>
     </div>
   );
