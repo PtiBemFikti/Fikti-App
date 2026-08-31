@@ -45,10 +45,10 @@ export default function Header() {
       </div>
 
       <nav
-        className="fixed inset-x-0 bottom-0 z-50 border-t border-gray-200 bg-white/95 px-2 pb-[env(safe-area-inset-bottom)] shadow-[0_-6px_18px_rgba(15,23,42,0.08)] backdrop-blur md:hidden"
+        className="fixed bottom-[calc(env(safe-area-inset-bottom)+1rem)] left-1/2 z-50 w-[calc(100%-2rem)] max-w-sm -translate-x-1/2 rounded-full border border-gray-200 bg-white/95 p-1.5 shadow-[0_12px_30px_rgba(15,23,42,0.16)] backdrop-blur md:hidden"
         aria-label="Navigasi admin"
       >
-        <div className="mx-auto grid max-w-md grid-cols-3">
+        <div className="grid grid-cols-3">
           <MobileNavLink
             href="/pemira/admin/dashboard"
             label="Dashboard"
@@ -66,7 +66,7 @@ export default function Header() {
           <button
             type="button"
             onClick={handleLogout}
-            className="flex min-h-16 flex-col items-center justify-center gap-1 rounded-lg px-2 py-2 text-xs font-medium text-red-600 transition-colors hover:bg-red-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-inset"
+            className="flex min-h-14 flex-col items-center justify-center gap-1 rounded-full px-2 py-2 text-xs font-medium text-red-600 transition-colors hover:bg-red-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-inset"
           >
             <FiLogOut className="h-5 w-5" aria-hidden="true" />
             Keluar
@@ -92,7 +92,7 @@ function MobileNavLink({
     <Link
       href={href}
       aria-current={active ? "page" : undefined}
-      className={`flex min-h-16 flex-col items-center justify-center gap-1 rounded-lg px-2 py-2 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-inset ${
+      className={`flex min-h-14 flex-col items-center justify-center gap-1 rounded-full px-2 py-2 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-inset ${
         active ? "bg-indigo-50 text-indigo-700" : "text-gray-500 hover:bg-gray-50 hover:text-gray-800"
       }`}
     >
